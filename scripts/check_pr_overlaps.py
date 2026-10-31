@@ -211,7 +211,7 @@ def read_live_graphql(repo: str, pr_number: int, graphql_fetch, rest_fetch) -> l
                     raise AuditError("Некоректний файл PR у GraphQL")
                 path, change = file.get("path"), file.get("changeType")
                 if (not isinstance(path, str) or not path.strip()
-                        or change not in PATCH_STATUSES):
+                        or type(change) is not str or change not in PATCH_STATUSES):
                     raise AuditError("Некоректний шлях або тип зміни в GraphQL")
                 converted.append({"filename": path})
                 if change == "RENAMED":
