@@ -542,7 +542,7 @@ def run(pr_number: int, records: object, strict: bool) -> int:
 
 
 def emit_skip(pr_number: int, reason: str) -> int:
-    """Голосно позначити пропуск і не валити збірку.
+    """Позначити невиконаний аудит як помилку, не оголошуючи відсутність перетинів.
 
     Пропуск — окремий стан, не «перетинів немає»: у JSON видно
     ``"status": "skipped"`` і причину.
@@ -553,7 +553,7 @@ def emit_skip(pr_number: int, reason: str) -> int:
     ))
     print(reason)
     print(f"::warning::{reason}")
-    return 0
+    return 2
 
 
 def main(argv=None, *, opener=request.urlopen, sleep=time.sleep) -> int:
