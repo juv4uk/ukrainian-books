@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.18",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.18",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.18",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "dhīro lokaviparyasto vartamāno 'pi lokavat | na samādhiṃ na vikṣepaṃ na lepaṃ svasya paśyati ||",
+  "iast": "dhīro lokaviparyasto vartamāno 'pi lokavat | na samādhiṃ na vikṣepaṃ na lepaṃ svasya paśyati ||",
+  "grammar": "dhīraḥ (m. nom. sg. «мудрий, стійкий») lokaviparyastaḥ (bahuvrīhi «збочений разом зі світом, як світ»: loka «світ» + viparyasta «перевернутий, збочений») vartamānaḥ (m. nom. sg. «поводячись, перебуваючи») api lokavat (прислівник «як [увесь] світ»). na samādhim (m. acc. sg. «немає самадгі») na vikṣepam (m. acc. sg. «немає розсіяння») na lepam (m. acc. sg. «немає налипання, забруднення») svasya (gen. sg. «у себе, свого») paśyati («бачить»).",
+  "literal_meaning": "«Мудрий, збочений разом зі світом, поводиться як увесь світ — і не бачить у себе ні самадгі, ні розсіяння, ні налипання.»",
+  "ukrainian_translation": "Мудрий, збочений разом зі світом, поводиться як увесь світ — і не бачить у себе ні самадгі, ні розсіяння, ні налипання.",
+  "commentary": "Найсміливіше місце блоку: dhīra описаний як lokaviparyasta — «збочений разом зі світом». Це не докір, а точність: він поводиться як усі, і ззовні його не відрізнити. Три заперечення (samādhi, vikṣepa, lepa) забирають і високу практику, і її відсутність, і забрудненість — тобто всю шкалу, якою зазвичай міряють. Порівняй 14.4, де така людина постає «як божевільна»: тут те саме сказано спокійніше й точніше.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжність vartamāno (SARIT) / varttamāno (GRETIL) — подвоєння t, орфографія. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
