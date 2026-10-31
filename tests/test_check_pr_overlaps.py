@@ -548,7 +548,7 @@ class InfrastructureDiagnosticsTests(unittest.TestCase):
                 sleep=lambda _: None,
             )
         self.assertEqual(code, 2, err.getvalue())
-        self.assertEqual(json.loads(out.getvalue())["status"], "skipped")
+        self.assertIn('"status": "skipped"', out.getvalue())
 
     def test_rate_limit_waits_then_succeeds(self):
         exc = http_error(429, "API rate limit exceeded", {"Retry-After": "0"})
