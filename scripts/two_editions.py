@@ -77,6 +77,13 @@ def common(v, label, release, errors):
             errors.append(f"{label}: rights.{flag} мусить бути bool")
     if rights.get("evidence_url") is not None and not https(rights["evidence_url"]):
         errors.append(f"{label}: URL доказу прав недійсний")
+    # Позитивний прапорець прав без доказу не дає дозволу відтворювати текст.
+    if rights.get("verified") is True and not https(rights.get("evidence_url")):
+        errors.append(f"{label}: позначено перевірені права без HTTPS-доказу")
+    if rights.get("devanagari_permitted") is True and (
+        rights.get("verified") is not True or not https(rights.get("evidence_url"))
+    ):
+        errors.append(f"{label}: дозвіл на деванагарі без підтверджених прав та HTTPS-доказу")
     if review.get("evidence_url") is not None and not https(review["evidence_url"]):
         errors.append(f"{label}: URL рецензії недійсний")
     if review.get("reviewer") is not None and not text(review["reviewer"]):
@@ -172,6 +179,9 @@ def poetic(v, release):
 def load(root, subdir, expected, validate, release):
     found, errors = {}, []
     folder = root / subdir
+    # Ніколи не переходити за межі кореня через символьну теку.
+    if (root / subdir.parts[0]).is_symlink() or folder.is_symlink():
+        return found, [f"{subdir}: недопустимий шлях (символьний каталог)"]
     if not folder.is_dir():
         return found, errors
     for path in sorted(folder.glob("*.json")):
@@ -219,13 +229,21 @@ def preview(academic_records, poetic_records, out):
         card = academic_records[vid]
         scholarly.append(f"\n### {vid} — {card['status']}\n")
         for n, line in enumerate(card["lines"], 1):
-            permitted = card["rights"]["verified"] and card["rights"]["devanagari_permitted"]
+            rights = card["rights"]
+            permitted = (rights["verified"] is True
+                         and rights["devanagari_permitted"] is True
+                         and https(rights.get("evidence_url")))
+            own = rights["owned_ukrainian_text"] is True
+            hidden_uk = "[Приховано: права на український текст не підтверджено]"
+            translit = line["transliteration_uk"] if own else hidden_uk
+            translation = line["translation_uk"] if own else hidden_uk
+            commentary = line["commentary_uk"] if own else hidden_uk
             deva = line["devanagari"] if permitted else "[Приховано: прав на деванагарі не підтверджено]"
             scholarly.extend([
                 f"\n**Рядок {n}, деванагарі:** {deva}\n",
-                f"\n**Українська транслітерація:** {line['transliteration_uk']}\n",
-                f"\n**Український переклад:** {line['translation_uk']}\n",
-                f"\n**Науковий коментар:** {line['commentary_uk']}\n",
+                f"\n**Українська транслітерація:** {translit}\n",
+                f"\n**Український переклад:** {translation}\n",
+                f"\n**Науковий коментар:** {commentary}\n",
                 f"\nДжерело: {card['source']['url']} — {line['source_locator']}\n",
             ])
         for par in card["ukrainian_parallels"]:
@@ -235,7 +253,10 @@ def preview(academic_records, poetic_records, out):
             scholarly.append(f"\n**Незатверджена ілюстрація:** {il['brief']}; опис: {il['alt_uk']}\n")
     for vid in sorted(poetic_records, key=order):
         card = poetic_records[vid]
-        poems.append(f"\n### {vid} — {card['status']}\n\n" + "\n".join(card["stanzas_uk"]) + "\n")
+        poem_text = ("\n".join(card["stanzas_uk"])
+                     if card["rights"]["owned_ukrainian_text"] is True
+                     else "[Приховано: права на український поетичний текст не підтверджено]")
+        poems.append(f"\n### {vid} — {card['status']}\n\n" + poem_text + "\n")
     (out / "akademichna-chernetka.md").write_text("".join(scholarly), encoding="utf-8")
     (out / "poetychna-chernetka.md").write_text("".join(poems), encoding="utf-8")
 
