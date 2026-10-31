@@ -420,14 +420,15 @@ def sequence_opener(*outcomes):
     return opener
 
 
-def cli(opener, *extra):
+def cli(opener, *extra, strict=True):
     """Запустити CLI з підміненим опенером і зібрати вивід."""
     slept = []
     out, err = io.StringIO(), io.StringIO()
     with mock.patch.dict(os.environ, {"GITHUB_TOKEN": SECRET}), \
             contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
         code = checker.main(
-            ["--repo", "owner/repo", "--pr", "5", "--strict", *extra],
+            ["--repo", "owner/repo", "--pr", "5",
+             *(["--strict"] if strict else []), *extra],
             opener=opener,
             sleep=slept.append,
         )
@@ -435,15 +436,15 @@ def cli(opener, *extra):
 
 
 class InfrastructureDiagnosticsTests(unittest.TestCase):
-    """Ліміт і мережа не валять збірку; токен і невалідний JSON валять."""
+    """Недоступність API, дефект токена й невалідний JSON блокують CI."""
 
-    def test_rate_limit_429_does_not_fail_build(self):
+    def test_rate_limit_429_blocks_unverified_audit(self):
         exc = http_error(429, "API rate limit exceeded",
                          {"X-RateLimit-Remaining": "0",
                           "X-RateLimit-Reset": "1793472222",
                           "Retry-After": "60"})
         code, out, err, _ = cli(sequence_opener(exc), "--max-wait", "0")
-        self.assertEqual(code, 0, err)
+        self.assertEqual(code, 2, err)
         self.assertIn("ПРОПУЩЕНО: ліміт запитів GitHub", out)
         self.assertIn("HTTP=429", out)
         self.assertIn("Retry-After=60", out)
@@ -458,15 +459,24 @@ class InfrastructureDiagnosticsTests(unittest.TestCase):
         exc = http_error(403, "You have exceeded a secondary rate limit.",
                          {"Retry-After": "0"})
         code, out, err, _ = cli(sequence_opener(exc), "--max-wait", "0")
-        self.assertEqual(code, 0, err)
+        self.assertEqual(code, 2, err)
         self.assertIn("ПРОПУЩЕНО: ліміт запитів GitHub", out)
         self.assertNotIn("КООРД-ПОМИЛКА", err)
 
     def test_403_with_exhausted_quota_is_skipped(self):
         exc = http_error(403, "Forbidden", {"X-RateLimit-Remaining": "0"})
         code, out, err, _ = cli(sequence_opener(exc), "--max-wait", "0")
-        self.assertEqual(code, 0, err)
+        self.assertEqual(code, 2, err)
         self.assertIn("ПРОПУЩЕНО", out)
+
+    def test_skipped_audit_blocks_without_strict(self):
+        # Відсутність --strict не перетворює недоступний live-аудит на success.
+        exc = urllib.error.URLError("Name or service not known")
+        code, out, err, _ = cli(
+            sequence_opener(exc), "--max-wait", "0", strict=False,
+        )
+        self.assertEqual(code, 2, err)
+        self.assertIn('"status": "skipped"', out)
 
     def test_403_token_problem_fails_with_named_cause(self):
         exc = http_error(403, "Resource not accessible by integration")
@@ -494,13 +504,13 @@ class InfrastructureDiagnosticsTests(unittest.TestCase):
     def test_network_error_is_skipped(self):
         exc = urllib.error.URLError("Name or service not known")
         code, out, err, _ = cli(sequence_opener(exc), "--max-wait", "0")
-        self.assertEqual(code, 0, err)
+        self.assertEqual(code, 2, err)
         self.assertIn("ПРОПУЩЕНО: мережа або сервер GitHub недоступні", out)
 
     def test_5xx_is_skipped(self):
         exc = http_error(502, "Bad gateway")
         code, out, err, _ = cli(sequence_opener(exc), "--max-wait", "0")
-        self.assertEqual(code, 0, err)
+        self.assertEqual(code, 2, err)
         self.assertIn("ПРОПУЩЕНО", out)
         self.assertIn("HTTP=502", out)
 
