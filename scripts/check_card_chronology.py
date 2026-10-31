@@ -48,7 +48,7 @@ def check_directory(folder: Path, today: date) -> tuple[int, list[str]]:
     if folder.is_symlink():
         return 0, [f"{folder}: каталог карток не може бути символічним посиланням"]
     if not folder.exists():
-        return 0, []
+        return 0, [f"{folder}: каталог карток відсутній — перевірка неможлива"]
     if not folder.is_dir():
         return 0, [f"{folder}: очікується каталог карток"]
     checked = 0
@@ -68,6 +68,8 @@ def check_directory(folder: Path, today: date) -> tuple[int, list[str]]:
             continue
         for field in DATE_FIELDS:
             errors.extend(f"{file}: {err}" for err in inspect_date(data, field, today))
+    if checked == 0:
+        errors.append(f"{folder}: не знайдено JSON-карток — нічого перевіряти")
     return checked, errors
 
 

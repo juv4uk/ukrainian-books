@@ -60,9 +60,17 @@ class ChronologyTests(unittest.TestCase):
         self.assertTrue(inspect_date(example(sarit=20261031),
                                      ("sources", "sarit", "checked_on"), TODAY))
 
-    def test_missing_folder_is_empty(self):
+    def test_missing_folder_is_error(self):
         with tempfile.TemporaryDirectory() as directory:
-            self.assertEqual(check_directory(Path(directory) / "cards", TODAY), (0, []))
+            count, errors = check_directory(Path(directory) / "cards", TODAY)
+            self.assertEqual(count, 0)
+            self.assertTrue(any("відсутній" in error for error in errors))
+
+    def test_empty_folder_is_error(self):
+        with tempfile.TemporaryDirectory() as directory:
+            count, errors = check_directory(Path(directory), TODAY)
+            self.assertEqual(count, 0)
+            self.assertTrue(any("не знайдено JSON-карток" in error for error in errors))
 
     def test_files_scan_rejects_future_date(self):
         with tempfile.TemporaryDirectory() as directory:
