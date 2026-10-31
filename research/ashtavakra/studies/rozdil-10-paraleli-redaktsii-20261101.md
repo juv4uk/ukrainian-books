@@ -4,7 +4,7 @@
 
 ## Походження та відтворюваність
 
-- **Структуроване джерело генератора:** [`paraleli.json`](../../../books/ashtavakra-gita/paraleli.json), записи `10-1`–`10-8`; точний blob на момент CLAІМ: `0e22ae45c279fe91e9ed50be7372bcaebb338229`.
+- **Структуроване джерело генератора:** [`paraleli.json`](../../../books/ashtavakra-gita/paraleli.json), записи `10-1`–`10-8`; точний blob на момент заявлення відповідальності: `0e22ae45c279fe91e9ed50be7372bcaebb338229`.
 - **Друга редакція:** [`rozdil-10-naukove.md`](../../../books/ashtavakra-gita/rozdil-10-naukove.md) після [злитого PR #650](https://github.com/juv4uk/ukrainian-books/pull/650), merge `9b7504521a9894703e6c08f1d7badfab3acb83ac`; точний blob: `a514ba5db17277245197a257acbe922e26ccc146`.
 - **Технічна причина розходження:** [`scripts/build_format_v2_chapter.py`](../../../scripts/build_format_v2_chapter.py) бере паралелі з `paraleli.json` за посиланням `parallel` із [`format-v2/rozdil-10.json`](../../../books/ashtavakra-gita/format-v2/rozdil-10.json). Зміна лише згенерованої сторінки не змінює цього джерела.
 - Усі наведені нижче тексти взято **з файлів цього ж проєкту**, а не з українських літературних першоджерел. Вони є редакторськими переказами й асоціаціями, а не перевіреними цитатами зі Сковороди, Лесі Українки, Франка чи інших авторів.
