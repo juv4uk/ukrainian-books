@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "14.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_14.1",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_14.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "prakṛtyā śūnyacitto yaḥ pramādād bhāvabhāvanaḥ | nidrito bodhita iva kṣīṇasaṃsaraṇo hi saḥ ||",
+  "iast": "prakṛtyā śūnyacitto yaḥ pramādād bhāvabhāvanaḥ | nidrito bodhita iva kṣīṇasaṃsaraṇo hi saḥ ||",
+  "grammar": "prakṛtyā (f. instr. sg. «за природою, від природи») śūnyacittaḥ (bahuvrīhi «той, чий розум порожній»: śūnya «порожній» + citta) yaḥ (m. nom. sg.). pramādāt (m. abl. sg. «через недбальство, з безпечності»: pra-māda) bhāvabhāvanaḥ (m. nom. sg. «той, хто плекає стани, вирощує почуття»: bhāva «стан» + bhāvana «вирощування, плекання»). nidritaḥ (m. nom. sg. «заснулий») bodhitaḥ (m. nom. sg. «розбуджений») iva («наче»). kṣīṇasaṃsaraṇaḥ (bahuvrīhi «той, у кого вичерпане блукання [сансарою]»: kṣīṇa «вичерпаний» + saṃsaraṇa «блукання, перехід») hi («адже») saḥ (m. nom. sg.).",
+  "literal_meaning": "«Хто за природою має порожній розум — хоч би з недбальства він і плекав стани — той наче заснулий і розбуджений: у нього вичерпане блукання.»",
+  "ukrainian_translation": "Хто за природою має порожній розум — навіть якщо з недбальства плекає [в собі] стани, — той наче заснув і прокинувся: блукання його вичерпане.",
+  "commentary": "Вірш навмисно знімає вимогу старанності. pramādāt («через недбальство») — це не похвала, але й не докір: недбальство нічого не змінює, бо порожнеча розуму тут не досягнута, а природна (prakṛtyā). Складене bhāvabhāvana («плекання станів») описує звичну роботу розуму — і вона названа марною. nidritaḥ / bodhitaḥ iva («наче заснулий і розбуджений») — не два стани, а один, побачений із двох боків: людина прокинулась, але ще не ворушиться. БУДОВА ГЛАВИ. Глава 14 не має спільного рефрену — на відміну від 5, 6 і 13. Натомість усі чотири вірші тримаються однієї думки, поданої з чотирьох боків: хто такий цей чоловік зсередини (14.1), що для нього зникає (14.2), про що він уже не турбується (14.3) і як його бачать ззовні (14.4).",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ, і вона змінює сенс: SARIT — kṣīṇasaṃsaraṇo («той, у кого вичерпане БЛУКАННЯ»), GRETIL — kṣīṇasaṃsmaraṇo («той, у кого вичерпане ПАМ'ЯТАННЯ»). saṃsaraṇa і saṃsmaraṇa — різні слова: перше про сансару й перехід між народженнями, друге про згадування. У контексті глави, де йдеться про вичерпаність шляху, читається SARIT. Яке читання правильне, НЕ ВСТАНОВЛЕНО: третього свідка для 14.1 не перевірено. У перекладі взято SARIT і це позначено як вибір.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
