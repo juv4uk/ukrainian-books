@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.9",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.9",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.9",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "aho vikalpitaṃ viśvamajñānānmayi bhāsate| rūpyaṃ śuktau phaṇī rajjau vāri sūryakare yathā||2|9||",
+  "iast": "aho vikalpitaṃ viśvam ajñānān mayi bhāsate | rūpyaṃ śuktau phaṇī rajjau vāri sūryakare yathā ||",
+  "grammar": "aho (вигук) vikalpitam (n. nom. sg. «уявлене, сконструйоване», від vi-kḷp) viśvam (n. nom. sg.) ajñānāt (n. abl. sg.) mayi (loc. sg.) bhāsate (3 sg. med.) | rūpyam (n. nom. sg. «срібло») śuktau (f. loc. sg. «у перламутрі») phaṇī (m. nom. sg. «змія») rajjau (f. loc. sg. «у мотузці») vāri (n. nom. sg. «вода») sūryakare (m. loc. sg. «у сонячному промені», букв. «у руці сонця») yathā.",
+  "literal_meaning": "«О диво: уявлений світ через незнання сяє в мені — як срібло в перламутрі, змія в мотузці, вода в сонячному промені.»",
+  "ukrainian_translation": "О диво: уявлений світ через незнання сяє в мені — як срібло в перламутрі, змія в мотузці, вода в сонячному промені.",
+  "commentary": "Три приклади хибного ототожнення, де річ не існує, але видима. vikalpita — не «вигаданий» у сенсі обману, а «сконструйований розумом» (vi-kḷp — розрізняти, домислювати). sūryakara буквально «рука сонця», тобто промінь: ідеться про марево в спекотному повітрі.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
