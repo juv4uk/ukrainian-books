@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_20.7",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/dedb6b12c96490e62c60bf4b23ea817e992e70be/astavakragita.xml",
+      "locator": "verse_20.7",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva sṛṣṭiḥ kva ca saṃhāraḥ kva sādhyaṃ kva ca sādhanam | kva sādhakaḥ kva siddhir vā svasvarūpe 'ham advaye ||",
+  "iast": "kva sṛṣṭiḥ kva ca saṃhāraḥ kva sādhyaṃ kva ca sādhanam | kva sādhakaḥ kva siddhir vā svasvarūpe 'ham advaye ||",
+  "grammar": "kva — питальне прислівникове слово «де?»; його шестиразове повторення створює низку риторичних питань без окремого дієслова. sṛṣṭiḥ (жін. рід, називний однини) — творення; saṃhāraḥ (чол. рід, називний однини) — згортання або знищення. sādhyaṃ і sādhanam (сер. рід, називний/знахідний однини) — відповідно «те, що має бути досягнуте», і «засіб досягнення». sādhakaḥ (чол. рід, називний однини) — той, хто прагне досягнення або практикує; siddhiḥ (жін. рід, називний однини, у сандгі siddhir vā) — здійснення, досягнення. svasvarūpe (місцевий однини) — «у власній природі»; aham (називний однини) — «я», на письмі GRETIL 'ham після -e; advaye (місцевий однини, узгоджене з svarūpe) — «недвоїстій». У завершальній частині дієслово «є / перебуваю» мається на увазі, а не присутнє в санскритському рядку.",
+  "literal_meaning": "«Де творення, де ж згортання, де те, чого слід досягти, і де засіб? Де шукач, де досягнення — я [є] у своїй недвоїстій природі?»",
+  "ukrainian_translation": "Де творення, а де розчинення? Де мета, а де засіб? Де шукач і де здійснення? Я — у власній недвоїстій природі.",
+  "commentary": "Вірш вибудувано трьома парами понять: виникнення і згортання світу (sṛṣṭi / saṃhāra), мета і засіб (sādhya / sādhana), той, хто практикує, і здійснення (sādhaka / siddhi). Повторюване kva не повідомляє географічної відсутності цих речей, а риторично ставить під питання їхнє розрізнення з позиції недвоїстого власного єства, названого svasvarūpe 'ham advaye. У перекладі «Я — у власній недвоїстій природі» відновлено пропущену зв'язку лише для ясності українського речення. Це власний граматичний і філософський аналіз, не цитата з традиційного коментаря та не незалежно рецензоване тлумачення.",
+  "variants": [
+    {
+      "witness": "SARIT TEI, verse_20.7, та GRETIL SUB Göttingen, Avg_20.7 (дві електронні транскрипції)",
+      "note": "У SARIT графічно «kva siddhirvā svasvarūpe+ahamadvaye»; у GRETIL «kva siddhir vā svasvarūpe 'ham advaye». Розходження стосуються пробілів і способу позначити сандгі / аваґраху; підтвердженого літерного різночитання за цими двома записами не встановлено. Третє джерело й рукописні свідчення не звірялися.",
+      "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Давній санскритський твір відрізняється від сучасних цифрових транскрипцій. GRETIL заявляє CC BY-NC-SA 4.0, а SARIT має власні умови; їхні корпуси та сучасні переклади не переносилися. Український переклад, граматичний аналіз і коментар підготовлено для цього проєкту; їхні права та межі допустимого цитування потребують окремої перевірки перед публікацією. Ліцензію «ВОЛЬНІСТЬ» не поширюємо на чужу транскрипцію.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/dedb6b12c96490e62c60bf4b23ea817e992e70be/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
