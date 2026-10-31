@@ -10,6 +10,12 @@ import re
 import sys
 from pathlib import Path
 
+# Схема має одного власника; генератор лише повторно використовує її валідатор.
+try:
+    from scripts.check_editorial_cards import validate_card
+except ImportError:  # прямий запуск: python3 scripts/create_verse_card.py
+    from check_editorial_cards import validate_card
+
 ROOT = Path(__file__).resolve().parents[1]
 VERSE_ID = re.compile(r"([1-9]|1[0-9]|20)\.([1-9][0-9]*)\Z")
 EMPTY_FIELDS = (
@@ -41,6 +47,12 @@ def build_card(root: Path, verse_id: str) -> dict:
     template_path = root / "docs" / "VERSE_CARD_TEMPLATE.json"
     with template_path.open(encoding="utf-8") as file:
         card = json.load(file)
+
+    # Єдина чинна закрита схема: ловимо зайві ключі й зіпсовані вкладені типи
+    # ДО того, як генератор звернеться до цих полів або створить файл.
+    errors = validate_card(card, {"1.1"}, filename="1.1.json")
+    if errors:
+        raise ValueError("Шаблон порушує чинну схему: " + "; ".join(errors))
 
     if card.get("schema_version") != 1 or card.get("status") != "чернетка":
         raise ValueError("Шаблон має невідому версію схеми або недозволений статус")

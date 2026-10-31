@@ -98,6 +98,26 @@ class GeneratorTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "прав і рецензії"):
             MODULE.build_card(self.root, "1.1")
 
+    def test_reject_extra_template_key_before_creating_file(self):
+        self.template["невідоме_поле"] = "не дозволено схемою"
+        self.write_template()
+        with self.assertRaisesRegex(ValueError, "невідоме поле"):
+            MODULE.create_card(self.root, "1.1")
+        self.assertFalse((self.root / "editorial").exists())
+
+    def test_reject_broken_nested_schema_before_creating_file(self):
+        self.template["rights"] = ["некоректний тип"]
+        self.write_template()
+        with self.assertRaisesRegex(ValueError, "rights"):
+            MODULE.create_card(self.root, "1.1")
+        self.assertFalse((self.root / "editorial").exists())
+
+    def test_generated_card_passes_existing_validator(self):
+        card = MODULE.build_card(self.root, "18.95")
+        # Перевіряємо не окремим нормативом генератора, а тим самим
+        # валідатором, який використовується у чинному редакторському CI.
+        self.assertEqual(MODULE.validate_card(card, {"18.95"}, filename="18.95.json"), [])
+
     def test_reject_symlinked_cards_directory(self):
         (self.root / "editorial").mkdir()
         (self.root / "editorial" / "cards").symlink_to(self.root / "docs", target_is_directory=True)
