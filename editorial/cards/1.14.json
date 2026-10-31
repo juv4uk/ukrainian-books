@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "1.14",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.14",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.14",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "dehābhimānapāśena ciraṃ baddho+asi putraka| bodho+ahaṃ jñānakhaḍgena tanniṣkṛtya sukhī bhava||1|14||",
+  "iast": "dehābhimānapāśena ciraṃ baddho 'si putraka | bodho 'haṃ jñānakhaḍgena tan niṣkṛtya sukhī bhava ||",
+  "grammar": "deha-abhimāna-pāśena («мотузкою приписування собі тіла») ciram baddhaḥ asi («ти довго зв'язаний») putraka («синку») | bodhaḥ aham («я — усвідомлення») jñāna-khaḍgena («мечем знання») tat niṣkṛtya («те відсікши») sukhī bhava («будь щасливий»).",
+  "literal_meaning": "«Ти довго зв'язаний мотузкою приписування собі тіла, синку. [Скажи:] „я — усвідомлення“ — і, відсікши те мечем знання, будь щасливий.»",
+  "ukrainian_translation": "Ти довго зв'язаний мотузкою приписування собі тіла, синку. Скажи: «я — усвідомлення» — і, відсікши те мечем знання, будь щасливий.",
+  "commentary": "Два образи в одному вірші: `pāśa` (мотузка, якою в'яжуть) і `khaḍga` (меч, яким ріжуть). Пута не «розв'язують», а **відсікають** — і це та сама різкість, що в 19.1 з кліщами й стрілою. `bodho 'ham` подано як те, що треба **сказати** собі, а не зрозуміти: переклад мусить зберегти цю мовленнєвість, бо вона й робить вірш дієвим. `putraka` («синку») — звертання наставника до учня.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
