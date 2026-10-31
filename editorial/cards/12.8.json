@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "12.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_12.8",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_12.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "evameva kṛtaṃ yena sa kṛtārtho bhavedasau| evameva svabhāvo yaḥ sa kṛtārtho bhavedasau||12|8||",
+  "iast": "evam eva kṛtaṃ yena sa kṛtārtho bhaved asau | evam eva svabhāvo yaḥ sa kṛtārtho bhaved asau ||",
+  "grammar": "evam eva kṛtam yena («у кого це так зроблено») saḥ kṛta-arthaḥ bhavet asau | evam eva svabhāvaḥ yaḥ («у кого така природа») saḥ kṛta-arthaḥ bhavet asau.",
+  "literal_meaning": "«У кого це так зроблено — той стає тим, чию мету здійснено; у кого така природа — той стає тим, чию мету здійснено.»",
+  "ukrainian_translation": "У кого це так зроблено — той стає тим, чию мету здійснено; у кого така природа — той стає тим, чию мету здійснено.",
+  "commentary": "Вірш повторює рядок двічі й міняє одне слово: `kṛtam` (зроблено) → `svabhāvaḥ` (природа). Це не тавтологія, а розрізнення: спершу те, що людина зробила, потім те, чим вона стала. `kṛtārtha` — «той, чию мету здійснено», усталене слово; переклад тримає його однаково в обох половинах. Глава закінчується не настановою, а констатацією.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
