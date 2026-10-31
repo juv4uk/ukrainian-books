@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.4",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na tvaṃ deho na te deho bhoktā kartā na vā bhavān| cidrūpo+asi sadā sākṣī nirapekṣaḥ sukhaṃ cara||15|4||",
+  "iast": "na tvaṃ deho na te deho bhoktā kartā na vā bhavān | cidrūpo 'si sadā sākṣī nirapekṣaḥ sukhaṃ cara ||",
+  "grammar": "na tvam dehaḥ na te dehaḥ («ти не тіло, і тіло не твоє») bhoktā kartā na vā bhavān («і не ти — той, хто споживає чи чинить») | cit-rūpaḥ asi («ти маєш природу свідомості») sadā sākṣī («повсякчас свідок») nirapekṣaḥ («без залежності») sukham cara («живи легко»).",
+  "literal_meaning": "«Ти не тіло, і тіло не твоє; і не ти — той, хто споживає чи чинить. Ти маєш природу свідомості, повсякчас свідок, без залежності — живи легко.»",
+  "ukrainian_translation": "Ти не тіло, і тіло не твоє; і не ти — той, хто споживає чи чинить. Ти маєш природу свідомості, повсякчас свідок, без залежності — живи легко.",
+  "commentary": "`sākṣin` («свідок») тут єдиний раз у главі й стоїть у трійці з `cidrūpa` і `nirapekṣa`; переклад мусить тримати його як термін, а не як метафору. `sukhaṃ cara` — наказовий спосіб, «живи легко»: це не опис стану, а запрошення. Формула «не тіло, і тіло не твоє» та сама, що в 8.4, 11.6 і 2.22 — тут до неї додано заперечення **діяча й споживача**, чого в тих місцях не було.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
