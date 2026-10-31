@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.66",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.66",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.66",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva saṃsāraḥ kva cābhāsaḥ kva sādhyaṃ kva ca sādhanam | ākāśasyeva dhīrasya nirvikalpasya sarvadā ||",
+  "iast": "kva saṃsāraḥ kva cābhāsaḥ kva sādhyaṃ kva ca sādhanam | ākāśasyeva dhīrasya nirvikalpasya sarvadā ||",
+  "grammar": "kva saṃsāraḥ (m. nom. sg.) kva ca ābhāsaḥ (m. nom. sg. «відблиск, видимість») kva sādhyam (n. nom. sg. «те, що слід досягти») kva ca sādhanam (n. nom. sg. «засіб досягнення»). ākāśasya (n. gen. sg. «простора») iva dhīrasya (m. gen. sg.) nirvikalpasya (m. gen. sg. «без розрізнень») sarvadā («завжди»).",
+  "literal_meaning": "«Де сансара, де [її] видимість, де те, що слід досягти, де засіб — у мудрого, без розрізнень, завжди, як у простору?»",
+  "ukrainian_translation": "Де сансара, де навіть її видимість, де мета, де засіб — у мудрого, вільного від розрізнень, завжди, як у простору?",
+  "commentary": "Чотири питання закривають усю схему практики: світ, його видимість, мета, засіб. `ābhāsa` («відблиск») доданий навмисно — після сансари питається й про її тінь, тобто навіть заперечення не має місця. Порівняння з простором (`ākāśa`) — те саме, що в 6.1, але тут воно в родовому: не «я — простір», а «в нього, як у простору».",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

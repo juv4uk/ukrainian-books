@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.68",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.68",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.68",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "bahunātra kim uktena jñātatattvo mahāśayaḥ | bhogamokṣanirākāṅkṣī sadā sarvatra nīrasaḥ ||",
+  "iast": "bahunātra kim uktena jñātatattvo mahāśayaḥ | bhogamokṣanirākāṅkṣī sadā sarvatra nīrasaḥ ||",
+  "grammar": "bahunā (n. instr. sg. «багато») atra («тут») kim uktena (n. instr. sg. «навіщо сказаним, до чого багато слів»). jñātatattvaḥ (m. nom. sg. «той, хто пізнав істину»: jñāta «пізнаний» + tattva) mahāśayaḥ (m. nom. sg. «великодухий»). bhogamokṣanirākāṅkṣī (m. nom. sg. «той, хто не прагне ні насолод, ні визволення»: bhoga «насолода» + mokṣa «визволення» + nirākāṅkṣin «той, хто не бажає»). sadā sarvatra nīrasaḥ (m. nom. sg. «завжди й скрізь без соку, без смаку [до них]»: nis «без» + rasa).",
+  "literal_meaning": "«До чого тут багато слів: великодухий, що пізнав істину, не прагне ні насолод, ні визволення — завжди й скрізь він без смаку [до них].»",
+  "ukrainian_translation": "До чого тут багато слів: великодухий, що пізнав істину, не прагне ні насолод, ні визволення — завжди й скрізь він без смаку до них.",
+  "commentary": "`bhogamokṣanirākāṅkṣī` — найсильніше складове блоку: насолода й визволення поставлені в один ряд як рівноцінні об'єкти прагнення, і обидва зняті. `nīrasa` («без соку») — не «байдужий», а саме позбавлений смаку до них: метафора їжі, не емоції. `bahunātra kim uktena` — формула, що закриває розмову, і вона стоїть передостаннім віршем глави.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
