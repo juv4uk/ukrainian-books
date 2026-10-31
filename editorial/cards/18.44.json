@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.44",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.44",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.44",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "mumukṣor buddhir ālambam antareṇa na vidyate | nirālambaiva niṣkāmā buddhir muktasya sarvadā ||",
+  "iast": "mumukṣor buddhir ālambam antareṇa na vidyate | nirālambaiva niṣkāmā buddhir muktasya sarvadā ||",
+  "grammar": "mumukṣoḥ (m. gen. sg. «того, хто прагне визволення»: дезидератив muc) buddhiḥ (f. nom. sg. «розум») ālambam (m. acc. sg. «опору, зачіпку») antareṇa («без») na vidyate («не буває»). nirālambā (f. nom. sg. «без опори») eva niṣkāmā (f. nom. sg. «без бажань») buddhiḥ (f. nom. sg.) muktasya (m. gen. sg. «у вільного») sarvadā («завжди»).",
+  "literal_meaning": "«У того, хто прагне визволення, розум не буває без опори; а в вільного розум без опори й без бажань — завжди.»",
+  "ukrainian_translation": "У того, хто прагне визволення, розум не буває без опори. А у вільного розум без опори й без бажань — завжди.",
+  "commentary": "Пара mumukṣu / mukta («той, хто прагне» / «вільний») і єдине слово ālamba («опора») розділяє їх: прагнення за визначенням потребує опори, бо мусить на щось спертися. Друга половина додає niṣkāmā («без бажань») — тобто відсутність опори й відсутність бажання тут не два факти, а один.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжності лише в поділі слів (buddhirālambam / buddhir ālambam, nirālambaiva / nirālamba eva). Та сама форма. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.41",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.41",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.41",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva nirodho vimūḍhasya yo nirbandhaṃ karoti vai | svārāmasyaiva dhīrasya sarvadāsāv akṛtrimaḥ ||",
+  "iast": "kva nirodho vimūḍhasya yo nirbandhaṃ karoti vai | svārāmasyaiva dhīrasya sarvadāsāv akṛtrimaḥ ||",
+  "grammar": "kva («де?») nirodhaḥ (m. nom. sg. «припинення») vimūḍhasya (m. gen. sg. «зовсім затьмареного») yaḥ (m. nom. sg.) nirbandham (m. acc. sg. «наполегливість, змушування») karoti vai («робить же»). svārāmasya (m. gen. sg. «того, чия втіха — власне [я]»: sva + ārāma) eva dhīrasya (m. gen. sg.) sarvadā («завжди») asau (m. nom. sg. «той») akṛtrimaḥ (m. nom. sg. «невдаваний, непідробний»: a «не» + kṛtrima «зроблений, штучний»).",
+  "literal_meaning": "«Де припинення в зовсім затьмареного, який наполягає? У мудрого, чия втіха — в собі, він завжди невдаваний.»",
+  "ukrainian_translation": "Де припинення в того, хто зовсім затьмарився і наполягає? У мудрого, чия втіха — в собі, воно завжди невдаване.",
+  "commentary": "Протиставлення точне: nirodha можна робити (karoti), а akṛtrima — «невдаване» — робити не можна за визначенням. Тому питання kva («де?») стосується не місця, а самої можливості. svārāma («чия втіха — в собі») — те саме слово, що в 18.23; тут воно протиставлене nirbandha («наполегливості»).",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
