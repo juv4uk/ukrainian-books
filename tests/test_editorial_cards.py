@@ -74,6 +74,48 @@ class CardTests(unittest.TestCase):
     def test_reviewed_passes_synthetic_fields(self) -> None:
         self.assertEqual(validate_card(self.reviewed(), self.ids), [])
 
+    def test_unknown_root_field(self) -> None:
+        card = self.draft()
+        card["zaive"] = "непередбачене поле"
+        self.assert_invalid(card, "картка: невідоме поле 'zaive'")
+
+    def test_unknown_sources_field(self) -> None:
+        card = self.draft()
+        card["sources"]["unknown"] = card["sources"]["gretil"].copy()
+        self.assert_invalid(card, "sources: невідоме поле 'unknown'")
+
+    def test_unknown_witness_field(self) -> None:
+        card = self.draft()
+        card["sources"]["sarit"]["cheked_on"] = "2026-10-31"
+        self.assert_invalid(card, "sources.sarit: невідоме поле 'cheked_on'")
+
+    def test_unknown_variant_field(self) -> None:
+        card = self.draft()
+        card["variants"] = [{
+            "witness": "Синтетичний свідок",
+            "note": "Синтетична примітка",
+            "evidence_url": "https://example.com/synthetic",
+            "revied": True,
+        }]
+        self.assert_invalid(card, "variants[0]: невідоме поле 'revied'")
+
+    def test_unknown_rights_field(self) -> None:
+        card = self.draft()
+        card["rights"]["verifed"] = True
+        self.assert_invalid(card, "rights: невідоме поле 'verifed'")
+
+    def test_unknown_review_field(self) -> None:
+        card = self.draft()
+        card["review"]["reviewd_on"] = "2026-10-31"
+        self.assert_invalid(card, "review: невідоме поле 'reviewd_on'")
+
+    def test_existing_verse_card_remains_valid(self) -> None:
+        real = Path(__file__).resolve().parents[1] / "editorial/cards/1.2.json"
+        self.assertEqual(
+            validate_card(json.loads(real.read_text(encoding="utf-8")), self.ids, "1.2.json"),
+            [],
+        )
+
     def test_unknown_verse(self) -> None:
         card = self.draft()
         card["id"] = "20.15"
