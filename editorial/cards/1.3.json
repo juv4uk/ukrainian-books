@@ -8,7 +8,7 @@
     "gretil": {
       "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
       "locator": "Avg_1.3",
-      "checked_on": null
+      "checked_on": "2026-10-31"
     },
     "sarit": {
       "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
@@ -24,17 +24,12 @@
   "commentary": "Вірш будує заперечення не як список того, чим ти не є, а як зняття ототожнення: п'ять стихій — це складники тіла й світу, і шосте заперечення (na bhavān) закриває вихід через «але ж я — це щось інше». Те, що лишається, названо двома словами: sākṣin («свідок») і cidrūpa («той, чия форма — cit»). Обидва — позитивні визначення після низки заперечень, і саме вони роблять вірш не просто негативним. sākṣin тут не «спостерігач» у побутовому сенсі, а те, що не входить до складу спостережуваного; пор. вживання в 1.7 і далі. cidrūpa — bahuvrīhi, тому «чия природа — cit», а не «свідомість-форма». muktaye (dativus finalis) показує, що пізнання тут не самоціль, а умова звільнення. Переклад «знай» для viddhi — наказовий спосіб, не побажання.",
   "variants": [
     {
-      "witness": "SARIT (перевірено) проти GRETIL (НЕ перевірено)",
-      "note": "GRETIL із цього середовища недосяжний (з'єднання не встановлюється, HTTP 000), тому звірено лише за SARIT. Різночитань не зафіксовано, але й не шукано: відсутність запису тут означає НЕ ПЕРЕВІРЕНО, а не «збігається».",
-      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
-    },
-    {
-      "witness": "SARIT, оформлення",
-      "note": "SARIT подає сандгі злитно (nāgnir, vāyurdyaur) і додає маркери пад (|); у картці розгорнуто для читача. Це не різночитання.",
-      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+      "witness": "GRETIL (Avg_1.3) проти SARIT (verse_1.3)",
+      "note": "Після нормалізації читання ЗБІГАЮТЬСЯ. SARIT подає сандгі злитно (nāgnirna, vāyurdyaurna), GRETIL — роздільно (nāgnir na, vāyur dyaur na). Це відмінність поділу слів, не тексту. Перевірено scripts/fetch_witnesses.py 1.3: ЗБІГ-БЕЗ-ПРОБІЛІВ.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
     }
   ],
-  "variants_checked": false,
+  "variants_checked": true,
   "rights": {
     "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрова транскрипція SARIT має власні умови (CC BY-SA 3.0, availability restricted); її редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
     "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
