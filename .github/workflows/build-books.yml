@@ -1,0 +1,45 @@
+name: Складання власних видань
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pdf:
+    name: XeLaTeX — власні дозволені книги
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Перевірити права й джерела
+        run: python3 scripts/check_project.py
+      - name: Перевірити наявність книжкових джерел
+        id: detect
+        shell: bash
+        run: |
+          if [ -d books ] && find books -name main.tex -print -quit | grep -q .; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            echo "Дозволених до публікації власних TeX-видань поки немає." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Встановити XeLaTeX
+        if: steps.detect.outputs.found == 'true'
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq texlive-xetex texlive-lang-cyrillic latexmk fonts-dejavu-core
+      - name: Зібрати дозволені книги
+        if: steps.detect.outputs.found == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' file; do
+            dir="$(dirname "$file")"
+            [ -f "$dir/PROVENANCE.md" ] || { echo "Немає паспорта походження у $dir"; exit 1; }
+            (cd "$dir" && latexmk -xelatex -interaction=nonstopmode -halt-on-error -file-line-error main.tex)
+          done < <(find books -name main.tex -print0)
+      - name: Зберегти PDF
+        if: steps.detect.outputs.found == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ukrainski-vydannia
+          path: books/**/*.pdf
+          if-no-files-found: error

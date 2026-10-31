@@ -1,0 +1,31 @@
+name: Український переклад
+description: Фрагмент власного оригінального перекладу
+body:
+  - type: input
+    id: verses
+    attributes:
+      label: Точний обсяг
+      placeholder: Аштавакра-ґіта 1.2–1.5
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Джерела й права
+      description: Автор, конкретне видання та правова підстава
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: CLAIM
+      description: Виконавець, файли, початок, межі роботи
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерії готовності
+      description: Вичитка, звіряння, перевірка прав, CI
+    validations:
+      required: true

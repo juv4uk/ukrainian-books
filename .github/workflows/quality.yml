@@ -1,0 +1,24 @@
+name: Якість і походження
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    name: Структура, права та посилання
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити структуру і ліцензію
+        run: python3 scripts/check_project.py
+      - name: Зберегти звіт
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rezultaty-yakosti
+          path: reports/checks.json
+          if-no-files-found: ignore
