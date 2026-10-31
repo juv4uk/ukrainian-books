@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.64",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.64",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.64",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "sarvārambheṣu niṣkāmo yaś cared bālavan muniḥ | na lepas tasya śuddhasya kriyamāṇe 'pi karmaṇi ||",
+  "iast": "sarvārambheṣu niṣkāmo yaś cared bālavan muniḥ | na lepas tasya śuddhasya kriyamāṇe 'pi karmaṇi ||",
+  "grammar": "sarvārambheṣu (m. loc. pl. «у всіх починаннях, заходах»: sarva + ārambha) niṣkāmaḥ (m. nom. sg. «без бажань») yaḥ (m. nom. sg.) caret (3 sg. opt. car «поводився б, діяв би») bālavat (прислівник «як дитина») muniḥ (m. nom. sg. «мудрець, мовчальник»). na lepaḥ (m. nom. sg. «немає налипання, забруднення») tasya (m. gen. sg.) śuddhasya (m. gen. sg. «чистого») kriyamāṇe (n. loc. sg. «коли робиться») api karmaṇi (n. loc. sg. «діяння»).",
+  "literal_meaning": "«Мудрець, що без бажань у всіх починаннях, поводиться як дитина; у чистого немає налипання, навіть коли діяння робиться.»",
+  "ukrainian_translation": "Мудрець, що без бажань у всіх починаннях, поводиться як дитина. У чистого немає налипання, навіть коли діяння робиться.",
+  "commentary": "`bālavat` («як дитина») — те саме слово, що в 18.7 і 18.49, і тут воно означає не наївність, а відсутність розрахунку. `lepa` («налипання») — технічне слово про те, як дія пристає до діяча; `kriyamāṇe 'pi karmaṇi` (locativus absolutus) ставить умову максимально невигідно: дія справді робиться, а налипання немає.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
