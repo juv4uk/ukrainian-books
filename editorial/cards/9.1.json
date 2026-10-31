@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "9.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_9.1",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_9.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kṛtākṛte ca dvandvāni kadā śāntāni kasya vā| evaṃ jñātveha nirvedādbhava tyāgaparo+avratī||9|1||",
+  "iast": "kṛtākṛte ca dvandvāni kadā śāntāni kasya vā | evaṃ jñātveha nirvedād bhava tyāgaparo 'vratī ||",
+  "grammar": "kṛta-akṛte (n. du. «зроблене й незроблене») ca dvandvāni («пари [протилежностей]») kadā śāntāni («коли втихли») kasya vā («і чиї») | evam jñātvā (герундив «так знаючи») iha nirvedāt («тут, з відречення») bhava («будь») tyāga-paraḥ («той, хто схильний до відкидання») avratī («без обітниць»).",
+  "literal_meaning": "«Зроблене й незроблене, пари протилежностей — коли вони втихли і чиї вони? Так знаючи, будь тут, у відреченні, схильним до відкидання — і без обітниць.»",
+  "ukrainian_translation": "Зроблене й незроблене, пари протилежностей — коли вони втихли і чиї вони? Так знаючи, будь тут, у відреченні, схильним до відкидання — і без обітниць.",
+  "commentary": "`avratī` («без обітниць») — не дрібниця: текст водночас радить `tyāga` (відкидання) і знімає `vrata` (обітницю). Тобто відкидання не повинно стати новою дисципліною — інакше воно перетвориться на те, від чого відкидають. Питання `kasya vā` («і чиї ж вони?») залишене без відповіді навмисно.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
