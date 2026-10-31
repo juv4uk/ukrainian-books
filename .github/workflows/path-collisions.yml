@@ -1,0 +1,19 @@
+name: Узгодженість назв Git-файлів
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  path-collisions:
+    name: Регістр і Unicode шляхів
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити колізії назв Git-файлів
+        run: python3 scripts/check_path_collisions.py
+      - name: Запустити позитивні та негативні тести
+        run: python3 -m unittest discover -s tests -p 'test_path_collisions.py' -v

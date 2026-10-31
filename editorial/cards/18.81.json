@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.81",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.81",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.81",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "naiva prārthayate lābhaṃ nālābhenānuśocati | dhīrasya śītalaṃ cittam amṛtenaiva pūritam ||",
+  "iast": "naiva prārthayate lābhaṃ nālābhenānuśocati | dhīrasya śītalaṃ cittam amṛtenaiva pūritam ||",
+  "grammar": "na eva prārthayate (3 sg. prārth «не прагне, не просить») lābham (m. acc. sg. «набутку») na alābhena anuśocati («не сумує через ненабуток»: anu-śuc «оплакувати»). dhīrasya (m. gen. sg.) śītalam (n. nom. sg. «прохолодний») cittam (n. nom. sg.) amṛtena (n. instr. sg. «амрітою, нектаром безсмертя»: a «не» + mṛta «смерть») eva pūritam (n. nom. sg. «сповнений»).",
+  "literal_meaning": "«Він не прагне набутку й не сумує через ненабуток: розум мудрого прохолодний, сповнений амрітою.»",
+  "ukrainian_translation": "Він не прагне набутку й не сумує через ненабуток: розум мудрого прохолодний, сповнений амрітою.",
+  "commentary": "Пара `lābha` / `alābha` (набуток / ненабуток) закриває обидва боки, як і в 18.28 і 18.34. `śītala` («прохолодний») повторює 18.22 і 18.30 — це стале слово глави для позначення стану, який не нагрівається ні втратою, ні придбанням. `amṛta` тут не метафора безсмертя, а те, чим розум сповнений замість очікування.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжність: SARIT — nā+alābhamanuśocati (alābham, знахідний: «не сумує [за] ненабутком»), GRETIL — nālābhenānuśocati (alābhena, орудний: «не сумує через ненабуток»). Обидва дають той самий сенс; різниця відмінка не змінює твердження. Не смислове різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

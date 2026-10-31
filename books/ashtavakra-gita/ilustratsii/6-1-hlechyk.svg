@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="t6-1">
+  <title id="t6-1">Простір у глечику: стінки ділять посуд, а не простір</title>
+  <rect width="420" height="260" fill="#fbf8f1"/>
+  <g stroke="#3b4a5a" fill="none" stroke-width="2">
+    <path d="M150 60 q-26 40 -26 78 q0 46 30 66 q26 16 62 16 q36 0 62 -16 q30 -20 30 -66 q0 -38 -26 -78"/>
+    <path d="M150 60 q60 -14 120 0"/>
+  </g>
+  <g stroke="#8aa0b5" stroke-width="1" stroke-dasharray="3 4">
+    <path d="M40 200 q170 -26 340 0"/>
+    <path d="M40 200 q170 -26 340 0" transform="translate(0 -120)"/>
+    <path d="M212 30 v180"/>
+  </g>
+  <g fill="#3b4a5a" font-family="serif" font-size="15">
+    <text x="20" y="245">стінки ділять посуд,</text>
+    <text x="20" y="30">а не простір</text>
+  </g>
+  <g fill="#b0762a" font-family="serif" font-size="14">
+    <text x="258" y="120">той самий</text>
+    <text x="258" y="140">простір</text>
+  </g>
+</svg>

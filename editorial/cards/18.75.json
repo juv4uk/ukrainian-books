@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.75",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.75",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.75",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nirodhādīni karmāṇi jahāti jaḍadhīr yadi | manorathān pralāpāṃś ca kartum āpnoti tatkṣaṇāt ||",
+  "iast": "nirodhādīni karmāṇi jahāti jaḍadhīr yadi | manorathān pralāpāṃś ca kartum āpnoti tatkṣaṇāt ||",
+  "grammar": "nirodhādīni (n. acc. pl. «ті, що починаються з припинення»: nirodha + ādi) karmāṇi (n. acc. pl. «діяння, практики») jahāti (3 sg. pr. hā «покидає») jaḍadhīḥ (m. nom. sg. «з тупим, неживим розумом»: jaḍa «неживий, тупий» + dhī) yadi («якщо»). manorathān (m. acc. pl. «забаганки, потяги уяви»: manas «розум» + ratha «колісниця») pralāpān (m. acc. pl. «балачки, безладні речі») ca kartum (інфінітив kṛ) āpnoti («береться, досягає») tatkṣaṇāt (m. abl. sg. «з тієї ж миті»: tad «те» + kṣaṇa «мить»).",
+  "literal_meaning": "«Якщо тупий розумом покидає діяння, починаючи з припинення, — він береться робити забаганки й балачки, і саме з тієї ж миті.»",
+  "ukrainian_translation": "Якщо тупий розумом покидає діяння, починаючи з припинення, — він береться за забаганки й балачки, і саме з тієї ж миті.",
+  "commentary": "Точний механізм підміни: покинувши практику, людина не заспокоюється, а починає `manoratha` (забаганки) і `pralāpa` (балачки). `manoratha` буквально «колісниця розуму» — те, що везе думку геть. `tatkṣaṇāt` («з тієї ж миті») робить це не поступовим, а негайним.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ, ПРОТИЛЕЖНИЙ ЗМІСТ: SARIT — tatkṣaṇāt («з тієї ж миті»), GRETIL — atatkṣaṇāt («НЕ з тієї миті»). Читання GRETIL дає «не відразу», що суперечить будові вірша: уся його сила в тому, що підміна негайна. SARIT узгоджується зі змістом і з наголосом на швидкості. Взято SARIT; висновок із внутрішньої логіки, третього свідка для 18.75 не перевірено.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

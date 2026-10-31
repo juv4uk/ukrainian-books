@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.14",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.14",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.14",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yattvaṃ paśyasi tatraikastvameva pratibhāsase| kiṃ pṛthagbhāsate svarṇātkaṭakāṅgadanūpuram||15|14||",
+  "iast": "yad tvaṃ paśyasi tatraikas tvam eva pratibhāsase | kiṃ pṛthag bhāsate svarṇāt kaṭakāṅgadanūpuram ||",
+  "grammar": "yat tvam paśyasi («те, що ти бачиш») tatra ekaḥ tvam eva pratibhāsase («там один сяєш саме ти») | kim pṛthak bhāsate svarṇāt («чи сяє окремо від золота») kaṭaka-aṅgada-nūpuram («браслет, наруч і ножна прикраса»).",
+  "literal_meaning": "«Те, що ти бачиш, — там сяєш один саме ти. Чи сяє окремо від золота браслет, наруч або ножна прикраса?»",
+  "ukrainian_translation": "Те, що ти бачиш, — там сяєш один саме ти. Чи сяє окремо від золота браслет, наруч або ножна прикраса?",
+  "commentary": "Риторичне питання з відповіддю «ні»: три прикраси названі поіменно, щоб показати, що різниця між ними — лише форма, а речовина одна. Це той самий хід, що з хвилями в 15.7 і 15.11, але тут він зроблений на **речі**, а не на стихії. `pratibhāsase` — «сяєш, постаєш», споріднене з `sphurati` в 15.7; переклад мусить тримати цю спорідненість.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "1.12",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.12",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.12",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "asaṅgo niḥspṛhaḥ śānto bhramātsaṃsāravāniva||1|12||",
+  "iast": "asaṅgo niḥspṛhaḥ śānto bhramāt saṃsāravān iva ||",
+  "grammar": "asaṅgaḥ («без прив'язаності») niḥspṛhaḥ («без жадання») śāntaḥ («втихлий») bhramāt («через оману») saṃsāravān iva («наче той, хто в сансарі»).",
+  "literal_meaning": "«Без прив'язаності, без жадання, втихлий — через оману він видається тим, хто в сансарі.»",
+  "ukrainian_translation": "Без прив'язаності, без жадання, втихлий — через оману він видається тим, хто в сансарі.",
+  "commentary": "Вірш короткий: у SARIT він має лише один рядок (два піди), тоді як сусідній 1.13 — два. Чи це справжня коротка форма, чи втрачена половина, за одним свідком не встановити; тому картка лишається чернеткою, а сумнів зафіксовано в `variants`. `saṃsāravān iva` — «**наче** той, хто в сансарі»: `iva` несе всю думку, бо стан у сансарі тут лише видимість, а не факт. Переклад без «наче» знищив би вірш.",
+  "variants": [
+    {
+      "witness": "SARIT, lg xml:id=verse_1.12",
+      "note": "Вірші 1.12 і 1.13 лежать в одному lg з трьох рядків: рядок 1 закінчується номером 1.12, рядки 2-3 — номером 1.13. Отже 1.12 у цьому свідку має лише два піди (один рядок), а 1.13 — чотири (два рядки). Чи бракує 1.12 другої половини, чи він справді короткий — за одним свідком вирішити не можна; GRETIL недоступний (HTTP 403).",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
