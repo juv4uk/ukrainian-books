@@ -22,6 +22,9 @@ def inspect_url(witness: str, value: object) -> tuple[str | None, list[str]]:
     notes: list[str] = []
     if not isinstance(value, str) or not value.strip():
         return "потрібна непорожня адреса HTTPS", notes
+    # urlsplit() вилучає CR/LF/TAB до перевірки: відхиляємо сирі керівні символи.
+    if any(ord(ch) < 32 or ord(ch) == 127 for ch in value):
+        return "керівні символи в URL свідка заборонені", notes
     try:
         parts = urlsplit(value)
         host, port = parts.hostname, parts.port
@@ -89,11 +92,16 @@ def audit(folder: Path) -> dict[str, object]:
     elif folder.exists() and not folder.is_dir():
         errors.append(f"{folder}: очікується каталог")
     elif folder.is_dir():
+        # rglob("*.json") НЕ спускається у вкладені символічні каталоги.
+        # Навіть якщо такі картки приховані від обліку, сам symlink має бути помилкою.
+        for entry in sorted(folder.rglob("*")):
+            if entry.is_symlink():
+                errors.append(f"{entry.relative_to(folder).as_posix()}: символічне посилання в каталозі карток")
         for file in sorted(folder.rglob("*.json")):
             count += 1
             name = file.relative_to(folder).as_posix()
             if file.is_symlink():
-                errors.append(f"{name}: символічні посилання на картки не дозволено")
+                # Помилку вже додано під час перевірки всіх файлових шляхів.
                 continue
             try:
                 card = json.loads(file.read_text(encoding="utf-8"))
