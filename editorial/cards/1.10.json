@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "1.10",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.10",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.10",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yatra viśvam idaṃ bhāti kalpitaṃ rajjusarpavat | ānandaparamānandaḥ sa bodhas tvaṃ sukhaṃ cara ||",
+  "iast": "yatra viśvam idaṃ bhāti kalpitaṃ rajjusarpavat | ānandaparamānandaḥ sa bodhas tvaṃ sukhaṃ cara ||",
+  "grammar": "yatra («де») viśvam (n. nom. sg. «усе») idam (n. nom. sg.) bhāti («сяє, являється») kalpitam (n. nom. sg. «вигадане, сконструйоване») rajjusarpavat (прислівник: rajju «мотузка» + sarpa «змія» + -vat «як»). ānanda-paramānandaḥ (bahuvrīhi або складений іменник: «радість і найвища радість») saḥ (m. nom. sg.) bodhaḥ («прозріння») tvam (nom. sg. «ти») sukhaṃ cara (прислівник «щасливо» + 2 sg. impv. car- «ходи, живи»). Остання пада — не опис, а наказ.",
+  "literal_meaning": "«Де все це сяє, вигадане, як змія в мотузці, — ти є те прозріння, що є радістю й найвищою радістю; ходи щасливо.»",
+  "ukrainian_translation": "Там, де все це сяє — вигадане, як змія в мотузці, — ти є те прозріння, що є радістю і найвищою радістю. Ходи щасливо.",
+  "commentary": "Образ мотузки й змії — класичний для адвайти: помилка не в тому, що видно, а в тому, що до видимого додано. kalpitam («вигадане») стоїть одразу після viśvam, тобто вигадане саме «все», а не окремий предмет. Друга пада не заперечує світ, а переносить питання: питання не «чи є світ», а «хто той, у кому він сяє». ānandaparamānandaḥ — подвійна радість, і це не тавтологія: перша належить прозрінню, друга — тому, що за ним. Наказ sukhaṃ cara («ходи щасливо») — дієвий, а не описовий: це спосіб перебування, а не обіцянка стану.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; різниця лише в поділі слів (bodhastvaṃ / bodhas tvaṃ). Закінчення sukhaṃ cara в обох свідках. У Vaidika Vignanam цей вірш закінчується सुखं भव (sukhaṃ bhava), а 1.8 там має सुखं चर — тобто закінчення 1.8 і 1.10 у Vignanam переставлені відносно SARIT і GRETIL. Яке розташування правильне, не встановлено; див. research/ashtavakra/third-witness.md.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
