@@ -49,6 +49,12 @@ def main() -> int:
     parser.add_argument("--cards", type=Path, default=CARDS)
     parser.add_argument("--strict", action="store_true")
     args = parser.parse_args()
+    # Відсутній або підмінений каталог не є доказом відсутності повторів.
+    if args.cards.is_symlink() or not args.cards.is_dir():
+        print(f"ПОМИЛКА: каталог карток недоступний або непридатний: {args.cards}",
+              file=sys.stderr)
+        return 2
+
     cards: list[tuple[str, str]] = []
     count = 0
     if args.cards.exists():
@@ -63,6 +69,10 @@ def main() -> int:
             verse, sanskrit = card.get("id"), card.get("sanskrit")
             if isinstance(verse, str) and isinstance(sanskrit, str):
                 cards.append((verse, sanskrit))
+    if count == 0:
+        print(f"ПОМИЛКА: у каталозі карток немає JSON для перевірки: {args.cards}",
+              file=sys.stderr)
+        return 2
     duplicates = find_duplicates(cards)
     if not duplicates:
         print(f"ОДНАКОВИЙ ТЕКСТ: {count} карток, повторів немає")
