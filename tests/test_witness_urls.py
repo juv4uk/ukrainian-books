@@ -94,7 +94,7 @@ class WitnessUrlsTests(unittest.TestCase):
             (folder / "1.2.json").write_text(json.dumps({"sources": {
                 "gretil": {"url": GRETIL}, "sarit": {"url": SARIT_PINNED}}}), encoding="utf-8")
             (folder / "1.3.json").write_text(json.dumps({"sources": {
-                "gretil": {"url": MIRROR}, "sarit": {"url": SARIT}}), encoding="utf-8")
+                "gretil": {"url": MIRROR}, "sarit": {"url": SARIT}}}), encoding="utf-8")
             result = module.audit(folder)
         self.assertEqual(result["status"], "ok")
         self.assertEqual(result["cards"], 2)
