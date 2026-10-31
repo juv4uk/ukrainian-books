@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "2.23",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.23",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.23",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "aho bhuvanakallolair vicitrair drāk samutthitam | mayy anantamahāmbhodhau cittavāte samudyate ||",
+  "iast": "aho bhuvanakallolair vicitrair drāk samutthitam | mayy anantamahāmbhodhau cittavāte samudyate ||",
+  "grammar": "aho (вигук) bhuvanakallolaiḥ (m. instr. pl. «хвилями світів»: bhuvana «світ» + kallola «хвиля»). vicitraiḥ (m. instr. pl. «різнобарвними, різноманітними»). drāk («швидко, раптом»). samutthitam (n. nom. sg. дієприкметника минулого часу sam-ut-thā «піднялося»). mayi (loc. sg. «у мені») anantamahāmbhodhau (m. loc. sg. «у безмежному великому океані»: ananta «безмежний» + mahā «великий» + ambhodhi «океан»). cittavāte (m. loc. sg. «коли вітер розуму»: citta «розум, свідомість» + vāta «вітер») samudyate (3 sg. pr. sam-ud-i «здіймається»).",
+  "literal_meaning": "«О диво! Різнобарвні хвилі світів швидко піднялися — коли в мені, безмежному великому океані, здіймається вітер розуму.»",
+  "ukrainian_translation": "О диво! Різнобарвні хвилі світів раптом піднялися — бо в мені, безмежному великому океані, здіймається вітер розуму.",
+  "commentary": "Початок триптиха (2.23–2.25), де той самий образ розгортається в три кроки: вітер здіймається, вітер вщухає, хвилі граються самі. Тут важлива **причинність**: хвилі не є океаном і не породжені ним безпосередньо — їх піднімає вітер, тобто citta. Океан лишається океаном і без хвиль. Слово ambhodhi буквально означає «той, що містить води» — це поетичне іменування океану, і воно тримає образ: води багато, хвиля — її форма, а не додаток. Порівняй 2.10, де були горщик у глині й хвиля у воді: там ішлося про невідокремленість наслідку, тут — про те, що рух має причину, і причина не в океані.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
