@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "10.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_10.4",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_10.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tṛṣṇāmātrātmako bandhastannāśo mokṣa ucyate| bhavāsaṃsaktimātreṇa prāptituṣṭirmuhurmuhuḥ||10|4||",
+  "iast": "tṛṣṇāmātrātmako bandhas tannāśo mokṣa ucyate | bhavāsaṃsaktimātreṇa prāptituṣṭir muhur muhuḥ ||",
+  "grammar": "tṛṣṇā-mātrātmakaḥ (bahuvrīhi «чия сутність — сама лише спрага») bandhaḥ | tat-nāśaḥ (m. «його знищення») mokṣaḥ ucyate («називається») | bhava-asaṃsakti-mātreṇa («самою лише неприв'язаністю до буття») prāpti-tuṣṭiḥ («вдоволеність досягнутим») muhur muhuḥ («знову й знову»).",
+  "literal_meaning": "«Полон має природу самої лише спраги; її знищення називають визволенням. Від самої лише неприв'язаності до буття — вдоволеність досягнутим, знову й знову.»",
+  "ukrainian_translation": "Полон має природу самої лише спраги; її знищення називають визволенням. Від самої лише неприв'язаності до буття приходить вдоволеність досягнутим — знову й знову.",
+  "commentary": "Тут полон означено **однією** ознакою — спрага, і визволення теж однією — її знищення. Це найточніше місце глави, і воно коротке; розширювати переклад не варто. `toṣa` входить сюди як складник `prāpti-tuṣṭi` («вдоволеність досягнутим»), а не як самостійна чеснота — це варто пам'ятати при звірці з 1.2, де `toṣa` стоїть окремо. `muhur muhuḥ` — не «завжди», а «раз у раз»: вдоволеність повторюється, а не тримається одного разу назавжди.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
