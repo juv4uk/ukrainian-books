@@ -2,7 +2,8 @@
 """РЕД-05: виявити технічні пошкодження Unicode у власних текстах.
 
 Обсяг (з 31.10.2026): `books/**` (книжкові тексти й паспорти походження),
-`editorial/cards/*.json` (редакторські картки) і `research/**/*.md`
+`editorial/cards/*.json` (редакторські картки), `editorial/drafts/**/*.md`
+(нерецензовані чернетки) і `research/**/*.md`
 (дослідницькі примітки). Розширення на картки й примітки зроблено після того,
 як у `editorial/cards/2.2.json` роками жив дефект «свіЂ» замість «світ»
 (U+0402), «Аштавакрааёіти» замість «Аштавакра-ґіти» (U+0451) і
@@ -211,7 +212,8 @@ def iter_scope_files(root: Path, scope: str) -> list[tuple[Path, bool]]:
 
     `books/**` — усі текстові розширення, без «прозових» правил (верстка
     `.tex` законно містить вирівнювання). `editorial/cards/*.json` і
-    `research/**/*.md` — суцільний текст, тому з «прозовими» правилами.
+    `editorial/drafts/**/*.md` і `research/**/*.md` — суцільний текст,
+    тому з «прозовими» правилами.
     """
     if scope == "books":
         base = root / "books"
@@ -229,6 +231,14 @@ def iter_scope_files(root: Path, scope: str) -> list[tuple[Path, bool]]:
             return []
         return [(path, True) for path in sorted(base.glob("*.json"))
                 if not path.is_symlink() and path.is_file()]
+    if scope == "drafts":
+        base = root / "editorial" / "drafts"
+        if not base.is_dir() or base.is_symlink():
+            return []
+        return [(path, True) for path in sorted(base.rglob("*.md"))
+                if path.is_file() and not path.is_symlink()
+                and not any(parent.is_symlink() for parent in path.parents
+                            if parent != base and parent != root)]
     if scope == "research":
         base = root / "research"
         if not base.is_dir():
@@ -239,10 +249,10 @@ def iter_scope_files(root: Path, scope: str) -> list[tuple[Path, bool]]:
 
 
 def audit(root: Path) -> dict:
-    """Перевірити всі три обсяги; не переходити за симлінками."""
+    """Перевірити чотири обсяги; не переходити за симлінками."""
     errors: list[dict] = []
     per_scope: dict[str, int] = {}
-    for scope in ("books", "cards", "research"):
+    for scope in ("books", "cards", "drafts", "research"):
         examined = 0
         for path, prose in iter_scope_files(root, scope):
             examined += 1
@@ -262,7 +272,8 @@ def audit(root: Path) -> dict:
         "scanned_by_scope": per_scope,
         "errors": errors,
         "scope": ("books/** (книжкові тексти), editorial/cards/*.json (картки), "
-                  "research/**/*.md (примітки); це не орфографічна, наукова "
+                  "editorial/drafts/**/*.md (чернетки), research/**/*.md (примітки); "
+                  "це не орфографічна, наукова "
                   "чи правова перевірка"),
     }
 
