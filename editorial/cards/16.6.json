@@ -11,7 +11,7 @@
       "checked_on": "2026-10-31"
     },
     "sarit": {
-      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astavakragita.xml",
       "locator": "verse_16.6",
       "checked_on": "2026-10-31"
     }
@@ -31,7 +31,7 @@
   ],
   "variants_checked": true,
   "rights": {
-    "basis": "Власні українські граматичні пояснення, літературний переклад і коментар до давнього санскритського твору, з локалізованою цитатою тільки одного вірша та атрибуцією цифрових свідків. Цифрові версії мають окремі права: GRETIL/TextGrid подає CC BY-NC-SA 4.0 International, SARIT TEI — CC BY-SA 3.0 Unported та availability status=restricted. Ці умови не є ліцензією «ВОЛЬНІСТЬ» і не дозволяють приписати її чужим цифровим текстам. Повні транскрипції, сучасні переклади чи коментарі не копійовано. Правомірність цитування ще не перевірена незалежно, тому rights.verified=false.",
+    "basis": "Власні українські граматичні пояснення, літературний переклад і коментар до давнього санскритського твору, з локалізованою цитатою тільки одного вірша та атрибуцією цифрових свідків. Цифрові версії мають окремі права: GRETIL/TextGrid подає CC BY-NC-SA 4.0 International, SARIT TEI — CC BY-SA 3.0 Unported та availability status=restricted. Ці умови не є ліцензією «ВОЛЬНІСТЬ» і не дозволяють приписати її чужим цифровим текстам. Повні транскрипції, сучасні переклади чи коментарі не копійовано. Правомірність цитування ще не перевірена незалежно, тому rights.verified=false. Цитований свідок SARIT у полі sources.sarit.url закріплено за перевіреним Git-комітом 1eac9ee0b055c8d11147edac4a75c76008ccc363 (blob вмісту 0fbf1f2385b5e3331dd8dd625cab4b37c6d73103).",
     "evidence_url": "https://www.textgridrep.org/browse/49ks7.0",
     "verified": false,
     "own_ukrainian_text": true
