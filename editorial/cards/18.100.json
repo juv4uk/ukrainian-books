@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "18.100",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.100",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.100",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na dhāvati janākīrṇaṃ nāraṇyamupaśāntadhīḥ| yathātathā yatratatra sama evāvatiṣṭhate||18|100||",
+  "iast": "na dhāvati janākīrṇaṃ nāraṇyam upaśāntadhīḥ | yathātathā yatratatra sama evāvatiṣṭhate ||",
+  "grammar": "na dhāvati («не біжить») jana-ākīrṇam («до переповненого людьми») na araṇyam («ні до лісу») upaśānta-dhīḥ («той, чия думка втихла») | yathā-tathā yatra-tatra («так чи інакше, там чи там») samaḥ eva avatiṣṭhate («перебуває рівним»).",
+  "literal_meaning": "«Той, чия думка втихла, не біжить ні до переповненого людьми, ні до лісу; так чи інакше, там чи там він перебуває рівним.»",
+  "ukrainian_translation": "Той, чия думка втихла, не біжить ні до переповненого людьми, ні до лісу; так чи інакше, там чи там він перебуває рівним.",
+  "commentary": "Останній вірш книги. Дві відмови — не тікати до людей і не тікати до лісу — повторюють пару з 18.11, але тут вона про **рух**, а не про умови. `yathātathā yatratatra` — подвійна байдужість до способу й до місця; ця формула вже була в 9.4 і 15.18, і переклад мусить бути той самий. `sama eva avatiṣṭhate` — не «лишається спокійним», а «стоїть рівним»: `sama` — рівність, а не тиша.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.13",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.13",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.13",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na nindati na ca stauti | na hṛṣyati na kupyati | na dadāti na gṛhṇāti | muktaḥ sarvatra nīrasaḥ ||",
+  "iast": "na nindati na ca stauti | na hṛṣyati na kupyati | na dadāti na gṛhṇāti | muktaḥ sarvatra nīrasaḥ ||",
+  "grammar": "na nindati (√nind «осуджувати») na ca stauti (√stu «хвалити»). na hṛṣyati (√hṛṣ «радіти, збуджуватися») na kupyati (√kup «гніватися»). na dadāti (√dā, редуплікована основа теперішнього часу) na gṛhṇāti (√grah «брати»). muktaḥ «звільнений». sarvatra «усюди». nīrasaḥ — «без соку, без смаку» (niṣ + rasa); у переносному значенні «безпристрасний, позбавлений потягу». Складність: nīrasa звучить зневажливо, і це частина змісту: вірш не прикрашає, а констатує відсутність смаку до всього, що зазвичай смакує.",
+  "literal_meaning": "«Не осуджує й не хвалить, не радіє й не гнівається, не дає й не бере — звільнений усюди без соку.»",
+  "ukrainian_translation": "Не гудить і не хвалить, не тішиться й не гнівається, не дає й не бере — звільнений усюди без смаку до всього.",
+  "commentary": "Шість дієслів ідуть трьома парами, і кожна пара охоплює протилежності: осуд і хвала, радість і гнів, давання й брання. Схема та сама, що в 16.8 і 16.10: не вибір між протилежностями, а вихід із самої пари. Останнє слово, nīrasa, навмисно негарне — воно забирає в цього стану будь-яку привабливість. Це варто зберегти в перекладі: текст не обіцяє блаженства, він описує відсутність смаку. Слів mukti чи ātman тут немає — лише muktaḥ як означення.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.13) і SARIT (verse_17.13)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

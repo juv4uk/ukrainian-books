@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.19",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.19",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.19",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "mā saṃkalpavikalpābhyāṃ cittaṃ kṣobhaya cinmaya| upaśāmya sukhaṃ tiṣṭha svātmanyānandavigrahe||15|19||",
+  "iast": "mā saṃkalpavikalpābhyāṃ cittaṃ kṣobhaya cinmaya | upaśāmya sukhaṃ tiṣṭha svātmany ānandavigrahe ||",
+  "grammar": "mā saṃkalpa-vikalpābhyām («не [слід] через намір і домислювання») cittam kṣobhaya («збурювати ум») cinmaya («о сповнений свідомості») | upaśāmya («втихнувши») sukham tiṣṭha («стій легко») sva-ātmani ānanda-vigrahe («у собі — втіленні блаженства»).",
+  "literal_meaning": "«Не збурюй ум наміром і домислюванням, о сповнений свідомості. Втихнувши, стій легко у собі — втіленні блаженства.»",
+  "ukrainian_translation": "Не збурюй ум наміром і домислюванням, о сповнений свідомості. Втихнувши, стій легко у собі — втіленні блаженства.",
+  "commentary": "`saṃkalpa` і `vikalpa` названі парою як те, що збурює: перше — складання наміру, друге — роздвоєння-домислювання. Це ті самі два корені, що в 15.12 (`kalpanā`) і 15.15 (`niḥsaṃkalpa`), і разом вони утворюють послідовний словник глави. `ānandavigraha` («втілення блаженства») — єдине таке поєднання в книзі; це не «блаженна людина», а означення **себе**.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

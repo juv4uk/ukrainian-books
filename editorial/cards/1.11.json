@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "1.11",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.11",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.11",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "muktābhimānī mukto hi baddho baddhābhimānyapi| kiṃvadantīha satyeyaṃ yā matiḥ sā gatirbhavet||1|11||",
+  "iast": "muktābhimānī mukto hi baddho baddhābhimāny api | kiṃvadantīha satyeyaṃ yā matiḥ sā gatir bhavet ||",
+  "grammar": "mukta-abhimānī («той, хто вважає себе вільним») muktaḥ hi («справді вільний») baddhaḥ baddha-abhimānī api («і той, хто вважає себе зв'язаним, — зв'язаний») | kim vadanti iha satyā iyam («що тут скажуть? це правда») yā matiḥ sā gatiḥ bhavet («яке переконання, така й доля»).",
+  "literal_meaning": "«Хто вважає себе вільним — той вільний; хто вважає себе зв'язаним — зв'язаний. Що тут ще сказати? Яке переконання, така й доля.»",
+  "ukrainian_translation": "Хто вважає себе вільним — той вільний; хто вважає себе зв'язаним — зв'язаний. Що тут ще сказати? Яке переконання, така й доля.",
+  "commentary": "Формула `yā matiḥ sā gatiḥ` — «яке переконання, така й доля» — найпряміше місце книги про те, що стан визначається не фактом, а **самоозначенням**. `abhimānī` — не «той, хто думає» нейтрально, а той, хто **приписує собі**: той самий корінь, що в `ahaṃkāra` (1.6, 15.13). Друга половина (`kiṃvadantīha`) — риторичне «що тут казати», тобто текст сам визнає, що це звучить надто просто.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

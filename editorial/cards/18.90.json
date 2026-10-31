@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.90",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.90",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.90",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "jānann api na jānāti paśyann api na paśyati | bruvann api na ca brūte ko 'nyo nirvāsanād ṛte ||",
+  "iast": "jānann api na jānāti paśyann api na paśyati | bruvann api na ca brūte ko 'nyo nirvāsanād ṛte ||",
+  "grammar": "jānan (m. nom. sg. «знаючи») api na jānāti («не знає») paśyan (m. nom. sg. «бачачи») api na paśyati («не бачить») bruvan (m. nom. sg. «говорячи») api na ca brūte («і не говорить»). kaḥ anyaḥ (m. nom. sg. «хто інший?») nirvāsanāt (m. abl. sg. «крім вільного від васан, слідів») ṛte («крім, без»).",
+  "literal_meaning": "«І знаючи — не знає, і бачачи — не бачить, і говорячи — не говорить: хто інший, крім вільного від слідів?»",
+  "ukrainian_translation": "І знаючи — не знає, і бачачи — не бачить, і говорячи — не говорить. Хто інший, крім вільного від слідів?",
+  "commentary": "Три дієприкметники з `api` («і... таки») — найчистіша форма цієї думки в книзі: дія відбувається, діяч відсутній. `nirvāsana` («без васан») повертає до 18.21, де він був першим словом блоку, — глава замикається на собі. Питання `kaḥ anyaḥ` замість твердження: відповіді не дано, бо й питання стосується того, кого нема з чим порівняти (пор. 18.89).",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжності лише в аваґрасі та поділі слів (ko+anyo / ko 'nyo, nirvāsanādṛte / nirvāsanād ṛte). Та сама форма. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

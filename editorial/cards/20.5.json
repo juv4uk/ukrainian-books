@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.5",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.5",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.5",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva kartā kva ca vā bhoktā | niṣkriyaṃ sphuraṇaṃ kva vā | kvāparokṣaṃ phalaṃ vā kva | niḥsvabhāvasya me sadā ||",
+  "iast": "kva kartā kva ca vā bhoktā | niṣkriyaṃ sphuraṇaṃ kva vā | kvāparokṣaṃ phalaṃ vā kva | niḥsvabhāvasya me sadā ||",
+  "grammar": "kartā «діяч». bhoktā «споживач, той, хто зазнає». niṣkriyam — n. наз. одн. «бездіяльне» при sphuraṇam «спалах, сяйво, прояв» (від √sphur). kvāparokṣam = kva aparokṣam: aparokṣa «безпосереднє, не-опосередковане [пізнання]» — термін, що означає знання, яке не потребує посередництва відчуттів. phalam «плід». niḥsvabhāvasya — родовий одн. «у того, хто без власної природи» (niḥ-svabhāva). me sadā «у мене, завжди». Складність: kvāparokṣaṃ phalaṃ vā kva — тричленний зворот із двома kva; природно зрозуміти як «де безпосереднє [знання], де плід — де [вони]?».",
+  "literal_meaning": "«Де діяч, де споживач? Де бездіяльне сяйво? Де безпосереднє [пізнання] чи плід — де [це] у мене, хто завжди без власної природи?»",
+  "ukrainian_translation": "Де діяч, де той, хто зазнає? Де бездіяльне сяйво? Де безпосереднє знання, де його плід — у мене, в кого немає власної природи?",
+  "commentary": "Вірш забирає найстійкішу пару будь-якої системи — діяча й споживача — і додає до неї niṣkriya sphuraṇa, бездіяльне сяйво: те, що виявляється, не діючи. Це єдина в главі спроба назвати щось позитивне, і вона одразу поставлена під питання kva. Останнє слово — niḥsvabhāva, «без власної природи»; воно не означає порожнечі, а вказує, що жодна природа не може бути йому приписана. Термінів cit чи sākṣin тут немає, хоч sphuraṇa за змістом найближче до них.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.5) і SARIT (verse_20.5)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

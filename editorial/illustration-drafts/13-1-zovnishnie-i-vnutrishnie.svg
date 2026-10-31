@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="1000" height="580" role="img" aria-labelledby="title desc">
+  <title id="title">Аштавакра-ґіта 13.1: зовнішнє не дорівнює внутрішньому</title>
+  <desc id="desc">Дві панелі: ліворуч символічна пов'язка зреченця, праворуч постать людини в спокійній позі. Між ними напис «не гарантує». Схема пояснює відмінність зовнішнього знака та внутрішнього перебування в собі.</desc>
+  <rect width="1000" height="580" fill="#faf7f0"/>
+  <rect x="22" y="22" width="956" height="536" rx="18" fill="none" stroke="#44616b" stroke-width="2"/>
+  <g font-family="sans-serif" fill="#203a45" text-anchor="middle">
+    <text x="500" y="74" font-size="29" font-weight="700">Зовнішній знак ≠ внутрішній стан</text>
+    <text x="500" y="108" font-size="17">«Аштавакра-ґіта» · 13.1 · навчальна українська схема</text>
+    <rect x="58" y="146" width="370" height="303" rx="16" fill="#e8eced" stroke="#68818b" stroke-width="2"/>
+    <rect x="572" y="146" width="370" height="303" rx="16" fill="#e7eee7" stroke="#648576" stroke-width="2"/>
+    <text x="243" y="188" font-size="23" font-weight="700">Зовнішня ознака</text>
+    <text x="757" y="188" font-size="23" font-weight="700">Внутрішній стан</text>
+  </g>
+  <g stroke="#647985" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M182 249 Q244 213 305 249 L286 334 L202 334 Z"/>
+    <path d="M182 249 Q238 282 305 249"/>
+    <path d="M205 335 L205 367 Q242 381 284 366 L284 335"/>
+  </g>
+  <g stroke="#52776a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="757" cy="249" r="35"/>
+    <path d="M757 284 L757 343 M757 309 L712 345 M757 309 L801 345"/>
+    <path d="M757 343 L713 383 L756 394 M757 343 L802 383 L756 394"/>
+    <circle cx="757" cy="317" r="107" stroke="#a5c2b5" stroke-width="2" stroke-dasharray="8 9"/>
+  </g>
+  <g font-family="sans-serif" text-anchor="middle" fill="#203a45">
+    <text x="243" y="415" font-size="20">Пов'язка зречення</text>
+    <text x="757" y="415" font-size="20">Перебування в собі</text>
+    <text x="500" y="281" font-size="21" font-weight="700">не</text>
+    <text x="500" y="310" font-size="21" font-weight="700">гарантує</text>
+    <text x="500" y="499" font-size="19">Образ допомагає читанню, а не замінює санскритський текст.</text>
+    <text x="500" y="528" font-size="15">Власна сучасна редакторська композиція</text>
+  </g>
+</svg>

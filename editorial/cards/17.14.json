@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.14",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.14",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.14",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "sānurāgāṃ striyaṃ dṛṣṭvā | mṛtyuṃ vā samupasthitam | avihvalamanāḥ svastho | mukta eva mahāśayaḥ ||",
+  "iast": "sānurāgāṃ striyaṃ dṛṣṭvā | mṛtyuṃ vā samupasthitam | avihvalamanāḥ svastho | mukta eva mahāśayaḥ ||",
+  "grammar": "sānurāgām — знах. одн. f. «сповнену пристрасті» (sa + anurāga). striyam «жінку». dṛṣṭvā — герундій від √dṛś «побачивши». mṛtyum — знах. одн. «смерть». vā «або». samupasthitam — ppp знах. одн. m. «той, що наблизився, насунувся» (sam-upa-√sthā). avihvalamanāḥ — bahuvrīhi «з незбентеженим, незворушеним розумом» (vihvala «збентежений, хитається»). svasthaḥ «той, хто в собі». mukta eva «справді звільнений». mahāśayaḥ «великий душею». Складність: дві спокуси названо не випадково — жінка й смерть — і обидві стоять в однаковій позиції знахідного при dṛṣṭvā; цим сказано, що реакція на них та сама.",
+  "literal_meaning": "«Побачивши жінку, сповнену пристрасті, або смерть, що насунулася, — з незбентеженим розумом, у собі, він справді звільнений, великий душею.»",
+  "ukrainian_translation": "Побачивши жінку, повну пристрасті, або смерть, що вже насувається, він не збентежиться: він у собі, він справді звільнений, цей великий душею.",
+  "commentary": "Вірш випробовує рівність на двох найсильніших подразниках — бажанні й страхові — і ставить їх в один граматичний ряд. Це не твердження про безстатевість чи безстрашність як чесноти: сказано лише, що розум не хитається (avihvala). Зверніть увагу, що йдеться про зустріч, а не про відмову від неї: текст не радить уникати ні того, ні того. Традиційні коментарі читають це як доказ рівності до приємного й болісного; сам вірш називає лише два конкретні випадки, і узагальнення тут — робота читача.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.14) і SARIT (verse_17.14)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

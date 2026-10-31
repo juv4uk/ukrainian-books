@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "8.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_8.4",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_8.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yadā nāhaṃ tadā mokṣo yadāhaṃ bandhanaṃ tadā| matveti helayā kiñcinmā gṛhāṇa vimuñca mā||8|4||",
+  "iast": "yadā nāhaṃ tadā mokṣo yadāhaṃ bandhanaṃ tadā | matveti helayā kiñcin mā gṛhāṇa vimuñca mā ||",
+  "grammar": "yadā na aham («коли немає „я“») tadā mokṣaḥ | yadā aham («коли є „я“») bandhanam tadā | matvā iti (герундив «так розуміючи») helayā («легко, без натуги») kiñcit mā gṛhāṇa («нічого не бери») vimuñca mā («нічого не відпускай»).",
+  "literal_meaning": "«Коли немає „я“ — визволення; коли є „я“ — полон. Так розуміючи, легко нічого не бери й нічого не відпускай.»",
+  "ukrainian_translation": "Коли немає «я» — визволення; коли є «я» — полон. Так розуміючи, легко нічого не бери й нічого не відпускай.",
+  "commentary": "Тут уперше названо причину, а не симптом: попередні три вірші описували рухи розуму, цей називає їхнє джерело — `aham`. `helayā` («легко, жартома») різко змінює тон: те, що виглядало як велика вимога, подане як щось майже незначне. І `mā … mā` — подвійна заборона: не бери й не відпускай, тобто не роби й самого жесту вибору.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

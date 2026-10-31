@@ -1,0 +1,29 @@
+name: Науковий формат — офлайнові тести
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/check_scholarly_pages.py'
+      - 'tests/test_scholarly_pages.py'
+      - '.github/workflows/scholarly-format.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/check_scholarly_pages.py'
+      - 'tests/test_scholarly_pages.py'
+      - '.github/workflows/scholarly-format.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Наукові сторінки — 15 позитивних і негативних тестів
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити наукові шари, українські паралелі та SVG
+        run: python3 -m unittest discover -s tests -p 'test_scholarly_pages.py' -v

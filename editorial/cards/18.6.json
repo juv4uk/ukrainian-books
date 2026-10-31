@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.6",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "vyāmohamātraviratau svarūpādānamātrataḥ | vītaśokā virājante nirāvaraṇadṛṣṭayaḥ ||",
+  "iast": "vyāmohamātraviratau svarūpādānamātrataḥ | vītaśokā virājante nirāvaraṇadṛṣṭayaḥ ||",
+  "grammar": "vyāmohamātraviratau (f. loc. sg. «коли припиняється лише завороженість»: vyāmoha «завороженість, запаморочення» + mātra «лише» + virati «припинення»). svarūpādānamātrataḥ (прислівник «лише через прийняття власної природи»: svarūpa «власна природа» + ādāna «прийняття, взяття» + mātra «лише» + -tas). vītaśokāḥ (m. nom. pl. «ті, в кого минув смуток»: vīta «минулий» + śoka «смуток») virājante (3 pl. pr. vi-rāj «сяють, вирізняються») nirāvaraṇadṛṣṭayaḥ (bahuvrīhi «ті, чий зір без покрову»: nir «без» + āvaraṇa «покров, заслін» + dṛṣṭi «зір»).",
+  "literal_meaning": "«Коли припиняється сама лише завороженість, [це вже] саме прийняття власної природи: ті, чий зір без покрову, сяють, вільні від смутку.»",
+  "ukrainian_translation": "Коли припиняється сама лише завороженість, це вже й є прийняття власної природи: ті, чий зір без покрову, сяють, вільні від смутку.",
+  "commentary": "Двічі повторене mātra («лише») робить основну роботу: припиняється ЛИШЕ завороженість — нічого не додається, і приймається ЛИШЕ власна природа — нічого не набувається. Тобто між двома половинами немає переходу, вони те саме, побачене з двох боків. nirāvaraṇa («без покрову») — точне слово: покров не усувається зусиллям, він просто не накидається. І зір (dṛṣṭi) тут не метафора знання, а саме зір.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

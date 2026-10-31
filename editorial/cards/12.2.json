@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "12.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_12.2",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_12.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "prītyabhāvena śabdāderadṛśyatvena cātmanaḥ| vikṣepaikāgryahṛdaya evamevāhamāsthitaḥ||12|2||",
+  "iast": "prītyabhāvena śabdāder adṛśyatvena cātmanaḥ | vikṣepaikāgryahṛdaya evam evāham āsthitaḥ ||",
+  "grammar": "prīti-abhāvena («через відсутність прихильності») śabda-ādeḥ («до звуку й подібного») adṛśyatvena ca ātmanaḥ («і через невидимість для себе самого») | vikṣepa-aikāgrya-hṛdayaḥ («той, чиє серце — і розсіяність, і зосередженість разом») evam eva aham āsthitaḥ.",
+  "literal_meaning": "«Через відсутність прихильності до звуку й подібного та через невидимість [його] для самого себе — серце, для якого розсіяність і зосередженість одне — саме в цьому я стою.»",
+  "ukrainian_translation": "Через відсутність прихильності до звуку й подібного та через невидимість його для самого себе — серце, для якого розсіяність і зосередженість одне — саме в цьому я стою.",
+  "commentary": "`vikṣepa-aikāgrya` в одному складнику — найважливіше місце вірша: розсіяність і зосередженість названі **одним** словом, і це не поетична вільність, а твердження, що для того, хто стоїть у собі, різниці між ними немає. `adṛśyatva` («невидимість») стосується `ātman` — себе не видно собі як об'єкт.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

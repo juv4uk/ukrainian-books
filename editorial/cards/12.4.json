@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "12.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_12.4",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_12.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "heyopādeyavirahādevaṃ harṣaviṣādayoḥ| abhāvādadya he brahmannevamevāhamāsthitaḥ||12|4||",
+  "iast": "heyopādeyavirahād evaṃ harṣaviṣādayoḥ | abhāvād adya he brahman nevam evāham āsthitaḥ ||",
+  "grammar": "heya-upādeya-virahāt («через відсутність того, що відкидати й приймати») evam harṣa-viṣādayoḥ («так — радості й смутку») abhāvāt («через відсутність») adya he brahman («нині, о Брахмане») | наприкінці в SARIT стоїть `nevamevāhamāsthitaḥ` — sandhi, яке можна розкласти двома способами (див. variants).",
+  "literal_meaning": "«Через відсутність того, що відкидати й приймати, а отже — через відсутність радості й смутку, нині, о Брахмане, саме в цьому я стою.»",
+  "ukrainian_translation": "Через відсутність того, що відкидати й приймати, а отже — через відсутність радості й смутку, нині, о Брахмане, саме в цьому я стою.",
+  "commentary": "`he brahman` — звертання до Джанаки як до брахмана, єдине таке в розділі. Ланцюг причинний: немає пари «відкидати/приймати» → немає радості й смутку → нема чого досягати. **Відкрите питання:** у SARIT наприкінці стоїть `nevamevāhamāsthitaḥ` (sandhi `na + evameva`), і я прочитав це як ствердне `evameva` за паралелізмом. Перевірка решти глави це підтверджує лише частково: 12.5, 12.6 і 12.7 усі закінчуються на `evamevāhamāsthitaḥ` **без** `na`, тобто 12.4 — єдиний виняток у главі. Отже `na` може бути або справжнім (і тоді сенс вірша протилежний), або помилкою транскрипції. **GRETIL недоступний, другого свідка немає** — картка лишається чернеткою, а не «перевірено».",
+  "variants": [
+    {
+      "witness": "SARIT, решта глави 12 (12.5–12.7)",
+      "note": "У 12.4 формула записана як `nevamevāhamāsthitaḥ`, тоді як 12.5, 12.6 і 12.7 закінчуються на `evamevāhamāsthitaḥ` без `na`. Отже 12.4 — єдиний виняток у главі: `na` може бути справжнім (і тоді сенс вірша протилежний) або помилкою транскрипції. З GRETIL не звірено, тому це зафіксоване спостереження, а не підтверджене різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

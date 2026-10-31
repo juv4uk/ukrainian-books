@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.15",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.15",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.15",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ayaṃ so+ahamayaṃ nāhaṃ vibhāgamiti saṃtyaja| sarvamātmeti niścitya niḥsaṃkalpaḥ sukhī bhava||15|15||",
+  "iast": "ayaṃ so 'ham ayaṃ nāham vibhāgam iti saṃtyaja | sarvam ātmeti niścitya niḥsaṃkalpaḥ sukhī bhava ||",
+  "grammar": "ayam saḥ aham («це — він, я») ayam na aham («це — не я») vibhāgam iti saṃtyaja («відкинь такий поділ») | sarvam ātma iti niścitya («вирішивши, що все — ātman») niḥsaṃkalpaḥ («без наміру-побудови») sukhī bhava («будь щасливий»).",
+  "literal_meaning": "«„Це — він, це я; це — не я“ — відкинь такий поділ. Вирішивши, що все — ātman, будь без побудов і щасливий.»",
+  "ukrainian_translation": "«Це — він, це я; це — не я» — відкинь такий поділ. Вирішивши, що все — ātman, будь без побудов і щасливий.",
+  "commentary": "Тут відкидається не одна зі сторін поділу, а **сама навичка ділити**: `vibhāgam … saṃtyaja`. `niḥsaṃkalpa` — не «без думок», а без `saṃkalpa`, наміру-побудови, тобто без попереднього складання того, що має бути. Це те саме слово, що `kalpanā` в 15.12, і переклад мусить бути спорідненим.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

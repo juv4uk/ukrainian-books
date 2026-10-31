@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "12.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_12.6",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_12.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "karmānuṣṭhānamajñānādyathaivoparamastathā| budhvā samyagidaṃ tattvamevamevāhamāsthitaḥ||12|6||",
+  "iast": "karmānuṣṭhānam ajñānād yathaiva uparamas tathā | buddhvā samyag idaṃ tattvam evam evāham āsthitaḥ ||",
+  "grammar": "karma-anuṣṭhānam («виконання обрядів») ajñānāt («через незнання») yathā eva uparamaḥ tathā («припинення — так само») | buddhvā samyak («зрозумівши правильно») idam tattvam evam eva aham āsthitaḥ.",
+  "literal_meaning": "«Виконання обрядів через незнання і припинення їх — однаково. Зрозумівши правильно цю суть, я так стою.»",
+  "ukrainian_translation": "Виконання обрядів через незнання і припинення їх — однаково. Зрозумівши правильно цю суть, я так стою.",
+  "commentary": "`yathaiva … tathā` («так само») ставить дію й відмову від дії на один рівень — і обидві названі `ajñāna`, коли виходять із незнання. Це не заклик припинити обряди: текст каже, що припинення не краще за виконання. Переклад мусить звучати рівно, без інтонації «краще не робити».",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

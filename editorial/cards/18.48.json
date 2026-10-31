@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.48",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.48",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.48",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "vastuśravaṇamātreṇa śuddhabuddhir nirākulaḥ | naivācāramanācāram audāsyaṃ vā prapaśyati ||",
+  "iast": "vastuśravaṇamātreṇa śuddhabuddhir nirākulaḥ | naivācāramanācāram audāsyaṃ vā prapaśyati ||",
+  "grammar": "vastuśravaṇamātreṇa (n. instr. sg. «самим лише слуханням суті»: vastu «річ, суть» + śravaṇa «слухання» + mātra «лише») śuddhabuddhiḥ (m. nom. sg. «чистий розумом»: śuddha + buddhi) nirākulaḥ (m. nom. sg. «безтурботний»). na eva ācāramanācāram (m. acc. sg. «належне й неналежне, добре й погане поведіння»: ācāra «належне» + anācāra «неналежне») audāsyam (n. acc. sg. «байдужість, остороненість»: udāsīna «байдужий») vā prapaśyati («бачить»).",
+  "literal_meaning": "«Від самого лише слухання суті — чистий розумом, безтурботний — він не бачить ні належного й неналежного, ні байдужості.»",
+  "ukrainian_translation": "Від самого лише слухання суті — чистий розумом, безтурботний — він не бачить ані різниці між належним і неналежним, ані байдужості.",
+  "commentary": "Три речі названі й усі три знято: ācāra, anācāra і audāsya («байдужість»). Остання — найважливіша, бо це типова підміна: коли зникає різниця між належним і неналежним, на її місце стає байдужість, і вірш каже, що її теж немає. `vastuśravaṇamātra` («саме лише слухання суті») — єдина умова, названа тут.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжності лише в поділі слів (śuddhabuddhirnirākulaḥ / śuddhabuddhir nirākulaḥ, audāsyaṃ / audāsyam). Та сама форма. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
