@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "11.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_11.8",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_11.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nānāścaryamidaṃ viśvaṃ na kiñciditi niścayī| nirvāsanaḥ sphūrtimātro na kiñcidiva śāmyati||11|8||",
+  "iast": "nānāścaryam idaṃ viśvaṃ na kiñcid iti niścayī | nirvāsanaḥ sphūrtimātro na kiñcid iva śāmyati ||",
+  "grammar": "nānā-āścaryam («різноманітно дивовижне») idam viśvam na kiñcit («аніщо») iti niścayī | nirvāsanaḥ («без усталених схильностей») sphūrti-mātraḥ («саме лише сяйнування») na kiñcit iva śāmyati («втихає, наче аніщо»).",
+  "literal_meaning": "«Цей світ, різноманітно дивовижний, — аніщо» — хто має таке переконання, той без усталених схильностей, саме лише сяйнування, втихає, наче аніщо.",
+  "ukrainian_translation": "«Цей світ, різноманітно дивовижний, — аніщо» — хто має таке переконання, той без усталених схильностей, саме лише сяйнування, втихає, наче аніщо.",
+  "commentary": "Глава закінчується тим самим словом, що й почалася в 11.1: `niścayī`, але тепер воно стоїть при «аніщо». `nirvāsana` («без усталених схильностей») — те саме `vāsanā`, що в 9.8; словник спільний. `sphūrtimātra` («саме лише сяйнування») і `na kiñcid iva` («наче аніщо») разом дають обережність, яку легко втратити: текст не каже, що людина зникає, — він каже «наче».",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
