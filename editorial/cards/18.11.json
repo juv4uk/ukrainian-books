@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "18.11",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.11",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.11",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": null,
+  "iast": null,
+  "grammar": "svārājye, bhaikṣa-/bhaikṣya-vṛttau, lābhālābhe, jane, vane — місцеві форми, що задають протиставлені обставини; ca поєднує перші дві. lābha-alābha означає «здобуток і нездобуток (втрату)». nirvikalpa-svabhāvasya та yoginaḥ — родовий однини, стосуються того самого йоґіна; na viśeṣaḥ asti — «немає відмінності». Вимова й морфемна будова bhaikṣa-/bhaikṣya- потребують незалежної словникової перевірки; viṣeso у GRETIL не слід автоматично підміняти viśeṣo SARIT.",
+  "literal_meaning": "«За власного царювання і за життя з милостині, за здобутку й втрати, серед людей і в лісі — для йоґіна, природа якого поза мисленнєвими розрізненнями, немає відмінності». «Власне царювання» є робочим відповідником svārājya; його точне значення в контексті потребує лексикографічної перевірки.",
+  "ukrainian_translation": "Чи має він власне царство, чи живе з милостині; чи здобуває, чи втрачає; чи перебуває поміж людей, чи в лісі — для йоґіна, чия природа вільна від мисленнєвих розрізнень, немає різниці.",
+  "commentary": "Перелік змінюваних зовнішніх обставин — влада або залежність від милостині, здобуток або втрата, спільнота або самітність — протиставлено внутрішньому стану nirvikalpa. Це не доказ того, що зовнішні умови не впливають на людей; твердження стосується образу йоґіна у самому вірші. Переклад «мисленнєві розрізнення» передає можливий філософський сенс vikalpa, але не нав'язує текстові конкретної психологічної теорії. Форма svārājye не дозволяє без додаткових свідчень звести вислів виключно до політичного або виключно до містичного царства. Див. електронні свідки GRETIL (Avg_18.11) і SARIT (verse_18.11), обидва — транскрипції, не критичні видання.",
+  "variants": [
+    {
+      "witness": "GRETIL Avg_18.11 проти SARIT verse_18.11",
+      "note": "Перший рядок: GRETIL має bhaikṣavṛttau, SARIT — bhaikṣyavṛttau (наявність y після ṣ). Це засвідчена графічно-морфологічна відмінність цифрових транскрипцій; перевагу читанню без друкованих свідків не встановлено.",
+      "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm"
+    },
+    {
+      "witness": "GRETIL Avg_18.11 проти SARIT verse_18.11",
+      "note": "Другий рядок: GRETIL друкує viṣeso, SARIT — viśeṣo+asti (із TEI-позначенням аваґраги через +). Це відмінність літер ṣ/ś і способу подачі сандгі; чи є перше помилкою вводу, не встановлено.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Власний український переклад, граматична замітка і коментар на основі зіставлення посилань на цифрові свідки; цілі рядки чужих транскрипцій та сучасні переклади не передруковано. Статус прав на конкретні цифрові файли і можливість їх повторного використання див. у COPYRIGHT_AND_SOURCES.md; висновку юриста немає. Ліцензія «ВОЛЬНІСТЬ» застосовна лише до власного внеску.",
+    "evidence_url": "https://github.com/juv4uk/ukrainian-books/blob/main/COPYRIGHT_AND_SOURCES.md",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
