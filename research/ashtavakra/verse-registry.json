@@ -1,0 +1,1942 @@
+{
+  "schema_version": 1,
+  "work": "Аштавакра-ґіта",
+  "generated_on": "2026-10-31",
+  "chapter_count": 20,
+  "verse_count": 298,
+  "scope": "Реєстр індексів віршів, не текст оригіналу й не переклад",
+  "sources": {
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "blob_sha": "0fbf1f2385b5e3331dd8dd625cab4b37c6d73103",
+      "status": "298 надрукованих номерів, 297 xml:id; перевірено за GitHub 2026-10-31",
+      "rights": "У TEI-заголовку позначено restricted та CC BY-SA 3.0; тут не копіюється"
+    },
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "status": "Незалежно звірено вірші 18.95 і 18.96; суцільна програмна звірка решти потребує виконання з локальним файлом",
+      "rights": "Електронна транскрипція CC BY-NC-SA 4.0; тут не копіюється"
+    }
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "verse_count": 20,
+      "first_id": "1.1",
+      "last_id": "1.20"
+    },
+    {
+      "chapter": 2,
+      "verse_count": 25,
+      "first_id": "2.1",
+      "last_id": "2.25"
+    },
+    {
+      "chapter": 3,
+      "verse_count": 14,
+      "first_id": "3.1",
+      "last_id": "3.14"
+    },
+    {
+      "chapter": 4,
+      "verse_count": 6,
+      "first_id": "4.1",
+      "last_id": "4.6"
+    },
+    {
+      "chapter": 5,
+      "verse_count": 4,
+      "first_id": "5.1",
+      "last_id": "5.4"
+    },
+    {
+      "chapter": 6,
+      "verse_count": 4,
+      "first_id": "6.1",
+      "last_id": "6.4"
+    },
+    {
+      "chapter": 7,
+      "verse_count": 5,
+      "first_id": "7.1",
+      "last_id": "7.5"
+    },
+    {
+      "chapter": 8,
+      "verse_count": 4,
+      "first_id": "8.1",
+      "last_id": "8.4"
+    },
+    {
+      "chapter": 9,
+      "verse_count": 8,
+      "first_id": "9.1",
+      "last_id": "9.8"
+    },
+    {
+      "chapter": 10,
+      "verse_count": 8,
+      "first_id": "10.1",
+      "last_id": "10.8"
+    },
+    {
+      "chapter": 11,
+      "verse_count": 8,
+      "first_id": "11.1",
+      "last_id": "11.8"
+    },
+    {
+      "chapter": 12,
+      "verse_count": 8,
+      "first_id": "12.1",
+      "last_id": "12.8"
+    },
+    {
+      "chapter": 13,
+      "verse_count": 7,
+      "first_id": "13.1",
+      "last_id": "13.7"
+    },
+    {
+      "chapter": 14,
+      "verse_count": 4,
+      "first_id": "14.1",
+      "last_id": "14.4"
+    },
+    {
+      "chapter": 15,
+      "verse_count": 20,
+      "first_id": "15.1",
+      "last_id": "15.20"
+    },
+    {
+      "chapter": 16,
+      "verse_count": 11,
+      "first_id": "16.1",
+      "last_id": "16.11"
+    },
+    {
+      "chapter": 17,
+      "verse_count": 20,
+      "first_id": "17.1",
+      "last_id": "17.20"
+    },
+    {
+      "chapter": 18,
+      "verse_count": 100,
+      "first_id": "18.1",
+      "last_id": "18.100"
+    },
+    {
+      "chapter": 19,
+      "verse_count": 8,
+      "first_id": "19.1",
+      "last_id": "19.8"
+    },
+    {
+      "chapter": 20,
+      "verse_count": 14,
+      "first_id": "20.1",
+      "last_id": "20.14"
+    }
+  ],
+  "verses": [
+    {
+      "id": "1.1",
+      "sarit_xml_id": "verse_1.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.2",
+      "sarit_xml_id": "verse_1.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.3",
+      "sarit_xml_id": "verse_1.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.4",
+      "sarit_xml_id": "verse_1.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.5",
+      "sarit_xml_id": "verse_1.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.6",
+      "sarit_xml_id": "verse_1.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.7",
+      "sarit_xml_id": "verse_1.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.8",
+      "sarit_xml_id": "verse_1.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.9",
+      "sarit_xml_id": "verse_1.9",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.10",
+      "sarit_xml_id": "verse_1.10",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.11",
+      "sarit_xml_id": "verse_1.11",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.12",
+      "sarit_xml_id": "verse_1.12",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.13",
+      "sarit_xml_id": "verse_1.13",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.14",
+      "sarit_xml_id": "verse_1.14",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.15",
+      "sarit_xml_id": "verse_1.15",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.16",
+      "sarit_xml_id": "verse_1.16",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.17",
+      "sarit_xml_id": "verse_1.17",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.18",
+      "sarit_xml_id": "verse_1.18",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.19",
+      "sarit_xml_id": "verse_1.19",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "1.20",
+      "sarit_xml_id": "verse_1.20",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.1",
+      "sarit_xml_id": "verse_2.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.2",
+      "sarit_xml_id": "verse_2.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.3",
+      "sarit_xml_id": "verse_2.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.4",
+      "sarit_xml_id": "verse_2.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.5",
+      "sarit_xml_id": "verse_2.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.6",
+      "sarit_xml_id": "verse_2.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.7",
+      "sarit_xml_id": "verse_2.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.8",
+      "sarit_xml_id": "verse_2.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.9",
+      "sarit_xml_id": "verse_2.9",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.10",
+      "sarit_xml_id": "verse_2.10",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.11",
+      "sarit_xml_id": "verse_2.11",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.12",
+      "sarit_xml_id": "verse_2.12",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.13",
+      "sarit_xml_id": "verse_2.13",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.14",
+      "sarit_xml_id": "verse_2.14",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.15",
+      "sarit_xml_id": "verse_2.15",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.16",
+      "sarit_xml_id": "verse_2.16",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.17",
+      "sarit_xml_id": "verse_2.17",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.18",
+      "sarit_xml_id": "verse_2.18",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.19",
+      "sarit_xml_id": "verse_2.19",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.20",
+      "sarit_xml_id": "verse_2.20",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.21",
+      "sarit_xml_id": "verse_2.21",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.22",
+      "sarit_xml_id": "verse_2.22",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.23",
+      "sarit_xml_id": "verse_2.23",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.24",
+      "sarit_xml_id": "verse_2.24",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "2.25",
+      "sarit_xml_id": "verse_2.25",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.1",
+      "sarit_xml_id": "verse_3.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.2",
+      "sarit_xml_id": "verse_3.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.3",
+      "sarit_xml_id": "verse_3.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.4",
+      "sarit_xml_id": "verse_3.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.5",
+      "sarit_xml_id": "verse_3.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.6",
+      "sarit_xml_id": "verse_3.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.7",
+      "sarit_xml_id": "verse_3.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.8",
+      "sarit_xml_id": "verse_3.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.9",
+      "sarit_xml_id": "verse_3.9",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.10",
+      "sarit_xml_id": "verse_3.10",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.11",
+      "sarit_xml_id": "verse_3.11",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.12",
+      "sarit_xml_id": "verse_3.12",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.13",
+      "sarit_xml_id": "verse_3.13",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "3.14",
+      "sarit_xml_id": "verse_3.14",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "4.1",
+      "sarit_xml_id": "verse_4.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "4.2",
+      "sarit_xml_id": "verse_4.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "4.3",
+      "sarit_xml_id": "verse_4.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "4.4",
+      "sarit_xml_id": "verse_4.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "4.5",
+      "sarit_xml_id": "verse_4.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "4.6",
+      "sarit_xml_id": "verse_4.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "5.1",
+      "sarit_xml_id": "verse_5.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "5.2",
+      "sarit_xml_id": "verse_5.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "5.3",
+      "sarit_xml_id": "verse_5.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "5.4",
+      "sarit_xml_id": "verse_5.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "6.1",
+      "sarit_xml_id": "verse_6.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "6.2",
+      "sarit_xml_id": "verse_6.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "6.3",
+      "sarit_xml_id": "verse_6.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "6.4",
+      "sarit_xml_id": "verse_6.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "7.1",
+      "sarit_xml_id": "verse_7.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "7.2",
+      "sarit_xml_id": "verse_7.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "7.3",
+      "sarit_xml_id": "verse_7.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "7.4",
+      "sarit_xml_id": "verse_7.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "7.5",
+      "sarit_xml_id": "verse_7.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "8.1",
+      "sarit_xml_id": "verse_8.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "8.2",
+      "sarit_xml_id": "verse_8.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "8.3",
+      "sarit_xml_id": "verse_8.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "8.4",
+      "sarit_xml_id": "verse_8.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "9.1",
+      "sarit_xml_id": "verse_9.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "9.2",
+      "sarit_xml_id": "verse_9.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "9.3",
+      "sarit_xml_id": "verse_9.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "9.4",
+      "sarit_xml_id": "verse_9.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "9.5",
+      "sarit_xml_id": "verse_9.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "9.6",
+      "sarit_xml_id": "verse_9.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "9.7",
+      "sarit_xml_id": "verse_9.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "9.8",
+      "sarit_xml_id": "verse_9.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "10.1",
+      "sarit_xml_id": "verse_10.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "10.2",
+      "sarit_xml_id": "verse_10.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "10.3",
+      "sarit_xml_id": "verse_10.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "10.4",
+      "sarit_xml_id": "verse_10.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "10.5",
+      "sarit_xml_id": "verse_10.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "10.6",
+      "sarit_xml_id": "verse_10.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "10.7",
+      "sarit_xml_id": "verse_10.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "10.8",
+      "sarit_xml_id": "verse_10.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "11.1",
+      "sarit_xml_id": "verse_11.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "11.2",
+      "sarit_xml_id": "verse_11.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "11.3",
+      "sarit_xml_id": "verse_11.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "11.4",
+      "sarit_xml_id": "verse_11.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "11.5",
+      "sarit_xml_id": "verse_11.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "11.6",
+      "sarit_xml_id": "verse_11.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "11.7",
+      "sarit_xml_id": "verse_11.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "11.8",
+      "sarit_xml_id": "verse_11.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "12.1",
+      "sarit_xml_id": "verse_12.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "12.2",
+      "sarit_xml_id": "verse_12.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "12.3",
+      "sarit_xml_id": "verse_12.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "12.4",
+      "sarit_xml_id": "verse_12.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "12.5",
+      "sarit_xml_id": "verse_12.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "12.6",
+      "sarit_xml_id": "verse_12.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "12.7",
+      "sarit_xml_id": "verse_12.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "12.8",
+      "sarit_xml_id": "verse_12.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "13.1",
+      "sarit_xml_id": "verse_13.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "13.2",
+      "sarit_xml_id": "verse_13.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "13.3",
+      "sarit_xml_id": "verse_13.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "13.4",
+      "sarit_xml_id": "verse_13.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "13.5",
+      "sarit_xml_id": "verse_13.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "13.6",
+      "sarit_xml_id": "verse_13.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "13.7",
+      "sarit_xml_id": "verse_13.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "14.1",
+      "sarit_xml_id": "verse_14.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "14.2",
+      "sarit_xml_id": "verse_14.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "14.3",
+      "sarit_xml_id": "verse_14.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "14.4",
+      "sarit_xml_id": "verse_14.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.1",
+      "sarit_xml_id": "verse_15.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.2",
+      "sarit_xml_id": "verse_15.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.3",
+      "sarit_xml_id": "verse_15.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.4",
+      "sarit_xml_id": "verse_15.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.5",
+      "sarit_xml_id": "verse_15.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.6",
+      "sarit_xml_id": "verse_15.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.7",
+      "sarit_xml_id": "verse_15.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.8",
+      "sarit_xml_id": "verse_15.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.9",
+      "sarit_xml_id": "verse_15.9",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.10",
+      "sarit_xml_id": "verse_15.10",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.11",
+      "sarit_xml_id": "verse_15.11",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.12",
+      "sarit_xml_id": "verse_15.12",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.13",
+      "sarit_xml_id": "verse_15.13",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.14",
+      "sarit_xml_id": "verse_15.14",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.15",
+      "sarit_xml_id": "verse_15.15",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.16",
+      "sarit_xml_id": "verse_15.16",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.17",
+      "sarit_xml_id": "verse_15.17",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.18",
+      "sarit_xml_id": "verse_15.18",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.19",
+      "sarit_xml_id": "verse_15.19",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "15.20",
+      "sarit_xml_id": "verse_15.20",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.1",
+      "sarit_xml_id": "verse_16.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.2",
+      "sarit_xml_id": "verse_16.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.3",
+      "sarit_xml_id": "verse_16.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.4",
+      "sarit_xml_id": "verse_16.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.5",
+      "sarit_xml_id": "verse_16.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.6",
+      "sarit_xml_id": "verse_16.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.7",
+      "sarit_xml_id": "verse_16.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.8",
+      "sarit_xml_id": "verse_16.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.9",
+      "sarit_xml_id": "verse_16.9",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.10",
+      "sarit_xml_id": "verse_16.10",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "16.11",
+      "sarit_xml_id": "verse_16.11",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.1",
+      "sarit_xml_id": "verse_17.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.2",
+      "sarit_xml_id": "verse_17.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.3",
+      "sarit_xml_id": "verse_17.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.4",
+      "sarit_xml_id": "verse_17.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.5",
+      "sarit_xml_id": "verse_17.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.6",
+      "sarit_xml_id": "verse_17.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.7",
+      "sarit_xml_id": "verse_17.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.8",
+      "sarit_xml_id": "verse_17.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.9",
+      "sarit_xml_id": "verse_17.9",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.10",
+      "sarit_xml_id": "verse_17.10",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.11",
+      "sarit_xml_id": "verse_17.11",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.12",
+      "sarit_xml_id": "verse_17.12",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.13",
+      "sarit_xml_id": "verse_17.13",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.14",
+      "sarit_xml_id": "verse_17.14",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.15",
+      "sarit_xml_id": "verse_17.15",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.16",
+      "sarit_xml_id": "verse_17.16",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.17",
+      "sarit_xml_id": "verse_17.17",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.18",
+      "sarit_xml_id": "verse_17.18",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.19",
+      "sarit_xml_id": "verse_17.19",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "17.20",
+      "sarit_xml_id": "verse_17.20",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.1",
+      "sarit_xml_id": "verse_18.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.2",
+      "sarit_xml_id": "verse_18.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.3",
+      "sarit_xml_id": "verse_18.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.4",
+      "sarit_xml_id": "verse_18.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.5",
+      "sarit_xml_id": "verse_18.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.6",
+      "sarit_xml_id": "verse_18.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.7",
+      "sarit_xml_id": "verse_18.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.8",
+      "sarit_xml_id": "verse_18.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.9",
+      "sarit_xml_id": "verse_18.9",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.10",
+      "sarit_xml_id": "verse_18.10",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.11",
+      "sarit_xml_id": "verse_18.11",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.12",
+      "sarit_xml_id": "verse_18.12",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.13",
+      "sarit_xml_id": "verse_18.13",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.14",
+      "sarit_xml_id": "verse_18.14",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.15",
+      "sarit_xml_id": "verse_18.15",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.16",
+      "sarit_xml_id": "verse_18.16",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.17",
+      "sarit_xml_id": "verse_18.17",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.18",
+      "sarit_xml_id": "verse_18.18",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.19",
+      "sarit_xml_id": "verse_18.19",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.20",
+      "sarit_xml_id": "verse_18.20",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.21",
+      "sarit_xml_id": "verse_18.21",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.22",
+      "sarit_xml_id": "verse_18.22",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.23",
+      "sarit_xml_id": "verse_18.23",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.24",
+      "sarit_xml_id": "verse_18.24",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.25",
+      "sarit_xml_id": "verse_18.25",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.26",
+      "sarit_xml_id": "verse_18.26",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.27",
+      "sarit_xml_id": "verse_18.27",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.28",
+      "sarit_xml_id": "verse_18.28",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.29",
+      "sarit_xml_id": "verse_18.29",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.30",
+      "sarit_xml_id": "verse_18.30",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.31",
+      "sarit_xml_id": "verse_18.31",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.32",
+      "sarit_xml_id": "verse_18.32",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.33",
+      "sarit_xml_id": "verse_18.33",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.34",
+      "sarit_xml_id": "verse_18.34",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.35",
+      "sarit_xml_id": "verse_18.35",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.36",
+      "sarit_xml_id": "verse_18.36",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.37",
+      "sarit_xml_id": "verse_18.37",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.38",
+      "sarit_xml_id": "verse_18.38",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.39",
+      "sarit_xml_id": "verse_18.39",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.40",
+      "sarit_xml_id": "verse_18.40",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.41",
+      "sarit_xml_id": "verse_18.41",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.42",
+      "sarit_xml_id": "verse_18.42",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.43",
+      "sarit_xml_id": "verse_18.43",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.44",
+      "sarit_xml_id": "verse_18.44",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.45",
+      "sarit_xml_id": "verse_18.45",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.46",
+      "sarit_xml_id": "verse_18.46",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.47",
+      "sarit_xml_id": "verse_18.47",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.48",
+      "sarit_xml_id": "verse_18.48",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.49",
+      "sarit_xml_id": "verse_18.49",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.50",
+      "sarit_xml_id": "verse_18.50",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.51",
+      "sarit_xml_id": "verse_18.51",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.52",
+      "sarit_xml_id": "verse_18.52",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.53",
+      "sarit_xml_id": "verse_18.53",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.54",
+      "sarit_xml_id": "verse_18.54",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.55",
+      "sarit_xml_id": "verse_18.55",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.56",
+      "sarit_xml_id": "verse_18.56",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.57",
+      "sarit_xml_id": "verse_18.57",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.58",
+      "sarit_xml_id": "verse_18.58",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.59",
+      "sarit_xml_id": "verse_18.59",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.60",
+      "sarit_xml_id": "verse_18.60",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.61",
+      "sarit_xml_id": "verse_18.61",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.62",
+      "sarit_xml_id": "verse_18.62",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.63",
+      "sarit_xml_id": "verse_18.63",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.64",
+      "sarit_xml_id": "verse_18.64",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.65",
+      "sarit_xml_id": "verse_18.65",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.66",
+      "sarit_xml_id": "verse_18.66",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.67",
+      "sarit_xml_id": "verse_18.67",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.68",
+      "sarit_xml_id": "verse_18.68",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.69",
+      "sarit_xml_id": "verse_18.69",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.70",
+      "sarit_xml_id": "verse_18.70",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.71",
+      "sarit_xml_id": "verse_18.71",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.72",
+      "sarit_xml_id": "verse_18.72",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.73",
+      "sarit_xml_id": "verse_18.73",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.74",
+      "sarit_xml_id": "verse_18.74",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.75",
+      "sarit_xml_id": "verse_18.75",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.76",
+      "sarit_xml_id": "verse_18.76",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.77",
+      "sarit_xml_id": "verse_18.77",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.78",
+      "sarit_xml_id": "verse_18.78",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.79",
+      "sarit_xml_id": "verse_18.79",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.80",
+      "sarit_xml_id": "verse_18.80",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.81",
+      "sarit_xml_id": "verse_18.81",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.82",
+      "sarit_xml_id": "verse_18.82",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.83",
+      "sarit_xml_id": "verse_18.83",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.84",
+      "sarit_xml_id": "verse_18.84",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.85",
+      "sarit_xml_id": "verse_18.85",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.86",
+      "sarit_xml_id": "verse_18.86",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.87",
+      "sarit_xml_id": "verse_18.87",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.88",
+      "sarit_xml_id": "verse_18.88",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.89",
+      "sarit_xml_id": "verse_18.89",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.90",
+      "sarit_xml_id": "verse_18.90",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.91",
+      "sarit_xml_id": "verse_18.91",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.92",
+      "sarit_xml_id": "verse_18.92",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.93",
+      "sarit_xml_id": "verse_18.93",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.94",
+      "sarit_xml_id": "verse_18.94",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.95",
+      "sarit_xml_id": null,
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.96",
+      "sarit_xml_id": "verse_18.96",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.97",
+      "sarit_xml_id": "verse_18.97",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.98",
+      "sarit_xml_id": "verse_18.98",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.99",
+      "sarit_xml_id": "verse_18.99",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "18.100",
+      "sarit_xml_id": "verse_18.100",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "19.1",
+      "sarit_xml_id": "verse_19.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "19.2",
+      "sarit_xml_id": "verse_19.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "19.3",
+      "sarit_xml_id": "verse_19.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "19.4",
+      "sarit_xml_id": "verse_19.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "19.5",
+      "sarit_xml_id": "verse_19.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "19.6",
+      "sarit_xml_id": "verse_19.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "19.7",
+      "sarit_xml_id": "verse_19.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "19.8",
+      "sarit_xml_id": "verse_19.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.1",
+      "sarit_xml_id": "verse_20.1",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.2",
+      "sarit_xml_id": "verse_20.2",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.3",
+      "sarit_xml_id": "verse_20.3",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.4",
+      "sarit_xml_id": "verse_20.4",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.5",
+      "sarit_xml_id": "verse_20.5",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.6",
+      "sarit_xml_id": "verse_20.6",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.7",
+      "sarit_xml_id": "verse_20.7",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.8",
+      "sarit_xml_id": "verse_20.8",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.9",
+      "sarit_xml_id": "verse_20.9",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.10",
+      "sarit_xml_id": "verse_20.10",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.11",
+      "sarit_xml_id": "verse_20.11",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.12",
+      "sarit_xml_id": "verse_20.12",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.13",
+      "sarit_xml_id": "verse_20.13",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    },
+    {
+      "id": "20.14",
+      "sarit_xml_id": "verse_20.14",
+      "sarit_printed_number": true,
+      "status": "індексовано; переклад і зміст не рецензовані"
+    }
+  ],
+  "markup_anomalies": [
+    {
+      "source": "SARIT",
+      "verse": "18.95",
+      "kind": "missing_xml_id",
+      "details": "У розмітці XML немає verse_18.95; рядок із надрукованим ||18|95||| вкладено в lg із xml:id=verse_18.96; наступний рядок цієї ж групи закінчується ||18|96||.",
+      "independent_check": "GRETIL позначає Avg_18.95 та Avg_18.96 окремо; не виправляти чужий корпус у нашому репозиторії"
+    }
+  ]
+}
