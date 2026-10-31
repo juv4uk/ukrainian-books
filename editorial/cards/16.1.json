@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "16.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://github.com/INDOLOGY/GRETIL-mirror/blob/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml",
+      "locator": "Avg_16.1",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_16.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": null,
+  "iast": null,
+  "grammar": "У позавіршовому маркері GRETIL перед 16.1 стоїть aṣṭāvakra uvāca (мовець Аштавакра); у SARIT заголовок глави потрібно окремо звірити, тому не робити висновку лише з контекстної рубрики GRETIL. ācakṣva — наказовий спосіб, 2-га особа однини від ā-cakṣ («розкажи, пояснюй»); śṛṇu — наказовий спосіб, 2-га особа однини від śru («слухай»); vā поєднує альтернативи, а tāta — звертання («любий, дорогий»), не доказ спорідненості. nānā-śāstrāṇi — знахідний множини середнього роду («різні трактати/повчальні тексти»); anekaśaḥ — прислівник («багато разів, неодноразово»). tathā api («і все ж») утворює concessивний перехід до заперечення na; tava — родовий займенника 2-ї особи («твого/для тебе»). svāsthyaṃ — іменник середнього роду, тут «перебування в собі, внутрішня сталість/спокій»; переносити його як суто фізичне «здоров'я» без додаткового контексту недоречно. sarva-vismaraṇāt — аблатив однини від «забування всього», ṛte («окрім, без») керує відокремлюваною конструкцією, що в цифровій транслітерації зазнає сандгі: sarvavismaraṇād ṛte (GRETIL) / sarvavismaraṇādṛte (SARIT). Вираз «все забути» текстуально присутній, але його філософська референція неоднозначна.",
+  "literal_meaning": "«Розповідай або слухай, любий, багато разів різні шастри; та все ж немає для тебе перебування у власній сталості без забуття всього». Конструкція без особової форми «бути» в другій половині передана українським «немає». Слово «забуття» збережено буквально, без підміни твердженням про медичну втрату пам'яті.",
+  "ukrainian_translation": "Скільки б ти не розповідав про різні шастри чи не слухав їх, любий, — внутрішнього спокою тобі не знайти без забуття всього.",
+  "commentary": "Вірш протиставляє багаторазове висловлювання/слухання текстів (nānā-śāstrāṇi, anekaśaḥ) стану svāsthya — «стояння у власному єстві» або внутрішньої рівноваги. Формула sarva-vismaraṇa («забуття всього») може означати відпускання нагромаджених понять чи ототожнень; це робоча філософська гіпотеза, а не встановлений словниковий еквівалент і не доведений заклик до амнезії, відмови від освіти або знищення текстів. У перекладі збережено напругу між буквальним «забуттям» і можливим контекстним смислом. Першоджерела для текстової звірки: GRETIL/INDOLOGY TEI Avg_16.1 (https://github.com/INDOLOGY/GRETIL-mirror/blob/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml; Git blob 0a0e24af9ae65faf3c0c6603c5808e8a60fb4bc9) і SARIT TEI verse_16.1 (https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml; Git blob 0fbf1f2385b5e3331dd8dd625cab4b37c6d73103). Це архівне дзеркало та цифровий корпус, не незалежні рукописи, не критичне видання і не рецензований переклад.",
+  "variants": [
+    {
+      "witness": "GRETIL/INDOLOGY Avg_16.1 — SARIT verse_16.1: поділ сандгі",
+      "note": "GRETIL має «sarvavismaraṇād ṛte» з розділенням слів; SARIT — «sarvavismaraṇādṛte» як один графічний сегмент. Видима відмінність пробілу не є доказом іншого лексичного чи рукописного читання. Порівняно Git blobs GRETIL 0a0e24af9ae65faf3c0c6603c5808e8a60fb4bc9 і SARIT 0fbf1f2385b5e3331dd8dd625cab4b37c6d73103.",
+      "evidence_url": "https://github.com/INDOLOGY/GRETIL-mirror/blob/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Давню санскритську композицію треба розрізняти з сучасними електронними транскрипціями. GRETIL/INDOLOGY TEI заявляє CC BY-NC-SA 4.0; SARIT TEI зазначає транскрипцію Suryansu Ray (2012), CC BY-SA 3.0 і availability status=restricted. Не перенесено повний санскритський текст, охоронювані сучасні переклади, традиційні коментарі чи чужу редакторську розмітку. Поля sanskrit та iast залишені null до правового рішення про публікацію. Власні українські граматика, чернетковий переклад і коментар запропоновано під незміненою «ВОЛЬНІСТЮ» тільки в обсязі авторських прав на наш внесок. Повного правового погодження книжкового видання немає.",
+    "evidence_url": "https://github.com/INDOLOGY/GRETIL-mirror/blob/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
