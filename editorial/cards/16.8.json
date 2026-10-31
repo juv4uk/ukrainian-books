@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "16.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_16.8",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_16.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "pravṛttau jāyate rāgo | nivṛttau dveṣa eva hi | nirdvandvo bālavad dhīmān | evam eva vyavasthitaḥ ||",
+  "iast": "pravṛttau jāyate rāgo | nivṛttau dveṣa eva hi | nirdvandvo bālavad dhīmān | evam eva vyavasthitaḥ ||",
+  "grammar": "pravṛttau — f. локатив одн. «у діянні, у виявленні активності» (pravṛtti). jāyate «народжується». rāgaḥ «пристрасть, потяг». nivṛttau — локатив одн. «у припиненні» (nivṛtti; у GRETIL тут nirvṛttau, див. різночитання). dveṣaḥ «відраза». eva hi «адже саме». nirdvandvaḥ «вільний від пар». bālavat — прислівник «як дитина». dhīmān «розумний, стійкий» (dhīmant). evam eva «саме так». vyavasthitaḥ «утверджений, поставлений». Складність: порівняння з дитиною (bālavat) не похвала наївності й не осуд: дитина не має сталої пари «подобається / не подобається», бо ще не вибудувала її; мудрий її вже не має. Граматично bālavat може стосуватися й dhīmān, і vyavasthitaḥ — зміст від цього не змінюється.",
+  "literal_meaning": "«У діянні народжується пристрасть, у припиненні — саме відраза. Вільний від пар, розумний, стоїть саме так, як дитина.»",
+  "ukrainian_translation": "Коли дієш — народжується потяг, коли спиняєшся — відраза. Мудрий, вільний від цієї пари, стоїть так, як стоїть дитина.",
+  "commentary": "Вірш дає механіку пари: потяг і відраза не два окремі почуття, а два боки одного маятника, і кожен викликає інший. Тому вихід не в тому, щоб обрати бік (діяти або спинитися), а в тому, щоб вийти з коливання. Порівняння з дитиною — єдиний образ, який текст пропонує замість опису стану; воно нічого не доводить, а показує. Це місце часто читають як «природність» (akṛtrima) у дусі пізніших інтерпретацій, але слово «природний» у вірші відсутнє; є лише bālavat, «як дитина». Не названо тут і ātman чи cit: вірш говорить про механіку реагування, не про природу свідомості.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_16.8) проти SARIT (verse_16.8)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ: SARIT — nivṛttau («у припиненні», nivṛtti), GRETIL — nirvṛttau («у завершеності», nirvṛtti). Різні слова. Пара до pravṛtti — саме nivṛtti; та сама пара в 20.12 розходиться так само, і там теж читається nivṛtti. У тексті картки взято nivṛttau (SARIT); це редакційний вибір за усталеністю пари понять, а не висновок із третього свідка, якого для 16.8 не перевірено. Як читав автор тексту, НЕ ВСТАНОВЛЕНО.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
