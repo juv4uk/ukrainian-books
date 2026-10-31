@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.8",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ātmā brahmeti niścitya bhāvābhāvau ca kalpitau | niṣkāmaḥ kiṃ vijānāti kiṃ brūte ca karoti kim ||",
+  "iast": "ātmā brahmeti niścitya bhāvābhāvau ca kalpitau | niṣkāmaḥ kiṃ vijānāti kiṃ brūte ca karoti kim ||",
+  "grammar": "ātmā (m. nom. sg.) brahma (n. nom. sg.) iti («так»; «Атман — це Брахман») niścitya (герунд nis-ci «вирішивши, встановивши»). bhāvābhāvau (m. nom. du. «буття й небуття») ca kalpitau (m. nom. du. «вигадані, сконструйовані»). niṣkāmaḥ (m. nom. sg. «безбажанний, той, у кого немає бажань»). kim vijānāti («що знає?») kim brūte («що говорить?») ca karoti kim («і що робить?»).",
+  "literal_meaning": "«Встановивши: „Атман — це Брахман“, а буття й небуття — вигадані, — що безбажанний знає, що говорить, що робить?»",
+  "ukrainian_translation": "Встановивши, що Атман — це Брахман, а буття й небуття — вигадані, — що безбажанний знає, що говорить, що робить?",
+  "commentary": "Три питання в кінці — про знання, мову й дію — охоплюють усі три способи, якими людина взагалі себе виявляє. Кожне залишене без відповіді, і це не риторика заради ефекту: якщо буття й небуття вигадані, то питання «що є» втрачає ґрунт, а разом із ним і три відповіді. Формула ātmā brahma («Атман — це Брахман») тут не висновок, а niścaya — встановлене рішення, після якого питання стають безпредметними.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
