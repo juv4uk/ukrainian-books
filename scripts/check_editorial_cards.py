@@ -79,7 +79,7 @@ def validate_card(card: object, expected: set[str], filename: str | None = None)
     for field in FIELDS:
         if field not in card:
             errors.append(f"Відсутнє поле {field}")
-    if card.get("schema_version") != 1:
+    if type(card.get("schema_version")) is not int or card.get("schema_version") != 1:
         errors.append("Непідтримувана версія схеми")
     verse = card.get("id")
     if not isinstance(verse, str) or not ID.fullmatch(verse) or verse not in expected:
@@ -89,7 +89,7 @@ def validate_card(card: object, expected: set[str], filename: str | None = None)
     if card.get("work") != "Аштавакра-ґіта":
         errors.append("Неочікувана назва твору")
     status = card.get("status")
-    if status not in STATUS:
+    if not isinstance(status, str) or status not in STATUS:
         errors.append("Невідомий статус")
     author = card.get("author")
     if author is not None and not filled(author):
@@ -199,7 +199,7 @@ def check_directory(folder: Path, expected: set[str]) -> tuple[int, list[str]]:
             errors.append(f"{file}: {exc}")
             continue
         verse = card.get("id") if isinstance(card, dict) else None
-        if verse in seen:
+        if isinstance(verse, str) and verse in seen:
             errors.append(f"{file}: повторна картка для {verse}")
         if isinstance(verse, str):
             seen.add(verse)
