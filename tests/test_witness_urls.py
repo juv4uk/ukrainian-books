@@ -82,6 +82,54 @@ class WitnessUrlsTests(unittest.TestCase):
     def test_unknown_witness(self):
         self.assertIsNotNone(module.inspect_url("unknown", GRETIL)[0])
 
+    def test_newline_inside_sarit_path_rejected(self):
+        poisoned = SARIT.replace("/Sarit-does-not-exist/", "/Sarit-does-not-exist/")
+        poisoned = poisoned.replace("SARIT-corpus", "SARIT-\\ncorpus".replace("\\\\n", "\\n"))
+        self.assertIsNotNone(module.inspect_url("sarit", poisoned)[0])
+
+    def test_tab_inside_sarit_path_rejected(self):
+        poisoned = SARIT.replace("SARIT-corpus", "SARIT-\\tcorpus".replace("\\\\t", "\\t"))
+        self.assertIsNotNone(module.inspect_url("sarit", poisoned)[0])
+
+    def test_carriage_return_inside_sarit_path_rejected(self):
+        poisoned = SARIT.replace("SARIT-corpus", "SARIT-\\rcorpus".replace("\\\\r", "\\r"))
+        self.assertIsNotNone(module.inspect_url("sarit", poisoned)[0])
+
+    def test_newline_inside_gretil_path_rejected(self):
+        self.assertIsNotNone(module.inspect_url("gretil", GRETIL + "\\n")[0])
+
+    def test_symlink_directory_cannot_hide_cards(self):
+        with tempfile.TemporaryDirectory() as root:
+            base = Path(root)
+            cards, outside = base / "cards", base / "outside"
+            cards.mkdir()
+            outside.mkdir()
+            (outside / "2.1.json").write_text("{}", encoding="utf-8")
+            try:
+                (cards / "hidden").symlink_to(outside, target_is_directory=True)
+            except (OSError, NotImplementedError):
+                self.skipTest("Немає підтримки символічних посилань")
+            result = module.audit(cards)
+        self.assertEqual(result["status"], "failed")
+        self.assertEqual(result["cards"], 0)
+        self.assertTrue(any("hidden" in error for error in result["errors"]))
+
+    def test_symlink_json_file_rejected(self):
+        with tempfile.TemporaryDirectory() as root:
+            base = Path(root)
+            cards = base / "cards"
+            cards.mkdir()
+            target = base / "target.json"
+            target.write_text("{}", encoding="utf-8")
+            try:
+                (cards / "1.2.json").symlink_to(target)
+            except (OSError, NotImplementedError):
+                self.skipTest("Немає підтримки символічних посилань")
+            result = module.audit(cards)
+        self.assertEqual(result["status"], "failed")
+        self.assertEqual(result["cards"], 1)
+        self.assertTrue(any("1.2.json" in error for error in result["errors"]))
+
     def test_missing_folder_reports_zero(self):
         with tempfile.TemporaryDirectory() as root:
             result = module.audit(Path(root) / "does-not-exist")
