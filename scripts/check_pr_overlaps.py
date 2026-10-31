@@ -37,9 +37,14 @@ def get_json(path: str, token: str) -> object:
     try:
         with request.urlopen(req, timeout=15) as reply:
             return json.load(reply)
-    except (error.HTTPError, error.URLError, TimeoutError, ValueError, OSError) as exc:
-        # Не друкуємо URL/заголовки запиту чи токен з винятку.
-        raise AuditError(f"GitHub API недоступне або повернуло невірний JSON ({type(exc).__name__})") from None
+    except error.HTTPError as exc:
+        # Точний HTTP-код потрібен для діагностики 403/404/429;
+        # не виводимо URL, тіло відповіді, заголовки чи токен.
+        raise AuditError(f"GitHub REST файли PR: HTTP {exc.code}") from None
+    except (error.URLError, TimeoutError, ValueError, OSError) as exc:
+        raise AuditError(
+            f"GitHub REST недоступний або повернув невірний JSON ({type(exc).__name__})"
+        ) from None
 
 
 def pages(endpoint: str, fetch, max_pages: int = MAX_PAGES) -> list[dict]:
