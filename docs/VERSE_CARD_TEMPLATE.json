@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "1.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.1",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.1",
+      "checked_on": null
+    }
+  },
+  "sanskrit": null,
+  "iast": null,
+  "grammar": null,
+  "literal_meaning": null,
+  "ukrainian_translation": null,
+  "commentary": null,
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": null,
+    "evidence_url": null,
+    "verified": false,
+    "own_ukrainian_text": false
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
