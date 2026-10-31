@@ -47,6 +47,47 @@ class ReviewQueueTests(unittest.TestCase):
         self.assertEqual(row["approvals_current_sha"], [])
         self.assertEqual(row["changes_requested"], ["редактор"])
 
+    def test_comment_does_not_erase_previous_approval(self):
+        row = module.inspect(entry(reviews=[
+            review("редактор", "APPROVED"),
+            review("редактор", "COMMENTED"),
+        ]))
+        self.assertEqual(row["approvals_current_sha"], ["редактор"])
+        self.assertEqual(row["changes_requested"], [])
+
+    def test_comment_does_not_erase_changes_requested(self):
+        row = module.inspect(entry(reviews=[
+            review("редактор", "CHANGES_REQUESTED"),
+            review("редактор", "COMMENTED"),
+        ]))
+        self.assertEqual(row["changes_requested"], ["редактор"])
+        self.assertEqual(row["approvals_current_sha"], [])
+
+    def test_pending_does_not_erase_previous_approval(self):
+        row = module.inspect(entry(reviews=[
+            review("редактор", "APPROVED"),
+            review("редактор", "PENDING"),
+        ]))
+        self.assertEqual(row["approvals_current_sha"], ["редактор"])
+
+    def test_dismissal_cancels_previous_approval(self):
+        row = module.inspect(entry(reviews=[
+            review("редактор", "APPROVED"),
+            review("редактор", "DISMISSED"),
+        ]))
+        self.assertEqual(row["approvals_current_sha"], [])
+        self.assertIn("немає актуального схвалення іншою особою", row["observed_technical_blockers"])
+
+    def test_new_approval_after_dismissal_counts(self):
+        row = module.inspect(entry(reviews=[
+            review("редактор", "APPROVED"),
+            review("редактор", "DISMISSED"),
+            review("редактор", "APPROVED"),
+        ]))
+        self.assertEqual(row["approvals_current_sha"], ["редактор"])
+        self.assertEqual(row["observed_technical_blockers"], [])
+        self.assertFalse(row["automatically_mergeable"])
+
     def test_failed_and_pending_checks(self):
         row = module.inspect(entry(reviews=[review("редактор")], checks=[
             {"name": "test", "status": "completed", "conclusion": "failure"},
