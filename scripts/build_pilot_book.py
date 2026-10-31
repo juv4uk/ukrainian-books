@@ -27,8 +27,11 @@ CARDS = ROOT / "editorial" / "cards"
 GLOSSARY = ROOT / "editorial" / "GLOSSARY.md"
 BOOK = ROOT / "books" / "ashtavakra-hita-pilot"
 
-# Глави, покриті картками повністю (див. docs/VYDAVNYCHYI_VYSNOVOK.md).
-PILOT_CHAPTERS = (2, 3)
+# Глави, де картки покривають кожен вірш реєстру без пропусків.
+# Станом на 2026-10-31 це 14 глав із 20: 113 віршів із 298.
+# Частково покриті: 1, 15, 18. Без карток: 16, 17, 20.
+# Деталі — docs/VYDAVNYCHYI_VYSNOVOK.md.
+PILOT_CHAPTERS = (2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 19)
 
 # Поля картки, які є нашим власним внеском і можуть бути зверстані.
 OWN_FIELDS = (
