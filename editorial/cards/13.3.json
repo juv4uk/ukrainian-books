@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "13.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_13.3",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_13.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kṛtaṃ kim api naiva syād iti saṃcintya tattvataḥ | yadā yat kartum āyāti tat kṛtvāse yathāsukham ||",
+  "iast": "kṛtaṃ kim api naiva syād iti saṃcintya tattvataḥ | yadā yat kartum āyāti tat kṛtvāse yathāsukham ||",
+  "grammar": "kṛtam (n. nom. sg. «зроблене») kim api («що-небудь, анічого») na eva syāt («нехай не буде») iti («так»). saṃcintya (герунд sam-cint «подумавши, зваживши») tattvataḥ («істинно, по суті»). yadā yat («коли що») kartum (інфінітив kṛ «зробити») āyāti (3 sg. pr. ā-i «приходить, випадає») tat (n. acc. sg.) kṛtvā (герунд «зробивши») āse (1 sg. pr. ās «я сиджу») yathāsukham.",
+  "literal_meaning": "«Подумавши істинно: „зробленого не буде анічого“ — що б не випало зробити, зробивши те, я сиджу, як мені завгодно.»",
+  "ukrainian_translation": "Подумавши по-справжньому: «зробленого не буде нічого» — що б не випало зробити, зробивши те, я сиджу, як мені завгодно.",
+  "commentary": "Парадокс у тому, що дія не скасовується: yadā yat kartum āyāti («коли що випадає зробити») — дієслово āyāti означає саме те, що приходить само, без запрошення. Отже, діють, але без того, хто міг би зарахувати її собі. kṛtvāse — злитна форма kṛtvā + āse, і в ній дві дії стоять впритул: зробивши — сиджу. Умова naiva syāt («нехай не буде») стоїть у optativus, тобто це не констатація, а спосіб бачення, прийнятий заздалегідь. РЕФРЕН ГЛАВИ. Шість із семи віршів (13.1, 13.3–13.7) закінчуються однаково: aham āse yathāsukham («я сиджу — як мені завгодно»). ās — не «бути», а саме СИДІТИ, перебувати на місці; yathāsukham — «як зручно, за бажанням». Разом це формула, яка скасовує будь-яку поставу як вимогу: не треба ні стояти, ні лежати правильно. 13.2 — єдиний вірш глави без цього рефрену, і його треба читати окремо.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
