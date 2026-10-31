@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.77",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.77",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.77",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "jñānād galitakarmā yo lokadṛṣṭyāpi karmakṛt | nāpnoty avasaraṃ kartuṃ vaktum eva na kiṃcana ||",
+  "iast": "jñānād galitakarmā yo lokadṛṣṭyāpi karmakṛt | nāpnoty avasaraṃ kartuṃ vaktum eva na kiṃcana ||",
+  "grammar": "jñānāt (n. abl. sg. «від знання») galitakarmā (m. nom. sg. «той, у кого відпали діяння»: galita «відпалий, стік» + karman) yaḥ (m. nom. sg.) lokadṛṣṭyā (f. instr. sg. «з огляду на світ, як дивиться світ») api karmakṛt (m. nom. sg. «той, хто робить діяння»). na āpnoti («не знаходить») avasaram (m. acc. sg. «нагоди, зручного випадку») kartum (інфінітив kṛ) vaktum (інфінітив vac) eva na kiṃcana (n. acc. sg. «анічого»).",
+  "literal_meaning": "«Хто через знання має відпалі діяння — хоч і діє з огляду на світ — не знаходить нагоди зробити чи сказати хоч що-небудь.»",
+  "ukrainian_translation": "Хто через знання має відпалі діяння — хоч і діє з огляду на світ — не знаходить нагоди зробити чи сказати хоч що-небудь.",
+  "commentary": "`galitakarman` («той, у кого діяння відпали») — не «той, хто їх покинув»: відпадання без дії з його боку, і це принципово інша модель, ніж у 18.75, де покидання веде до балачок. `lokadṛṣṭyā api` («хоч і з огляду на світ») зберігає видимість дії: він діє, але нагоди не має.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

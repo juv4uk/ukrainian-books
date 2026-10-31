@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "9.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_9.3",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_9.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "anityaṃ sarvamevedaṃ tāpatritayadūṣitam| asāraṃ ninditaṃ heyamiti niścitya śāmyati||9|3||",
+  "iast": "anityaṃ sarvam evedaṃ tāpatritayadūṣitam | asāraṃ ninditaṃ heyam iti niścitya śāmyati ||",
+  "grammar": "anityam (n. «нестале») sarvam eva idam («усе це») tāpa-tritaya-dūṣitam («зіпсоване троїстою мукою») | asāram («без суті») ninditam («осуджене») heyam («те, що слід відкинути») iti niścitya («так вирішивши») śāmyati («втихає»).",
+  "literal_meaning": "«Усе це нестале, зіпсоване троїстою мукою, без суті, осуджене, гідне відкинення — так вирішивши, [людина] втихає.»",
+  "ukrainian_translation": "Усе це нестале, зіпсоване троїстою мукою, без суті, осуджене, гідне відкинення — так вирішивши, людина втихає.",
+  "commentary": "`tāpa-tritaya` («троїста мука») — усталена формула: мука від себе, від інших і від природи; переклад має лишити її як формулу, а не розтлумачувати в тексті вірша. П'ять означень ідуть підряд, і кожне сильніше за попереднє: від `anitya` (нестале) до `heya` (гідне відкинення). Втишення тут — **наслідок рішення**, а не почуття.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

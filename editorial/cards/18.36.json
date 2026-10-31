@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.36",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.36",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.36",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nāpnoti karmaṇā mokṣaṃ vimūḍho 'bhyāsarūpiṇā | dhanyo vijñānamātreṇa muktas tiṣṭhaty avikriyaḥ ||",
+  "iast": "nāpnoti karmaṇā mokṣaṃ vimūḍho 'bhyāsarūpiṇā | dhanyo vijñānamātreṇa muktas tiṣṭhaty avikriyaḥ ||",
+  "grammar": "na āpnoti («не досягає») karmaṇā (n. instr. sg. «діянням») mokṣam (m. acc. sg. «визволення») vimūḍhaḥ (m. nom. sg. «зовсім затьмарений») abhyāsarūpiṇā (n. instr. sg. «тим, що має вигляд вправи»: abhyāsa + rūpin). dhanyaḥ (m. nom. sg. «блаженний, щасливий») vijñānamātreṇa (n. instr. sg. «самим лише розпізнанням»: vijñāna + mātra) muktaḥ (m. nom. sg. «вільний») tiṣṭhati («стоїть, перебуває») avikriyaḥ (m. nom. sg. «без видозмін, незмінний»: a «не» + vikriya).",
+  "literal_meaning": "«Зовсім затьмарений не досягає визволення діянням, що має вигляд вправи; блаженний, вільний самим лише розпізнанням, перебуває незмінним.»",
+  "ukrainian_translation": "Зовсім затьмарений не досягає визволення ні діянням, ні тим, що має вигляд вправи; а блаженний, вільний самим лише розпізнанням, перебуває незмінним.",
+  "commentary": "abhyāsarūpa («те, що має вигляд вправи») — формула точна: йдеться не про вправу, а про її видимість. Протиставлення vijñānamātra («саме лише розпізнання») ставить розпізнання на місце дії, і avikriya («незмінний») — наслідок: те, що не змінюється, не потребує ані дії, ані вправи.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжності лише в сандгі та поділі: vimūḍho+abhyāsarūpiṇā / vimūḍho 'bhyāsarūpiṇā, muktastiṣṭhatyavikriyaḥ / muktas tiṣṭhaty avikriyaḥ. Та сама форма. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

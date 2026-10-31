@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.12",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.12",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.12",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tāta cinmātrarūpo+asi na te bhinnamidaṃ jagat| ataḥ kasya kathaṃ kutra heyopādeyakalpanā||15|12||",
+  "iast": "tāta cinmātrarūpo 'si na te bhinnam idaṃ jagat | ataḥ kasya kathaṃ kutra heyopādeyakalpanā ||",
+  "grammar": "tāta cinmātra-rūpaḥ asi («любий, ти маєш природу самої лише свідомості») na te bhinnam idam jagat («цей світ не відмінний від тебе») | ataḥ kasya katham kutra («тому — для кого, як, де») heya-upādeya-kalpanā («вигадування того, що відкидати й приймати»).",
+  "literal_meaning": "«Любий, твоя природа — сама лише свідомість; цей світ не відмінний від тебе. Тому — для кого, як і де вигадувати те, що відкидати й приймати?»",
+  "ukrainian_translation": "Любий, твоя природа — сама лише свідомість; цей світ не відмінний від тебе. Тому — для кого, як і де вигадувати те, що відкидати й приймати?",
+  "commentary": "Три питання підряд (`kasya katham kutra`) — не риторичний повтор, а розбір по трьох осях: для кого, яким чином, де. `kalpanā` — не «вибір», а **вигадування**: текст не каже, що вибір між добрим і поганим складний, він каже, що його нема кому робити. `tāta` — те саме ласкаве звертання, що в 9.2 і 15.8.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

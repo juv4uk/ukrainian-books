@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.55",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.55",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.55",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "bhṛtyaiḥ putraiḥ kalatraiś ca dauhitraiś cāpi gotrajaiḥ | vihasya dhikkṛto yogī na yāti vikṛtiṃ manāk ||",
+  "iast": "bhṛtyaiḥ putraiḥ kalatraiś ca dauhitraiś cāpi gotrajaiḥ | vihasya dhikkṛto yogī na yāti vikṛtiṃ manāk ||",
+  "grammar": "bhṛtyaiḥ (m. instr. pl. «слугами») putraiḥ (m. instr. pl. «синами») kalatraiḥ (n. instr. pl. «жінкою, дружиною») ca dauhitraiḥ (m. instr. pl. «доччиними синами, онуками») ca api gotrajaiḥ (m. instr. pl. «родичами, людьми того ж роду»: gotra «рід»). vihasya (герунд vi-has «висміявши, посміявшись») dhikkṛtaḥ (m. nom. sg. «зневажений, той, кому сказали „ганьба“»: dhik «ганьба» + kṛta) yogī (m. nom. sg.) na yāti («не йде») vikṛtim (f. acc. sg. «видозміну, зміну») manāk (прислівник «анітрохи, хоч трохи»).",
+  "literal_meaning": "«Висміяний і зневажений слугами, синами, жінкою, онуками й родичами, йог не змінюється анітрохи.»",
+  "ukrainian_translation": "Висміяний і зневажений слугами, синами, жінкою, онуками й родичами, йог не змінюється анітрохи.",
+  "commentary": "Найближче коло назване повністю — і саме тому воно найважче: не вороги, а ті, з ким живеш. `manāk` («анітрохи») — слово, що закриває питання про міру: не «мало змінюється», а зовсім. `vikṛti` («видозміна») — те саме слово, що в 18.5 (nirvikāra).",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

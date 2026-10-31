@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "12.5",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_12.5",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_12.5",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "āśramānāśramaṃ dhyānaṃ cittasvīkṛtavarjanam| vikalpaṃ mama vīkṣyaitairevamevāhamāsthitaḥ||12|5||",
+  "iast": "āśramānāśramaṃ dhyānaṃ cittasvīkṛtavarjanam | vikalpaṃ mama vīkṣya etair evam evāham āsthitaḥ ||",
+  "grammar": "āśrama-anāśramaṃ dhyānam («медитація зі стадією життя і без неї») citta-svīkṛta-varjanam («прийняття й відкидання, зроблені умом») | vikalpam («домислювання») mama vīkṣya («моє побачивши») etaiḥ evam eva aham āsthitaḥ («через саме це я так стою»).",
+  "literal_meaning": "«Медитація зі стадією життя і без неї, прийняття й відкидання, зроблені умом, — усе це домислювання. Побачивши це у собі, через саме це я так стою.»",
+  "ukrainian_translation": "Медитація зі стадією життя і без неї, прийняття й відкидання, зроблені умом, — усе це домислювання. Побачивши це в собі, через саме це я так стою.",
+  "commentary": "Єдине місце в книзі, де `āśrama` (стадія життя) названо **поряд з її відсутністю** — і обидва варіанти відкинуті як `vikalpa`. Це важливо для нашого словника: текст не обирає між «життям у стадії» і «поза нею», він знімає саму пару. `citta-svīkṛta-varjana` — прийняття й відкидання не речей, а **вироблені умом**; переклад мусить зберегти, що йдеться про акт ума, а не про оцінку світу.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

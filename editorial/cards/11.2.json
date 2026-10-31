@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "11.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_11.2",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_11.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "īśvaraḥ sarvanirmātā nehānya iti niścayī| antargalitasarvāśaḥ śāntaḥ kvāpi na sajjate||11|2||",
+  "iast": "īśvaraḥ sarvanirmātā nehānya iti niścayī | antargalitasarvāśaḥ śāntaḥ kvāpi na sajjate ||",
+  "grammar": "īśvaraḥ (m. nom. «Ішвара, володар») sarva-nirmātā («творець усього») na iha anyaḥ («немає тут іншого») iti niścayī | antargalita-sarvāśaḥ («той, у кого всі сподівання розчинилися всередині») śāntaḥ kvāpi na sajjate («ніде не застрягає»).",
+  "literal_meaning": "«Творець усього — Ішвара, і немає тут іншого» — хто має таке переконання, той із розчиненими всередині сподіваннями, втихлий, ніде не застрягає.",
+  "ukrainian_translation": "«Творець усього — Ішвара, і немає тут іншого» — хто має таке переконання, той із розчиненими всередині сподіваннями, втихлий, ніде не застрягає.",
+  "commentary": "У 11.2 Ішвару (`īśvaraḥ`) прямо названо `sarvanirmātā` («творець усього») й заперечено іншого (`na iha anyaḥ`); сама назва Ішвари вже трапляється в 4.6 як `jagad īśvaram` (GRETIL) / `jagadīśvaram` (SARIT). Це не теологія, а спосіб зняти питання причини. `sajjate` — «застрягає, чіпляється»: наслідок не в тому, що людина стала всемогутньою, а в тому, що вона більше ні за що не тримається.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

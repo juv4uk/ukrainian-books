@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "12.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_12.1",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_12.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kāyakṛtyāsahaḥ pūrvaṃ tato vāgvistarāsahaḥ| atha cintāsahastasmādevamevāhamāsthitaḥ||12|1||",
+  "iast": "kāyakṛtyāsahaḥ pūrvaṃ tato vāgvistarāsahaḥ | atha cintāsahastasmād evam evāham āsthitaḥ ||",
+  "grammar": "kāya-kṛtya-asahaḥ («нездатний до тілесних справ») pūrvam tataḥ vāk-vistara-asahaḥ («потім нездатний до поширення мови») | atha cintā-asahaḥ («далі нездатний до думання») tasmāt evam eva aham āsthitaḥ («тому саме в цьому я стою»).",
+  "literal_meaning": "«Спершу нездатний до тілесних справ, потім нездатний до поширення мови, далі нездатний до думання — тому саме в цьому я стою.»",
+  "ukrainian_translation": "Спершу нездатний до тілесних справ, потім нездатний до поширення мови, далі нездатний до думання — тому саме в цьому я стою.",
+  "commentary": "Тут відмова йде **не за бажанням, а через неспроможність**: `asahaḥ` — «нездатний витримати», а не «той, хто відмовився». Це рідкісний для тексту випадок, коли стан описано знизу — через те, чого людина вже не може. Формула `evam evāham āsthitaḥ` повторюється в 12.1–12.4, як `niścayī` у главі 11: переклад мусить тримати її однаково.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
