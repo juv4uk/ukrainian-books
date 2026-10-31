@@ -45,6 +45,37 @@ class SecurityTests(unittest.TestCase):
     def test_workflow_run_event(self):
         self.assertTrue(checker.inspect("quality.yml", GOOD.replace("  pull_request:", "  workflow_run:")))
 
+    def test_target_event_with_inline_object_is_rejected(self):
+        sample = GOOD.replace(
+            "  pull_request:\n",
+            "  pull_request:\n  pull_request_target: {}\n",
+        )
+        errors = checker.inspect("quality.yml", sample)
+        self.assertTrue(
+            any("небезпечна подія pull_request_target" in error for error in errors),
+            errors,
+        )
+
+    def test_workflow_run_with_inline_object_is_rejected(self):
+        sample = GOOD.replace(
+            "  pull_request:\n",
+            "  pull_request:\n  workflow_run: { workflows: [Якість] }\n",
+        )
+        errors = checker.inspect("quality.yml", sample)
+        self.assertTrue(any("небезпечна подія workflow_run" in error for error in errors), errors)
+
+    def test_workflow_run_with_inline_array_is_rejected(self):
+        sample = GOOD.replace(
+            "  pull_request:\n",
+            "  pull_request:\n  workflow_run: [виконано]\n",
+        )
+        errors = checker.inspect("provenance-audit.yml", sample)
+        self.assertTrue(any("небезпечна подія workflow_run" in error for error in errors), errors)
+
+    def test_inline_safe_pull_request_event_remains_allowed(self):
+        sample = GOOD.replace("  pull_request:\n", "  pull_request: {}\n")
+        self.assertEqual(checker.inspect("quality.yml", sample), [])
+
     def test_inline_permissions(self):
         self.assertTrue(checker.inspect("quality.yml", GOOD.replace("permissions:\n  contents: read", "permissions: write-all")))
 

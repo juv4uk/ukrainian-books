@@ -13,7 +13,9 @@ import re
 from pathlib import Path
 
 REQUIRED = {"quality.yml", "provenance-audit.yml", "verse-registry.yml"}
-EVENT = re.compile(r"^  ([a-z_]+):\s*(?:#.*)?$")
+# Подія може мати YAML-значення в одному рядку: target: {} / run: [...].
+# Потрібно впізнавати небезпечну назву до аналізу вкладених налаштувань.
+EVENT = re.compile(r"^  ([a-z_]+):(?:[ \t].*)?$")
 RIGHT = re.compile(r"^([ \t]*)([a-z][a-z-]*):\s*([a-z-]+)?\s*(?:#.*)?$")
 PERMISSIONS = re.compile(r"^([ \t]*)permissions:\s*(.*?)\s*$")
 DANGEROUS = {"pull_request_target", "workflow_run"}
