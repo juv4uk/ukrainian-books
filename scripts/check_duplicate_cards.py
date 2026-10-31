@@ -57,6 +57,11 @@ KNOWN_DUPLICATES = {}
 
 # Номер вірша з імені файлу: verse-1-5-..., verse-1-2-...
 NAME_RE = re.compile(r"verse-(\d{1,2})-(\d{1,3})(?:[-_.]|$)")
+# Дата в заголовку: «(31.10.2026)». Мусить зніматися ПЕРЕД пошуком номера вірша,
+# інакше «31.10» із дати читається як вірш 31.10. Саме так гейт удруге
+# почервонів на власному `main` (31.10.2026): bibliography-supplement-2026-10-31.md
+# і young-1991-corpus-check.md обидва закінчуються на «(31.10.2026)».
+DATE_RE = re.compile(r"\b\d{1,2}\.\d{1,2}\.\d{4}\b")
 # Номер вірша із заголовка H1: «Аштавакра-ґіта 1.5: ...» або «1.5 ...»
 HEAD_RE = re.compile(r"^#\s+.*?\b(\d{1,2})\.(\d{1,3})\b")
 # Діапазон у заголовку: «1.6–1.10», «1.6-1.10», «1.6 — 1.10».
@@ -100,7 +105,8 @@ def card_verse(path: Path) -> str | None:
         return f"{int(m.group(1))}.{int(m.group(2))}"
     try:
         for line in path.read_text(encoding="utf-8").splitlines()[:5]:
-            h = HEAD_RE.match(line.strip())
+            # Дату прибираємо: «31.10.2026» — не номер вірша.
+            h = HEAD_RE.match(DATE_RE.sub(" ", line.strip()))
             if h:
                 return f"{int(h.group(1))}.{int(h.group(2))}"
     except (OSError, UnicodeDecodeError):
