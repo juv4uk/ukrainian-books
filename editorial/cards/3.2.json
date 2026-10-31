@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "3.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_3.2",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_3.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ātmājñānād aho prītir viṣayabhramagocare | śukter ajñānato lobho yathā rajatavibhrame ||",
+  "iast": "ātmājñānād aho prītir viṣayabhramagocare | śukter ajñānato lobho yathā rajatavibhrame ||",
+  "grammar": "ātmājñānāt (n. abl. sg. «через незнання Атмана») aho (вигук) prītiḥ (f. nom. sg. «прихильність, задоволення») viṣayabhramagocare (m. loc. sg. «у полі омани чуттєвих предметів»: viṣaya «чуттєвий предмет» + bhrama «омана» + gocara «поле»). śukteḥ (f. gen./abl. sg. «перламутру, устричної черепашки») ajñānataḥ (прислівник «через незнання»; тут причина, не джерело) lobhaḥ (m. nom. sg. «жадоба») yathā («як») rajatavibhrame (m. loc. sg. «в омані срібла»).",
+  "literal_meaning": "«О диво! Через незнання Атмана — прихильність у полі омани чуттєвих предметів; як через незнання перламутру — жадоба в омані срібла.»",
+  "ukrainian_translation": "О диво! Через незнання Атмана з'являється прихильність у полі омани чуттєвих предметів — як через незнання перламутру з'являється жадоба в омані срібла.",
+  "commentary": "Вірш будується на точній паралелі з двох частин, і паралель тут не прикраса, а аргумент: prīti (прихильність) співвіднесена з lobha (жадобою), viṣayabhrama (омана чуттєвого) — з rajatavibhrama (омана срібла), ātmājñāna (незнання Атмана) — з śuktyajñāna (незнання перламутру). Причина в обох випадках одна — незнання, а не вада предмета: перламутр не винен, що його беруть за срібло. Це та сама паралель, що в 2.9, але там був перелік трьох прикладів, а тут — один, розгорнутий до кінця. Слово prīti м'якше за spṛhā (2.22) і за lobha: це радше «прихильність», ніж «спрага».",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

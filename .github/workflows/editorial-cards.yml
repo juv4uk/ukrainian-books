@@ -17,7 +17,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Виконати unit-тести
         run: python3 -m unittest discover -s tests -p 'test_editorial_cards.py' -v
+      - name: Виконати тести перевірки прогалин
+        run: python3 -m unittest discover -s tests -p 'test_verse_gaps.py' -v
       - name: Перевірити редакторські картки
         run: python3 scripts/check_editorial_cards.py
+      - name: Звіт про прогалини в нумерації (не блокує)
+        run: python3 scripts/check_verse_gaps.py
       - name: Перевірити структуру, посилання й ліцензію
         run: python3 scripts/check_project.py

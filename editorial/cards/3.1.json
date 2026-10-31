@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "3.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_3.1",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_3.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "avināśinam ātmānam ekaṃ vijñāya tattvataḥ | tavātmajñasya dhīrasya katham arthārjane ratiḥ ||",
+  "iast": "avināśinam ātmānam ekaṃ vijñāya tattvataḥ | tavātmajñasya dhīrasya katham arthārjane ratiḥ ||",
+  "grammar": "avināśinam (m. acc. sg. «незнищенний») ātmānam (m. acc. sg. «Атман») ekam (m. acc. sg. «єдиний») vijñāya (герунд vi-jñā «пізнавши») tattvataḥ (прислівник «істинно, по суті»). tava (gen. sg. «твого») ātmajñasya (m. gen. sg. «того, хто знає Атман») dhīrasya (m. gen. sg. «мудрого, стійкого»). katham («як?») arthārjane (n. loc. sg. «у набутті користі, в придбанні»: artha «користь» + arjana «набуття») ratiḥ (f. nom. sg. «втіха, прихильність»).",
+  "literal_meaning": "«Пізнавши істинно Атман — незнищенний, єдиний — як у тебе, атмазнавця, мудрого, можлива втіха в набутті користі?»",
+  "ukrainian_translation": "Пізнавши істинно Атман — незнищенний і єдиний — як у тебе, атмазнавця й мудрого, може бути втіха в набутті користі?",
+  "commentary": "Питання katham («як?») риторичне й будується на несумісності двох занять: пізнання єдиного й накопичення множинного. Слово artha тут не «сенс», а саме «користь, вигода» — це той самий термін, що в 10.1 серед того, що відкидають. Зверни увагу на порядок означень: спершу те, що пізнано (незнищенне, єдине), потім той, хто пізнав (атмазнавець, мудрий). Втіха в набутті не заборонена — поставлено питання, чи вона взагалі можлива за такого пізнання.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "ТУТ СПРАВЖНЄ РІЗНОЧИТАННЯ, не орфографія. SARIT подає один складений tavātmajñānadhīrasya (tava-ātma-jñāna-dhīra «твого знання-Атмана-мудрого»), GRETIL — два слова tavātmajñasya dhīrasya (tava-ātma-jñasya dhīrasya «твого, атмазнавця, мудрого»). Друге членування граматично чисте: ātmajña («той, хто знає Атман») — звичайний bahuvrīhi, а dhīra («мудрий») узгоджується з ним окремо. У SARIT доводиться припускати складене ātmajñāna («знання Атмана»), де dhīra стає третім членом — це можливо, але менш природно. Яке членування правильне, НЕ ВСТАНОВЛЕНО: третього свідка для цього вірша не перевірено. У перекладі взято членування GRETIL і це позначено тут, а не приховано.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

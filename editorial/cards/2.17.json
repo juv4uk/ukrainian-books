@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.17",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.17",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.17",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "bodhamātro+ahamajñānādupādhiḥ kalpito mayā| evaṃ vimṛśato nityaṃ nirvikalpe sthitirmama||2|17||",
+  "iast": "bodhamātro'ham ajñānād upādhiḥ kalpito mayā | evaṃ vimṛśato nityaṃ nirvikalpe sthitir mama ||",
+  "grammar": "bodha-mātraḥ (m. nom. sg. «лише усвідомлення», mātra — обмежувальний суфікс) aham | ajñānāt (n. abl. sg.) upādhiḥ (m. nom. sg. «обмеження, накладка») kalpitaḥ (m. nom. sg. «домислений, сконструйований») mayā (instr. sg.) | evam vimṛśataḥ (gen. sg. дієприкм. від vi-mṛś «того, хто так розмірковує») nityam (adv. «постійно») nirvikalpe (loc. sg. «у не-розрізненні») sthitiḥ mama («моє стояння»).",
+  "literal_meaning": "«Я — лише усвідомлення; через незнання мною домислене обмеження. Так тому, хто постійно розмірковує, — моє стояння в не-розрізненні.»",
+  "ukrainian_translation": "Я — лише усвідомлення; через незнання я домисив собі обмеження. Хто так постійно розмірковує, той стоїть у не-розрізненні — і це моє стояння.",
+  "commentary": "Тут названо механізм: upādhi («накладка, обмеження») не є чимось зовнішнім — він kalpita, «домислений», і домисил його саме той, хто тепер його знімає (mayā). Це не докір собі: у тексті немає оцінки, лише констатація авторства помилки. nirvikalpa — «без розрізнення», стан, у якому vikalpa (конструювання) не діє; це той самий корінь, що в 2.9 vikalpita.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
