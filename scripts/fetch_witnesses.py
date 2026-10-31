@@ -20,6 +20,7 @@ import re
 import sys
 import unicodedata
 import urllib.request
+from xml.etree import ElementTree as ET
 
 SARIT_URL = ("https://raw.githubusercontent.com/sarit/SARIT-corpus/"
              "master/astavakragita.xml")
@@ -43,10 +44,49 @@ def strip_tags(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+PRINTED_NUMBER = re.compile(r"\\|\\|(\\d+)\\|(\\d+)\\|{2,}\\s*$")
+VERSE_ID = re.compile(r"[1-9]\\d*\\.[1-9]\\d*")
+
+
 def sarit_verse(xml: str, verse: str) -> str | None:
-    pattern = rf'<lg[^>]*xml:id="verse_{re.escape(verse)}"[^>]*>(.*?)</lg>'
-    match = re.search(pattern, xml, re.S)
-    return strip_tags(match.group(1)) if match else None
+    """Виділити вірш за *надрукованим* кінцевим номером, а не TEI xml:id.
+
+    У SARIT 1.1 стоїть на <l>, групи 1.12/1.13 переплутані,
+    а 18.95/18.96 ділять один <lg>. Повертаємо None, якщо
+    номер відсутній, дубльований або має не два рядки <l>.
+    Це технічне витягання цифрової транскрипції, не критична редакція.
+    """
+    if not VERSE_ID.fullmatch(verse):
+        return None
+    try:
+        root = ET.fromstring(xml)
+    except ET.ParseError:
+        return None
+    body = next(
+        (element for element in root.iter()
+         if isinstance(element.tag, str) and element.tag.rsplit("}", 1)[-1] == "body"),
+        None,
+    )
+    if body is None:
+        return None
+
+    verse_texts: dict[str, str | None] = {}
+    pending: list[str] = []
+    for line in body.iter():
+        if not isinstance(line.tag, str) or line.tag.rsplit("}", 1)[-1] != "l":
+            continue
+        raw = "".join(line.itertext())
+        pending.append(raw)
+        number = PRINTED_NUMBER.search(raw)
+        if number is None:
+            continue
+        found_id = f"{int(number.group(1))}.{int(number.group(2))}"
+        candidate = strip_tags(" ".join(pending)) if len(pending) == 2 else None
+        # Не підміняти неоднозначні або повторені номери першим збігом.
+        verse_texts[found_id] = candidate if found_id not in verse_texts else None
+        pending = []
+
+    return verse_texts.get(verse)
 
 
 def gretil_verse(xml: str, verse: str) -> str | None:

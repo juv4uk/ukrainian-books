@@ -1,0 +1,19 @@
+name: Офлайнові тести витягача санскритських свідків
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  extract:
+    name: Перевірити структуру SARIT без завантаження чужого корпусу
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Виконати синтетичні тести
+        run: python3 -m unittest discover -s tests -p 'test_fetch_witnesses.py' -v
+      - name: Перевірити структуру й ліцензію
+        run: python3 scripts/check_project.py
