@@ -121,5 +121,83 @@ class OverlapTests(unittest.TestCase):
             self.assertEqual(json.loads(process.stdout)["status"], "conflict")
 
 
+class _Reply:
+    """Мінімальна відповідь: json.load() читає через .read()."""
+
+    def __init__(self, payload):
+        self._raw = json.dumps(payload).encode("utf-8")
+
+    def read(self, *args):
+        return self._raw
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc):
+        return False
+
+
+class GetJsonRetryTests(unittest.TestCase):
+    """Транзитний збій API не повинен валити гейт з першої спроби.
+
+    Справжній випадок 31.10.2026: `HTTPError` від GitHub API зробив
+    червоним КОЖЕН PR, і рій не міг нічого злити.
+    """
+
+    def _run(self, side_effect, **kwargs):
+        from unittest import mock
+        sleeps = []
+        with mock.patch.object(checker.request, "urlopen", side_effect=side_effect) as opened:
+            try:
+                value = checker.get_json("/x", "", sleep=sleeps.append, **kwargs)
+                return value, opened.call_count, sleeps
+            except checker.AuditError as exc:
+                return exc, opened.call_count, sleeps
+
+    def test_transient_error_is_retried_then_succeeds(self):
+        boom = checker.error.URLError("мережа")
+        value, calls, sleeps = self._run([boom, boom, _Reply({"ok": 1})])
+        self.assertEqual(value, {"ok": 1})
+        self.assertEqual(calls, 3)
+        self.assertEqual(sleeps, [1.0, 3.0])
+
+    def test_server_error_is_retried_then_fails_closed(self):
+        def raise_500(*args, **kwargs):
+            raise checker.error.HTTPError("u", 500, "server", {}, None)
+        value, calls, _ = self._run(raise_500)
+        self.assertIsInstance(value, checker.AuditError)
+        self.assertEqual(calls, 3)
+
+    def test_permanent_4xx_is_not_retried(self):
+        def raise_404(*args, **kwargs):
+            raise checker.error.HTTPError("u", 404, "not found", {}, None)
+        value, calls, sleeps = self._run(raise_404)
+        self.assertIsInstance(value, checker.AuditError)
+        self.assertEqual(calls, 1, "404 не зникне від паузи — повторювати не можна")
+        self.assertEqual(sleeps, [])
+
+    def test_rate_limit_honours_retry_after(self):
+        slow = checker.error.HTTPError("u", 429, "slow down", {"Retry-After": "0"}, None)
+        value, calls, sleeps = self._run([slow, _Reply({"ok": 1})])
+        self.assertEqual(value, {"ok": 1})
+        self.assertEqual(calls, 2)
+        self.assertEqual(sleeps, [0.0])
+
+    def test_broken_json_is_retried(self):
+        class Truncated:
+            def read(self, *args):
+                return b'{"a":'
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *exc):
+                return False
+
+        value, calls, _ = self._run([Truncated(), _Reply({"ok": 2})])
+        self.assertEqual(value, {"ok": 2})
+        self.assertEqual(calls, 2)
+
+
 if __name__ == "__main__":
     unittest.main()

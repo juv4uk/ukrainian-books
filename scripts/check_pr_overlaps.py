@@ -12,6 +12,7 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 from urllib import error, request
 
@@ -20,12 +21,44 @@ REPO = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 PAGE_SIZE = 100
 MAX_PAGES = 30  # GitHub обмежує перелік файлів PR 3000 записами.
 
+# Скільки разів пробувати запит і з якою паузою.
+#
+# Навіщо: 31.10.2026 цей гейт почервонів на КОЖНОМУ PR через
+# `HTTPError` від GitHub API — і оскільки він падає «fail-closed»,
+# весь рій не міг нічого злити. Один збій API не має зупиняти
+# перевірку, яка до перетину шляхів не має жодного відношення.
+#
+# Повторюємо ТІЛЬКИ транзитні збої: 5xx, 429, мережеві, таймаут,
+# обірваний або невалідний JSON. Постійні помилки (4xx, крім 429)
+# не повторюються — вони не зникнуть від паузи, і ховати їх зайвим
+# очікуванням не можна. Після вичерпання спроб — та сама відмова.
+API_RETRIES = 3
+RETRY_DELAYS = (1.0, 3.0)
+RETRY_AFTER_CAP = 10.0
+
 
 class AuditError(Exception):
     """Стан не можна надійно перевірити; зелений результат заборонений."""
 
 
-def get_json(path: str, token: str) -> object:
+def _retry_delay(exc: BaseException, attempt: int) -> float | None:
+    """Пауза перед повтором; None — повтор не допоможе."""
+    if isinstance(exc, error.HTTPError):
+        if exc.code == 429:
+            raw = exc.headers.get("Retry-After") if exc.headers else None
+            try:
+                return min(float(raw), RETRY_AFTER_CAP)
+            except (TypeError, ValueError):
+                pass
+        elif not 500 <= exc.code < 600:
+            return None  # 4xx — постійна помилка
+    elif not isinstance(exc, (error.URLError, TimeoutError, ValueError, OSError)):
+        return None
+    return RETRY_DELAYS[min(attempt, len(RETRY_DELAYS) - 1)]
+
+
+def get_json(path: str, token: str, *, retries: int = API_RETRIES,
+             sleep=time.sleep) -> object:
     headers = {
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
@@ -34,12 +67,20 @@ def get_json(path: str, token: str) -> object:
     if token:
         headers["Authorization"] = f"Bearer {token}"
     req = request.Request(API + path, headers=headers)
-    try:
-        with request.urlopen(req, timeout=15) as reply:
-            return json.load(reply)
-    except (error.HTTPError, error.URLError, TimeoutError, ValueError, OSError) as exc:
-        # Не друкуємо URL/заголовки запиту чи токен з винятку.
-        raise AuditError(f"GitHub API недоступне або повернуло невірний JSON ({type(exc).__name__})") from None
+    last: BaseException | None = None
+    for attempt in range(max(1, retries)):
+        try:
+            with request.urlopen(req, timeout=15) as reply:
+                return json.load(reply)
+        except (error.HTTPError, error.URLError, TimeoutError, ValueError, OSError) as exc:
+            last = exc
+            delay = _retry_delay(exc, attempt) if attempt + 1 < retries else None
+            if delay is None:
+                break
+            sleep(delay)
+    # Не друкуємо URL/заголовки запиту чи токен з винятку.
+    name = type(last).__name__ if last is not None else "невідома"
+    raise AuditError(f"GitHub API недоступне або повернуло невірний JSON ({name})") from None
 
 
 def pages(endpoint: str, fetch, max_pages: int = MAX_PAGES) -> list[dict]:
