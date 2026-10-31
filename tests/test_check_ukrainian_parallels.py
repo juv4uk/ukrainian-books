@@ -47,16 +47,28 @@ def record(**overrides) -> dict:
 
 class RegistryTests(unittest.TestCase):
     def test_real_register_is_clean(self) -> None:
+        """Реєстр чистий, і на кожен вірш припадає щонайбільше одна паралель.
+
+        Раніше тут стояли числа 20/20 — рівно стільки, скільки було в главі 1.
+        Коли паралелі дійшли до решти глав, фіксоване число замінено на
+        інваріант: записів стільки ж, скільки покритих віршів, тобто дублів
+        немає (це вже перевіряє і сам `audit`).
+        """
         result = audit()
         self.assertEqual(result["status"], "ok", result["errors"])
-        self.assertEqual(result["parallels"], 20)
-        self.assertEqual(result["verses_covered"], 20)
+        self.assertEqual(result["parallels"], result["verses_covered"])
+        self.assertGreaterEqual(result["verses_covered"], 20)
 
     def test_real_register_has_no_unverified_quotes(self) -> None:
-        """У главі 1 цитат немає свідомо — і це має бути видно з реєстру."""
+        """У книзі немає жодної цитати — і це має бути видно з реєстру.
+
+        Це головне правило: цитата без перевіреного URL не проходить. Тому
+        `quotes` мусить бути нулем у будь-якому стані книги, а непевні
+        паралелі — позначені, а не подані як впевнені.
+        """
         result = audit()
         self.assertEqual(result["quotes"], 0)
-        self.assertEqual(result["by_kind"].get("ПОТРЕБУЄ ПЕРЕВІРКИ"), 4)
+        self.assertGreater(result["by_kind"].get("ПОТРЕБУЄ ПЕРЕВІРКИ", 0), 0)
 
     def test_registry_index_has_298_verses(self) -> None:
         self.assertEqual(len(verse_ids()), 298)

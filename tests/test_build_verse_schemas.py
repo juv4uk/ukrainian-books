@@ -27,8 +27,28 @@ from scripts.build_verse_schemas import (  # noqa: E402
 class SpecsTests(unittest.TestCase):
     def test_chapter_one_is_complete(self) -> None:
         """Глава 1 — 20 віршів, і кожен має схему."""
-        verses = sorted(SPECS, key=lambda v: int(v.split(".")[1]))
+        verses = sorted((v for v in SPECS if v.startswith("1.")),
+                        key=lambda v: int(v.split(".")[1]))
         self.assertEqual(verses, [f"1.{n}" for n in range(1, 21)])
+
+    def test_schemas_belong_to_real_cards(self) -> None:
+        """Кожна схема мусить мати картку — зайвих схем бути не може.
+
+        Раніше тут стояла рівність «SPECS == глава 1». Коли машина пішла по
+        всіх главах, рівність замінено на вимогу, яка діє на кожному кроці:
+        жодна схема не сміє посилатися на вірш, якого немає в картках. Після
+        завершення книги до цього тесту додано рівність (див.
+        `test_every_card_has_a_schema`).
+        """
+        cards = {p.stem for p in (ROOT / "editorial" / "cards").glob("*.json")}
+        self.assertEqual(set(SPECS) - cards, set())
+
+    def test_every_card_has_a_schema(self) -> None:
+        """Кожен вірш книги має власну схему — усі 298."""
+        cards = {p.stem for p in (ROOT / "editorial" / "cards").glob("*.json")}
+        missing = sorted(cards - set(SPECS),
+                         key=lambda v: (int(v.split(".")[0]), int(v.split(".")[1])))
+        self.assertEqual(missing, [])
 
     def test_every_motif_exists(self) -> None:
         for verse, (motif, _params, _alt) in SPECS.items():
@@ -123,17 +143,17 @@ class FilesTests(unittest.TestCase):
             with self.subTest(verse=verse):
                 self.assertIn(filename(verse), text)
 
-    def test_no_orphan_svg_for_chapter_one(self) -> None:
-        """Серед схем глави 1 не має лежати файл, якого немає в SPECS.
+    def test_no_orphan_svg(self) -> None:
+        """У теці схем не має лежати файл, якого немає в SPECS.
 
-        Схеми інших глав (напр. `6-1-hlechyk.svg` з пілота) тут не
-        перевіряються: вони зроблені іншим заходом і мають свої записи,
-        коли дійде черга до тієї глави.
+        Перевірка розширена з глави 1 на всі 298 віршів. Єдиний виняток —
+        `6-1-hlechyk.svg`: пілотна схема, зроблена іншим заходом до того, як
+        машина дісталася шостої глави. Вона лишається в теці як історичний
+        зразок і не замінюється.
         """
         expected = {filename(v) for v in SPECS}
-        actual = {p.name for p in OUT.iterdir()
-                  if p.suffix == ".svg" and p.name.startswith("1-")}
-        self.assertEqual(actual - expected, set())
+        actual = {p.name for p in OUT.iterdir() if p.suffix == ".svg"}
+        self.assertEqual(actual - expected, {"6-1-hlechyk.svg"})
         self.assertEqual(expected - actual, set())
 
 

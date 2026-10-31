@@ -361,6 +361,32 @@ SPECS: dict[str, tuple[str, dict, str]] = {
              "Простір у глечику"),
 }
 
+# Схеми решти глав лежать у даних, а не в коді: `format-v2/schemas.json`.
+# Словник вище лишається зразком запису й першою главою; усе інше додається
+# сюди, щоб 298 віршів не перетворили скрипт на тисячу рядків літералів.
+EXTRA_SPECS = BOOK / "format-v2" / "schemas.json"
+
+
+def load_extra_specs(path: Path = EXTRA_SPECS) -> dict[str, tuple[str, dict, str]]:
+    """Прочитати додаткові схеми. Невідомий мотив — помилка, а не мовчазний пропуск."""
+    if not path.is_file():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    loaded: dict[str, tuple[str, dict, str]] = {}
+    for verse, item in (data.get("schemas") or {}).items():
+        motif = item.get("motif")
+        if motif not in MOTIFS:
+            raise SystemExit(f"схема {verse}: невідомий мотив {motif!r}; "
+                             f"дозволено {sorted(MOTIFS)}")
+        alt = (item.get("alt") or "").strip()
+        if not alt:
+            raise SystemExit(f"схема {verse}: порожній підпис (alt)")
+        loaded[str(verse)] = (motif, item.get("params") or {}, alt)
+    return loaded
+
+
+SPECS.update(load_extra_specs())
+
 
 def render(verse: str) -> str:
     """Повний SVG для одного вірша."""
