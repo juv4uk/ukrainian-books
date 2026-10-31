@@ -9,7 +9,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from check_card_chronology import check_directory, inspect_date
+from check_card_chronology import check_directory, inspect_date, inspect_review_order
 
 TODAY = date(2026, 10, 31)
 
@@ -59,6 +59,55 @@ class ChronologyTests(unittest.TestCase):
     def test_non_string_rejected(self):
         self.assertTrue(inspect_date(example(sarit=20261031),
                                      ("sources", "sarit", "checked_on"), TODAY))
+
+    def test_review_precedes_sarit_check_rejected(self):
+        problems = inspect_review_order(example(
+            sarit="2026-10-31", reviewed="2026-10-30"))
+        self.assertEqual(len(problems), 1)
+        self.assertIn("sources.sarit.checked_on", problems[0])
+
+    def test_review_precedes_gretil_check_rejected(self):
+        problems = inspect_review_order(example(
+            gretil="2026-10-31", sarit="2026-10-29",
+            reviewed="2026-10-30"))
+        self.assertEqual(len(problems), 1)
+        self.assertIn("sources.gretil.checked_on", problems[0])
+
+    def test_both_later_sources_reported_separately(self):
+        problems = inspect_review_order(example(
+            gretil="2026-10-31", sarit="2026-10-31",
+            reviewed="2026-10-29"))
+        self.assertEqual(len(problems), 2)
+
+    def test_same_day_and_later_review_allowed(self):
+        self.assertEqual(inspect_review_order(example(
+            gretil="2026-10-30", sarit="2026-10-31",
+            reviewed="2026-10-31")), [])
+        self.assertEqual(inspect_review_order(example(
+            gretil="2026-10-29", sarit="2026-10-30",
+            reviewed="2026-10-31")), [])
+
+    def test_unfilled_and_malformed_dates_not_double_reported(self):
+        self.assertEqual(inspect_review_order(example(
+            gretil="2026-10-31", reviewed=None)), [])
+        self.assertEqual(inspect_review_order(example(
+            gretil="невідома дата", reviewed="2026-10-30")), [])
+        self.assertEqual(inspect_review_order(example(
+            gretil="2026-10-31", reviewed="не дата")), [])
+        self.assertEqual(inspect_review_order({"review": [], "sources": {} }), [])
+
+    def test_directory_rejects_review_before_sarit_witness(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory)
+            (folder / "1.1.json").write_text(
+                json.dumps(example(
+                    gretil="2026-10-29", sarit="2026-10-31",
+                    reviewed="2026-10-30"), ensure_ascii=False),
+                encoding="utf-8")
+            count, errors = check_directory(folder, TODAY)
+            self.assertEqual(count, 1)
+            self.assertEqual(len(errors), 1)
+            self.assertIn("sources.sarit.checked_on", errors[0])
 
     def test_missing_folder_is_error(self):
         with tempfile.TemporaryDirectory() as directory:

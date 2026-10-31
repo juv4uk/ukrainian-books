@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.5",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.5",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.5",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "bubhukṣur iha saṃsāre | mumukṣur api dṛśyate | bhogamokṣanirākāṅkṣī | viralo hi mahāśayaḥ ||",
+  "iast": "bubhukṣur iha saṃsāre | mumukṣur api dṛśyate | bhogamokṣanirākāṅkṣī | viralo hi mahāśayaḥ ||",
+  "grammar": "bubhukṣuḥ — дезидератив від √bhuj «їсти, споживати»: «той, хто хоче їсти», тобто голодний до світу. iha saṃsāre — локатив одн. «у цій сансарі». mumukṣuḥ — дезидератив від √muc «звільняти»: «той, хто хоче звільнитися». api «також». dṛśyate «видно, зустрічається». bhogamokṣanirākāṅkṣī — bahuvrīhi «той, хто не прагне ні втіх, ні звільнення» (ākāṅkṣin «той, хто бажає»). viralaḥ «рідкісний, розсіяний». hi «адже». mahāśayaḥ — «великий душею, благородний» (mahā + āśaya «нутро, пристановище думки»). Складність: mahāśāyaḥ у GRETIL і mahāśayaḥ у SARIT — різні читання (див. різночитання); mahāśaya у 17.12 і 17.14 подано в обох свідках однаково.",
+  "literal_meaning": "«Голодний [до світу] у цій сансарі, а також спраглий звільнення — видно [й таких]. А хто не прагне ні втіх, ні звільнення — рідкісний він, великий душею.»",
+  "ukrainian_translation": "У цьому світі видно і тих, хто голодний до нього, і тих, хто прагне звільнення. Але хто не прагне ні втіх, ні звільнення — такий великий і рідкісний.",
+  "commentary": "Два дезидеративи (bubhukṣu, mumukṣu) поставлено в один граматичний ряд, і цим сказано головне: бажання звільнитися має ту саму форму, що й бажання насолоди. Різниця лише в предметі, не в структурі. Тому третій член ряду — той, хто не прагне ані того, ані того, — і є рідкісний. Це не пропозиція байдужості: вірш не каже, що така людина чогось не робить, він каже, що вона не прагне. Традиційні коментарі часто додають, що такий уже вільний; сам текст цього слова не вживає — ні mukta, ні mukti тут немає.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.5) проти SARIT (verse_17.5)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ в одному слові: GRETIL — mahāśāyaḥ (довге ā у другому складі), SARIT — mahāśayaḥ. Слово mahāśāya в санскриті не засвідчене, тоді як mahāśaya («великий душею») ужитий у 17.12 і 17.14, і там обидва свідки подають mahāśayaḥ однаково. Тому довге ā у GRETIL — найімовірніше дефект набору, і в тексті картки взято mahāśayaḥ. Це висновок із внутрішньої узгодженості тексту, а не з третього свідка; остаточно НЕ ВСТАНОВЛЕНО.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

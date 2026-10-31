@@ -50,6 +50,33 @@ class DuplicateTranslationTests(unittest.TestCase):
         self.assertTrue(any("однаковий переклад при різному санскриті" in e
                             for e in errors), errors)
 
+    def test_same_translation_without_sanskrit_is_suspicious(self):
+        """Дві порожні лексеми не доводять санскритського рефрену."""
+        tree(self.tmp, {
+            "1.1": ("Повторений український переклад.", ""),
+            "1.2": ("Повторений український переклад.", ""),
+        })
+        self.assertFalse(checker.shares_formula("", ""))
+        errors = checker.audit(self.tmp)
+        self.assertTrue(any("однаковий переклад" in e for e in errors), errors)
+
+    def test_one_missing_sanskrit_does_not_hide_duplicate(self):
+        """Навіть один порожній свідок не є підставою пропускати перевірку."""
+        tree(self.tmp, {
+            "1.1": ("Повторений український переклад.", ""),
+            "1.2": ("Повторений український переклад.", "prathamah"),
+        })
+        self.assertFalse(checker.shares_formula("", "prathamah"))
+        self.assertTrue(checker.audit(self.tmp))
+
+    def test_empty_sanskrit_with_different_translations_allowed(self):
+        """Не відхиляємо різні українські тексти лише за порожній санскрит."""
+        tree(self.tmp, {
+            "1.1": ("Перший український переклад.", ""),
+            "1.2": ("Другий український переклад.", ""),
+        })
+        self.assertEqual(checker.audit(self.tmp), [])
+
     def test_refrain_with_same_sanskrit_passes(self):
         """18.12 і 19.2: перший піввірш збігається — це не дефект."""
         refrain = ("Де дгарма, де бажання, де користь, де вміння розрізняти?",

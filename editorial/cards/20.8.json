@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.8",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva pramātā pramāṇaṃ vā | kva prameyaṃ kva ca pramā | kva kiṃcit kva na kiṃcid vā | sarvadā vimalasya me ||",
+  "iast": "kva pramātā pramāṇaṃ vā | kva prameyaṃ kva ca pramā | kva kiṃcit kva na kiṃcid vā | sarvadā vimalasya me ||",
+  "grammar": "Чотири терміни теорії пізнання: pramātṛ «той, хто пізнає», pramāṇa «засіб пізнання», prameya «предмет пізнання», pramā «саме пізнання». kiṃcit «щось», na kiṃcit «ніщо». sarvadā «завжди». vimalasya — родовий одн. «незаплямленого». me «у мене». Складність: kiṃcit і na kiṃcit у SARIT записані з ñ (kiñcit, kiñcid) — це різна передача того самого носового перед c, не різночитання. Синтаксично остання пада безособова: «де [все це] в мене, хто завжди незаплямлений».",
+  "literal_meaning": "«Де пізнавач, де засіб пізнання, де предмет, де саме пізнання? Де щось, де ніщо — у мене, хто завжди незаплямлений?»",
+  "ukrainian_translation": "Де той, хто пізнає, де засіб пізнання, де предмет, де саме пізнання? Де «щось», де «ніщо» — у мене, хто завжди без плями?",
+  "commentary": "Тут розібрано повний апарат пізнання — чотири члени, які індійські школи сперечалися уточнювати. Текст не заперечує жодного з них окремо: він питає, де вони, коли немає місця, у якому вони могли б стояти. Пада kva kiṃcit kva na kiṃcid vā забирає й останню опору — саму пару «є / немає». Це важливо для розуміння всієї глави: заперечення не є твердженням порожнечі, воно знімає обидві можливості.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.8) проти SARIT (verse_20.8)",
+      "note": "Різниця лише в передачі носового перед c: GRETIL пише kiṃcit і kiṃcid, SARIT — kiñcit і kiñcid (той самий звук у різній транслітерації). SARIT також пише сандгі злитно (kiñcitkva, kiñcidvā), GRETIL — роздільно. Різниця в оформленні, не в тексті.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

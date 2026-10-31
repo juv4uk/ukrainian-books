@@ -1,0 +1,50 @@
+name: ІЛЮСТРАЦІЯ-01 — доступний SVG
+on:
+  pull_request:
+    paths:
+      - 'editorial/illustration-drafts/**'
+      - '.github/workflows/illustration-1-2.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/illustration-drafts/**'
+      - '.github/workflows/illustration-1-2.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  safe-svg:
+    name: Перевірити авторський ескіз 1.2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати код
+        uses: actions/checkout@v4
+      - name: Перевірити XML, доступність, підписи й відсутність зовнішніх ресурсів
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from xml.etree import ElementTree as ET
+          path = Path('editorial/illustration-drafts/1-2-otruta-nektar.svg')
+          content = path.read_text(encoding='utf-8')
+          root = ET.fromstring(content)
+          namespace = '{http://www.w3.org/2000/svg}'
+          assert root.tag == namespace + 'svg', 'root must be svg'
+          assert root.attrib.get('role') == 'img', 'missing accessible image role'
+          assert root.attrib.get('aria-labelledby') == 'nazva opys', 'missing accessible references'
+          assert root.find(namespace + 'title') is not None, 'missing title'
+          assert root.find(namespace + 'desc') is not None, 'missing description'
+          assert root.attrib.get('viewBox') == '0 0 960 560', 'unexpected viewBox'
+          for element in root.iter():
+              assert element.tag not in (namespace + 'script', namespace + 'foreignObject'), 'active content forbidden'
+              for key, value in element.attrib.items():
+                  assert not key.lower().endswith('href'), 'links and images forbidden'
+                  assert 'url(' not in value.lower(), 'external CSS resources forbidden'
+          text = ''.join(root.itertext())
+          for virtue in ('терпимість', 'прямота', 'співчуття', 'вдоволеність', 'правдивість'):
+              assert virtue in text, f'missing virtue: {virtue}'
+          assert 'не реконструкція давньої Індії' in text, 'missing cultural caveat'
+          print('SVG-OK: XML, доступність, 5 чеснот, без зовнішніх ресурсів')
+          PY
+      - name: Перевірити локальні посилання та недоторканність ліцензії
+        run: python3 scripts/check_project.py

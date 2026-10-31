@@ -1,0 +1,25 @@
+% ДРУК-01: автономний типографічний зразок, не матеріал для видавництва.
+% Санскритські слова нижче є загальними лексемами, а не цитатою з видання.
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{ukrainian}
+\setmainfont{DejaVu Serif}
+\newfontfamily\devanagarifont[Script=Devanagari]{Noto Serif Devanagari}
+\usepackage[margin=26mm]{geometry}
+\begin{document}
+\section*{Шрифти української наукової книги}
+\textbf{Статус:} технічна проба; не текст вірша і не перевірене видання.
+
+\medskip
+\noindent\textbf{Деванагарі (окремий шрифт):} {\devanagarifont आत्मा}\quad {\devanagarifont ज्ञानम्}\quad {\devanagarifont साक्षिन्}
+
+\medskip
+\noindent\textbf{IAST (перевірка діакритики):} ātmā; jñānam; sākṣin.
+
+\medskip
+\noindent\textbf{Українська читальна передача:} атман; джнянам; сакшін.
+
+\medskip
+\noindent\textbf{Науковий апарат:} тут має бути перевірене джерело, граматика, коментар і межі культурної аналогії. Відсутність джерела або дозволу не можна приховувати.
+\end{document}
