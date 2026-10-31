@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "19.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_19.6",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_19.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva dūraṃ kva samīpaṃ vā bāhyaṃ kvābhyantaraṃ kva vā | kva sthūlaṃ kva ca vā sūkṣmaṃ svamahimni sthitasya me ||",
+  "iast": "kva dūraṃ kva samīpaṃ vā bāhyaṃ kvābhyantaraṃ kva vā | kva sthūlaṃ kva ca vā sūkṣmaṃ svamahimni sthitasya me ||",
+  "grammar": "kva dūram (n. nom. sg. «далеке») kva samīpam (n. nom. sg. «близьке») vā bāhyam (n. nom. sg. «зовнішнє») kva abhyantaram (n. nom. sg. «внутрішнє») kva vā. kva sthūlam (n. nom. sg. «грубе, велике») kva ca vā sūkṣmam (n. nom. sg. «тонке, дрібне»). svamahimni sthitasya me.",
+  "literal_meaning": "«Де далеке, де близьке, де зовнішнє, де внутрішнє? Де грубе, де тонке — у мене, що стоїть у власній величі?»",
+  "ukrainian_translation": "Де далеке, де близьке, де зовнішнє, де внутрішнє? Де грубе, де тонке — у мене, що стоїть у власній величі?",
+  "commentary": "Три пари, і кожна описує простір по-своєму: відстань (далеке / близьке), напрямок (зовнішнє / внутрішнє), щільність (грубе / тонке). Разом вони мали б вичерпати всі способи бути десь — і саме тому всі три відкидаються разом. Пара sthūla / sūkṣma особлива: це не лише «велике й мале», а й «тілесне й тонке», тобто остання межа між видимим і невидимим. РЕФРЕН ГЛАВИ. 19.2–19.7 закінчуються однаково: svamahimni sthitasya me («у мене, що стоїть у власній величі»). Кожен із цих шести віршів — низка питань kva («де»), і жодне не дістає відповіді. 19.1 і 19.8 стоять поза серією: перший описує, ЯК це сталося, останній — ЩО з цього випливає для мови.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжність bāhyaṃ (SARIT) / bahyaṃ (GRETIL) — та сама форма, різне позначення довгого ā, орфографія. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
