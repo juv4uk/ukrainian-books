@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "19.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_19.8",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_19.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "alaṃ trivargakathayā yogasya kathayāpy alam | alaṃ vijñānakathayā viśrāntasya mamātmani ||",
+  "iast": "alaṃ trivargakathayā yogasya kathayāpy alam | alaṃ vijñānakathayā viśrāntasya mamātmani ||",
+  "grammar": "alam («досить, годі»; з instr. «досить про») trivargakathayā (f. instr. sg. «розмовою про трицінність»: tri-varga «трійця [дгарма, користь, бажання]» + kathā «розмова»). yogasya (m. gen. sg. «йоги») kathayā (f. instr. sg. «розмовою») api alam. alam vijñānakathayā (f. instr. sg. «розмовою про знання»). viśrāntasya (m. gen. sg. дієприкметника минулого часу vi-śram «того, хто спочив, відпочив») mama (gen. sg.) ātmani (m. loc. sg. «в Атмані»).",
+  "literal_meaning": "«Досить розмов про трицінність, досить і розмов про йогу, досить розмов про знання — у мене, що спочив в Атмані.»",
+  "ukrainian_translation": "Досить розмов про трицінність, досить і розмов про йогу, досить розмов про знання — у мене, що спочив в Атмані.",
+  "commentary": "Вірш не має рефрену попередніх шести й замінює його іншим: не svamahimni sthitasya («що стоїть у власній величі»), а viśrāntasya mamātmani («що спочив в Атмані»). Різниця точна: стояння — це позиція, спочинок — її відсутність потреби. Тричі повторене alam («досить») знищує три теми поспіль: етику (трицінність), практику (йога) і теорію (знання). Це останній вірш книги перед главой 20, і він закриває розмову — буквально: kathā означає «розмова», і саме розмову тут оголошено зайвою.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

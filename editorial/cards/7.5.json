@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "7.5",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_7.5",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_7.5",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "aho cinmātramevāhamindrajālopamaṃ jagat| ato mama kathaṃ kutra heyopādeyakalpanā||7|5||",
+  "iast": "aho cinmātram evāham indrajālopamaṃ jagat | ato mama kathaṃ kutra heyopādeyakalpanā ||",
+  "grammar": "aho cinmātram eva aham («я — саме лише свідомість») | indrajāla-upamam (n. «подібне до чару») jagat | ataḥ mama katham kutra heya-upādeya-kalpanā («звідки в мене, де — домислювання про те, що відкинути й що прийняти»).",
+  "literal_meaning": "«О диво: я — саме лише свідомість, а світ подібний до чару. Тож звідки й де в мені домислювання про те, що відкинути і що прийняти?»",
+  "ukrainian_translation": "О диво: я — саме лише свідомість, а світ подібний до чару. Тож звідки й де в мені домислювання про те, що відкинути і що прийняти?",
+  "commentary": "`cinmātra` («саме лише свідомість») — ключове слово розділу; переклад не повинен додавати «чиста», бо `mātra` означає «не більше ніж». `indrajāla` — той самий образ чару, що в 10.2, і словник має бути спільним. Питання `kathaṃ kutra` подвійне — «як» і «де» — і саме подвійність робить його риторичним: для вибору не лишається ні способу, ні місця. Глава 7 на цьому закінчується.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

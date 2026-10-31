@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "7.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_7.2",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_7.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "mayyanantamahāmbhodhau jagadvīciḥ svabhāvataḥ| udetu vāstamāyātu na me vṛddhirna ca kṣatiḥ||7|2||",
+  "iast": "mayy anantamahāmbhodhau jagadvīciḥ svabhāvataḥ | udetu vāstam āyātu na me vṛddhir na ca kṣatiḥ ||",
+  "grammar": "mayi ananta-mahā-ambhodhau | jagat-vīciḥ (f. «хвиля світу») svabhāvataḥ («за власною природою») | udetu vā astam āyātu (імперативи «нехай піднімається або нехай спадає») | na me vṛddhiḥ na ca kṣatiḥ («немає в мене ні приросту, ні втрати»).",
+  "literal_meaning": "«У мені, безмежному океані, хвиля світу — за власною природою. Нехай піднімається або спадає: у мене немає ні приросту, ні втрати.»",
+  "ukrainian_translation": "У мені, безмежному океані, хвиля світу — за власною природою. Нехай піднімається або спадає: у мене немає ні приросту, ні втрати.",
+  "commentary": "Два імперативи (`udetu`, `āyātu`) — це не побажання, а **дозвіл**: текст не просить хвилю поводитися інакше. `svabhāvataḥ` («за власною природою») знімає питання причини. Пара `vṛddhi` / `kṣati` — приріст і втрата: океан не стає більшим від хвилі й не меншим без неї. Разом із 7.1 це друга метафора того самого, і різниця між човном і хвилею не випадкова.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
