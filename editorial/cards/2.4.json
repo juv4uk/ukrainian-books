@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.4",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yathā na toyato bhinnāstaraṅgāḥ phenabudbudāḥ | ātmano na tathā bhinnaṃ viśvamātmavinirgatam ||",
+  "iast": "yathā na toyato bhinnās taraṅgāḥ phenabudbudāḥ | ātmano na tathā bhinnaṃ viśvam ātmavinirgatam ||",
+  "grammar": "yathā … tathā (корелятивна пара) na (заперечення) toyataḥ (n. abl. sg. від toya «вода»: «від води») bhinnāḥ (m. nom. pl. «відмінні») taraṅgāḥ (m. nom. pl. «хвилі») phena-budbudāḥ (m. nom. pl. «піна й бульбашки», dvandva) | ātmanaḥ (m. abl. sg. «від Я») na tathā bhinnam (n. nom. sg. «не відмінний») viśvam (n. nom. sg.) ātma-vinirgatam (n. nom. sg. «той, що вийшов із Я», дієприкметник від nir-gam з ātman-).",
+  "literal_meaning": "«Як не відмінні від води хвилі, піна й бульбашки, так не відмінний від Я світ, що вийшов із Я.»",
+  "ukrainian_translation": "Як хвилі, піна й бульбашки не відмінні від води, так і світ, що вийшов із Я, не відмінний від Я.",
+  "commentary": "Образ води й хвиль працює на одному слові — bhinnam («відмінний»): хвиля не є водою в сенсі «іншою речовиною», але й не тотожна їй як окремий предмет. Це не тотожність і не різниця, а відмова від самої пари. ātmavinirgatam («той, що вийшов із Я») — не «створений», тому в перекладі немає слова «створений».",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
