@@ -29,8 +29,15 @@
 | [gretil.md](gretil.md) | GRETIL, SUB Göttingen | CC BY-NC-SA 4.0 | лише цитувати |
 | [sarit.md](sarit.md) | SARIT, © Suryansu Ray 2012 | CC BY-SA 3.0 Unported | лише цитувати |
 | [ashtavakra-gita.md](ashtavakra-gita.md) | давній санскритський твір | суспільне надбання (за наявними даними) | можна переносити |
-| [sanskrit-documents.md](sanskrit-documents.md) | sanskritdocuments.org | не встановлена | лише цитувати, потребує юриста |
+| [sanskrit-documents.md](sanskrit-documents.md) | sanskritdocuments.org | не встановлена | лише посилатися; право на цитування не підтверджено |
 | [sanskrit-lexicography.md](sanskrit-lexicography.md) | Cologne Digital Sanskrit Dictionaries | не встановлена | лише цитувати, потребує юриста |
+
+**Примітка до sanskritdocuments.org:** невстановлені умови використання не є
+дозволом цитувати або передруковувати цифрову транскрипцію. Поки правова
+підстава не з'ясована, редакція використовує посилання на сторінку, а не її
+текст. Це обережна редакційна практика, **не юридичний висновок**; питання
+допустимості конкретної цитати передається на правову перевірку. Докладніше —
+у [правовому реєстрі](../../COPYRIGHT_AND_SOURCES.md).
 
 Паспортів на книжки немає, бо в репозиторії немає жодного книжкового матеріалу:
 каталогу `books/` не існує, а `check_provenance.py` повертає `ok` із застереженням
