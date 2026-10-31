@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.84",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.84",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.84",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "niḥsnehaḥ putradārādau niṣkāmo viṣayeṣu ca | niścintaḥ svaśarīre 'pi nirāśaḥ śobhate budhaḥ ||",
+  "iast": "niḥsnehaḥ putradārādau niṣkāmo viṣayeṣu ca | niścintaḥ svaśarīre 'pi nirāśaḥ śobhate budhaḥ ||",
+  "grammar": "niḥsnehaḥ (m. nom. sg. «без вологості, без прив'язаності»: nis «без» + sneha «вологість, прив'язаність») putradārādau (m. loc. sg. «у синах, жінці й інших»: putra «син» + dāra «жінка» + ādi «починаючи з») niṣkāmaḥ (m. nom. sg. «без бажань») viṣayeṣu (m. loc. pl. «у предметах чуттів») ca. niścintaḥ (m. nom. sg. «без турботи, без думки»: nis «без» + cintā) svaśarīre (n. loc. sg. «у власному тілі») api nirāśaḥ (m. nom. sg. «без надій») śobhate budhaḥ (m. nom. sg.).",
+  "literal_meaning": "«Без прив'язаності до синів, жінки й інших, без бажань до предметів, без турботи навіть про власне тіло — без надій сяє той, хто знає.»",
+  "ukrainian_translation": "Без прив'язаності до синів, жінки й інших, без бажань до предметів, без турботи навіть про власне тіло — без надій сяє той, хто знає.",
+  "commentary": "`sneha` буквально «вологість» — те, чим речі прилипають; тому `niḥsneha` не «байдужий», а «незмочений». Перелік іде від найближчого до найдальшого й закінчується власним тілом — тобто остання прив'язка названа останньою. `nirāśa` («без надій») стоїть перед `śobhate`, і це єдина ствердна дія у вірші.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

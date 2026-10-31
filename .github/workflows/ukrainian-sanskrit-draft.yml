@@ -1,0 +1,19 @@
+name: Українська чернеткова передача санскриту
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ukr-sanskrit-draft:
+    name: IAST — построкова українська підказка
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати код репозиторію
+        uses: actions/checkout@v4
+      - name: Перевірити синтетичні позитивні та негативні сценарії
+        run: python3 -m unittest discover -s tests -p 'test_iast_to_ukrainian_draft.py' -v
+      - name: Перевірити загальну структуру, права й посилання
+        run: python3 scripts/check_project.py

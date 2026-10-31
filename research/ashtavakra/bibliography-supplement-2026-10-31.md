@@ -33,7 +33,7 @@
 
 ## Видання й переклади
 
-**Mukerjee, Radhakamal (1971). The Song of the Self Supreme (Aṣṭāvakragītā).** [перевірено — каталог CiNii; рецензія: Sternbach, JAOS 89(2), 1969, DOI 10.2307/599520]
+**Mukerjee, Radhakamal (1971). The Song of the Self Supreme (Aṣṭāvakragītā).** [перевірено — каталог CiNii; рецензія: Sternbach, *Journal of the American Oriental Society* **93**(3), **1973**, с. **379–380**, [DOI:10.2307/599520](https://doi.org/10.2307/599520); див. [джерельну звірку двох рецензій 1973 року](studies/mukerjee-1971-reviews-1973.md)]
 
 Санскрит (наґарі й латинка), англійський переклад, екзегеза, глосарій. Мукерджі датує текст дуже рано (бл. 500–400 до н. е.); ця дата в науці не загальноприйнята.
 
