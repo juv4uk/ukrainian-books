@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.50",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.50",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.50",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "svātantryāt sukham āpnoti svātantryāl labhate param | svātantryān nirvṛtiṃ gacchet svātantryāt paramaṃ padam ||",
+  "iast": "svātantryāt sukham āpnoti svātantryāl labhate param | svātantryān nirvṛtiṃ gacchet svātantryāt paramaṃ padam ||",
+  "grammar": "svātantryāt (n. abl. sg. «від самовладдя, від свободи»: sva «свій» + tantra «правління» + -tva; буквально «стан, коли правлять собою») sukham (n. acc. sg. «щастя») āpnoti («отримує»). svātantryāt labhate («досягає») param (n. acc. sg. «вищого»). svātantryāt nirvṛtim (f. acc. sg. «заспокоєння») gacchet (3 sg. opt. gam «ішов би, приходив»). svātantryāt paramam (n. acc. sg.) padam (n. acc. sg. «стопу, стан»).",
+  "literal_meaning": "«Від свободи отримує щастя, від свободи досягає вищого, від свободи йде до заспокоєння, від свободи — до вищої стопи.»",
+  "ukrainian_translation": "Від свободи отримує щастя, від свободи досягає вищого, від свободи приходить до заспокоєння, від свободи — до вищої стопи.",
+  "commentary": "Чотириразова анафора `svātantryāt`, і це єдиний вірш книги, де одне слово відкриває всі чотири частини. `svātantrya` — не «свобода» взагалі, а буквально «правління собою»; тому воно й стоїть в ablativus: усе перелічене походить від нього, а не досягається заради нього. Порядок зростає: sukha → param → nirvṛti → paramaṃ pada, тобто від відчуття до останньої стопи.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
