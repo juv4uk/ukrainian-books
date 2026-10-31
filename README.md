@@ -5,6 +5,8 @@
 ## Початкові матеріали
 
 - [Філологічні примітки до «Аштавакра-ґіти» 1.1–1.5](research/ashtavakra/verses-1-1-to-1-5.md) — власний аналітичний внесок, підготовлений на основі [нашого PR #14](https://github.com/juv4uk/livros/pull/14).
+- [Реєстр віршів усіх 20 глав](research/ashtavakra/registry-20-chapters.md) — машинна звірка SARIT і GRETIL, дві розбіжності та п'ять кандидатів у різночитання; порозділова таблиця в [CSV](research/ashtavakra/registry-20-chapters.csv).
+- [Вірш 1.2: п'ять чеснот і `toṣa`](research/ashtavakra/verse-1-2-tosa.md) — лексикографічна примітка: `toṣa` це «вдоволеність», а не «простота».
 - [Бібліографія наукових джерел](research/ashtavakra/bibliography.md) і [редакторський словник](editorial/GLOSSARY.md).
 - [Черга дослідницьких завдань](tasks/ROADMAP.md), [правила співпраці](CONTRIBUTING.md), шаблони Issues і PR.
 - Автоматичні перевірки Python та GitHub Actions; окреме ручне складання PDF, коли з'являться власні дозволені до публікації LaTeX-файли.
