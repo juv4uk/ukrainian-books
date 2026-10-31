@@ -5,6 +5,7 @@ from __future__ import annotations
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from scripts import build_pdf
 
@@ -100,11 +101,56 @@ class PdfSourceTests(unittest.TestCase):
             )
 
 
+    def test_poetic_chapters_use_only_canonical_directory(self):
+        poems = self.root / "poetychnyi"
+        poems.mkdir()
+        (self.root / "poetychnyi-rozdil-1.md").write_text(
+            "## 1.1\n\nЧужа паралельна редакція.\n", encoding="utf-8"
+        )
+        for number in (20, 1, 2):
+            (poems / f"rozdil-{number}.md").write_text(
+                f"## {number}.1\n\nКанонічна чернетка.\n", encoding="utf-8"
+            )
+        with patch.object(build_pdf, "POETIC", str(poems)):
+            chapters = build_pdf.poetic_chapter_files()
+        self.assertEqual([number for number, _ in chapters], [1, 2, 20])
+        self.assertTrue(all(Path(path).parent == poems for _, path in chapters))
+
+    def test_image_attributes_escape_quotes_and_ampersand(self):
+        image = self.root / "українська-схема.svg"
+        image.write_text("<svg/>", encoding="utf-8")
+        rendered = build_pdf.md_to_html(
+            '![Погляд "на себе" & рух](українська-схема.svg)',
+            str(self.root), False,
+        )
+        self.assertIn('alt="Погляд &quot;на себе&quot; &amp; рух"', rendered)
+        self.assertIn(image.as_uri(), rendered)
+
+    def test_image_path_traversal_is_rejected(self):
+        edition = self.root / "edition"
+        edition.mkdir()
+        (self.root / "private.svg").write_text("<svg/>", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "поза каталогом"):
+            build_pdf.md_to_html(
+                "![Не наш файл](../private.svg)", str(edition), False,
+            )
+
+    def test_symlink_outside_edition_is_rejected(self):
+        edition = self.root / "edition"
+        edition.mkdir()
+        private = self.root / "private.svg"
+        private.write_text("<svg/>", encoding="utf-8")
+        (edition / "outside.svg").symlink_to(private)
+        with self.assertRaisesRegex(ValueError, "поза каталогом"):
+            build_pdf.md_to_html(
+                "![Обхід через посилання](outside.svg)", str(edition), False,
+            )
+
     def test_actual_repository_has_both_complete_volumes(self):
         """Інтеграційна перевірка реальних 20+20 глав та ID усіх карток."""
         expected = build_pdf.expected_card_ids()
         scientific = build_pdf.chapter_files(r"^rozdil-(\d+)-naukove\.md$")
-        poetic = build_pdf.chapter_files(r"^poetychnyi-rozdil-(\d+)\.md$")
+        poetic = build_pdf.poetic_chapter_files()
         build_pdf.validate_volume(scientific, expected, "Науковий том")
         build_pdf.validate_volume(poetic, expected, "Поетичний том")
 
