@@ -139,8 +139,5 @@
     "iast"
   ],
   "glossary_terms": 8,
-  "generated_chars": 161319,
-  "outdated_before_write": [
-    "generated/verses.tex"
-  ]
+  "generated_chars": 161319
 }
