@@ -15,7 +15,7 @@
 **Історичні словники (оригінали) й цифрові покажчики до них:**
 
 - Monier Monier-Williams. *A Sanskrit-English Dictionary*. Oxford: Clarendon Press, **1899**. [Каталог цифрових словників Кельнського університету, MW (1899)](https://www.sanskrit-lexicon.uni-koeln.de/); [зібрані статті `dhṛṣ`](https://kosha.sanskrit.today/word/sa/%E0%A4%A7%E0%A5%83%E0%A4%B7%E0%A5%8D), [`hṛṣ`](https://kosha.sanskrit.today/word/sa/%E0%A4%B9%E0%A5%83%E0%A4%B7%E0%A5%8D), [`helā`](https://www.wisdomlib.org/definition/hela). Історичний друкований словник не тотожний сучасним цифровим інтерфейсам Kosha/WisdomLib.
-- Carl Cappeller. *A Sanskrit-English Dictionary*. **1891**; [Кельнський каталог CAE](https://www.sanskrit-lexicon.uni-koeln.de/), [записи `dhṛṣ` і `hṛṣ`](https://kosha.sanskrit.today/word/sa/%E0%A4%B9%E0%A5%83%E0%A4%B7%E0%A5%8D), [`helā` у зведенні](https://www.wisdomlib.org/definition/hela). Незалежний словниковий опис, але не свідок конкретної редакції «Аштавакра-ґіти».
+- Carl Cappeller. *A Sanskrit-English Dictionary*. **1891**; [Кельнський каталог CAE](https://www.sanskrit-lexicon.uni-koeln.de/), [статті `dhṛṣ`](https://kosha.sanskrit.today/word/sa/%E0%A4%A7%E0%A5%83%E0%A4%B7%E0%A5%8D) та [`hṛṣ`](https://kosha.sanskrit.today/word/sa/%E0%A4%B9%E0%A5%83%E0%A4%B7%E0%A5%8D), [`helā` у зведенні](https://www.wisdomlib.org/definition/hela). Незалежний словниковий опис, але не свідок конкретної редакції «Аштавакра-ґіти».
 - Monier Monier-Williams. *A Sanskrit-English Dictionary*. **1872** (перша редакція, не змішувати з 1899); [відтворення статті `hṛṣ`](https://kosha.sanskrit.today/word/sa/%E0%A4%B9%E0%A5%83%E0%A4%B7%E0%A5%8D).
 - Theodor Benfey. *A Sanskrit-English Dictionary*. **1866**; [стаття `helā` у цифровому зведенні з атрибуцією Benfey](https://www.wisdomlib.org/definition/hela).
 
@@ -44,6 +44,6 @@
 
 ## Авторські права та статус
 
-У файл внесено тільки короткі граматичні форми, посилання й новий український аналіз. Повних транскрипцій GRETIL/SARIT, сучасних чужих перекладів чи тексту словникових статей тут немає. [Правовий реєстр бібліотеки](../../COPYRIGHT_AND_SOURCES.md) залишає сумісність електронних видань з «ВОЛЬНІСТЮ» непідтвердженою. Цей аналіз є власним внеском; права на цифрові джерела та незалежну санскритологічну рецензію він **не засвідчує**.
+У файл внесено тільки короткі граматичні форми, посилання й новий український аналіз. Повних транскрипцій GRETIL/SARIT, сучасних чужих перекладів чи тексту словникових статей тут немає. [Правовий реєстр бібліотеки](../../../COPYRIGHT_AND_SOURCES.md) залишає сумісність електронних видань з «ВОЛЬНІСТЮ» непідтвердженою. Цей аналіз є власним внеском; права на цифрові джерела та незалежну санскритологічну рецензію він **не засвідчує**.
 
 **Стан: досліджено джерела; незалежної філологічної рецензії немає.**
