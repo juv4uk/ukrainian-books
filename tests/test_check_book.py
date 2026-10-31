@@ -63,6 +63,24 @@ class BookIntegrityTests(unittest.TestCase):
         errors = checker.audit(self.tmp)
         self.assertTrue(any("немає вірша 1.2" in e for e in errors), errors)
 
+    def test_duplicate_number_with_identical_translation_is_rejected(self):
+        """Дві однакові копії 1.1 не повинні маскуватися множиною номерів."""
+        repeated = chapter_md(1, {1: "Перший.", 2: "Другий."}) + "\n## 1.1\n\nПерший.\n"
+        make_tree(self.tmp,
+                  {"1.1": "Перший.", "1.2": "Другий."},
+                  {1: repeated}, ZMIST_OK)
+        errors = checker.audit(self.tmp)
+        self.assertTrue(any("повторено заголовок вірша 1.1" in e for e in errors), errors)
+
+    def test_duplicate_number_with_different_translation_is_rejected(self):
+        """Повтор не стає припустимим, навіть якщо копія відрізняється."""
+        repeated = chapter_md(1, {1: "Перший.", 2: "Другий."}) + "\n## 1.2\n\nЧужий текст.\n"
+        make_tree(self.tmp,
+                  {"1.1": "Перший.", "1.2": "Другий."},
+                  {1: repeated}, ZMIST_OK)
+        errors = checker.audit(self.tmp)
+        self.assertTrue(any("повторено заголовок вірша 1.2" in e for e in errors), errors)
+
     def test_extra_verse_in_book_is_named(self):
         make_tree(self.tmp,
                   {"1.1": "Перший."},
