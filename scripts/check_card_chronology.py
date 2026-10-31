@@ -19,6 +19,28 @@ DATE_FIELDS = (
     ("sources", "sarit", "checked_on"),
     ("review", "reviewed_on"),
 )
+SOURCE_CHECK_FIELDS = (
+    ("sources", "gretil", "checked_on"),
+    ("sources", "sarit", "checked_on"),
+)
+
+
+def _read_iso_date(card: dict, field: tuple[str, ...]) -> date | None:
+    """Повертає date або None, якщо поле відсутнє/null/не рядок/некоректне."""
+    current: object = card
+    for key in field:
+        if not isinstance(current, dict):
+            return None
+        current = current.get(key)
+    if current is None or not isinstance(current, str):
+        return None
+    try:
+        parsed = date.fromisoformat(current)
+    except ValueError:
+        return None
+    if parsed.isoformat() != current:
+        return None
+    return parsed
 
 
 def inspect_date(card: dict, field: tuple[str, ...], today: date) -> list[str]:
@@ -41,6 +63,30 @@ def inspect_date(card: dict, field: tuple[str, ...], today: date) -> list[str]:
     if parsed > today:
         return [f"{name}: майбутня дата {current} після {today.isoformat()} (UTC)"]
     return []
+
+
+def inspect_review_after_sources(card: dict) -> list[str]:
+    """Рецензія не може бути датована раніше за будь-яку коректну звірку джерела.
+
+    Однакові дати дозволені. Некоректні/відсутні значення не дублюють
+    помилки з inspect_date — їх уже ловить чинна логіка.
+    """
+    reviewed = _read_iso_date(card, ("review", "reviewed_on"))
+    if reviewed is None:
+        return []
+    errors: list[str] = []
+    for field in SOURCE_CHECK_FIELDS:
+        checked = _read_iso_date(card, field)
+        if checked is None:
+            continue
+        if reviewed < checked:
+            name = ".".join(field)
+            errors.append(
+                f"review.reviewed_on ({reviewed.isoformat()}) раніше за "
+                f"{name} ({checked.isoformat()}): рецензія не може "
+                f"засвідчити подальшу звірку джерела"
+            )
+    return errors
 
 
 def check_directory(folder: Path, today: date) -> tuple[int, list[str]]:
@@ -68,6 +114,9 @@ def check_directory(folder: Path, today: date) -> tuple[int, list[str]]:
             continue
         for field in DATE_FIELDS:
             errors.extend(f"{file}: {err}" for err in inspect_date(data, field, today))
+        errors.extend(
+            f"{file}: {err}" for err in inspect_review_after_sources(data)
+        )
     if checked == 0:
         errors.append(f"{folder}: не знайдено JSON-карток — нічого перевіряти")
     return checked, errors
