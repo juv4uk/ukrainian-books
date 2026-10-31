@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.10",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.10",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.10",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "matto vinirgataṃ viśvaṃ mayyeva layameṣyati| mṛdi kumbho jale vīciḥ kanake kaṭakaṃ yathā||2|10||",
+  "iast": "matto vinirgataṃ viśvaṃ mayy eva layam eṣyati | mṛdi kumbho jale vīciḥ kanake kaṭakaṃ yathā ||",
+  "grammar": "mattaḥ (abl. sg. «від мене») vinirgatam (n. nom. sg. «той, що вийшов») viśvam (n. nom. sg.) mayi eva (loc. sg. «у мені саме») layam (m. acc. sg. «розчинення») eṣyati (3 sg. fut. i «піде до») | mṛdi (f. loc. sg. «у глині») kumbhaḥ (m. nom. sg. «глек») jale (n. loc. sg.) vīciḥ (m. nom. sg. «хвиля») kanake (n. loc. sg. «у золоті») kaṭakam (n. nom. sg. «браслет») yathā.",
+  "literal_meaning": "«Світ, що вийшов від мене, у мені саме піде в розчинення — як глек у глині, хвиля у воді, браслет у золоті.»",
+  "ukrainian_translation": "Світ, що вийшов із мене, знову розчиниться в мені — як глек у глині, хвиля у воді, браслет у золоті.",
+  "commentary": "Три приклади речі, чия назва зникає, а матеріал лишається: глек стає глиною, браслет — золотом. laya — розчинення, не знищення. Майбутній час eṣyati («піде») збережено: це не доконаний факт, а напрямок. Форма kaṭakam — прикраса на руку; «браслет» умовний відповідник.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
