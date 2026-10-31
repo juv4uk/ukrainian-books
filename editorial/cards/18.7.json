@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.7",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.7",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "samastaṃ kalpanāmātram ātmā muktaḥ sanātanaḥ | iti vijñāya dhīro hi kim abhyasyati bālavat ||",
+  "iast": "samastaṃ kalpanāmātram ātmā muktaḥ sanātanaḥ | iti vijñāya dhīro hi kim abhyasyati bālavat ||",
+  "grammar": "samastam (n. nom. sg. «усе разом, сукупність») kalpanāmātram (n. nom. sg. «лише побудова уяви»: kalpanā + mātra). ātmā (m. nom. sg.) muktaḥ (m. nom. sg. «вільний») sanātanaḥ (m. nom. sg. «споконвічний»). iti («так») vijñāya (герунд vi-jñā «знаючи, розпізнавши») dhīraḥ (m. nom. sg. «мудрий, стійкий») hi («ж») kim («чого?») abhyasyati (3 sg. pr. abhi-as «вправляється, повторює») bālavat (прислівник «як дитина»).",
+  "literal_meaning": "«Знаючи, що все разом — лише побудова уяви, а Атман вільний і споконвічний, — чого мудрий вправляється, як дитина?»",
+  "ukrainian_translation": "Знаючи, що все разом — тільки побудова уяви, а Атман вільний і споконвічний, — чого ж мудрий вправляється, як дитина?",
+  "commentary": "abhyasyati — дієслово повторювальної вправи (звідси «абг'яса» в йозі), і саме воно тут висміяне. Порівняння bālavat («як дитина») не образливе, а точне: дитина повторює те саме, поки не навчиться, — а тут навчатися вже нема кому й нема чого. sanātana («споконвічний») стоїть при ātmā і знімає час: те, що не почалося, не потребує вправи.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
