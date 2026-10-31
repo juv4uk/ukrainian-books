@@ -45,6 +45,18 @@ class LocalImageLinkTests(unittest.TestCase):
         self.assertEqual(report["status"], "failed")
         self.assertTrue(any("README.md → docs/missing.png" in e for e in report["errors"]))
 
+    def test_missing_local_image_with_empty_alt_is_error(self):
+        # Декоративні зображення без підпису також мають перевірятися.
+        code, report = self.check("![](docs/missing.png)\n")
+        self.assertEqual(code, 1)
+        self.assertTrue(any("README.md → docs/missing.png" in e for e in report["errors"]))
+
+    def test_existing_local_image_with_empty_alt_is_allowed(self):
+        (self.root / "docs/figure.png").write_bytes(b"synthetic")
+        code, report = self.check("![](docs/figure.png)\n")
+        self.assertEqual(code, 0)
+        self.assertEqual(report["errors"], [])
+
     def test_existing_local_image_is_allowed(self):
         image = self.root / "docs/figure.png"
         image.write_bytes(b"synthetic")
