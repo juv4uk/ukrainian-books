@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "4.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_4.6",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_4.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ātmānam advayaṃ kaścij jānāti jagad īśvaraṃ | yad vetti tat sa kurute na bhayaṃ tasya kutracit ||",
+  "iast": "ātmānam advayaṃ kaścij jānāti jagad īśvaraṃ | yad vetti tat sa kurute na bhayaṃ tasya kutracit ||",
+  "grammar": "ātmānam (m. acc. sg.) advayam (m. acc. sg. «недвоїстий») kaścit («хтось, дехто») jānāti («знає»). jagat (n. nom./acc. sg. «світ») īśvaram (m. acc. sg. «володар»; разом jagadīśvara «володар світу», узгоджене з ātmānam). yad (n. acc. sg.) vetti («знає») tat (n. acc. sg.) saḥ (m. nom. sg.) kurute («робить»). na bhayam (n. nom. sg. «страх») tasya (m. gen. sg. «у нього») kutracit («будь-де, ніде»; з na — «ніде»).",
+  "literal_meaning": "«Хтось знає Атман — недвоїстий, володаря світу. Що він знає, те й робить; страху в нього немає ніде.»",
+  "ukrainian_translation": "Хтось знає Атман — недвоїстий, володаря світу. Що він знає, те й робить, — і страху в нього немає ніде.",
+  "commentary": "kaścit («хтось») на початку — не випадкове слово: вірш не обіцяє, що це стосується кожного, і не називає його. Друга половина дає формулу yad vetti tat kurute («що знає, те й робить»), і вона сильніша за звичне «чини за знанням»: тут знання й дія не узгоджуються, а ототожнюються. kutracit з na («ніде») закриває простір повністю — страх не має місця, а не просто відсутній тут. Це останній вірш глави, і він повертає до її початку: 4.1 протиставляв того, хто грається, тому, хто тягне; тут сказано, чому — бо немає страху, а отже немає й потреби тягнути.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
