@@ -143,6 +143,27 @@ class CardTests(unittest.TestCase):
             self.assertEqual(count, 2)
             self.assertTrue(any("повторна картка" in e for e in errors), errors)
 
+    def test_malformed_status_does_not_crash(self) -> None:
+        card = self.draft()
+        card["status"] = ["рецензовано"]
+        self.assert_invalid(card, "Невідомий статус")
+
+    def test_boolean_schema_version_rejected(self) -> None:
+        card = self.draft()
+        card["schema_version"] = True
+        self.assert_invalid(card, "версія схеми")
+
+    def test_unhashable_id_does_not_crash(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            card = self.draft()
+            card["id"] = {"зламана": "структура"}
+            (Path(tmp) / "broken.json").write_text(
+                json.dumps(card, ensure_ascii=False), encoding="utf-8"
+            )
+            count, errors = check_directory(Path(tmp), self.ids)
+            self.assertEqual(count, 1)
+            self.assertTrue(any("Невідомий ідентифікатор" in e for e in errors), errors)
+
     def test_invalid_json_detected(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             (Path(tmp) / "1.1.json").write_text("{", encoding="utf-8")
