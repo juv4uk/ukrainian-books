@@ -8,7 +8,7 @@
     "gretil": {
       "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
       "locator": "Avg_19.1",
-      "checked_on": "2026-10-31"
+      "checked_on": null
     },
     "sarit": {
       "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
@@ -16,22 +16,16 @@
       "checked_on": "2026-10-31"
     }
   },
-  "sanskrit": "tattvavijñānasandaṃśam ādāya hṛdayodarāt | nānāvidhaparāmarśaśalyoddhāraḥ kṛto mayā ||",
+  "sanskrit": "tattvavijñānasandaṃśamādāya hṛdayodarāt| nānāvidhaparāmarśaśalyoddhāraḥ kṛto mayā||19|1||",
   "iast": "tattvavijñānasandaṃśam ādāya hṛdayodarāt | nānāvidhaparāmarśaśalyoddhāraḥ kṛto mayā ||",
-  "grammar": "tattvavijñānasandaṃśam (m. acc. sg. «кліщі знання істини»: tattva «істина, суть» + vijñāna «знання» + sandaṃśa «кліщі, щипці»; санскритське sandaṃśa буквально «те, що кусає разом» — так само, як українське «щипці» від «щипати») ādāya (герунд ā-dā «взявши») hṛdayodarāt (n. abl. sg. «з нутра серця»: hṛdaya «серце» + udara «нутро, черево»). nānāvidhaparāmarśaśalyoddhāraḥ (m. nom. sg. «витягання колючок різноманітних хибних схоплень»: nānāvidha «різноманітний» + parāmarśa «схоплювання, упереджене уявлення» + śalya «колючка, стріла» + uddhāra «витягання») kṛtaḥ (m. nom. sg. «зроблено») mayā (instr. sg. «мною»).",
-  "literal_meaning": "«Взявши кліщі знання істини, я витяг з нутра серця колючки різноманітних хибних уявлень.»",
-  "ukrainian_translation": "Взявши кліщі знання істини, я витяг із нутра серця колючки різноманітних хибних уявлень.",
-  "commentary": "Вірш — не декларація, а опис процедури, і метафора тут хірургічна: sandaṃśa — кліщі, якими виймають стороннє тіло з рани. Три слова працюють разом: śalya («колючка») — те, що застрягло; uddhāra («витягання») — дія; hṛdayodara («нутро серця») — місце, і воно назване нутром, а не поверхнею. parāmarśa тут не «думка», а хибне схоплювання — розумове прийняття чогось за інше. Тобто йдеться не про прибирання думок, а про виймання того, що застрягло й болить. РЕФРЕН ГЛАВИ. 19.2–19.7 закінчуються однаково: svamahimni sthitasya me («у мене, що стоїть у власній величі»). Кожен із цих шести віршів — низка питань kva («де»), і жодне не дістає відповіді. 19.1 і 19.8 стоять поза серією: перший описує, ЯК це сталося, останній — ЩО з цього випливає для мови.",
-  "variants": [
-    {
-      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
-      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
-      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
-    }
-  ],
-  "variants_checked": true,
+  "grammar": "tattva-vijñāna-sandaṃśam (m. acc. «кліщі пізнання суті») ādāya («взявши») hṛdaya-udarāt («із нутра серця») | nānāvidha-parāmarśa-śalya-uddhāraḥ («витягання стріли різноманітного розмірковування») kṛtaḥ mayā («зроблене мною»).",
+  "literal_meaning": "«Взявши кліщі пізнання суті з нутра серця, я витяг стрілу різноманітного розмірковування.»",
+  "ukrainian_translation": "Взявши кліщі пізнання суті з нутра серця, я витяг стрілу різноманітного розмірковування.",
+  "commentary": "Глава відкривається **хірургічним** образом, а не філософським: `sandaṃśa` — кліщі, якими дістають утрамбоване, `śalya` — стріла чи скабка в тілі, `uddhāra` — витягання. Інструмент узятий **зсередини** (`hṛdayodarāt`), тобто не принесений ззовні. `parāmarśa` — не «думка» взагалі, а розмірковування-зачіпання; саме воно назване скабкою.",
+  "variants": [],
+  "variants_checked": false,
   "rights": {
-    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
     "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
     "verified": false,
     "own_ukrainian_text": true
