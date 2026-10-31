@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "11.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_11.3",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_11.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "āpadaḥ saṃpadaḥ kāle daivādeveti niścayī| tṛptaḥ svasthendriyo nityaṃ na vāñchati na śocati||11|3||",
+  "iast": "āpadaḥ saṃpadaḥ kāle daivādeveti niścayī | tṛptaḥ svasthendriyo nityaṃ na vāñchati na śocati ||",
+  "grammar": "āpadaḥ (f. pl. «нещастя») saṃpadaḥ («достаток») kāle («у свій час») daivāt eva («саме від долі») iti niścayī | tṛptaḥ («вдоволений») svasthendriyaḥ («той, чиї чуття в порядку») nityam na vāñchati na śocati.",
+  "literal_meaning": "«Нещастя й достаток у свій час — саме від долі» — хто має таке переконання, той вдоволений, із чуттями в порядку, повсякчас не бажає й не сумує.",
+  "ukrainian_translation": "«Нещастя й достаток у свій час — саме від долі» — хто має таке переконання, той вдоволений, із чуттями в порядку, повсякчас не бажає й не сумує.",
+  "commentary": "`daiva` — «доля» як те, що розподіляє, а не як примха. Формула «не бажає й не сумує» — та сама пара, що в 8.1–8.2, і переклад має її впізнавати. `svasthendriya` («із чуттями в порядку») — рідкісний складник: ідеться не про приборкання чуттів, а про їхню справність.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

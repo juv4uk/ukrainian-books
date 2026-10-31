@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "9.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_9.7",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_9.7",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "paśya bhūtavikārāṃstvaṃ bhūtamātrānyathārthataḥ| tatkṣaṇādbandhanirmuktaḥ svarūpastho bhaviṣyasi||9|7||",
+  "iast": "paśya bhūtavikārāṃs tvaṃ bhūtamātrān yathārthataḥ | tatkṣaṇād bandhanirmuktaḥ svarūpastho bhaviṣyasi ||",
+  "grammar": "paśya («дивись») bhūta-vikārān (m. acc. pl. «видозміни [того, що] є») tvam bhūta-mātrān («самі лише елементи») yathārthataḥ («як є насправді») | tat-kṣaṇāt («тієї ж миті») bandha-nirmuktaḥ («вільний від пут») svarūpa-sthaḥ («той, хто стоїть у власній формі») bhaviṣyasi («станеш»).",
+  "literal_meaning": "«Дивись на видозміни сущого як на самі лише елементи, як є насправді — і тієї ж миті, вільний від пут, станеш тим, хто стоїть у власній формі.»",
+  "ukrainian_translation": "Дивись на видозміни сущого як на самі лише елементи, як є насправді — і тієї ж миті, вільний від пут, станеш тим, хто стоїть у власній формі.",
+  "commentary": "`tatkṣaṇāt` («тієї ж миті») — найсильніше слово вірша: не поступово, не через практику, а негайно. `bhūtamātra` («самі лише елементи») знімає оцінку з речей: вони не погані й не добрі, вони — складники. `svarūpastha` («той, хто стоїть у власній формі») — стан, а не дія; і `bhaviṣyasi` — майбутній час, тому це не опис того, що вже є, а вказівка на те, що станеться.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

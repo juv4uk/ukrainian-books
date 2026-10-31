@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "11.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_11.4",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_11.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "sukhaduḥkhe janmamṛtyū daivādeveti niścayī| sādhyādarśī nirāyāsaḥ kurvannapi na lipyate||11|4||",
+  "iast": "sukhaduḥkhe janmamṛtyū daivādeveti niścayī | sādhyādarśī nirāyāsaḥ kurvannapi na lipyate ||",
+  "grammar": "sukha-duḥkhe (n. du. «щастя й страждання») janma-mṛtyū (m. du. «народження й смерть») daivāt eva iti niścayī | sādhya-adarśī («той, хто не бачить [нічого] досяжного») nirāyāsaḥ («без натуги») kurvan api na lipyate («навіть діючи, не забруднюється»).",
+  "literal_meaning": "«Щастя й страждання, народження й смерть — саме від долі» — хто має таке переконання, той, не бачачи нічого досяжного, без натуги, навіть діючи, не забруднюється.",
+  "ukrainian_translation": "«Щастя й страждання, народження й смерть — саме від долі» — хто має таке переконання, той, не бачачи нічого досяжного, без натуги, навіть діючи, не забруднюється.",
+  "commentary": "`sādhyādarśī` («той, хто не бачить досяжного») — найтонше слово глави: дія не припиняється, але зникає те, заради чого вона нібито робиться. `kurvann api na lipyate` — «навіть діючи, не забруднюється»: це не відмова від дії, а її розпредметнення. Перелік розширюється від 11.3 до 11.4 (додано народження й смерть), і це наростання навмисне.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "9.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_9.4",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_9.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ko+asau kālo vayaḥ kiṃ vā yatra dvandvāni no nṛṇām| tānyupekṣya yathāprāptavartī siddhimavāpnuyāt||9|4||",
+  "iast": "ko 'sau kālo vayaḥ kiṃ vā yatra dvandvāni no nṛṇām | tāny upekṣya yathāprāptavartī siddhim avāpnuyāt ||",
+  "grammar": "kaḥ asau kālaḥ («який же той час») vayaḥ («вік») kim vā («або що») yatra dvandvāni na u nṛṇām («коли в людей немає пар [протилежностей]») | tāni upekṣya («їх знехтувавши») yathāprāpta-vartī («той, хто живе як випало») siddhim avāpnuyāt («досяг би здійснення»).",
+  "literal_meaning": "«Який же той час, вік або що — коли в людей немає пар протилежностей? Знехтувавши їх, хто живе як випало, той досяг би здійснення.»",
+  "ukrainian_translation": "Який же той час, вік або що — коли в людей немає пар протилежностей? Знехтувавши їх, хто живе як випало, той досяг би здійснення.",
+  "commentary": "Питання риторичне й знецінювальне: не існує такого віку, коли пар немає, — отже, чекати на них марно. `yathāprāpta-vartī` («той, хто живе як випало») — той самий принцип, що `yadṛcchā` у 3.14 і 4.4, і в перекладі він має звучати так само. `avāpnuyāt` — умовний спосіб: «досяг би», а не «досягне»; це не обіцянка.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
