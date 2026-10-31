@@ -43,7 +43,7 @@ class PostrokoviInBookTests(unittest.TestCase):
                     self.assertIn(expected_md, md_verse,
                                   "Построкові дані є в JSON, але відсутні в Markdown")
 
-                    start = rf"\vsec{ident}" + "\n"
+                    start = rf"\vsec{{{ident}}}" + "\n"
                     self.assertEqual(latex.count(start), 1)
                     tex_verse = latex.split(start, 1)[1].split("\n\\vsec{", 1)[0]
                     expected_tex = [
