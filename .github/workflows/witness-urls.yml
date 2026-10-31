@@ -1,0 +1,25 @@
+name: РЕД-04 — ідентичність адрес цифрових свідків
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  witness-urls:
+    name: Офлайн-контроль URL GRETIL і SARIT
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Позитивні та негативні тести адрес
+        run: python3 -m unittest discover -s tests -p 'test_witness_urls.py' -v
+      - name: Перевірити URL у всіх редакторських картках
+        run: python3 scripts/audit_witness_urls.py
+      - name: Перевірити чинну редакторську схему
+        run: python3 scripts/check_editorial_cards.py
+      - name: Перевірити структуру й ліцензію
+        run: python3 scripts/check_project.py
