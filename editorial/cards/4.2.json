@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "4.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_4.2",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_4.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yat padaṃ prepsavo dīnāḥ śakrādyāḥ sarvadevatāḥ | aho tatra sthito yogī na harṣam upagacchati ||",
+  "iast": "yat padaṃ prepsavo dīnāḥ śakrādyāḥ sarvadevatāḥ | aho tatra sthito yogī na harṣam upagacchati ||",
+  "grammar": "yat (n. nom./acc. sg. відносного займенника) padam (n. nom./acc. sg. «стопа, стан, місце»). prepsavaḥ (m. nom. pl. дезидератива pra-āp «ті, що прагнуть досягти») dīnāḥ (m. nom. pl. «убогі, жалюгідні») śakrādyāḥ (m. nom. pl. «починаючи з Шакри», тобто Індри) sarvadevatāḥ (f./m. nom. pl. «усі боги»). aho (вигук) tatra («там, у ньому») sthitaḥ (m. nom. sg. «той, хто стоїть») yogī (m. nom. sg. «йог») na harṣam (m. acc. sg. «радість, захоплення») upagacchati (3 sg. pr. upa-gam «доходить до, відчуває»).",
+  "literal_meaning": "«О диво: стан, якого прагнуть убогі всі боги від Шакри, — йог, що стоїть у ньому, не відчуває захоплення.»",
+  "ukrainian_translation": "О диво: те, до чого прагнуть убогі всі боги, починаючи з Шакри, — йог, що вже стоїть у цьому, не відчуває захоплення.",
+  "commentary": "Слово dīnāḥ («убогі») вжите про богів навмисно: убогість тут не в майні, а в прагненні — хто прагне, той має брак. Дезидератив prepsavaḥ («ті, що хочуть досягти») підкреслює саме бажання досягти, а не досягнення. Йог описаний дієприкметником sthitaḥ («той, хто стоїть») — це стан, а не подія; і саме тому harṣa («захоплення») не виникає: захоплення потребує новизни, а тут нічого нового не сталося. Вигук aho той самий, що в серії «див» глави 3, і тут він позначає межу між прагненням і перебуванням.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
