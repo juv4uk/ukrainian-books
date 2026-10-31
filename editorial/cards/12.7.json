@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "12.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_12.7",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_12.7",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "acintyaṃ cintyamāno+api cintārūpaṃ bhajatyasau| tyaktvā tadbhāvanaṃ tasmādevamevāhamāsthitaḥ||12|7||",
+  "iast": "acintyaṃ cintyamāno 'pi cintārūpaṃ bhajaty asau | tyaktvā tadbhāvanaṃ tasmād evam evāham āsthitaḥ ||",
+  "grammar": "acintyam («незбагненне») cintyamānaḥ api («навіть коли його осмислюють») cintā-rūpam bhajati asau («воно набирає форми думки») | tyaktvā tad-bhāvanam («відкинувши те плекання») tasmāt evam eva aham āsthitaḥ.",
+  "literal_meaning": "«Незбагненне, навіть коли його осмислюють, набирає форми думки. Тому, відкинувши те плекання, я так стою.»",
+  "ukrainian_translation": "Незбагненне, навіть коли його осмислюють, набирає форми думки. Тому, відкинувши те плекання, я так стою.",
+  "commentary": "Механізм названий точно: незбагненне не залишається собою, коли його осмислюють — воно **набирає форми думки** (`cintārūpa`). Тому відкидається не предмет, а `bhāvana` — плекання, повторюване обертання. Це та сама `cintā`, що в 11.5, і словник має бути спільним.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

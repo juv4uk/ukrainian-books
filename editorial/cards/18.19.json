@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.19",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.19",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.19",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "bhāvābhāvavihīno yas tṛpto nirvāsano budhaḥ | naiva kiṃcit kṛtaṃ tena lokadṛṣṭyā vikurvatā ||",
+  "iast": "bhāvābhāvavihīno yas tṛpto nirvāsano budhaḥ | naiva kiṃcit kṛtaṃ tena lokadṛṣṭyā vikurvatā ||",
+  "grammar": "bhāvābhāvavihīnaḥ (bahuvrīhi «позбавлений буття й небуття»: bhāva + abhāva + vihīna «позбавлений») yaḥ (m. nom. sg.) tṛptaḥ (m. nom. sg. «вдоволений, насичений») nirvāsanaḥ (m. nom. sg. «без слідів-васан») budhaḥ (m. nom. sg. «той, хто знає, тверезий»). na eva kiṃcit («анічого») kṛtam (n. nom. sg. «зроблено») tena (m. instr. sg. «ним») lokadṛṣṭyā (f. instr. sg. «з погляду світу») vikurvatā (m. instr. sg. «тим, хто поводиться, діє»).",
+  "literal_meaning": "«Тим, хто позбавлений буття й небуття, вдоволений, без слідів, тверезий, — анічого не зроблено, хоч він і діє з погляду світу.»",
+  "ukrainian_translation": "Тим, хто позбавлений буття й небуття, хто вдоволений, без слідів і тверезий, — не зроблено нічого, хоч з погляду світу він діє.",
+  "commentary": "Вірш розводить дві оцінки однієї дії: lokadṛṣṭyā («з погляду світу») дія є, а kṛtam («зроблене») не накопичується. Це та сама думка, що в 13.3, але тут вона подана як висновок, а не як питання. tṛpta («вдоволений») стоїть у переліку ознак не випадково: незадоволеність — те, що змушує зараховувати дії собі.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

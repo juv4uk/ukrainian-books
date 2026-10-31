@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.24",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.24",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.24",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "prakṛtyā śūnyacittasya kurvato 'sya yadṛcchayā | prākṛtasyeva dhīrasya na māno nāvamānatā ||",
+  "iast": "prakṛtyā śūnyacittasya kurvato 'sya yadṛcchayā | prākṛtasyeva dhīrasya na māno nāvamānatā ||",
+  "grammar": "prakṛtyā (f. instr. sg. «за природою») śūnyacittasya (m. gen. sg. «того, чий розум порожній»). kurvataḥ (m. gen. sg. дієприкметника kṛ «того, хто робить») asya (gen. sg. «у нього») yadṛcchayā («само собою, як випаде»). prākṛtasya (m. gen. sg. «природного, звичайного») iva («наче») dhīrasya (m. gen. sg. «мудрого»). na mānaḥ (m. nom. sg. «немає гордості, шани») na avamānatā (f. nom. sg. «немає приниженості»).",
+  "literal_meaning": "«У того, чий розум за природою порожній, хто діє, як випаде, — як у звичайної людини: немає ні гордості, ні приниженості.»",
+  "ukrainian_translation": "У того, чий розум за природою порожній і хто діє, як випаде, — як у звичайної людини: немає ні гордості, ні приниженості.",
+  "commentary": "prākṛtasya iva («як у звичайного») — найважливіше: мудрий не вирізняється, і саме тому в нього немає ні māna, ні avamānatā. Ці два слова — не просто «гордість» і «скромність», а стан у чиїхось очах: māna — коли тебе шанують, avamānatā — коли тебе принижують. Обидва потребують глядача, і вірш каже, що глядача немає. Порівняй 18.18 (lokaviparyasta): та сама думка, інший бік.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
