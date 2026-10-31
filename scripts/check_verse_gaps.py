@@ -62,6 +62,16 @@ def main() -> int:
     parser.add_argument("--strict", action="store_true",
                         help="Провалити перевірку, якщо прогалини є")
     args = parser.parse_args()
+    # Не ототожнюємо відсутнє джерело даних із відсутністю прогалин.
+    # Символьні посилання можуть вивести перевірку за межі заданої теки.
+    if args.cards.is_symlink():
+        print(f"ПОМИЛКА: каталог карток є символічним посиланням: {args.cards}",
+              file=sys.stderr)
+        return 2
+    if not args.cards.is_dir():
+        print(f"ПОМИЛКА: каталог карток не існує або не є каталогом: {args.cards}",
+              file=sys.stderr)
+        return 2
     try:
         expected = valid_verse_ids()
     except (OSError, ValueError) as exc:
