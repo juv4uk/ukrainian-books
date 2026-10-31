@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "1.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.3",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na pṛthvī na jalaṃ nāgnir na vāyur dyaur na vā bhavān | eṣāṃ sākṣiṇam ātmānaṃ cidrūpaṃ viddhi muktaye ||",
+  "iast": "na pṛthvī na jalaṃ nāgnir na vāyur dyaur na vā bhavān | eṣāṃ sākṣiṇam ātmānaṃ cidrūpaṃ viddhi muktaye ||",
+  "grammar": "Шість заперечень поспіль: pṛthvī (f. nom. sg. «земля»), jalam (n. «вода»), agniḥ → nāgniḥ (sandhi na+agniḥ «не вогонь»), vāyuḥ → na vāyuḥ, dyauḥ (f. nom. sg. «небо»), bhavān (m. nom. sg. поважне «Ви/ти»). Далі eṣām (m./n. gen. pl. «цих») sākṣiṇam (m. acc. sg. sākṣin- «свідок», узгоджене з ātmānam) ātmānam (m. acc. sg.) cidrūpam (bahuvrīhi: «чия форма — cit») viddhi (2 sg. impv. vid- «знай»). muktaye (f. dat. sg. «заради звільнення»). Два типи заперечення: перші п'ять — стихії, шосте (na bhavān) — сам слухач; тобто заперечується не лише складник, а й ототожнення з ним.",
+  "literal_meaning": "«Не земля, не вода, не вогонь, не вітер, не небо, не Ви. Свідка цих, Атман, чия форма — cit, знай заради звільнення.» Дослівно: «Ти не земля, не вода, не вогонь, не вітер, не небо, і не є [ними]. Пізнай Атман — свідка цих [стихій], природа якого — cit, — задля звільнення».",
+  "ukrainian_translation": "Ти не земля, не вода, не вогонь, не вітер, не небо — і не є ними. Заради звільнення пізнай Атман, свідка цих [стихій], чия природа — cit.",
+  "commentary": "Вірш будує заперечення не як список того, чим ти не є, а як зняття ототожнення: п'ять стихій — це складники тіла й світу, і шосте заперечення (na bhavān) закриває вихід через «але ж я — це щось інше». Те, що лишається, названо двома словами: sākṣin («свідок») і cidrūpa («той, чия форма — cit»). Обидва — позитивні визначення після низки заперечень, і саме вони роблять вірш не просто негативним. sākṣin тут не «спостерігач» у побутовому сенсі, а те, що не входить до складу спостережуваного; пор. вживання в 1.7 і далі. cidrūpa — bahuvrīhi, тому «чия природа — cit», а не «свідомість-форма». muktaye (dativus finalis) показує, що пізнання тут не самоціль, а умова звільнення. Переклад «знай» для viddhi — наказовий спосіб, не побажання.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_1.3) проти SARIT (verse_1.3)",
+      "note": "Після нормалізації читання ЗБІГАЮТЬСЯ. SARIT подає сандгі злитно (nāgnirna, vāyurdyaurna), GRETIL — роздільно (nāgnir na, vāyur dyaur na). Це відмінність поділу слів, не тексту. Перевірено scripts/fetch_witnesses.py 1.3: ЗБІГ-БЕЗ-ПРОБІЛІВ.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрова транскрипція SARIT має власні умови (CC BY-SA 3.0, availability restricted); її редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
