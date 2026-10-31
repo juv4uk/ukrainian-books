@@ -56,14 +56,25 @@ def parse_passport(path: Path) -> dict[str, str]:
 
 
 def explicit_permissions(value: str) -> bool:
-    text = clean(value).casefold()
-    for label in ("pdf", "epub", "редагування", "поширення"):
-        if not re.search(
-            rf"(?:^|[;,\n])\s*{label}\s*:\s*(?:так|дозволено)(?:\b|$)",
-            text,
-        ):
+    """Кожен дозвіл має бути явно позитивним і записаним рівно один раз.
+
+    Пошук хоча б одного «PDF: так» є небезпечним: він приховує також
+    присутній «PDF: ні» чи інше суперечливе твердження.
+    """
+    required = {"pdf", "epub", "редагування", "поширення"}
+    seen: set[str] = set()
+    for part in re.split(r"[;,\n]", clean(value).casefold()):
+        part = part.strip()
+        if not part:
+            continue
+        match = re.fullmatch(
+            r"(pdf|epub|редагування|поширення)\s*:\s*(так|дозволено)",
+            part,
+        )
+        if not match or match.group(1) in seen:
             return False
-    return True
+        seen.add(match.group(1))
+    return seen == required
 
 
 def audit(root: Path) -> dict:
