@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Аштавакра-ґіта 13.7: правило чи відсутність правила</title>
+  <desc id="desc">Авторська українська смислова схема двох непогоджених цифрових читань. Ліва стежка: Гілка А, GRETIL і картка, niyamaṃ — правило. Права стежка: Гілка Б, SARIT, aniyamaṃ — відсутність правила. Обидві стежки приводять до незмінного завершення вірша: відкидаю добре й погане, сиджу як зручно. У нижньому написі наголошено, що вибір читання не встановлено.</desc>
+  <rect width="1200" height="700" fill="#f8f7f1"/>
+  <rect x="30" y="26" width="1140" height="645" rx="24" fill="#fffdfa" stroke="#b9c5c2" stroke-width="2"/>
+  <g font-family="sans-serif" text-anchor="middle" fill="#24404a">
+    <text x="600" y="88" font-size="34" font-weight="700">Правило чи відсутність правила?</text>
+    <text x="600" y="126" font-size="22">Відкрите різночитання 13.7 · дві цифрові гілки</text>
+  </g>
+  <g font-family="sans-serif">
+    <rect x="94" y="188" width="468" height="217" rx="17" fill="#e9f3f0" stroke="#517d77" stroke-width="3"/>
+    <text x="328" y="229" text-anchor="middle" font-size="23" font-weight="700" fill="#245650">Гілка А · картка / GRETIL</text>
+    <text x="328" y="275" text-anchor="middle" font-size="30" fill="#1b4744">niyamaṃ</text>
+    <text x="328" y="318" text-anchor="middle" font-size="26" font-weight="700" fill="#1b4744">«правило»</text>
+    <text x="328" y="368" text-anchor="middle" font-size="18" fill="#4e6965">Чинний IAST в редакторській картці</text>
+    <rect x="638" y="188" width="468" height="217" rx="17" fill="#f6eee6" stroke="#aa7956" stroke-width="3"/>
+    <text x="872" y="229" text-anchor="middle" font-size="23" font-weight="700" fill="#865536">Гілка Б · SARIT</text>
+    <text x="872" y="275" text-anchor="middle" font-size="30" fill="#6a422c">aniyamaṃ</text>
+    <text x="872" y="318" text-anchor="middle" font-size="25" font-weight="700" fill="#6a422c">«відсутність правила»</text>
+    <text x="872" y="368" text-anchor="middle" font-size="17" fill="#8c684e">Знак + у TEI передає відновлення голосної</text>
+  </g>
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <path d="M328 410 C328 455 456 447 545 479" stroke="#517d77"/>
+    <path d="M872 410 C872 455 744 447 655 479" stroke="#aa7956"/>
+  </g>
+  <path d="M545 479 L545 463 L560 485 Z" fill="#517d77"/>
+  <path d="M655 479 L655 463 L640 485 Z" fill="#aa7956"/>
+  <rect x="222" y="476" width="756" height="91" rx="16" fill="#eef1f7" stroke="#71839e" stroke-width="2"/>
+  <text x="600" y="512" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="700" fill="#324a70">Спільне завершення: добре й погане відкинуто</text>
+  <text x="600" y="543" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#324a70">«Я сиджу, як мені завгодно»</text>
+  <text x="600" y="609" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="700" fill="#8c3d36">ЖОДНЕ ЧИТАННЯ НЕ ВИЗНАНО ОСТАТОЧНИМ</text>
+  <text x="600" y="638" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#59676a">Сучасна редакторська схема; не історична ілюстрація, не рукописний доказ</text>
+</svg>
