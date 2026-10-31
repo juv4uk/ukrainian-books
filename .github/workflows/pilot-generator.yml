@@ -1,0 +1,18 @@
+name: Відтворюваність пілотної верстки
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    name: Стабільність маніфесту і режиму без записів
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Синтетичні регресії генератора
+        run: python3 -m unittest discover -s tests -p 'test_pilot_determinism.py' -v
+      - name: Звірити похідні файли з картками
+        run: python3 scripts/build_pilot_book.py --check
