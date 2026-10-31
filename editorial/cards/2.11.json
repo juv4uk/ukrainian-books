@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.11",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.11",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.11",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "aho ahaṃ namo mahyaṃ vināśo yasya nāsti me| brahmādistambaparyantaṃ jagannāśe+api tiṣṭhataḥ||2|11||",
+  "iast": "aho ahaṃ namo mahyaṃ vināśo yasya nāsti me | brahmādistambaparyantaṃ jagannāśe'pi tiṣṭhataḥ ||",
+  "grammar": "aho (вигук) aham (nom. sg.) namaḥ (n. nom. sg. «поклін») mahyam (dat. sg. «мені») vināśaḥ (m. nom. sg. «загибель») yasya nāsti me (gen. sg. «якого немає в мене») | brahmādi-stamba-paryantam (n. nom. sg., bahuvrīhi «той, що від Брахми до стеблини») jagat (n. nom. sg.) nāśe api (loc. sg. «навіть при загибелі») tiṣṭhataḥ (gen. sg. дієприкметника «того, хто стоїть»).",
+  "literal_meaning": "«О диво, я! Поклін мені, в кого немає загибелі, хоч світ від Брахми до стеблини гине, — того, хто стоїть.»",
+  "ukrainian_translation": "О диво, я! Поклін мені — тому, в кого немає загибелі, хоч світ від Брахми до стеблини гине, а я стою.",
+  "commentary": "Поклін самому собі (namaḥ mahyam) — не самозамилування: текст звертається до себе так, ніби це хтось інший, і саме цим знімає особу. Другий піввірш задає масштаб: brahmādi-stamba-paryantam — «від Брахми до стеблини», тобто весь діапазон буття. Загибель цього діапазону не зачіпає того, хто стоїть.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
