@@ -32,6 +32,9 @@ def expected_from_csv(errors: list[str]) -> set[str]:
         errors.append(f"Очікувалося 20 глав, отримано {len(chapters)}")
     expected: set[str] = set()
     total_gretil = total_sarit_lg = 0
+    # Ці три стовпці — історична статистика <lg> у CSV, а не окремий
+    # доказ повноти 298 надрукованих позицій двох цифрових свідків.
+    breakdown = {"спільних": 0, "лише_GRETIL": 0, "лише_SARIT": 0}
     for n, row in enumerate(chapters, 1):
         if row["глава"] != str(n):
             errors.append(f"Глава {n} пропущена чи не за порядком")
@@ -39,12 +42,23 @@ def expected_from_csv(errors: list[str]) -> set[str]:
         try:
             gretil_count = int(row["GRETIL_віршів"])
             sarit_lg_count = int(row["SARIT_віршів"])
-        except (KeyError, ValueError):
+            shared = int(row["спільних"])
+            gretil_only = int(row["лише_GRETIL"])
+            sarit_only = int(row["лише_SARIT"])
+        except (KeyError, ValueError, TypeError):
             errors.append(f"Хибні числові поля для глави {n}")
             continue
-        if gretil_count <= 0:
+        if gretil_count <= 0 or min(sarit_lg_count, shared, gretil_only, sarit_only) < 0:
             errors.append(f"Неприпустима кількість у главі {n}")
             continue
+        if shared + gretil_only != gretil_count or shared + sarit_only != sarit_lg_count:
+            errors.append(
+                f"Глава {n}: стовпці спільних/лише_GRETIL/лише_SARIT "
+                "суперечать підрахункам GRETIL/SARIT <lg>"
+            )
+        breakdown["спільних"] += shared
+        breakdown["лише_GRETIL"] += gretil_only
+        breakdown["лише_SARIT"] += sarit_only
         # CSV PR #12 підраховує ТІЛЬКИ позначені <lg>, не всі xml:id і не друковані номери.
         expected_lg = gretil_count - (1 if n in (1, 18) else 0)
         if sarit_lg_count != expected_lg:
@@ -57,6 +71,18 @@ def expected_from_csv(errors: list[str]) -> set[str]:
     totals = [r for r in rows if r.get("глава") == "разом"]
     if len(totals) != 1 or totals[0].get("GRETIL_віршів") != "298" or totals[0].get("SARIT_віршів") != "296":
         errors.append("Підсумковий рядок CSV некоректний")
+    if len(totals) == 1:
+        for column, count in breakdown.items():
+            try:
+                stated = int(totals[0][column])
+            except (KeyError, ValueError, TypeError):
+                errors.append(f"Підсумковий рядок CSV: некоректне поле {column}")
+                continue
+            if stated < 0 or stated != count:
+                errors.append(
+                    f"Підсумковий рядок CSV: {column}={stated}, "
+                    f"але сума глав дорівнює {count}"
+                )
     return expected
 
 
