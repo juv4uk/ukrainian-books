@@ -118,6 +118,30 @@ class DuplicateCardTests(unittest.TestCase):
         duplicates, _ = split_duplicates(collect(self.research, self.cards))
         self.assertEqual(len(duplicates["2.4"]), 3)
 
+    def test_calendar_dates_in_headings_are_not_verses(self) -> None:
+        """Дати 31.10.2026 і 1.10.2026 — не вірші, навіть якщо вони в H1."""
+        self.note("bibliography-supplement-2026-10-31.md",
+                  "Бібліографія — звірено 31.10.2026")
+        self.note("young-1991-corpus-check.md",
+                  "Перевірка видання станом на 31.10.2026")
+        self.note("source-date.md", "Нотатки від 1.10.2026")
+        self.note("verse-31-10-invalid.md", "Помилкова глава 31.10")
+
+        self.assertEqual(collect(self.research, self.cards), {})
+        code, out, err = self.report(strict=True)
+        self.assertEqual(code, 0, out + err)
+        self.assertIn("дублів немає", out)
+
+    def test_real_verse_numbers_in_headings_are_recognized(self) -> None:
+        """Звичайні заголовки 1.2 і 15.7 залишаються в реєстрі."""
+        self.note("first-note.md", "Вірш 1.2: лексичний аналіз")
+        self.note("second-note.md", "Аштавакра-ґіта 15.7: сандгі")
+        self.note("third-note.md", "15.8: незалежна примітка")
+
+        by_verse = collect(self.research, self.cards)
+        self.assertEqual(sorted(by_verse), ["1.2", "15.7", "15.8"])
+        self.assertEqual(self.report(strict=True)[0], 0)
+
     def test_markdown_duplicate_logic_still_works(self) -> None:
         """Наявна логіка для markdown не зламана: два .md на один вірш — дубль."""
         self.note("verse-1-5-ashrama-varna.md", "Аштавакра-ґіта 1.5: перша картка")
