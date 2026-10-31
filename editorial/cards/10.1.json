@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "10.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_10.1",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_10.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "vihāya vairiṇaṃ kāmamarthaṃ cānarthasaṃkulaṃ| dharmamapyetayorhetuṃ sarvatrānādaraṃ kuru||10|1||",
+  "iast": "vihāya vairiṇaṃ kāmam arthaṃ cānarthasaṃkulaṃ | dharmam apy etayor hetuṃ sarvatrānādaraṃ kuru ||",
+  "grammar": "vihāya (герундив від vi-hā «покинувши») vairiṇam (m. acc. sg. «ворожого») kāmam (m. acc. sg. «бажання») artham (m. acc. sg. «користь, багатство») ca anartha-saṃkulam («сповнене лиха») | dharmam api (m. acc. sg. «навіть дхарму») etayoḥ hetum («причину обох») sarvatra anādaram kuru («всюди зневажай»).",
+  "literal_meaning": "«Покинувши вороже бажання й користь, сповнену лиха, — навіть дхарму, що є причиною обох, — всюди зневажай.»",
+  "ukrainian_translation": "Покинувши вороже бажання і сповнену лиха користь — навіть дхарму, що є причиною обох, — усюди зневажай.",
+  "commentary": "Дхарма стоїть у переліку **останньою** і з підсиленням api («навіть»): спершу відкидають бажання й користь, а потім те, що їх породжує. anartha-saṃkula («сповнене лиха») стосується саме artha, і переклад не повинен переносити цю оцінку на дхарму. «Зневажай» (anādara) — сильне слово; м'якше «не зважай» змінило б ступінь.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
