@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.53",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.53",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.53",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "vilasanti mahābhogair viśanti girigahvarān | nirastakalpanā dhīrā abaddhā muktabuddhayaḥ ||",
+  "iast": "vilasanti mahābhogair viśanti girigahvarān | nirastakalpanā dhīrā abaddhā muktabuddhayaḥ ||",
+  "grammar": "vilasanti (3 pl. pr. vi-las «граються, розкошують») mahābhogaiḥ (m. instr. pl. «великими насолодами, розкошами») viśanti (3 pl. pr. viś «входять») girigahvarān (m. acc. pl. «гірські печери, нетрі»: giri «гора» + gahvara «глибина, нетрі»). nirastakalpanāḥ (m. nom. pl. «ті, що відкинули побудови уяви»: nirasta «відкинутий» + kalpanā) dhīrāḥ (m. nom. pl.) abaddhāḥ (m. nom. pl. «незв'язані»: a «не» + baddha «зв'язаний») muktabuddhayaḥ (m. nom. pl. «з визволеним розумом»).",
+  "literal_meaning": "«Вони граються великими розкошами, входять у гірські нетрі — мудрі, що відкинули побудови, незв'язані, з визволеним розумом.»",
+  "ukrainian_translation": "Вони граються великими розкошами й входять у гірські нетрі — мудрі, що відкинули побудови, незв'язані, з визволеним розумом.",
+  "commentary": "Обидві крайнощі названі поспіль, і жодна не оцінена: розкоші й печери. Це відповідь на всю книгу уявлень про аскетизм — `abaddha` («незв'язаний») означає, що місце не має значення. `nirastakalpanā` («ті, що відкинули побудови») — причина, чому обидві крайнощі можливі.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

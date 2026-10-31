@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.52",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.52",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.52",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ucchṛṅkhalāpy akṛtikā sthitir dhīrasya rājate | na tu saspṛhacittasya śāntir mūḍhasya kṛtrimā ||",
+  "iast": "ucchṛṅkhalāpy akṛtikā sthitir dhīrasya rājate | na tu saspṛhacittasya śāntir mūḍhasya kṛtrimā ||",
+  "grammar": "ucchṛṅkhalā (f. nom. sg. «розкута, без кайданів»: ud «від» + śṛṅkhala «кайдани») api («навіть») akṛtikā (f. nom. sg. «без вигляду, безформна»: a «не» + kṛti «вигляд, форма») sthitir (f. nom. sg. «стояння, стан») dhīrasya (m. gen. sg. «мудрого») rājate («сяє»). na tu («але не») saspṛhacittasya (m. gen. sg. «того, чий розум із пожадливістю»: sa «з» + spṛhā «пожадливість, прагнення» + citta) śāntiḥ (f. nom. sg. «спокій») mūḍhasya (m. gen. sg. «затьмареного») kṛtrimā (f. nom. sg. «удавана, зроблена»: kṛtrima).",
+  "literal_meaning": "«Навіть розкутий, безформний стан мудрого сяє; а спокій затьмареного з пожадливим розумом — удаваний.»",
+  "ukrainian_translation": "Навіть розкутий і безформний стан мудрого сяє. А спокій затьмареного з пожадливим розумом — удаваний.",
+  "commentary": "Протиставлення `akṛtikā` / `kṛtrimā` — те саме слово в двох формах: стан мудрого без вигляду (не підробляється), а спокій дурного — зроблений. `ucchṛṅkhalā` («розкута») і `api` («навіть») разом означають: свобода видна навіть тоді, коли нічого не показує.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ: SARIT — ucchṛṅkhalāpyākṛtikā (ākṛtikā, «та, що МАЄ вигляд»), GRETIL — ucchṛṅkhalāpy akṛtikā (akṛtikā, «БЕЗ вигляду»). Протилежні за змістом форми, і різниця — один звук на початку слова. Друга: SARIT — saṃspṛha («з прагненням»), GRETIL — saspṛha (те саме). Тут перевагу має GRETIL: `akṛtikā` узгоджується зі словником глави (nirākāra, śūnyākāra у 18.57) і з протиставленням до `kṛtrimā` в другій половині. Висновок із внутрішньої узгодженості, а не з третього свідка, якого для 18.52 не перевірено. У перекладі взято GRETIL і це позначено як вибір.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

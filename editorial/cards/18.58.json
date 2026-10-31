@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.58",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.58",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.58",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "akurvann api saṃkṣobhād vyagraḥ sarvatra mūḍhadhīḥ | kurvann api tu kṛtyāni kuśalo hi nirākulaḥ ||",
+  "iast": "akurvann api saṃkṣobhād vyagraḥ sarvatra mūḍhadhīḥ | kurvann api tu kṛtyāni kuśalo hi nirākulaḥ ||",
+  "grammar": "akurvan (m. nom. sg. «не роблячи») api saṃkṣobhāt (m. abl. sg. «через хвилювання, збурення») vyagraḥ (m. nom. sg. «збентежений, розсіяний») sarvatra («скрізь») mūḍhadhīḥ (m. nom. sg. «з затьмареним розумом»). kurvan (m. nom. sg. «роблячи») api tu kṛtyāni (n. acc. pl. «справи, те, що слід зробити») kuśalaḥ (m. nom. sg. «вмілий») hi nirākulaḥ (m. nom. sg. «безтурботний»).",
+  "literal_meaning": "«Навіть нічого не роблячи, дурний розумом скрізь збентежений через хвилювання; а вмілий, хоч і робить справи, — безтурботний.»",
+  "ukrainian_translation": "Навіть нічого не роблячи, дурний розумом скрізь збентежений через хвилювання. А вмілий, хоч і робить справи, — безтурботний.",
+  "commentary": "Точне протиставлення за однією ознакою: справа не визначає стан. `saṃkṣobha` («збурення») назване причиною — не бездіяльність дає спокій, а відсутність збурення. `kuśala` («вмілий») тут не похвала майстерності, а ознака: той, хто вміє, не витрачається на саму дію.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

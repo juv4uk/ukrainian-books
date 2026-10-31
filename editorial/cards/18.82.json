@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.82",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.82",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.82",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na śāntaṃ stauti niṣkāmo na duṣṭam api nindati | samaduḥkhasukhas tṛptaḥ kiṃcit kṛtyaṃ na paśyati ||",
+  "iast": "na śāntaṃ stauti niṣkāmo na duṣṭam api nindati | samaduḥkhasukhas tṛptaḥ kiṃcit kṛtyaṃ na paśyati ||",
+  "grammar": "na śāntam (m. acc. sg. «спокійного») stauti (3 sg. pr. stu «хвалить») niṣkāmaḥ (m. nom. sg. «без бажань») na duṣṭam (m. acc. sg. «лихого, зіпсованого») api nindati («не ганить»). samaduḥkhasukhaḥ (bahuvrīhi «той, у кого страждання й щастя рівні») tṛptaḥ (m. nom. sg. «насичений, вдоволений») kiṃcit (n. acc. sg. «хоч якусь») kṛtyam (n. acc. sg. «справу») na paśyati («не бачить»).",
+  "literal_meaning": "«Без бажань він не хвалить спокійного й не ганить лихого; рівний у стражданні й щасті, насичений, він не бачить жодної справи.»",
+  "ukrainian_translation": "Без бажань він не хвалить спокійного й не ганить лихого. Рівний у стражданні й щасті, насичений, він не бачить жодної справи.",
+  "commentary": "Пара `śānta` / `duṣṭa` (спокійний / лихий) цікава тим, що обидві оцінки знято разом: похвала й осуд — один механізм. `tṛpta` («насичений») — не «задоволений», а саме той, хто вже наївся, тому `kṛtya` («справа») йому не видно. Це відповідь на 18.57, де сансара була `kartavyatā`.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
