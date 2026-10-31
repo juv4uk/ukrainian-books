@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.10",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.10",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.10",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "dehastiṣṭhatu kalpāntaṃ gacchatvadyaiva vā punaḥ| kva vṛddhiḥ kva ca vā hānistava cinmātrarūpiṇaḥ||15|10||",
+  "iast": "dehas tiṣṭhatu kalpāntaṃ gacchaty adyaiva vā punaḥ | kva vṛddhiḥ kva ca vā hānis tava cinmātrarūpiṇaḥ ||",
+  "grammar": "dehaḥ tiṣṭhatu («нехай тіло стоїть») kalpāntam («до кінця світового періоду») gacchatu adya eva vā punaḥ («або нехай іде хоч сьогодні») | kva vṛddhiḥ («де приріст») kva ca vā hāniḥ («де втрата») tava cinmātra-rūpiṇaḥ («для тебе, чия природа — сама лише свідомість»).",
+  "literal_meaning": "«Нехай тіло стоїть до кінця світового періоду — або нехай іде хоч сьогодні. Де приріст і де втрата для тебе, чия природа — сама лише свідомість?»",
+  "ukrainian_translation": "Нехай тіло стоїть до кінця світового періоду — або нехай іде хоч сьогодні. Де приріст і де втрата для тебе, чия природа — сама лише свідомість?",
+  "commentary": "Пара наказових способів (`tiṣṭhatu` … `gacchatu`) задає байдужість до тривалості життя: обидва варіанти рівноцінні. `kalpānta` («кінець світового періоду») — не поетична гіпербола, а максимально можливий строк, і саме тому друга частина звучить різко: `adya eva` («хоч сьогодні»). `cinmātrarūpa` («чия природа — сама лише свідомість») — те саме, що `cinmūrte` у 15.7 і `cidrūpa` у 15.4; словник лишається спільним.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
