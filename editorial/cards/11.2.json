@@ -11,7 +11,7 @@
       "checked_on": "2026-10-31"
     },
     "sarit": {
-      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "url": "https://github.com/sarit/SARIT-corpus/blob/dedb6b12c96490e62c60bf4b23ea817e992e70be/astavakragita.xml",
       "locator": "verse_11.2",
       "checked_on": "2026-10-31"
     }
@@ -30,8 +30,8 @@
     },
     {
       "witness": "SARIT TEI (verse_11.2)",
-      "note": "TEI подає той самий лексичний ряд «īśvaraḥ sarvanirmātā nehānya iti niścayī| antargalitasarvāśaḥ śāntaḥ kvāpi na sajjate||11|2||». Текст формально не містить дефісів нормалізації GRETIL. Ці два електронні тексти можуть залежати від спільного джерела; вони не є двома доведено незалежними рукописними свідками.",
-      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+      "note": "TEI подає той самий лексичний ряд «īśvaraḥ sarvanirmātā nehānya iti niścayī| antargalitasarvāśaḥ śāntaḥ kvāpi na sajjate||11|2||». Текст формально не містить дефісів нормалізації GRETIL. Ці два електронні тексти можуть залежати від спільного джерела; вони не є двома доведено незалежними рукописними свідками. Відтворюване посилання закріплено за Git-комітом dedb6b12c96490e62c60bf4b23ea817e992e70be (зміна цього файлу 12.10.2017); вміст verse_11.2 у цій редакції повторно прочитано через GitHub API 31.10.2026. Фіксація коміту не доводить рукописної незалежності чи права перевидання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/dedb6b12c96490e62c60bf4b23ea817e992e70be/astavakragita.xml"
     }
   ],
   "variants_checked": true,
