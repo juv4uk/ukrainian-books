@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "8.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_8.3",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_8.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tadā bandho yadā cittaṃ saktaṃ kāsvapi dṛṣṭiṣu| tadā mokṣo yadā cittamasaktaṃ sarvadṛṣṭiṣu||8|3||",
+  "iast": "tadā bandho yadā cittaṃ saktaṃ kāsvapi dṛṣṭiṣu | tadā mokṣo yadā cittam asaktaṃ sarvadṛṣṭiṣu ||",
+  "grammar": "tadā bandhaḥ yadā cittam saktaṃ (n. «прив'язаний») kāsu api dṛṣṭiṣu (f. loc. pl. «у якихось поглядах») | tadā mokṣaḥ yadā cittam asaktam (n. «неприв'язаний») sarva-dṛṣṭiṣu (loc. pl. «у всіх поглядах»).",
+  "literal_meaning": "«Полон — тоді, коли розум прив'язаний до якихось поглядів; визволення — коли розум неприв'язаний до всіх поглядів.»",
+  "ukrainian_translation": "Полон — тоді, коли розум прив'язаний до якихось поглядів; визволення — коли розум неприв'язаний до всіх поглядів.",
+  "commentary": "`dṛṣṭi` — «погляд» у подвійному сенсі: і зір, і переконання. Асиметрія навмисна: `kāsvapi` («до якихось») проти `sarva` («до всіх»). Тобто достатньо **однієї** прив'язаності, щоб бути в полоні, але потрібна неприв'язаність до **всіх** — і це не той самий обсяг вимог, що звучить суворіше, ніж здається з першого читання.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
