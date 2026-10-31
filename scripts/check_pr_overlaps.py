@@ -60,10 +60,18 @@ def file_paths(items: object) -> set[str]:
         raise AuditError("Список файлів PR має бути масивом")
     paths: set[str] = set()
     for item in items:
-        name = item.get("filename") if isinstance(item, dict) else item
-        if not isinstance(name, str) or not name.strip() or any(c in name for c in "\r\n\0"):
-            raise AuditError("Відповідь PR містить некоректний шлях файла")
-        paths.add(name)
+        if isinstance(item, dict):
+            names = [item.get("filename")]
+            if item.get("status") == "renamed":
+                # GitHub повідомляє обидва шляхи: конфлікт можливий і зі
+                # старою назвою, і з новою. Відсутність старої — помилка API.
+                names.append(item.get("previous_filename"))
+        else:
+            names = [item]
+        for name in names:
+            if not isinstance(name, str) or not name.strip() or any(c in name for c in "\r\n\0"):
+                raise AuditError("Відповідь PR містить некоректний шлях файла")
+            paths.add(name)
     return paths
 
 
