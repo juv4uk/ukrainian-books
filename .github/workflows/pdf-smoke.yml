@@ -28,7 +28,8 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq \
-            texlive-xetex texlive-lang-cyrillic latexmk fonts-dejavu-core poppler-utils
+            texlive-xetex texlive-lang-cyrillic texlive-latex-recommended \
+            latexmk fonts-dejavu-core fonts-noto-core poppler-utils
       - name: Скласти контрольний PDF
         run: |
           set -euo pipefail
@@ -45,10 +46,42 @@ jobs:
           test "$pages" = "1" || { echo "Неочікувана кількість сторінок: $pages"; exit 1; }
           pdftotext -enc UTF-8 "$file" - | grep -Fq "Українська контрольна сторінка"
           echo "PDF містить одну сторінку й перевірену українську кирилицю." >> "$GITHUB_STEP_SUMMARY"
+      - name: Перевірити деванагарі без окремого workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          original="research/typesetting-devanagari/proof.latex.txt"
+          test -f "$original"
+          fc-match -f '%{family}\n' 'Noto Serif Devanagari' | grep -Fq 'Noto Serif Devanagari'
+          cp "$original" "$RUNNER_TEMP/ukr-pdf-smoke/druk-01-proof.tex"
+          output="$RUNNER_TEMP/ukr-pdf-smoke/out"
+          xelatex -interaction=nonstopmode -halt-on-error -file-line-error \
+            -output-directory="$output" "$RUNNER_TEMP/ukr-pdf-smoke/druk-01-proof.tex"
+          pdf="$output/druk-01-proof.pdf"
+          test -s "$pdf"
+          pages="$(pdfinfo "$pdf" | awk '/^Pages:/ {print $2}')"
+          test "$pages" = 1
+          if grep -Fq 'Missing character' "$output/druk-01-proof.log"; then
+            echo 'Деванагарі: відсутній гліф' >&2
+            exit 1
+          fi
+          pdffonts "$pdf" | grep -Fq 'NotoSerifDevanagari'
+          pdffonts "$pdf" | grep -Fq 'DejaVuSerif'
+          pdftotext -enc UTF-8 "$pdf" - | grep -Fq 'Шрифти української наукової книги'
+          pdftotext -enc UTF-8 "$pdf" - | grep -Fq 'ātmā'
+          pdftoppm -f 1 -l 1 -r 160 -png -singlefile "$pdf" "$output/druk-01-proof"
+          test -s "$output/druk-01-proof.png"
+          {
+            echo 'Проба деванагарі зібрана: одна сторінка, кирилиця, IAST, вбудований Noto Serif Devanagari.'
+            echo 'Увага: PDF/PNG — лише технічні зразки, не дозвіл на публікацію санскритського тексту.'
+          } >> "$GITHUB_STEP_SUMMARY"
       - name: Зберегти технічний PDF
         uses: actions/upload-artifact@v4
         with:
           name: tehnichnyi-pdf-kirylytsia
-          path: ${{ runner.temp }}/ukr-pdf-smoke/out/pdf-smoke-ukr.pdf
+          path: |
+            ${{ runner.temp }}/ukr-pdf-smoke/out/pdf-smoke-ukr.pdf
+            ${{ runner.temp }}/ukr-pdf-smoke/out/druk-01-proof.pdf
+            ${{ runner.temp }}/ukr-pdf-smoke/out/druk-01-proof.png
           if-no-files-found: error
           retention-days: 7
