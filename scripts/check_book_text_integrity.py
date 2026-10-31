@@ -206,6 +206,39 @@ def scan_text(text: str, *, prose: bool = False) -> list[dict]:
     return sorted(findings, key=lambda f: (f["line"], f["column"]))[:MAX_PER_FILE]
 
 
+def scan_decoded_json_strings(value: object, json_path: str = "$") -> list[dict]:
+    """Виявити Unicode-артефакти в рядках після JSON-декодування.
+
+    Координати у звіті стосуються декодованого значення, а не фізичного
+    рядка файлу: JSON-екранування змінює позиції символів у вихідному тексті.
+    """
+    findings: list[dict] = []
+    if isinstance(value, str):
+        for error in scan_text(value):
+            findings.append({
+                "json_path": json_path,
+                "decoded_line": error["line"],
+                "decoded_column": error["column"],
+                "codepoint": error["codepoint"],
+                "reason": f"після декодування JSON: {error['reason']}",
+            })
+        return findings
+    if isinstance(value, dict):
+        children = (
+            (f"{json_path}[{json.dumps(key, ensure_ascii=False)}]", child)
+            for key, child in value.items()
+        )
+    elif isinstance(value, list):
+        children = ((f"{json_path}[{i}]", child) for i, child in enumerate(value))
+    else:
+        return findings
+    for path, child in children:
+        findings.extend(scan_decoded_json_strings(child, path))
+        if len(findings) >= MAX_PER_FILE:
+            break
+    return findings[:MAX_PER_FILE]
+
+
 def iter_scope_files(root: Path, scope: str) -> list[tuple[Path, bool]]:
     """Файли обсягу разом з ознакою «це суцільний текст».
 
@@ -255,6 +288,16 @@ def audit(root: Path) -> dict:
                 continue
             for error in scan_text(content, prose=prose):
                 errors.append({"path": rel, **error})
+            if scope == "cards" and "\\u" in content:
+                # Екранований U+FFFD або чужа кирилиця непомітні у сирому
+                # ASCII, але після json.loads стають реальними символами.
+                # Недійсні JSON-картки окремо відхиляє валідатор схеми.
+                try:
+                    decoded = json.loads(content)
+                except json.JSONDecodeError:
+                    continue
+                for error in scan_decoded_json_strings(decoded):
+                    errors.append({"path": rel, **error})
         per_scope[scope] = examined
     return {
         "status": "ok" if not errors else "failed",
