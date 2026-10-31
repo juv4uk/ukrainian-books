@@ -267,19 +267,23 @@ def main() -> int:
         "witness_fields_excluded": list(WITNESS_FIELDS),
         "glossary_terms": len(glossary),
         "generated_chars": len(verses) + len(words),
-        "outdated_before_write": outdated,
     }
+    # Постійний маніфест залежить тільки від джерельних даних, а не від стану
+    # згенерованих файлів перед запуском.
     payload = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
+    diagnostic = {**manifest, "outdated_before_write": outdated}
+    report_payload = json.dumps(diagnostic, ensure_ascii=False, indent=2) + "\n"
 
     if not args.check:
         write(verses_path, verses)
         write(glossary_path, words)
         write(BOOK / "generated" / "manifest.json", payload)
-    print(payload, end="")
+    print(report_payload, end="")
 
-    if args.report:
+    # --check обіцяє тільки читання: навіть --report не створює файлів.
+    if args.report and not args.check:
         args.report.parent.mkdir(parents=True, exist_ok=True)
-        args.report.write_text(payload, encoding="utf-8")
+        args.report.write_text(report_payload, encoding="utf-8")
 
     if args.check and outdated:
         print("Згенеровані файли застаріли: " + ", ".join(outdated), file=sys.stderr)
