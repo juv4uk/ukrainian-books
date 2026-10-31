@@ -3,12 +3,12 @@ name: Технічна перевірка українського PDF
 on:
   pull_request:
     paths:
-      - "tests/fixtures/pdf-smoke-ukr.tex"
+      - "tests/fixtures/pdf-smoke-ukr.tex.in"
       - ".github/workflows/pdf-smoke.yml"
   push:
     branches: [main]
     paths:
-      - "tests/fixtures/pdf-smoke-ukr.tex"
+      - "tests/fixtures/pdf-smoke-ukr.tex.in"
       - ".github/workflows/pdf-smoke.yml"
   workflow_dispatch:
 
@@ -32,14 +32,15 @@ jobs:
       - name: Скласти контрольний PDF
         run: |
           set -euo pipefail
-          mkdir -p tests/fixtures/out
+          mkdir -p "$RUNNER_TEMP/ukr-pdf-smoke/out"
+          cp tests/fixtures/pdf-smoke-ukr.tex.in "$RUNNER_TEMP/ukr-pdf-smoke/pdf-smoke-ukr.tex"
           latexmk -xelatex -interaction=nonstopmode -halt-on-error -file-line-error \
-            -outdir=tests/fixtures/out tests/fixtures/pdf-smoke-ukr.tex
-          test -s tests/fixtures/out/pdf-smoke-ukr.pdf
+            -outdir="$RUNNER_TEMP/ukr-pdf-smoke/out" "$RUNNER_TEMP/ukr-pdf-smoke/pdf-smoke-ukr.tex"
+          test -s "$RUNNER_TEMP/ukr-pdf-smoke/out/pdf-smoke-ukr.pdf"
       - name: Перевірити сторінку та кирилицю
         run: |
           set -euo pipefail
-          file="tests/fixtures/out/pdf-smoke-ukr.pdf"
+          file="$RUNNER_TEMP/ukr-pdf-smoke/out/pdf-smoke-ukr.pdf"
           pages="$(pdfinfo "$file" | awk '/^Pages:/ {print $2}')"
           test "$pages" = "1" || { echo "Неочікувана кількість сторінок: $pages"; exit 1; }
           pdftotext -enc UTF-8 "$file" - | grep -Fq "Українська контрольна сторінка"
@@ -48,6 +49,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tehnichnyi-pdf-kirylytsia
-          path: tests/fixtures/out/pdf-smoke-ukr.pdf
+          path: ${{ runner.temp }}/ukr-pdf-smoke/out/pdf-smoke-ukr.pdf
           if-no-files-found: error
           retention-days: 7
