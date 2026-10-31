@@ -15,7 +15,7 @@ class EpubProvenanceTests(unittest.TestCase):
         self.addCleanup(self.tmp.cleanup)
         self.root = Path(self.tmp.name)
 
-    def add(self, name: str, data: bytes = b"синтетичний EPUB") -> Path:
+    def add(self, name: str, data: bytes = b"synthetic EPUB") -> Path:
         path = self.root / name
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(data)
@@ -47,7 +47,7 @@ class EpubProvenanceTests(unittest.TestCase):
         self.assertTrue(any("PROVENANCE.md" in e for e in self.problems()))
 
     def test_passport_only_structurally_suffices(self) -> None:
-        self.add("books/vydannia/PROVENANCE.md", b"Структурний зразок, НЕ дозвіл на друк\n")
+        self.add("books/vydannia/PROVENANCE.md", "Структурний зразок, НЕ дозвіл на друк\n".encode("utf-8"))
         self.add("books/vydannia/versions/book.EPUB")
         result = audit(self.root)
         self.assertEqual(result["status"], "ok")
