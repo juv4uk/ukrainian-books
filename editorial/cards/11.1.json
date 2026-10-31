@@ -11,7 +11,7 @@
       "checked_on": "2026-10-31"
     },
     "sarit": {
-      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "url": "https://github.com/sarit/SARIT-corpus/blob/dedb6b12c96490e62c60bf4b23ea817e992e70be/astavakragita.xml",
       "locator": "verse_11.1",
       "checked_on": "2026-10-31"
     }
@@ -30,8 +30,8 @@
     },
     {
       "witness": "SARIT / TEI",
-      "note": "У verse_11.1 надруковано «bhāvābhāvavikāraśca svabhāvāditi niścayī» без цих пробілів. Розходження на цьому рівні — графічне розмежування слів і пунктуація; підтверджених лексичних різночитань ці два уривки самі по собі не доводять.",
-      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+      "note": "У verse_11.1 надруковано «bhāvābhāvavikāraśca svabhāvāditi niścayī» без цих пробілів. Розходження на цьому рівні — графічне розмежування слів і пунктуація; підтверджених лексичних різночитань ці два уривки самі по собі не доводять. Для відтворення цього читання URL закріплено за дійсним Git-комітом SARIT dedb6b12c96490e62c60bf4b23ea817e992e70be від 12.10.2017; текст verse_11.1 у цьому ref повторно перевірено 31.10.2026. Git-SHA фіксує цифрову редакцію, але не підтверджує рукописної незалежності, текстологічної повноти чи прав на її передрук.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/dedb6b12c96490e62c60bf4b23ea817e992e70be/astavakragita.xml"
     },
     {
       "witness": "SanskritDocuments (деванагарі, електронна публікація, не рукопис)",
