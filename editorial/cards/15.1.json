@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.1",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yathātathopadeśena kṛtārthaḥ sattvabuddhimān| ājīvamapi jijñāsuḥ parastatra vimuhyati||15|1||",
+  "iast": "yathātathopadeśena kṛtārthaḥ sattvabuddhimān | ājīvam api jijñāsuḥ paras tatra vimuhyati ||",
+  "grammar": "yathā-tathā-upadeśena («настановою „як є“») kṛta-arthaḥ («той, чию мету здійснено») sattva-buddhimān («той, чий розум ясний») | ājīvam api («навіть на все життя») jijñāsuḥ («допитливий») paraḥ tatra vimuhyati («інший у цьому збивається з пуття»).",
+  "literal_meaning": "«Хто має ясний розум, той здійснює мету настановою „як є“; а допитливий, хоч би все життя шукав, — інший у цьому збивається з пуття.»",
+  "ukrainian_translation": "Хто має ясний розум, той здійснює мету настановою «як є»; а допитливий, хоч би все життя шукав, — інший у цьому збивається з пуття.",
+  "commentary": "`sattvabuddhimān` — «той, чий розум ясний» — стоїть як умова, а не як наслідок: спершу ясність, потім настанова. `yathātathā` («як є») я читаю як прислівник способу при `upadeśa`; інше можливе прочитання — «настанова „так-не-так“», тобто безладний навчальний текст, і тоді сенс інший. Друга половина протиставляє не знання незнанню, а **ясність допитливості**: `jijñāsu` тут не похвала. Це узгоджується з 9.2, де втихає саме `bubhutsā`.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
