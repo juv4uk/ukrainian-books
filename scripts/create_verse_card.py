@@ -79,9 +79,10 @@ def create_card(root: Path, verse_id: str, *, preview: bool = False) -> str:
     if preview:
         return payload
 
-    directory = root / "editorial" / "cards"
-    if directory.is_symlink():
-        raise ValueError("Каталог карток не може бути символьним посиланням")
+    editorial = root / "editorial"
+    directory = editorial / "cards"
+    if editorial.is_symlink() or directory.is_symlink():
+        raise ValueError("Шлях до карток не може містити символьного посилання")
     directory.mkdir(parents=True, exist_ok=True)
     path = directory / f"{verse_id}.json"
     # 'x' не перезаписує наявний файл навіть за одночасної роботи агентів.

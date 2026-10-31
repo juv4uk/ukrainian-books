@@ -101,9 +101,15 @@ class GeneratorTests(unittest.TestCase):
     def test_reject_symlinked_cards_directory(self):
         (self.root / "editorial").mkdir()
         (self.root / "editorial" / "cards").symlink_to(self.root / "docs", target_is_directory=True)
-        with self.assertRaisesRegex(ValueError, "символьним"):
+        with self.assertRaisesRegex(ValueError, "символьного"):
             MODULE.create_card(self.root, "1.1")
         self.assertFalse((self.root / "docs" / "1.1.json").exists())
+
+    def test_reject_symlinked_editorial_directory(self):
+        (self.root / "editorial").symlink_to(self.root / "docs", target_is_directory=True)
+        with self.assertRaisesRegex(ValueError, "символьного"):
+            MODULE.create_card(self.root, "1.1")
+        self.assertFalse((self.root / "docs" / "cards" / "1.1.json").exists())
 
 
 if __name__ == "__main__":
