@@ -11,7 +11,11 @@ import argparse
 import json
 from pathlib import Path
 
-from scripts.check_book_text_integrity import scan_text
+# Імпорт працює і для `python3 scripts/...`, і для `python3 -m unittest`.
+if __package__:
+    from scripts.check_book_text_integrity import scan_text
+else:
+    from check_book_text_integrity import scan_text
 
 
 def audit(root: Path) -> dict:
