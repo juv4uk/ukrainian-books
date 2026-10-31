@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.85",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.85",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.85",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tuṣṭiḥ sarvatra dhīrasya yathāpatitavartinaḥ | svacchandaṃ carato deśān yatrāstamitaśāyinaḥ ||",
+  "iast": "tuṣṭiḥ sarvatra dhīrasya yathāpatitavartinaḥ | svacchandaṃ carato deśān yatrāstamitaśāyinaḥ ||",
+  "grammar": "tuṣṭiḥ (f. nom. sg. «вдоволення») sarvatra («скрізь») dhīrasya (m. gen. sg.) yathāpatitavartinaḥ (m. gen. sg. «того, хто живе як випаде»: yathā «як» + āpatita «те, що випало» + vartin «той, хто поводиться»). svacchandam (прислівник «вільно, за власною волею») carataḥ (m. gen. sg. «того, хто ходить») deśān (m. acc. pl. «землі, краї») yatra («де») astamitaśāyinaḥ (m. gen. sg. «того, хто лягає спати, коли [сонце] зайшло»: astamita «захід сонця» + śāyin «той, хто лежить»).",
+  "literal_meaning": "«Вдоволення скрізь у мудрого, що живе як випаде, вільно ходить землями й лягає там, де [сонце] зайшло.»",
+  "ukrainian_translation": "Вдоволення скрізь у мудрого, що живе як випаде, вільно ходить землями й лягає там, де сонце зайшло.",
+  "commentary": "`yathāpatita` («як випаде») — те саме слово, що `yadṛcchā` у 18.24 і 15.x. Остання частина конкретна й несподівано побутова: `astamitaśāyin` — лягає спати там, де його застав захід сонця. Це не метафора, а опис вільного мандрівника без розкладу.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ: SARIT — deśānyatrā+astamitaśāyinaḥ (deśāt anyatra, «з краю в інше місце»), GRETIL — deśān yatrāstamitaśāyinaḥ (deśān yatra, «землями, де [він] лягає»). Читання GRETIL дає зв'язну картину: він ходить землями й лягає там, де його застав захід сонця; `yatra` тут природно поєднує обидві дії. У SARIT `anyatra astamitaśāyin` («лягає в іншому місці») лишається без зв'язку з `deśāt`. Взято GRETIL; висновок із синтаксису, третього свідка для 18.85 не перевірено.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
