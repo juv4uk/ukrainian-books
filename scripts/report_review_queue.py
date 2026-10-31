@@ -13,7 +13,8 @@ from urllib.request import Request, urlopen
 
 API = "https://api.github.com"
 GOOD = {"success"}  # skipped/neutral не доводять, що потрібна перевірка відбулась
-STATES = {"APPROVED", "CHANGES_REQUESTED", "COMMENTED", "DISMISSED", "PENDING"}
+# Коментарі та незавершені review НЕ замінюють рішення рецензента.
+DECISION_STATES = {"APPROVED", "CHANGES_REQUESTED", "DISMISSED"}
 REPO_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 
 
@@ -70,7 +71,9 @@ def inspect(entry: dict) -> dict:
         if not isinstance(user, str) or user.casefold() == author:
             continue
         state = review.get("state", "")
-        if state in STATES:
+        # GitHub COMMENTED та PENDING не відкликають попереднього APPROVED
+        # чи CHANGES_REQUESTED. DISMISSED, навпаки, скасовує рішення.
+        if state in DECISION_STATES:
             last[user.casefold()] = review
     approvals = sorted(u for u, v in last.items()
                        if v.get("state") == "APPROVED" and v.get("commit_id") == head)
