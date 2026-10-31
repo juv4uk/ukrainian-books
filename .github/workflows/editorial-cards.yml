@@ -1,0 +1,23 @@
+name: Редакторські картки — перевірка походження та рецензій
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  editorial-cards:
+    name: Схема карток і синтетичні тести
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Виконати unit-тести
+        run: python3 -m unittest discover -s tests -p 'test_editorial_cards.py' -v
+      - name: Перевірити редакторські картки
+        run: python3 scripts/check_editorial_cards.py
+      - name: Перевірити структуру, посилання й ліцензію
+        run: python3 scripts/check_project.py
