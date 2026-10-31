@@ -80,6 +80,11 @@ def check_file(path: Path, root: Path) -> list[str]:
             errors.append(f"{relative}:{line_number}: порожня ціль [{label}]")
             continue
         parsed = urlsplit(target)
+        if parsed.scheme.casefold() in {"javascript", "vbscript", "data", "file"}:
+            errors.append(
+                f"{relative}:{line_number}: небезпечна схема адреси [{label}] → {target}"
+            )
+            continue
         if parsed.scheme or parsed.netloc or target.startswith(("#", "//")):
             continue
         name = unquote(parsed.path)

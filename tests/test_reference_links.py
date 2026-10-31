@@ -62,6 +62,33 @@ class ReferenceLinksTests(unittest.TestCase):
     def test_footnote_syntax_not_mistaken_for_link(self):
         self.assertEqual(self.check("Речення[^a].\n[^a]: Примітка\n"), [])
 
+    def test_unsafe_reference_schemes_are_rejected(self):
+        examples = (
+            "javascript:alert(1)",
+            "JaVaScRiPt:alert(1)",
+            "vbscript:msgbox(1)",
+            "data:text/html,hello",
+            "file:///etc/passwd",
+        )
+        for target in examples:
+            with self.subTest(target=target):
+                errors = self.check(f"[джерело][x]\\n[x]: {target}\\n".replace("\\n", "\n"))
+                self.assertTrue(
+                    any("небезпечна схема адреси" in error for error in errors),
+                    errors,
+                )
+
+    def test_ordinary_external_reference_schemes_remain_allowed(self):
+        self.assertEqual(
+            self.check(
+                "[стаття][doi] [пошта][mail] [розділ][anchor]\n"
+                "[doi]: https://doi.org/10.1234/example\n"
+                "[mail]: mailto:editor@example.org\n"
+                "[anchor]: #примітки\n"
+            ),
+            [],
+        )
+
     def test_tree_counts_files(self):
         self.document.write_text("[x][no]\n", encoding="utf-8")
         count, errors = check_tree(self.root)
