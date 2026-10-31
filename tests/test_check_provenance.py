@@ -87,5 +87,78 @@ class Tests(unittest.TestCase):
         (b / "cover.png").write_bytes(b"fake")
         self.assertEqual(self.result()["status"], "failed")
 
+    def test_books_symlink_to_directory_blocks(self):
+        external = self.root / "outside"
+        external.mkdir()
+        (self.root / "books").symlink_to(external, target_is_directory=True)
+        r = self.result()
+        self.assertEqual(r["status"], "failed")
+        self.assertTrue(any("символічне посилання" in e for e in r["errors"]))
+
+    def test_broken_books_symlink_is_not_absent_catalog(self):
+        (self.root / "books").symlink_to(
+            self.root / "absent", target_is_directory=True
+        )
+        self.assertEqual(self.result()["status"], "failed")
+
+    def test_symlinked_book_material_blocks_with_path(self):
+        b = self.make_book(material=False)
+        target = self.root / "external.tex"
+        target.write_text("Зовнішній текст", encoding="utf-8")
+        (b / "main.tex").symlink_to(target)
+        r = self.result()
+        self.assertEqual(r["status"], "failed")
+        self.assertTrue(
+            any("example/main.tex" in e and "символічне" in e
+                for e in r["errors"]), r["errors"]
+        )
+
+    def test_dangling_material_symlink_does_not_hide_in_metadata_only(self):
+        b = self.make_book(material=False)
+        (b / "missing.tex").symlink_to(self.root / "absent.tex")
+        r = self.result()
+        self.assertEqual(r["status"], "failed")
+        self.assertEqual(r["books"][0]["state"], "blocked")
+        self.assertTrue(any("missing.tex" in e for e in r["errors"]))
+
+    def test_nested_directory_symlink_blocks_without_following(self):
+        b = self.make_book(material=False)
+        external = self.root / "private"
+        external.mkdir()
+        (external / "secret.tex").write_text("не читати", encoding="utf-8")
+        (b / "include").symlink_to(external, target_is_directory=True)
+        r = self.result()
+        self.assertEqual(r["status"], "failed")
+        self.assertTrue(any("example/include" in e for e in r["errors"]))
+
+    def test_symlinked_passport_does_not_count_as_approved(self):
+        b = self.make_book(material=False)
+        target = self.root / "external-passport.md"
+        target.write_text(PASSPORT, encoding="utf-8")
+        (b / "PROVENANCE.md").unlink()
+        (b / "PROVENANCE.md").symlink_to(target)
+        r = self.result()
+        self.assertEqual(r["status"], "failed")
+        self.assertTrue(any("PROVENANCE.md" in e for e in r["errors"]))
+
+    def test_symlinked_book_directory_blocks(self):
+        external = self.root / "external-book"
+        external.mkdir()
+        (self.root / "books").mkdir()
+        (self.root / "books" / "example").symlink_to(
+            external, target_is_directory=True
+        )
+        r = self.result()
+        self.assertEqual(r["status"], "failed")
+        self.assertTrue(any("books/example" in e for e in r["errors"]))
+
+    def test_gitkeep_symlink_is_not_permitted(self):
+        books = self.root / "books"
+        books.mkdir()
+        (books / ".gitkeep").symlink_to(self.root / "absent.txt")
+        r = self.result()
+        self.assertEqual(r["status"], "failed")
+        self.assertTrue(any(".gitkeep" in e for e in r["errors"]))
+
 if __name__ == "__main__":
     unittest.main()
