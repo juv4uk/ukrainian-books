@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.5",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.5",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.5",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na dūraṃ na ca saṅkocāl labdham evātmanaḥ padam | nirvikalpaṃ nirāyāsaṃ nirvikāraṃ nirañjanam ||",
+  "iast": "na dūraṃ na ca saṅkocāl labdham evātmanaḥ padam | nirvikalpaṃ nirāyāsaṃ nirvikāraṃ nirañjanam ||",
+  "grammar": "na dūram («не далеко») na ca saṅkocāt («і не через стиснення, звуження»). labdham (n. nom. sg. «досягнуте, отримане») eva («вже, саме») ātmanaḥ (m. gen. sg. «Атмана») padam (n. nom. sg. «стопа, стан, місце»). Далі чотири означення з nir-: nirvikalpam («без розрізнень»), nirāyāsam («без зусилля, без труднощів»), nirvikāram («без змін, без видозмін»), nirañjanam («без плями, незаплямований»).",
+  "literal_meaning": "«Не далеко й не через стиснення — стопа Атмана вже досягнута: без розрізнень, без зусилля, без змін, без плями.»",
+  "ukrainian_translation": "Стопа Атмана не далеко і не досягається стисненням — вона вже досягнута: без розрізнень, без зусилля, без змін, без плями.",
+  "commentary": "Заперечуються два способи промахнутися: уявити мету далекою (dūram) або досягти її напруженням (saṅkoca — буквально «стиснення», звуження себе). Далі чотири nir- означення стоять без дієслова й без сполучників — це не опис шляху, а перелік того, чого в досягнутому немає. nirāyāsa («без зусилля») стоїть другим, одразу після nirvikalpa, і це відповідь на saṅkoca: те, що досягнуте без стиснення, і далі не потребує зусиль.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжність saṃkocāt (SARIT) / saṅkocāt (GRETIL) — анусвара проти класового носового. Та сама форма, орфографія. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
