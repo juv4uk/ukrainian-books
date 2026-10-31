@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "1.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.7",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.7",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "eko draṣṭāsi sarvasya muktaprāyo 'si sarvadā | ayam eva hi te bandho draṣṭāraṃ paśyasītaram ||",
+  "iast": "eko draṣṭāsi sarvasya muktaprāyo 'si sarvadā | ayam eva hi te bandho draṣṭāraṃ paśyasītaram ||",
+  "grammar": "eko (m. nom. sg. «єдиний») draṣṭā (m. nom. sg. «бачитель», nomen agentis від dṛś) asi (2 sg. pres. as- «єси») sarvasya (n./m. gen. sg. «усього»). muktaprāyaḥ (bahuvrīhi: prāya- «близький до», тобто «майже вільний») asi sarvadā («завжди»). ayam (m. nom. sg.) eva hi te (gen. sg. «твоя») bandhaḥ («уза»). draṣṭāram (m. acc. sg.) paśyasi (2 sg. pres. dṛś «бачиш») itaram (m. acc. sg. «іншого»). Ключова конструкція — остання пада: дієслово paśyasi з двома додатками, де другий (itaram) і є порушенням.",
+  "literal_meaning": "«Єдиний бачитель усього єси, завжди майже вільний. Це ж і є твоя уза: бачиш [іншого] бачителя, [ніж ти сам].»",
+  "ukrainian_translation": "Ти єдиний бачитель усього — і завжди майже вільний. Уза твоя ось у чому: ти бачиш іншого бачителя, крім себе.",
+  "commentary": "Вірш перевертає звичне уявлення про неволю. Неволя тут не в тому, що ти робиш погане, а в тому, що ти припускаєш **другого бачителя**. Слово muktaprāyaḥ («майже вільний») ужите навмисно: воно не обіцяє повноти, а показує, наскільки мало лишається. itaram («іншого») — не «щось інше», а саме інший суб'єкт спостереження: щойно з'являється другий, з'являється й уза. Це прямий зв'язок із 1.3, де лишався sākṣin («свідок») після зняття стихій: там свідок один, тут — перевірка, чи він справді один.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Після нормалізації читання збігаються. Відмінність лише в оформленні: SARIT пише draṣṭā+asi і muktaprāyo+asi зі знаком аваґрахи, GRETIL — draṣṭāsi і muktaprāyo 'si. Це не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
