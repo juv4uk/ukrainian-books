@@ -1,0 +1,19 @@
+% Власний технічний зразок для перевірки кирилиці XeLaTeX.
+% Це не книжковий текст, не переклад і не академічне видання.
+\documentclass[12pt,a5paper]{article}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\usepackage{polyglossia}
+\setdefaultlanguage{ukrainian}
+\usepackage[margin=18mm]{geometry}
+\pagestyle{empty}
+\begin{document}
+\section*{Українська контрольна сторінка}
+Цей короткий оригінальний зразок перевіряє, що XeLaTeX
+правильно створює PDF із українськими літерами
+«ґ», «є», «і», «ї» та типографічними лапками.
+
+\bigskip
+\noindent\textbf{Мета:} технічна перевірка відтворюваної збірки.
+Цей аркуш не є перекладом «Аштавакра-ґіти» та не є книжковим виданням.
+\end{document}

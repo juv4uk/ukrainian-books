@@ -1,0 +1,21 @@
+name: Безпека конфігурації CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  policy:
+    name: Мінімальні права й безпечні тригери
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати файли
+        uses: actions/checkout@v4
+      - name: Виконати негативні тести
+        run: python3 -m unittest discover -s tests -p 'test_workflow_security.py' -v
+      - name: Перевірити всі workflow
+        run: python3 scripts/check_workflow_security.py
+      - name: Перевірити структуру і ВОЛЬНІСТЬ
+        run: python3 scripts/check_project.py

@@ -1,0 +1,51 @@
+name: Аудит захисту основної гілки
+on:
+  push:
+    branches:
+      - main
+      - engineering/audyt-zakhystu-main-20261031
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Тести аудитора та інформаційний звіт
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати вихідні файли
+        uses: actions/checkout@v4
+
+      - name: Перевірити структуру і ліцензію
+        run: python3 scripts/check_project.py
+
+      - name: Протестувати обробку захисту та помилок API
+        run: python3 -m unittest discover -s tests -p 'test_audit_main_protection.py' -v
+
+      - name: Отримати інформаційний стан main
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python3 scripts/audit_main_protection.py --repo juv4uk/ukrainian-books
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          x = json.loads(Path("reports/branch-protection.json").read_text(encoding="utf-8"))
+          p = Path(os.environ["GITHUB_STEP_SUMMARY"])
+          with p.open("a", encoding="utf-8") as output:
+              output.write("## Інформаційний аудит main\n\n")
+              output.write("Стан: **" + x["стан"] + "**.\n\n")
+              output.write("Важливо: зелений CI не доводить налаштованого review "
+                           "та інших branch rules.\n")
+          PY
+
+      - name: Зберегти діагностичний звіт
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stan-zakhystu-main
+          path: reports/branch-protection.json
+          if-no-files-found: warn

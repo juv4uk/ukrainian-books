@@ -1,0 +1,54 @@
+name: Технічна перевірка українського PDF
+
+on:
+  pull_request:
+    paths:
+      - "tests/fixtures/pdf-smoke-ukr.tex.in"
+      - ".github/workflows/pdf-smoke.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tests/fixtures/pdf-smoke-ukr.tex.in"
+      - ".github/workflows/pdf-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    name: XeLaTeX, кирилиця та PDF-артефакт
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати вихідні файли
+        uses: actions/checkout@v4
+      - name: Перевірити структуру й «ВОЛЬНІСТЬ»
+        run: python3 scripts/check_project.py
+      - name: Установити XeLaTeX та PDF-утиліти
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq \
+            texlive-xetex texlive-lang-cyrillic latexmk fonts-dejavu-core poppler-utils
+      - name: Скласти контрольний PDF
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/ukr-pdf-smoke/out"
+          cp tests/fixtures/pdf-smoke-ukr.tex.in "$RUNNER_TEMP/ukr-pdf-smoke/pdf-smoke-ukr.tex"
+          latexmk -xelatex -interaction=nonstopmode -halt-on-error -file-line-error \
+            -outdir="$RUNNER_TEMP/ukr-pdf-smoke/out" "$RUNNER_TEMP/ukr-pdf-smoke/pdf-smoke-ukr.tex"
+          test -s "$RUNNER_TEMP/ukr-pdf-smoke/out/pdf-smoke-ukr.pdf"
+      - name: Перевірити сторінку та кирилицю
+        run: |
+          set -euo pipefail
+          file="$RUNNER_TEMP/ukr-pdf-smoke/out/pdf-smoke-ukr.pdf"
+          pages="$(pdfinfo "$file" | awk '/^Pages:/ {print $2}')"
+          test "$pages" = "1" || { echo "Неочікувана кількість сторінок: $pages"; exit 1; }
+          pdftotext -enc UTF-8 "$file" - | grep -Fq "Українська контрольна сторінка"
+          echo "PDF містить одну сторінку й перевірену українську кирилицю." >> "$GITHUB_STEP_SUMMARY"
+      - name: Зберегти технічний PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: tehnichnyi-pdf-kirylytsia
+          path: ${{ runner.temp }}/ukr-pdf-smoke/out/pdf-smoke-ukr.pdf
+          if-no-files-found: error
+          retention-days: 7
