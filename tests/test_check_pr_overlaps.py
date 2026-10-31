@@ -109,6 +109,118 @@ class OverlapTests(unittest.TestCase):
         with self.assertRaises(checker.AuditError):
             checker.read_live("../repo", 5, lambda _: [])
 
+    @staticmethod
+    def graphql_page(rows, more=False, cursor=None):
+        return {"data": {"repository": {"pullRequests": {
+            "nodes": [
+                {"number": n, "files": {
+                    "totalCount": len(paths),
+                    "nodes": [{"path": path, "changeType": "MODIFIED"}
+                              for path in paths],
+                    "pageInfo": {"hasNextPage": False},
+                }} for n, paths in rows
+            ],
+            "pageInfo": {"hasNextPage": more, "endCursor": cursor},
+        }}}}
+
+    def test_graphql_batch_reduces_requests_and_detects_conflict(self):
+        pages_seen = []
+        def graphql_fetch(query, variables):
+            pages_seen.append(variables)
+            self.assertIn("pullRequests", query)
+            return self.graphql_page([
+                (4, ["cards/1.1.json"]),
+                (19, ["cards/1.2.json"]),
+                (21, ["cards/1.2.json"]),
+                (25, ["cards/1.3.json"]),
+            ])
+        def no_rest(_):
+            self.fail("Для звичайних файлів REST не потрібен")
+        records = checker.read_live_graphql("owner/repo", 21, graphql_fetch, no_rest)
+        self.assertEqual(len(pages_seen), 1)
+        self.assertEqual([x["number"] for x in records], [4, 19, 21])
+        self.assertEqual(checker.overlaps(21, records),
+                         [{"pr": 19, "paths": ["cards/1.2.json"]}])
+
+    def test_graphql_rename_requires_rest_old_and_new_paths(self):
+        rest_calls = []
+        def graphql_fetch(_query, _vars):
+            result = self.graphql_page([
+                (10, ["cards/new.json"]), (11, ["cards/old.json"])
+            ])
+            result["data"]["repository"]["pullRequests"]["nodes"][0]["files"]["nodes"][0]["changeType"] = "RENAMED"
+            return result
+        def rest_fetch(path):
+            rest_calls.append(path)
+            return [{"filename": "cards/new.json", "previous_filename": "cards/old.json",
+                     "status": "renamed"}]
+        records = checker.read_live_graphql("owner/repo", 11, graphql_fetch, rest_fetch)
+        self.assertEqual(len(rest_calls), 1)
+        self.assertIn("/pulls/10/files", rest_calls[0])
+        self.assertEqual(checker.overlaps(11, records),
+                         [{"pr": 10, "paths": ["cards/old.json"]}])
+
+    def test_graphql_over_100_files_uses_complete_rest_fallback(self):
+        rest_calls = []
+        first = [f"cards/{i}.json" for i in range(100)]
+        all_files = first + ["cards/last.json"]
+        def graphql_fetch(_query, _vars):
+            page = self.graphql_page([(10, first), (11, ["cards/last.json"])])
+            file_conn = page["data"]["repository"]["pullRequests"]["nodes"][0]["files"]
+            file_conn["totalCount"] = 101
+            file_conn["pageInfo"]["hasNextPage"] = True
+            return page
+        def rest_fetch(path):
+            rest_calls.append(path)
+            files = ([{"filename": x} for x in all_files] if "page=1" in path else
+                     [{"filename": all_files[-1]}])
+            return files[:100] if "page=1" in path else files
+        rows = checker.read_live_graphql("owner/repo", 11, graphql_fetch, rest_fetch)
+        self.assertEqual(len(rest_calls), 2)
+        self.assertEqual(checker.overlaps(11, rows),
+                         [{"pr": 10, "paths": ["cards/last.json"]}])
+
+    def test_graphql_cursor_pagination_is_complete(self):
+        observed = []
+        def graphql_fetch(_query, vars_):
+            observed.append(vars_["cursor"])
+            if vars_["cursor"] is None:
+                return self.graphql_page([(5, ["a"])], more=True, cursor="cursor-one")
+            return self.graphql_page([(7, ["a"])])
+        rows = checker.read_live_graphql("owner/repo", 7, graphql_fetch,
+                                        lambda _: self.fail("REST зайвий"))
+        self.assertEqual(observed, [None, "cursor-one"])
+        self.assertEqual(checker.overlaps(7, rows), [{"pr": 5, "paths": ["a"]}])
+
+    def test_graphql_error_missing_pr_and_bad_cursor_fail_closed(self):
+        malformed = [
+            {"errors": [{"message": "часткова відповідь"}], "data": {}},
+            {"data": {"repository": {"pullRequests": {
+                "nodes": [], "pageInfo": {"hasNextPage": True, "endCursor": None}
+            }}}},
+            self.graphql_page([(4, ["a"])]),
+        ]
+        for response in malformed:
+            with self.subTest(response=response):
+                with self.assertRaises(checker.AuditError):
+                    checker.read_live_graphql("owner/repo", 7,
+                                              lambda *_: response, lambda _: [])
+
+    def test_graphql_invalid_file_and_rename_metadata_fail_closed(self):
+        for bad in [None, [], "UNKNOWN"]:
+            response = self.graphql_page([(7, ["cards/7.1.json"])])
+            node = response["data"]["repository"]["pullRequests"]["nodes"][0]
+            node["files"]["nodes"][0]["changeType"] = bad
+            with self.subTest(change_type=bad), self.assertRaises(checker.AuditError):
+                checker.read_live_graphql("owner/repo", 7,
+                                          lambda *_: response, lambda _: [])
+        response = self.graphql_page([(7, ["cards/new.json"])])
+        response["data"]["repository"]["pullRequests"]["nodes"][0]["files"]["nodes"][0]["changeType"] = "RENAMED"
+        with self.assertRaises(checker.AuditError):
+            checker.read_live_graphql("owner/repo", 7, lambda *_: response,
+                                      lambda _: [{"filename": "cards/new.json",
+                                                  "status": "renamed"}])
+
     def test_offline_cli_snapshot(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "prs.json"
