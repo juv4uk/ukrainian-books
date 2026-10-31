@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.97",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.97",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.97",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "vikṣepe 'pi na vikṣiptaḥ samādhau na samādhimān | jāḍye 'pi na jaḍo dhanyaḥ pāṇḍitye 'pi na paṇḍitaḥ ||",
+  "iast": "vikṣepe 'pi na vikṣiptaḥ samādhau na samādhimān | jāḍye 'pi na jaḍo dhanyaḥ pāṇḍitye 'pi na paṇḍitaḥ ||",
+  "grammar": "vikṣepe (m. loc. sg. «у розсіянні») api na vikṣiptaḥ (m. nom. sg. «не розсіяний»). samādhau (m. loc. sg. «у самадгі») na samādhimān (m. nom. sg. «не той, хто має самадгі»: samādhi + mant). jāḍye (n. loc. sg. «у тупості, неживості») api na jaḍaḥ (m. nom. sg. «не тупий»). dhanyaḥ (m. nom. sg. «блаженний») pāṇḍitye (n. loc. sg. «у вченості»: paṇḍita «вчений» + -ya) api na paṇḍitaḥ (m. nom. sg. «не вчений»).",
+  "literal_meaning": "«І в розсіянні — не розсіяний; і в самадгі — не той, хто має самадгі; і в тупості — не тупий; блаженний, і у вченості — не вчений.»",
+  "ukrainian_translation": "І в розсіянні — не розсіяний; і в самадгі — не той, хто має самадгі; і в тупості — не тупий. Блаженний, і у вченості — не вчений.",
+  "commentary": "Пари навмисно принизливі: `jāḍya` («тупість») і `pāṇḍitya` («вченість») стоять поруч як рівноцінні — тобто вченість не краща за тупість, бо обидві є станом. `samādhimān` («той, хто має самадгі») — найтонше заперечення: не «не в самадгі», а не володіє ним. Порівняй 18.33, де зосередженість віддана дурням.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

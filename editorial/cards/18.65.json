@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.65",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.65",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.65",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "sa eva dhanya ātmajñaḥ sarvabhāveṣu yaḥ samaḥ | paśyan śṛṇvan spṛśan jighrann aśnan nistarṣamānasaḥ ||",
+  "iast": "sa eva dhanya ātmajñaḥ sarvabhāveṣu yaḥ samaḥ | paśyan śṛṇvan spṛśan jighrann aśnan nistarṣamānasaḥ ||",
+  "grammar": "saḥ eva («саме він») dhanyaḥ (m. nom. sg. «блаженний») ātmajñaḥ (m. nom. sg. «той, хто знає Атман») sarvabhāveṣu (m. loc. pl. «у всіх станах, істотах») yaḥ samaḥ («хто рівний»). paśyan (m. nom. sg. «дивлячись») śṛṇvan («слухаючи») spṛśan («торкаючись») jighran («нюхаючи») aśnan («їдячи») nistarṣamānasaḥ (bahuvrīhi «той, чий розум без спраги»: nis «без» + tarṣa «спрага» + manas).",
+  "literal_meaning": "«Саме він блаженний — той, хто знає Атман і рівний у всіх станах: дивлячись, слухаючи, торкаючись, нюхаючи, їдячи, з розумом без спраги.»",
+  "ukrainian_translation": "Саме він блаженний — той, хто знає Атман і рівний до всіх: дивиться, слухає, торкається, нюхає, їсть — а розум без спраги.",
+  "commentary": "П'ять чуттєвих дієприкметників — той самий перелік, що в 18.47, і це вже вдруге: книга навмисно повторює його, щоб зняти підозру, ніби йдеться про відмову від чуттів. `nistarṣa` («без спраги») — точніше за «без бажань»: спрага (tarṣa) — те, що змушує пити знову.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

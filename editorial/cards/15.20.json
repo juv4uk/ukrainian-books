@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.20",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.20",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.20",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tyajaiva dhyānaṃ sarvatra mā kiñciddhṛdi dhāraya| ātmā tvaṃ mukta evāsi kiṃ vimṛśya kariṣyasi||15|20||",
+  "iast": "tyajaiva dhyānaṃ sarvatra mā kiñcid dhṛdi dhāraya | ātmā tvaṃ mukta evāsi kiṃ vimṛśya kariṣyasi ||",
+  "grammar": "tyaja eva dhyānam («відкинь саме медитацію») sarvatra («скрізь») mā kiñcit dhṛdi dhāraya («не тримай нічого в серці») | ātmā tvam («ти — ātman») muktaḥ eva asi («ти вже вільний») kim vimṛśya kariṣyasi («що ти робитимеш, [далі] розмірковуючи»).",
+  "literal_meaning": "«Відкинь саму медитацію, скрізь не тримай нічого в серці. Ти — ātman, ти вже вільний: що ти робитимеш, далі розмірковуючи?»",
+  "ukrainian_translation": "Відкинь саму медитацію, скрізь не тримай нічого в серці. Ти — ātman, ти вже вільний: що ти робитимеш, далі розмірковуючи?",
+  "commentary": "Останній вірш глави відкидає **медитацію** — те, з чого починалася майже вся релігійна практика. `tyaja eva` з підсиленням: не «зменш», а «відкинь саме». `mukta eva asi` — «ти вже вільний», і `eva` тут не прикраса: без нього фраза звучала б як обіцянка. Завершальне питання `kiṃ … kariṣyasi` не закликає до дії — воно показує, що робити нічого. Це узгоджується з 15.3, де пізнання суті відбирає завзятість.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
