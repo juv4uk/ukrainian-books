@@ -53,7 +53,13 @@ def audit(root: Path) -> list[str]:
             errors.append(f"rozdil-{chapter}.md: немає файла, хоч є {len(verses)} карток")
             continue
         text = path.read_text(encoding="utf-8")
-        found = {(int(c), int(v)) for c, v in VERSE_HEAD.findall(text)}
+        # Не маскувати повторення однакових номерів через перетворення на set.
+        numbered = [(int(c), int(v)) for c, v in VERSE_HEAD.findall(text)]
+        found = set()
+        for c, v in numbered:
+            if (c, v) in found:
+                errors.append(f"rozdil-{chapter}.md: повторено заголовок вірша {c}.{v}")
+            found.add((c, v))
         want = {(chapter, v) for v in verses}
         for c, v in sorted(want - found):
             errors.append(f"rozdil-{chapter}.md: немає вірша {c}.{v}")
