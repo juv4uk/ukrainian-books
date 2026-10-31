@@ -1,1 +1,4 @@
-PLACEHOLDER
+{
+  "_DO_NOT_MERGE": true,
+  "note": "Гілка books/chapter-13-parallels-skovoroda-20261101 містить помилковий коміт PLACEHOLDER. paraleli.json треба брати з main. Окремий PR буде з нової гілки лише з дослідницькою нотаткою 13.3/13.4."
+}
