@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Отримати репозиторій
         uses: actions/checkout@v4
+      - name: Негативні тести узгодженості числових колонок CSV
+        run: python3 -m unittest discover -s tests -p 'test_verse_registry.py' -v
       - name: Перевірити власний покажчик
         run: python3 scripts/check_verse_registry.py --self-test
       - name: Перевірити структуру проєкту та ліцензію
