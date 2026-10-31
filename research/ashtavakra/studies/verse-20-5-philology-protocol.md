@@ -8,7 +8,7 @@
 
 | Тип свідчення | Конкретний локатор | Що він дозволяє перевірити | Чого він не доводить |
 | --- | --- | --- | --- |
-| Електронний корпус GRETIL | [HTML, `Avg_20.5`](https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm); [XML-дзеркало INDOLOGY](https://github.com/INDOLOGY/GRETIL-mirror/blob/0a0e24af9ae65faf3c0c6603c5808e8a60fb4bc9/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml) | Чотири pāda, написання слів, межі `<seg>` | Авторитет критичного видання або незалежність рукописної традиції |
+| Електронний корпус GRETIL | [HTML, `Avg_20.5`](https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm); [XML-дзеркало INDOLOGY](https://github.com/INDOLOGY/GRETIL-mirror/blob/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml) | Чотири pāda, написання слів, межі `<seg>` | Авторитет критичного видання або незалежність рукописної традиції |
 | Електронний корпус SARIT | [TEI, `verse_20.5`](https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml) | Два віршові рядки, видиму лексичну послідовність, написання сандгі | Незалежність від GRETIL чи рукописні різночитання |
 | Третя публічна цифрова транскрипція | [SanskritDocuments, глава 20, вірш 5](https://sanskritdocuments.org/doc_giitaa/ashtgita.html) | Контроль написань у деванагарі та нумерації | Третій незалежний рукопис, датування первинного читання чи підтвердження ліцензії на наш репринт |
 
