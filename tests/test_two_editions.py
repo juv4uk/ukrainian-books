@@ -175,5 +175,68 @@ class EditionTests(unittest.TestCase):
         self.assertTrue(any("права на український текст" in e for e in book.academic(c, True)))
 
 
+    def test_rights_flag_without_https_evidence_rejected(self):
+        a = academic_card()
+        a["rights"]["verified"] = True
+        self.assertTrue(any("без HTTPS-доказу" in e for e in book.academic(a, False)))
+
+    def test_devanagari_permission_without_verified_rights_rejected(self):
+        a = academic_card()
+        a["rights"]["devanagari_permitted"] = True
+        self.assertTrue(any("дозвіл на деванагарі" in e for e in book.academic(a, False)))
+
+    def test_preview_never_leaks_devanagari_with_flags_but_no_evidence(self):
+        a = academic_card()
+        a["rights"]["verified"] = True
+        a["rights"]["devanagari_permitted"] = True
+        folder = self.root / "preview-flags"
+        book.preview({"1.1": a}, {}, folder)
+        txt = (folder / "akademichna-chernetka.md").read_text(encoding="utf-8")
+        self.assertIn("Приховано", txt)
+        self.assertNotIn("**Рядок 1, деванагарі:** अ", txt)
+
+    def test_preview_can_print_devanagari_with_documented_permission(self):
+        a = academic_card()
+        a["rights"].update({"verified": True, "devanagari_permitted": True,
+                            "evidence_url": "https://example.org/evidence"})
+        folder = self.root / "preview-proved"
+        book.preview({"1.1": a}, {}, folder)
+        txt = (folder / "akademichna-chernetka.md").read_text(encoding="utf-8")
+        self.assertIn("**Рядок 1, деванагарі:** अ", txt)
+
+    def test_preview_hides_ukrainian_fields_if_ownership_is_false(self):
+        a = academic_card()
+        a["rights"]["owned_ukrainian_text"] = False
+        folder = self.root / "preview-foreign-translation"
+        book.preview({"1.1": a}, {}, folder)
+        txt = (folder / "akademichna-chernetka.md").read_text(encoding="utf-8")
+        self.assertIn("Приховано: права на український текст", txt)
+        self.assertNotIn("Український пробний рядок", txt)
+        self.assertNotIn("Авторське тестове пояснення", txt)
+
+    def test_preview_hides_unowned_poetry(self):
+        p = poetic_card()
+        p["rights"]["owned_ukrainian_text"] = False
+        folder = self.root / "preview-unowned-poetry"
+        book.preview({}, {"1.1": p}, folder)
+        txt = (folder / "poetychna-chernetka.md").read_text(encoding="utf-8")
+        self.assertIn("Приховано: права на український поетичний", txt)
+        self.assertNotIn("Перший пробний рядок", txt)
+
+    def test_symlink_directory_is_forbidden(self):
+        other = self.root / "outside"
+        other.mkdir()
+        (self.root / book.ACADEMIC).symlink_to(other, target_is_directory=True)
+        _, _, report = book.audit(self.root)
+        self.assertTrue(any("символьний каталог" in e for e in report["помилки"]))
+
+    def test_symlink_editorial_parent_is_forbidden(self):
+        other = self.root / "foreign-editorial"
+        (other / "academic-edition").mkdir(parents=True)
+        (self.root / "editorial").symlink_to(other, target_is_directory=True)
+        _, _, report = book.audit(self.root)
+        self.assertTrue(any("символьний каталог" in e for e in report["помилки"]))
+
+
 if __name__ == "__main__":
     unittest.main()
