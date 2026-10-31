@@ -86,5 +86,97 @@ class UnicodeBookIntegrityTests(unittest.TestCase):
         self.assertEqual(len(scan_text("\uFFFD" * 70)), 25)
 
 
+class CardsAndResearchScopeTests(unittest.TestCase):
+    """РЕД-05, розширення 31.10.2026: картки й примітки теж перевіряються.
+
+    Історичний дефект `editorial/cards/2.2.json` («свіЂ», «Аштавакрааёіти»,
+    «надбанні.Ритання») проходив повз CI, бо перевірка дивилася лише в
+    `books/`. Тести нижче фіксують і те, що такі дефекти ловляться, і те, що
+    законні IAST, деванагарі та латинські терміни не валяться.
+    """
+
+    def test_historical_card_2_2_defects_detected(self):
+        self.assertEqual([e["codepoint"] for e in scan_text("свіЂ")], ["U+0402"])
+        self.assertEqual([e["codepoint"] for e in scan_text("Аштавакрааёіти")], ["U+0451"])
+        errors = scan_text("надбанні.Ритання", prose=True)
+        self.assertEqual([e["reason"] for e in errors], ["втрачений пробіл після крапки"])
+
+    def test_cyrillic_letters_outside_ukrainian_alphabet(self):
+        for broken in ("ы", "э", "ъ", "ё", "Ђ", "Ў", "Џ", "Я\u0451"):
+            self.assertTrue(scan_text(f"текст{broken}"), broken)
+
+    def test_latin_letter_inside_cyrillic_word(self):
+        errors = scan_text("Українське свiтло")  # латинська «i»
+        self.assertEqual([e["codepoint"] for e in errors], ["U+0069"])
+        self.assertIn("латиниця", errors[0]["reason"])
+
+    def test_latin_accent_as_ukrainian_stress_allowed(self):
+        # «самóю»: наголос записано латинською «ó», бо прекомпонованої кириличної
+        # «о́» не існує. Це не мішанина писемностей і не дефект кодування.
+        self.assertEqual(scan_text("за власною природою, самóю суттю", prose=True), [])
+        # А латинська «i» замість кириличної — дефект.
+        self.assertEqual([e["codepoint"] for e in scan_text("свiт")], ["U+0069"])
+
+    def test_legitimate_card_text_passes(self):
+        card = (
+            '{\n'
+            '  "id": "1.2",\n'
+            '  "grammar": "kṣamā-ārjava-dayā-toṣa-satyaṃ (dvandva-складений іменник, '
+            'n. acc. sg.); bahuvrīhi-складник — ātman, sākṣin, ṛṣi, ṃ, ḥ, ś, ṣ, ṭ, ḍ, ṇ, ñ.",\n'
+            '  "sanskrit": "देवनागरी नमः | yatra viśvam idaṃ bhāti",\n'
+            '  "ukrainian_translation": "«Звільнення бажаєш якщо, сину» — питальна форма."\n'
+            '}\n'
+        )
+        self.assertEqual(scan_text(card, prose=True), [])
+
+    def test_devanagari_and_iast_never_flagged(self):
+        self.assertEqual(scan_text("ā ī ū ṛ ṃ ḥ ś ṣ ṭ ḍ ṇ ñ Ā Ī Ū Ṛ Ṃ Ḥ Ś Ṣ Ṭ Ḍ Ṇ Ñ", prose=True), [])
+        self.assertEqual(scan_text("अष्टावक्रगीता १.२", prose=True), [])
+
+    def test_double_space_in_prose_flagged_but_indent_and_line_end_allowed(self):
+        self.assertEqual([e["reason"] for e in scan_text("Слово  два", prose=True)],
+                         ["подвійний пробіл усередині тексту"])
+        self.assertEqual(scan_text("    відступ рядка", prose=True), [])
+        self.assertEqual(scan_text("кінець рядка  \nдалі", prose=True), [])
+
+    def test_markdown_table_and_code_fence_not_flagged(self):
+        text = "| Колонка |  Значення |\n| --- | --- |\n\n```\nx  =  1\n```\n"
+        self.assertEqual(scan_text(text, prose=True), [])
+
+    def test_books_tex_not_subject_to_prose_rules(self):
+        # Верстка `.tex` законно містить вирівнювання — «прозові» правила
+        # до `books/**` не застосовуються, щоб не валити чужі видання.
+        self.assertEqual(scan_text("\\begin{tabular}{l  l}текст.Текст\\end{tabular}"), [])
+
+    def test_cards_and_research_are_in_scope(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            cards = root / "editorial" / "cards"
+            cards.mkdir(parents=True)
+            (cards / "2.2.json").write_text('{"id": "2.2", "text": "свіЂ"}', encoding="utf-8")
+            (cards / "2.3.json").write_text('{"id": "2.3", "text": "світ"}', encoding="utf-8")
+            research = root / "research" / "ashtavakra"
+            research.mkdir(parents=True)
+            (research / "notes.md").write_text("надбанні.Ритання", encoding="utf-8")
+            output = audit(root)
+            self.assertEqual(output["scanned_files"], 3)
+            self.assertEqual(output["scanned_by_scope"]["cards"], 2)
+            self.assertEqual(output["scanned_by_scope"]["research"], 1)
+            self.assertEqual(output["status"], "failed")
+            self.assertEqual({e["path"] for e in output["errors"]},
+                             {"editorial/cards/2.2.json", "research/ashtavakra/notes.md"})
+
+    def test_clean_cards_and_research_pass(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            cards = root / "editorial" / "cards"
+            cards.mkdir(parents=True)
+            (cards / "1.2.json").write_text('{"id": "1.2", "text": "dvandva-складений, ātman"}',
+                                            encoding="utf-8")
+            output = audit(root)
+            self.assertEqual(output["status"], "ok")
+            self.assertEqual(output["scanned_files"], 1)
+
+
 if __name__ == "__main__":
     unittest.main()
