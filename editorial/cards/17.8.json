@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.8",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.8",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "kṛtārtho 'nena jñānenety | evaṃ galitadhīḥ kṛtī | paśyan śṛṇvan spṛśan jighrann | aśnann āste yathā sukhaṃ ||",
+  "iast": "kṛtārtho 'nena jñānenety | evaṃ galitadhīḥ kṛtī | paśyan śṛṇvan spṛśan jighrann | aśnann āste yathā sukhaṃ ||",
+  "grammar": "kṛtārthaḥ «той, хто досяг мети» (kṛta + artha). anena jñānena — інстр. одн. «цим знанням». iti evam «так [кажучи/думаючи]». galitadhīḥ — bahuvrīhi «той, у кого розум стік, розтанув» (galita — ppp від √gal «текти, капати»). kṛtī «діяльний, той, хто досяг». paśyan śṛṇvan spṛśan jighran aśnan — дієприкметники теперішнього часу, наз. одн. m., усі при одному підметі: «дивлячись, слухаючи, торкаючись, нюхаючи, їдячи». āste «перебуває». yathā sukham «як завгодно». Складність: galitadhīḥ можна зрозуміти і як «той, чий розум розчинився», і як «той, у кого розум вислизнув» — обидва прочитання ведуть до відсутності сталої думки; у GRETIL стоїть aste, у SARIT āste (див. різночитання).",
+  "literal_meaning": "«„Мети досяг я цим знанням“ — так [думаючи], з розталим розумом, діяльний [муж] перебуває як завгодно: дивиться, слухає, торкається, нюхає, їсть.»",
+  "ukrainian_translation": "«Цим знанням я досяг мети» — і з цим, уже розтанувши розумом, він живе собі як завгодно: дивиться, слухає, торкається, нюхає, їсть.",
+  "commentary": "Вірш цікавий тим, що єдине висловлювання, яке він цитує («цим знанням я досяг мети»), подане як думка, що вже відпрацювала себе: далі — не аргумент, а перелік найпростіших дій. Дієприкметники paśyan, śṛṇvan, spṛśan, jighran, aśnan ідуть без жодного оцінного слова; саме ця нейтральність і є змістом. galitadhī, «розталий розум», — образ, що не має філософського статусу терміна, і його не слід плутати з citta-vṛtti-nirodha інших текстів: тут нічого не спиняють, а лише констатують, що тримати вже нічого. Порядок дій (бачення, слух, дотик, нюх, їжа) повторений у 17.12, де до нього додано ще рух і мову.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.8) проти SARIT (verse_17.8)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ: GRETIL — aśnann aste (коротке a), SARIT — aśnannāste, тобто aśnann āste (довге ā). Форма aste від √ās не утворюється; правильно āste («перебуває»), і в 17.7 обидва свідки подають саме āste. Тому в тексті картки āste. Крім того, SARIT пише сандгі злитно й з ñ (paśyañchṛṇvan, aśnannāste), GRETIL — роздільно (paśyan śṛṇvan, aśnann aste); це оформлення, не різночитання. Вибір āste — редакційний, за граматикою і внутрішньою узгодженістю тексту.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "16.5",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_16.5",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_16.5",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "idaṃ kṛtam idaṃ neti | dvandvair muktaṃ yadā manaḥ | dharmārthakāmamokṣeṣu | nirapekṣaṃ tadā bhavet ||",
+  "iast": "idaṃ kṛtam idaṃ neti | dvandvair muktaṃ yadā manaḥ | dharmārthakāmamokṣeṣu | nirapekṣaṃ tadā bhavet ||",
+  "grammar": "idam kṛtam «це зроблено», idam na iti «це — ні»: пара оцінок, у яких розум тримає свої дії. dvandvaiḥ — n. інстр. мн. «парами, протилежностями». muktaṃ — ppp наз. одн. n. при manaḥ (n. наз. одн.) «розум». yadā ... tadā «коли ... тоді». dharmārthakāmamokṣeṣu — локатив мн. чотирьох цілей людини (пурушартга): дгарма, артга, кама, мокша. nirapekṣam — n. наз. одн. «байдуже, без очікування» при тому ж підметі manaḥ. bhavet — оптатив 3 ос. одн. «стало б, ставало б»: форма умовна, не описова. Складність: dvandvaiḥ можна віднести і до оцінок («парами оцінок»), і до самих предметів; переклад тримає перше, бо саме оцінки названо в першій паді.",
+  "literal_meaning": "«Коли розум вільний від пар «це зроблено — це ні», тоді він [був би] байдужий до дгарми, артги, ками й мокші.»",
+  "ukrainian_translation": "Коли розум звільниться від пари «це я зробив — а це ні», він стане байдужим і до дгарми, і до артги, і до ками, і до мокші.",
+  "commentary": "Тут уперше в главі названо чотири цілі людини — і всі чотири поставлено в один ряд як те, до чого розум стає байдужим. Це сильніше, ніж заперечення однієї з них: дгарма й мокша втрачають привілей бути «правильними» цілями. Механізм указано точно: не самі цілі пошкоджують розум, а пара оцінок «зробив / не зробив», у якій вони постають. Слово mokṣa тут ужите як назва четвертої цілі, а не як стан; тому переклад передає його як «мокша», не «звільнення», щоб не змішати з 20.12, де mukti стоїть у низці заперечень. Оптатив bhavet робить речення умовним: це не обіцянка, а опис умови.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_16.5) і SARIT (verse_16.5)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

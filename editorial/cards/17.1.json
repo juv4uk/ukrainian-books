@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.1",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.1",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "tena jñānaphalaṃ prāptaṃ | yogābhyāsaphalaṃ tathā | tṛptaḥ svacchendriyo nityam | ekākī ramate tu yaḥ ||",
+  "iast": "tena jñānaphalaṃ prāptaṃ | yogābhyāsaphalaṃ tathā | tṛptaḥ svacchendriyo nityam | ekākī ramate tu yaḥ ||",
+  "grammar": "tena — інстр. одн. «ним, завдяки йому». jñānaphalam — n. наз. одн. «плід знання»; prāptam — ppp наз. одн. n. «здобутий», безособова конструкція «ним здобуто». yogābhyāsaphalam «плід вправ у йозі». tathā «так само». tṛptaḥ «насичений, вдоволений». svacchendriyaḥ — bahuvrīhi: svaccha «прозорий, ясний» + indriya «чуття»: «той, у кого чуття прозорі». nityam «завжди». ekākī «самотній, один». ramate «радіє, втішається» (√ram). tu — частка протиставлення, тут майже непомітна в перекладі. yaḥ «хто» — підмет відносного речення, до якого належить уся перша половина. Складність: svaccha можна прочитати і як sva-ccha «той, у кого власне сяйво», але звичайне значення тут «прозорий»; переклад тримає його.",
+  "literal_meaning": "«Ним здобуто плід знання, а так само плід вправ у йозі, — [той], хто вдоволений, з прозорими чуттями, завжди самотній, радіє.»",
+  "ukrainian_translation": "Хто вдоволений, чиї чуття прозорі й хто завжди сам — той і справді радіє: він уже має плід знання і плід вправ у йозі.",
+  "commentary": "Глава 17 описує того, хто вже пройшов, і починається з переліку, а не з доказу. Показово, що «плід знання» і «плід йоги» поставлено поруч як одне й те саме досягнення: текст не протиставляє пізнання й практику, він каже, що обидві дали те саме. Слово tṛpta, «вдоволений, насичений», тут ключове: воно описує не досягнення, а відсутність голоду. Поруч стоїть ekākī, «самотній», — не як сум, а як відсутність потреби в іншому. Термін toṣa, який напрошується як відповідник, у вірші не вжитий: є tṛpta від √tṛp; це різні, хоч і близькі слова, і змішувати їх не слід.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.1) і SARIT (verse_17.1)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.4",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.4",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "yas tu bhogeṣu bhukteṣu | na bhavaty adhivāsitaḥ | abhukteṣu nirākāṅkṣī | tādṛśo bhavadurlabhaḥ ||",
+  "iast": "yas tu bhogeṣu bhukteṣu | na bhavaty adhivāsitaḥ | abhukteṣu nirākāṅkṣī | tādṛśo bhavadurlabhaḥ ||",
+  "grammar": "yaḥ tu «а хто». bhogeṣu bhukteṣu — локатив мн. «у втіхах, уже зазнаних» (bhukta — ppp від √bhuj). na bhavati adhivāsitaḥ «не стає просякнутим, промащеним» — adhivāsita буквально «прокурений, просочений запахом», метафора звикання. abhukteṣu — локатив мн. «у незазнаних». nirākāṅkṣī «без прагнення» (nir + ākāṅkṣin). tādṛśaḥ «такий». bhavadurlabhaḥ — «рідкісний у світі»: bhavat тут «суще, світ» (пор. bhavati «є»), dur-labha «важко здобути». Складність: adhivāsita можна зрозуміти і як «той, у кому [смак] оселився», і як «прокурений»; обидва прочитання ведуть до одного — залишок засвоєного смаку.",
+  "literal_meaning": "«А хто в уже зазнаних утіхах не стає просякнутим, у незазнаних — без прагнення, — такий у світі рідкісний.»",
+  "ukrainian_translation": "Хто вже зазнаних утіх не тягне за собою, як просякнутий їхнім запахом, і не прагне незазнаних — така людина в цьому світі рідкість.",
+  "commentary": "Вірш розрізняє дві небезпеки, які зазвичай зливаються: пам'ять про зазнану втіху (adhivāsita, «просоченість») і потяг до ще не зазнаної. Перша тонша за другу, бо не вимагає жодного бажання — досить, щоб минуле лишило смак. Саме тому такий стан названо рідкісним: відмовитися від того, чого ще немає, легко; перестати носити в собі те, що було, — важко. Слово vairāgya тут не вжите, хоч саме його зазвичай ставлять на це місце; текст обходиться описом.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.4) і SARIT (verse_17.4)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

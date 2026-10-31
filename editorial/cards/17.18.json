@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.18",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.18",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.18",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "samādhānāsamādhāna | hitāhitavikalpanāḥ | śūnyacitto na jānāti | kaivalyam iva saṃsthitaḥ ||",
+  "iast": "samādhānāsamādhāna | hitāhitavikalpanāḥ | śūnyacitto na jānāti | kaivalyam iva saṃsthitaḥ ||",
+  "grammar": "samādhāna-asamādhāna — n. «зосередження й незаосередження» (samādhāna «усталення, збирання докупи»). hita-ahita — n. «корисне й шкідливе». vikalpanāḥ — f. наз. мн. «розрізнення, уявні побудови» (vikalpa). śūnyacittaḥ «з порожнім розумом». na jānāti «не знає». kaivalyam — n. «самітність, ізольованість» — термін, що в пізніших школах означає остаточне звільнення; тут ужите без пояснень. iva «наче». saṃsthitaḥ «поставлений, утверджений». Складність: перші дві пади — це перелік vikalpanā, і дієслово na jānāti керує ними як знахідним-називним; переклад робить їх тим, «чого розум не знає», і це найпростіше синтаксичне рішення.",
+  "literal_meaning": "«Розрізнень „зосередження й не-зосередження“, „корисне й шкідливе“ розум порожній не знає; він стоїть наче в кайвальї.»",
+  "ukrainian_translation": "Розрізнень «зібраний я чи ні», «корисно це чи шкідливо» порожній розум уже не знає: він стоїть ніби в самотності.",
+  "commentary": "Порожній розум (śūnyacitta) тут не мета, а причина незнання розрізнень: якщо немає з чим порівнювати, нема чого й розрізняти. Важливо, що серед переліку стоїть samādhāna — той самий корінь, що в samādhi, який у 16.2 був одним із трьох занять. Тут він опиняється в ряді vikalpanā, тобто серед уявних побудов. kaivalya вжите обережно, з iva, «наче»: текст не каже, що це і є звільнення, а каже, що стан схожий на нього. У главі 20 kaivalya з'явиться знову — уже в переліку того, чого немає.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.18) і SARIT (verse_17.18)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

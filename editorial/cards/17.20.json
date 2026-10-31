@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.20",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.20",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.20",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "manaḥprakāśasammoha | svapnajāḍyavivarjitaḥ | daśāṃ kām api saṃprāpto | bhaved galitamānasaḥ ||",
+  "iast": "manaḥprakāśasammoha | svapnajāḍyavivarjitaḥ | daśāṃ kām api saṃprāpto | bhaved galitamānasaḥ ||",
+  "grammar": "manaḥprakāśa «ясність, світло розуму» (prakāśa «освітлення, явленість»). sammoha «затьмарення, заціпеніння свідомості» (saṃ-√muh). svapna «сон». jāḍya «заціпеніння, тупість» (від jaḍa «застиглий, безживний»). vivarjitaḥ «позбавлений» — керує всіма чотирма як складниками одного переліку. daśām kām api — знах. одн. «якогось стану» (kām api — неозначений займенник при daśā). saṃprāptaḥ «досяг». bhavet «став би, міг бути» (оптатив). galitamānasaḥ «той, у кого розум розтанув». Складність: перші дві пади поділяють складне слово по-різному (manaḥprakāśa + sammoha + svapna + jāḍya), і від цього залежить, скільки станів заперечено — три чи чотири; переклад бере чотири, бо jāḍya має власне значення, відмінне від svapna.",
+  "literal_meaning": "«Позбавлений ясності розуму, затьмарення, сну й заціпеніння, досяг якогось стану [той], чий розум розтанув.»",
+  "ukrainian_translation": "Він вільний і від ясності розуму, і від затьмарення, і від сну, і від заціпеніння — і досяг якогось [невідомого] стану, цей чоловік із розталим розумом.",
+  "commentary": "Перелік станів розуму навмисно незвичний: до нього входять не лише затьмарення, сон і заціпеніння, а й prakāśa — ясність. Тобто заперечено не тільки погані стани, а й добрий: ясність розуму тут така сама ознака розуму, як і сон. Останній стан названо неозначено, daśāṃ kām api, і текст не намагається його описати. Форма bhavet (оптатив) додає обережності: «міг би стати», а не «став». Це останній вірш глави, і він лишає читача без назви того, про що йшлося двадцять віршів.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.20) проти SARIT (verse_17.20)",
+      "note": "Різниця лише в передачі анусвари: GRETIL пише sammoha, SARIT — saṃmoha (той самий звук). SARIT також пише сандгі злитно (kāmapi, bhavedgalitamānasaḥ), GRETIL — роздільно. Різниця в оформленні, не в тексті.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "16.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_16.6",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_16.6",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "virakto viṣayadveṣṭā | rāgī viṣayalolupaḥ | grahamokṣavihīnas tu | na virakto na rāgavān ||",
+  "iast": "virakto viṣayadveṣṭā | rāgī viṣayalolupaḥ | grahamokṣavihīnas tu | na virakto na rāgavān ||",
+  "grammar": "viraktaḥ «безпристрасний, відвернений» (vi-rakta, ppp від vi-√rañj). viṣayadveṣṭā — наз. одн. від dveṣṭṛ «той, хто ненавидить» + viṣaya «чуттєвий предмет»: «ненависник чуттєвого». rāgī «пристрасний» (rāgin). viṣayalolupaḥ «жадібний до чуттєвого» (lolupa «зажерливий»). grahamokṣavihīnaḥ — bahuvrīhi: «позбавлений хапання й відпускання»; graha «схоплення, привласнення», mokṣa тут не «звільнення», а «випускання, відкидання» — пара до graha. tu «ж, але». na viraktaḥ na rāgavān «ні відвернений, ні пристрасний». Складність: перші дві пади — це два описи, а третя й четверта їх знімають; читачеві легко помилитися й узяти virakta за ідеал. Синтаксис показує протилежне: virakta означено через ненависть, тобто як ще одну залежність.",
+  "literal_meaning": "«Відвернений — ненависник чуттєвого; пристрасний — жадібний до чуттєвого. А той, хто позбавлений хапання й випускання, — ні відвернений, ні пристрасний.»",
+  "ukrainian_translation": "Відвернений — це той, хто ненавидить чуттєве; пристрасний — той, хто до нього жадібний. А хто не хапає і не відкидає — той уже ні відвернений, ні пристрасний.",
+  "commentary": "Вірш руйнує звичну шкалу «пристрасть погано, відверненість добре». Ненависть до чуттєвого поставлено в один ряд із жадобою: обидві — рух навколо того самого предмета, лише з різним знаком. Тому virakta тут не чеснота, а діагноз. Справжня межа проведена за іншим критерієм — graha і mokṣa, хапання й відкидання, тобто сама реакція, а не її напрям. Важливо, що vairāgya — термін, якого в цьому вірші немає: є virakta, дієприкметник, і його якраз поставлено під сумнів. Хто шукає тут похвалу відреченню, той прочитає вірш навпаки.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_16.6) і SARIT (verse_16.6)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

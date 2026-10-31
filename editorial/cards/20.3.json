@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.3",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.3",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "kva vidyā kva ca vāvidyā | kvāhaṃ kvedaṃ mama kva vā | kva bandhaḥ kva ca vā mokṣaḥ | svarūpasya kva rūpitā ||",
+  "iast": "kva vidyā kva ca vāvidyā | kvāhaṃ kvedaṃ mama kva vā | kva bandhaḥ kva ca vā mokṣaḥ | svarūpasya kva rūpitā ||",
+  "grammar": "vidyā «знання». avidyā «незнання» (a-vidyā; у SARIT записано vā+avidyā — поділ слів, не різночитання). kvāham = kva aham «де я». kvedam = kva idam «де це». mama «моє». bandhaḥ «пута». mokṣaḥ «визволення». svarūpasya — родовий одн. «у того, хто [є] власна форма». rūpitā — f. «оформленість, надана форма, зробленість образом» (від rūpin); у SARIT rūpatā, «формальність, якість форми» (див. різночитання). Складність: остання пада — найтонша в главі: питання не «де форма», а «де [навіть] оформленість» — тобто чи можна взагалі приписати йому якусь форму.",
+  "literal_meaning": "«Де знання, де незнання, де я, де це, де моє? Де пута, де визволення — і де оформленість у того, хто [є] власна форма?»",
+  "ukrainian_translation": "Де знання й де незнання, де «я», де «це», де «моє»? Де пута, де визволення — і де взагалі якась оформленість у того, хто сам є своєю формою?",
+  "commentary": "Вірш перебирає основні опозиції будь-якого вчення — знання й незнання, я й це, моє, пута й визволення — і всі ставить під те саме питання. Порядок показовий: mokṣa з'являється не як відповідь, а як останній член пари з bandha. Остання пада замикає коло: якщо він є власна форма (svarūpa), то приписувати йому ще й оформленість (rūpitā) немає де. Саме тут свідки розходяться в одному слові — rūpitā / rūpatā, — і вибір між ними змінює відтінок, але не напрям думки.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.3) проти SARIT (verse_20.3)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ: GRETIL — rūpitā («оформленість, надана форма»), SARIT — rūpatā («формальність, якість форми»). Різні слова з різним відтінком, і зміст пади від вибору змінюється: «де оформленість» проти «де [навіть] формальність». Обидва граматично бездоганні. У тексті картки залишено GRETIL rūpitā; вибір між ними за двома свідками НЕ ВСТАНОВЛЕНО. Крім того, SARIT подає vā+avidyā, GRETIL — vāvidyā (той самий зворот).",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

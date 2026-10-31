@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.14",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.14",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.14",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "kva cāsti kva ca vā nāsti | kvāsti caikaṃ kva ca dvayam | bahunātra kim uktena | kiṃcin nottiṣṭhate mama ||",
+  "iast": "kva cāsti kva ca vā nāsti | kvāsti caikaṃ kva ca dvayam | bahunātra kim uktena | kiṃcin nottiṣṭhate mama ||",
+  "grammar": "kvāsti = kva asti «де є». na asti «немає». ekam «одне». dvayam «двоє». bahunā atra kim uktena — «навіщо багато [говорити] про це?»: інстр. bahunā при kim uktena, усталена формула скорочення. kiṃcit «щось». na uttiṣṭhate — «не підводиться, не постає» (ud-√sthā). mama «у мене, мені». Складність: uttiṣṭhate можна зрозуміти і як «не виникає», і як «не встає»; у цьому контексті перше природніше. Остання пада — єдине місце глави, де замість питання стоїть пряме твердження.",
+  "literal_meaning": "«Де є, де немає, де одне, де двоє? Навіщо тут багато слів: ніщо в мене не постає.»",
+  "ukrainian_translation": "Де «є» і де «немає», де «одне» і де «двоє»? Та й навіщо багато слів: у мене не постає ніщо.",
+  "commentary": "Останній вірш закриває главу відмовою від подальшої мови: після того як знято пару «є / немає» і пару «одне / двоє», говорити більше нема про що. Формула bahunātra kim uktena — усталений спосіб обірвати перелік, і вона тут доречна подвійно: як риторика і як зміст. Слово kiṃcit у заперечному реченні означає «ніщо»; це не твердження порожнечі, а констатація, що ніщо не підводиться як предмет. Цим і завершується глава: не відповіддю, а припиненням питання.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.14) проти SARIT (verse_20.14)",
+      "note": "Читання збігаються після нормалізації. SARIT пише bahunā+atra і kiñcin (носовий перед c), GRETIL — bahunātra і kiṃcin. Різниця в поділі слів і в передачі носового, не в тексті.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

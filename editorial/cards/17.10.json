@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.10",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.10",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.10",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "na jāgarti na nidrāti | nonmīlati na mīlati | aho paradaśā kvāpi | vartate muktacetasaḥ ||",
+  "iast": "na jāgarti na nidrāti | nonmīlati na mīlati | aho paradaśā kvāpi | vartate muktacetasaḥ ||",
+  "grammar": "na jāgarti — від √jāgṛ «пильнувати, не спати» (у GRETIL jagarti, див. різночитання). na nidrāti — деноминатив від nidrā «сон». na unmīlati na mīlati — від √mīl «заплющувати очі»: ud-mīl «розплющувати», mīl «заплющувати». aho — вигук подиву. paradaśā — f. наз. одн. «інший стан». kvāpi — прислівник «десь» (у SARIT kā 'pi, «якийсь», див. різночитання). vartate «перебуває, обертається». muktacetasaḥ — родовий одн. «у того, чий розум вільний» (або наз. мн. «у вільних розумом»; контекст глави дозволяє обидва, і переклад тримає однину). Складність: чотири заперечення не описують сон і не описують пильність — вони забирають обидві можливості, і саме тому далі стоїть вигук подиву.",
+  "literal_meaning": "«Не пильнує й не спить, не розплющує й не заплющує [очей]. О, у вільного розумом [він] перебуває в якомусь іншому стані.»",
+  "ukrainian_translation": "Він не пильнує і не спить, не розплющує й не заплющує очей. О диво: розум вільної людини перебуває в якомусь зовсім іншому стані.",
+  "commentary": "Вірш будує заперечення парами — не-сон / не-пильність, не-розплющення / не-заплющення — так, що кожна пара замикає обидві можливості. Описати такий стан звичайними словами неможливо, і текст цього не приховує: він каже лише paradaśā, «інший стан», не називаючи його. Це місце легко перетворити на містичну загадку; варто пам'ятати, що йдеться про опис збоку, а не про техніку. Слова «свідомість» (cit) чи «свідок» (sākṣin) тут немає — є muktacetas, «вільний розумом», і це єдине, що сказано про того, хто так перебуває.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.10) проти SARIT (verse_17.10)",
+      "note": "ДВІ СПРАВЖНІ РОЗБІЖНОСТІ. Перша: GRETIL — na jagarti, SARIT — na jāgarti. Форма jagarti від √jāgṛ не утворюється; правильно jāgarti («не пильнує»), тому в тексті картки jāgarti. Друга: GRETIL — paradaśā kvāpi («десь»), SARIT — paradaśā kā 'pi («якийсь»), тобто «перебуває в якомусь іншому стані». Обидва читання граматично можливі й дають близький зміст; у тексті картки залишено GRETIL kvāpi, бо вибір між ними за двома свідками не обґрунтовується. Остаточно НЕ ВСТАНОВЛЕНО.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

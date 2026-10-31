@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "16.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_16.7",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_16.7",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "heyopādeyatā tāvat | saṃsāraviṭapāṅkuraḥ | spṛhā jīvati yāvad vai | nirvicāradaśāspadam ||",
+  "iast": "heyopādeyatā tāvat | saṃsāraviṭapāṅkuraḥ | spṛhā jīvati yāvad vai | nirvicāradaśāspadam ||",
+  "grammar": "heya-upādeyatā — f. наз. одн. «[розрізнення] відкидного й прийнятного» (heya «те, що слід відкинути», upādeya «те, що слід узяти»). tāvat ... yāvat «доти ... доки». saṃsāraviṭapāṅkuraḥ — m. наз. одн.: viṭapa «розлоге дерево, гілля», aṅkura «пагін, брунька»; разом «пагін на дереві сансари». spṛhā — f. наз. одн. «жадоба, прагнення» — підмет при jīvati («живе»). vai — підсилювальна частка. nirvicāradaśāspadam — n. наз. одн.: nirvicāra «без розгляду, без роздуму», daśā «стан», āspada «осідок, пристановище»; разом «пристановище стану без роздуму». Складність: друга пада не має дієслова, і її можна прочитати як прикладку до heyopādeyatā (розрізнення Є пагоном) або як окреме твердження (є пагін, [який росте]); переклад тримає перше, узгоджене з tāvat ... yāvat.",
+  "literal_meaning": "«Розрізнення відкидного й прийнятного — [доки] пагін на дереві сансари, доти живе жадоба, [а вона] — пристановище стану без роздуму.»",
+  "ukrainian_translation": "Розрізнення «відкинути це, взяти те» — лише пагін на дереві сансари; він росте, доки жива жадоба, а жадоба — осідок життя без роздуму.",
+  "commentary": "Метафора дерева працює в двох напрямках: пагін — це те, що видно, і водночас те, що тримає корінь. Розрізнення «відкинути / взяти» тут не мудрість, а симптом. Друга половина вказує на причину: жадоба (spṛhā) і стан без роздуму (nirvicāra-daśā) живлять одне одного — без роздуму легко бажати, а бажання не потребує роздуму. Варто зауважити, що vijñāna, viveka чи vicāra в позитивному значенні тут не з'являються: текст не пропонує «правильного розрізнення» на противагу хибному, він указує на розрізнення як таке. Це не заклик до нерозумності; сам вірш — акт розрізнення, і ця суперечність у тексті лишається нерозв'язаною.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_16.7) і SARIT (verse_16.7)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

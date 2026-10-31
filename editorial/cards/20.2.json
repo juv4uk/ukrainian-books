@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.2",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.2",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "kva śāstraṃ kvātmavijñānaṃ | kva vā nirviṣayaṃ manaḥ | kva tṛptiḥ kva vitṛṣṇatvaṃ | gatadvandvasya me sadā ||",
+  "iast": "kva śāstraṃ kvātmavijñānaṃ | kva vā nirviṣayaṃ manaḥ | kva tṛptiḥ kva vitṛṣṇatvaṃ | gatadvandvasya me sadā ||",
+  "grammar": "śāstram «писання, наука». ātmavijñānam — n. «пізнання Я» (ātman + vijñāna) — єдине місце в главах 16, 17 і 20, де названо ātman, і то в складі слова. nirviṣayam — «без об'єктів» при manaḥ. tṛptiḥ — f. «вдоволеність, насичення». vitṛṣṇatvam — n. «стан без спраги» (vi-tṛṣṇa). gatadvandvasya — родовий одн. «у того, в кого пари пішли» (gata + dvandva). me — родовий одн. «у мене». sadā «завжди». Складність: остання пада будується інакше, ніж у 20.1: замість locative svarūpe — родовий при безособовому питанні, тобто «де [це] в мене, в кого пари пішли?».",
+  "literal_meaning": "«Де писання, де пізнання Я, де розум без об'єктів? Де вдоволеність, де стан без спраги — у мене, в кого пари пішли, завжди?»",
+  "ukrainian_translation": "Де писання, де пізнання Я, де розум без об'єктів? Де вдоволеність, де свобода від спраги — у мене, в кого пари вже відпали назавжди?",
+  "commentary": "Другий вірш ставить під питання й засоби пізнання: писання, пізнання Я, безоб'єктний розум. Це важливо для розуміння всієї глави — заперечення не обминає духовних досягнень, воно починає саме з них. tṛpti і vitṛṣṇatva названо поруч і досить несподівано: вдоволеність теж виявляється тим, чого немає де шукати. Термін toṣa, з яким tṛpti часто ототожнюють, тут не вжитий; це різні слова, і переклад їх не змішує.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.2) і SARIT (verse_20.2)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

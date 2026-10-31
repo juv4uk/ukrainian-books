@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.11",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.11",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.11",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "sarvatra dṛśyate svasthaḥ | sarvatra vimalāśayaḥ | samastavāsanā mukto | muktaḥ sarvatra rājate ||",
+  "iast": "sarvatra dṛśyate svasthaḥ | sarvatra vimalāśayaḥ | samastavāsanā mukto | muktaḥ sarvatra rājate ||",
+  "grammar": "sarvatra «усюди». dṛśyate «видно, постає». svasthaḥ «той, хто в собі, здоровий, вільний». vimalāśayaḥ — bahuvrīhi «з незаплямленим нутром» (āśaya «пристановище, нутро, намір»). samastavāsanā — «той, у кого всі васани [пішли]»: vāsanā «залишковий слід, звична схильність»; форма наз. одн. без дієслова, що в санскриті звично для таких переліків. muktaḥ «звільнений». rājate «сяє, панує» (√rāj). Складність: samastavāsanā можна прочитати і як «всі васани [є]» — але тоді вірш суперечив би сам собі, тому читається як еліптичне «позбавлений усіх васанових залишків».",
+  "literal_meaning": "«Усюди [він] постає як той, хто в собі; усюди — з незаплямленим нутром; вільний від усіх васанових залишків, звільнений сяє усюди.»",
+  "ukrainian_translation": "Усюди він у собі, усюди його нутро чисте; вільний від усіх звичних слідів, звільнений сяє всюди.",
+  "commentary": "Вірш побудований на повторі sarvatra і на подвійному mukta — «вільний [від васанових слідів]» і «звільнений». Це єдине місце глави, де сказано, від чого саме вільний: від vāsanā, звичних залишкових схильностей. Слово це важливе й легко перекладається неточно: vāsanā — не думка й не бажання, а слід, який минуле лишає в способі реагування. Порівняння з 16.7 показує, що там ішлося про той самий механізм з іншого боку: жадоба живиться станом без роздуму. rājate, «сяє», — дієслово панування, а не сяйва лампи; у перекладі збережено саме це.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.11) і SARIT (verse_17.11)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

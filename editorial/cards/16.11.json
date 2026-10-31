@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "16.11",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_16.11",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_16.11",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "haro yady upadeṣṭā te | hariḥ kamalajo 'pi vā | tathāpi na tava svāsthyaṃ | sarvavismaraṇād ṛte ||",
+  "iast": "haro yady upadeṣṭā te | hariḥ kamalajo 'pi vā | tathāpi na tava svāsthyaṃ | sarvavismaraṇād ṛte ||",
+  "grammar": "haraḥ — наз. одн., ім'я Шіви («той, хто забирає»). yadi «якби». upadeṣṭā — наз. одн. від upadeṣṭṛ «наставник» (основа на -ṛ, наз. одн. на -ā). te — родовий одн. «твій». hariḥ — наз. одн., ім'я Вішну. kamalajaḥ «народжений із лотоса» — епітет Брахми (kamala «лотос» + ja «народжений»). api vā «або ж». tathāpi «все ж». svāsthyam «перебування в собі». sarvavismaraṇāt ṛte — «без забуття всього» (аблатив при ṛte), як у 16.1. Складність: три імені подані без пояснень, і текст не оцінює їхніх носіїв — він лише ставить найвищий можливий авторитет і каже, що й він не зарадить. Читати це як антирелігійне висловлювання можна, але сам вірш обмежується тим, що авторитет наставника не замінює забуття.",
+  "literal_meaning": "«Якби навіть Гара, або Гарі, або Камаладжа [Брахма] був твоїм наставником, — все ж тобі немає перебування-в-собі без забуття всього.»",
+  "ukrainian_translation": "Навіть якби твоїм наставником був сам Шіва, Вішну чи Брахма, — спокою тобі не буде, поки не забудеш усе.",
+  "commentary": "Глава закінчується тим самим реченням, що й почалася (пор. 16.1), з однією заміною: замість «наук» — імена найвищих богів. Це обрамлення робить висновок сильнішим: не допомогло знання — не допоможе й найвищий авторитет, бо обидва додають, а умова вимагає віднімання. Ототожнення Гара з Шівою, Гарі з Вішну і Камаладжі з Брахмою — загальноприйняте в традиції, і текст його не пояснює; тут воно подане як тлумачення, а не як сказане у вірші. Слово svāsthya повторене з 16.1 дослівно, і саме воно, а не mukti, є метою в цій главі.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_16.11) проти SARIT (verse_16.11)",
+      "note": "Читання збігаються після нормалізації. SARIT пише kamalajo+api, GRETIL — kamalajo 'pi (аваґраха). Різниця в оформленні, не в тексті.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

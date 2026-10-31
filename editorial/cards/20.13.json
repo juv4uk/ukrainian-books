@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.13",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.13",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.13",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "kvopadeśaḥ kva vā śāstraṃ | kva śiṣyaḥ kva ca vā guruḥ | kva cāsti puruṣārtho vā | nirupādheḥ śivasya me ||",
+  "iast": "kvopadeśaḥ kva vā śāstraṃ | kva śiṣyaḥ kva ca vā guruḥ | kva cāsti puruṣārtho vā | nirupādheḥ śivasya me ||",
+  "grammar": "upadeśaḥ «настановлення». śāstram «писання». śiṣyaḥ «учень». guruḥ «учитель». puruṣārthaḥ «мета людини» — тут, найімовірніше, у звичайному значенні «сенс, мета людського життя»; чи йдеться про чотири цілі (дгарма, артга, кама, мокша), текст не уточнює. nirupādheḥ — родовий одн. «без підстав, без опор» (nir-upādhi; upādhi — «підкладка, обмежувальна умова»). śivasya — родовий одн. «блаженного, милостивого»; як ім'я Шіви тут не обов'язкове, і переклад тримає прикметникове значення. me «у мене». Складність: kvopadeśaḥ = kva upadeśaḥ; три kva в перших двох падах охоплюють усю схему передачі знання — настановлення, текст, учень, учитель.",
+  "literal_meaning": "«Де настановлення, де писання, де учень, де вчитель? Де й мета людини — у мене, безопорного, блаженного?»",
+  "ukrainian_translation": "Де настановлення, де писання, де учень, де вчитель? Де й мета людського життя — у мене, хто без жодної опори, у мене, блаженного?",
+  "commentary": "Після того як у 20.2 знято писання, тут знято всю установу передачі знання: настановлення, текст, учня, вчителя. Це послідовно: якщо немає ні знання, ні незнання, то немає й того, кому й від кого його передавати. puruṣārtha зникає останнім — разом із самою ідеєю мети. śiva тут майже напевно прикметник «блаженний, ласкавий», а не ім'я бога; вірш не дає приводу читати його як теологічне твердження, і переклад цього не робить.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.13) і SARIT (verse_20.13)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

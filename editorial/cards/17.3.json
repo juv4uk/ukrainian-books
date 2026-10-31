@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.3",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.3",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "na jātu viṣayāḥ ke 'pi | svārāmaṃ harṣayanty amī | sallakīpallavaprītam | ivebhaṃ nimbapallavāḥ ||",
+  "iast": "na jātu viṣayāḥ ke 'pi | svārāmaṃ harṣayanty amī | sallakīpallavaprītam | ivebhaṃ nimbapallavāḥ ||",
+  "grammar": "na jātu «аж ніяк, ніколи». viṣayāḥ — m. наз. мн. «чуттєві предмети». ke 'pi «якісь, будь-які» (kecid + api). svārāmam — m. знах. одн. «того, хто має втіху в собі» (sva + ārāma «втіха, сад»), harṣayanti — каузатив 3 ос. мн. «тішать». amī «оці». sallakīpallavaprītam — знах. одн. m. «прихильного до пагонів салакі» (sallakī — дерево Boswellia serrata, у традиції відоме як улюблена їжа слонів). iva «мов». ibham — знах. одн. «слона». nimbapallavāḥ — наз. мн. «листя німби» (Azadirachta indica, гірке). Складність: синтаксис другої половини — еліптичне порівняння без дієслова: «[вони не тішать його], як листя німби — слона, що любить салакі». Розуміти треба саме так, а не «слон не їсть німбу»: граматично це знахідний при harṣayanti.",
+  "literal_meaning": "«Аж ніяк якісь чуттєві предмети не тішать того, хто має втіху в собі, — як листя німби слона, прихильного до пагонів салакі.»",
+  "ukrainian_translation": "Жодні чуттєві речі не тішать того, кому втіха — у ньому самому, як не тішить слона, що любить пагони салакі, гірке листя німби.",
+  "commentary": "Порівняння побудоване на смаку: слон має улюблену їжу й тому не бере іншої, хоч вона й лежить поруч. Так і тут — відмова не від болю й не з аскези, а від того, що не смакує. Це важливо для розуміння глави: йдеться не про придушення бажання, а про зміну мірила. Обидві рослини названі конкретно, і це робить образ побутовим, а не абстрактним; жодного філософського терміна в цьому вірші немає — ні ātman, ні cit, ні mukti.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.3) проти SARIT (verse_17.3)",
+      "note": "Читання збігаються після нормалізації. SARIT пише ke+api, GRETIL — ke 'pi (аваґраха). Різниця в оформленні, не в тексті.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

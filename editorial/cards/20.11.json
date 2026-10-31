@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.11",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.11",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.11",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "kva māyā kva ca saṃsāraḥ | kva prītir viratiḥ kva vā | kva jīvaḥ kva ca tadbrahma | sarvadā vimalasya me ||",
+  "iast": "kva māyā kva ca saṃsāraḥ | kva prītir viratiḥ kva vā | kva jīvaḥ kva ca tadbrahma | sarvadā vimalasya me ||",
+  "grammar": "māyā «майя». saṃsāraḥ «сансара». prītiḥ «прихильність, любов». viratiḥ «відвернення, утримання». jīvaḥ «жива істота, індивідуальна душа». tat brahma — «те Брахмо» (вказівний займенник при слові середнього роду). sarvadā vimalasya me — як у 20.8. Складність: пара prīti / virati повторює схему «потяг / відвернення» з 16.6 і 17.9, але вже на рівні назв, а не описів. Слово jīva в цих главах ужите лише тут.",
+  "literal_meaning": "«Де майя, де сансара, де прихильність чи відвернення? Де жива істота, де те Брахмо — у мене, хто завжди незаплямлений?»",
+  "ukrainian_translation": "Де майя, де сансара, де прихильність і де відвернення? Де жива істота, де те Брахмо — у мене, хто завжди без плями?",
+  "commentary": "Вірш називає основні поняття будь-якого вчення про визволення — майю, сансару, прихильність і відвернення, живу істоту й Брахмо — і ставить їх в один ряд із питанням kva. Найрадикальніше тут те, що Брахмо стоїть у тому самому ряду, що й сансара: текст не протиставляє їх як хибне й істинне. Це місце легко прочитати як спростування адвайти; точніше сказати, що вірш відмовляється від її словника, не пропонуючи іншого.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.11) і SARIT (verse_20.11)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

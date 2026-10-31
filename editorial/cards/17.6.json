@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.6",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.6",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "dharmārthakāmamokṣeṣu | jīvite maraṇe tathā | kasyāpy udāracittasya | heyopādeyatā na hi ||",
+  "iast": "dharmārthakāmamokṣeṣu | jīvite maraṇe tathā | kasyāpy udāracittasya | heyopādeyatā na hi ||",
+  "grammar": "dharmārthakāmamokṣeṣu — локатив мн. чотирьох цілей людини. jīvite maraṇe — локатив одн. «у житті, у смерті». tathā «так само». kasyāpi — родовий одн. «у якогось» (неозначений займенник, підкреслює: досить одного випадку). udāracittasya — родовий одн. «великодушного» (udāra «широкий, благородний»). heyopādeyatā — f. наз. одн. «[розрізнення] відкидного й прийнятного». na hi «адже немає». Складність: речення безособове, підмет — сама heyopādeyatā; українською природніше зробити підметом людину, що й зроблено в перекладі.",
+  "literal_meaning": "«Щодо дгарми, артги, ками й мокші, а так само життя й смерті — у якогось великодушного немає [розрізнення] відкидного й прийнятного.»",
+  "ukrainian_translation": "Для великодушної людини немає «відкинути» й «узяти» — ні щодо дгарми, артги, ками й мокші, ні щодо життя й смерті.",
+  "commentary": "Той самий перелік, що в 16.5, але розширений життям і смертю: текст послідовно відмовляється визнавати будь-яку пару за ієрархію. Слово udāracitta, «великодушний», — єдина оцінка в вірші, і вона стосується не поведінки, а обсягу: вузьке серце мусить вибирати, широке не має потреби. Зверніть увагу, що мокша знову стоїть у переліку цілей, а не як стан — той самий ужиток, що в 16.5. Термінів ātman, cit, sākṣin, vairāgya тут немає.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.6) і SARIT (verse_17.6)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

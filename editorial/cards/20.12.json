@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.12",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.12",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.12",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "kva pravṛttir nivṛttir vā | kva muktiḥ kva ca bandhanam | kūṭasthanirvibhāgasya | svasthasya mama sarvadā ||",
+  "iast": "kva pravṛttir nivṛttir vā | kva muktiḥ kva ca bandhanam | kūṭasthanirvibhāgasya | svasthasya mama sarvadā ||",
+  "grammar": "pravṛttiḥ «діяння, виявлення активності». nivṛttiḥ «припинення» (у GRETIL nirvṛttiḥ, див. різночитання). muktiḥ «звільнення» — друге й останнє вживання цього слова в главах 16, 17 і 20 (перше — 20.4). bandhanam «пута». kūṭasthaḥ «той, хто стоїть на вершині; незмінний» (kūṭa «вершина, вістря»). nirvibhāgaḥ «без поділу, неділимий». svasthasya — родовий одн. «того, хто в собі». mama sarvadā «у мене, завжди». Складність: kūṭastha — слово з подвійним життям: у філософських текстах воно означає «незмінний», а в побуті kūṭa — ще й «обман»; тут явно перше.",
+  "literal_meaning": "«Де діяння чи припинення, де звільнення, де пута — у мене, незмінного, неділимого, що завжди в собі?»",
+  "ukrainian_translation": "Де діяння і де припинення, де звільнення, де пута — у мене, незмінного й неділимого, що завжди в собі?",
+  "commentary": "Пару pravṛtti / nivṛtti вже було знято в 16.8, і тут вона повертається разом із парою mukti / bandhana. Друга половина вірша — єдина в главі, де подано ствердні означення: kūṭastha, nirvibhāga, svastha. Усі три описують не властивість, а відсутність поділу: незмінний, неділимий, у собі. Саме тому питання kva не має відповіді-місця — ділити нема на що.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.12) проти SARIT (verse_20.12)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ: GRETIL — nirvṛttir («завершеність»), SARIT — nivṛttir («припинення»). Пара до pravṛtti — саме nivṛtti; те саме розходження є в 16.8 і вирішене там так само. У тексті картки взято nivṛttir (SARIT). Вибір — редакційний, за усталеністю пари понять; третього свідка для 20.12 не перевірено.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

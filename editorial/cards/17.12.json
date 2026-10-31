@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.12",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.12",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.12",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "paśyan śṛṇvan spṛśan jighrann | aśnan gṛhṇan vadanvrajan | īhitānīhitair mukto | mukta eva mahāśayaḥ ||",
+  "iast": "paśyan śṛṇvan spṛśan jighrann | aśnan gṛhṇan vadanvrajan | īhitānīhitair mukto | mukta eva mahāśayaḥ ||",
+  "grammar": "Сім дієприкметників теперішнього часу в наз. одн. m.: paśyan «дивлячись», śṛṇvan «слухаючи», spṛśan «торкаючись», jighran «нюхаючи», aśnan «їдячи», gṛhṇan «беручи», vadan «говорячи», vrajan «ходячи» (останні два злиті в написанні GRETIL: vadanvrajan — поділ слів, не різночитання). īhitānīhitaiḥ — інстр. мн. «із бажаним і небажаним» (īhita «до чого прагнули» + anīhita), тобто з тим, що трапляється й не трапляється. muktaḥ ... mukta eva «вільний ... справді звільнений» — повтор навмисний. mahāśayaḥ «великий душею». Складність: інструментал īhitānīhitaiḥ можна віднести і до muktaḥ («вільний від...»), і до дієприкметників («діючи з тим, що прийшло»); переклад тримає перше, бо друге зробило б звільнення залежним від обставин.",
+  "literal_meaning": "«Дивлячись, слухаючи, торкаючись, нюхаючи, їдячи, беручи, говорячи, ходячи — вільний від бажаного й небажаного, він справді звільнений, великий душею.»",
+  "ukrainian_translation": "Дивиться, слухає, торкається, нюхає, їсть, бере, говорить, ходить — і вільний від «бажаного» й «небажаного». Він справді звільнений, цей великий душею.",
+  "commentary": "Перелік дій тут довший, ніж у 17.8: додано брати, говорити, ходити. Це вже не лише сприйняття, а й активне втручання у світ — і воно нічим не відрізняється від решти. Повтор muktaḥ ... mukta eva звучить як поправка до читача, який готовий заперечити: мовляв, як це вільний, коли він бере й говорить. Відповідь — уточнення, від чого саме він вільний: від пари īhita / anīhita. Це не звільнення від дій, а звільнення від поділу дій на жадані й нежадані.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.12) проти SARIT (verse_17.12)",
+      "note": "Читання збігаються після нормалізації. SARIT пише сандгі злитно й з ñ (paśyañchṛṇvanspṛśañjighrannaśnan), GRETIL — роздільно (paśyan śṛṇvan spṛśan jighrann aśnan); SARIT подає īhitā+anīhitair, GRETIL — īhitānīhitair (той самий зворот). Різниця в поділі слів, не в тексті.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

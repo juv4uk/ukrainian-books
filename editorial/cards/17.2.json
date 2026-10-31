@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.2",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.2",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "na kadācij jagaty asmiṃs | tattvajño hanta khidyati | yata ekena tenedaṃ | pūrṇaṃ brahmāṇḍamaṇḍalam ||",
+  "iast": "na kadācij jagaty asmiṃs | tattvajño hanta khidyati | yata ekena tenedaṃ | pūrṇaṃ brahmāṇḍamaṇḍalam ||",
+  "grammar": "na kadācit «ніколи». jagati asmin — m. локатив одн. «у цьому світі». tattvajñaḥ «знавець істинного, знавець таттви». hanta — вигук «о!, гей!», тут подив або підкреслення. khidyati «мучиться, втомлюється». yataḥ «оскільки, бо». ekena tena — інстр. одн. «тим одним» (займенник у парі з прислівниковим значенням «через те саме»). idam pūrṇam «це сповнене». brahmāṇḍamaṇḍalam — n. наз. одн. «коло, яйце Брахми», тобто весь усесвіт. Складність: ekena tena не має означуваного слова — «тим одним» може бути й знання, і сам знавець, і свідомість; текст лишає це відкритим, і переклад не нав'язує вибір.",
+  "literal_meaning": "«Ніколи в цьому світі знавець істинного не мучиться — о, бо тим одним сповнене все коло Брахми.»",
+  "ukrainian_translation": "Ніколи в цьому світі не мучиться той, хто знає істину: о, тим одним сповнене все — усе коло світів.",
+  "commentary": "Аргумент вірша — від повноти до відсутності страждання: мучитися може лише той, кому чогось бракує, а бракувати нічого, якщо ціле вже сповнене. «Коло Брахми» (brahmāṇḍa-maṇḍala) — не філософський термін, а образ усесвіту як замкненої кулі; цим підкреслено, що поза ним нічого немає й тому додати нічого. Слово tattva тут означає «істинне, дійсне», а не «категорію» школи санкх'я. Вигук hanta зберігає розмовну інтонацію, і в перекладі він вартий збереження: це не доказ, а подив. Про ātman, cit чи sākṣin вірш не говорить.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.2) і SARIT (verse_17.2)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

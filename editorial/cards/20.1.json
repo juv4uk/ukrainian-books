@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.1",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.1",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "kva bhūtāni kva deho vā | kvendriyāṇi kva vā manaḥ | kva śūnyaṃ kva ca nairāśyaṃ | matsvarūpe nirañjane ||",
+  "iast": "kva bhūtāni kva deho vā | kvendriyāṇi kva vā manaḥ | kva śūnyaṃ kva ca nairāśyaṃ | matsvarūpe nirañjane ||",
+  "grammar": "kva — питальний прислівник «де?», повторений шість разів; це риторичне питання, на яке не чекають відповіді-місця. bhūtāni — n. наз. мн. «сутності, першоелементи». dehaḥ «тіло». indriyāṇi «чуття». manaḥ «розум». śūnyam — n. «порожнеча». nairāśyam — n. «без-надійність, відсутність сподівань» (від nirāśa). matsvarūpe — локатив одн. «у моїй власній формі» (mat + svarūpa). nirañjane — локатив одн. «незаплямленій» (nir + añjana «мазь, пляма»). Складність: остання пада не має дієслова — її треба зрозуміти як «[усе це — де?] у моїй незаплямленій власній формі», тобто питання обертається на заперечення: місця для переліченого немає.",
+  "literal_meaning": "«Де сутності, де тіло, де чуття, де розум? Де порожнеча, де без-надійність — у моїй незаплямленій власній формі?»",
+  "ukrainian_translation": "Де першоелементи, де тіло, де чуття, де розум? Де порожнеча, де без-надійність — у моїй власній формі, що не знає плями?",
+  "commentary": "Глава 20 складається майже цілком із питань kva, і це не пошук, а спосіб сказати, що переліченого немає де шукати. Перший вірш задає рамку: усі пари й категорії поставлено до однієї locative-форми — matsvarūpe, «у моїй власній формі». Зверніть увагу, що поряд із тілом і чуттями стоїть nairāśya, без-надійність: це не чеснота, а один із станів, який теж зникає. Слово ātman тут не вжите — є svarūpa, «власна форма»; ототожнювати їх можна лише як тлумачення.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.1) і SARIT (verse_20.1)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

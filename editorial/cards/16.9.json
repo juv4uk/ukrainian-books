@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "16.9",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_16.9",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_16.9",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "hātum icchati saṃsāraṃ | rāgī duḥkhajihāsayā | vītarāgo hi nirduḥkhas | tasminn api na khidyati ||",
+  "iast": "hātum icchati saṃsāraṃ | rāgī duḥkhajihāsayā | vītarāgo hi nirduḥkhas | tasminn api na khidyati ||",
+  "grammar": "hātum — інфінітив від √hā «покинути». icchati «хоче». saṃsāram — m. знах. одн. rāgī «пристрасний». duḥkhajihāsayā — f. інстр. одн. від jihāsā «бажання позбутися» (дезидератив від √hā) + duḥkha: «з бажанням позбутися страждання». vītarāgaḥ «той, у кого пристрасть пішла» (vīta + rāga). hi «адже». nirduḥkhaḥ «без страждання». tasmin — m. локатив одн. «у ній» (сансарі). api «навіть». na khidyati «не мучиться». Складність: займенник tasmin може вказувати на saṃsāra (m.) і на duḥkha (n.) — рід дозволяє обидва; переклад бере сансару, бо саме її хотів покинути пристрасний.",
+  "literal_meaning": "«Покинути сансару хоче пристрасний — з бажанням позбутися страждання. А той, у кого пристрасті немає, — без страждання: навіть у ній [сансарі] не мучиться.»",
+  "ukrainian_translation": "Пристрасний хоче втекти з сансари, бо хоче позбутися страждання. А в кого пристрасті вже немає, той не страждає — і навіть у сансарі не мучиться.",
+  "commentary": "Тут показано пастку: бажання вийти з сансари саме є пристрастю, і тому воно тримає в сансарі. Межа проходить не між «у сансарі» і «поза сансарі», а між наявністю й відсутністю пристрасті. Формула nirduḥkhaḥ ... na khidyati подвійна: спершу стан (немає страждання), потім поведінка (не мучиться навіть там). Це не обіцянка, що все стане приємним, а вказівка, що сама присутність сансари перестає бути мірилом. Слово vairāgya, яке тут напрошується, у вірші не вжите: є vītarāga, «той, у кого пристрасть пішла», — опис, а не назва чесноти.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_16.9) і SARIT (verse_16.9)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

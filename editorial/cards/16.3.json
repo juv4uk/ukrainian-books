@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "16.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_16.3",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_16.3",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "āyāsāt sakalo duḥkhī | nainaṃ jānāti kaścana | anenaivopadeśena | dhanyaḥ prāpnoti nirvṛtim ||",
+  "iast": "āyāsāt sakalo duḥkhī | nainaṃ jānāti kaścana | anenaivopadeśena | dhanyaḥ prāpnoti nirvṛtim ||",
+  "grammar": "āyāsāt — m. аблат. одн. «від напруження, від надмірного зусилля». sakalaḥ — m. наз. одн. «весь, цілий», тут як іменник: «усе [людство]». duḥkhī — m. наз. одн. «нещасний». na enam jānāti kaścana: enam — займенник 3 ос. знах. одн. m. «його»; kaścana при запереченні «ніхто»; разом «ніхто цього не знає (не бачить)». anena eva upadeśena — instr. одн. «саме цим настановленням»; eva підкреслює, що досить лише його. dhanyaḥ «блаженний, щасливий». prāpnoti nirvṛtim — «досягає вгамування» (nirvṛti f. знах. одн. «спокій, припинення»). Дієслово другої половини стоїть у теперішньому часі, першої — теж; це загальні істини, не події.",
+  "literal_meaning": "«Від напруження весь [світ] нещасний; ніхто його [цього] не знає. Саме цим настановленням блаженний досягає вгамування.»",
+  "ukrainian_translation": "Від натуги всі нещасні, і ніхто з них цього не бачить. Блаженний же досягає вгамування самим лише цим настановленням.",
+  "commentary": "Вірш ставить діагноз: причина страждання — āyāsa, натуга, а не брак чогось. Друга половина вводить протиставлення між тими, хто не бачить, і тим, хто чує настановлення; але текст не пояснює, що саме робить це настановлення дієвим — чи зміст, чи готовність слухача. Порівняння з 16.1 показує, що «настановлення» тут не нове знання, а вказівка на припинення натуги: обидва вірші зводять причину до дії, яку треба припинити, а не до відомостей, які треба додати. Термінів ātman, cit, sākṣin, vairāgya, toṣa, āśrama у вірші немає.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_16.3) і SARIT (verse_16.3)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

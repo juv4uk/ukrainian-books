@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.9",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.9",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.9",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "śūnyā dṛṣṭir vṛthā ceṣṭā | vikalānīndriyāṇi ca | na spṛhā na viraktir vā | kṣīṇasaṃsārasāgare ||",
+  "iast": "śūnyā dṛṣṭir vṛthā ceṣṭā | vikalānīndriyāṇi ca | na spṛhā na viraktir vā | kṣīṇasaṃsārasāgare ||",
+  "grammar": "śūnyā dṛṣṭiḥ — f. наз. одн. «порожній погляд». vṛthā — прислівник «дарма, марно». ceṣṭā — f. наз. одн. «рух, діяльність». vikalāni indriyāṇi «немічні, знівечені чуття» (vikala «без частини, скалічений»). ca приєднує. na spṛhā na viraktiḥ vā «ні прагнення, ні відвернення». kṣīṇasaṃsārasāgare — локатив одн. «коли океан сансари вичерпано» (kṣīṇa «вичерпаний, виснажений», saṃsārasāgara «океан сансари»); це локатив абсолютний, тобто підрядне обставини, а не означення. Складність: virakti тут не vairāgya, а «відвернення» як стан; пара spṛhā / virakti — та сама пара, що в 16.6, і так само знята.",
+  "literal_meaning": "«Порожній погляд, марний рух, немічні чуття; ні прагнення, ні відвернення — коли океан сансари вичерпано.»",
+  "ukrainian_translation": "Порожній погляд, марні рухи, чуття ніби понівечені; ні прагнення, ні відвернення — бо океан сансари в ньому висох.",
+  "commentary": "Опис зовні непривабливий, і це навмисне: збоку такий стан виглядає як згасання. Три ознаки — порожній погляд, марна діяльність, немічні чуття — узяті з того, як людину бачать інші, а не з її самовідчуття. Локатив абсолютний kṣīṇasaṃsārasāgare ставить причину в кінці, і вона перевертає оцінку: це не втрата сил, а вичерпаність океану, який раніше треба було перепливати. Пара spṛhā / virakti знову знята — обидві названі як те, чого немає. Тут доречно сказати прямо: ані mukti, ані ātman, ані cit у вірші немає, і саме тому він не дає приводу назвати цей стан «звільненням» — це слово з'явиться в главі 20.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.9) і SARIT (verse_17.9)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

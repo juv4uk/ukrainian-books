@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.7",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.7",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "vāñchā na viśvavilaye | na dveṣas tasya ca sthitau | yathā jīvikayā tasmād | dhanya āste yathā sukhaṃ ||",
+  "iast": "vāñchā na viśvavilaye | na dveṣas tasya ca sthitau | yathā jīvikayā tasmād | dhanya āste yathā sukhaṃ ||",
+  "grammar": "vāñchā — f. наз. одн. «бажання». na «немає». viśvavilaye — локатив одн. «у знищенні світу» (viśva + vilaya). na dveṣaḥ «немає відрази». tasya ca sthitau — локатив одн. «і до його тривання, стояння». yathā jīvikayā — інстр. одн. «як [дає] прожиток»; jīvikā «засоби до життя, ремесло». tasmāt «тому». dhanyaḥ «блаженний». āste «сидить, перебуває» (√ās). yathā sukham «як завгодно, за бажанням» — усталений зворот. Складність: yathā jīvikayā — еліптичне порівняння без дієслова («як велить прожиток»), і його можна зрозуміти як «як вийде з його ремесла» або «в міру того, як дозволяє прожиток»; переклад тримає друге, обережніше.",
+  "literal_meaning": "«Немає бажання в загибелі світу, немає відрази й до його тривання; тому блаженний сидить як завгодно, [живучи] як [дає] прожиток.»",
+  "ukrainian_translation": "Він не бажає, щоб світ загинув, і не має відрази до того, що світ триває. Тому блаженний сидить собі спокійно, як завгодно, — і живе з того, що має.",
+  "commentary": "Вірш відкидає обидві есхатологічні пристрасті: і прагнення кінця світу, і відразу до його продовження. Це не байдужість до долі світу, а відмова вкладати в неї власне бажання. Друга половина — про спосіб життя: āste yathā sukham, «сидить як завгодно», поруч із yathā jīvikayā, «як дає прожиток». Разом це опис зовнішньої невимогливості, а не аскетичної програми; жодного слова про практику, обітницю чи стан життя (āśrama) тут немає.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.7) проти SARIT (verse_17.7)",
+      "note": "Читання збігаються після нормалізації: SARIT пише сандгі злитно (yathāsukham, yathājīvikayā, tasmāddhanya), GRETIL — роздільно (yathā sukhaṃ, yathā jīvikayā, tasmād dhanya). Різниця в поділі слів, не в тексті.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

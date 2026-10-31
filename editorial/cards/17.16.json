@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.16",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.16",
+      "checked_on": "2026-11-01"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.16",
+      "checked_on": "2026-11-01"
+    }
+  },
+  "sanskrit": "na hiṃsā naiva kāruṇyaṃ | nauddhatyaṃ na ca dīnatā | nāścaryaṃ naiva ca kṣobhaḥ | kṣīṇasaṃsaraṇe nare ||",
+  "iast": "na hiṃsā naiva kāruṇyaṃ | nauddhatyaṃ na ca dīnatā | nāścaryaṃ naiva ca kṣobhaḥ | kṣīṇasaṃsaraṇe nare ||",
+  "grammar": "hiṃsā «насильство, завдання шкоди». na eva kāruṇyam «аж ніяк не [й] жаль». auddhatyam — n. «зарозумілість, запальність» (від uddhata). na ca dīnatā «і не приниженість, убогість» (dīna). āścaryam — n. «диво, подив». na eva ca kṣobhaḥ «і не збурення» (kṣobha «хвилювання, струс»). kṣīṇasaṃsaraṇe — локатив одн. «коли блукання [сансарою] вичерпане» (saṃsaraṇa «блукання, перехід»); локатив абсолютний. nare — локатив одн. «у чоловікові». Складність: шість заперечень стоять без дієслова, і це нормально для описових переліків; у перекладі доводиться додавати «немає».",
+  "literal_meaning": "«Немає насильства, немає й жалю, немає зарозумілості й немає приниженості, немає дива й немає збурення — у чоловікові, в якого блукання вичерпане.»",
+  "ukrainian_translation": "Ні насильства, ні жалю, ні зарозумілості, ні приниженості, ні здивування, ні збурення — немає цього в людині, в якої скінчилося блукання.",
+  "commentary": "Найнезвичніше тут — заперечення kāruṇya, жалю, поруч із запереченням hiṃsā, насильства. Звична етична схема вимагає одного й забороняє друге; вірш знімає обидва як ознаки того, хто ще всередині оцінки. Заперечено також āścarya, подив: стан не містить нічого несподіваного, бо немає точки, з якої щось могло б здивувати. Це місце легко прочитати як виправдання байдужості до чужого болю — і такий докір до тексту висловлювали; сам вірш, однак, описує не поведінку, а відсутність реакцій у людини, в якої вже немає нічого попереду.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.16) і SARIT (verse_17.16)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
