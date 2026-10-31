@@ -1,0 +1,23 @@
+name: Точні винятки дублювання редакторських карток
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  vidomi-dubli:
+    name: Регресії точних пар і загальна структура
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити Python і синтетичні випадки
+        run: python3 -m unittest discover -s tests -p 'test_duplicate_card_pairs.py' -v
+      - name: Перевірити реальні картки у суворому режимі
+        run: python3 scripts/check_duplicate_cards.py --strict
+      - name: Перевірити структуру та права
+        run: python3 scripts/check_project.py

@@ -30,8 +30,22 @@ RESEARCH = ROOT / "research"
 
 # Пари, які вже відомі й чекають на консолідацію. Ключ — номер вірша,
 # значення — пояснення, чому дубль лишається.
-KNOWN_DUPLICATES = {
-    "1.5": "дві незалежні картки злиті 31.10.2026; консолідація — окремим PR",
+KNOWN_DUPLICATES: dict[str, tuple[frozenset[str], str]] = {
+    "1.5": (
+        frozenset({
+            "research/ashtavakra/verse-1-5-ashrama-varna.md",
+            "research/ashtavakra/verse-1-5-varna-ashrama.md",
+        }),
+        "дві історичні картки; консолідація — окремий редакторський PR",
+    ),
+    "1.6": (
+        frozenset({
+            "research/ashtavakra/notes-1-6-to-1-10.md",
+            "research/ashtavakra/verses-1-6-to-1-10.md",
+        }),
+        "короткі примітки PR #16 і розгорнута редакція PR #54; необхідна "
+        "построфна консолідація, див. Issue #68",
+    ),
 }
 
 # Номер вірша з імені файлу: verse-1-5-..., verse-1-2-...
@@ -67,6 +81,12 @@ def collect() -> dict[str, list[str]]:
     return by_verse
 
 
+def is_known_duplicate(verse: str, files: list[str]) -> bool:
+    """Виняток лише для ТОЧНО відомої множини шляхів, а не номера взагалі."""
+    item = KNOWN_DUPLICATES.get(verse)
+    return item is not None and frozenset(files) == item[0] and len(files) == len(item[0])
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--strict", action="store_true",
@@ -83,13 +103,13 @@ def main() -> int:
     strict_failures = 0
     for verse in sorted(duplicates, key=lambda s: (int(s.split(".")[0]), int(s.split(".")[1]))):
         files = duplicates[verse]
-        known = verse in KNOWN_DUPLICATES
+        known = is_known_duplicate(verse, files)
         label = "ДУБЛІ-ВІДОМО" if known else "ДУБЛІ-ЗНАЙДЕНО"
         print(f"{label} вірш {verse}: {len(files)} картки")
         for f in files:
             print(f"    {f}")
         if known:
-            print(f"    причина: {KNOWN_DUPLICATES[verse]}")
+            print(f"    причина: {KNOWN_DUPLICATES[verse][1]}")
         elif args.strict:
             strict_failures += 1
 
