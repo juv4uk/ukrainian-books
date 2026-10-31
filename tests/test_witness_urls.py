@@ -83,20 +83,19 @@ class WitnessUrlsTests(unittest.TestCase):
         self.assertIsNotNone(module.inspect_url("unknown", GRETIL)[0])
 
     def test_newline_inside_sarit_path_rejected(self):
-        poisoned = SARIT.replace("/Sarit-does-not-exist/", "/Sarit-does-not-exist/")
-        poisoned = poisoned.replace("SARIT-corpus", "SARIT-\\ncorpus".replace("\\\\n", "\\n"))
+        poisoned = SARIT.replace("SARIT-corpus", "SARIT-" + chr(10) + "corpus")
         self.assertIsNotNone(module.inspect_url("sarit", poisoned)[0])
 
     def test_tab_inside_sarit_path_rejected(self):
-        poisoned = SARIT.replace("SARIT-corpus", "SARIT-\\tcorpus".replace("\\\\t", "\\t"))
+        poisoned = SARIT.replace("SARIT-corpus", "SARIT-" + chr(9) + "corpus")
         self.assertIsNotNone(module.inspect_url("sarit", poisoned)[0])
 
     def test_carriage_return_inside_sarit_path_rejected(self):
-        poisoned = SARIT.replace("SARIT-corpus", "SARIT-\\rcorpus".replace("\\\\r", "\\r"))
+        poisoned = SARIT.replace("SARIT-corpus", "SARIT-" + chr(13) + "corpus")
         self.assertIsNotNone(module.inspect_url("sarit", poisoned)[0])
 
     def test_newline_inside_gretil_path_rejected(self):
-        self.assertIsNotNone(module.inspect_url("gretil", GRETIL + "\\n")[0])
+        self.assertIsNotNone(module.inspect_url("gretil", GRETIL + chr(10))[0])
 
     def test_symlink_directory_cannot_hide_cards(self):
         with tempfile.TemporaryDirectory() as root:
