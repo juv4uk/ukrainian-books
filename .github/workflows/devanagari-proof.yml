@@ -1,0 +1,72 @@
+name: ДРУК-01 — проба деванагарі та української у XeLaTeX
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+
+jobs:
+  font-proof:
+    name: Синтетичний PDF: шрифти, сторінка і PNG
+    runs-on: ubuntu-latest
+    steps:
+      - name: Прочитати репозиторій
+        uses: actions/checkout@v4
+
+      - name: Встановити шрифти й XeLaTeX
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq \
+            texlive-xetex texlive-lang-cyrillic texlive-latex-recommended \
+            texlive-fonts-recommended fonts-dejavu-core fonts-noto-core poppler-utils
+
+      - name: Зібрати ізольовану шрифтову пробу
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f research/typesetting-devanagari/proof.latex.txt
+          fc-match -f '%{family}\n' 'Noto Serif Devanagari' | grep -Fq 'Noto Serif Devanagari'
+          fc-match -f '%{family}\n' 'DejaVu Serif' | grep -Fq 'DejaVu Serif'
+          dest="$RUNNER_TEMP/druk-01-proof"
+          mkdir -p "$dest"
+          cp -- research/typesetting-devanagari/proof.latex.txt "$dest/proof.tex"
+          (
+            cd "$dest"
+            xelatex -interaction=nonstopmode -halt-on-error -file-line-error proof.tex
+          )
+          test -s "$dest/proof.pdf"
+          pages="$(pdfinfo "$dest/proof.pdf" | awk '/^Pages:/ {print $2}')"
+          test "$pages" = 1
+          if grep -Fq 'Missing character' "$dest/proof.log"; then
+            echo 'Виявлено відсутній гліф у шрифті' >&2
+            exit 1
+          fi
+          pdffonts "$dest/proof.pdf" | grep -Fq 'NotoSerifDevanagari'
+          pdffonts "$dest/proof.pdf" | grep -Fq 'DejaVuSerif'
+          pdftotext -enc UTF-8 "$dest/proof.pdf" "$dest/proof.txt"
+          grep -Fq 'Шрифти української наукової книги' "$dest/proof.txt"
+          grep -Fq 'ātmā' "$dest/proof.txt"
+          grep -Fq 'sākṣin' "$dest/proof.txt"
+          pdftoppm -f 1 -l 1 -r 160 -png -singlefile "$dest/proof.pdf" "$dest/proof"
+          test -s "$dest/proof.png"
+          {
+            echo '### ДРУК-01 — синтетичний зразок'
+            echo "- Сторінок: $pages"
+            echo '- Українська кирилиця та IAST пройшли текстову перевірку'
+            echo '- У PDF вбудовано шрифти DejaVu Serif та Noto Serif Devanagari'
+            echo '- PNG для незалежного візуального огляду збережено у CI-артефакті'
+            echo '- Вірші, чужі транскрипції й готове видання не використовувалися'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Додати синтетичний PDF і рендер для незалежної перевірки
+        uses: actions/upload-artifact@v4
+        with:
+          name: druk-01-synтетychna-proba
+          path: |
+            ${{ runner.temp }}/druk-01-proof/proof.pdf
+            ${{ runner.temp }}/druk-01-proof/proof.png
+          if-no-files-found: error
+          retention-days: 7
