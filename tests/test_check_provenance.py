@@ -51,7 +51,7 @@ class Tests(unittest.TestCase):
 
     def test_repeated_status_cannot_override_draft(self):
         # Старий парсер приймав останній «Статус» і втрачав попередній.
-        duplicate = "- **Статус:** чернетка\\n"
+        duplicate = "- **Статус:** чернетка\n"
         self.make_book(PASSPORT.replace(
             "- **Статус:** дозволено до публікації",
             duplicate + "- **Статус:** дозволено до публікації",
@@ -64,7 +64,7 @@ class Tests(unittest.TestCase):
 
     def test_repeated_permissions_cannot_override_denial(self):
         denied = ("- **Дозвіл на PDF / EPUB / редагування / подальше "
-                  "поширення:** PDF: ні; EPUB: ні; редагування: ні; поширення: ні\\n")
+                  "поширення:** PDF: ні; EPUB: ні; редагування: ні; поширення: ні\n")
         anchor = "- **Дозвіл на PDF / EPUB / редагування / подальше поширення:**"
         self.make_book(PASSPORT.replace(anchor, denied + anchor))
         result = self.result()
@@ -74,7 +74,7 @@ class Tests(unittest.TestCase):
 
     def test_even_identical_repeated_rights_field_is_rejected(self):
         line = "- **Правова підстава перекладу і публікації:** автор власного твору"
-        self.make_book(PASSPORT.replace(line, line + "\\n" + line))
+        self.make_book(PASSPORT.replace(line, line + "\n" + line))
         result = self.result()
         self.assertEqual(result["status"], "failed")
         self.assertTrue(any("повторене поле" in e and "Правова підстава" in e
@@ -82,8 +82,8 @@ class Tests(unittest.TestCase):
 
     def test_metadata_only_with_repeated_status_is_not_publication(self):
         # Порожня папка без матеріалів може лишатися неповним робочим записом.
-        self.make_book("# Робочий паспорт\\n- **Статус:** чернетка\\n"
-                       "- **Статус:** дозволено до публікації\\n", material=False)
+        self.make_book("# Робочий паспорт\n- **Статус:** чернетка\n"
+                       "- **Статус:** дозволено до публікації\n", material=False)
         result = self.result()
         self.assertEqual(result["status"], "ok")
         self.assertEqual(result["books"][0]["state"], "metadata-only")
