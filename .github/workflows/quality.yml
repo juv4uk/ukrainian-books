@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Завантажити репозиторій
         uses: actions/checkout@v4
+      - name: Перевірити SVG і повноту двох томів перед PDF
+        run: python3 -m unittest discover -s tests -p 'test_build_pdf.py' -v
       - name: Негативні тести синтаксису редакторських JSON у загальному гейті
         run: python3 -m unittest discover -s tests -p 'test_check_project_card_json.py' -v
       - name: Перевірити структуру і ліцензію
