@@ -18,7 +18,7 @@ jobs:
       - name: Позитивні та негативні тести адрес
         run: python3 -m unittest discover -s tests -p 'test_witness_urls.py' -v
       - name: Перевірити URL у всіх редакторських картках
-        run: python3 scripts/audit_witness_urls.py
+        run: python3 scripts/audit_witness_urls.py --require-cards
       - name: Перевірити чинну редакторську схему
         run: python3 scripts/check_editorial_cards.py
       - name: Перевірити структуру й ліцензію
