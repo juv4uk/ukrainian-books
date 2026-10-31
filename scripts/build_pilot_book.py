@@ -271,13 +271,18 @@ def main() -> int:
     # Постійний маніфест залежить тільки від джерельних даних, а не від стану
     # згенерованих файлів перед запуском.
     payload = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
+    # --check має ловити й пошкоджений або відсутній постійний маніфест,
+    # інакше однакова верстка приховала б розходження метаданих.
+    manifest_path = BOOK / "generated" / "manifest.json"
+    if stale(manifest_path, payload):
+        outdated.append(str(manifest_path.relative_to(BOOK)))
     diagnostic = {**manifest, "outdated_before_write": outdated}
     report_payload = json.dumps(diagnostic, ensure_ascii=False, indent=2) + "\n"
 
     if not args.check:
         write(verses_path, verses)
         write(glossary_path, words)
-        write(BOOK / "generated" / "manifest.json", payload)
+        write(manifest_path, payload)
     print(report_payload, end="")
 
     # --check обіцяє тільки читання: навіть --report не створює файлів.
