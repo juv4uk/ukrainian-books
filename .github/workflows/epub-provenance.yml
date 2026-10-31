@@ -1,0 +1,21 @@
+name: Цілісність розміщення EPUB
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  epub-provenance:
+    name: EPUB лише з паспортом походження
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити розміщення EPUB
+        run: python3 scripts/check_epub_provenance.py
+      - name: Перевірити негативні та позитивні випадки
+        run: python3 -m unittest discover -s tests -p 'test_epub_provenance.py' -v
+      - name: Перевірити вміст паспортів походження окремим контролем
+        run: python3 scripts/check_provenance.py
