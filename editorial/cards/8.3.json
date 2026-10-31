@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "8.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_8.3",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_8.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tadā bandho yadā cittaṃ saktaṃ kāsv api dṛṣṭiṣu | tadā mokṣo yadā cittam asaktaṃ sarvadṛṣṭiṣu ||",
+  "iast": "tadā bandho yadā cittaṃ saktaṃ kāsv api dṛṣṭiṣu | tadā mokṣo yadā cittam asaktaṃ sarvadṛṣṭiṣu ||",
+  "grammar": "tadā bandhaḥ yadā cittam saktaṃ (n. nom. sg. «прив'язане, приліплене») kāsu api (f. loc. pl. «у яких-небудь») dṛṣṭiṣu (f. loc. pl. «у поглядах, у способах бачення»). tadā mokṣaḥ (m. nom. sg. «визволення») yadā cittam asaktam (n. nom. sg. «неприв'язане») sarvadṛṣṭiṣu (f. loc. pl. «у всіх поглядах»).",
+  "literal_meaning": "«Тоді уза, коли розум прив'язаний до якихось поглядів; тоді визволення, коли розум неприв'язаний до всіх поглядів.»",
+  "ukrainian_translation": "Тоді уза, коли розум приліплений до якихось поглядів; тоді визволення, коли розум не приліплений до жодного з усіх поглядів.",
+  "commentary": "dṛṣṭi тут не «зір», а «погляд» у сенсі позиції, доктрини. Різниця між двома половинами не лише в запереченні, а в квантифікаторі: kāsu api («до якихось») проти sarva («до всіх»). Тобто для узи досить ОДНОГО погляду, а для визволення потрібна неприв'язаність до ВСІХ. Це найсуворіше формулювання в книзі: воно не дозволяє замінити один погляд іншим, навіть «правильним». БУДОВА ГЛАВИ. Глава 8 — не вірші, а ВИЗНАЧЕННЯ, складені попарно: tadā bandho yadā... («тоді уза, коли...») і tadā muktir yadā... («тоді визволення, коли...»). Уза й визволення не описані як стани світу — вони визначені через стан citta. Це найточніше місце книги: уся метафізика зведена до однієї умови.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

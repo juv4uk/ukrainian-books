@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "7.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_7.3",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_7.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "mayy anantamahāmbhodhau viśvaṃ nāma vikalpanā | atiśānto nirākāra etad evāham āsthitaḥ ||",
+  "iast": "mayy anantamahāmbhodhau viśvaṃ nāma vikalpanā | atiśānto nirākāra etad evāham āsthitaḥ ||",
+  "grammar": "mayi anantamahāmbhodhau. viśvam (n. nom. sg.) nāma («на ім'я, так зване»; тут «лише ім'я») vikalpanā (f. nom. sg. «уявна побудова, конструкція розуму»). atiśāntaḥ (m. nom. sg. «цілком умиротворений»: ati «над» + śānta «вгамований») nirākāraḥ (m. nom. sg. «безформний»: nir «без» + ākāra «форма, образ»). etat eva aham («це саме я») āsthitaḥ (m. nom. sg. дієприкметника минулого часу ā-sthā «той, хто стоїть у, утвердився»).",
+  "literal_meaning": "«У мені, безмежному великому океані, світ — лише ім'я, уявна побудова. Цілком умиротворений, безформний — це я й є, так я стою.»",
+  "ukrainian_translation": "У мені, безмежному океані, світ — тільки ім'я, тільки уявна побудова. Цілком умиротворений, безформний — це я, так я стою.",
+  "commentary": "nāma («на ім'я») тут не частка ввічливості, а точне твердження: світ має ім'я, але не має іншого буття, крім названого. vikalpanā — те саме слово, що kalpanā в 6.3, але з підсиленням: не просто уявлення, а розрізнювальна побудова. Два означення того, хто стоїть, — atiśānta і nirākāra — узяті з протилежних боків: перше про стан, друге про форму, і разом вони кажуть, що ні стану, ні форми в нього не залишилось. РЕФРЕН. 7.3, 7.4 і 7.5 закінчуються однаково: etad evāham āsthitaḥ («це я й є — так я стою»). Це та сама будова, що в главах 5 і 6: незмінний приспів, навколо якого змінюється обґрунтування.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

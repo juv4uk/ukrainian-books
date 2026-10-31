@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "7.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_7.4",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_7.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nātmā bhāveṣu no bhāvas tatrānante nirañjane | ity asakto 'spṛhaḥ śānta etad evāham āsthitaḥ ||",
+  "iast": "nātmā bhāveṣu no bhāvas tatrānante nirañjane | ity asakto 'spṛhaḥ śānta etad evāham āsthitaḥ ||",
+  "grammar": "na ātmā (m. nom. sg. «Атман не [є]») bhāveṣu (m. loc. pl. «у станах, у сутностях, у речах»). no = na u («і не»). bhāvaḥ (m. nom. sg. «стан, буття») tatra («там, у ньому») anante (m. loc. sg. «у безмежному») nirañjane (m. loc. sg. «у незаплямованому»: nir «без» + añjana «масть, пляма»). iti («так») asaktaḥ (m. nom. sg. «неприв'язаний») aspṛhaḥ (m. nom. sg. «без прагнень») śāntaḥ (m. nom. sg. «вгамований») etat eva aham āsthitaḥ.",
+  "literal_meaning": "«Атман не [перебуває] в станах, і стан не [перебуває] в ньому — у безмежному, незаплямованому. Так — неприв'язаний, без прагнень, вгамований — це я, так я стою.»",
+  "ukrainian_translation": "Атман не в станах, і стан не в ньому — у безмежному, незаплямованому. Так, неприв'язаний, без прагнень, вгамований, — це я, так я стою.",
+  "commentary": "Вірш заперечує обидва напрямки відношення — те саме, що в 3.5 і 6.4 стверджували: там «Атман у всіх, усі в Атмані», тут «ні Атман у станах, ні стан у ньому». Це не суперечність, а різні рівні: ствердне формулювання описує те, як усе видно, заперечне — те, чим це не є. Три означення поспіль (asakta, aspṛha, śānta) ідуть без сполучників, як перелік, а не як шлях. РЕФРЕН. 7.3, 7.4 і 7.5 закінчуються однаково: etad evāham āsthitaḥ («це я й є — так я стою»). Це та сама будова, що в главах 5 і 6: незмінний приспів, навколо якого змінюється обґрунтування.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ, і вона, найімовірніше, дефект GRETIL: GRETIL подає останнє слово рефрену як āstitaḥ, тоді як SARIT — āsthitaḥ. Рефрен у 7.3 і 7.5 в обох свідках має āsthitaḥ, а āstitaḥ («був») — інше слово й не узгоджується з будовою рефрену. Висновок: āstitaḥ у GRETIL — помилка транскрипції. Це ВИСНОВОК із внутрішніх даних, а не встановлений факт: третього свідка для 7.4 не перевірено. Друга розбіжність — nirañjane (SARIT) / niranjane (GRETIL): та сама форма, різне позначення ñ/n, орфографія.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

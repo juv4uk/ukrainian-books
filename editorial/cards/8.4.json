@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "8.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_8.4",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_8.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yadā nāhaṃ tadā mokṣo yadāhaṃ bandhanaṃ tadā | matveti helayā kiṃcin mā gṛhāṇa vimuñca mā ||",
+  "iast": "yadā nāhaṃ tadā mokṣo yadāhaṃ bandhanaṃ tadā | matveti helayā kiṃcin mā gṛhāṇa vimuñca mā ||",
+  "grammar": "yadā na aham («коли немає „я“») tadā mokṣaḥ. yadā aham («коли є „я“») bandhanam (n. nom. sg. «уза») tadā. matvā (герунд man «подумавши, зрозумівши») iti («так») helayā (f. instr. sg. «з легкістю, зневажливо, граючись»; helā «легкість, жарт»). kiṃcit («щось») mā gṛhāṇa («не бери») vimuñca («відпускай») mā («не»).",
+  "literal_meaning": "«Коли немає „я“ — тоді визволення; коли є „я“ — тоді уза. Подумавши так, з легкістю: щось не бери, [а щось] відпускай — не [роби цього].»",
+  "ukrainian_translation": "Коли немає «я» — тоді визволення; коли є «я» — тоді уза. Зрозумівши так, легко: не хапай нічого й нічого не відпускай.",
+  "commentary": "Останній вірш глави згортає всі попередні визначення в одне: уза — це наявність «я», визволення — його відсутність. Далі йде найтонше: matvā iti helayā («зрозумівши так, з легкістю») — helā означає не «легко» в сенсі просто, а з недбалістю, граючись. І тоді mā gṛhāṇa vimuñca mā — подвійне заперечення, яке в санскриті читається як заборона обох дій: не бери й не відпускай. Саме тому це кінець глави: якщо «я» немає, то немає й того, хто бере або відпускає. БУДОВА ГЛАВИ. Глава 8 — не вірші, а ВИЗНАЧЕННЯ, складені попарно: tadā bandho yadā... («тоді уза, коли...») і tadā muktir yadā... («тоді визволення, коли...»). Уза й визволення не описані як стани світу — вони визначені через стан citta. Це найточніше місце книги: уся метафізика зведена до однієї умови.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
