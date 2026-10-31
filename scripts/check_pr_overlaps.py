@@ -3,6 +3,24 @@
 
 Читання API — тільки через GET. Це перевірка перетину шляхів, а не CLAIM,
 академічна рецензія чи автоматична підстава для злиття.
+
+Діагностика помилок API свідомо інформативна: друкуємо HTTP-статус, заголовки
+лімітів (X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After), URL запиту і
+перші 200 символів тіла відповіді. Токен не друкується ні повністю, ні
+частково: у діагностику потрапляють лише відповідь сервера і адреса, а
+заголовки запиту не виводяться ніколи.
+
+Три стани розрізняються навмисно:
+
+* 429 або 403 із ознаками ліміту — стан інфраструктури GitHub, не дефект PR.
+  Перевірка спершу чекає (з повагою до Retry-After і X-RateLimit-Reset), а
+  якщо ліміт не минув — голосно позначає «ПРОПУЩЕНО» і не валить збірку.
+* 401 або 403 без ознак ліміту — дефект конфігурації: токен недійсний або
+  без прав. Це червоний результат із названою причиною.
+* мережа, таймаут, 5xx — теж не провина PR: позначаємо як пропущене.
+
+Невалідний JSON, обрізаний перелік, відсутній PR і перетин шляхів лишаються
+червоними: послаблено лише реакцію на інфраструктуру, не на сам гейт.
 """
 
 from __future__ import annotations
@@ -12,6 +30,8 @@ import json
 import os
 import re
 import sys
+import time
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib import error, request
 
@@ -20,12 +40,164 @@ REPO = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 PAGE_SIZE = 100
 MAX_PAGES = 30  # GitHub обмежує перелік файлів PR 3000 записами.
 
+BODY_LIMIT = 200
+RATE_HEADERS = ("X-RateLimit-Remaining", "X-RateLimit-Reset", "Retry-After")
+MAX_SINGLE_WAIT = 60.0  # секунд на одну паузу
+DEFAULT_MAX_WAIT = 45.0  # секунд на всі паузи одного запуску
+MAX_ATTEMPTS = 3  # спроб на один запит: нульовий Retry-After не має зациклити
+
 
 class AuditError(Exception):
     """Стан не можна надійно перевірити; зелений результат заборонений."""
 
 
-def get_json(path: str, token: str) -> object:
+class TokenError(AuditError):
+    """Токен недійсний або без прав: це дефект конфігурації, а не PR."""
+
+
+class AuditSkipped(Exception):
+    """Інфраструктурна умова (ліміт, мережа, 5xx): не дефект PR.
+
+    Збірку не валить, але й не оголошує перетин відсутнім: результат
+    позначається як ПРОПУЩЕНО з названою причиною.
+    """
+
+
+class Failure:
+    """Результат класифікації збою: вид причини і готова діагностика."""
+
+    __slots__ = ("url", "kind", "diagnostic")
+
+    def __init__(self, url: str, kind: str, diagnostic: str) -> None:
+        self.url = url
+        self.kind = kind  # "limit" | "token" | "network" | "invalid"
+        self.diagnostic = diagnostic
+
+
+def _response(exc: BaseException):
+    return getattr(exc, "response", None)
+
+
+def _status(exc: BaseException) -> int | None:
+    status = getattr(_response(exc), "status_code", None)
+    if status is None:
+        status = getattr(exc, "code", None)
+    return status if type(status) is int else None
+
+
+def _headers(exc: BaseException):
+    headers = getattr(_response(exc), "headers", None)
+    if headers is None:
+        headers = getattr(exc, "headers", None)
+    return headers if headers is not None else {}
+
+
+def _body(exc: BaseException) -> str:
+    response = _response(exc)
+    stream = response if response is not None else exc
+    read = getattr(stream, "read", None)
+    if read is None:
+        return ""
+    try:
+        raw = read()
+    except Exception:  # тіло могло бути прочитане раніше
+        return ""
+    if isinstance(raw, bytes):
+        return raw.decode("utf-8", "replace")
+    return raw if isinstance(raw, str) else ""
+
+
+def reset_moment(headers) -> str | None:
+    """Час скидання ліміту з X-RateLimit-Reset у зрозумілому вигляді."""
+    try:
+        moment = int(headers.get("X-RateLimit-Reset"))
+    except (TypeError, ValueError):
+        return None
+    try:
+        return datetime.fromtimestamp(moment, timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+    except (OverflowError, OSError, ValueError):
+        return None
+
+
+def describe(exc: BaseException, url: str) -> Failure:
+    """Класифікувати збій і скласти діагностику без токена й без заголовків запиту."""
+    status = _status(exc)
+    headers = _headers(exc)
+    body = _body(exc)
+    text = body.strip().replace("\r", " ").replace("\n", " ")[:BODY_LIMIT]
+
+    parts = [f"тип={type(exc).__name__}"]
+    parts.append(f"HTTP={status}" if status is not None else "HTTP=(немає відповіді)")
+    parts.append(f"URL={url}")
+    for name in RATE_HEADERS:
+        value = headers.get(name)
+        if value not in (None, ""):
+            parts.append(f"{name}={value}")
+    moment = reset_moment(headers)
+    if moment:
+        parts.append(f"скинеться={moment}")
+    parts.append(f"тіло={text!r}" if text else "тіло=(порожнє)")
+    diagnostic = "; ".join(parts)
+
+    low = body.lower()
+    remaining = str(headers.get("X-RateLimit-Remaining", "")).strip()
+    retry_after = headers.get("Retry-After")
+    limit_signals = (
+        "rate limit" in low
+        or "abuse" in low
+        or "secondary rate" in low
+        or retry_after not in (None, "")
+        or remaining == "0"
+    )
+
+    if status == 429:
+        return Failure(url, "limit", diagnostic)
+    if status == 403 and limit_signals:
+        return Failure(url, "limit", diagnostic)
+    if status in (401, 403):
+        return Failure(url, "token", diagnostic)
+    if status is not None and 500 <= status < 600:
+        return Failure(url, "network", diagnostic)
+    if isinstance(exc, ValueError):
+        return Failure(url, "invalid", diagnostic)
+    return Failure(url, "network", diagnostic)
+
+
+def wait_seconds(exc: BaseException, waited: float, max_wait: float) -> float | None:
+    """Скільки чекати перед повторною спробою; None — бюджет вичерпано."""
+    headers = _headers(exc)
+    delay = None
+    raw_retry = headers.get("Retry-After")
+    if raw_retry not in (None, ""):
+        try:
+            delay = float(raw_retry)
+        except (TypeError, ValueError):
+            delay = None
+    if delay is None:
+        moment = reset_moment(headers)
+        if moment:
+            try:
+                stamp = int(headers.get("X-RateLimit-Reset"))
+                delay = stamp - datetime.now(timezone.utc).timestamp()
+            except (TypeError, ValueError):
+                delay = None
+    if delay is None:
+        delay = 1.0 + waited  # 1, 2, 4, ... с
+    delay = max(0.0, min(float(delay), MAX_SINGLE_WAIT))
+    if waited + delay > max_wait:
+        return None
+    return delay
+
+
+def get_json(
+    path: str,
+    token: str,
+    *,
+    opener=request.urlopen,
+    sleep=time.sleep,
+    max_wait: float = DEFAULT_MAX_WAIT,
+) -> object:
+    url = API + path
     headers = {
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
@@ -33,13 +205,38 @@ def get_json(path: str, token: str) -> object:
     }
     if token:
         headers["Authorization"] = f"Bearer {token}"
-    req = request.Request(API + path, headers=headers)
-    try:
-        with request.urlopen(req, timeout=15) as reply:
-            return json.load(reply)
-    except (error.HTTPError, error.URLError, TimeoutError, ValueError, OSError) as exc:
-        # Не друкуємо URL/заголовки запиту чи токен з винятку.
-        raise AuditError(f"GitHub API недоступне або повернуло невірний JSON ({type(exc).__name__})") from None
+    waited = 0.0
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        req = request.Request(url, headers=headers)
+        try:
+            with opener(req, timeout=15) as reply:
+                return json.load(reply)
+        except (error.HTTPError, error.URLError, TimeoutError, ValueError, OSError) as exc:
+            failure = describe(exc, url)
+            if failure.kind == "token":
+                raise TokenError(
+                    "Токен недійсний або без прав (401/403 без ознак ліміту). "
+                    + failure.diagnostic
+                ) from None
+            if failure.kind == "invalid":
+                raise AuditError(
+                    "Невалідний JSON у відповіді GitHub API. " + failure.diagnostic
+                ) from None
+            if failure.kind == "network":
+                raise AuditSkipped(
+                    "ПРОПУЩЕНО: мережа або сервер GitHub недоступні (не провина PR). "
+                    + failure.diagnostic
+                ) from None
+            delay = wait_seconds(exc, waited, max_wait)
+            if delay is None or attempt == MAX_ATTEMPTS:
+                moment = reset_moment(_headers(exc)) or "час скидання невідомий"
+                raise AuditSkipped(
+                    f"ПРОПУЩЕНО: ліміт запитів GitHub, скинеться о {moment}. "
+                    + failure.diagnostic
+                ) from None
+            sleep(delay)
+            waited += delay
+    raise AuditSkipped("ПРОПУЩЕНО: ліміт запитів GitHub не минув за відведений час.")
 
 
 def pages(endpoint: str, fetch, max_pages: int = MAX_PAGES) -> list[dict]:
@@ -124,13 +321,26 @@ def run(pr_number: int, records: object, strict: bool) -> int:
     return 1 if strict and collisions else 0
 
 
-def main() -> int:
+def emit_skip(pr_number: int, reason: str) -> int:
+    """Голосно позначити пропуск і не валити збірку."""
+    print(json.dumps(
+        {"pr": pr_number, "status": "skipped", "reason": reason},
+        ensure_ascii=False, indent=2,
+    ))
+    print(reason)
+    print(f"::warning::{reason}")
+    return 0
+
+
+def main(argv=None, *, opener=request.urlopen, sleep=time.sleep) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", default=os.environ.get("GITHUB_REPOSITORY", ""))
     parser.add_argument("--pr", type=int, required=True, help="Номер відкритого PR")
     parser.add_argument("--strict", action="store_true", help="Завершити з кодом 1 за перетину")
     parser.add_argument("--snapshot", type=Path, help="Офлайновий JSON: {'pulls': [{'number': N, 'files': [...]}]}")
-    args = parser.parse_args()
+    parser.add_argument("--max-wait", type=float, default=DEFAULT_MAX_WAIT,
+                        help="Скільки секунд сумарно чекати на скидання ліміту запитів")
+    args = parser.parse_args(argv)
     try:
         if args.pr <= 0:
             raise AuditError("Номер PR має бути додатним")
@@ -143,8 +353,15 @@ def main() -> int:
             token = os.environ.get("GITHUB_TOKEN", "")
             if not token:
                 raise AuditError("GITHUB_TOKEN відсутній: мережевий аудит не виконано")
-            records = read_live(args.repo, args.pr, lambda path: get_json(path, token))
+            records = read_live(
+                args.repo, args.pr,
+                lambda path: get_json(
+                    path, token, opener=opener, sleep=sleep, max_wait=args.max_wait
+                ),
+            )
         return run(args.pr, records, args.strict)
+    except AuditSkipped as exc:
+        return emit_skip(args.pr, str(exc))
     except (AuditError, OSError, ValueError) as exc:
         print(f"КООРД-ПОМИЛКА: {exc}", file=sys.stderr)
         return 2
