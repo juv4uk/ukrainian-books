@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "14.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_14.3",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_14.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "vijñāte sākṣipuruṣe paramātmani ceśvare | nairāśye bandhamokṣe ca na cintā muktaye mama ||",
+  "iast": "vijñāte sākṣipuruṣe paramātmani ceśvare | nairāśye bandhamokṣe ca na cintā muktaye mama ||",
+  "grammar": "vijñāte (m. loc. sg. дієприкметника минулого часу vi-jñā «коли пізнано») sākṣipuruṣe (m. loc. sg. «пуруша-свідок»: sākṣin «свідок» + puruṣa «пуруша») paramātmani (m. loc. sg. «вищий Атман») ca īśvare (m. loc. sg. «Ішвара, володар»). nairāśye (n. loc. sg. «безнадія, відсутність сподівань») bandhamokṣe (m. loc. du./sg. «уза й визволення») ca. na cintā (f. nom. sg. «немає турботи, думки») muktaye (f. dat. sg. «про визволення») mama (gen. sg. «у мене»).",
+  "literal_meaning": "«Коли пізнано пурушу-свідка, вищого Атмана й Ішвару, [а також] безнадію, узу й визволення — у мене немає турботи про визволення.»",
+  "ukrainian_translation": "Коли пізнано пурушу-свідка, вищого Атмана й Ішвару — а також безнадію, узу й визволення — у мене немає турботи про визволення.",
+  "commentary": "Тут уперше в книзі з'являється складене sākṣipuruṣa — «пуруша-свідок». Це не те саме, що просто ātman: sākṣin додає саме те, що свідок не бере участі, а лише присутній при. Найтонше — перелік: у ньому стоять поруч Ішвара і nairāśya («безнадія»), уза й визволення, тобто протилежності названі в одному ряді й пізнані разом. Тому й na cintā muktaye («немає турботи про визволення»): коли визволення пізнане як одне з пари, турбуватися про нього нема про що. БУДОВА ГЛАВИ. Глава 14 не має спільного рефрену — на відміну від 5, 6 і 13. Натомість усі чотири вірші тримаються однієї думки, поданої з чотирьох боків: хто такий цей чоловік зсередини (14.1), що для нього зникає (14.2), про що він уже не турбується (14.3) і як його бачать ззовні (14.4).",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
