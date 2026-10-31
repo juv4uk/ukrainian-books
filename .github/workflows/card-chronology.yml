@@ -1,0 +1,21 @@
+name: Хронологія перевірок редакторських карток
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  chronology:
+    name: Дати джерел і рецензій не можуть бути з майбутнього
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Запустити негативні та позитивні тести
+        run: python3 -m unittest discover -s tests -p 'test_card_chronology.py' -v
+      - name: Перевірити реальні редакторські картки
+        run: python3 scripts/check_card_chronology.py
+      - name: Перевірити структуру, посилання та ліцензію
+        run: python3 scripts/check_project.py
