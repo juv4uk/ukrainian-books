@@ -5,6 +5,8 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
+from urllib.error import HTTPError
 from pathlib import Path
 
 SOURCE = Path(__file__).resolve().parents[1] / "scripts/check_pr_overlaps.py"
@@ -222,6 +224,16 @@ class OverlapTests(unittest.TestCase):
             checker.read_live_graphql("owner/repo", 7, lambda *_: response,
                                       lambda _: [{"filename": "cards/new.json",
                                                   "status": "renamed"}])
+
+    def test_rest_http_status_is_visible_but_token_hidden(self):
+        with patch.object(checker.request, "urlopen", side_effect=HTTPError(
+            "https://api.github.com/internal", 403, "ліміт", None, None,
+        )):
+            with self.assertRaises(checker.AuditError) as context:
+                checker.get_json("/repos/owner/repo/pulls/4/files", "секретний-токен")
+        self.assertIn("HTTP 403", str(context.exception))
+        self.assertNotIn("секретний-токен", str(context.exception))
+        self.assertNotIn("https://", str(context.exception))
 
     def test_offline_cli_snapshot(self):
         with tempfile.TemporaryDirectory() as tmp:
