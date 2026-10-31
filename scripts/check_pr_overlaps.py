@@ -218,8 +218,11 @@ def read_live_graphql(repo: str, pr_number: int, graphql_fetch, rest_fetch) -> l
                     fallback = True
             if fallback:
                 converted = pages(f"/repos/{repo}/pulls/{number}/files", rest_fetch)
-            elif len(nodes) != total:
-                raise AuditError("Не всі файли PR повернено у GraphQL")
+            if len(converted) != total:
+                raise AuditError("Неповний або змінений перелік файлів PR")
+            # Валідність REST fallback перевіряємо одразу, зокрема
+            # обов'язковий previous_filename для перейменувань.
+            file_paths(converted)
             records.append({"number": number, "files": converted})
         page = connection.get("pageInfo")
         if (not isinstance(page, dict)
