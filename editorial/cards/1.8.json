@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "1.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.8",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ahaṃ kartety ahaṃmānam ahākṛṣṇāhi daṃśitaḥ | nāhaṃ karteti viśvāsāmṛtaṃ pītvā sukhī bhava ||",
+  "iast": "ahaṃ kartety ahaṃmānam ahākṛṣṇāhi daṃśitaḥ | nāhaṃ karteti viśvāsāmṛtaṃ pītvā sukhī bhava ||",
+  "grammar": "aham (nom. sg.) kartā (m. nom. sg. nomen agentis kṛ- «діяч») iti — «„я діяч“». ahaṃmānam (m. acc. sg. «самомніння», складене aham + māna) ahākṛṣṇa-ahi-daṃśitaḥ (bahuvrīhi: ahā-kṛṣṇa-ahi «великий чорний змій», daṃśita «ужалений»; у GRETIL те саме). na aham kartā iti — «„я не діяч“». viśvāsa-amṛtam (n. acc. sg. «нектар упевненості») pītvā (герунд pā- «випивши») sukhī (m. nom. sg. «щасливий») bhava (2 sg. impv. bhū-). Два протилежні самоописування в одному вірші, розділені запереченням.",
+  "literal_meaning": "«„Я діяч“ — [це] самомніння, ужалений великим чорним змієм. „Я не діяч“ — випивши нектар упевненості, будь щасливий.»",
+  "ukrainian_translation": "«Я діяч» — це самомніння, і воно ж укус великого чорного змія. Випивши нектар упевненості «я не діяч», будь щасливий.",
+  "commentary": "Вірш протиставляє не дію й бездіяльність, а **два самоописи**. Змій — не докір, а образ отрути, що входить разом із думкою «я діяч». Друга пада дає не аргумент, а напій: viśvāsāmṛtam — «нектар упевненості», тобто стан, а не висновок. Звертання до 1.10 важливе: там радджа-сарпа («змія в мотузці») описує помилкове сприйняття світу, а тут змій — сама думка про авторство дії. Це той самий образ у двох ролях.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються після нормалізації; різниця лише в поділі слів (kartetyahammānam / kartety ahaṃmānam). Закінчення sukhī bhava в обох свідках збігається. У джерелі Vaidika Vignanam тут стоїть सुखं चर (sukhaṃ cara), але те саме закінчення Vignanam має в 1.10, де SARIT і GRETIL подають sukhī bhava — тобто закінчення двох віршів у Vignanam переставлені. Це питання порядку, а не вибору читання; див. research/ashtavakra/third-witness.md.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
