@@ -178,5 +178,68 @@ class CardsAndResearchScopeTests(unittest.TestCase):
             self.assertEqual(output["scanned_files"], 1)
 
 
+    def test_nested_editorial_drafts_are_scanned_without_false_positive(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            folder = root / "editorial" / "drafts" / "chapter"
+            folder.mkdir(parents=True)
+            (folder / "chapter-15.md").write_text(
+                "Робоча редакторська чернетка: ātman, sākṣin, śānti.\n"
+                "Санскрит у деванагарі: देवनागरी.\n", encoding="utf-8",
+            )
+            output = audit(root)
+            self.assertEqual(output["status"], "ok")
+            self.assertEqual(output["scanned_by_scope"]["drafts"], 1)
+            self.assertEqual(output["scanned_files"], 1)
+
+    def test_draft_replacement_character_and_prose_damage_fail(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            folder = root / "editorial" / "drafts"
+            folder.mkdir(parents=True)
+            (folder / "damaged.md").write_text(
+                "Зіпсований св\uFFFDдок. Слово  два.\n", encoding="utf-8",
+            )
+            output = audit(root)
+            self.assertEqual(output["status"], "failed")
+            self.assertEqual(output["scanned_by_scope"]["drafts"], 1)
+            self.assertEqual({e["path"] for e in output["errors"]},
+                             {"editorial/drafts/damaged.md"})
+            self.assertIn("U+FFFD", {e["codepoint"] for e in output["errors"]})
+            self.assertIn("U+0020", {e["codepoint"] for e in output["errors"]})
+
+    def test_draft_invalid_utf8_bytes_fail(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            folder = root / "editorial" / "drafts" / "nested"
+            folder.mkdir(parents=True)
+            (folder / "damaged.md").write_bytes(b"\xff not UTF-8")
+            output = audit(root)
+            self.assertEqual(output["status"], "failed")
+            self.assertEqual(output["scanned_by_scope"]["drafts"], 1)
+            self.assertEqual(output["errors"][0]["path"],
+                             "editorial/drafts/nested/damaged.md")
+            self.assertEqual(output["errors"][0]["codepoint"], "UTF-8")
+
+    def test_draft_symlink_files_and_directories_are_not_followed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            base = Path(temp)
+            root = base / "project"
+            drafts = root / "editorial" / "drafts"
+            drafts.mkdir(parents=True)
+            outside = base / "outside"
+            outside.mkdir()
+            (outside / "damaged.md").write_text("Св\uFFFDдок", encoding="utf-8")
+            try:
+                (drafts / "linked.md").symlink_to(outside / "damaged.md")
+                (drafts / "linked-dir").symlink_to(outside, target_is_directory=True)
+            except (OSError, NotImplementedError) as exc:
+                self.skipTest(f"Символьні посилання недоступні: {exc}")
+            output = audit(root)
+            self.assertEqual(output["status"], "ok")
+            self.assertEqual(output["scanned_by_scope"]["drafts"], 0)
+            self.assertEqual(output["scanned_files"], 0)
+
+
 if __name__ == "__main__":
     unittest.main()
