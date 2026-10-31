@@ -1,0 +1,24 @@
+name: Контроль канонічної ВОЛЬНОСТІ
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  canonical:
+    name: Байтовий канон та негативні тести
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити SHA-256 канону
+        run: python3 scripts/check_volnost_canon.py
+      - name: Перевірити негативні сценарії
+        run: python3 -m unittest discover -s tests -p 'test_volnost_canon.py' -v
+      - name: Перевірити наявні правила проєкту
+        run: python3 scripts/check_project.py
