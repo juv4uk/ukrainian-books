@@ -21,7 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BOOK = ROOT / "books" / "ashtavakra-gita"
 LABELS = ("Деванагарі", "IAST", "Українська транслітерація", "Переклад")
-COMMENT = "Науковий коментар"
+COMMENTS = ("Коментар", "Науковий коментар")
 VERSE = re.compile(r"^##\s+(\d+\.\d+)\s*$", re.M)
 LINE = re.compile(r"^###\s+Рядок\s+([аб])\s*$", re.M)
 FIELD = re.compile(r"^\*\*([^*]+?)\.\*\*\s*(\S.*?)\s*$", re.M)
@@ -66,7 +66,7 @@ def verse_report(identifier: str, body: str) -> dict:
             if all(fragments):
                 sources[name] = " ".join(fragments)
     expected = count_source_lines(sources)
-    missing_comment = COMMENT not in all_data
+    missing_comment = not any(marker in all_data for marker in COMMENTS)
     missing_verse = [name for name in ("Деванагарі", "Українська транслітерація", "Переклад")
                      if name not in all_data]
     labels_order = [part["рядок"] for part in segments]
