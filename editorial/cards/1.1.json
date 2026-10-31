@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "1.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.1",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kathaṃ jñānamavāpnoti kathaṃ muktirbhaviṣyati| vairāgyaṃ ca kathaṃ prāptametadbrūhi mama prabho||1|1||",
+  "iast": "kathaṃ jñānam avāpnoti kathaṃ muktir bhaviṣyati | vairāgyaṃ ca kathaṃ prāptam etad brūhi mama prabho ||",
+  "grammar": "katham (adv. «як?») jñānam (n. nom. sg.) avāpnoti (3 sg. āp з префіксом ava «досягає, здобуває») katham muktiḥ (f. nom. sg. «визволення») bhaviṣyati (3 sg. fut. bhū «настане») | vairāgyam (n. nom. sg. «безсторонність») ca katham prāptam (n. nom. sg. дієприкм. від pra-āp «досягнуте») etat (n. nom. sg.) brūhi (imper. 2 sg. brū «скажи») mama (gen. sg. «мені») prabho (voc. sg. «пане»).",
+  "literal_meaning": "«Як знання здобувається? Як визволення настане? І як безсторонність досягається? Скажи мені це, пане.»",
+  "ukrainian_translation": "Як здобувається знання? Як настає визволення? І як досягається безсторонність? Скажи мені це, пане.",
+  "commentary": "Перший вірш книги — не твердження, а питання: три речі, які шукають — jñāna, mukti, vairāgya. Варто тримати в голові, що далі текст заперечить кожну з них саме як щось набуте (пор. 1.15, 2.18). prabho — звертання до Аштавакри; «пане» умовний, але не випадковий відповідник: санскритське звертання підкреслює нерівність того, хто питає, і того, хто відповідає.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

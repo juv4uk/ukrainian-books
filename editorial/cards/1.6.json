@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "1.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.6",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "dharmādharmau sukhaṃ duḥkhaṃ mānasāni na te bibho| na kartā+asi na bhoktā+asi mukta evā+asi sarvadā||1|6||",
+  "iast": "dharmādharmau sukhaṃ duḥkhaṃ mānasāni na te bibho | na kartā'si na bhoktā'si mukta evāsi sarvadā ||",
+  "grammar": "dharma-adharmau (m. du. «дхарма й адхарма», парний двоїн) sukham duḥkham (n. nom. sg.) mānasāni (n. nom. pl. «розумові, ті, що належать розуму») na te (gen. sg. «не твої») bibho (voc. sg. від vibhu «о всепроникний») | na kartā asi (nom. sg. «ти не дієць») na bhoktā asi («не споживач») muktaḥ eva asi sarvadā («ти вільний саме завжди»).",
+  "literal_meaning": "«Дхарма й адхарма, щастя й страждання — розумові, не твої, о всепроникний. Ти не дієць і не споживач — ти вільний завжди.»",
+  "ukrainian_translation": "Дхарма й адхарма, щастя й страждання — усе це розумове, не твоє, о всепроникний. Ти не дієць і не споживач — ти вільний завжди.",
+  "commentary": "mānasāni — «розумові»: пари не заперечуються як вигадка, а виводяться з-під авторства того, кому їх приписують. Друга половина містить рідкісну для цього тексту остаточність: mukta eva asi sarvadā — «ти вільний саме завжди». Це варто порівняти з 1.7, де стоїть muktaprāya, «майже вільний». Різниця між сусідніми віршами не стилістична, і переклад не повинен її згладжувати.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
