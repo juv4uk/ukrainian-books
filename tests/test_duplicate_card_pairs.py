@@ -76,10 +76,9 @@ class StrictCliTests(unittest.TestCase):
 
     def cli(self):
         output, errors = io.StringIO(), io.StringIO()
-        with mock.patch.object(sys, "argv", ["checker", "--strict"]), (
-            contextlib.redirect_stdout(output),
-            contextlib.redirect_stderr(errors)
-        ):
+        with mock.patch.object(sys, "argv", ["checker", "--strict"]), \
+                contextlib.redirect_stdout(output), \
+                contextlib.redirect_stderr(errors):
             result = checker.main()
         return result, output.getvalue(), errors.getvalue()
 
