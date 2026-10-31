@@ -29,15 +29,15 @@
     <path d="M365 104 l14 -6 M365 104 l14 6"/>
   </g>
   <!-- око в уявного змія -->
-  <circle cx="358" cy="101" r="1.8" fill="#b0762a" stroke="none"/>
+  
 
   <g fill="#3b4a5a" font-family="serif" font-size="15">
     <text x="24" y="240">у присмерку мотузка здається змієм</text>
   </g>
   <g fill="#8a6b3f" font-family="serif" font-size="14">
-    <text x="70" y="186">мотузка — є</text>
+    <text x="24" y="186">мотузка — є</text>
   </g>
   <g fill="#b0762a" font-family="serif" font-size="14">
-    <text x="270" y="70">змій — ввижається</text>
+    <text x="24" y="44">змій — ввижається</text>
   </g>
 </svg>
