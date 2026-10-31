@@ -1,0 +1,24 @@
+name: Філологічне дослідження
+description: Власні наукові примітки та звіряння санскритських свідків
+body:
+  - type: input
+    id: question
+    attributes:
+      label: Конкретне питання
+      placeholder: 1.2 — toṣa
+    validations:
+      required: true
+  - type: textarea
+    id: witnesses
+    attributes:
+      label: Санскритські свідки та наукові джерела
+      description: Посилання й можливі розходження
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Перевірюваний результат
+      placeholder: Матриця варіантів, аргументація, рецензент
+    validations:
+      required: true
