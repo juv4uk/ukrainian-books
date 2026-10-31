@@ -23,12 +23,12 @@ jobs:
             echo "found=false" >> "$GITHUB_OUTPUT"
             echo "Дозволених до публікації власних TeX-видань поки немає." >> "$GITHUB_STEP_SUMMARY"
           fi
-      - name: Перевірити, що верстка не застаріла щодо карток
+      - name: Згенерувати верстку з карток
         if: steps.detect.outputs.found == 'true'
         shell: bash
         run: |
           set -euo pipefail
-          python3 scripts/build_pilot_book.py --check
+          python3 scripts/build_pilot_book.py
           python3 -m unittest discover -s tests -p 'test_pilot_book.py' -v
       - name: Встановити XeLaTeX
         if: steps.detect.outputs.found == 'true'
