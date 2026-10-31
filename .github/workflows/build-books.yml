@@ -36,7 +36,17 @@ jobs:
           sudo apt-get update -qq
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq \
             texlive-xetex texlive-lang-cyrillic texlive-latex-recommended \
-            texlive-fonts-recommended latexmk fonts-dejavu-core poppler-utils
+            texlive-fonts-recommended latexmk fonts-dejavu-core poppler-utils \
+            fonts-noto-core fonts-lohit-deva
+      - name: Згенерувати власні схеми до віршів (SVG → PDF)
+        if: steps.detect.outputs.found == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet --disable-pip-version-check cairosvg
+          python3 scripts/build_verse_schemas.py --check
+          python3 scripts/build_verse_schemas.py --pdf
+          python3 scripts/build_format_v2_chapter.py --check
       - name: Зібрати дозволені книги
         if: steps.detect.outputs.found == 'true'
         shell: bash
