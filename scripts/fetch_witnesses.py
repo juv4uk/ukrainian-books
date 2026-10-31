@@ -44,8 +44,8 @@ def strip_tags(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-PRINTED_NUMBER = re.compile(r"\\|\\|(\\d+)\\|(\\d+)\\|{2,}\\s*$")
-VERSE_ID = re.compile(r"[1-9]\\d*\\.[1-9]\\d*")
+PRINTED_NUMBER = re.compile(r"\|\|(\d+)\|(\d+)\|{2,}\s*$")
+VERSE_ID = re.compile(r"[1-9]\d*\.[1-9]\d*")
 
 
 def sarit_verse(xml: str, verse: str) -> str | None:
