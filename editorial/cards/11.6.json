@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "11.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_11.6",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_11.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nāhaṃ deho na me deho bodho+ahamiti niścayī| kaivalyamiva saṃprāpto na smaratyakṛtaṃ kṛtam||11|6||",
+  "iast": "nāhaṃ deho na me deho bodho 'ham iti niścayī | kaivalyam iva saṃprāpto na smaraty akṛtaṃ kṛtam ||",
+  "grammar": "na aham dehaḥ na me dehaḥ («я не тіло, і тіло не моє») bodhaḥ aham («я — усвідомлення») iti niścayī | kaivalyam iva saṃprāptaḥ («наче досяг окремішності») na smarati («не пам'ятає») akṛtam kṛtam («незробленого як зробленого»).",
+  "literal_meaning": "«Я не тіло, і тіло не моє; я — усвідомлення» — хто має таке переконання, той, наче досягши окремішності, не пам'ятає незробленого як зробленого.",
+  "ukrainian_translation": "«Я не тіло, і тіло не моє; я — усвідомлення» — хто має таке переконання, той, наче досягши окремішності, не пам'ятає незробленого як зробленого.",
+  "commentary": "Формула «не тіло, і тіло не моє» та сама, що в 8.4 і 2.22 — тут вона подана як переконання, а не як висновок. `kaivalya` («окремішність») з'являється один раз і з `iva` («наче»): текст не каже, що стан досягнуто. `akṛtaṃ kṛtam` — «незроблене як зроблене»: ідеться не про забудькуватість, а про те, що минуле більше не рахується.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
