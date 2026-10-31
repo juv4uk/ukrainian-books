@@ -57,8 +57,8 @@ KNOWN_DUPLICATES = {}
 
 # Номер вірша з імені файлу: verse-1-5-..., verse-1-2-...
 NAME_RE = re.compile(r"verse-(\d{1,2})-(\d{1,3})(?:[-_.]|$)")
-# Номер вірша із заголовка H1: «Аштавакра-ґіта 1.5: ...» або «1.5 ...»
-HEAD_RE = re.compile(r"^#\s+.*?\b(\d{1,2})\.(\d{1,3})\b")
+# Номер вірша із заголовка H1; відкинути фрагменти календарних дат 31.10.2026.
+HEAD_RE = re.compile(r"^#\s+.*?\b(\d{1,2})\.(\d{1,3})(?!\.\d)\b")
 # Діапазон у заголовку: «1.6–1.10», «1.6-1.10», «1.6 — 1.10».
 HEAD_RANGE_RE = re.compile(r"\b(\d{1,2})\.(\d{1,3})\s*[-–—]\s*(\d{1,2})\.(\d{1,3})\b")
 # Діапазон в імені файлу: verses-1-6-to-1-10, notes-1-6-to-1-10.
@@ -97,12 +97,16 @@ def card_verse(path: Path) -> str | None:
     """Номер вірша, який картка заявляє: з імені файлу, інакше з H1."""
     m = NAME_RE.search(path.stem)
     if m:
-        return f"{int(m.group(1))}.{int(m.group(2))}"
+        chapter, verse = int(m.group(1)), int(m.group(2))
+        if 1 <= chapter <= 20 and verse >= 1:
+            return f"{chapter}.{verse}"
     try:
         for line in path.read_text(encoding="utf-8").splitlines()[:5]:
             h = HEAD_RE.match(line.strip())
             if h:
-                return f"{int(h.group(1))}.{int(h.group(2))}"
+                chapter, verse = int(h.group(1)), int(h.group(2))
+                if 1 <= chapter <= 20 and verse >= 1:
+                    return f"{chapter}.{verse}"
     except (OSError, UnicodeDecodeError):
         return None
     return None
