@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="nazva opys">
+  <title id="nazva">Аштавакра-ґіта 13.5 — постава не визначає користі й шкоди</title>
+  <desc id="opys">Три редакторські ситуації: людина стоїть, іде та відпочиває. Вони сходяться в одному висновку — ні користі, ні шкоди лише від постави. Нижче рефрен: «Я сиджу, як мені завгодно». Схема є сучасним українським поясненням парадоксу, а не історичною ілюстрацією.</desc>
+  <rect width="960" height="620" fill="#f7f5ef"/>
+  <rect x="24" y="24" width="912" height="572" rx="20" fill="#fffdf8" stroke="#c6cbbf" stroke-width="2"/>
+  <text x="480" y="72" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="29" fill="#263f3d">Три постави — одна свобода від рахунку</text>
+  <text x="480" y="105" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#5b6964">Аштавакра-ґіта, 13.5 · авторська схема для українського читача</text>
+  <g font-family="DejaVu Sans, sans-serif" text-anchor="middle">
+    <rect x="56" y="142" width="264" height="206" rx="20" fill="#e5eee9" stroke="#8ba69c" stroke-width="2"/>
+    <rect x="348" y="142" width="264" height="206" rx="20" fill="#e4edf3" stroke="#88a8b9" stroke-width="2"/>
+    <rect x="640" y="142" width="264" height="206" rx="20" fill="#f1e9d9" stroke="#bca684" stroke-width="2"/>
+    <text x="188" y="186" font-size="23" font-weight="700" fill="#255746">СТОЯННЯ</text>
+    <text x="480" y="186" font-size="23" font-weight="700" fill="#2a5a72">ХОДІННЯ</text>
+    <text x="772" y="186" font-size="23" font-weight="700" fill="#73502c">СОН / ЛЕЖАННЯ</text>
+  </g>
+  <g stroke="#294d49" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="188" cy="235" r="13" fill="#294d49" stroke="none"/>
+    <path d="M188 253 L188 294 M188 265 L165 287 M188 265 L211 287 M188 294 L171 322 M188 294 L205 322"/>
+    <circle cx="469" cy="233" r="13" fill="#294d49" stroke="none"/>
+    <path d="M469 250 L486 285 M479 270 L456 292 M479 270 L505 263 M486 285 L462 320 M486 285 L516 310"/>
+    <circle cx="735" cy="264" r="12" fill="#294d49" stroke="none"/>
+    <path d="M751 269 L800 269 M776 269 L793 292 M762 267 L748 287"/>
+    <path d="M681 317 L859 317 M689 312 L689 304 M852 312 L852 304" stroke="#73502c" stroke-width="5"/>
+  </g>
+  <g fill="none" stroke="#657a70" stroke-width="3" stroke-linecap="round">
+    <path d="M188 348 L188 377 L480 377 L480 405"/>
+    <path d="M480 348 L480 405"/>
+    <path d="M772 348 L772 377 L480 377"/>
+  </g>
+  <path d="M470 393 L480 408 L490 393" fill="none" stroke="#657a70" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="159" y="411" width="642" height="76" rx="16" fill="#e5ebe5" stroke="#9aada0" stroke-width="2"/>
+  <text x="480" y="443" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#2e4e42">Ні користі, ні шкоди лише від постави</text>
+  <text x="480" y="470" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#44645b">artha / anartha · спільне заперечення для трьох способів дії</text>
+  <text x="480" y="540" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#25475b">«Я сиджу, як мені завгодно»</text>
+  <text x="480" y="574" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#66746e">Не буквальна одночасність поз, а риторичний парадокс вірша</text>
+</svg>
