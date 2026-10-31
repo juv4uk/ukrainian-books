@@ -100,5 +100,22 @@ class PdfSourceTests(unittest.TestCase):
             )
 
 
+    def test_actual_repository_has_both_complete_volumes(self):
+        """Інтеграційна перевірка реальних 20+20 глав та ID усіх карток."""
+        expected = build_pdf.expected_card_ids()
+        scientific = build_pdf.chapter_files(r"^rozdil-(\d+)-naukove\.md$")
+        poetic = build_pdf.chapter_files(r"^poetychnyi-rozdil-(\d+)\.md$")
+        build_pdf.validate_volume(scientific, expected, "Науковий том")
+        build_pdf.validate_volume(poetic, expected, "Поетичний том")
+
+    def test_actual_chapter_10_renders_its_eight_svg_illustrations(self):
+        """Поточний книжковий Markdown, а не лише вигаданий рядок тесту."""
+        chapter = Path(build_pdf.BOOK) / "rozdil-10-naukove.md"
+        source = chapter.read_text(encoding="utf-8")
+        rendered = build_pdf.md_to_html(source, str(chapter.parent), False)
+        self.assertEqual(rendered.count("<img "), 8)
+
+
+
 if __name__ == "__main__":
     unittest.main()
