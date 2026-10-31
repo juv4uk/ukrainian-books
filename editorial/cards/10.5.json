@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "10.5",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_10.5",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_10.5",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tvamekaścetanaḥ śuddho jaḍaṃ viśvamasattathā| avidyāpi na kiñcitsā kā bubhutsā tathāpi te||10|5||",
+  "iast": "tvam ekaś cetanaḥ śuddho jaḍaṃ viśvam asat tathā | avidyāpi na kiñcit sā kā bubhutsā tathāpi te ||",
+  "grammar": "tvam ekaḥ cetanaḥ śuddhaḥ («ти один — свідомий, чистий») | jaḍam (n. «неживе») viśvam asat (n. «несправжнє») tathā | avidyā api na kiñcit sā («і незнання — аніщо») | kā bubhutsā (f. «яке бажання пізнавати») tathāpi te (gen. «все ж у тебе»).",
+  "literal_meaning": "«Ти один — свідомий, чистий; світ — неживий і несправжній. Навіть незнання — аніщо. Яке ж тоді в тебе бажання пізнавати?»",
+  "ukrainian_translation": "Ти один — свідомий, чистий; світ же — неживий і несправжній. Навіть незнання — аніщо. То яке в тебе, при всьому тому, бажання пізнавати?",
+  "commentary": "`asat` тут — «несправжнє», не «зло»; це різні речі, і переклад не повинен їх зливати. Питання `kā bubhutsā` замикає коло: якщо навіть незнання ніщо, то пізнавати нічого — і саме тому питання адресоване тому, хто вже слухає пояснення. Це найгостріше місце глави: воно ставить під сумнів користь самої розмови.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

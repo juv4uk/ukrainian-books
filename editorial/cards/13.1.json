@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "13.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_13.1",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_13.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "akiṃcanabhavaṃ svāsthyaṃ kaupīnatve 'pi durlabham | tyāgādāne vihāyāsmād aham āse yathāsukham ||",
+  "iast": "akiṃcanabhavaṃ svāsthyaṃ kaupīnatve 'pi durlabham | tyāgādāne vihāyāsmād aham āse yathāsukham ||",
+  "grammar": "akiṃcanabhavam (n. nom. sg. «стан неволодіння, буття-без-нічого»: a-kiṃcana «той, у кого нічого немає» + bhava «стан») svāsthyam (n. nom. sg. «перебування в собі, здоров'я, лад»: sva «своє» + stha «той, що стоїть»). kaupīnatve (n. loc. sg. «у [носінні] каупіни»: kaupīna «жебрацький пояс, стегнова пов'язка» — знак відречення) api («навіть») durlabham (n. nom. sg. «важкодосяжне, рідкісне»). tyāgādāne (n. nom./acc. du. «віддавання й приймання») vihāya (герунд vi-hā «відкинувши») asmāt («тому») aham āse (1 sg. pr. ās «я сиджу, перебуваю») yathāsukham («як мені завгодно, як зручно»).",
+  "literal_meaning": "«Стан неволодіння — це бути в собі; навіть у [носінні] жебрацького пояса він рідкісний. Відкинувши віддавання й приймання, тому я сиджу, як мені завгодно.»",
+  "ukrainian_translation": "Стан неволодіння — це бути в собі; навіть у жебрацькому поясі він рідкісний. Відкинувши віддавання й приймання, я сиджу, як мені завгодно.",
+  "commentary": "Найважливіше тут — svāsthya. Слово означає буквально «перебування в собі» і в сучасній мові значить «здоров'я»; у вірші воно вжите в першому сенсі, і це не метафора, а визначення: бути здоровим — значить бути в собі. Друга точність — kaupīna: жебрацький пояс названий не як приклад аскези, а як те, у чому svāsthya все одно рідкісне. Тобто зовнішня ознака відречення нічого не гарантує. Пара tyāga / ādāna («віддавання» / «приймання») — та сама, що heya / upādeya у 7.5, і тут її теж відкидають цілою, а не по частинах. РЕФРЕН ГЛАВИ. Шість із семи віршів (13.1, 13.3–13.7) закінчуються однаково: aham āse yathāsukham («я сиджу — як мені завгодно»). ās — не «бути», а саме СИДІТИ, перебувати на місці; yathāsukham — «як зручно, за бажанням». Разом це формула, яка скасовує будь-яку поставу як вимогу: не треба ні стояти, ні лежати правильно. 13.2 — єдиний вірш глави без цього рефрену, і його треба читати окремо.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

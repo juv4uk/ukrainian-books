@@ -23,7 +23,8 @@ FORBIDDEN = (
     "LICENSE-CODE", "ashtavakra gita", "da perfeicao de ser",
     "o caminho da libertacao", "pura graca", "livros", ".gitmodules",
 )
-LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
+# Локальні посилання та зображення мають однаково існувати у дереві.
+LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 
 
 def run() -> int:

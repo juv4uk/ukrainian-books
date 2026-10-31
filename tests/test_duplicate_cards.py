@@ -13,7 +13,13 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.check_duplicate_cards import collect, json_card_verse, run, split_duplicates
+from scripts.check_duplicate_cards import (
+    card_verse,
+    collect,
+    json_card_verse,
+    run,
+    split_duplicates,
+)
 
 
 class DuplicateCardTests(unittest.TestCase):
@@ -161,6 +167,32 @@ class DuplicateCardTests(unittest.TestCase):
         self.assertIn("1.2", duplicates)
         self.assertNotIn("1.2", overlaps)
         self.assertEqual(self.report(strict=True)[0], 1)
+
+
+    def test_date_in_heading_is_not_a_verse_number(self) -> None:
+        """Дата «(31.10.2026)» у заголовку — не вірш 31.10.
+
+        Справжній збій на `main` 31.10.2026: bibliography-supplement-2026-10-31.md
+        і young-1991-corpus-check.md обидва закінчуються на «(31.10.2026)», і
+        перевірка бачила два «дублі вірша 31.10», валячи кожен PR.
+        """
+        self.note(
+            "bibliography-supplement-2026-10-31.md",
+            "Доповнення до бібліографії «Аштавакра-ґіти» (31.10.2026)",
+        )
+        self.note(
+            "young-1991-corpus-check.md",
+            "Перевірка тези Young 1991 за корпусом SARIT (31.10.2026)",
+        )
+        duplicates, overlaps = split_duplicates(collect(self.research, self.cards))
+        self.assertEqual(duplicates, {})
+        self.assertEqual(overlaps, {})
+        self.assertEqual(self.report(strict=True)[0], 0)
+
+    def test_verse_number_still_read_from_heading_with_date(self) -> None:
+        """Дата не заважає взяти справжній номер вірша з того самого заголовка."""
+        path = self.note("notes.md", "Вірш 1.5: примітка (31.10.2026)")
+        self.assertEqual(card_verse(path), "1.5")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "8.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_8.2",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_8.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tadā muktiryadā cittaṃ na vāñchati na śocati| na muñcati na gṛhṇāti na hṛṣyati na kupyati||8|2||",
+  "iast": "tadā muktir yadā cittaṃ na vāñchati na śocati | na muñcati na gṛhṇāti na hṛṣyati na kupyati ||",
+  "grammar": "tadā muktiḥ yadā cittaṃ na vāñchati na śocati | na muñcati na gṛhṇāti na hṛṣyati na kupyati — шість заперечень, дослівно ті самі дієслова, що в 8.1.",
+  "literal_meaning": "«Визволення — тоді, коли розум не бажає, не сумує, не відпускає, не бере, не радіє, не гнівається.»",
+  "ukrainian_translation": "Визволення — тоді, коли розум не бажає, не сумує, не відпускає й не бере, не радіє й не гнівається.",
+  "commentary": "Вірш є **дослівним запереченням** попереднього: ті самі шість дієслів, кожне з часткою na. Це важливо для перекладу: будь-яка стилістична варіація тут зруйнує паралелізм, який і є аргументом. Визволення не додає нічого — воно знімає рівно те, що було названо полоном.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

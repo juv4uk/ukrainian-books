@@ -1,0 +1,21 @@
+name: Координація змін між PR
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions:
+  contents: read
+  pull-requests: read
+jobs:
+  paths:
+    name: Раніші PR не змінюють ті самі файли
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Офлайнові позитивні та негативні тести
+        run: python3 -m unittest discover -s tests -p 'test_check_pr_overlaps.py' -v
+      - name: Звірити шляхи з ранішими відкритими PR
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: python3 scripts/check_pr_overlaps.py --repo "$GITHUB_REPOSITORY" --pr "$PR_NUMBER" --strict

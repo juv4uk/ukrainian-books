@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "10.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_10.7",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_10.7",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "alamarthena kāmena sukṛtenāpi karmaṇā| ebhyaḥ saṃsārakāntāre na viśrāntamabhūnmanaḥ||10|7||",
+  "iast": "alam arthena kāmena sukṛtenāpi karmaṇā | ebhyaḥ saṃsārakāntāre na viśrāntam abhūn manaḥ ||",
+  "grammar": "alam (indecl. «досить») arthena (instr. «багатством») kāmena sukṛtena api karmaṇā («і навіть добрим учинком») | ebhyaḥ (abl. pl. «від них») saṃsāra-kāntāre (m. loc. «у лісі сансари») na viśrāntam (n. nom. «не відпочив») abhūt (3 sg. bhū) manaḥ (n. «розум»).",
+  "literal_meaning": "«Досить уже й багатства, і бажання, і навіть добрих учинків: у цьому лісі сансари твій розум не знав відпочинку.»",
+  "ukrainian_translation": "Досить уже й багатства, і бажання, і навіть добрих учинків: у цьому лісі сансари твій розум так і не знав відпочинку.",
+  "commentary": "`sukṛta` тут — «заслуга, добре зроблене», а не «добро» взагалі; і текст відкидає саме заслугу, ставлячи її в один ряд із багатством і бажанням. Це найнезручніше місце глави для читача, який звик, що добрі вчинки беззастережно рахуються. `kāntāra` — «ліс», образ блукання, а не місце. `alam` — «годі вже», з інтонацією втоми, а не заборони.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
