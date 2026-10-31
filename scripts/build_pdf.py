@@ -115,13 +115,14 @@ def md_to_html(text: str, base: str, poetry: bool) -> str:
             quote.append("<p>" + inline(s.lstrip("> ").strip()) + "</p>")
             i += 1; continue
 
-        m = re.match(r"^!\[(.*?)\]\((.*?)\)\s*(?:—\s*(.*))?$", s)
+        m = re.match(r"^(?:\*\*Ілюстрація\.\*\*\s+)?!\[(.*?)\]\((.*?)\)\s*(?:—\s*(.*))?$", s)
         if m:
             flush_para(); flush_quote()
             alt, src, caption = m.group(1), m.group(2), (m.group(3) or "")
             path = os.path.normpath(os.path.join(base, src))
-            if os.path.exists(path):
-                out.append(f'<img src="file://{path}" alt="{esc(alt)}">')
+            if not os.path.isfile(path):
+                raise ValueError(f"Ілюстрацію не знайдено: {path}")
+            out.append(f'<img src="file://{html.escape(path, quote=True)}" alt="{html.escape(alt, quote=True)}">')
             if caption:
                 out.append('<p style="font-size:8pt;color:#555;text-align:center">'
                            + inline(caption) + "</p>")
@@ -164,8 +165,56 @@ def chapter_files(pattern: str) -> list[tuple[int, str]]:
     return sorted(found)
 
 
+
+def validate_volume(chapters: list[tuple[int, str]], expected_ids: set[tuple[int, int]],
+                    label: str, expected_chapters=range(1, 21)) -> None:
+    """Не друкувати неповну чи неправильно нумеровану версію книги."""
+    numbers = [number for number, _ in chapters]
+    if numbers != list(expected_chapters):
+        raise ValueError(f"{label}: неповні глави: {numbers!r}")
+
+    found: set[tuple[int, int]] = set()
+    for chapter, path in chapters:
+        with open(path, encoding="utf-8") as source:
+            content = source.read()
+        headings = re.findall(r"^##[ \t]+(\d+)\.(\d+)[ \t]*$", content, flags=re.M)
+        for chapter_text, verse_text in headings:
+            key = (int(chapter_text), int(verse_text))
+            if key[0] != chapter:
+                raise ValueError(f"{label}: неправильна глава у {path}: {key}")
+            if key in found:
+                raise ValueError(f"{label}: дубльований вірш {key[0]}.{key[1]}")
+            found.add(key)
+    if found != expected_ids:
+        missing = sorted(expected_ids - found)
+        extra = sorted(found - expected_ids)
+        raise ValueError(
+            f"{label}: склад віршів не відповідає канонічним карткам: "
+            f"бракує {missing[:8]!r}, зайві {extra[:8]!r}, "
+            f"кількість {len(found)}/{len(expected_ids)}"
+        )
+
+
+def expected_card_ids() -> set[tuple[int, int]]:
+    """Картки — еталон точного переліку всіх 298 віршових позицій."""
+    folder = os.path.join(ROOT, "editorial", "cards")
+    ids: set[tuple[int, int]] = set()
+    for name in os.listdir(folder):
+        match = re.fullmatch(r"(\d+)\.(\d+)\.json", name)
+        if match:
+            ids.add((int(match.group(1)), int(match.group(2))))
+    if len(ids) != 298:
+        raise ValueError(f"Редакторський корпус неповний: {len(ids)}/298 карток")
+    return ids
+
 def main() -> int:
     out_pdf = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "ashtavakra.pdf")
+
+    scientific = chapter_files(r"^rozdil-(\d+)-naukove\.md$")
+    poetic = chapter_files(r"^poetychnyi-rozdil-(\d+)\.md$")
+    expected = expected_card_ids()
+    validate_volume(scientific, expected, "Науковий том")
+    validate_volume(poetic, expected, "Поетичний том")
 
     parts = []
     parts.append("""<div class="title-page">
@@ -188,7 +237,7 @@ def main() -> int:
     if os.path.exists(zmist):
         parts.append(md_to_html(open(zmist, encoding="utf-8").read(), BOOK, False))
 
-    for num, path in chapter_files(r"^rozdil-(\d+)-naukove\.md$"):
+    for num, path in scientific:
         parts.append(md_to_html(open(path, encoding="utf-8").read(), BOOK, False))
 
     parts.append('<div class="poetry"><h1>Поетичний переклад</h1>'
@@ -196,7 +245,7 @@ def main() -> int:
                  "переставити, замінити термін на образ — але не додати думки, "
                  "якої у вірші немає. У спірних місцях правий науковий том.</p></div>")
 
-    for num, path in chapter_files(r"^poetychnyi-rozdil-(\d+)\.md$"):
+    for num, path in poetic:
         html_part = md_to_html(open(path, encoding="utf-8").read(), BOOK, True)
         parts.append(f'<div class="poetry">{html_part}</div>')
 
