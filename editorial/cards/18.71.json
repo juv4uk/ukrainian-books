@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.71",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.71",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.71",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "śuddhasphuraṇarūpasya dṛśyabhāvam apaśyataḥ | kva vidhiḥ kva ca vairāgyaṃ kva tyāgaḥ kva śamo 'pi vā ||",
+  "iast": "śuddhasphuraṇarūpasya dṛśyabhāvam apaśyataḥ | kva vidhiḥ kva ca vairāgyaṃ kva tyāgaḥ kva śamo 'pi vā ||",
+  "grammar": "śuddhasphuraṇarūpasya (bahuvrīhi «того, чия природа — чисте сяяння»: śuddha «чистий» + sphuraṇa «сяяння» + rūpa «природа») dṛśyabhāvam (m. acc. sg. «буття видимого»: dṛśya «видиме» + bhāva «буття») apaśyataḥ (m. gen. sg. дієприкметника a-paś «того, хто не бачить»). kva vidhiḥ (m. nom. sg. «де припис?») kva ca vairāgyam (n. nom. sg.) kva tyāgaḥ (m. nom. sg. «де покидання?») kva śamaḥ (m. nom. sg. «де заспокоєння?») api vā («або ж»).",
+  "literal_meaning": "«У того, чия природа — чисте сяяння, хто не бачить буття видимого: де припис, де відречення, де покидання, де й заспокоєння?»",
+  "ukrainian_translation": "У того, чия природа — чисте сяяння, хто не бачить, що видиме існує: де припис, де відречення, де покидання, де й заспокоєння?",
+  "commentary": "Чотири `kva` закривають усю практику: vidhi (припис), vairāgya (відречення), tyāga (покидання), śama (заспокоєння). Зверни увагу: `vairāgya` стоїть у переліку того, що зникає, — тобто в цій главі воно не чеснота, а те, що відпадає разом з іншим. `śuddhasphuraṇa` — те саме сяяння, що `alakṣyasphuraṇa` у 18.70.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
