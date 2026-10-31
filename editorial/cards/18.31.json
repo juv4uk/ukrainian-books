@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "18.31",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.31",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.31",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nirdhyātuṃ ceṣṭituṃ vāpi yaccittaṃ na pravartate| nirnimittamidaṃ kintu nirdhyāyati viceṣṭate||18|31||",
+  "iast": "nirdhyātuṃ ceṣṭituṃ vāpi yac cittaṃ na pravartate | nirnimittam idaṃ kintu nirdhyāyati viceṣṭate ||",
+  "grammar": "nirdhyātum («щоб замислитися») ceṣṭitum vā api («або щоб діяти») yat cittam na pravartate («ум, що не береться») | nirnimittam idam kintu («але ж це — без причини») nirdhyāyati viceṣṭate («воно ж замислюється й діє»).",
+  "literal_meaning": "«Ум, що не береться ні замислитися, ні діяти, — але ж він, без причини, замислюється й діє.»",
+  "ukrainian_translation": "Ум, що не береться ні замислитися, ні діяти, — але ж він, без причини, замислюється й діє.",
+  "commentary": "Вірш описує парадокс, а не заклик: ум не має наміру ні думати, ні діяти — і все ж думає й діє. `nirnimitta` («без причини, без приводу») — ключове слово: дія відбувається, але без того, хто її задумав. Це та сама структура, що в 15.16, де немає ні того, хто в сансарі, ні того, хто поза нею. `kintu` («але ж») тримає здивування, і його не можна викидати.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

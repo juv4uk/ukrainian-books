@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "1.13",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.13",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.13",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kūṭasthaṃ bodhamadvaitamātmānaṃ paribhāvaya| ābhāso+ahaṃ bhramaṃ muktvā bhāvaṃ bāhyamathāntaram||1|13||",
+  "iast": "kūṭasthaṃ bodham advaitam ātmānaṃ paribhāvaya | ābhāso 'haṃ bhramaṃ muktvā bhāvaṃ bāhyam athāntaram ||",
+  "grammar": "kūṭastham («незмінне, як ковадло») bodham («усвідомлення») advaitam («недвоїсте») ātmānam paribhāvaya («осягай ātman») | ābhāsaḥ aham («я — лише відблиск») bhramam («омана») muktvā («відкинувши») bhāvam bāhyam atha antaram («стан зовнішній і внутрішній»).",
+  "literal_meaning": "«Осягай ātman як незмінне, недвоїсте усвідомлення. Відкинувши оману „я — лише відблиск“, [відкинь] і стан зовнішній та внутрішній.»",
+  "ukrainian_translation": "Осягай ātman як незмінне, недвоїсте усвідомлення. Відкинувши оману «я — лише відблиск», відкинь і стан зовнішній та внутрішній.",
+  "commentary": "`kūṭastha` — буквально «той, що стоїть на вершині», усталено «незмінний, як ковадло»; це означення ātman, а не опис зусилля. `ābhāso 'ham` — «я — відблиск»: не «я ілюзія», а саме відблиск чогось іншого. Друга половина відкидає не лише внутрішнє, а й **зовнішнє** (`bāhyam atha antaram`) — і саме цей порядок, зовнішнє перед внутрішнім, варто зберегти. Вірші 1.12 і 1.13 у SARIT лежать в одному `lg`; див. `variants` картки 1.12.",
+  "variants": [
+    {
+      "witness": "SARIT, lg xml:id=verse_1.12",
+      "note": "Вірші 1.12 і 1.13 лежать в одному lg з трьох рядків: рядок 1 закінчується номером 1.12, рядки 2-3 — номером 1.13. Отже 1.12 у цьому свідку має лише два піди (один рядок), а 1.13 — чотири (два рядки). Чи бракує 1.12 другої половини, чи він справді короткий — за одним свідком вирішити не можна; GRETIL недоступний (HTTP 403).",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

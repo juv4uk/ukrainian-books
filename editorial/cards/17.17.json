@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.17",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.17",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.17",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na mukto viṣayadveṣṭā | na vā viṣayalolupaḥ | asaṃsaktamanā nityaṃ | prāptāprāptam upāśnute ||",
+  "iast": "na mukto viṣayadveṣṭā | na vā viṣayalolupaḥ | asaṃsaktamanā nityaṃ | prāptāprāptam upāśnute ||",
+  "grammar": "na muktaḥ viṣayadveṣṭā «звільнений не ненависник чуттєвого» (dveṣṭṛ). na vā viṣayalolupaḥ «і не жадібний до чуттєвого». asaṃsaktamanāḥ — bahuvrīhi «з нев'язаним розумом» (a-saṃsakta, ppp від saṃ-√sañj). nityam «завжди». prāptāprāptam — знах. одн. «одержане й неодержане», тобто те, що прийшло, і те, що не прийшло. upāśnute — «споживає, приймає» (upa-√aś). Складність: prāptāprāptam можна зрозуміти і як «те, що дісталося й не дісталося», і як «те, що трапилося, і те, що не трапилося»; різниця для змісту невелика, але в перекладі вона відчутна, і тут узято друге.",
+  "literal_meaning": "«Звільнений не ненавидить чуттєвого й не жадібний до нього; з нев'язаним розумом він завжди приймає те, що прийшло й не прийшло.»",
+  "ukrainian_translation": "Звільнений не ненавидить чуттєвих речей і не жадібний до них; його розум ні до чого не прив'язаний, і він бере те, що прийшло, і те, що не прийшло.",
+  "commentary": "Вірш повторює схему 16.6, але додає дію: не лише немає ненависті й жадоби, а й є прийняття того, що трапляється. Це відповідь на очевидне заперечення — якщо немає потягу, чи не стане людина пасивною? Текст відповідає дієсловом upāśnute, «споживає, приймає»: дія не зникає, зникає прив'язаність до її результату. Тут знову немає ні vairāgya, ні mukti як термінів: muktaḥ — означення, а не назва стану.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.17) і SARIT (verse_17.17)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
