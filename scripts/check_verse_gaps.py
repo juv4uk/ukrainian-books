@@ -7,7 +7,9 @@
 
 Прогалиною вважається відсутній вірш у главі, де вже є хоч одна картка.
 Глава без жодної картки прогалиною не вважається — інакше звіт завжди
-складався б із 298 рядків і його ніхто не читав би.
+складався б із 298 рядків і його ніхто не читав би. Але така глава **називається**
+окремим рядком: інакше «бракує 1 вірша» виглядає як майже готовий корпус,
+хоча цілих глав може не бути зовсім.
 """
 
 from __future__ import annotations
@@ -55,6 +57,17 @@ def find_gaps(present: set[str], expected: set[str]) -> dict[int, list[str]]:
     }
 
 
+def untouched_chapters(present: set[str], expected: set[str]) -> dict[int, int]:
+    """Глави, у яких немає жодної картки: номер -> скільки віршів бракує."""
+    started = {int(item.split(".")[0]) for item in present}
+    empty: dict[int, int] = {}
+    for verse in expected:
+        chapter = int(verse.split(".")[0])
+        if chapter not in started:
+            empty[chapter] = empty.get(chapter, 0) + 1
+    return dict(sorted(empty.items()))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--cards", type=Path, default=CARDS,
@@ -69,13 +82,25 @@ def main() -> int:
         return 1
     present = present_ids(args.cards)
     gaps = find_gaps(present, expected)
+    empty = untouched_chapters(present, expected)
+    empty_note = ""
+    if empty:
+        verses = sum(empty.values())
+        names = ", ".join(str(chapter) for chapter in empty)
+        empty_note = f"; глави без карток: {names} — {verses} віршів"
     if not gaps:
-        print(f"ПРОГАЛИНИ: немає — {len(present)} карток, нумерація початих глав суцільна")
+        print(
+            f"ПРОГАЛИНИ: немає — {len(present)} карток, "
+            f"нумерація початих глав суцільна{empty_note}"
+        )
         return 0
     missing = sum(len(items) for items in gaps.values())
     print(f"ПРОГАЛИНИ: бракує {missing} віршів у {len(gaps)} главах")
     for chapter, items in gaps.items():
         print(f"  глава {chapter}: " + ", ".join(items))
+    if empty:
+        verses = sum(empty.values())
+        print(f"  глави без карток: {', '.join(str(c) for c in empty)} — {verses} віршів")
     if args.strict:
         print("ПОМИЛКА: --strict вимагає суцільної нумерації", file=sys.stderr)
         return 1

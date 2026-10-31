@@ -1,0 +1,259 @@
+% =====================================================================
+%  «Аштавакра-ґіта» — РОБОЧЕ ПІЛОТНЕ ВИДАННЯ
+%  Шаблон верстки власного PDF через XeLaTeX.
+%
+%  Це НЕ завершена книга. Джерело тексту — власні редакторські картки
+%  editorial/cards/*.json зі статусом «чернетка». Читань цифрових
+%  свідків (GRETIL, SARIT) тут не відтворено: паспорт джерела дозволяє
+%  PDF лише для нашого власного внеску.
+%
+%  Складання:
+%    python3 scripts/build_pilot_book.py
+%    cd books/ashtavakra-hita-pilot && latexmk -xelatex main.tex
+%  або (без latexmk):
+%    xelatex main.tex && makeindex main.idx && xelatex main.tex && xelatex main.tex
+%
+%  Потрібні пакети: fontspec, polyglossia, geometry, hyperref, makeidx,
+%  longtable; шрифт DejaVu Serif (пакет fonts-dejavu-core).
+% =====================================================================
+\documentclass[10pt,a5paper,openany]{book}
+
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}[Ligatures=TeX]
+\setsansfont{DejaVu Sans}[Ligatures=TeX,Scale=MatchLowercase]
+\setmonofont{DejaVu Sans Mono}[Scale=MatchLowercase]
+
+\usepackage{polyglossia}
+\setdefaultlanguage{ukrainian}
+\setotherlanguage{english}
+
+\usepackage[a5paper,top=17mm,bottom=19mm,inner=17mm,outer=15mm,headsep=5mm]{geometry}
+\usepackage{longtable}
+\usepackage{makeidx}
+% hyperref вмикаємо лише тоді, коли в TeX Live є TFM pzdr (пакет
+% texlive-fonts-recommended). Без нього XeTeX-драйвер hyperref падає на
+% \XeTeXLinkBox, тому краще скласти PDF без закладок, ніж не скласти зовсім.
+\IfFileExists{pzdr.tfm}{\usepackage[hidelinks]{hyperref}}{}
+
+\makeindex
+
+% --- дрібні типографські зручності, без залежності від latex-extra -----
+\setlength{\parindent}{1.1em}
+\setlength{\parskip}{0pt}
+\renewcommand{\baselinestretch}{1.04}
+\clubpenalty=9000
+\widowpenalty=9000
+\brokenpenalty=3000
+% A5 з довгими IAST-композитами: без запасу на розтяг рядок «лопається».
+\tolerance=1500
+\emergencystretch=3em
+\hbadness=10000
+\vbadness=10000
+% Видання електронне й одностороннє: порожні сторінки від \cleardoublepage
+% (у \mainmatter і \backmatter) тут не потрібні.
+\let\cleardoublepage\clearpage
+
+% --- макроси одного вірша ---------------------------------------------
+% Верстка навмисно проста: жодного пакета поза texlive-latex-base,
+% texlive-latex-recommended і texlive-xetex, щоб збірка в CI була
+% відтворюваною без «магії».
+\newcommand{\virhead}[1]{%
+  \par\addvspace{1.5em}%
+  {\sffamily\bfseries\large Вірш~#1\par}%
+  \nopagebreak\addvspace{0.25em}}
+
+\long\def\virs#1#2{\virhead{#1}\noindent\textbf{Переклад.}~#2\par}
+\long\def\virlit#1{\addvspace{0.35em}\noindent\textit{Дослівно.}~#1\par}
+\long\def\virgram#1{%
+  \addvspace{0.4em}\noindent
+  {\sffamily\footnotesize\textbf{Граматичний розбір.}}~%
+  {\footnotesize\raggedright #1\par}}
+\long\def\vircom#1{\addvspace{0.4em}\noindent\textbf{Коментар.}~#1\par}
+\long\def\virvars#1{%
+  \addvspace{0.4em}\noindent
+  {\sffamily\footnotesize\textbf{Різночитання.}}\par
+  \nopagebreak\begin{quote}\footnotesize\raggedright
+  \setlength{\parskip}{0.25em}#1\end{quote}}
+\long\def\virvaritem#1#2{\noindent\textit{#1}: #2\par}
+\long\def\virvarnone#1{%
+  \addvspace{0.4em}\noindent
+  {\sffamily\footnotesize\textbf{Різночитання.}}~{\footnotesize\raggedright #1\par}}
+\long\def\virsources#1#2{%
+  \addvspace{0.3em}\noindent
+  {\sffamily\footnotesize\textbf{Свідки (лише покажчик, текст не відтворено).}}~%
+  {\footnotesize GRETIL \texttt{#1}; SARIT \texttt{#2}.}\par
+  \addvspace{0.3em}\hrule\relax\vspace{0.1em}}
+
+\newcommand{\pilotchapter}[2]{%
+  \chapter*{Глава~#1}%
+  \addcontentsline{toc}{chapter}{Глава~#1}%
+  \markboth{Глава~#1}{Глава~#1}%
+  \noindent{\sffamily\small У пілоті зверстано #2 карток цієї глави.\par}%
+  \addvspace{0.4em}}
+
+\begin{document}
+
+% =====================================================================
+%  ТИТУЛ
+% =====================================================================
+\begin{titlepage}
+\centering
+\vspace*{2.0cm}
+
+{\sffamily\Large АШТАВАКРА-ҐІТА\par}
+\vspace{0.6em}
+{\sffamily\small Aṣṭāvakragītā\par}
+
+\vspace{2.2cm}
+{\sffamily\bfseries\large РОБОЧЕ ПІЛОТНЕ ВИДАННЯ\par}
+\vspace{0.5em}
+{\sffamily Глави 2–14 і 19. Власні редакторські картки\par}
+
+\vspace{2.4cm}
+\begin{minipage}{0.86\textwidth}
+\small\raggedright
+\textbf{Це не завершена книга і не академічне видання.}
+
+\vspace{0.5em}
+Це \emph{робоче пілотне видання}: воно показує, що верстальна машина
+працює і що з наявного матеріалу вже можна скласти PDF. Книги як такої
+в репозиторії немає.
+
+\vspace{0.5em}
+Усі редакторські картки, з яких зібрано цей текст, мають статус
+\textbf{«чернетка»}. Жодна з них не позначена як рецензована, жодна не
+має підтвердженого аудиту прав. Санскритські читання цифрових свідків
+(GRETIL, SARIT) тут \textbf{не відтворено}.
+
+\vspace{0.5em}
+Не цитувати як переклад «Аштавакра-ґіти».
+\end{minipage}
+
+\vfill
+{\sffamily\footnotesize Електронне робоче видання. Не для продажу.\par}
+\end{titlepage}
+
+% =====================================================================
+%  ВИХІДНІ ДАНІ
+% =====================================================================
+\thispagestyle{empty}
+\vspace*{\fill}
+\begingroup\small
+\noindent\textbf{\sffamily Вихідні дані}
+
+\vspace{0.8em}
+\noindent
+\begin{tabular}{@{}p{0.34\textwidth}p{0.58\textwidth}@{}}
+\textsf{Назва} & Аштавакра-ґіта (Aṣṭāvakragītā). Робоче пілотне видання \\[0.3em]
+\textsf{Зміст} & Глави 2–14 і 19 (113 віршів): український переклад, дослівне значення,
+граматичний розбір, коментар, примітки про різночитання \\[0.3em]
+\textsf{Первісний твір} & санскритська поема; за наявними даними —
+суспільне надбання через вік \\[0.3em]
+\textsf{Джерело нашого тексту} & власні редакторські картки
+\texttt{editorial/}\allowbreak\texttt{cards/*.json} \\[0.3em]
+\textsf{Статус карток} & «чернетка» — усі, без винятків \\[0.3em]
+\textsf{Укладач} & редакція проєкту \texttt{juv4uk/ukrainian-books} \\[0.3em]
+\textsf{Ліцензія власного внеску} & «ВОЛЬНІСТЬ» \\[0.3em]
+\textsf{Тип видання} & робочий пілот, електронний, не для продажу \\[0.3em]
+\textsf{Складання} & XeLaTeX, шрифт DejaVu Serif \\[0.3em]
+\end{tabular}
+
+\vspace{1.2em}
+\noindent\footnotesize
+Правовий статус матеріалів описано в \texttt{COPYRIGHT\_}\allowbreak\texttt{AND\_}\allowbreak\texttt{SOURCES.md},
+видавничий висновок — у \texttt{docs/}\allowbreak\texttt{VYDAVNYCHYI\_}\allowbreak\texttt{VYSNOVOK.md}. Цей PDF не є
+юридичним висновком і не є доказом правової чистоти.
+\endgroup
+\vspace*{\fill}
+
+% =====================================================================
+%  ПЕРЕДМОВА
+% =====================================================================
+\frontmatter
+\pagestyle{headings}
+\tableofcontents
+\clearpage
+\chapter*{Передмова}
+\addcontentsline{toc}{chapter}{Передмова}
+\markboth{Передмова}{Передмова}
+
+Це \textbf{робоче пілотне видання}, а не книга. Мета одна: довести, що
+верстальна машина справді складає український PDF із кирилицею та діакритикою
+IAST, і показати, скільки власного матеріалу вже придатно до верстки.
+
+\section*{Що тут зверстано}
+
+Зверстано всі глави, де редакторські картки покривають \emph{кожен} вірш
+реєстру без пропусків: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 і 19.
+Це 113 віршів із 298 — усе, що на 31.10.2026 можна зверстати, не вигадуючи
+тексту. Решта шість глав покриті частково або не покриті зовсім.
+Кожен вірш подано нашим власним внеском: українським перекладом, дослівним
+значенням, граматичним розбором, коментарем і примітками про різночитання.
+
+\section*{Чого тут немає}
+
+Санскритського тексту віршів. Поля \texttt{sanskrit} і \texttt{iast} у картках
+відтворюють читання цифрових транскрипцій GRETIL (CC BY-NC-SA 4.0) і SARIT
+(CC BY-SA 3.0). Паспорт джерела дозволяє PDF лише для нашого власного внеску,
+тому в пілоті залишено \emph{покажчик} на свідка (локатор вірша), а не його
+текст. Це не технічне обмеження, а свідоме редакційне рішення; відкрите
+правове питання описано у видавничому висновку.
+
+Так само немає тут рецензії: усі 206 карток мають статус «чернетка»,
+незалежного рецензента не залучено, санскритологічної вичитки не проведено.
+Переклади й коментарі в цьому PDF — робочі, не вивірені.
+
+\section*{Як це складається}
+
+Текст генерується з карток скриптом \texttt{scripts/}\allowbreak\texttt{build\_}\allowbreak\texttt{pilot\_}\allowbreak\texttt{book.py},
+а не пишеться руками. PDF складає XeLaTeX. Якщо картка зміниться, PDF
+зміниться сам; якщо зміниться статус картки, скрипт зупиниться й попросить
+переглянути пілот. Деталі — у \texttt{docs/}\allowbreak\texttt{BOOK\_}\allowbreak\texttt{PDF\_}\allowbreak\texttt{MACHINE.md}.
+
+\mainmatter
+\input{generated/verses.tex}
+
+% =====================================================================
+%  АПАРАТ
+% =====================================================================
+\backmatter
+\chapter*{Покажчик термінів}
+\addcontentsline{toc}{chapter}{Покажчик термінів}
+\markboth{Покажчик термінів}{Покажчик термінів}
+\printindex
+
+\chapter*{Словник термінів}
+\addcontentsline{toc}{chapter}{Словник термінів}
+\markboth{Словник термінів}{Словник термінів}
+\noindent{\sffamily\small Робочі відповідники з \texttt{editorial/}\allowbreak\texttt{GLOSSARY.md}.
+Вони підлягають санскритологічній і літературній перевірці; це не
+нормативний словник.}
+
+\vspace{0.8em}
+\input{generated/glossary.tex}
+
+\chapter*{Джерела й межі цього видання}
+\addcontentsline{toc}{chapter}{Джерела й межі цього видання}
+\markboth{Джерела й межі}{Джерела й межі}
+
+\noindent\textbf{\sffamily Що є джерелом нашого тексту.}
+Власні редакторські картки \texttt{editorial/}\allowbreak\texttt{cards/*.json}: поля
+\texttt{ukrainian\_translation}, \texttt{literal\_meaning}, \texttt{grammar},
+\texttt{commentary} і \texttt{variants}. Це наш авторський внесок під
+ліцензією «ВОЛЬНІСТЬ».
+
+\vspace{0.6em}
+\noindent\textbf{\sffamily Що ми не відтворюємо.}
+Транскрипції GRETIL і SARIT, їхню розмітку та редакторський апарат. Локатори
+(\texttt{Avg\_2.1}, \texttt{verse\_2.1}) подано як покажчик для звірки.
+
+\vspace{0.6em}
+\noindent\textbf{\sffamily Чого ми не стверджуємо.}
+Що це критичне видання. Що переклад вивірений. Що коментар рецензований. Що
+права на всі використані матеріали остаточно з'ясовані.
+
+\vspace{0.6em}
+\noindent\textbf{\sffamily Статус.}
+Робоче пілотне видання. Картки — «чернетка». Незалежної рецензії немає.
+
+\end{document}
