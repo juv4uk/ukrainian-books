@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "7.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_7.4",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_7.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nātmā bhāveṣu no bhāvastatrānante nirañjane| ityasakto+aspṛhaḥ śānta etadevāhamāsthitaḥ||7|4||",
+  "iast": "nātmā bhāveṣu no bhāvas tatrānante nirañjane | ity asakto 'spṛhaḥ śānta etad evāham āsthitaḥ ||",
+  "grammar": "na ātmā bhāveṣu («Я не в станах [буття]») na u bhāvaḥ («і не стан — [те, що] там») tatra anante nirañjane («там, у безмежному, незаплямленому») | iti («так») asaktaḥ («неприв'язаний») aspṛhaḥ («без спраги») śāntaḥ («втихлий») etat eva aham āsthitaḥ.",
+  "literal_meaning": "«Я не в станах буття, і стан — не там, у безмежному, незаплямленому. Так — неприв'язаний, без спраги, втихлий — саме в цьому я стою.»",
+  "ukrainian_translation": "Я не в станах буття, і стан — не там, у безмежному, незаплямленому. Так — неприв'язаний, без спраги, втихлий — саме в цьому я стою.",
+  "commentary": "Вірш навмисно важкий: заперечуються обидві сторони — і `ātman` як один зі `bhāva`, і `bhāva` як те, що перебуває в безмежному. Це не заклик, а **усунення альтернативи**, і спрощувати його в перекладі не можна. `nirañjana` — той самий епітет, що в 1.15 і 2.15: незаплямленість тут не метафора чистоти, а вказівка на відсутність того, до чого можна приліпитися.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
