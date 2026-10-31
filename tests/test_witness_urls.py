@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -134,6 +136,38 @@ class WitnessUrlsTests(unittest.TestCase):
             result = module.audit(Path(root) / "does-not-exist")
         self.assertEqual(result["cards"], 0)
         self.assertEqual(result["status"], "ok")
+
+    def test_require_cards_on_missing_folder(self):
+        with tempfile.TemporaryDirectory() as root:
+            result = module.audit(Path(root) / "none", require_cards=True)
+        self.assertEqual(result["status"], "failed")
+        self.assertEqual(result["cards"], 0)
+        self.assertTrue(any("жодної" in err for err in result["errors"]))
+
+    def test_require_cards_on_empty_folder(self):
+        with tempfile.TemporaryDirectory() as root:
+            result = module.audit(Path(root), require_cards=True)
+        self.assertEqual(result["status"], "failed")
+        self.assertEqual(result["cards"], 0)
+
+    def test_require_cards_on_valid_folder(self):
+        with tempfile.TemporaryDirectory() as root:
+            folder = Path(root)
+            (folder / "1.2.json").write_text(json.dumps({"sources": {
+                "gretil": {"url": GRETIL}, "sarit": {"url": SARIT_PINNED}}}), encoding="utf-8")
+            result = module.audit(folder, require_cards=True)
+        self.assertEqual(result["status"], "ok")
+        self.assertEqual(result["cards"], 1)
+        self.assertEqual(result["errors"], [])
+
+    def test_cli_require_cards_returns_failure(self):
+        with tempfile.TemporaryDirectory() as root:
+            cmd = [sys.executable, str(SCRIPT), "--cards", root, "--require-cards"]
+            process = subprocess.run(cmd, text=True, capture_output=True, check=False)
+            report = json.loads(process.stdout)
+        self.assertEqual(process.returncode, 1)
+        self.assertEqual(report["status"], "failed")
+        self.assertEqual(report["cards"], 0)
 
     def test_valid_cards_and_warnings(self):
         with tempfile.TemporaryDirectory() as root:
