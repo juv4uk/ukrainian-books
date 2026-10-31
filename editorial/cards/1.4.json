@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "1.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.4",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yadi dehaṃ pṛthakkṛtya citi viśrāmya tiṣṭhasi | adhunaiva sukhī śānto bandhamukto bhaviṣyasi ||",
+  "iast": "yadi dehaṃ pṛthakkṛtya citi viśrāmya tiṣṭhasi | adhunaiva sukhī śānto bandhamukto bhaviṣyasi ||",
+  "grammar": "yadi («якщо») відкриває умову, що замикається на bhaviṣyasi (2 sg. fut. bhū- «будеш»). Два дієприслівники на -ya: pṛthakkṛtya (від pṛthak-kṛ «відокремивши») і viśrāmya (від vi-śram «спочивши»). deham (m. acc. sg. «тіло») — прямий додаток до pṛthakkṛtya. citi (f. loc. sg. від cit) — «у cit», місце спочинку. tiṣṭhasi (2 sg. pres. sthā «стоїш»). adhunaiva = adhunā + eva: «вже зараз», підсилювальна частка eva. Три nom. sg. чоловічого роду як присудкові іменники: sukhī («щасливий»), śāntaḥ («умиротворений»), bandhamuktaḥ (bahuvrīhi «вільний від уз»).",
+  "literal_meaning": "«Якщо тіло відокремивши, у cit спочивши, стоїш — вже зараз щасливий, умиротворений, вільний від уз будеш.» Дослівно: «Якщо, відокремивши тіло, ти стоїш, спочивши в cit, — то вже зараз ти будеш щасливий, умиротворений, вільний від уз».",
+  "ukrainian_translation": "Якщо, відокремивши тіло, ти стоїш, спочивши в cit, — то вже зараз ти будеш щасливий, умиротворений, вільний від уз.",
+  "commentary": "Вірш дає не обіцянку на майбутнє, а умову з негайним наслідком: adhunaiva — «вже зараз», і саме це слово є смисловим центром. Майбутній час (bhaviṣyasi) тут не відсуває результат, а означає, що стан настане як прямий наслідок умови, а не через поступовий шлях. Умова потрійна: pṛthakkṛtya (відокремити тіло), viśrāmya citi (спочити в cit), tiṣṭhasi (перебувати). Три дієслова описують не дію, а спосіб стояння. citi — локатив від cit, тобто «у cit», а не «на cit»: це місце, у якому спочивають, а не об'єкт, який досягають. bandhamuktaḥ — bahuvrīhi, «той, у кого узи відпали», а не «той, кого звільнили»: суб'єкт не зазнає дії ззовні.",
+  "variants": [
+    {
+      "witness": "SARIT (перевірено) проти GRETIL (НЕ перевірено)",
+      "note": "GRETIL із цього середовища недосяжний (HTTP 000), тому звірено лише за SARIT. Відсутність запису означає НЕ ПЕРЕВІРЕНО, а не «збігається».",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрова транскрипція SARIT має власні умови (CC BY-SA 3.0, availability restricted); її редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
