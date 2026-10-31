@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "2.21",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.21",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.21",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "aho janasamūhe 'pi na dvaitaṃ paśyato mama | araṇyam iva saṃvṛttaṃ kva ratiṃ karavāṇy aham ||",
+  "iast": "aho janasamūhe 'pi na dvaitaṃ paśyato mama | araṇyam iva saṃvṛttaṃ kva ratiṃ karavāṇy aham ||",
+  "grammar": "aho (вигук) janasamūhe (m. loc. sg. «у скупченні людей, у натовпі») api («навіть»). na («не») dvaitam (n. acc. sg. «двоїстість») paśyataḥ (gen. sg. дієприкметника теперішнього часу dṛś- «того, хто бачить», узгодженого з mama) mama (gen. sg. «мене»). araṇyam (n. nom. sg. «ліс») iva («як») saṃvṛttam (n. nom. sg. дієприкметника минулого часу saṃ-vṛt «стало»). kva («де») ratim (f. acc. sg. «втіху, насолоду») karavāṇi (1 sg. opt./conj. kṛ- «мені робити»; питальна конструкція з kva). aham (nom. sg.).",
+  "literal_meaning": "«О диво! Навіть у натовпі, коли я не бачу двоїстості, [усе] стало як ліс. Де ж мені знайти втіху?»",
+  "ukrainian_translation": "О диво! Навіть у натовпі, коли я не бачу двоїстості, все стає як ліс. Де ж мені шукати втіхи?",
+  "commentary": "Парадокс подвійний. Перший: натовп для того, хто не бачить двоїстості, — те саме, що ліс, тобто самотність не залежить від людей навколо. Другий, і він тонший: питання kva ratiṃ karavāṇi («де мені знайти втіху») поставлене там, де втіху вже ніде шукати, бо поділу немає. Це не скарга, а риторичне питання, що закриває можливість відповіді. Форма optativus karavāṇi («мені б робити») додає відтінку роздуму, а не бажання. Зверни увагу: слово rati («втіха») — те саме, що в 15.2 у складі vaiṣayiko rasaḥ («смак до чуттєвого»); тут воно вжите без засудження, але й без місця, куди його покласти.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -15,8 +15,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Перевірити структуру і ліцензію
         run: python3 scripts/check_project.py
+      - name: Перевірити локальні зображення Markdown на синтетичних даних
+        run: python3 -m unittest discover -s tests -p 'test_check_project_image_links.py' -v
       - name: Перевірити дублювання карток за номером вірша
         run: python3 scripts/check_duplicate_cards.py --strict
+      - name: Негативні перевірки пошуку дублів (штучний дубль мусить ловитися)
+        run: python3 -m unittest discover -s tests -p 'test_duplicate_cards.py' -v
       - name: Перевірити незмінність «ВОЛЬНОСТІ» за канонічним хешем
         run: python3 scripts/check_license.py
       - name: Негативні перевірки контролю ліцензії

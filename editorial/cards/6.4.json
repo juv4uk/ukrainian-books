@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "6.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_6.4",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_6.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ahaṃ vā sarvabhūteṣu sarvabhūtāny atho mayi | iti jñānaṃ tathaitasya na tyāgo na graho layaḥ ||",
+  "iast": "ahaṃ vā sarvabhūteṣu sarvabhūtāny atho mayi | iti jñānaṃ tathaitasya na tyāgo na graho layaḥ ||",
+  "grammar": "aham (nom. sg.) vā («або ж; також») sarvabhūteṣu (n. loc. pl. «у всіх істотах»). sarvabhūtāni (n. nom. pl.) atho («а також, потім») mayi (loc. sg. «у мені»). iti jñānaṃ tathā etasya na tyāgaḥ na grahaḥ layaḥ.",
+  "literal_meaning": "«Я — у всіх істотах, а всі істоти — у мені. Таке знання — і в нього немає ні відкидання, ні взяття, ні розчинення.»",
+  "ukrainian_translation": "Я — у всіх істотах, а всі істоти — у мені. Таке знання — і в нього немає ні відкидання, ні взяття, ні розчинення.",
+  "commentary": "Двозмінна формула та сама, що в 3.5, і тут вона завершує главу. Після трьох порівнянь (простір, океан, перламутр) висновок поданий без образу взагалі — лише відношення. atho («а також») з'єднує два напрямки так, що вони не зливаються в один: я в істотах і істоти в мені — не те саме твердження, прочитане двічі, а два боки одного відношення. Саме тому рефрен знову заперечує tyāga і graha: у такому відношенні немає нічого, що можна було б узяти або відкинути. РЕФРЕН ГЛАВИ. Усі чотири вірші глави 6 закінчуються однаково: iti jñānaṃ tathaitasya na tyāgo na graho layaḥ («таке знання — і в нього немає ні відкидання, ні взяття, ні розчинення»). Зверни увагу: рефрен глави 5 вимагав laya («йди до розчинення»), а рефрен глави 6 заперечує навіть laya. Це не суперечність, а наступний крок: спершу розчинення як те, до чого йдуть, потім — знання, у якому немає кому йти й нічого розчиняти. Главу слід читати як одне ціле.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
