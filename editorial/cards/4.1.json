@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "4.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_4.1",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_4.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "hantātmajñasya dhīrasya khelato bhogalīlayā | na hi saṃsāravāhīkair mūḍhaiḥ saha samānatā ||",
+  "iast": "hantātmajñasya dhīrasya khelato bhogalīlayā | na hi saṃsāravāhīkair mūḍhaiḥ saha samānatā ||",
+  "grammar": "hanta (вигук «о!, ну ж!») ātmajñasya (m. gen. sg. «того, хто знає Атман») dhīrasya (m. gen. sg. «мудрого, стійкого»). khelataḥ (m. gen. sg. дієприкметника теперішнього часу khel «того, хто грається»). bhogalīlayā (f. instr. sg. «грою досвідів, грою в насолоди»: bhoga «досвід, насолода» + līlā «гра»). na hi («адже немає») saṃsāravāhīkaiḥ (m. instr. pl. «з тими, хто тягне сансару»: saṃsāra + vāhīka «той, хто везе, тягне, погонич») mūḍhaiḥ (m. instr. pl. «з дурнями, затьмареними») saha («разом з») samānatā (f. nom. sg. «рівність, однаковість»).",
+  "literal_meaning": "«О! Атмазнавця, мудрого, що грається грою досвідів, — немає рівності з дурнями, що тягнуть сансару.»",
+  "ukrainian_translation": "О! Атмазнавцеві, мудрому, що грається грою досвідів, немає рівні з дурнями, які тягнуть сансару.",
+  "commentary": "Слово vāhīka («погонич, той, хто везе») вибране точно: сансара тут не стан, у якому перебувають, а вантаж, який тягнуть. Дурість полягає не в незнанні, а в тому, що людина впряглася. Протиставлення будується на двох способах дії: khelataḥ («того, хто грається») і vāhīkaiḥ («тих, хто тягне»). Те саме діяння, різна якість. līlā («гра») — слово з релігійної мови, де гра не протистоїть серйозності, а означає дію без потреби. Вигук hanta на початку задає тон подиву, а не докору.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
