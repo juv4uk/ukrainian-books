@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "13.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_13.4",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_13.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "karmanaiṣkarmyanirbandhabhāvā dehasthayoginaḥ | saṃyogāyogavirahād aham āse yathāsukham ||",
+  "iast": "karmanaiṣkarmyanirbandhabhāvā dehasthayoginaḥ | saṃyogāyogavirahād aham āse yathāsukham ||",
+  "grammar": "karma-naiskarmya-nirbandha-bhāvāḥ (m. nom. pl. «стани, змушені до дії-й-недії»: karma «дія» + naiskarmya «недіяння» + nirbandha «змушування, наполягання» + bhāva «стан») dehasthayoginaḥ (m. gen. sg. «у йога, що перебуває в тілі»: deha «тіло» + stha «той, що стоїть» + yogin). saṃyoga-ayoga-virahāt (m. abl. sg. «через відсутність з'єднання й роз'єднання»: saṃyoga «з'єднання» + ayoga «роз'єднання» + viraha «розлука, відсутність») aham āse yathāsukham.",
+  "literal_meaning": "«У йога, що перебуває в тілі, [є] стани, змушені [до] дії-й-недії; через відсутність з'єднання й роз'єднання я сиджу, як мені завгодно.»",
+  "ukrainian_translation": "У йога, що перебуває в тілі, є стани, до яких його змушують дія й недіяння; та через відсутність з'єднання й роз'єднання я сиджу, як мені завгодно.",
+  "commentary": "Слово nirbandha («змушування») — ключове: доки є тіло, є й примус то до дії, то до недіяння, і жоден вибір не вільний. saṃyoga / ayoga («з'єднання» / «роз'єднання») — пара з мови йоги, де з'єднання зазвичай означає зв'язок з об'єктом; тут відкидається сама можливість такого зв'язку. Зверни увагу на порядок: спершу визнано примус (він є), потім названо те, чого немає (з'єднання). Вірш не обіцяє свободи від тіла — лише від рахунку. РЕФРЕН ГЛАВИ. Шість із семи віршів (13.1, 13.3–13.7) закінчуються однаково: aham āse yathāsukham («я сиджу — як мені завгодно»). ās — не «бути», а саме СИДІТИ, перебувати на місці; yathāsukham — «як зручно, за бажанням». Разом це формула, яка скасовує будь-яку поставу як вимогу: не треба ні стояти, ні лежати правильно. 13.2 — єдиний вірш глави без цього рефрену, і його треба читати окремо.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

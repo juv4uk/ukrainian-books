@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "3.11",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_3.11",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_3.11",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "māyāmātram idaṃ viśvaṃ paśyan vigatakautukaḥ | api sannihite mṛtyau kathaṃ trasyati dhīradhīḥ ||",
+  "iast": "māyāmātram idaṃ viśvaṃ paśyan vigatakautukaḥ | api sannihite mṛtyau kathaṃ trasyati dhīradhīḥ ||",
+  "grammar": "māyāmātram (n. nom. sg. «лише мая, не більше ніж мая»: māyā «мана, ілюзія» + mātra «лише») idam (n. nom. sg.) viśvam (n. nom. sg.). paśyan (m. nom. sg. дієприкметника теперішнього часу dṛś «бачачи») vigatakautukaḥ (bahuvrīhi «той, у кого минула цікавість»: vi-gata «минулий» + kautuka «цікавість, охота, святковість»). api («навіть») sannihite (m. loc. sg. дієприкметника sam-ni-dhā «присутній, близький») mṛtyau (m. loc. sg. «смерть»; locativus absolutus «коли смерть прийшла»). katham («як?») trasyati (3 sg. pr. tras «лякається, тремтить») dhīradhīḥ (bahuvrīhi «чий розум стійкий»: dhīra «стійкий» + dhī «розум»).",
+  "literal_meaning": "«Бачачи, що весь цей світ — лише мая, [і] втративши цікавість, — навіть коли смерть уже прийшла, як злякався б той, чий розум стійкий?»",
+  "ukrainian_translation": "Бачачи, що весь цей світ — тільки мая, і втративши до нього охоту, — навіть коли смерть уже поруч, як злякався б той, чий розум стійкий?",
+  "commentary": "Слово kautuka тут важить більше, ніж здається: це не просто «цікавість», а охота до святкового, потяг до видовища. Тобто йдеться не про втрату знань, а про втрату інтересу до гри. locativus absolutus sannihite mṛtyau («коли смерть присутня») ставить умову максимально жорстко: не «якось колись», а тут і тепер. dhīradhīḥ («чий розум стійкий») — не «хоробрий»: стійкість розуму, а не безстрашність характеру. Питання katham знову риторичне, як у 3.3 і 3.10 — глава послідовно закриває питання питаннями.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

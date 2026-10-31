@@ -1,0 +1,21 @@
+name: JSON-картки — унікальність ключів
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unique-json:
+    name: Повторені JSON-ключі й синтетичні тести
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Запустити негативні та позитивні тести
+        run: python3 -m unittest discover -s tests -p 'test_json_unique_keys.py' -v
+      - name: Заборонити повторені ключі в редакторських JSON
+        run: python3 scripts/check_json_unique_keys.py
+      - name: Перевірити структуру та ліцензію
+        run: python3 scripts/check_project.py

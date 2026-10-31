@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "13.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_13.2",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_13.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kutrāpi khedaḥ kāyasya jihvā kutrāpi khidyate | manaḥ kutrāpi tat tyaktvā puruṣārthe sthitaḥ sukham ||",
+  "iast": "kutrāpi khedaḥ kāyasya jihvā kutrāpi khidyate | manaḥ kutrāpi tat tyaktvā puruṣārthe sthitaḥ sukham ||",
+  "grammar": "kutrāpi («десь, у чомусь») khedaḥ (m. nom. sg. «втома, стомленість, докука») kāyasya (m. gen. sg. «тіла»). jihvā (f. nom. sg. «язик, мова») kutrāpi khidyate (3 sg. pr. pass. khid «втомлюється, знемагає»). manaḥ (n. nom. sg. «розум») kutrāpi. tat (n. acc. sg. «те») tyaktvā (герунд tyaj «відкинувши») puruṣārthe (m. loc. sg. «у меті людини»: puruṣa «людина» + artha «мета»; чотири мети — дгарма, користь, бажання, визволення) sthitaḥ (m. nom. sg. «той, хто стоїть») sukham (n. nom./acc. sg. «щасливо, зручно»).",
+  "literal_meaning": "«Десь [є] втома тіла, десь втомлюється язик, десь розум — відкинувши це, [я] стою в меті людини, щасливо.»",
+  "ukrainian_translation": "Десь втомлюється тіло, десь втомлюється язик, десь розум — відкинувши це, я стою в меті людини, щасливо.",
+  "commentary": "ЄДИНИЙ вірш глави без рефрену aham āse yathāsukham, і це не випадково: тут ідеться не про те, як сидіти, а про те, ЩО втомлюється. Три рівні названі поспіль — тіло, язик, розум — і кожен втомлюється «десь», тобто не завжди й не однаково. Слово kheda («втома») м'якше за duḥkha («страждання») з глави 8: це не біль, а зношування. puruṣārtha («мета людини») вжите в однині, хоч традиційно їх чотири, — тобто йдеться не про вибір між ними, а про те, що всі вони вже не потрібні.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

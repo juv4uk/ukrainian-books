@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.6",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yathaivekṣurase kḷptā tena vyāptaiva śarkarā| tathā viśvaṃ mayi kḷptaṃ mayā vyāptaṃ nirantaram||2|6||",
+  "iast": "yathaivekṣurase kḷptā tena vyāptaiva śarkarā | tathā viśvaṃ mayi kḷptaṃ mayā vyāptaṃ nirantaram ||",
+  "grammar": "yathā…tathā (корелятивна пара) iva (порівняльна частка) ikṣu-rase (m. loc. sg. «у соці цукрової тростини») kḷptā (f. nom. sg. «вкладена, влаштована») tena (n. instr. sg. «ним») vyāptā (f. nom. sg. «просякнута») iva śarkarā (f. nom. sg. «цукор») | tathā viśvam (n. nom. sg.) mayi (loc. sg. «у мені») kḷptam mayā (instr. sg.) vyāptam nirantaram (adv. «безперервно»).",
+  "literal_meaning": "«Як у соці тростини вкладений і ним просякнутий цукор, так світ у мені вкладений і мною просякнутий безперервно.»",
+  "ukrainian_translation": "Як цукор уже вкладений у сік цукрової тростини й просякнутий ним, так і світ вкладений у мене й просякнутий мною безперервно.",
+  "commentary": "Образ працює не на «створенні», а на присутності: цукор не доданий до соку — він у ньому вже є, і окремо його не видно. Ключове слово — kḷpta («вкладений, влаштований»), а не sṛṣṭa («створений»); підміна змінила б думку з «світ у мені влаштований» на «світ мною зроблений». Тому в перекладі немає слова «створений».",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

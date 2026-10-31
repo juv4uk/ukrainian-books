@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "5.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_5.3",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_5.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "pratyakṣam apy avastutvād viśvaṃ nāsty amale tvayi | rajjusarpa iva vyaktam evam eva layaṃ vraja ||",
+  "iast": "pratyakṣam apy avastutvād viśvaṃ nāsty amale tvayi | rajjusarpa iva vyaktam evam eva layaṃ vraja ||",
+  "grammar": "pratyakṣam (n. nom./acc. sg. «очевидне, те, що перед очима») api («хоч»). avastutvāt (n. abl. sg. «через несуттєвість, через відсутність речі»: a-vastu «не-річ» + -tva). viśvam (n. nom. sg.) na asti («не існує») amale (m. loc. sg. «у незаплямованому») tvayi (loc. sg. «у тобі»). rajjusarpaḥ (m. nom. sg. «змій у мотузці»: rajju «мотузка» + sarpa «змій») iva vyaktam (n. nom./acc. sg. «явно, чітко»). evam eva layam vraja.",
+  "literal_meaning": "«Хоч світ і перед очима, він не існує в тобі, незаплямованому, — через несуттєвість, як змій у мотузці, явно. Так само йди до розчинення.»",
+  "ukrainian_translation": "Хоч світ і перед очима, він не існує в тобі, незаплямованому, — бо він не річ, як змій у мотузці, явно. Так само йди до розчинення.",
+  "commentary": "Найсильніше тут — avastutvāt («через несуттєвість»). Це не «світ оманливий», а точніше: світ не є vastu, річчю, самостійною сутністю. pratyakṣam api («хоч і перед очима») визнає видимість повністю — вірш не заперечує, що ми бачимо. Заперечується лише те, що видиме має власне буття. Змій у мотузці (той самий приклад, що в 2.9) поданий тут з vyaktam («явно»): помилка не тьмяна, вона гранично чітка — і саме тому переконлива. РЕФРЕН ГЛАВИ. Усі чотири вірші глави 5 закінчуються однаково: evam eva layaṃ vraja («так само йди до розчинення»). Це не чотири окремі повчання, а одна літанія з незмінним приспівом: змінюється тільки перша половина — обґрунтування, а висновок лишається той самий. Тому главу слід читати як одне ціле.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
