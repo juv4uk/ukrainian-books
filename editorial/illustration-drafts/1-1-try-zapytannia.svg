@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="art-title art-desc">
+  <title id="art-title">Три запитання Джанаки — схема до «Аштавакра-ґіти» 1.1</title>
+  <desc id="art-desc">Три окремі запитання — як здобувається знання, як настає визволення та як досягається безсторонність — спрямовані тонкими лініями до великого знака питання. Знак не містить готової відповіді.</desc>
+  <rect width="1200" height="660" fill="#F8F4E9"/>
+  <rect x="22" y="22" width="1156" height="616" rx="18" fill="none" stroke="#344D57" stroke-width="3"/>
+  <path d="M44 66 h54 m-27 -25 v50 M1156 66 h-54 m27 -25 v50 M44 594 h54 m-27 -25 v50 M1156 594 h-54 m27 -25 v50" fill="none" stroke="#BA7D55" stroke-width="2" opacity="0.7"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif" text-anchor="middle" fill="#253E48">
+    <text x="600" y="85" font-size="33" font-weight="bold">Три запитання Джанаки</text>
+    <text x="600" y="118" font-size="17" fill="#596E74">Аштавакра-ґіта · вірш 1.1 · образ першої розмови</text>
+  </g>
+  <g>
+    <rect x="65" y="158" width="330" height="184" rx="18" fill="#EFF2EA" stroke="#51716C" stroke-width="3"/>
+    <rect x="435" y="158" width="330" height="184" rx="18" fill="#EEF2F7" stroke="#546D91" stroke-width="3"/>
+    <rect x="805" y="158" width="330" height="184" rx="18" fill="#F9EFE7" stroke="#B77F5C" stroke-width="3"/>
+  </g>
+  <g font-family="DejaVu Sans, Arial, sans-serif" text-anchor="middle" fill="#263F49">
+    <circle cx="230" cy="194" r="18" fill="#51716C"/><text x="230" y="201" font-size="18" font-weight="bold" fill="white">1</text>
+    <text x="230" y="242" font-size="20" font-weight="bold">ЗНАННЯ</text>
+    <text x="230" y="281" font-size="17"><tspan x="230">Як здобувається</tspan><tspan x="230" dy="25">знання?</tspan></text>
+    <circle cx="600" cy="194" r="18" fill="#546D91"/><text x="600" y="201" font-size="18" font-weight="bold" fill="white">2</text>
+    <text x="600" y="242" font-size="20" font-weight="bold">ВИЗВОЛЕННЯ</text>
+    <text x="600" y="281" font-size="17"><tspan x="600">Як настає</tspan><tspan x="600" dy="25">визволення?</tspan></text>
+    <circle cx="970" cy="194" r="18" fill="#B77F5C"/><text x="970" y="201" font-size="18" font-weight="bold" fill="white">3</text>
+    <text x="970" y="242" font-size="20" font-weight="bold">БЕЗСТОРОННІСТЬ</text>
+    <text x="970" y="281" font-size="17"><tspan x="970">Як досягається</tspan><tspan x="970" dy="25">безсторонність?</tspan></text>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-width="4" stroke-dasharray="9 10">
+    <path d="M230 344 C230 431 418 452 563 477" stroke="#51716C"/>
+    <path d="M600 344 L600 469" stroke="#546D91"/>
+    <path d="M970 344 C970 431 782 452 637 477" stroke="#B77F5C"/>
+  </g>
+  <circle cx="600" cy="493" r="51" fill="#FFFFFF" stroke="#344D57" stroke-width="3"/>
+  <text x="600" y="518" font-family="DejaVu Sans, Arial, sans-serif" font-size="72" fill="#344D57" text-anchor="middle">?</text>
+  <text x="600" y="597" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#415962" text-anchor="middle">Це початок діалогу, а не готові відповіді.</text>
+</svg>
