@@ -42,6 +42,39 @@ class OverlapTests(unittest.TestCase):
         ]
         self.assertEqual(checker.overlaps(83, rows), [{"pr": 80, "paths": ["a", "b"]}])
 
+    def test_rename_old_path_collides(self):
+        rows = [
+            {"number": 100, "files": [{"filename": "cards/new.json",
+                                      "previous_filename": "cards/old.json",
+                                      "status": "renamed"}]},
+            {"number": 101, "files": [{"filename": "cards/old.json",
+                                      "status": "modified"}]},
+        ]
+        self.assertEqual(checker.overlaps(101, rows), [
+            {"pr": 100, "paths": ["cards/old.json"]}
+        ])
+
+    def test_rename_new_path_collides(self):
+        rows = [
+            {"number": 100, "files": [{"filename": "cards/new.json", "status": "added"}]},
+            {"number": 101, "files": [{"filename": "cards/new.json",
+                                      "previous_filename": "cards/old.json",
+                                      "status": "renamed"}]},
+        ]
+        self.assertEqual(checker.overlaps(101, rows), [
+            {"pr": 100, "paths": ["cards/new.json"]}
+        ])
+
+    def test_rename_without_valid_previous_path_fails_closed(self):
+        for bad in [None, "", 123, "bad\\npath"]:
+            rows = [{"number": 101, "files": [
+                {"filename": "cards/new.json", "status": "renamed",
+                 "previous_filename": bad}
+            ]}]
+            with self.subTest(previous_filename=bad):
+                with self.assertRaises(checker.AuditError):
+                    checker.overlaps(101, rows)
+
     def test_closed_pr_not_in_open_snapshot(self):
         self.assertEqual(checker.overlaps(58, [{"number": 58, "files": ["a"]}]), [])
 
