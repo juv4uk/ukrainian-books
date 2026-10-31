@@ -542,7 +542,7 @@ def run(pr_number: int, records: object, strict: bool) -> int:
 
 
 def emit_skip(pr_number: int, reason: str) -> int:
-    """Голосно позначити пропуск і не валити збірку.
+    """Голосно позначити пропуск і заблокувати неперевірене злиття.
 
     Пропуск — окремий стан, не «перетинів немає»: у JSON видно
     ``"status": "skipped"`` і причину.
@@ -552,8 +552,8 @@ def emit_skip(pr_number: int, reason: str) -> int:
         ensure_ascii=False, indent=2,
     ))
     print(reason)
-    print(f"::warning::{reason}")
-    return 0
+    print(f"::error::{reason}")
+    return 2
 
 
 def main(argv=None, *, opener=request.urlopen, sleep=time.sleep) -> int:
