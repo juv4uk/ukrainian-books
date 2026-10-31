@@ -51,6 +51,20 @@ class VerseTests(unittest.TestCase):
         self.assertEqual(row["очікувано_санскритських_рядків"], 2)
         self.assertEqual(row["наявно_позначених_рядків"], 0)
 
+    def test_existing_book_comment_label_is_accepted(self):
+        """Чинна книга використовує **Коментар.**, а не лише майбутню назву."""
+        existing = OLD.replace("**Науковий коментар.**", "**Коментар.**")
+        row = audit.audit_text(existing)[0]
+        self.assertFalse(row["немає_коментаря"])
+        self.assertEqual(row["стан"], "пошарово_за_віршем")
+
+    def test_line_layout_accepts_existing_comment_label(self):
+        """Визначення построковості не має залежати від назви коментаря."""
+        existing = GOOD.replace("**Науковий коментар.**", "**Коментар.**")
+        row = audit.audit_text(existing)[0]
+        self.assertFalse(row["немає_коментаря"])
+        self.assertEqual(row["стан"], "построково_за_формою")
+
     def test_two_complete_half_lines(self):
         row = audit.audit_text(GOOD)[0]
         self.assertEqual(row["стан"], "построково_за_формою")
