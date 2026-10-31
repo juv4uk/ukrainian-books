@@ -2,11 +2,15 @@
 
 from __future__ import annotations
 
+import contextlib
+import io
 import json
 import re
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -133,6 +137,55 @@ class TestVerstalnaMashyna(unittest.TestCase):
             sorted(manifest["witness_fields_excluded"]),
             sorted(builder.WITNESS_FIELDS),
         )
+
+    def test_manifest_is_byte_identical_after_repeated_generation(self):
+        """Два запуски з однаковими картками створюють той самий маніфест."""
+        card = {
+            "id": "2.1",
+            "status": "чернетка",
+            "ukrainian_translation": "Власний переклад",
+            "literal_meaning": "Дослівний сенс",
+            "grammar": "Граматика",
+            "commentary": "Власний коментар",
+        }
+        with tempfile.TemporaryDirectory() as folder, \
+                mock.patch.object(builder, "BOOK", Path(folder)), \
+                mock.patch.object(builder, "load_cards", return_value=[card]), \
+                mock.patch.object(builder, "load_glossary", return_value=[]), \
+                mock.patch.object(sys, "argv", ["build_pilot_book.py"]), \
+                contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(builder.main(), 0)
+            path = Path(folder) / "generated" / "manifest.json"
+            first = path.read_bytes()
+            self.assertEqual(builder.main(), 0)
+            second = path.read_bytes()
+            self.assertEqual(first, second)
+            self.assertNotIn("outdated_before_write", json.loads(second))
+            self.assertEqual(json.loads(second)["cards"], ["2.1"])
+
+    def test_check_with_report_never_writes_files(self):
+        """Навіть --check --report не має створювати файл звіту."""
+        card = {
+            "id": "2.1",
+            "status": "чернетка",
+            "ukrainian_translation": "Власний переклад",
+            "literal_meaning": "Дослівний сенс",
+            "grammar": "Граматика",
+            "commentary": "Власний коментар",
+        }
+        with tempfile.TemporaryDirectory() as folder:
+            book = Path(folder) / "book"
+            report = Path(folder) / "reports" / "audit.json"
+            with mock.patch.object(builder, "BOOK", book), \
+                    mock.patch.object(builder, "load_cards", return_value=[card]), \
+                    mock.patch.object(builder, "load_glossary", return_value=[]), \
+                    mock.patch.object(sys, "argv", [
+                        "build_pilot_book.py", "--check", "--report", str(report),
+                    ]), contextlib.redirect_stdout(io.StringIO()), \
+                    contextlib.redirect_stderr(io.StringIO()):
+                self.assertEqual(builder.main(), 1)
+            self.assertFalse(report.exists())
+            self.assertFalse(book.exists())
 
     def test_generated_files_carry_no_manual_edit_banner(self):
         text = (BOOK / "generated" / "verses.tex").read_text(encoding="utf-8")
