@@ -83,7 +83,7 @@ def inspect_url(witness: str, value: object) -> tuple[str | None, list[str]]:
     return "GRETIL: адреса не належить до задокументованих адрес конкретного твору", notes
 
 
-def audit(folder: Path) -> dict[str, object]:
+def audit(folder: Path, *, require_cards: bool = False) -> dict[str, object]:
     errors: list[str] = []
     warnings: list[str] = []
     count = 0
@@ -119,6 +119,8 @@ def audit(folder: Path) -> dict[str, object]:
                 if error:
                     errors.append(f"{name} / {witness}: {error}")
                 warnings.extend(f"{name} / {witness}: {note}" for note in notes)
+    if require_cards and count == 0:
+        errors.append("немає жодної JSON-картки: строгий режим вимагає непорожній корпус")
     return {
         "status": "failed" if errors else "ok",
         "cards": count,
@@ -131,8 +133,12 @@ def audit(folder: Path) -> dict[str, object]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--cards", type=Path, default=CARDS)
+    parser.add_argument(
+        "--require-cards", action="store_true",
+        help="помилка, якщо каталог карток відсутній або не містить жодного JSON",
+    )
     args = parser.parse_args()
-    result = audit(args.cards)
+    result = audit(args.cards, require_cards=args.require_cards)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0 if result["status"] == "ok" else 1
 
