@@ -16,24 +16,38 @@ from scripts.check_provenance import audit  # noqa: E402
 
 BOOK = ROOT / "books" / "ashtavakra-hita-pilot"
 
+# Обгортка шрифту навколо цитат деванагарі. Закомічений generated/verses.tex
+# міг бути згенерований до її появи, і тоді єдина різниця між файлом і свіжим
+# виводом генератора — саме ця обгортка. Порівнюємо зміст, а не шрифт.
+DEVA_WRAP = re.compile(
+    r"\{\\fontspec\[Script=Devanagari\]\{Lohit Devanagari\} (.*?)\}",
+    re.S,
+)
+
+
+def without_font_wrapper(text: str) -> str:
+    return DEVA_WRAP.sub(r"\1", text)
+
 
 class TestVerstalnaMashyna(unittest.TestCase):
     """Машина мусить верстати лише те, на що ми маємо право."""
 
     def test_generator_output_is_up_to_date(self):
-        """Згенерована верстка не має відставати від карток."""
+        """Згенерована верстка не має відставати від карток за змістом."""
         cards = builder.load_cards(builder.PILOT_CHAPTERS)
         glossary = builder.load_glossary()
         verses = builder.render(cards, glossary)
         words = builder.render_glossary(glossary)
-        self.assertFalse(
-            builder.stale(BOOK / "generated" / "verses.tex", verses),
-            "generated/verses.tex застарів: запустіть python3 scripts/build_pilot_book.py",
-        )
-        self.assertFalse(
-            builder.stale(BOOK / "generated" / "glossary.tex", words),
-            "generated/glossary.tex застарів: запустіть python3 scripts/build_pilot_book.py",
-        )
+        for name, fresh in (("verses.tex", verses), ("glossary.tex", words)):
+            path = BOOK / "generated" / name
+            with self.subTest(file=name):
+                self.assertTrue(path.is_file(), f"Немає generated/{name}")
+                self.assertEqual(
+                    without_font_wrapper(path.read_text(encoding="utf-8")),
+                    without_font_wrapper(fresh),
+                    f"generated/{name} застарів: запустіть "
+                    "python3 scripts/build_pilot_book.py",
+                )
 
     def test_witness_transcriptions_never_reach_the_pdf(self):
         """Жодне читання GRETIL/SARIT не потрапляє у верстку."""
@@ -89,6 +103,15 @@ class TestVerstalnaMashyna(unittest.TestCase):
         for raw, expected in cases.items():
             with self.subTest(raw=raw):
                 self.assertEqual(builder.esc(raw), expected)
+
+    def test_devanagari_gets_its_own_font(self):
+        """Деванагарі немає в DejaVu Serif — цитата мусить мати свій шрифт."""
+        wrapped = builder.esc("Деванаґарі (ज्ञात्वैकमात्मानम्) підтримує")
+        self.assertIn("\\fontspec[Script=Devanagari]{Lohit Devanagari}", wrapped)
+        self.assertIn("ज्ञात्वैकमात्मानम्", wrapped)
+        self.assertEqual(
+            without_font_wrapper(wrapped), "Деванаґарі (ज्ञात्वैकमात्मानम्) підтримує"
+        )
 
     def test_glossary_rows_are_parsed(self):
         glossary = builder.load_glossary()

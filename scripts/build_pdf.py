@@ -7,7 +7,7 @@ XeLaTeX (LuaTeX без luaotfload, а CTAN недоступний для tlmgr).
 
 Джерела — згенеровані файли книги:
   books/ashtavakra-gita/rozdil-N-naukove.md   (20 розділів, пʼять шарів)
-  books/ashtavakra-gita/poetychnyi-rozdil-N.md (20 розділів, поезія)
+  books/ashtavakra-gita/poetychnyi/rozdil-N.md (20 розділів, поезія)
   books/ashtavakra-gita/ZMIST.md
 """
 
@@ -15,9 +15,11 @@ import html
 import os
 import re
 import sys
+from pathlib import Path
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BOOK = os.path.join(ROOT, "books", "ashtavakra-gita")
+POETIC = os.path.join(BOOK, "poetychnyi")
 
 CSS = """
 @page {
@@ -115,14 +117,21 @@ def md_to_html(text: str, base: str, poetry: bool) -> str:
             quote.append("<p>" + inline(s.lstrip("> ").strip()) + "</p>")
             i += 1; continue
 
-        m = re.match(r"^(?:\*\*Ілюстрація\.\*\*\s+)?!\[(.*?)\]\((.*?)\)\s*(?:—\s*(.*))?$", s)
+        m = re.fullmatch(r"(?:\*\*Ілюстрація\.\*\*\s+)?!\[(.*?)\]\((.*?)\)\s*(?:—\s*(.*))?", s)
         if m:
             flush_para(); flush_quote()
             alt, src, caption = m.group(1), m.group(2), (m.group(3) or "")
-            path = os.path.normpath(os.path.join(base, src))
-            if not os.path.isfile(path):
-                raise ValueError(f"Ілюстрацію не знайдено: {path}")
-            out.append(f'<img src="file://{html.escape(path, quote=True)}" alt="{html.escape(alt, quote=True)}">')
+            root = Path(base).resolve()
+            path = (root / src).resolve()
+            # Заборона ../, зовнішніх шляхів і символьних посилань поза книгою.
+            if root not in path.parents:
+                raise ValueError(f"Ілюстрація поза каталогом книги: {src}")
+            if not path.is_file():
+                raise ValueError(f"Ілюстрацію не знайдено: {src}")
+            if s.startswith("**Ілюстрація.**"):
+                out.append("<p><strong>Ілюстрація.</strong></p>")
+            out.append(f'<img src="{html.escape(path.as_uri(), quote=True)}" '
+                       f'alt="{html.escape(alt, quote=True)}">')
             if caption:
                 out.append('<p style="font-size:8pt;color:#555;text-align:center">'
                            + inline(caption) + "</p>")
@@ -156,14 +165,19 @@ def md_to_html(text: str, base: str, poetry: bool) -> str:
     return "\n".join(out)
 
 
-def chapter_files(pattern: str) -> list[tuple[int, str]]:
+def chapter_files(pattern: str, directory: str = BOOK) -> list[tuple[int, str]]:
     found = []
-    for name in os.listdir(BOOK):
+    for name in os.listdir(directory):
         m = re.match(pattern, name)
         if m:
-            found.append((int(m.group(1)), os.path.join(BOOK, name)))
+            found.append((int(m.group(1)), os.path.join(directory, name)))
     return sorted(found)
 
+
+
+def poetic_chapter_files() -> list[tuple[int, str]]:
+    """Тільки обраний єдиний поетичний том, без паралельних редакцій."""
+    return chapter_files(r"^rozdil-(\d+)\.md$", POETIC)
 
 
 def validate_volume(chapters: list[tuple[int, str]], expected_ids: set[tuple[int, int]],
@@ -211,7 +225,7 @@ def main() -> int:
     out_pdf = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "ashtavakra.pdf")
 
     scientific = chapter_files(r"^rozdil-(\d+)-naukove\.md$")
-    poetic = chapter_files(r"^poetychnyi-rozdil-(\d+)\.md$")
+    poetic = poetic_chapter_files()
     expected = expected_card_ids()
     validate_volume(scientific, expected, "Науковий том")
     validate_volume(poetic, expected, "Поетичний том")
@@ -219,7 +233,7 @@ def main() -> int:
     parts = []
     parts.append("""<div class="title-page">
 <h1>Аштавакра-ґіта</h1>
-<div class="sub">українське наукове видання<br>з поетичним перекладом</div>
+<div class="sub">український науково-редакторський макет<br>з окремою поетичною чернеткою</div>
 <div class="meta">
 Двадцять глав, 298 віршів.<br>
 Науковий том: деванагарі, українська транслітерація, переклад,
@@ -227,7 +241,9 @@ def main() -> int:
 Поетичний том: наш поетичний переклад усієї книги.<br><br>
 Санскритське читання звірене за SARIT і GRETIL; деванагарі й транслітерація —
 механічні, з редакторських карток.<br>
-Тексти — наші власні; ліцензія «ВОЛЬНІСТЬ».<br><br>
+Власні українські внески — за ліцензією «ВОЛЬНІСТЬ».<br>
+Це редакторський макет; незалежної санскритологічної рецензії та підтверджених
+прав на відтворення електронних санскритських свідків немає.<br><br>
 Зібрано рушієм WeasyPrint: у середовищі збірки немає робочого XeLaTeX.<br>
 Це не критичне видання й не факсиміле.
 </div>
@@ -246,7 +262,7 @@ def main() -> int:
                  "якої у вірші немає. У спірних місцях правий науковий том.</p></div>")
 
     for num, path in poetic:
-        html_part = md_to_html(open(path, encoding="utf-8").read(), BOOK, True)
+        html_part = md_to_html(open(path, encoding="utf-8").read(), POETIC, True)
         parts.append(f'<div class="poetry">{html_part}</div>')
 
     doc = ("<!DOCTYPE html><html lang=\"uk\"><head><meta charset=\"utf-8\">"
