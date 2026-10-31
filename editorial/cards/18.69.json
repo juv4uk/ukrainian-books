@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.69",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.69",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.69",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "mahadādi jagaddvaitaṃ nāmamātravijṛmbhitam | vihāya śuddhabodhasya kiṃ kṛtyam avaśiṣyate ||",
+  "iast": "mahadādi jagaddvaitaṃ nāmamātravijṛmbhitam | vihāya śuddhabodhasya kiṃ kṛtyam avaśiṣyate ||",
+  "grammar": "mahadādi (n. nom. sg. «те, що починається з махат, великого [принципу]»: mahat «великий» + ādi «початок») jagaddvaitam (n. nom. sg. «двоїстість світу»: jagat «світ» + dvaita «двоїстість») nāmamātravijṛmbhitam (n. nom. sg. «розквітле лише з імені»: nāma «ім'я» + mātra «лише» + vijṛmbhita «розквітлий, розгорнутий»). vihāya (герунд vi-hā «відкинувши») śuddhabodhasya (m. gen. sg. «чистого знання, чиєї свідомості»: śuddha «чистий» + bodha «знання») kim kṛtyam (n. nom. sg. «яка справа») avaśiṣyate («лишається»).",
+  "literal_meaning": "«Двоїстість світу, починаючи з махат, розквітла лише з імені; коли це відкинуто — яка справа лишається в чистого знання?»",
+  "ukrainian_translation": "Двоїстість світу, починаючи з махат, розквітла лише з імені. Коли це відкинуто — яка справа лишається в чистого знання?",
+  "commentary": "`nāmamātra` («лише ім'я») — найточніше формулювання: світ не ілюзія й не реальність, а розквітле ім'я. `mahadādi` відсилає до санкх'ї (mahat — перший принцип проявленого), тобто вірш прямо називає філософську схему й каже, що вона тримається на назвах. Питання `kim kṛtyam avaśiṣyate` («яка справа лишається») — останнє питання глави про дію.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжність лише в поділі слів (kṛtyamavaśiṣyate / kṛtyam avaśiṣyate). Та сама форма. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
