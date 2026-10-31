@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.46",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.46",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.46",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nirvāsanaṃ hariṃ dṛṣṭvā tūṣṇīṃ viṣayadantinaḥ | palāyante na śaktās te sevante kṛtacāṭavaḥ ||",
+  "iast": "nirvāsanaṃ hariṃ dṛṣṭvā tūṣṇīṃ viṣayadantinaḥ | palāyante na śaktās te sevante kṛtacāṭavaḥ ||",
+  "grammar": "nirvāsanam (m. acc. sg. «позбавленого васан, слідів») harim (m. acc. sg. «лева»; hari тут саме лев) dṛṣṭvā (герунд dṛś «побачивши») tūṣṇīm (прислівник «мовчки») viṣayadantinaḥ (m. nom. pl. «слони предметів»: viṣaya + dantin «слон»). palāyante (3 pl. pr. palā «втікають») na śaktāḥ (m. nom. pl. «нездатні») te (m. nom. pl.) sevante (3 pl. pr. sev «служать, прислуговують») kṛtacāṭavaḥ (m. nom. pl. «ті, що зробили підлабузництво»: kṛta «зроблене» + cāṭava «лестощі, підлабузництво»).",
+  "literal_meaning": "«Побачивши лева, позбавленого слідів, слони предметів мовчки тікають; нездатні, вони [вже] не прислуговують, хоч і вдавалися до підлабузництва.»",
+  "ukrainian_translation": "Побачивши лева, вільного від слідів, слони предметів мовчки тікають. Нездатні, вони більше не прислуговують, хоч раніше й підлещувалися.",
+  "commentary": "Продовження 18.45, і метафора перевернута: там предмети — пантери, що лякають людину, тут вони слони, що тікають від лева. Те, що раніше гнало, тепер тікає. `kṛtacāṭava` («ті, що зробили підлабузництво») — незвичайно точне слово про предмети: вони не просто спокушали, а прислуговували з лестощами. `tūṣṇīm` («мовчки») підкреслює: втеча без опору.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
