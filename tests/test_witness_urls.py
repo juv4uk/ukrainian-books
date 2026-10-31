@@ -99,6 +99,23 @@ class WitnessUrlsTests(unittest.TestCase):
     def test_newline_inside_gretil_path_rejected(self):
         self.assertIsNotNone(module.inspect_url("gretil", GRETIL + chr(10))[0])
 
+    def test_symlink_root_cannot_read_outside_repo(self):
+        with tempfile.TemporaryDirectory() as root:
+            base = Path(root)
+            outside = base / "outside"
+            outside.mkdir()
+            (outside / "1.2.json").write_text(json.dumps({"sources": {
+                "gretil": {"url": GRETIL}, "sarit": {"url": SARIT_PINNED}}}), encoding="utf-8")
+            link = base / "cards"
+            try:
+                link.symlink_to(outside, target_is_directory=True)
+            except (OSError, NotImplementedError):
+                self.skipTest("Немає підтримки символічних посилань")
+            result = module.audit(link, require_cards=True)
+        self.assertEqual(result["status"], "failed")
+        self.assertEqual(result["cards"], 0)
+        self.assertTrue(any("символічним посиланням" in x for x in result["errors"]))
+
     def test_symlink_directory_cannot_hide_cards(self):
         with tempfile.TemporaryDirectory() as root:
             base = Path(root)
