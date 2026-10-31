@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "10.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_10.2",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_10.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "svapnendrajālavatpaśya dināni trīṇi pañca vā| mitrakṣetradhanāgāradāradāyādisaṃpadaḥ||10|2||",
+  "iast": "svapnendrajālavat paśya dināni trīṇi pañca vā | mitrakṣetradhanāgāradāradāyādisaṃpadaḥ ||",
+  "grammar": "svapna-indrajāla-vat («як сон і маґія», indrajāla — «мережа Індри», тобто чари) paśya (imper. 2 sg. «дивись») dināni trīṇi pañca vā («три дні або п'ять») | mitra-kṣetra-dhana-āgāra-dāra-dāyā-ādi-saṃpadaḥ (f. acc. pl. «багатства: друзі, поле, гроші, дім, дружина, спадок тощо»).",
+  "literal_meaning": "«Дивись на друзів, поле, гроші, дім, дружину, спадок та інші багатства як на сон і чари — на три дні або на п'ять.»",
+  "ukrainian_translation": "Дивись на друзів, поле, гроші, дім, дружину, спадок і решту багатств як на сон і чари — на три дні або п'ять.",
+  "commentary": "Перелік навмисно побутовий: не «світ» загалом, а конкретні речі, за які тримаються. «Три дні або п'ять» — не точний строк, а спосіб сказати «коротко»; переклад зберігає числа, бо вони й творять ефект. indrajāla — не просто «ілюзія», а фокус, свідома підміна видимого.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

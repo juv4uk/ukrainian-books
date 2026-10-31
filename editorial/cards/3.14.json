@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "3.14",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_3.14",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_3.14",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "antastyaktakaṣāyasya nirdvandvasya nirāśiṣaḥ | yadṛcchayāgato bhogo na duḥkhāya na tuṣṭaye ||",
+  "iast": "antastyaktakaṣāyasya nirdvandvasya nirāśiṣaḥ | yadṛcchayāgato bhogo na duḥkhāya na tuṣṭaye ||",
+  "grammar": "antaḥ-tyakta-kaṣāyasya (bahuvrīhi «той, у кого всередині відкинуто каламуть»: antaḥ «усередині» + tyakta «відкинутий» + kaṣāya «каламуть, осад, пристрасть») nirdvandvasya (m. gen. sg. «той, хто без двоїстості»: nir «без» + dvandva «пара, двоїстість») nirāśiṣaḥ (m. gen. sg. «той, хто без сподівань, без побажань»: nir «без» + āśis «побажання, благословення»). yadṛcchayāgataḥ (m. nom. sg. «той, що прийшов сам собою»: yadṛcchā «власна воля, випадок» + āgata «прийшов») bhogaḥ (m. nom. sg. «досвід, насолода, те, що випадає»). na duḥkhāya (n. dat. sg. «на страждання») na tuṣṭaye (f. dat. sg. «на задоволення»).",
+  "literal_meaning": "«У того, в кого всередині відкинуто каламуть, хто без двоїстості й без сподівань, — те, що випало, прийшовши само собою, не [йде] ні на страждання, ні на задоволення.»",
+  "ukrainian_translation": "У того, в кого всередині відкинуто каламуть, хто без двоїстості й без сподівань, усе, що випадає само собою, не стає ні стражданням, ні задоволенням.",
+  "commentary": "Давальні duḥkhāya і tuṣṭaye — не «не приносить», а «не йде на»: досвід не зараховується ні туди, ні туди. Це тонше за байдужість: байдужість усе ще ставить оцінку «ніяк», а тут досвід просто не конвертується в жодну з двох категорій. kaṣāya («каламуть, осад») — слово з мови фарб і напоїв: це не гріх і не пристрасть у моральному сенсі, а те, що каламутить прозорість. antaḥ («усередині») стоїть першим членом навмисно: відкинуто не зовнішнє, а осад усередині. yadṛcchayāgataḥ («прийшов сам собою») — те саме yadṛcchā, що в 4.4 і далі; тут воно означає не випадковість, а відсутність замовлення.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжність yadṛcchayā+a+agato (SARIT) / yadṛcchayāgato (GRETIL) — це сандгі: подовжене ā на стику зникає у злитному написанні. Однакова форма. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

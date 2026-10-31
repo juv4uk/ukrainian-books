@@ -74,9 +74,14 @@ vijñānaṃ yathecchasi tathā kuru ||`
 
 1. Умова тут — не «спершу пізнай», а `etāvad eva` («ось і все»). Знання
    вичерпне, і саме тому дозвіл необмежений.
-2. **Нумерація різниться між виданнями**: у SARIT і GRETIL це 15.2, у частині
-   видань рядок подають ближче до кінця глави. Це розбіжність видань, а не
-   помилка цитування, і її треба вказувати.
+2. **Нумерація, яку вдалося перевірити:** у [SARIT (`verse_15.2`)](https://github.com/sarit/SARIT-corpus/blob/0fbf1f2385b5e3331dd8dd625cab4b37c6d73103/astavakragita.xml)
+   та [GRETIL (`Avg_15.2`)](https://github.com/INDOLOGY/GRETIL-mirror/blob/0a0e24af9ae65faf3c0c6603c5808e8a60fb4bc9/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml)
+   це **15.2**. Так само нумерує доступний [санскритський текст у Wisdomlib](https://www.wisdomlib.org/hinduism/book/ashtavakra-gita-sanskrit/d/doc345936.html)
+   і [запис Stotrams](https://stotrams.com/stotra/ashtavakra-gita-chapter-15/english).
+   Твердження, що в іншому виданні цей рядок стоїть ближче до кінця глави,
+   **поки не підтверджене** жодною названою редакцією, сторінкою чи локатором.
+   Це не доказ відсутності інших нумерацій: їх слід дослідити окремо,
+   перш ніж заявляти про встановлене різночитання структури.
 
 ## 4. Межі, які не можна замовчати
 

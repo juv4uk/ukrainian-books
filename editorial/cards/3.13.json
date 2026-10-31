@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "3.13",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_3.13",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_3.13",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "svabhāvād eva jānāno dṛśyam etan na kiñcana | idaṃ grāhyam idaṃ tyājyaṃ sa kiṃ paśyati dhīradhīḥ ||",
+  "iast": "svabhāvād eva jānāno dṛśyam etan na kiñcana | idaṃ grāhyam idaṃ tyājyaṃ sa kiṃ paśyati dhīradhīḥ ||",
+  "grammar": "svabhāvāt (m. abl. sg. «за власною природою, самóю суттю») eva («саме»). jānānaḥ (m. nom. sg. дієприкметника теперішнього часу jñā «знаючи»). dṛśyam (n. nom. sg. «видиме») etat (n. nom. sg.) na kiñcana («ніщо, аніщо»). idam (n. nom. sg.) grāhyam (n. nom. sg. герундив від grah «те, що слід узяти») idam (n. nom. sg.) tyājyam (n. nom. sg. герундив від tyaj «те, що слід відкинути»). saḥ (m. nom. sg.) kim («що?») paśyati («бачить») dhīradhīḥ.",
+  "literal_meaning": "«Знаючи за самою природою, що це видиме — аніщо: „це слід узяти, це слід відкинути“ — що ж бачить той, чий розум стійкий?»",
+  "ukrainian_translation": "Знаючи самою природою, що все видиме — аніщо, — «це треба взяти, це треба відкинути» — то що ж бачить той, чий розум стійкий?",
+  "commentary": "Дві пари герундивів (grāhyam / tyājyam) подані в лапках як чужа мова: це не позиція мудрого, а те, що він чує навколо або в собі. Заперечується не вибір між «взяти» й «відкинути», а сама наявність пари. svabhāvād eva («самою природою») знімає потребу в доказі: це не висновок, а спосіб бачення. Питання kim paśyati («що бачить») точніше за «чи бачить»: воно питає про предмет, а не про факт, бо коли видиме — аніщо, предмета не лишається.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
