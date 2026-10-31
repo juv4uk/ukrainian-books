@@ -226,6 +226,7 @@ class EditionTests(unittest.TestCase):
     def test_symlink_directory_is_forbidden(self):
         other = self.root / "outside"
         other.mkdir()
+        (self.root / book.ACADEMIC).parent.mkdir(parents=True, exist_ok=True)
         (self.root / book.ACADEMIC).symlink_to(other, target_is_directory=True)
         _, _, report = book.audit(self.root)
         self.assertTrue(any("символьний каталог" in e for e in report["помилки"]))
