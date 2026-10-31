@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "9.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_9.6",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_9.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kṛtvā mūrtiparijñānaṃ caitanyasya na kiṃ guruḥ| nirvedasamatāyuktyā yastārayati saṃsṛteḥ||9|6||",
+  "iast": "kṛtvā mūrtiparijñānaṃ caitanyasya na kiṃ guruḥ | nirvedasamatāyuktyā yas tārayati saṃsṛteḥ ||",
+  "grammar": "kṛtvā («зробивши») mūrti-parijñānam (n. «пізнання образу») caitanyasya (gen. «свідомості») na kim guruḥ («чи не вчитель») | nirveda-samatā-yuktyā («через відречення, рівність і з'єднаність») yaḥ tārayati saṃsṛteḥ («хто переправляє з сансари»).",
+  "literal_meaning": "«Хто, пізнавши образ свідомості, — чи не вчитель? — через відречення, рівність і з'єднаність переправляє [інших] із сансари.»",
+  "ukrainian_translation": "Хто, пізнавши образ свідомості, — чи не вчитель? — той через відречення, рівність і з'єднаність переправляє з сансари.",
+  "commentary": "Єдине місце в книзі, де `guru` названо **позитивно** і з означенням: учитель — той, хто пізнав `caitanya`. Але й тут текст не вимагає послуху: `tārayati` — «переправляє», дієслово руху, а не влади. Три складники (`nirveda`, `samatā`, `yukti`) подані як спосіб дії, а не як чесноти вчителя.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
