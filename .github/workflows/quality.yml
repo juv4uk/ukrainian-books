@@ -13,12 +13,12 @@ jobs:
     steps:
       - name: Завантажити репозиторій
         uses: actions/checkout@v4
+      - name: Негативні тести синтаксису редакторських JSON у загальному гейті
+        run: python3 -m unittest discover -s tests -p 'test_check_project_card_json.py' -v
       - name: Перевірити структуру і ліцензію
         run: python3 scripts/check_project.py
       - name: Перевірити локальні зображення Markdown на синтетичних даних
         run: python3 -m unittest discover -s tests -p 'test_check_project_image_links.py' -v
-      - name: Негативні тести синтаксису редакторських JSON у загальному гейті
-        run: python3 -m unittest discover -s tests -p 'test_check_project_card_json.py' -v
       - name: Перевірити дублювання карток за номером вірша
         run: python3 scripts/check_duplicate_cards.py --strict
       - name: Негативні перевірки пошуку дублів (штучний дубль мусить ловитися)
