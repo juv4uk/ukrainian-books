@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.19",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.19",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.19",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "saśarīramidaṃ viśvaṃ na kiñciditi niścitam| śuddhacinmātra ātmā ca tatkasminkalpanādhunā||2|19||",
+  "iast": "saśarīram idaṃ viśvaṃ na kiñcid iti niścitam | śuddhacinmātra ātmā ca tat kasmin kalpanādhunā ||",
+  "grammar": "saśarīram (adv. «разом із тілом») idam viśvam (n. nom. sg.) na kiñcit («ніщо») iti niścitam («так установлено») | śuddha-cin-mātraḥ (m. nom. sg. «лише чиста свідомість») ātmā (m. nom. sg.) ca tat kasmin (loc. sg. «у чому ж тоді») kalpanā adhunā («домислювання тепер»).",
+  "literal_meaning": "«Цей світ разом із тілом — ніщо, так установлено; а Я — лише чиста свідомість. У чому ж тоді лишається домислювання?»",
+  "ukrainian_translation": "Цей світ разом із тілом — ніщо, так установлено; а Я — лише чиста свідомість. У чому ж тоді ще домислювати?",
+  "commentary": "Друга половина — риторичне питання, і воно важливіше за першу: після того як названо «ніщо» і «чиста свідомість», для домислювання не лишається місця (kasmin — «у чому?»). śuddha-cin-mātra зберігає потрійну будову: чисте — свідомість — лише; кожен складник несе вагу.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
