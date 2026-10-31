@@ -8,12 +8,12 @@
     "gretil": {
       "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
       "locator": "Avg_17.3",
-      "checked_on": "2026-11-01"
+      "checked_on": "2026-10-31"
     },
     "sarit": {
       "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
       "locator": "verse_17.3",
-      "checked_on": "2026-11-01"
+      "checked_on": "2026-10-31"
     }
   },
   "sanskrit": "na jātu viṣayāḥ ke 'pi | svārāmaṃ harṣayanty amī | sallakīpallavaprītam | ivebhaṃ nimbapallavāḥ ||",

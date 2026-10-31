@@ -8,12 +8,12 @@
     "gretil": {
       "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
       "locator": "Avg_16.10",
-      "checked_on": "2026-11-01"
+      "checked_on": "2026-10-31"
     },
     "sarit": {
       "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
       "locator": "verse_16.10",
-      "checked_on": "2026-11-01"
+      "checked_on": "2026-10-31"
     }
   },
   "sanskrit": "yasyābhimāno mokṣe 'pi | dehe 'pi mamatā tathā | na ca jñānī na vā yogī | kevalaṃ duḥkhabhāg asau ||",

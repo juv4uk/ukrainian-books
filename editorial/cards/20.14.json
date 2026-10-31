@@ -8,12 +8,12 @@
     "gretil": {
       "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
       "locator": "Avg_20.14",
-      "checked_on": "2026-11-01"
+      "checked_on": "2026-10-31"
     },
     "sarit": {
       "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
       "locator": "verse_20.14",
-      "checked_on": "2026-11-01"
+      "checked_on": "2026-10-31"
     }
   },
   "sanskrit": "kva cāsti kva ca vā nāsti | kvāsti caikaṃ kva ca dvayam | bahunātra kim uktena | kiṃcin nottiṣṭhate mama ||",
