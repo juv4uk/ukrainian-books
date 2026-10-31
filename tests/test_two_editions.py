@@ -10,6 +10,9 @@ from pathlib import Path
 # Без цього окремий файл тестів не запускається цільовим шаблоном discover.
 from test_build_book_navigation import ScientificBookNavigationTests
 
+# Шість тестів PDF-макета виконуються в тому самому чинному workflow.
+from test_build_pdf import ScientificIllustrationTests, OnePoeticEditionTests
+
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts/two_editions.py"
 SPEC = importlib.util.spec_from_file_location("two_editions", SCRIPT)
 book = importlib.util.module_from_spec(SPEC)
