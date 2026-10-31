@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "9.5",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_9.5",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_9.5",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nānā mataṃ maharṣīṇāṃ sādhūnāṃ yogināṃ tathā| dṛṣṭvā nirvedamāpannaḥ ko na śāmyati mānavaḥ||9|5||",
+  "iast": "nānā mataṃ maharṣīṇāṃ sādhūnāṃ yogināṃ tathā | dṛṣṭvā nirvedam āpannaḥ ko na śāmyati mānavaḥ ||",
+  "grammar": "nānā matam (n. «різні погляди, думки») maharṣīṇām (gen. pl. «великих мудреців») sādhūnām («праведних») yoginām tathā | dṛṣṭvā («побачивши») nirvedam āpannaḥ («той, хто дійшов до відречення») kaḥ na śāmyati mānavaḥ («яка людина не втихла б»).",
+  "literal_meaning": "«Побачивши різні погляди великих мудреців, праведних і йогів, хто, дійшовши відречення, не втихне?»",
+  "ukrainian_translation": "Побачивши, скільки різних поглядів мають великі мудреці, праведні й йоги, — хто, дійшовши відречення, не втихне?",
+  "commentary": "Риторичне питання з відповіддю «ніхто». Важливий перелік: `maharṣi`, `sādhu`, `yogin` — три різні авторитети, і текст показує, що **вони не згодні між собою**. Відречення тут походить не від безладдя світу, а від розбіжності авторитетів — це сильніше й конкретніше.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
