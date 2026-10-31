@@ -1,0 +1,21 @@
+name: Цілісність Unicode книжкових текстів
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unicode:
+    name: Виявлення пошкоджених символів
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Негативні й позитивні тести
+        run: python3 -m unittest discover -s tests -p 'test_book_text_integrity.py' -v
+      - name: Перевірити Unicode у власних книжках
+        run: python3 scripts/check_book_text_integrity.py
+      - name: Перевірити структуру, посилання і ліцензію
+        run: python3 scripts/check_project.py
