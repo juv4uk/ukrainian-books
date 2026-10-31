@@ -1,0 +1,19 @@
+name: Охоплення редакторських карток — достовірний підрахунок
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  coverage:
+    name: Звіт охоплення та негативні тести
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Виконати синтетичні тести
+        run: python3 -m unittest discover -s tests -p 'test_report_card_coverage.py' -v
+      - name: Перевірити фактичне охоплення карток
+        run: python3 scripts/report_card_coverage.py

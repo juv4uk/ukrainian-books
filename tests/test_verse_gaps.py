@@ -8,7 +8,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.check_verse_gaps import find_gaps, present_ids
+from scripts.check_verse_gaps import find_gaps, present_ids, untouched_chapters
 
 
 class GapTests(unittest.TestCase):
@@ -27,6 +27,14 @@ class GapTests(unittest.TestCase):
 
     def test_empty_folder_is_not_a_gap(self) -> None:
         self.assertEqual(find_gaps(set(), {"1.1"}), {})
+
+    def test_untouched_chapters_are_named_with_verse_counts(self) -> None:
+        expected = {"1.1", "1.2", "2.1", "3.1", "3.2", "3.3"}
+        self.assertEqual(untouched_chapters({"1.1"}, expected), {2: 1, 3: 3})
+
+    def test_untouched_chapters_empty_when_every_chapter_started(self) -> None:
+        expected = {"1.1", "1.2", "2.1"}
+        self.assertEqual(untouched_chapters({"1.1", "2.1"}, expected), {})
 
     def test_present_ids_skips_broken_and_foreign(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
