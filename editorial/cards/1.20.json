@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "1.20",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.20",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.20",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ekaṃ sarvagataṃ vyoma bahirantaryathā ghaṭe| nityaṃ nirantaraṃ brahma sarvabhūtagaṇe tathā||1|20||",
+  "iast": "ekaṃ sarvagataṃ vyoma bahir antar yathā ghaṭe | nityaṃ nirantaraṃ brahma sarvabhūtagaṇe tathā ||",
+  "grammar": "ekam («одне») sarva-gatam («всюдисуще») vyoma («простір») bahiḥ antaḥ («зовні й усередині») yathā ghaṭe («як у глечику») | nityam («повсякчас») nirantaram («без перерви») brahma sarva-bhūta-gaṇe tathā («брахман у всій сукупності істот — так само»).",
+  "literal_meaning": "«Як один усюдисущий простір — зовні й усередині глечика, так повсякчас і без перерви брахман у всій сукупності істот.»",
+  "ukrainian_translation": "Як один усюдисущий простір — зовні й усередині глечика, так повсякчас і без перерви брахман у всій сукупності істот.",
+  "commentary": "Класичний образ глечика: простір не ділиться стінками, хоч і здається «простором у глечику». Пара `bahiḥ antaḥ` повторює `antaḥ … paritaḥ` з 1.19, але тут вона віднесена до простору, а не до образу в дзеркалі. `nirantaram` — «без проміжку», тобто не «вічно» в часовому сенсі, а без розриву в просторі; переклад мусить це розрізняти.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

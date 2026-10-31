@@ -1,0 +1,28 @@
+name: "КНИГА-04 — дві редакції та видавничий шлюз"
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  two-editions:
+    name: "Академічний і поетичний томи — тести та структура"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Отримати код"
+        uses: actions/checkout@v4
+      - name: "Налаштувати Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: "Виконати офлайнові регресійні тести двох томів"
+        run: python3 -m unittest discover -s tests -p 'test_two_editions.py' -v
+      - name: "Перевірити поточний стан редакторських потоків без видавничої заяви"
+        run: python3 scripts/two_editions.py
+      - name: "Виконати загальний контроль структури й ліцензії"
+        run: python3 scripts/check_project.py
