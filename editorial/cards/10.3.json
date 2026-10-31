@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "10.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_10.3",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_10.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yatra yatra bhavettṛṣṇā saṃsāraṃ viddhi tatra vai| prauḍhavairāgyamāśritya vītatṛṣṇaḥ sukhī bhava||10|3||",
+  "iast": "yatra yatra bhavet tṛṣṇā saṃsāraṃ viddhi tatra vai | prauḍhavairāgyam āśritya vītatṛṣṇaḥ sukhī bhava ||",
+  "grammar": "yatra yatra («де б не») bhavet (opt. 3 sg. «виникла б») tṛṣṇā (f. nom. sg. «спрага») saṃsāram (m. acc. sg.) viddhi (imper. 2 sg. vid «знай») tatra vai («саме там») | prauḍha-vairāgyam (n. acc. sg. «зрілу безсторонність») āśritya (герундив «опираючись на») vīta-tṛṣṇaḥ («той, у кого спрага минула») sukhī bhava («будь щасливий»).",
+  "literal_meaning": "«Де б не виникла спрага — знай: саме там сансара. Опираючись на зрілу безсторонність, стань тим, у кого спрага минула, і будь щасливий.»",
+  "ukrainian_translation": "Де б не виникла спрага — знай: саме там і сансара. Опираючись на зрілу безсторонність, стань тим, у кого спрага минула, — і будь щасливий.",
+  "commentary": "Тут уперше в розділі дано не заперечення, а **вказівку**: `yatra yatra … tatra` («де б … саме там»). Сансара — не місце й не стан світу, а точка, де виникла спрага. prauḍha («зріла») важливе: безсторонність має бути витриманою, а не поривчастою. Висновок «будь щасливий» — наказ, а не побажання.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
