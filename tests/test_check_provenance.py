@@ -108,6 +108,43 @@ class Tests(unittest.TestCase):
         self.make_book(PASSPORT.replace("https://example.org/synthetic", "TODO"))
         self.assertTrue(any("HTTPS" in x for x in self.result()["errors"]))
 
+    def test_conflicting_pdf_permissions_in_one_field_block(self):
+        # Перший дозвіл заперечено, другий стверджено: раніше re.search
+        # знаходив тільки «PDF: так» і помилково дозволяв публікацію.
+        text = PASSPORT.replace(
+            "PDF: так; EPUB: так",
+            "PDF: ні; PDF: так; EPUB: так",
+        )
+        self.make_book(text)
+        result = self.result()
+        self.assertEqual(result["status"], "failed")
+        self.assertEqual(result["books"][0]["state"], "blocked")
+        self.assertTrue(any("PDF/EPUB" in e for e in result["errors"]),
+                        result["errors"])
+
+    def test_repeated_identical_pdf_permission_blocks(self):
+        self.make_book(PASSPORT.replace(
+            "PDF: так; EPUB: так",
+            "PDF: так; PDF: так; EPUB: так",
+        ))
+        self.assertEqual(self.result()["status"], "failed")
+
+    def test_trailing_negative_permission_blocks(self):
+        self.make_book(PASSPORT.replace(
+            "поширення: так",
+            "поширення: так; EPUB: ні",
+        ))
+        self.assertEqual(self.result()["status"], "failed")
+
+    def test_alternative_explicit_positive_permissions_pass(self):
+        self.make_book(PASSPORT.replace(
+            "PDF: так; EPUB: так; редагування: так; поширення: так",
+            "PDF: дозволено, EPUB: так; редагування: дозволено; поширення: так",
+        ))
+        result = self.result()
+        self.assertEqual(result["status"], "ok", result["errors"])
+        self.assertEqual(result["books"][0]["state"], "metadata-complete")
+
     def test_permission_denial_blocks(self):
         self.make_book(PASSPORT.replace("EPUB: так", "EPUB: ні"))
         self.assertTrue(any("PDF/EPUB" in x for x in self.result()["errors"]))
