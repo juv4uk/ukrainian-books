@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Вчення і внутрішній спокій — смислова схема до Аштавакра-ґіти 16.1</title>
+  <desc id="desc">Ліворуч розгорнута книга й хвилі мовлення, підписи «Викладай» і «Слухай»; посередині пунктирна стрілка «Не гарантує»; праворуч кола з написом «Внутрішній спокій». Унизу наведено умову з вірша — sarvavismaraṇa, «забуття всього». Оригінальна редакторська схема, не історичне зображення.</desc>
+  <rect width="1200" height="650" fill="#f8f6f0"/>
+  <rect x="35" y="40" width="1130" height="570" rx="24" fill="#fffdfa" stroke="#d7d1c1" stroke-width="3"/>
+  <text x="600" y="100" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="700" fill="#263d4b">Аштавакра-ґіта · 16.1</text>
+  <text x="600" y="142" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#425563">Чи достатньо багато говорити й слухати?</text>
+  <g transform="translate(95 182)">
+    <rect width="365" height="300" rx="24" fill="#edf3ef" stroke="#6e8a7b" stroke-width="3"/>
+    <path d="M64 100 Q123 74 183 100 L183 217 Q123 190 64 217 Z" fill="#ffffff" stroke="#3b715c" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M183 100 Q241 74 301 100 L301 217 Q241 190 183 217 Z" fill="#ffffff" stroke="#3b715c" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M183 98 V217" stroke="#3b715c" stroke-width="5"/>
+    <g stroke="#b1c9bb" stroke-width="3">
+      <path d="M81 129 Q128 117 164 133"/><path d="M81 151 Q128 139 164 155"/><path d="M201 132 Q240 118 283 131"/><path d="M201 155 Q240 141 283 154"/>
+    </g>
+    <path d="M127 65 Q181 23 239 65" fill="none" stroke="#3b715c" stroke-width="4" stroke-linecap="round"/>
+    <path d="M145 51 Q180 27 216 51" fill="none" stroke="#3b715c" stroke-width="4" stroke-linecap="round"/>
+    <text x="183" y="260" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="700" fill="#263d4b">Викладай · Слухай</text>
+    <text x="183" y="286" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#425563">Різні вчення знов і знов</text>
+  </g>
+  <g fill="#6b7074" stroke="#6b7074" stroke-width="5" stroke-linecap="round">
+    <path d="M488 331 H687" stroke-dasharray="12 14"/>
+    <path d="M671 318 L690 331 L671 344" fill="none" stroke-linejoin="round"/>
+  </g>
+  <rect x="500" y="280" width="175" height="38" rx="18" fill="#fffdfa"/>
+  <text x="588" y="306" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#a34640">Не гарантує</text>
+  <g transform="translate(720 182)">
+    <rect width="385" height="300" rx="24" fill="#edf1f7" stroke="#8295af" stroke-width="3"/>
+    <circle cx="193" cy="139" r="89" fill="#dce7f2" stroke="#6686a7" stroke-width="4"/>
+    <circle cx="193" cy="139" r="65" fill="#ecf2fa" stroke="#6686a7" stroke-width="3"/>
+    <circle cx="193" cy="139" r="37" fill="#ffffff" stroke="#6686a7" stroke-width="3"/>
+    <circle cx="193" cy="139" r="10" fill="#355c80"/>
+    <text x="193" y="260" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="700" fill="#263d4b">Внутрішній спокій</text>
+    <text x="193" y="286" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#425563">svāsthya · перебування в собі</text>
+  </g>
+  <rect x="174" y="508" width="852" height="67" rx="17" fill="#fff2df" stroke="#ceb48d" stroke-width="2"/>
+  <text x="600" y="538" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700" fill="#694d29">Умова, названа у вірші: sarvavismaraṇa</text>
+  <text x="600" y="561" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#694d29">«забуття всього» — філософський зміст потребує пояснення</text>
+  <text x="600" y="599" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#53606a">Оригінальна навчальна схема · сучасна інтерпретація, не ілюстрація давнього рукопису</text>
+</svg>
