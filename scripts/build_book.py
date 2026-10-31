@@ -59,14 +59,14 @@ def write_zmist() -> None:
         cards.setdefault(int(ch), set()).add(int(v))
     lines = ["# Аштавакра-ґіта — українське видання", "",
              "Робочі тексти видання, зібрані з редакторських карток `editorial/cards/`.", "",
-             "| Розділ | Віршів у виданні | Стан |", "|---|---|---|"]
+             "| Розділ | Віршів у виданні | Стан | Наукове читання |", "|---|---|---|---|"]
     total = full = 0
     for ch in range(1, 21):
         vs = cards.get(ch, set())
         n = len(vs)
         total += n
         if n == 0:
-            lines.append(f"| {ch} | 0 | немає карток |")
+            lines.append(f"| {ch} | 0 | немає карток | — |")
             continue
         gaps = [i for i in range(1, max(vs) + 1) if i not in vs]
         if gaps:
@@ -74,11 +74,22 @@ def write_zmist() -> None:
         else:
             state = "повний"
             full += 1
-        lines.append(f"| [{ch}](rozdil-{ch}.md) | {n} | {state} |")
+        naukove = os.path.join(ROOT, "books", "ashtavakra-gita", f"rozdil-{ch}-naukove.md")
+        naukove_link = (f"[Наукове читання](rozdil-{ch}-naukove.md)"
+                       if os.path.isfile(naukove) else "ще немає")
+        lines.append(f"| [{ch}](rozdil-{ch}.md) | {n} | {state} | {naukove_link} |")
     lines += ["", f"**Разом карток: {total}.** Повних розділів: {full} із 20.", "",
               "Усі тексти — чернетки: незалежної редакторської рецензії ще не було.",
               "Санскритське читання в розділах не відтворюється: воно звірене за SARIT і GRETIL",
               "і зберігається в картках. Паспорт походження: `PROVENANCE.md`."]
+    lines += ["", "**Наукове читання** веде до окремих україномовних робочих розворотів",
+              "із деванагарі, українським читальним шаром, перекладом і коментарями.",
+              "Зараз це пошарові редакторські чернетки, не завершене построкове",
+              "академічне видання і не підтвердження прав на відтворення джерел."]
+    poetry = os.path.join(ROOT, "books", "ashtavakra-gita", "poetychnyi", "README.md")
+    if os.path.isfile(poetry):
+        lines += ["", "**Окрема поетична редакція:** [каталог і стан чернеток](poetychnyi/README.md).",
+                  "Повний поетичний переклад ще не підтверджено як завершений."]
     out = os.path.join(ROOT, "books", "ashtavakra-gita", "ZMIST.md")
     with open(out, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
