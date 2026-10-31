@@ -1,0 +1,18 @@
+name: Відсутність згенерованих файлів книжкової верстки у Git
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    name: Перевірка Git-індексу та негативні тести
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Перевірити відстежувані файли книжок
+        run: python3 scripts/check_generated_artifacts.py
+      - name: Перевірити синтетичні випадки через справжній Git
+        run: python3 -m unittest discover -s tests -p 'test_generated_artifacts.py' -v

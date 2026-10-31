@@ -1,0 +1,624 @@
+{
+  "schema_version": 1,
+  "chapter": 18,
+  "title": "Глава 18. Сто віршів про того, хто вільний",
+  "intro": "Вісімнадцята глава — половина всієї книги за обсягом: сто віршів. Вона не будує вчення, а перебирає його з усіх боків: кожен вірш — це та сама думка, сказана інакше, і саме повтор і є формою. Читачеві варто знати, що тут немає розвитку від вірша до вірша; є один стан, описаний сто разів, і кілька віршів (18.31–18.39) прямо говорять про те, що вправляння й зусилля цього стану не дають.",
+  "verses": {
+    "18.1": {
+      "parallel": "18-1",
+      "illustration": {
+        "file": "18-1-flame.svg",
+        "caption": "Полумʼя пробудження: омана стає сном"
+      }
+    },
+    "18.2": {
+      "parallel": "18-2",
+      "illustration": {
+        "file": "18-2-neti.svg",
+        "caption": "Блага й насолоди без зречення"
+      }
+    },
+    "18.3": {
+      "illustration": {
+        "file": "18-3-flame.svg",
+        "caption": "Полумʼя страждання в серці"
+      }
+    },
+    "18.4": {
+      "illustration": {
+        "file": "18-4-illusion.svg",
+        "caption": "Буття під серпанком: уявлення"
+      }
+    },
+    "18.5": {
+      "parallel": "18-5",
+      "illustration": {
+        "file": "18-5-space.svg",
+        "caption": "Стопа Атмана: не далеко й не близько"
+      }
+    },
+    "18.6": {
+      "illustration": {
+        "file": "18-6-neti.svg",
+        "caption": "Завороженість припинилася — зір без покрову"
+      }
+    },
+    "18.7": {
+      "illustration": {
+        "file": "18-7-illusion.svg",
+        "caption": "Побудова уяви й вільний Атман"
+      }
+    },
+    "18.8": {
+      "illustration": {
+        "file": "18-8-neti.svg",
+        "caption": "Буття й небуття вигадані: мовчання безбажанного"
+      }
+    },
+    "18.9": {
+      "parallel": "18-9",
+      "illustration": {
+        "file": "18-9-neti.svg",
+        "caption": "Три розрізнення відкинуті: усе — Атман"
+      }
+    },
+    "18.10": {
+      "illustration": {
+        "file": "18-10-balance.svg",
+        "caption": "Дві шальки, яких немає у вгамованого"
+      }
+    },
+    "18.11": {
+      "parallel": "18-11",
+      "illustration": {
+        "file": "18-11-balance.svg",
+        "caption": "Дві шальки: царство й життя з подаяння"
+      }
+    },
+    "18.12": {
+      "illustration": {
+        "file": "18-12-neti.svg",
+        "caption": "Дгарма, бажання, користь і розрізнення відпали"
+      }
+    },
+    "18.13": {
+      "illustration": {
+        "file": "18-13-space.svg",
+        "caption": "Нічого не слід зробити: все йде як живеться"
+      }
+    },
+    "18.14": {
+      "illustration": {
+        "file": "18-14-neti.svg",
+        "caption": "Омана, світ, споглядання й свобода відпали"
+      }
+    },
+    "18.15": {
+      "parallel": "18-15",
+      "illustration": {
+        "file": "18-15-illusion.svg",
+        "caption": "Світ, якого немає, і той, хто не має слідів"
+      }
+    },
+    "18.16": {
+      "illustration": {
+        "file": "18-16-neti.svg",
+        "caption": "Я — Брахман сказано; вільного від думки не питають"
+      }
+    },
+    "18.17": {
+      "illustration": {
+        "file": "18-17-knot.svg",
+        "caption": "Вузол розсіяння, якого немає в великодухого"
+      }
+    },
+    "18.18": {
+      "illustration": {
+        "file": "18-18-motion.svg",
+        "caption": "Мудрий, збочений разом зі світом"
+      }
+    },
+    "18.19": {
+      "illustration": {
+        "file": "18-19-neti.svg",
+        "caption": "Позбавлений буття й небуття — і все ж діє"
+      }
+    },
+    "18.20": {
+      "parallel": "18-20",
+      "illustration": {
+        "file": "18-20-balance.svg",
+        "caption": "Дві шальки: діяння й відступ"
+      }
+    },
+    "18.21": {
+      "illustration": {
+        "file": "18-21-thread.svg",
+        "caption": "Сухий лист на вітрі самскар"
+      }
+    },
+    "18.22": {
+      "illustration": {
+        "file": "18-22-flame.svg",
+        "caption": "Прохолодне полумʼя без тіла"
+      }
+    },
+    "18.23": {
+      "illustration": {
+        "file": "18-23-neti.svg",
+        "caption": "Немає що відкидати й немає загибелі"
+      }
+    },
+    "18.24": {
+      "illustration": {
+        "file": "18-24-balance.svg",
+        "caption": "Дві шальки: гордість і приниженість"
+      }
+    },
+    "18.25": {
+      "parallel": "18-25",
+      "illustration": {
+        "file": "18-25-neti.svg",
+        "caption": "Діяння тіла, а не мене"
+      }
+    },
+    "18.26": {
+      "illustration": {
+        "file": "18-26-flame.svg",
+        "caption": "Сяйво звільненого за життя"
+      }
+    },
+    "18.27": {
+      "illustration": {
+        "file": "18-27-neti.svg",
+        "caption": "Роздуми вичерпані: спочинок"
+      }
+    },
+    "18.28": {
+      "illustration": {
+        "file": "18-28-witness.svg",
+        "caption": "Поза самадгі й розсіянням — як саме Брахмо"
+      }
+    },
+    "18.29": {
+      "illustration": {
+        "file": "18-29-knot.svg",
+        "caption": "Вузол я-роблення"
+      }
+    },
+    "18.30": {
+      "illustration": {
+        "file": "18-30-flame.svg",
+        "caption": "Розум вільного сяє"
+      }
+    },
+    "18.31": {
+      "parallel": "18-31",
+      "illustration": {
+        "file": "18-31-motion.svg",
+        "caption": "Ум, що замислюється без причини"
+      }
+    },
+    "18.32": {
+      "illustration": {
+        "file": "18-32-illusion.svg",
+        "caption": "Той, хто чув істину: тупий і незатьмарений"
+      }
+    },
+    "18.33": {
+      "illustration": {
+        "file": "18-33-neti.svg",
+        "caption": "Зосередженість і припинення відпадають"
+      }
+    },
+    "18.34": {
+      "illustration": {
+        "file": "18-34-balance.svg",
+        "caption": "Дві шальки: зусилля й відсутність зусилля"
+      }
+    },
+    "18.35": {
+      "illustration": {
+        "file": "18-35-neti.svg",
+        "caption": "Атман поза вправою й множинністю"
+      }
+    },
+    "18.36": {
+      "illustration": {
+        "file": "18-36-balance.svg",
+        "caption": "Дві шальки: діяння й вправа"
+      }
+    },
+    "18.37": {
+      "illustration": {
+        "file": "18-37-knot.svg",
+        "caption": "Вузол бажання стати Брахмою"
+      }
+    },
+    "18.38": {
+      "illustration": {
+        "file": "18-38-thread.svg",
+        "caption": "Відтин кореня лиха"
+      }
+    },
+    "18.39": {
+      "illustration": {
+        "file": "18-39-knot.svg",
+        "caption": "Вузол бажання спокою"
+      }
+    },
+    "18.40": {
+      "illustration": {
+        "file": "18-40-witness.svg",
+        "caption": "Побачене й Атман, який бачать мудрі"
+      }
+    },
+    "18.41": {
+      "illustration": {
+        "file": "18-41-space.svg",
+        "caption": "Припинення, яке не треба вдавати"
+      }
+    },
+    "18.42": {
+      "illustration": {
+        "file": "18-42-motion.svg",
+        "caption": "Три способи наділяти буттям"
+      }
+    },
+    "18.43": {
+      "illustration": {
+        "file": "18-43-illusion.svg",
+        "caption": "Уявлений Атман і незнаний Атман"
+      }
+    },
+    "18.44": {
+      "illustration": {
+        "file": "18-44-balance.svg",
+        "caption": "Дві шальки: опора прагнення й порожнеча волі"
+      }
+    },
+    "18.45": {
+      "illustration": {
+        "file": "18-45-motion.svg",
+        "caption": "Пантери предметів і втеча в припинення"
+      }
+    },
+    "18.46": {
+      "illustration": {
+        "file": "18-46-motion.svg",
+        "caption": "Слони предметів тікають від лева без слідів"
+      }
+    },
+    "18.47": {
+      "illustration": {
+        "file": "18-47-motion.svg",
+        "caption": "Звичайні дії без ноші визволення"
+      }
+    },
+    "18.48": {
+      "illustration": {
+        "file": "18-48-neti.svg",
+        "caption": "Різниця й байдужість відпали"
+      }
+    },
+    "18.49": {
+      "parallel": "18-49",
+      "illustration": {
+        "file": "18-49-motion.svg",
+        "caption": "Діяння як у дитини: що випало, те й робить"
+      }
+    },
+    "18.50": {
+      "illustration": {
+        "file": "18-50-flame.svg",
+        "caption": "Полумʼя свободи: щастя й вища стопа"
+      }
+    },
+    "18.51": {
+      "illustration": {
+        "file": "18-51-neti.svg",
+        "caption": "Не діяч і не споживач: рухи розуму вичерпані"
+      }
+    },
+    "18.52": {
+      "illustration": {
+        "file": "18-52-illusion.svg",
+        "caption": "Удаваний спокій і справжній"
+      }
+    },
+    "18.53": {
+      "illustration": {
+        "file": "18-53-motion.svg",
+        "caption": "Розкоші й нетрі — однаково для мудрих"
+      }
+    },
+    "18.54": {
+      "illustration": {
+        "file": "18-54-neti.svg",
+        "caption": "Шанування без сліду в серці"
+      }
+    },
+    "18.55": {
+      "parallel": "18-55",
+      "illustration": {
+        "file": "18-55-balance.svg",
+        "caption": "Дві шальки: висміяний і зневажений"
+      }
+    },
+    "18.56": {
+      "illustration": {
+        "file": "18-56-illusion.svg",
+        "caption": "Стан, що його знають лише такі ж"
+      }
+    },
+    "18.57": {
+      "illustration": {
+        "file": "18-57-neti.svg",
+        "caption": "Треба зробити — і сансари немає"
+      }
+    },
+    "18.58": {
+      "illustration": {
+        "file": "18-58-balance.svg",
+        "caption": "Дві шальки: неробство й діяння"
+      }
+    },
+    "18.59": {
+      "parallel": "18-59",
+      "illustration": {
+        "file": "18-59-motion.svg",
+        "caption": "Зручно сидить, зручно їсть: розум спокійний"
+      }
+    },
+    "18.60": {
+      "illustration": {
+        "file": "18-60-space.svg",
+        "caption": "Велике озеро без вітру"
+      }
+    },
+    "18.61": {
+      "illustration": {
+        "file": "18-61-flame.svg",
+        "caption": "Діяльність, що дає плід припинення"
+      }
+    },
+    "18.62": {
+      "illustration": {
+        "file": "18-62-balance.svg",
+        "caption": "Дві шальки: пристрасть і безпристрасність"
+      }
+    },
+    "18.63": {
+      "illustration": {
+        "file": "18-63-illusion.svg",
+        "caption": "Погляд уявлення й не-бачення"
+      }
+    },
+    "18.64": {
+      "illustration": {
+        "file": "18-64-motion.svg",
+        "caption": "Мудрець поводиться як дитина"
+      }
+    },
+    "18.65": {
+      "illustration": {
+        "file": "18-65-motion.svg",
+        "caption": "П'ять чуттів і розум без спраги"
+      }
+    },
+    "18.66": {
+      "illustration": {
+        "file": "18-66-space.svg",
+        "caption": "Сансара й мета — як у простору"
+      }
+    },
+    "18.67": {
+      "illustration": {
+        "file": "18-67-flame.svg",
+        "caption": "Невдаване самадгі"
+      }
+    },
+    "18.68": {
+      "parallel": "18-68",
+      "illustration": {
+        "file": "18-68-neti.svg",
+        "caption": "Ні насолод, ні визволення"
+      }
+    },
+    "18.69": {
+      "illustration": {
+        "file": "18-69-illusion.svg",
+        "caption": "Двоїстість, що розквітла з імені"
+      }
+    },
+    "18.70": {
+      "illustration": {
+        "file": "18-70-neti.svg",
+        "caption": "Усе має природу омани — і заспокоєння"
+      }
+    },
+    "18.71": {
+      "illustration": {
+        "file": "18-71-neti.svg",
+        "caption": "Припис і відречення відпали"
+      }
+    },
+    "18.72": {
+      "illustration": {
+        "file": "18-72-neti.svg",
+        "caption": "Пута й визволення відпали"
+      }
+    },
+    "18.73": {
+      "illustration": {
+        "file": "18-73-illusion.svg",
+        "caption": "Сансара, у якій обертається лише майя"
+      }
+    },
+    "18.74": {
+      "illustration": {
+        "file": "18-74-neti.svg",
+        "caption": "Знання, всесвіт і тіло відпали"
+      }
+    },
+    "18.75": {
+      "illustration": {
+        "file": "18-75-knot.svg",
+        "caption": "Вузол: покинув діяння — і взявся за балачки"
+      }
+    },
+    "18.76": {
+      "illustration": {
+        "file": "18-76-illusion.svg",
+        "caption": "Зовні без розрізнень, усередині пожадливий"
+      }
+    },
+    "18.77": {
+      "illustration": {
+        "file": "18-77-neti.svg",
+        "caption": "Немає нагоди зробити чи сказати"
+      }
+    },
+    "18.78": {
+      "illustration": {
+        "file": "18-78-neti.svg",
+        "caption": "Темрява й світло відпали"
+      }
+    },
+    "18.79": {
+      "illustration": {
+        "file": "18-79-neti.svg",
+        "caption": "Стійкість і розрізнення відпали"
+      }
+    },
+    "18.80": {
+      "illustration": {
+        "file": "18-80-neti.svg",
+        "caption": "Небо, пекло й визволення — ніщо"
+      }
+    },
+    "18.81": {
+      "illustration": {
+        "file": "18-81-balance.svg",
+        "caption": "Дві шальки: набуток і ненабуток"
+      }
+    },
+    "18.82": {
+      "illustration": {
+        "file": "18-82-balance.svg",
+        "caption": "Дві шальки: хвала й осуд"
+      }
+    },
+    "18.83": {
+      "illustration": {
+        "file": "18-83-balance.svg",
+        "caption": "Дві шальки: сансара й Атман"
+      }
+    },
+    "18.84": {
+      "illustration": {
+        "file": "18-84-neti.svg",
+        "caption": "Син, жінка, тіло — без надій"
+      }
+    },
+    "18.85": {
+      "illustration": {
+        "file": "18-85-motion.svg",
+        "caption": "Вдоволення скрізь, де зайшло сонце"
+      }
+    },
+    "18.86": {
+      "illustration": {
+        "file": "18-86-balance.svg",
+        "caption": "Дві шальки: тіло падає чи встає"
+      }
+    },
+    "18.87": {
+      "illustration": {
+        "file": "18-87-space.svg",
+        "caption": "Без жодної речі — сам-один"
+      }
+    },
+    "18.88": {
+      "illustration": {
+        "file": "18-88-balance.svg",
+        "caption": "Дві шальки: грудка й золото"
+      }
+    },
+    "18.89": {
+      "parallel": "18-89",
+      "illustration": {
+        "file": "18-89-witness.svg",
+        "caption": "Без опори — і немає сліду в серці"
+      }
+    },
+    "18.90": {
+      "illustration": {
+        "file": "18-90-neti.svg",
+        "caption": "Знає — не знає; бачить — не бачить"
+      }
+    },
+    "18.91": {
+      "illustration": {
+        "file": "18-91-balance.svg",
+        "caption": "Дві шальки: жебрак і володар"
+      }
+    },
+    "18.92": {
+      "illustration": {
+        "file": "18-92-neti.svg",
+        "caption": "Свобода й стиснення відпали"
+      }
+    },
+    "18.93": {
+      "illustration": {
+        "file": "18-93-flame.svg",
+        "caption": "Те, що переживається всередині, — не розповідається"
+      }
+    },
+    "18.94": {
+      "illustration": {
+        "file": "18-94-balance.svg",
+        "caption": "Дві шальки: сон і неспання"
+      }
+    },
+    "18.95": {
+      "illustration": {
+        "file": "18-95-neti.svg",
+        "caption": "З думкою — без думки; з розумом — без розуму"
+      }
+    },
+    "18.96": {
+      "parallel": "18-96",
+      "illustration": {
+        "file": "18-96-neti.svg",
+        "caption": "Ні щасливий, ні нещасний; ні щось, ні ніщо"
+      }
+    },
+    "18.97": {
+      "illustration": {
+        "file": "18-97-balance.svg",
+        "caption": "Розсіяння й самадгі — не його"
+      }
+    },
+    "18.98": {
+      "illustration": {
+        "file": "18-98-space.svg",
+        "caption": "Безспраглість: не памʼятає зробленого"
+      }
+    },
+    "18.99": {
+      "parallel": "18-99",
+      "illustration": {
+        "file": "18-99-balance.svg",
+        "caption": "Дві шальки: хвала й ганьба"
+      }
+    },
+    "18.100": {
+      "illustration": {
+        "file": "18-100-motion.svg",
+        "caption": "Ні до людей, ні до лісу — рівний скрізь"
+      }
+    }
+  }
+}

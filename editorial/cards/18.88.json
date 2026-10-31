@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.88",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.88",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.88",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nirmamaḥ śobhate dhīraḥ samaloṣṭāśmakāñcanaḥ | subhinnahṛdayagranthir vinirdhūtarajastamaḥ ||",
+  "iast": "nirmamaḥ śobhate dhīraḥ samaloṣṭāśmakāñcanaḥ | subhinnahṛdayagranthir vinirdhūtarajastamaḥ ||",
+  "grammar": "nirmamaḥ (m. nom. sg. «без „моє“») śobhate dhīraḥ (m. nom. sg.) samaloṣṭāśmakāñcanaḥ (bahuvrīhi «для кого грудка, камінь і золото те саме»: sama «рівний» + loṣṭa «грудка землі» + aśman «камінь» + kāñcana «золото») subhinnahṛdayagranthiḥ (m. nom. sg. «той, у кого добре розв'язаний вузол серця»: su «добре» + bhinna «розбитий, розв'язаний» + hṛdaya «серце» + granthi «вузол») vinirdhūtarajastamaḥ (m. nom. sg. «той, хто струсив геть пил і темряву»: vi-nir-dhūta «добре струснутий» + rajas «пил, пристрасть» + tamas «темрява»).",
+  "literal_meaning": "«Без „моє“ сяє мудрий, для кого грудка, камінь і золото — те саме; у кого добре розв'язаний вузол серця, хто струсив геть пил і темряву.»",
+  "ukrainian_translation": "Без «моє» сяє мудрий, для кого грудка, камінь і золото те саме; у кого добре розв'язаний вузол серця, хто струсив геть пил і темряву.",
+  "commentary": "`loṣṭa` («грудка землі») навмисно нижче за камінь і золото: перелік іде від найдешевшого до найдорожчого, і всі три зрівняні. `hṛdayagranthi` («вузол серця») — усталений образ, але `su-bhinna` («добре розбитий») додає різкості: вузол не розв'язують, а розбивають. `rajas` і `tamas` — дві з трьох ґун, названі прямо.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

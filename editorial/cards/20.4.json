@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.4",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva prārabdhāni karmāṇi | jīvanmuktir api kva vā | kva tad videhakaivalyaṃ | nirviśeṣasya sarvadā ||",
+  "iast": "kva prārabdhāni karmāṇi | jīvanmuktir api kva vā | kva tad videhakaivalyaṃ | nirviśeṣasya sarvadā ||",
+  "grammar": "prārabdhāni karmāṇi — n. наз. мн. «уже започатковані діяння»; prārabdha — ppp від pra-ā-√rabh, у традиції — карма, що вже почала давати плоди. jīvanmuktiḥ «звільнення за життя». api «навіть». videhakaivalyam — n. «безтілесна кайвалья», тобто звільнення після розпаду тіла (vi-deha). nirviśeṣasya — родовий одн. «у того, хто без ознак, без відмінностей» (nir-viśeṣa). sarvadā «завжди». Складність: пара jīvanmukti / videhakaivalya — це два традиційні етапи звільнення, і вірш заперечує обидва; сам текст їх не визначає, тому пояснення в коментарі — з традиції, не з вірша.",
+  "literal_meaning": "«Де започатковані діяння, де звільнення за життя? Де та безтілесна кайвалья — у того, хто завжди без ознак?»",
+  "ukrainian_translation": "Де вже запущені в дію діяння, де звільнення ще за життя? Де те безтілесне кайвальям — у того, хто завжди без ознак?",
+  "commentary": "Тут заперечено не лише пута, а й обидві форми звільнення, відомі традиції: прижиттєве (jīvanmukti) і посмертне (videhakaivalya). Разом із ними зникає й prārabdha-karman — залишкова карма, якою зазвичай пояснюють, чому звільнений ще живе в тілі. Логіка вірша: усе це ознаки, а того, хто без ознак (nirviśeṣa), означити нічим. Зауважмо, що слово mukti в главах 16, 17 і 20 ужите лише двічі — тут і в 20.12, — і обидва рази в переліку того, чого немає.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.4) і SARIT (verse_20.4)",
+      "note": "Після нормалізації (без пробілів і без позначення аваґрахи) читання збігаються. SARIT пише сандгі злитно й позначає аваґраху знаком «+» (наприклад ke+api), GRETIL — роздільно й апострофом (ke 'pi); різниця в поділі слів і в оформленні, не в тексті. Перевірено вручну звіркою обох транскрипцій 2026-11-01.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

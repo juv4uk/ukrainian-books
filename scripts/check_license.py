@@ -43,10 +43,13 @@ def check(root: Path) -> list[str]:
     license_path = root / "LICENSE"
     copy_path = root / "VOLNOST.md"
 
-    if not license_path.is_file():
-        errors.append("Відсутній LICENSE")
-    if not copy_path.is_file():
-        errors.append("Відсутній VOLNOST.md")
+    # is_file() переходить за символьними посиланнями: правильний хеш
+    # зовнішнього файла не доводить наявності канону у самому Git-дереві.
+    for name, path in (("LICENSE", license_path), ("VOLNOST.md", copy_path)):
+        if path.is_symlink():
+            errors.append(f"{name}: символічне посилання не дозволено")
+        elif not path.is_file():
+            errors.append(f"Відсутній {name}")
     if errors:
         return errors
 
@@ -125,6 +128,34 @@ def _self_test() -> list[str]:
         if not any("Відсутній LICENSE" in e for e in check(Path(tmp))):
             failures.append("порожній каталог: не виявлено відсутність LICENSE")
 
+    # Символьне посилання на точні канонічні байти не є самостійною
+    # копією ліцензії у Git. Обидва випадки мають бути відхилені навіть
+    # тоді, коли всі байтові/хеш-перевірки інакше пройшли б успішно.
+    for link_name in ("LICENSE", "VOLNOST.md"):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "canon").write_bytes(good)
+            other = "VOLNOST.md" if link_name == "LICENSE" else "LICENSE"
+            (root / other).write_bytes(good)
+            try:
+                (root / link_name).symlink_to(root / "canon")
+            except (OSError, NotImplementedError) as exc:
+                failures.append(f"{link_name}: не вдалося створити тестове посилання: {exc}")
+                continue
+            if not any("символічне посилання" in e for e in check(root)):
+                failures.append(f"{link_name}: канонічний symlink пройшов перевірку")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        (root / "VOLNOST.md").write_bytes(good)
+        try:
+            (root / "LICENSE").symlink_to(root / "missing")
+        except (OSError, NotImplementedError) as exc:
+            failures.append(f"пошкоджене посилання: неможливо створити тест: {exc}")
+        else:
+            if not any("символічне посилання" in e for e in check(root)):
+                failures.append("пошкоджене посилання LICENSE не виявлено")
+
     return failures
 
 
@@ -142,7 +173,7 @@ def main() -> int:
             for item in failures:
                 print(f"САМОПЕРЕВІРКА-ПРОВАЛ: {item}")
             return 1
-        print("САМОПЕРЕВІРКА-OK: 8 негативних випадків і 1 позитивний")
+        print("САМОПЕРЕВІРКА-OK: 11 негативних випадків і 1 позитивний")
         return 0
 
     errors = check(args.root)

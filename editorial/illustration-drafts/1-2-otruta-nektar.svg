@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="nazva opys">
+  <title id="nazva">Аштавакра-ґіта 1.2: як отруту — як нектар</title>
+  <desc id="opys">Симетрична редакторська схема. Ліворуч темно-охриста посудина з умовними вихорами чуттєвих принад і написом «Відкинь, мов отруту». Праворуч зелена посудина з п'ятьма золотистими зернами, підписаними «терпимість», «прямота», «співчуття», «вдоволеність», «правдивість», із написом «Плекай, мов нектар». Зерна — сучасна українська художня асоціація, не образ санскритського вірша.</desc>
+  <rect width="960" height="560" fill="#faf7ef"/>
+  <rect x="20" y="20" width="920" height="520" rx="22" fill="none" stroke="#d8d0bd" stroke-width="2"/>
+  <text x="480" y="69" fill="#263c37" font-size="30" font-weight="700" text-anchor="middle" font-family="DejaVu Sans, sans-serif">Як отруту — як нектар</text>
+  <text x="480" y="101" fill="#56615b" font-size="16" text-anchor="middle" font-family="DejaVu Sans, sans-serif">«Аштавакра-ґіта» 1.2 · редакторська метафора</text>
+  <rect x="50" y="125" width="402" height="343" rx="22" fill="#f5e6d9" stroke="#c8a48b" stroke-width="2"/>
+  <rect x="508" y="125" width="402" height="343" rx="22" fill="#e4efe7" stroke="#92b5a3" stroke-width="2"/>
+  <text x="251" y="167" fill="#81492f" font-size="24" font-weight="700" text-anchor="middle" font-family="DejaVu Sans, sans-serif">Відкинь</text>
+  <text x="251" y="194" fill="#81492f" font-size="17" text-anchor="middle" font-family="DejaVu Sans, sans-serif">мов отруту</text>
+  <g stroke="#94583b" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M153 261 Q205 225 250 261 Q297 295 351 255"/>
+    <path d="M166 290 Q215 323 265 287 Q306 259 340 291"/>
+    <path d="M205 226 Q183 208 192 190"/>
+  </g>
+  <g stroke="#986448" stroke-width="3" fill="#d3a27f">
+    <path d="M164 321 Q165 383 221 405 L282 405 Q339 382 338 321 Z"/>
+    <path d="M159 321 Q251 299 343 321 Q251 343 159 321 Z" fill="#edc4a2"/>
+  </g>
+  <text x="251" y="440" fill="#713c2c" font-size="17" text-anchor="middle" font-family="DejaVu Sans, sans-serif">чуттєві предмети</text>
+  <text x="480" y="294" fill="#647d70" font-size="30" text-anchor="middle" font-family="DejaVu Sans, sans-serif">↔</text>
+  <text x="709" y="167" fill="#2b6850" font-size="24" font-weight="700" text-anchor="middle" font-family="DejaVu Sans, sans-serif">Плекай</text>
+  <text x="709" y="194" fill="#2b6850" font-size="17" text-anchor="middle" font-family="DejaVu Sans, sans-serif">мов нектар</text>
+  <g stroke="#427f61" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M562 314 Q584 380 626 413 L682 413"/>
+    <path d="M563 314 Q571 269 606 240"/>
+  </g>
+  <g stroke="#427f61" stroke-width="2" fill="#e5bd69">
+    <ellipse cx="599" cy="235" rx="10" ry="17" transform="rotate(-30 599 235)"/>
+    <ellipse cx="592" cy="272" rx="10" ry="17" transform="rotate(22 592 272)"/>
+    <ellipse cx="587" cy="311" rx="10" ry="17" transform="rotate(-25 587 311)"/>
+    <ellipse cx="600" cy="352" rx="10" ry="17" transform="rotate(22 600 352)"/>
+    <ellipse cx="634" cy="394" rx="10" ry="17" transform="rotate(-25 634 394)"/>
+  </g>
+  <g fill="#245743" font-size="18" font-family="DejaVu Sans, sans-serif">
+    <text x="638" y="242">терпимість</text>
+    <text x="638" y="279">прямота</text>
+    <text x="638" y="317">співчуття</text>
+    <text x="638" y="360">вдоволеність</text>
+    <text x="661" y="401">правдивість</text>
+  </g>
+  <text x="480" y="496" fill="#485950" font-size="16" text-anchor="middle" font-family="DejaVu Sans, sans-serif">П'ять чеснот — не п'ять окремих шляхів, а один перелік.</text>
+  <text x="480" y="521" fill="#58665c" font-size="13" text-anchor="middle" font-family="DejaVu Sans, sans-serif">Зерно й глиняні посудини — сучасні українські образи; не реконструкція давньої Індії.</text>
+</svg>

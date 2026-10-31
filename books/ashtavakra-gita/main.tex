@@ -1,0 +1,338 @@
+% =====================================================================
+%  «Аштавакра-ґіта» — ФОРМАТ-02, робоче видання всієї книги
+%
+%  Пʼять шарів на кожен із 298 віршів: деванагарі, українська
+%  транслітерація, переклад, науковий коментар з українськими паралелями,
+%  власна схема. Плюс окремо — наш поетичний переклад усієї книги.
+%
+%  Джерело тексту — власні редакторські картки editorial/cards/*.json
+%  і файли books/ashtavakra-gita/format-v2/ та poetychnyi/. Нічого з цього
+%  не написано руками у .tex: усе генерує scripts/build_format_v2_chapter.py.
+%
+%  Складання:
+%    python3 scripts/build_verse_schemas.py --pdf
+%    python3 scripts/build_format_v2_chapter.py --all
+%    cd books/ashtavakra-gita && latexmk -xelatex main.tex
+%  або без latexmk:
+%    xelatex main.tex && xelatex main.tex
+%
+%  Потрібні пакети: fontspec, polyglossia, geometry, graphicx; шрифти
+%  DejaVu Serif (fonts-dejavu-core) і шрифт із деванагарі
+%  (fonts-noto-core або fonts-lohit-deva).
+% =====================================================================
+\documentclass[10pt,a5paper,openany]{book}
+
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}[Ligatures=TeX]
+\setsansfont{DejaVu Sans}[Ligatures=TeX,Scale=MatchLowercase]
+\setmonofont{DejaVu Sans Mono}[Scale=MatchLowercase]
+
+% Деванагарі потрібен окремий шрифт: DejaVu його не має, і без цього рядка
+% XeLaTeX мовчки лишив би порожні квадратики замість тексту.
+\IfFontExistsTF{Noto Serif Devanagari}
+  {\newfontfamily\devanagarifont{Noto Serif Devanagari}[Script=Devanagari]}
+  {\IfFontExistsTF{Lohit Devanagari}
+    {\newfontfamily\devanagarifont{Lohit Devanagari}[Script=Devanagari]}
+    {\IfFontExistsTF{Noto Sans Devanagari}
+      {\newfontfamily\devanagarifont{Noto Sans Devanagari}[Script=Devanagari]}
+      {\newcommand{\devanagarifont}{%
+         \errmessage{Немає шрифту з деванагарі: встановіть fonts-noto-core
+         або fonts-lohit-deva}}}}}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{ukrainian}
+\setotherlanguage{english}
+
+\usepackage[a5paper,top=17mm,bottom=19mm,inner=17mm,outer=15mm,headsep=5mm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\IfFileExists{pzdr.tfm}{\usepackage[hidelinks]{hyperref}}{}
+
+\setlength{\parindent}{1.1em}
+\setlength{\parskip}{0pt}
+\renewcommand{\baselinestretch}{1.04}
+\clubpenalty=9000
+\widowpenalty=9000
+\brokenpenalty=3000
+\tolerance=1500
+\emergencystretch=3em
+\hbadness=10000
+\vbadness=10000
+\let\cleardoublepage\clearpage
+
+% --- макроси ФОРМАТ-02 ------------------------------------------------
+\newcommand{\naukchapter}[3]{%
+  \chapter*{#3}%
+  \addcontentsline{toc}{chapter}{#3}%
+  \markboth{#3}{#3}%
+  \noindent{\sffamily\footnotesize Пʼять шарів на вірш: #2 віршів.\par}%
+  \addvspace{0.6em}}
+
+\long\def\naukintro#1{\begin{quote}\small\raggedright #1\end{quote}\addvspace{0.6em}}
+
+\newcommand{\vsec}[1]{%
+  \par\addvspace{1.6em}%
+  {\sffamily\bfseries\large Вірш~#1\par}%
+  \nopagebreak\addvspace{0.3em}}
+
+% Шар 1: деванагарі.
+\long\def\vdeva#1{%
+  \noindent{\devanagarifont\large #1\par}%
+  \nopagebreak\addvspace{0.35em}}
+
+% Шар 2: українська транслітерація.
+\long\def\vtranslit#1{%
+  \noindent{\sffamily\footnotesize\textbf{Як звучить.}}~%
+  {\footnotesize\itshape #1\par}%
+  \nopagebreak\addvspace{0.35em}}
+
+% Шар 3: переклад.
+\long\def\vperek#1{\noindent\textbf{Переклад.}~#1\par\addvspace{0.4em}}
+
+% Шар 4: науковий коментар.
+\long\def\vcom#1{\noindent\textbf{Коментар.}~#1\par\addvspace{0.4em}}
+
+% Шар 4б: українська паралель.
+\long\def\vpar#1#2#3{%
+  \addvspace{0.2em}\noindent
+  {\sffamily\footnotesize\textbf{#1.}}~{\footnotesize\textit{#2}~#3\par}%
+  \addvspace{0.3em}}
+
+\long\def\vquot#1#2#3#4{%
+  \begin{quote}\footnotesize\raggedright
+  «#1»\par\addvspace{0.15em}%
+  — #2. #3. \texttt{\footnotesize #4}\end{quote}}
+
+% Шар 5: ілюстрація.
+\long\def\vfig#1#2#3{%
+  \addvspace{0.4em}%
+  \begin{center}%
+    \includegraphics[width=0.92\textwidth]{#1}%
+    \par\addvspace{0.2em}%
+    {\footnotesize\raggedright #2\par}%
+    {\footnotesize\itshape\textcolor{gray}{#3}\par}%
+  \end{center}%
+  \addvspace{0.2em}}
+
+% Поетичний переклад.
+\newcommand{\poemverse}[2]{%
+  \par\addvspace{0.9em}%
+  {\sffamily\footnotesize #1\par}\nopagebreak
+  \begin{quote}\normalsize\raggedright #2\end{quote}}
+
+\begin{document}
+
+% =====================================================================
+%  ТИТУЛ
+% =====================================================================
+\begin{titlepage}
+\centering
+\vspace*{1.6cm}
+
+{\sffamily\Large АШТАВАКРА-ҐІТА\par}
+\vspace{0.5em}
+{\sffamily\small Aṣṭāvakragītā\par}
+
+\vspace{1.6cm}
+{\sffamily\bfseries\large РОБОЧЕ ПІЛОТНЕ ВИДАННЯ\par}
+\vspace{0.5em}
+{\sffamily ФОРМАТ-02: пʼять шарів на вірш\par}
+\vspace{0.3em}
+{\sffamily Глави 1–20 — 298 віршів\par}
+
+\vspace{1.4cm}
+\begin{minipage}{0.86\textwidth}
+\small\raggedright
+\textbf{Це не завершена книга і не академічне видання.}
+
+\vspace{0.5em}
+Це \emph{робоче пілотне видання нового формату}: воно показує, що машина
+складає всі пʼять шарів для кожного вірша книги і що з наявного матеріалу
+вже можна скласти PDF.
+
+\vspace{0.5em}
+\textbf{Поетичний переклад у цій книзі — наш власний і не канонічний.}
+Він не замінює науковий переклад і не претендує на те, щоб його читали
+замість санскритського тексту.
+
+\vspace{0.5em}
+Усі редакторські картки мають статус \textbf{«чернетка»}. Жодна не позначена
+як рецензована, жодна не має підтвердженого аудиту прав. Санскритологічної
+вичитки не було.
+
+\vspace{0.5em}
+\textbf{Деванагарі тут — механічна транслітерація} поля \texttt{iast} з картки,
+а не окреме читання за рукописом. Якщо деванагарі розійдеться з карткою,
+правильною є картка.
+
+\vspace{0.5em}
+Не цитувати як переклад «Аштавакра-ґіти».
+\end{minipage}
+
+\vfill
+{\sffamily\footnotesize Електронне робоче видання. Не для продажу.\par}
+\end{titlepage}
+
+% =====================================================================
+%  ВИХІДНІ ДАНІ
+% =====================================================================
+\thispagestyle{empty}
+\vspace*{\fill}
+\begingroup\small
+\noindent\textbf{\sffamily Вихідні дані}
+
+\vspace{0.8em}
+\noindent
+\begin{tabular}{@{}p{0.34\textwidth}p{0.58\textwidth}@{}}
+\textsf{Назва} & Аштавакра-ґіта (Aṣṭāvakragītā). Робоче пілотне видання ФОРМАТ-02 \\[0.3em]
+\textsf{Зміст} & Глави 1–20 (298 віршів): деванагарі, українська транслітерація, переклад,
+науковий коментар з українськими паралелями, власна схема; окремо — наш поетичний
+переклад усієї книги \\[0.3em]
+\textsf{Первісний твір} & санскритська поема; за наявними даними — суспільне надбання через вік \\[0.3em]
+\textsf{Джерело нашого тексту} & власні картки \texttt{editorial/cards/*.json} \\[0.3em]
+\textsf{Статус карток} & «чернетка» — усі, без винятків \\[0.3em]
+\textsf{Поетичний переклад} & наш власний, не канонічний і не науковий \\[0.3em]
+\textsf{Укладач} & редакція проєкту \texttt{juv4uk/ukrainian-books} \\[0.3em]
+\textsf{Ліцензія власного внеску} & «ВОЛЬНІСТЬ» \\[0.3em]
+\textsf{Складання} & XeLaTeX, шрифт DejaVu Serif; деванагарі — Noto Serif Devanagari \\[0.3em]
+\end{tabular}
+
+\vspace{1.0em}
+\noindent\footnotesize
+Правовий статус матеріалів — \texttt{COPYRIGHT\_AND\_SOURCES.md}, паспорт
+видання — \texttt{PROVENANCE.md}, правила формату — \texttt{docs/FORMAT\_V2.md},
+таблиця транслітерації — \texttt{docs/TRANSLITERATSIIA.md}. Цей PDF не є
+юридичним висновком.
+\endgroup
+\vspace*{\fill}
+
+% =====================================================================
+%  ПЕРЕДМОВА
+% =====================================================================
+\frontmatter
+\pagestyle{headings}
+\tableofcontents
+\clearpage
+\chapter*{Передмова}
+\addcontentsline{toc}{chapter}{Передмова}
+\markboth{Передмова}{Передмова}
+
+Це \textbf{робоче пілотне видання}, а не книга. Мета одна: показати, що
+машина справді складає український PDF із кирилицею, діакритикою IAST,
+деванагарі, власними схемами й окремою частиною поетичного перекладу — і
+показати, скільки власного матеріалу вже придатне до верстки.
+
+\section*{Що тут зверстано}
+
+Усі двадцять глав, 298 віршів, кожен пʼятьма шарами. Кожен вірш має власну
+схему; кожен має українську паралель або прямо позначене її місце. Окремо
+йде наш поетичний переклад усієї книги.
+
+\section*{Чого тут немає}
+
+Санскритського читання цифрових свідків (GRETIL, SARIT) як окремого шару.
+Деванагарі й транслітерація — наше механічне перетворення того читання, яке
+вже звірене і збережене в картці; редакторський апарат транскрипцій не
+відтворюється. Це не технічне обмеження, а свідоме редакційне рішення,
+описане в \texttt{docs/VYDAVNYCHYI\_VYSNOVOK.md}.
+
+Так само немає рецензії: усі картки — «чернетка», незалежного рецензента не
+залучено. Переклади й коментарі робочі, не вивірені.
+
+\section*{Про українські паралелі}
+
+Кожне місце, де згадано українського поета, філософа чи діяча, позначене як
+\emph{наша паралель} — тобто наша асоціація, а не твердження про вплив.
+Ми не твердимо, що Сковорода читав «Аштавакра-ґіту». Там, де паралель
+непевна, у тексті стоїть позначка \textit{потребує перевірки}, а не впевнене
+імʼя. Жодної цитати з українських авторів у цьому виданні немає: усі
+паралелі — вказівки на твір без цитати. Правила — у
+\texttt{books/ashtavakra-gita/paraleli.json} і \texttt{scripts/check\_ukrainian\_parallels.py}.
+
+\section*{Про поетичний переклад}
+
+Друга частина книги — \textbf{наш поетичний переклад}, а не канонічний і не
+науковий. Він не замінює переклад у науковій частині: обидва йдуть у книзі,
+і читач бачить обидва. Поетична свобода тут — у ритмі й порядку слів, не у
+фактах; там, де рима псувала б думку, вжито верлібр.
+
+\mainmatter
+\input{generated/rozdil-1.tex}
+\input{generated/rozdil-2.tex}
+\input{generated/rozdil-3.tex}
+\input{generated/rozdil-4.tex}
+\input{generated/rozdil-5.tex}
+\input{generated/rozdil-6.tex}
+\input{generated/rozdil-7.tex}
+\input{generated/rozdil-8.tex}
+\input{generated/rozdil-9.tex}
+\input{generated/rozdil-10.tex}
+\input{generated/rozdil-11.tex}
+\input{generated/rozdil-12.tex}
+\input{generated/rozdil-13.tex}
+\input{generated/rozdil-14.tex}
+\input{generated/rozdil-15.tex}
+\input{generated/rozdil-16.tex}
+\input{generated/rozdil-17.tex}
+\input{generated/rozdil-18.tex}
+\input{generated/rozdil-19.tex}
+\input{generated/rozdil-20.tex}
+
+% =====================================================================
+%  ПОЕТИЧНИЙ ПЕРЕКЛАД
+% =====================================================================
+\backmatter
+\chapter*{Поетичний переклад. Наш, не канонічний}
+\addcontentsline{toc}{chapter}{Поетичний переклад (наш, не канонічний)}
+\markboth{Поетичний переклад}{Поетичний переклад}
+
+\noindent{\sffamily\small
+\textbf{Це наш поетичний переклад, а не канонічний і не науковий.}
+Він не замінює переклад у науковій частині: обидва йдуть у книзі, і читач
+бачить обидва. Тут збережено зміст кожного вірша, але змінено порядок слів,
+довжину рядків і ритм. Нічого, чого немає в санскритському тексті, не додано.}
+
+\input{generated/poetychnyi-1.tex}
+\input{generated/poetychnyi-2.tex}
+\input{generated/poetychnyi-3.tex}
+\input{generated/poetychnyi-4.tex}
+\input{generated/poetychnyi-5.tex}
+\input{generated/poetychnyi-6.tex}
+\input{generated/poetychnyi-7.tex}
+\input{generated/poetychnyi-8.tex}
+\input{generated/poetychnyi-9.tex}
+\input{generated/poetychnyi-10.tex}
+\input{generated/poetychnyi-11.tex}
+\input{generated/poetychnyi-12.tex}
+\input{generated/poetychnyi-13.tex}
+\input{generated/poetychnyi-14.tex}
+\input{generated/poetychnyi-15.tex}
+\input{generated/poetychnyi-16.tex}
+\input{generated/poetychnyi-17.tex}
+\input{generated/poetychnyi-18.tex}
+\input{generated/poetychnyi-19.tex}
+\input{generated/poetychnyi-20.tex}
+
+\chapter*{Джерела й межі цього видання}
+\addcontentsline{toc}{chapter}{Джерела й межі}
+\markboth{Джерела й межі}{Джерела й межі}
+
+\noindent\textbf{\sffamily Що є джерелом нашого тексту.}
+Власні редакторські картки \texttt{editorial/cards/*.json}: поля
+\texttt{ukrainian\_translation} і \texttt{commentary}. Деванагарі й українська
+транслітерація — наше механічне перетворення поля \texttt{iast} тих самих
+карток. Коментарі, паралелі, схеми й поетичний переклад — наш авторський
+внесок під ліцензією «ВОЛЬНІСТЬ».
+
+\vspace{0.6em}
+\noindent\textbf{\sffamily Що ми не відтворюємо.}
+Транскрипції GRETIL і SARIT, їхню розмітку та редакторський апарат. Локатори
+(\texttt{Avg\_1.1}, \texttt{verse\_1.1}) подано в картках як покажчик для звірки.
+
+\vspace{0.6em}
+\noindent\textbf{\sffamily Чого ми не стверджуємо.}
+Що це критичне видання. Що переклад вивірений. Що коментар рецензований. Що
+права на всі використані матеріали остаточно зʼясовані. Що наш поетичний
+переклад є канонічним.
+
+\end{document}

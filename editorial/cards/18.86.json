@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.86",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.86",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.86",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "patatūdetu vā deho nāsya cintā mahātmanaḥ | svabhāvabhūmiviśrāntivismṛtāśeṣasaṃsṛteḥ ||",
+  "iast": "patatūdetu vā deho nāsya cintā mahātmanaḥ | svabhāvabhūmiviśrāntivismṛtāśeṣasaṃsṛteḥ ||",
+  "grammar": "patatu (3 sg. imper. pat «хай падає») udetu (3 sg. imper. ud-i «хай устає») vā dehaḥ (m. nom. sg. «тіло»). na asya (m. gen. sg. «у нього немає») cintā (f. nom. sg. «турботи») mahātmanaḥ (m. gen. sg. «великого [духом]»). svabhāvabhūmiviśrānti (f. loc./nom. «спочинок на ґрунті власної природи»: svabhāva «власна природа» + bhūmi «ґрунт, земля» + viśrānti «спочинок») vismṛtāśeṣasaṃsṛteḥ (m. gen. sg. «того, у кого забута вся сансара»: vismṛta «забутий» + aśeṣa «без останку» + saṃsṛti «сансара, блукання»).",
+  "literal_meaning": "«Хай тіло падає або встає — у великого немає турботи: він спочив на ґрунті власної природи й забув усю сансару.»",
+  "ukrainian_translation": "Хай тіло падає або встає — у великого немає турботи: він спочив на ґрунті власної природи й забув усю сансару без останку.",
+  "commentary": "`patatu ... udetu` — два імперативи, і вони стосуються тіла, не людини: тіло поставлене в граматичну позицію того, хто діє сам. `svabhāvabhūmi` («ґрунт власної природи») — точніше за «основа»: це те, на чому стоїть, а не те, чим є. `aśeṣa` («без останку») закриває: забуто не частину сансари, а всю.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

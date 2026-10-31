@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.6",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva lokaḥ kva mumukṣur vā | kva yogī jñānavān kva vā | kva baddhaḥ kva ca vā muktaḥ | svasvarūpe 'ham advaye ||",
+  "iast": "kva lokaḥ kva mumukṣur vā | kva yogī jñānavān kva vā | kva baddhaḥ kva ca vā muktaḥ | svasvarūpe 'ham advaye ||",
+  "grammar": "lokaḥ — наз. одн. «світ» (у SARIT lokaṃ, знахідний; див. різночитання). mumukṣuḥ «спраглий звільнення». yogī «йог». jñānavān «обізнаний». baddhaḥ «зв'язаний». muktaḥ «звільнений». svasvarūpe — локатив одн. n. «у своїй власній формі». aham «я». advaye — локатив одн. «недвоїстій» (a-dvaya). Складність: речення без дієслова; aham із локативом означає «я [перебуваю] в ...». Знахідний lokaṃ у SARIT вибивається з низки називних (mumukṣuḥ, yogī, baddhaḥ, muktaḥ), і це аргумент на користь називного lokaḥ.",
+  "literal_meaning": "«Де світ, де спраглий звільнення, де йог чи обізнаний? Де зв'язаний, де звільнений — я в своїй власній недвоїстій формі.»",
+  "ukrainian_translation": "Де світ, де той, хто прагне звільнення, де йог чи знавець? Де зв'язаний, де звільнений — я у своїй власній формі, яка не знає двоїстості.",
+  "commentary": "Уперше в главі з'являється ствердне речення: aham ... svasvarūpe advaye, «я — у своїй недвоїстій формі». Усе інше лишається питанням. Показово, що серед зниклих постатей є й muktaḥ, звільнений: у недвоїстості немає ні того, хто зв'язаний, ні того, хто звільнений. Слово advaya, «недвоїстий», — єдиний явний адвайтичний термін у цих трьох главах; усе решта сказано описово. Це місце варто читати уважно: «я» тут не протиставлене світові, воно вказане як те, у чому світу не знаходиться місця.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.6) проти SARIT (verse_20.6)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ: GRETIL — kva lokaḥ (називний), SARIT — kva lokaṃ (знахідний). Решта членів низки в обох свідках стоять у називному (mumukṣuḥ, yogī, jñānavān, baddhaḥ, muktaḥ), тому називний lokaḥ узгоджується з будовою вірша, і в тексті картки взято його. Знахідний lokaṃ міг би залежати від прихованого дієслова, але такого дієслова у вірші немає. Вибір — редакційний, за синтаксисом низки; остаточно НЕ ВСТАНОВЛЕНО.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

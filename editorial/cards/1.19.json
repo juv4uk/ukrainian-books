@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "1.19",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.19",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.19",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yathaivādarśamadhyasthe rūpe+antaḥ paritastu saḥ| tathaivā+asmiñcharīre+antaḥ paritaḥ parameśvaraḥ||1|19||",
+  "iast": "yathaivādarśamadhyasthe rūpe 'ntaḥ paritas tu saḥ | tathaivāsmiñ charīre 'ntaḥ paritaḥ parameśvaraḥ ||",
+  "grammar": "yathā eva ādarśa-madhyasthe rūpe («як у образі, що стоїть посеред дзеркала») antaḥ paritaḥ tu saḥ («він усередині й навколо») | tathā eva asmin śarīre antaḥ paritaḥ parameśvaraḥ («так само в цьому тілі всередині й навколо — верховний володар»).",
+  "literal_meaning": "«Як образ у дзеркалі — він усередині й навколо нього; так само і в цьому тілі — всередині й навколо верховний володар.»",
+  "ukrainian_translation": "Як образ у дзеркалі — він усередині й навколо нього; так само і в цьому тілі — всередині й навколо верховний володар.",
+  "commentary": "Пара `antaḥ … paritaḥ` («усередині … навколо») стоїть в обох половинах, і саме вона несе думку: не «всередині тіла» як у посудині, а одночасно всередині й поза. Дзеркало — єдиний образ цього вірша; важливо, що образ у дзеркалі не є дзеркалом і не віддільний від нього. `parameśvara` — єдине вживання цього слова в книзі, і воно єдине тут звучить теїстично; переклад не повинен його пом'якшувати.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "1.16",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.16",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.16",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tvayā vyāptamidaṃ viśvaṃ tvayi protaṃ yathārthataḥ| śuddhabuddhasvarūpastvaṃ mā gamaḥ kṣudracittatām||1|16||",
+  "iast": "tvayā vyāptam idaṃ viśvaṃ tvayi protaṃ yathārthataḥ | śuddhabuddhasvarūpas tvaṃ mā gamaḥ kṣudracittatām ||",
+  "grammar": "tvayā vyāptam («просякнутий тобою») idam viśvam («цей всесвіт») tvayi protam («в тобі нанизаний») yathārthataḥ («справді так») | śuddha-buddha-svarūpaḥ tvam («ти маєш природу чистого й просвітленого») mā gamaḥ («не йди») kṣudra-cittatām («до дріб'язковості ума»).",
+  "literal_meaning": "«Цей всесвіт просякнутий тобою і справді нанизаний на тебе. Ти маєш природу чистого й просвітленого — не йди до дріб'язковості ума.»",
+  "ukrainian_translation": "Цей всесвіт просякнутий тобою і справді нанизаний на тебе. Ти маєш природу чистого й просвітленого — не йди до дріб'язковості ума.",
+  "commentary": "Два різні образи в першій половині: `vyāpta` («просякнутий, пронизаний») і `prota` («нанизаний», як на нитку). Перше — про заповнення, друге — про наскрізну нитку, на якій усе тримається. `kṣudracittatā` — «дріб'язковість ума», не «дрібні думки»: ідеться про масштаб, а не про кількість. `mā gamaḥ` — заборона, звернена до того, хто вже такий, а не до того, хто має стати.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
