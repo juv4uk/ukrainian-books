@@ -27,8 +27,10 @@ jobs:
         run: python3 scripts/check_editorial_cards.py
       - name: Перевірити прогалини в нумерації (блокує)
         run: python3 scripts/check_verse_gaps.py --strict
-      - name: Звіт про обірвані текстові поля (не блокує)
-        run: python3 scripts/check_card_text.py
+      - name: Синтетичні CLI-тести суворого контролю карток
+        run: python3 -m unittest discover -s tests -p 'test_card_text_ci_guard.py' -v
+      - name: Блокувати обірвані текстові поля карток
+        run: python3 scripts/check_card_text.py --strict
       - name: Звіт про однакове читання в різних картках (не блокує)
         run: python3 scripts/check_duplicate_text.py
       - name: Перевірити структуру, посилання й ліцензію
