@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "9.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_9.2",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_9.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kasyāpi tāta dhanyasya lokaceṣṭāvalokanāt| jīvitecchā bubhukṣā ca bubhutsopaśamaṃ gatāḥ||9|2||",
+  "iast": "kasyāpi tāta dhanyasya lokaceṣṭāvalokanāt | jīvitecchā bubhukṣā ca bubhutsopaśamaṃ gatāḥ ||",
+  "grammar": "kasyāpi («якогось») tāta («любий, друже» — звертання) dhanyasya («щасливого») loka-ceṣṭā-avalokanāt («від споглядання того, як поводиться світ») | jīvitecchā («бажання жити») bubhukṣā («голод, жага їсти») ca bubhutsā-upaśamam gatāḥ («дійшли до втишення бажання пізнавати»).",
+  "literal_meaning": "«У якогось щасливого, любий, від споглядання того, як поводиться світ, бажання жити, голод і жага пізнавати дійшли до втишення.»",
+  "ukrainian_translation": "У якогось щасливого, любий, від споглядання того, як поводиться світ, бажання жити, голод і жага пізнавати дійшли до втишення.",
+  "commentary": "Три подібні іменники стоять поруч: `jīvitecchā` (бажання жити), `bubhukṣā` (голод) і `bubhutsā` (жага пізнавати) — останнє те саме слово, що в 10.5, і словник має бути спільним. Причина названа одна й зовнішня: **споглядання** того, як поводиться світ, а не зусилля над собою. `tāta` — ласкаве звертання, не «батько».",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

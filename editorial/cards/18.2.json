@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.2",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "arjayitvākhilān arthān bhogān āpnoti puṣkalān | na hi sarvaparityāgam antareṇa sukhī bhavet ||",
+  "iast": "arjayitvākhilān arthān bhogān āpnoti puṣkalān | na hi sarvaparityāgam antareṇa sukhī bhavet ||",
+  "grammar": "arjayitvā (герунд arj «здобувши, накопичивши») akhilān (m. acc. pl. «усі, без останку») arthān (m. acc. pl. «блага, користі»). bhogān (m. acc. pl. «насолоди») āpnoti (3 sg. pr. āp «отримує») puṣkalān (m. acc. pl. «рясні, щедрі»). na hi («адже не») sarvaparityāgam (m. acc. sg. «повне зречення всього»: sarva «все» + parityāga «зречення») antareṇa («без, окрім») sukhī (m. nom. sg. «щасливий») bhavet (3 sg. opt. bhū «став би»).",
+  "literal_meaning": "«Здобувши всі блага, [людина] отримує рясні насолоди — але без повного зречення всього вона не стане щасливою.»",
+  "ukrainian_translation": "Здобувши всі блага, людина отримує рясні насолоди — але без повного зречення всього вона не стане щасливою.",
+  "commentary": "Вірш прямо зіставляє накопичення й щастя і не заперечує першого: насолоди справді приходять (āpnoti, дійсний спосіб). Заперечується лише висновок — sukhī bhavet стоїть в optativus («став би»), тобто це не факт, а умова, яка не виконується. Найсильніше слово — sarvaparityāga («зречення ВСЬОГО»): не більшості, не зайвого, а всього без останку. ПРИМІТКА ПРО ОБСЯГ. Глава 18 — найдовша в книзі: 99 віршів, третина тексту. Вона опрацьовується БЛОКАМИ. Ця картка належить до блоку 18.2–18.10; вірш 18.1 опрацьовано окремо (PR АҐ-18.1), а 18.11–18.99 ще не мають карток.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "СПРАВЖНЯ РІЗНОЧИТАННЯ З ПРОТИЛЕЖНИМ ЗМІСТОМ: SARIT — arjayitvākhilānarthān (akhila-anartha, «здобувши всі ЛИХА»), GRETIL — arjayitvākhilān arthān (akhila-artha, «здобувши всі БЛАГА»). Тут, на відміну від 14.1, перевагу має GRETIL: друга половина вірша говорить про bhogān («насолоди»), а насолоди виникають із благ, не з лих; читання SARIT дало б «назбиравши всіх лих, отримує рясні насолоди», що суперечить змісту. Висновок — із внутрішньої логіки вірша, а не з третього свідка, якого для 18.2 не перевірено. У перекладі взято GRETIL і це позначено як вибір.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

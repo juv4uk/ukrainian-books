@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.4",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "bhavo 'yaṃ bhāvanāmātro na kiṃcit paramārthataḥ | nāsty abhāvaḥ svabhāvānāṃ bhāvābhāvavibhāvinām ||",
+  "iast": "bhavo 'yaṃ bhāvanāmātro na kiṃcit paramārthataḥ | nāsty abhāvaḥ svabhāvānāṃ bhāvābhāvavibhāvinām ||",
+  "grammar": "bhavaḥ (m. nom. sg. «буття, становлення») ayam (m. nom. sg.) bhāvanāmātraḥ (bahuvrīhi «лише уявлення, не більше»: bhāvanā «уявлення, плекання в думці» + mātra «лише»). na kiṃcit («ніщо») paramārthataḥ (прислівник «у вищому сенсі, за остаточною істиною»). na asti («немає») abhāvaḥ (m. nom. sg. «небуття») svabhāvānām (m. gen. pl. «речей, що мають власну природу»: sva-bhāva) bhāvābhāvavibhāvinām (m. gen. pl. «тих, що розрізняють буття й небуття»: bhāva «буття» + abhāva «небуття» + vibhāvin «той, хто розрізняє»).",
+  "literal_meaning": "«Це буття — лише уявлення, у вищому сенсі — ніщо. Немає небуття для речей, що розрізняють буття й небуття.»",
+  "ukrainian_translation": "Це буття — тільки уявлення, у вищому сенсі — ніщо. І немає небуття для тих речей, що розрізняють буття й небуття.",
+  "commentary": "Вірш робить подвійний хід, і його легко прочитати наполовину. Спершу: буття — лише bhāvanā («уявлення»), і за остаточною істиною (paramārthataḥ) воно ніщо. Далі — несподіване: abhāvaḥ nāsti, «небуття немає» — тобто заперечується не лише буття, а й його відсутність. І заперечення стосується саме тих, хто розрізняє (vibhāvin): для того, хто ставить питання «є чи немає», обидві відповіді хибні. Це найточніше формулювання того, що в 2.14 було подано через athavā («або ж»).",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Дві розбіжності. Перша: SARIT — paramārthataḥ, GRETIL — paramarthataḥ (без довгого ā) — орфографія, та сама форма. Друга: SARIT — svabhāvānāṃ, GRETIL — svabhāvanāṃ; svabhāva («власна природа») і svabhāvanā («уявлення власної природи») — різні слова, але в контексті «речей, що розрізняють буття й небуття» читається svabhāva. Третій свідок не перевірений; у перекладі взято SARIT.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
