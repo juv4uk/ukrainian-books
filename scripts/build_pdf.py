@@ -7,7 +7,7 @@ XeLaTeX (LuaTeX без luaotfload, а CTAN недоступний для tlmgr).
 
 Джерела — згенеровані файли книги:
   books/ashtavakra-gita/rozdil-N-naukove.md   (20 розділів, пʼять шарів)
-  books/ashtavakra-gita/poetychnyi-rozdil-N.md (20 розділів, поезія)
+  books/ashtavakra-gita/poetychnyi/rozdil-N.md (20 розділів, поезія)
   books/ashtavakra-gita/ZMIST.md
 """
 
@@ -15,9 +15,11 @@ import html
 import os
 import re
 import sys
+from pathlib import Path
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BOOK = os.path.join(ROOT, "books", "ashtavakra-gita")
+POETIC = os.path.join(BOOK, "poetychnyi")
 
 CSS = """
 @page {
@@ -115,13 +117,25 @@ def md_to_html(text: str, base: str, poetry: bool) -> str:
             quote.append("<p>" + inline(s.lstrip("> ").strip()) + "</p>")
             i += 1; continue
 
-        m = re.match(r"^!\[(.*?)\]\((.*?)\)\s*(?:—\s*(.*))?$", s)
+        # Генератор наукових глав ставить SVG після мітки **Ілюстрація.**.
+        # Розпізнаємо і цей формат, і окремий Markdown-рисунок.
+        m = re.fullmatch(
+            r"(?:\*\*Ілюстрація\.\*\*\s+)?!\[([^\]]*)\]\(([^)]+)\)"
+            r"(?:\s*—\s*(.*))?", s
+        )
         if m:
             flush_para(); flush_quote()
             alt, src, caption = m.group(1), m.group(2), (m.group(3) or "")
-            path = os.path.normpath(os.path.join(base, src))
-            if os.path.exists(path):
-                out.append(f'<img src="file://{path}" alt="{esc(alt)}">')
+            if s.startswith("**Ілюстрація.**"):
+                out.append("<p><strong>Ілюстрація.</strong></p>")
+            root = Path(base).resolve()
+            path = (root / src).resolve()
+            # Лише власні локальні ілюстрації цього тому, без ../../ і URI.
+            if root in path.parents and path.is_file():
+                out.append(f'<img src="{html.escape(path.as_uri(), quote=True)}" '
+                           f'alt="{html.escape(alt, quote=True)}">')
+            else:
+                out.append("<p>Ілюстрація недоступна: " + esc(alt) + "</p>")
             if caption:
                 out.append('<p style="font-size:8pt;color:#555;text-align:center">'
                            + inline(caption) + "</p>")
@@ -155,13 +169,18 @@ def md_to_html(text: str, base: str, poetry: bool) -> str:
     return "\n".join(out)
 
 
-def chapter_files(pattern: str) -> list[tuple[int, str]]:
+def chapter_files(pattern: str, directory: str = BOOK) -> list[tuple[int, str]]:
     found = []
-    for name in os.listdir(BOOK):
+    for name in os.listdir(directory):
         m = re.match(pattern, name)
         if m:
-            found.append((int(m.group(1)), os.path.join(BOOK, name)))
+            found.append((int(m.group(1)), os.path.join(directory, name)))
     return sorted(found)
+
+
+def poetic_chapter_files() -> list[tuple[int, str]]:
+    """Книжковий поетичний том — лише з однієї редакторської теки."""
+    return chapter_files(r"^rozdil-(\d+)\.md$", POETIC)
 
 
 def main() -> int:
@@ -170,7 +189,7 @@ def main() -> int:
     parts = []
     parts.append("""<div class="title-page">
 <h1>Аштавакра-ґіта</h1>
-<div class="sub">українське наукове видання<br>з поетичним перекладом</div>
+<div class="sub">український науково-редакторський макет<br>з окремою поетичною чернеткою</div>
 <div class="meta">
 Двадцять глав, 298 віршів.<br>
 Науковий том: деванагарі, українська транслітерація, переклад,
@@ -178,7 +197,9 @@ def main() -> int:
 Поетичний том: наш поетичний переклад усієї книги.<br><br>
 Санскритське читання звірене за SARIT і GRETIL; деванагарі й транслітерація —
 механічні, з редакторських карток.<br>
-Тексти — наші власні; ліцензія «ВОЛЬНІСТЬ».<br><br>
+Власні українські внески — за ліцензією «ВОЛЬНІСТЬ».<br>
+Це редакторська чернетка; незалежну санскритологічну рецензію й права
+на відтворення електронних санскритських свідків не підтверджено.<br><br>
 Зібрано рушієм WeasyPrint: у середовищі збірки немає робочого XeLaTeX.<br>
 Це не критичне видання й не факсиміле.
 </div>
@@ -196,8 +217,8 @@ def main() -> int:
                  "переставити, замінити термін на образ — але не додати думки, "
                  "якої у вірші немає. У спірних місцях правий науковий том.</p></div>")
 
-    for num, path in chapter_files(r"^poetychnyi-rozdil-(\d+)\.md$"):
-        html_part = md_to_html(open(path, encoding="utf-8").read(), BOOK, True)
+    for num, path in poetic_chapter_files():
+        html_part = md_to_html(open(path, encoding="utf-8").read(), POETIC, True)
         parts.append(f'<div class="poetry">{html_part}</div>')
 
     doc = ("<!DOCTYPE html><html lang=\"uk\"><head><meta charset=\"utf-8\">"
