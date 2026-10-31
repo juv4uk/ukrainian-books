@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.7",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.7",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ātmājñānājjagadbhāti hātmajñānānna bhāsate| rajjvajñānādahirbhāti tajjñānādbhāsate na hi||2|7||",
+  "iast": "ātmājñānāj jagad bhāti hātmajñānān na bhāsate | rajjvajñānād ahir bhāti tajjñānād bhāsate na hi ||",
+  "grammar": "ātma-ajñānāt (n. abl. sg. «від незнання Я») jagat (n. nom. sg.) bhāti (3 sg. pres. bhā «сяє») ha (підсилювальна частка) ātma-jñānāt (abl.) na bhāsate (3 sg. med. «не сяє») | rajju-ajñānāt (n. abl. sg. «від незнання мотузки») ahiḥ (m. nom. sg. «змія») bhāti taj-jñānāt (n. abl. sg. «від знання її») bhāsate na hi (hi — причинова частка).",
+  "literal_meaning": "«Від незнання Я світ сяє; від знання Я не сяє. Від незнання мотузки змія сяє; від знання її не сяє.»",
+  "ukrainian_translation": "Від незнання Я світ сяє; від знання Я він не сяє. Від незнання мотузки сяє змія; від знання її вона не сяє.",
+  "commentary": "Класичний приклад мотузки й змії, але з точністю, яку легко зіпсувати: текст каже na bhāsate — «не сяє», а не «зникає». Зникає не мотузка, а змія; світ не анульовується, а перестає сяяти як щось окреме. Українське «зникає» тут було б зручнішим і хибним.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
