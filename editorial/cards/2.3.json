@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "2.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.3",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "saśarīramaho viśvaṃ parityajya mayā+adhunā | kutaścitkauśalādeva paramātmā vilokyate ||",
+  "iast": "saśarīram aho viśvaṃ parityajya mayādhunā | kutaścit kauśalād eva paramātmā vilokyate ||",
+  "grammar": "saśarīram (прислівниковий прислівник «разом із тілом», sa- + śarīra) aho (вигук) viśvam (n. acc. sg.) parityajya (герундив від pari-tyaj «відкинувши») mayā (instr. sg. «мною») adhunā («тепер») | kutaścit («якось, звідкись») kauśalāt (n. abl. sg. «від уміння, вправності») eva (підсилювальна частка) paramātmā (m. nom. sg. «вище Я») vilokyate (3 sg. pass. vi-lok «споглядається, бачититься». Пасивна конструкція: не «я споглядаю», а «Я бачиться».",
+  "literal_meaning": "«О диво: разом із тілом світ відкинувши мною тепер, якось самим умінням вище Я споглядається.»",
+  "ukrainian_translation": "О диво: тепер, відкинувши світ разом із тілом, я — самим лише вмінням, невідомо звідки — бачу вище Я.",
+  "commentary": "Ключове тут — пасив vilokyate: бачення не є зусиллям того, хто бачить. kutaścit («невідомо звідки») підкреслює, що вміння не вироблене вправою. Для української редакції це найтонше місце: активне «я бачу» зрадуть сенр, тому в перекладі додано «невідомо звідки» як відповідник kutaścit. saśarīram означає «не залишаючи тіла» — не фізичне відкидання, а відмова від ототожнення.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакрааёіти» — давній твір у суспільному надбанні.
