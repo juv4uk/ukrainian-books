@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.99",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.99",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.99",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na prīyate vandyamāno nindyamāno na kupyati | naivodvijati maraṇe jīvane nābhinandati ||",
+  "iast": "na prīyate vandyamāno nindyamāno na kupyati | naivodvijati maraṇe jīvane nābhinandati ||",
+  "grammar": "na prīyate (3 sg. pass. prī «не тішиться, не радіє») vandyamānaḥ (m. nom. sg. «той, кого хвалять»: пасив від vand «хвалити»). nindyamānaḥ (m. nom. sg. «той, кого ганять»: пасив від nind «ганити») na kupyati («не гнівається»). na eva udvijati (3 sg. pr. ud-vij «не лякається, не здригається») maraṇe (n. loc. sg. «у смерті») jīvane (n. loc. sg. «у житті») na abhinandati (3 sg. pr. abhi-nand «не радіє, не вітає»).",
+  "literal_meaning": "«Його не тішить, коли хвалять, і не гнівить, коли ганять; він не лякається смерті й не радіє життю.»",
+  "ukrainian_translation": "Його не тішить, коли хвалять, і не гнівить, коли ганять. Він не лякається смерті й не радіє життю.",
+  "commentary": "Останній вірш книги будується на двох парах, і обидві — про те, що приходить ззовні: похвала й осуд, смерть і життя. Дві форми пасиву (`vandyamāna`, `nindyamāna`) ставлять його в позицію того, з ким це роблять, — і саме тому він не відповідає. `udvijati` («здригається») — тілесне слово: не «боїться думки про смерть», а не здригається перед нею.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

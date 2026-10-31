@@ -1,0 +1,31 @@
+name: Поетичний том — контроль чернеток
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  poetic-preview:
+    name: Перевірка авторської поезії без видавничого дозволу
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити 12 позитивних і негативних сценаріїв
+        run: python3 -m unittest discover -s tests -p 'test_poetic_preview.py' -v
+      - name: Створити лише редакторське прев'ю
+        run: python3 scripts/render_poetic_preview.py > /tmp/poetychnyi-preview.md
+      - name: Переконатися, що неповний том не допускається до випуску
+        shell: bash
+        run: |
+          set +e
+          python3 scripts/render_poetic_preview.py --check-complete 2> /tmp/poetychnyi-errors.txt
+          code=$?
+          set -e
+          test "$code" -eq 1
+          grep -q "Неповне охоплення: 297" /tmp/poetychnyi-errors.txt
+          grep -q "непідтверджені права" /tmp/poetychnyi-errors.txt
+      - name: Перевірити структуру і недоторканність ліцензії
+        run: python3 scripts/check_project.py

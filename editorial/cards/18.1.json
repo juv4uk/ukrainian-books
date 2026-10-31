@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "18.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.1",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yasya bodhodaye tāvatsvapnavadbhavati bhramaḥ| tasmai sukhaikarūpāya namaḥ śāntāya tejase||18|1||",
+  "iast": "yasya bodhodaye tāvat svapnavad bhavati bhramaḥ | tasmai sukhaikarūpāya namaḥ śāntāya tejase ||",
+  "grammar": "yasya bodha-udaye («з чиїм пробудженням усвідомлення») tāvat («аж доти») svapnavat («наче сон») bhavati bhramaḥ («була омана») | tasmai sukha-eka-rūpāya («тому, чия єдина природа — щастя») namaḥ śāntāya tejase («уклін — втихлому, сяйному»).",
+  "literal_meaning": "«Той, з чиїм пробудженням усвідомлення омана стає наче сон, — тому, чия єдина природа щастя, уклін: втихлому, сяйному.»",
+  "ukrainian_translation": "Той, з чиїм пробудженням усвідомлення омана стає наче сон, — тому, чия єдина природа щастя, уклін: втихлому, сяйному.",
+  "commentary": "Глава 18 відкривається єдиним у книзі `namaḥ` — поклоном. До цього текст усі 17 глав звертався до читача на «ти», а тут раптом з'являється третя особа: уклін комусь іншому. `tāvat … svapnavat` — не «омана зникла», а «омана стала наче сон»: вона не анульована, а переведена в інший регістр. Переклад мусить тримати саме це, а не «звільнився від омани».",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

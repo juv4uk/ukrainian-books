@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "1.17",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.17",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.17",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nirapekṣo nirvikāro nirbharaḥ śītalāśayaḥ| agādhabuddhirakṣubdho bhava cinmātravāsanaḥ||1|17||",
+  "iast": "nirapekṣo nirvikāro nirbharaḥ śītalāśayaḥ | agādhabuddhir akṣubdho bhava cinmātravāsanaḥ ||",
+  "grammar": "nirapekṣaḥ («без очікування-огляду на інше») nirvikāraḥ («без видозмін») nirbharaḥ («без тягаря») śītala-āśayaḥ («з прохолодним нутром») | agādha-buddhiḥ («з незміренною думкою») akṣubdhaḥ («незбурений») bhava («будь») cinmātra-vāsanaḥ («чия схильність — сама лише свідомість»).",
+  "literal_meaning": "«Без очікування, без видозмін, без тягаря, з прохолодним нутром; із незміренною думкою, незбурений — будь тим, чия схильність є сама лише свідомість.»",
+  "ukrainian_translation": "Без очікування, без видозмін, без тягаря, з прохолодним нутром; із незміренною думкою, незбурений — будь тим, чия схильність є сама лише свідомість.",
+  "commentary": "Єдиний наказ у вірші — `bhava` («будь»), і він стоїть **усередині** переліку означень, а не на початку чи в кінці. `cinmātra-vāsana` — рідкісне поєднання: `vāsanā` зазвичай означає схильність, яку треба усунути (9.8), а тут вона ж стає єдиною, що лишається. Це не суперечність, а звуження: з усіх схильностей дозволена одна.",
+  "variants": [
+    {
+      "witness": "SARIT verse_1.17 і GRETIL/TextGrid Avg_1.17",
+      "note": "Обидва електронні записи мають ту саму послідовність лексем: SARIT з'єднує agādhabuddhirakṣubdho, GRETIL/TextGrid подає agādhabuddhir akṣubdho. Це різниця поділу слів, а не доведене змістове різночитання. Друкованих і рукописних свідків не звірено.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    },
+    {
+      "witness": "Лексема nirbhara в Avg_1.17 / verse_1.17",
+      "note": "Глоса «без тягаря» в полі grammar спирається на буквальне прочитання nir- + bhara. Словники подають для nirbhara насамперед «надмірний, палкий, сповнений» (Monier-Williams: «without weight or measure», excessive, vehement, full of), тож «без тягаря» — одне з можливих, але не панівне значення. Це редакційна примітка про відкрите питання, а не встановлене читання; остаточний вибір потребує незалежної санскритологічної перевірки.",
+      "evidence_url": "https://kosha.sanskrit.today/word/sa/nirbhara"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

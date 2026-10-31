@@ -1,0 +1,17 @@
+name: Порожні редакторські картки — тести генератора
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  generator:
+    name: Генератор порожніх карток — негативні перевірки
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити безпечне створення карток
+        run: python3 -m unittest discover -s tests -p 'test_create_verse_card.py' -v

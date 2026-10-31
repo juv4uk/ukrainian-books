@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Аштавакра-ґіта 13.6 — сон і зусилля не визначають втрати та здобутку</title>
+  <desc id="desc">Дві однакові за розміром українські інформаційні панелі. Ліворуч нічний серп і напис «Сон: немає втрати»; праворуч стилізовані робочі руки й напис «Зусилля: немає здобутку». Унизу обидва шляхи ведуть до центрального кола «Відпускаю втрату й піднесення», під яким сказано «Перебуваю спокійно». Композиція навчальна, не ілюстрація рукопису.</desc>
+  <rect width="1200" height="680" fill="#fbf8f2"/>
+  <rect x="30" y="28" width="1140" height="616" rx="24" fill="#fffefa" stroke="#bbb8ac" stroke-width="2"/>
+  <g font-family="sans-serif" fill="#233c48" text-anchor="middle">
+    <text x="600" y="89" font-size="34" font-weight="700">Сон і зусилля: свобода від рахунку</text>
+    <text x="600" y="125" font-size="21">Аштавакра-ґіта · 13.6 · оригінальна українська пояснювальна схема</text>
+  </g>
+  <rect x="92" y="170" width="440" height="238" rx="24" fill="#e7edf7" stroke="#8296b5" stroke-width="3"/>
+  <rect x="668" y="170" width="440" height="238" rx="24" fill="#ecf3e8" stroke="#779575" stroke-width="3"/>
+  <path d="M249 218 A58 58 0 1 0 310 309 A53 53 0 0 1 249 218 Z" fill="#63799d" stroke="#63799d" stroke-width="2"/>
+  <g stroke="#648368" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M870 235 V295 M833 276 L870 245 L907 276"/>
+    <path d="M818 306 H925 M830 324 H914"/>
+    <path d="M847 338 L862 353 L890 319"/>
+  </g>
+  <g font-family="sans-serif" text-anchor="middle">
+    <text x="312" y="340" font-size="27" font-weight="700" fill="#334966">Сон</text>
+    <text x="312" y="377" font-size="22" fill="#334966">Не визначає втрати</text>
+    <text x="888" y="340" font-size="27" font-weight="700" fill="#365c3f">Зусилля</text>
+    <text x="888" y="377" font-size="22" fill="#365c3f">Не визначає здобутку</text>
+  </g>
+  <g stroke="#7d8981" stroke-width="4" stroke-dasharray="9 10" fill="none" stroke-linecap="round">
+    <path d="M312 409 L515 459"/>
+    <path d="M888 409 L685 459"/>
+  </g>
+  <rect x="355" y="440" width="490" height="116" rx="27" fill="#fff1de" stroke="#c7a274" stroke-width="3"/>
+  <g font-family="sans-serif" text-anchor="middle" fill="#674b2c">
+    <text x="600" y="484" font-size="26" font-weight="700">Відпускаю втрату й піднесення</text>
+    <text x="600" y="516" font-size="21">nāśollāsau vihāya</text>
+    <text x="600" y="545" font-size="17">Не відмовляюся від життя чи праці</text>
+  </g>
+  <path d="M600 558 V582 M586 569 L600 585 L614 569" fill="none" stroke="#67786f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="700" fill="#35594c">Я перебуваю спокійно</text>
+  <text x="600" y="659" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#6a716d">Навчальна українська інтерпретація, не зображення історичного санскритського рукопису</text>
+</svg>

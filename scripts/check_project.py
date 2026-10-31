@@ -27,6 +27,36 @@ FORBIDDEN = (
 LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 
 
+def check_card_json_syntax(root: Path) -> list[str]:
+    """Загальний гейт не повинен пропускати зламані JSON-картки.
+
+    Повну редакторську схему, унікальність ключів та права перевіряють
+    окремі інструменти. Тут перевіряємо лише існування коректного JSON.
+    """
+    errors: list[str] = []
+    cards = root / "editorial" / "cards"
+    if cards.is_symlink():
+        return ["editorial/cards: символічне посилання заборонено"]
+    if cards.exists() and not cards.is_dir():
+        return ["editorial/cards: очікується каталог"]
+    if not cards.is_dir():
+        return errors
+
+    for path in sorted(cards.glob("*.json")):
+        rel = path.relative_to(root).as_posix()
+        if path.is_symlink():
+            errors.append(f"{rel}: символічне посилання заборонено")
+            continue
+        if not path.is_file():
+            errors.append(f"{rel}: очікується JSON-файл")
+            continue
+        try:
+            json.loads(path.read_text(encoding="utf-8", errors="strict"))
+        except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+            errors.append(f"{rel}: некоректний JSON або UTF-8: {exc}")
+    return errors
+
+
 def run() -> int:
     errors: list[str] = []
     for rel in REQUIRED:
@@ -45,6 +75,9 @@ def run() -> int:
             errors.append("LICENSE та VOLNOST.md мають бути буквально однакові")
         if not license_text.startswith("ВОЛЬНІСТЬ\n\n"):
             errors.append("Неправильний заголовок канонічної ліцензії")
+
+    # Помилка синтаксису картки має провалювати також загальний CI-гейт.
+    errors.extend(check_card_json_syntax(ROOT))
 
     book_root = ROOT / "books"
     if book_root.is_dir():

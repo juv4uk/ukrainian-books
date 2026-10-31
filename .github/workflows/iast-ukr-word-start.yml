@@ -1,0 +1,33 @@
+name: Українська транслітерація — початок слова
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/iast_to_ukrainska.py'
+      - 'tests/test_iast_to_ukrainska.py'
+      - 'tests/test_iast_to_ukrainska_word_start.py'
+      - '.github/workflows/iast-ukr-word-start.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/iast_to_ukrainska.py'
+      - 'tests/test_iast_to_ukrainska.py'
+      - 'tests/test_iast_to_ukrainska_word_start.py'
+      - '.github/workflows/iast-ukr-word-start.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Перевірити чинні та нові тести української передачі IAST
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Чинні тести української передачі
+        run: python3 -m unittest discover -s tests -p 'test_iast_to_ukrainska.py' -v
+      - name: Нові тести початку слова
+        run: python3 -m unittest discover -s tests -p 'test_iast_to_ukrainska_word_start.py' -v

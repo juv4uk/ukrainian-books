@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.19",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.19",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.19",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nirmamo nirahaṃkāro | na kiṃcid iti niścitaḥ | antargalitasarvāśaḥ | kurvann api karoti na ||",
+  "iast": "nirmamo nirahaṃkāro | na kiṃcid iti niścitaḥ | antargalitasarvāśaḥ | kurvann api karoti na ||",
+  "grammar": "nirmamaḥ «без „мого“». nirahaṃkāraḥ «без я-роблення» (ahaṃkāra «самороблення, приписування собі дії»). na kiṃcit iti niścitaḥ «переконаний: „нічого [немає]“» — niścita ppp від ni-√ści «вирішити, встановити». antargalitasarvāśaḥ — bahuvrīhi «той, у кого всі надії (āśa) стікли, розчинилися всередині» (antar «усередині», galita «розталий»). kurvann api «навіть роблячи». karoti na «не робить». Складність: остання пада — предмет справжнього різночитання: SARIT подає na lipyate з позначкою [karoti na] у дужках, GRETIL — karoti na (див. різночитання). Обидві формули по вісім складів, тому розмір їх не розрізняє.",
+  "literal_meaning": "«Без „мого“, без я-роблення, переконаний: „нічого [немає]“, з усіма надіями, що розчинилися всередині, — він навіть роблячи не робить.»",
+  "ukrainian_translation": "Без «моє» і без «я роблю», з певністю, що немає нічого, — усі його надії розтанули зсередини, і він навіть діючи не діє.",
+  "commentary": "Вірш зводить докупи три заперечення — «моє», «я роблю», «щось є» — і робить висновок про дію. Остання пада, kurvann api karoti na, — класична формула недіяння в діянні; вона не означає, що тіло спинилося, а що дію не приписують собі. Саме тут свідки розходяться: SARIT має na lipyate, «не зазнає плям», і подає karoti na в дужках як варіант. Обидві формули відомі з інших текстів, і вибір між ними змінює акцент — онтологічний («не діє») чи етичний («не плямується»). Яке читання первісне, за двома свідками не встановлюється.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.19) проти SARIT (verse_17.19)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ, і найважливіша в главі: GRETIL — kurvann api karoti na («навіть діючи не діє»), SARIT — kurvann api na lipyate з позначкою [ karoti na ] у квадратних дужках, тобто SARIT подає na lipyate («не плямується») як основне читання, а karoti na — як варіант. Обидві формули мають по вісім складів, тому розмір їх не розрізняє. У тексті картки взято читання GRETIL, бо воно в ньому не закавичене; SARIT-редактор, навпаки, обрав інше. Яке первісне, за двома свідками НЕ ВСТАНОВЛЕНО. Квадратні дужки в SARIT — редакторський апарат, а не читання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

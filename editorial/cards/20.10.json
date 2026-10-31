@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.10",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.10",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.10",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva caiṣa vyavahāro vā | kva ca sā paramārthatā | kva sukhaṃ kva ca vā duḥkhaṃ | nirvimarśasya me sadā ||",
+  "iast": "kva caiṣa vyavahāro vā | kva ca sā paramārthatā | kva sukhaṃ kva ca vā duḥkhaṃ | nirvimarśasya me sadā ||",
+  "grammar": "eṣa vyavahāraḥ «це [буденне] обертання, узус, практика» — термін, що протиставляється paramārtha. sā paramārthatā «та вища істинність» (para + artha + -tā). sukham «щастя», duḥkham «страждання» (у GRETIL тут dukhaṃ без вісарги — дефект набору, див. різночитання). nirvimarśasya — родовий одн. «позбавленого розгляду, рефлексії» (nir-vimarśa). me sadā «у мене, завжди». Складність: vyavahāra і paramārthatā — пара з адвайтичної термінології (рівень буденного вжитку / рівень вищої істини), і вірш знімає обидва рівні; сама ця термінологія у вірші не пояснюється.",
+  "literal_meaning": "«Де це обертання [у буденному], де та вища істинність? Де щастя, де страждання — у мене, хто завжди без розгляду?»",
+  "ukrainian_translation": "Де ця буденна практика, де та вища істина? Де щастя, де страждання — у мене, хто вже завжди нічого не розглядає?",
+  "commentary": "Найнебезпечніше місце для читача: тут знято пару vyavahāra / paramārtha, тобто буденний і вищий рівні істини. Зазвичай цю пару використовують, щоб пояснити, чому світ хибний, а Брахмо істинне; вірш не робить і цього кроку — обидва рівні однаково не мають де стояти. nirvimarśa, «без розгляду», — не заклик до нерозуміння, а опис: розглядати нічого, бо немає двох речей, які можна було б зіставити.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.10) проти SARIT (verse_20.10)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ у написанні: GRETIL — dukhaṃ (без вісарги), SARIT — duḥkhaṃ. Форма dukha без вісарги — дефект набору: те саме слово в 17.15 і 20.1 обидва свідки подають як duḥkha. Тому в тексті картки duḥkhaṃ. Це виправлення очевидного дефекту однієї транскрипції, а не вибір між двома читаннями.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

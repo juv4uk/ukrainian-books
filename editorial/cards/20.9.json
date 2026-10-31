@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20.9",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_20.9",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_20.9",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva vikṣepaḥ kva caikāgryaṃ | kva nirbodhaḥ kva mūḍhatā | kva harṣaḥ kva viṣādo vā | sarvadā niṣkriyasya me ||",
+  "iast": "kva vikṣepaḥ kva caikāgryaṃ | kva nirbodhaḥ kva mūḍhatā | kva harṣaḥ kva viṣādo vā | sarvadā niṣkriyasya me ||",
+  "grammar": "vikṣepaḥ «розсіяність, розкиданість». aikāgryam — n. «зосередженість на одному» (eka-agra); у GRETIL тут aikagryaṃ з коротким a (див. різночитання). nirbodhaḥ «відсутність усвідомлення, несвідомість» (nir-bodha). mūḍhatā «затьмареність, тупість». harṣaḥ «радість, піднесення». viṣādaḥ «зневіра, відчай». sarvadā «завжди». niṣkriyasya — родовий одн. «бездіяльного». me «у мене». Складність: пара vikṣepa / aikāgrya — та сама, що в 18.10, і тут вона знову знята; порівняння двох місць корисне, бо в 18.10 обидва свідки подають aikāgrya з довгим ā.",
+  "literal_meaning": "«Де розсіяність, де зосередженість, де несвідомість, де затьмареність? Де радість, де відчай — у мене, хто завжди бездіяльний?»",
+  "ukrainian_translation": "Де розсіяність, де зосередженість, де несвідомість, де затьмареність? Де радість, де відчай — у мене, хто завжди бездіяльний?",
+  "commentary": "Вірш повторює схему 18.10 — три пари, кожна заперечує обидва боки, — але з іншим закінченням: замість «у вгамованого йога» тут «у мене, хто завжди бездіяльний» (niṣkriya). niṣkriya не означає «лінивий»: це відсутність діяння як діяча, а не відсутність руху. Пари підібрані так, щоб охопити і стан уваги (розсіяність / зосередженість), і стан розуму (несвідомість / затьмареність), і стан почуття (радість / відчай). Те, що лишається поза цими парами, у вірші не названо.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_20.9) проти SARIT (verse_20.9)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ в одному голосному: GRETIL — caikagryaṃ (коротке a), SARIT — caikāgryaṃ (довге ā). Слово — aikāgrya, «зосередженість на одному»; у 18.10 обидва свідки подають саме aikāgryaṃ з довгим ā. Тому в тексті картки взято aikāgryaṃ, а коротке a у GRETIL — найімовірніше дефект набору. Висновок — із внутрішньої узгодженості тексту, не з третього свідка.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

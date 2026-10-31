@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">Аштавакра-ґіта 13.4 — дія, недіяння і звільнення від примусу</title>
+  <desc id="svg-desc">Власна українська схема: дія та недіяння ведуть до вузла примусу; далі показано перебування без прив'язки до обох. Схема не закликає до бездіяльності й не є історичним зображенням.</desc>
+  <rect width="1100" height="620" fill="#fbf8f1"/>
+  <rect x="24" y="24" width="1052" height="572" rx="20" fill="#fffdf8" stroke="#b9c5c2" stroke-width="2"/>
+  <g font-family="sans-serif" fill="#263e43" text-anchor="middle">
+    <text x="550" y="76" font-size="32" font-weight="700">Не бути зв'язаним протилежностями</text>
+    <text x="550" y="110" font-size="19">«Аштавакра-ґіта» · 13.4 · пояснювальна схема</text>
+  </g>
+
+  <rect x="74" y="174" width="270" height="116" rx="18" fill="#e7eff1" stroke="#67838c" stroke-width="3"/>
+  <rect x="74" y="338" width="270" height="116" rx="18" fill="#f0eadf" stroke="#a48d65" stroke-width="3"/>
+  <g font-family="sans-serif" text-anchor="middle" fill="#263e43">
+    <text x="209" y="220" font-size="27" font-weight="700">Дія</text>
+    <text x="209" y="258" font-size="20">karma</text>
+    <text x="209" y="385" font-size="27" font-weight="700">Недіяння</text>
+    <text x="209" y="423" font-size="20">naiṣkarmya</text>
+  </g>
+
+  <g fill="none" stroke="#71868a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M344 232 C410 232 405 278 455 300"/>
+    <path d="M344 396 C410 396 405 350 455 328"/>
+    <path d="M438 286 L456 300 L435 307"/>
+    <path d="M438 342 L456 328 L435 321"/>
+  </g>
+
+  <rect x="456" y="236" width="238" height="158" rx="22" fill="#f5e6d8" stroke="#b17b58" stroke-width="3"/>
+  <g font-family="sans-serif" text-anchor="middle" fill="#593d2d">
+    <text x="575" y="282" font-size="25" font-weight="700">Примус</text>
+    <text x="575" y="316" font-size="19">nirbandha</text>
+    <path d="M526 342 C548 326 602 326 624 342 M526 358 C548 374 602 374 624 358" stroke="#9a654a" stroke-width="3" fill="none"/>
+    <text x="575" y="382" font-size="15">зв'язування вибором</text>
+  </g>
+
+  <path d="M694 315 H780 M760 299 L782 315 L760 331" fill="none" stroke="#607f69" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="784" y="174" width="242" height="280" rx="22" fill="#e6efe5" stroke="#64836b" stroke-width="3"/>
+  <g font-family="sans-serif" fill="#294b35" text-anchor="middle">
+    <text x="905" y="215" font-size="23" font-weight="700">Без прив'язки</text>
+    <text x="905" y="246" font-size="19">до обох</text>
+    <text x="905" y="286" font-size="18">saṃyoga / ayoga</text>
+  </g>
+  <g stroke="#52735a" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="905" cy="335" r="26"/>
+    <path d="M905 362 L905 407 M905 378 L872 402 M905 378 L938 402"/>
+    <path d="M905 407 L880 435 M905 407 L930 435"/>
+  </g>
+  <text x="905" y="477" font-family="sans-serif" font-size="18" fill="#294b35" text-anchor="middle">aham āse yathāsukham</text>
+
+  <g font-family="sans-serif" text-anchor="middle" fill="#4d5d5a">
+    <text x="550" y="535" font-size="19" font-weight="700">Сенс — не в забороні діяти</text>
+    <text x="550" y="564" font-size="17">а у звільненні від примусу обирати один із двох полюсів</text>
+  </g>
+  <text x="1050" y="585" text-anchor="end" font-family="sans-serif" font-size="12" fill="#71817e">Власна сучасна схема · не історична ілюстрація</text>
+</svg>

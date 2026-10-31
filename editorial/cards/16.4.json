@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "16.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_16.4",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_16.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "vyāpāre khidyate yas tu | nimeṣonmeṣayor api | tasyālasyadhurīṇasya | sukhaṃ nānyasya kasyacit ||",
+  "iast": "vyāpāre khidyate yas tu | nimeṣonmeṣayor api | tasyālasyadhurīṇasya | sukhaṃ nānyasya kasyacit ||",
+  "grammar": "vyāpāre — m. локатив одн. «у занятті, у справі». khidyate — 3 ос. одн. пасивної форми від √khid «втомлюватися, мучитися» (значення тут активне: «втомлюється»). yaḥ tu «а хто». nimeṣa-unmeṣayoḥ — родовий-локатив двоїни «заплющення й розплющення [ока]»; двоїна наголошує, що йдеться про єдину пару дій. api «навіть». tasya — родовий одн. при alasyadhurīṇasya: dhurīṇa «той, хто несе тягар, очільник» (від dhur «ярмо, тягар»), тому alasya-dhurīṇa «ватажок лінивих, найперший з лінивих». sukham — n. наз. одн. «щастя». na anyasya kasyacit — родовий одн. «ні в кого іншого»; займенник kasyacit при запереченні. Складне місце: sukhaṃ nānyasya kasyacit можна зрозуміти і як «немає щастя ні йому, ні будь-кому іншому», і як «щастя [належить] не комусь іншому» — тобто лінивому. Синтаксис допускає обидва, і переклад нижче тримає перше, бо воно узгоджується з 16.3.",
+  "literal_meaning": "«Хто втомлюється в занятті, навіть у заплющенні й розплющенні [ока], — того, ватажка лінивих, щастя [немає] ні [йому], ні будь-кому іншому.»",
+  "ukrainian_translation": "Кому важко навіть повіки звести — той перший серед лінивих: немає щастя ні йому, ні комусь іншому [такому].",
+  "commentary": "Вірш різкий за тоном: він не співчуває втомі, а виставляє її на посміх. Найменша дія — повіки звести — уже вимірює, скільки сили лишилося. Разом із 16.3 це дає цікаву пару: там натуга робить нещасним, а тут відсутність сили на найменшу дію теж не веде до щастя. Отже текст не хвалить і неробства: він описує глухий кут, у якому будь-яке ставлення до дії — і надмірне, і нульове — однаково не дає спокою. Друга половина двозначна (див. граматику), і від вибору залежить, чи вірш картає лінивого, чи взагалі відмовляє в щасті всім, крім нього. Традиційні коментарі читають це як осуд лінощів; сам текст такого висновку не формулює.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_16.4) проти SARIT (verse_16.4)",
+      "note": "Читання збігаються після нормалізації. SARIT пише nā+anyasya (аваґраха зі знаком «+»), GRETIL — nānyasya; це той самий зворот na anyasya. Різниця лише в оформленні.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

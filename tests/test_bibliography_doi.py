@@ -52,6 +52,51 @@ class DOIValidationTests(unittest.TestCase):
             result = checker.audit(root)
             self.assertEqual((result["status"], result["files"], result["doi_links"]), ("ok", 2, 2))
 
+    def test_reference_doi_valid_and_label_normalized(self):
+        source = (
+            "[DOI:10.1353/ABC][  ВИДАННЯ   А ]\n"
+            "[видання а]: <https://doi.org/10.1353/abc> \"Стаття\"\n"
+        )
+        self.assertEqual(checker.inspect(source, "a.md"), (1, []))
+
+    def test_reference_doi_mismatch_blocks(self):
+        source = (
+            "[DOI:10.1353/a][джерело]\n"
+            "[джерело]: https://doi.org/10.1353/b\n"
+        )
+        number, errors = checker.inspect(source, "a.md")
+        self.assertEqual(number, 1)
+        self.assertTrue(any("не збігається" in e for e in errors), errors)
+
+    def test_reference_doi_undefined_fails(self):
+        number, errors = checker.inspect("[DOI:10.1353/a][невідомо]", "a.md")
+        self.assertEqual(number, 1)
+        self.assertTrue(any("невизначена" in e for e in errors), errors)
+
+    def test_reference_doi_implicit_label_and_bad_scheme(self):
+        source = (
+            "[DOI:10.1353/a][]\n"
+            "[doi:10.1353/a]: http://doi.org/10.1353/a\n"
+        )
+        number, errors = checker.inspect(source, "a.md")
+        self.assertEqual(number, 1)
+        self.assertTrue(any("https://doi.org/" in e for e in errors), errors)
+
+    def test_regular_reference_link_not_treated_as_doi(self):
+        source = (
+            "[Каталог][покажчик]\n"
+            "[покажчик]: https://example.org/catalogue\n"
+        )
+        self.assertEqual(checker.inspect(source, "a.md"), (0, []))
+
+    def test_inline_and_reference_checked_together(self):
+        source = (
+            "[DOI:10.1353/a](https://doi.org/10.1353/a)\n"
+            "[Стаття][ідентифікатор]\n"
+            "[ідентифікатор]: https://doi.org/10.1353/b\n"
+        )
+        self.assertEqual(checker.inspect(source, "a.md"), (2, []))
+
     def test_missing_bibliography_fails(self):
         with tempfile.TemporaryDirectory() as tmp:
             self.assertEqual(checker.audit(Path(tmp))["status"], "failed")

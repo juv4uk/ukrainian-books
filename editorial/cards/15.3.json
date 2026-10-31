@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.3",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "vāgmiprājñamahodyogaṃ janaṃ mūkajaḍālasam| karoti tattvabodho+ayamatastyakto bubhukṣubhiḥ||15|3||",
+  "iast": "vāgmiprājñamahodyogaṃ janaṃ mūkajaḍālasam | karoti tattvabodho 'yam atas tyakto bubhukṣubhiḥ ||",
+  "grammar": "vāgmi-prājña-mahā-udyogam janam («людей красномовних, тямущих, вельми завзятих») mūka-jaḍa-ālasam («німих, тупих, лінивих») karoti («робить») tattva-bodhaḥ ayam («це пізнання суті») ataḥ tyaktaḥ bubhukṣubhiḥ («тому відкинуте голодними»).",
+  "literal_meaning": "«Це пізнання суті робить красномовних, тямущих і вельми завзятих людей німими, тупими й лінивими — тому голодні його відкидають.»",
+  "ukrainian_translation": "Це пізнання суті робить красномовних, тямущих і вельми завзятих людей німими, тупими й лінивими — тому голодні його відкидають.",
+  "commentary": "Найдошкульніше місце глави, і воно **сатиричне**: пізнання суті не підносить людину, а відбирає в неї красномовство, тямущість і завзятість. `bubhukṣubhiḥ` — «голодними»: тими, хто заробляє словом і зусиллям. Тобто текст сам пояснює, чому його вчення не користується попитом, і робить це без жалю. Переклад мусить зберегти різкість трьох пар, не пом'якшуючи їх до «мовчазних, спокійних, бездіяльних».",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

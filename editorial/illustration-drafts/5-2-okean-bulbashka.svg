@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="z-nazva z-opys">
+  <title id="z-nazva">Океан і бульбашка — схема до «Аштавакра-ґіти» 5.2</title>
+  <desc id="z-opys">На світлому тлі зображено єдиний широкий океан із хвилями. Над поверхнею підіймається одна прозора округла бульбашка, нижній край якої торкається води. Це умовний образ виникнення світу з океану, не картина місця або історичної події.</desc>
+  <rect width="1200" height="680" fill="#F8F4E9"/>
+  <rect x="23" y="23" width="1154" height="634" rx="20" fill="none" stroke="#45606A" stroke-width="3"/>
+  <g fill="#233F4E" font-family="DejaVu Sans, sans-serif" text-anchor="middle">
+    <text x="600" y="88" font-size="35" font-weight="bold">Світ — мов бульбашка з океану</text>
+    <text x="600" y="120" font-size="19">Аштавакра-ґіта · 5.2 · власна умовна схема</text>
+  </g>
+  <path d="M62 434 C160 405 244 455 340 428 C444 400 522 452 622 429 C724 402 832 449 938 428 C1025 410 1087 435 1138 423 L1138 615 L62 615 Z" fill="#2E7080"/>
+  <path d="M62 460 C170 432 254 477 350 453 C456 428 548 477 651 451 C763 422 858 470 961 450 C1043 432 1101 450 1138 443 L1138 615 L62 615 Z" fill="#265769" opacity="0.85"/>
+  <path d="M62 504 C170 477 273 519 382 498 C486 479 578 523 689 498 C794 475 885 517 986 500 C1046 488 1092 503 1138 489" fill="none" stroke="#A2D7D9" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <path d="M79 559 C196 532 303 577 409 557 C526 535 617 579 726 551 C840 525 959 572 1119 545" fill="none" stroke="#7EB9C0" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="607" cy="310" r="143" fill="#C9EDF0" fill-opacity="0.4" stroke="#2B6976" stroke-width="7"/>
+  <path d="M523 227 C543 208 568 197 596 197" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round" fill="none" opacity="0.95"/>
+  <path d="M506 260 C500 275 497 288 498 303" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.75"/>
+  <path d="M654 414 C681 402 703 379 713 348" stroke="#3F8E9B" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.65"/>
+  <path d="M520 440 Q606 462 694 438" fill="none" stroke="#D9F1EB" stroke-width="4" opacity="0.8"/>
+  <g fill="#233F4E" font-family="DejaVu Sans, sans-serif" text-anchor="middle">
+    <text x="600" y="645" font-size="16">Бульбашка не відокремлена від води: образ походження, а не карта світобудови.</text>
+  </g>
+</svg>
