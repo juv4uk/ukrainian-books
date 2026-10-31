@@ -9,6 +9,21 @@
       "illustration": {
         "file": "4-1-motion.svg",
         "caption": "Дві дороги: гра досвідів і тягар сансари"
+      },
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "hantātmajñasya dhīrasya khelato bhogalīlayā",
+            "ukrainian_translation": "О! Атмазнавцеві, мудрому, що грається грою досвідів,",
+            "commentary": "Вигук hanta відкриває подив. Форми ātmajñasya й dhīrasya означують того, хто знає Атман; khelato та bhogalīlayā вводять образ гри досвідів. Це перший смисловий фрагмент одного речення, а не самостійна теза."
+          },
+          {
+            "iast": "na hi saṃsāravāhīkair mūḍhaiḥ saha samānatā",
+            "ukrainian_translation": "немає рівні з дурнями, які тягнуть сансару.",
+            "commentary": "Заперечення na hi ... samānatā завершує думку про відсутність рівності; saṃsāravāhīkair mūḍhaiḥ saha називає тих, із ким здійснено порівняння. Образ тягаря сансари взято з чинної картки; атрибуція мовця між цифровими свідками лишається спірною."
+          }
+        ]
       }
     },
     "4.2": {
