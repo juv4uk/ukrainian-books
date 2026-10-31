@@ -187,6 +187,50 @@ class TestVerstalnaMashyna(unittest.TestCase):
             self.assertFalse(report.exists())
             self.assertFalse(book.exists())
 
+    def test_check_rejects_tampered_manifest_without_side_effects(self):
+        """--check виявляє зміну маніфесту навіть за актуальних TeX-файлів."""
+        card = {
+            "id": "2.1",
+            "status": "чернетка",
+            "ukrainian_translation": "Власний переклад",
+            "literal_meaning": "Дослівний сенс",
+            "grammar": "Граматика",
+            "commentary": "Власний коментар",
+        }
+        with tempfile.TemporaryDirectory() as folder:
+            book = Path(folder) / "book"
+            report = Path(folder) / "reports" / "audit.json"
+            manifest = book / "generated" / "manifest.json"
+            with mock.patch.object(builder, "BOOK", book), \
+                    mock.patch.object(builder, "load_cards", return_value=[card]), \
+                    mock.patch.object(builder, "load_glossary", return_value=[]), \
+                    mock.patch.object(sys, "argv", ["build_pilot_book.py"]), \
+                    contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(builder.main(), 0)
+
+            with mock.patch.object(builder, "BOOK", book), \
+                    mock.patch.object(builder, "load_cards", return_value=[card]), \
+                    mock.patch.object(builder, "load_glossary", return_value=[]), \
+                    mock.patch.object(sys, "argv", ["build_pilot_book.py", "--check"]), \
+                    contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(builder.main(), 0)
+
+            manifest.write_text('{"cards": []}\n', encoding="utf-8")
+            damaged = manifest.read_bytes()
+            output, errors = io.StringIO(), io.StringIO()
+            with mock.patch.object(builder, "BOOK", book), \
+                    mock.patch.object(builder, "load_cards", return_value=[card]), \
+                    mock.patch.object(builder, "load_glossary", return_value=[]), \
+                    mock.patch.object(sys, "argv", [
+                        "build_pilot_book.py", "--check", "--report", str(report),
+                    ]), contextlib.redirect_stdout(output), \
+                    contextlib.redirect_stderr(errors):
+                self.assertEqual(builder.main(), 1)
+            self.assertIn("generated/manifest.json", errors.getvalue())
+            self.assertIn("generated/manifest.json", output.getvalue())
+            self.assertEqual(manifest.read_bytes(), damaged)
+            self.assertFalse(report.exists())
+
     def test_generated_files_carry_no_manual_edit_banner(self):
         text = (BOOK / "generated" / "verses.tex").read_text(encoding="utf-8")
         self.assertTrue(text.startswith("% ЗГЕНЕРОВАНО"))
