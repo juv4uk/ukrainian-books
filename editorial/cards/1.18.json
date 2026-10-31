@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "1.18",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.18",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.18",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "sākāramanṛtaṃ viddhi nirākāraṃ tu niścalam| etattattvopadeśena na punarbhavasaṃbhavaḥ||1|18||",
+  "iast": "sākāram anṛtaṃ viddhi nirākāraṃ tu niścalam | etat tattvopadeśena na punarbhavasaṃbhavaḥ ||",
+  "grammar": "sa-ākāram («те, що має образ») anṛtam («несправжнє») viddhi («знай») nirākāram tu («а те, що без образу») niścalam («непохитне») | etat tattva-upadeśena («цим настановленням про суть») na punarbhava-saṃbhavaḥ («немає знову-народження»).",
+  "literal_meaning": "«Знай: те, що має образ, — несправжнє; а те, що без образу — непохитне. Цим настановленням про суть немає народження знову.»",
+  "ukrainian_translation": "Знай: те, що має образ, — несправжнє; а те, що без образу — непохитне. Цим настановленням про суть немає народження знову.",
+  "commentary": "Останній вірш глави дає найрізкіше з її тверджень: `sākāra` (усе, що має образ) названо `anṛta` — несправжнім. Це не заперечення світу, а заперечення **образності** як ознаки справжнього. Друга половина обіцяє наслідок не моральний, а структурний: `na punarbhavasaṃbhavaḥ` — «немає можливості знову-народження». `upadeśa` — настановлення вчителя, те саме слово, що в 15.1; переклад мусить бути однаковим.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

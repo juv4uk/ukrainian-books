@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "18.11",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.11",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.11",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "svārājye bhaikṣyavṛttau ca lābhālābhe jane vane| nirvikalpasvabhāvasya na viśeṣo+asti yoginaḥ||18|11||",
+  "iast": "svārājye bhaikṣyavṛttau ca lābhālābhe jane vane | nirvikalpasvabhāvasya na viśeṣo 'sti yoginaḥ ||",
+  "grammar": "svārājye («у власному царстві») bhaikṣya-vṛttau ca («і в житті з подаяння») lābha-alābhe («у здобутку й нездобутку») jane vane («серед людей, у лісі») | nirvikalpa-svabhāvasya («чия природа без домислювання») na viśeṣaḥ asti («немає різниці») yoginaḥ («для йогина»).",
+  "literal_meaning": "«У власному царстві чи в житті з подаяння, у здобутку й нездобутку, серед людей чи в лісі — для йогина, чия природа без домислювання, немає різниці.»",
+  "ukrainian_translation": "У власному царстві чи в житті з подаяння, у здобутку й нездобутку, серед людей чи в лісі — для йогина, чия природа без домислювання, немає різниці.",
+  "commentary": "Чотири пари протилежностей названі поіменно — царство й милостиня, здобуток і втрата, люди й ліс — щоб жодну не лишити поза дією. `svārājya` — не «своє царство» як володіння, а само-володарювання, стан, у якому немає над собою нікого; у главі 18 це слово трапляється не раз, і переклад має бути сталим. `viśeṣa` — «різниця», не «перевага».",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

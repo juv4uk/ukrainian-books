@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.93",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.93",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.93",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ātmaviśrāntitṛptena nirāśena gatārtinā | antar yad anubhūyeta tat kathaṃ kasya kathyate ||",
+  "iast": "ātmaviśrāntitṛptena nirāśena gatārtinā | antar yad anubhūyeta tat kathaṃ kasya kathyate ||",
+  "grammar": "ātmaviśrāntitṛptena (m. instr. sg. «насиченим спочинком в Атмані»: ātman + viśrānti «спочинок» + tṛpta «насичений») nirāśena (m. instr. sg. «без надій») gatārtinā (m. instr. sg. «тим, у кого минуло страждання»: gata + ārti). antar (прислівник «усередині») yat (n. nom. sg. «те, що») anubhūyeta (3 sg. opt. pass. anu-bhū «переживалося б»). tat (n. nom. sg.) katham («як?») kasya (m. gen. sg. «кому?») kathyate (3 sg. pass. kath «розповідається»).",
+  "literal_meaning": "«Те, що переживається всередині в насиченого спочинком в Атмані, без надій, з минулим стражданням — як і кому його розповісти?»",
+  "ukrainian_translation": "Те, що переживається всередині в насиченого спочинком в Атмані, без надій, з минулим стражданням — як і кому це розповісти?",
+  "commentary": "Подвійне питання `katham` / `kasya` («як?» і «кому?») закриває можливість передачі: не бракує слів, а немає ні способу, ні адресата. Форма `anubhūyeta` — оптатив пасиву, тобто «те, що могло б переживатися»: мова йде про можливість, а не про подію. Це пряме пояснення, чому глава весь час говорить запереченнями.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжності лише в поділі слів (antaryadanubhūyeta / antar yad anubhūyeta, tatkathaṃ / tat kathaṃ). Та сама форма. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.95",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.95",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.96#18.95",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "jñaḥ sacinto 'pi niścintaḥ sendriyo 'pi nirindriyaḥ | sabuddhir api nirbuddhiḥ sāhaṅkāro 'nahaṃkṛtiḥ ||",
+  "iast": "jñaḥ sacinto 'pi niścintaḥ sendriyo 'pi nirindriyaḥ | sabuddhir api nirbuddhiḥ sāhaṅkāro 'nahaṃkṛtiḥ ||",
+  "grammar": "jñaḥ (m. nom. sg. «той, хто знає») sacintaḥ (m. nom. sg. «із думкою, з турботою») api niścintaḥ («без думки»). sendriyaḥ (m. nom. sg. «із чуттями»: sa «з» + indriya) api nirindriyaḥ («без чуттів»: nir «без» + indriya). sabuddhiḥ (m. nom. sg. «із розумом») api nirbuddhiḥ («без розуму»). sāhaṅkāraḥ (m. nom. sg. «із „я-робленням“») anahaṃkṛtiḥ (m. nom. sg. «без „я-роблення“»: an «не» + ahaṃkṛti).",
+  "literal_meaning": "«Знаючий, хоч і з думкою — без думки; хоч і з чуттями — без чуттів; хоч і з розумом — без розуму; хоч і з „я-робленням“ — без нього.»",
+  "ukrainian_translation": "Знаючий, хоч і з думкою — без думки; хоч і з чуттями — без чуттів; хоч і з розумом — без розуму; хоч і з «я-робленням» — без нього.",
+  "commentary": "Чотири пари з `api` («хоч і... таки») — найчистіша форма цього ходу в книзі: кожна ознака є й водночас не діє. `ahaṃkṛti` тут замість звичного `ahaṃkāra` — і це не варіант: `kṛti` («роблення») наголошує саме на акті, а не на результаті. Порівняй 18.29, де той самий механізм описано розгорнуто.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "ДЕФЕКТ НУМЕРАЦІЇ В SARIT: окремого запису verse_18.95 у SARIT немає, а текст цього вірша приєднано на початку запису verse_18.96. Читання SARIT і GRETIL у самому тексті збігаються (відмінності лише в аваґрасі). Тобто це не різночитання тексту, а зсув нумерації в одному свідку; для 18.95 і 18.96 взято GRETIL як основу нумерації.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
