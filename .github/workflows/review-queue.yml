@@ -1,0 +1,31 @@
+name: Черга рецензування — спостережний звіт
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pull-requests: read
+  checks: read
+jobs:
+  tests:
+    name: Офлайн-тести станів рецензування
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Виконати синтетичні тести
+        run: python3 -m unittest discover -s tests -p 'test_review_queue.py' -v
+      - name: Перевірити структуру та ліцензію
+        run: python3 scripts/check_project.py
+  report:
+    name: Ручний звіт про відкриті PR
+    if: github.event_name == 'workflow_dispatch'
+    needs: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Прочитати PR, рецензії та CI без запису
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/report_review_queue.py --repo juv4uk/ukrainian-books
