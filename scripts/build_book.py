@@ -98,5 +98,23 @@ def write_zmist() -> None:
     print(f"ZMIST.md: {total} карток, повних {full} із 20")
 
 
+def refresh_pilot() -> None:
+    """Перегенерувати верстку пілота, щоб вона не відставала від карток.
+
+    Це вже траплялося кілька разів: картки оновлювали, верстку — ні, і
+    test_generator_output_is_up_to_date падав на main. Збірник тепер робить
+    це сам.
+    """
+    import subprocess
+    import sys as _sys
+    r = subprocess.run([_sys.executable, os.path.join(ROOT, "scripts", "build_pilot_book.py")],
+                       capture_output=True, text=True)
+    if r.returncode == 0:
+        print("пілот: верстку перегенеровано")
+    else:
+        print("пілот: НЕ перегенеровано — " + (r.stderr or "").strip().splitlines()[-1][:120])
+
+
 if __name__ == "__main__":
     write_zmist()
+    refresh_pilot()
