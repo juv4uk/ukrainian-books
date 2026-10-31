@@ -542,10 +542,10 @@ def run(pr_number: int, records: object, strict: bool) -> int:
 
 
 def emit_skip(pr_number: int, reason: str) -> int:
-    """Голосно позначити пропуск і не валити збірку.
+    """Позначити неперевірений аудит і заблокувати приймання змін.
 
-    Пропуск — окремий стан, не «перетинів немає»: у JSON видно
-    ``"status": "skipped"`` і причину.
+    ``skipped`` залишається діагностичним станом, але не може давати
+    успішний код: відсутність відповіді API не доводить відсутності конфлікту.
     """
     print(json.dumps(
         {"pr": pr_number, "status": "skipped", "reason": reason},
@@ -553,7 +553,7 @@ def emit_skip(pr_number: int, reason: str) -> int:
     ))
     print(reason)
     print(f"::warning::{reason}")
-    return 0
+    return 2
 
 
 def main(argv=None, *, opener=request.urlopen, sleep=time.sleep) -> int:
