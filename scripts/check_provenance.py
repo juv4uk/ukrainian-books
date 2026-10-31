@@ -66,6 +66,11 @@ def audit(root: Path) -> dict:
     errors: list[str] = []
     records: list[dict] = []
     warning = "Формальна перевірка НЕ підтверджує юридичну чинність дозволів"
+    # Навіть пошкоджений симлінк не можна вважати відсутнім каталогом.
+    if books.is_symlink():
+        return {"status": "failed", "books": records,
+                "errors": ["books: символічне посилання заборонено"],
+                "warning": warning}
     if not books.exists():
         return {"status": "ok", "books": records, "errors": errors,
                 "warning": warning + "; у репозиторії поки немає книг"}
@@ -74,18 +79,35 @@ def audit(root: Path) -> dict:
                 "errors": ["books не є каталогом"], "warning": warning}
 
     for directory in sorted(books.iterdir()):
-        if not directory.is_dir() or directory.is_symlink():
-            if directory.name != ".gitkeep":
-                errors.append(f"Некоректний запис у books/: {directory.name}")
+        # Допускаємо лише звичайний службовий .gitkeep, а не його симлінк.
+        if (directory.name == ".gitkeep" and directory.is_file()
+                and not directory.is_symlink()):
+            continue
+        if directory.is_symlink():
+            errors.append(f"books/{directory.name}: символічне посилання заборонено")
+            continue
+        if not directory.is_dir():
+            errors.append(f"Некоректний запис у books/: {directory.name}")
             continue
         base = directory.name
         passport = directory / "PROVENANCE.md"
+        # Не розіменовуємо симлінки (також пошкоджені та на каталоги).
+        # Перевіряємо всі вкладені записи, а не лише is_file().
+        entries = list(directory.rglob("*"))
+        links = [p for p in entries if p.is_symlink()]
         materials = [
-            p for p in directory.rglob("*")
-            if p.is_file() and p.name not in ("PROVENANCE.md", ".gitkeep")
+            p for p in entries
+            if p.is_file() and p != passport and p.name != ".gitkeep"
         ]
         record = {"book": base, "files": len(materials), "state": "metadata-only"}
         records.append(record)
+        if links:
+            errors.extend(
+                f"{base}: символічне посилання заборонено: {p.relative_to(root)}"
+                for p in links
+            )
+            record["state"] = "blocked"
+            continue
         if not passport.is_file() or passport.is_symlink():
             errors.append(f"{base}: немає звичайного PROVENANCE.md")
             record["state"] = "blocked"
