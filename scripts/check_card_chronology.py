@@ -43,6 +43,51 @@ def inspect_date(card: dict, field: tuple[str, ...], today: date) -> list[str]:
     return []
 
 
+
+def inspect_review_order(card: dict) -> list[str]:
+    """Рецензія не може підтверджувати звірку свідка, здійснену пізніше.
+
+    Некоректні дати й типи перевіряє inspect_date; тут порівнюємо лише
+    коректні календарні значення, не створюючи дубльованих помилок.
+    """
+    review = card.get("review")
+    if not isinstance(review, dict):
+        return []
+    reviewed = review.get("reviewed_on")
+    if not isinstance(reviewed, str):
+        return []
+    try:
+        review_day = date.fromisoformat(reviewed)
+    except ValueError:
+        return []
+    if review_day.isoformat() != reviewed:
+        return []
+
+    sources = card.get("sources")
+    if not isinstance(sources, dict):
+        return []
+    errors: list[str] = []
+    for name in ("gretil", "sarit"):
+        witness = sources.get(name)
+        if not isinstance(witness, dict):
+            continue
+        checked = witness.get("checked_on")
+        if not isinstance(checked, str):
+            continue
+        try:
+            checked_day = date.fromisoformat(checked)
+        except ValueError:
+            continue
+        if checked_day.isoformat() != checked:
+            continue
+        if review_day < checked_day:
+            errors.append(
+                f"review.reviewed_on ({reviewed}) раніше за "
+                f"sources.{name}.checked_on ({checked}): "
+                "пізніша звірка потребує повторного підтвердження рецензією"
+            )
+    return errors
+
 def check_directory(folder: Path, today: date) -> tuple[int, list[str]]:
     """Повертає кількість карток і помилки, з контрольованим часом для тестів."""
     if folder.is_symlink():
@@ -68,6 +113,7 @@ def check_directory(folder: Path, today: date) -> tuple[int, list[str]]:
             continue
         for field in DATE_FIELDS:
             errors.extend(f"{file}: {err}" for err in inspect_date(data, field, today))
+        errors.extend(f"{file}: {err}" for err in inspect_review_order(data))
     if checked == 0:
         errors.append(f"{folder}: не знайдено JSON-карток — нічого перевіряти")
     return checked, errors
