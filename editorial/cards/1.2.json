@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "1.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.2",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "muktim icchasi cet tāta viṣayān viṣavat tyaja | kṣamārjavadayātoṣasatyaṃ pīyūṣavad bhaja ||",
+  "iast": "muktim icchasi cet tāta viṣayān viṣavat tyaja | kṣamārjavadayātoṣasatyaṃ pīyūṣavad bhaja ||",
+  "grammar": "muktim (f. acc. sg. mukti-) icchasi (2 sg. pres. iṣ-) cet (enclitic particle) tāta (m. voc. sg.) viṣayān (m. acc. pl. viṣaya-) viṣavat (adverb, «як отруту») tyaja (2 sg. impv. tyaj-) | kṣamā-ārjava-dayā-toṣa-satyaṃ (dvandva-складений іменник, n. acc. sg.) pīyūṣavat (adverb, «як нектар») bhaja (2 sg. impv. bhaj-). Два наказові способи в одному вірші; складений перелік із п’яти чеснот розкладається лише після сандгі.",
+  "literal_meaning": "«Звільнення бажаєш якщо, сину, предмети чуттів як отруту відкинь; терпимість-прямоту-співчуття-вдоволеність-правдивість як нектар шануй.» Дослівно: «якщо ти бажаєш звільнення, сину, відкинь чуттєві предмети, як отруту; плекай терпимість, прямоту, співчуття, вдоволеність і правдивість, як нектар».",
+  "ukrainian_translation": "Якщо ти прагнеш звільнення, сину, відкинь чуттєві предмети, як отруту; шануй терпимість, щирість, співчуття, вдоволеність і правдивість, як нектар.",
+  "commentary": "Вірш задає умову входу в діалог: звільнення тут не досягають додаванням, а починають із відкидання. Пара «отрута / нектар» протиставляє не приємне й неприємне, а те, що зв’язує, і те, що живить. Другий піввірш — перелік п’яти чеснот у складеному іменнику (dvandva), тобто одна нерозривна сукупність, а не меню. Для українського перекладу принципово, що toṣa — це вдоволеність тим, що є, а не «простота»: «простота» відповідала б іншому слову (sāradya, saralatā) і в цьому переліку відсутня. Прямота ārjava — радше незігнутість, ніж «щирість» у побутовому сенсі; обраний відповідник умовний. Межі термінів див. у примітці до 1.2 в research/ashtavakra/. Твердження про значення toṣa — робоча лексикографічна оцінка, а не рецензований висновок.",
+  "variants": [
+    {
+      "witness": "GRETIL vs SARIT",
+      "note": "Читання збігається після нормалізації. Відмінність лише в оформленні: SARIT подає сандгі злитно (viṣayānviṣavattyaja) і додає маркери пад (|), GRETIL — роздільно. Це не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір, що перебуває в суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT (CC BY-SA 3.0, availability restricted) мають власні умови; тут наведено читання, звірене за обома свідками, без копіювання їхнього редакторського апарату, приміток чи перекладів. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
