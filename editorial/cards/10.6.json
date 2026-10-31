@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "10.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_10.6",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_10.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "rājyaṃ sutāḥ kalatrāṇi śarīrāṇi sukhāni ca| saṃsaktasyāpi naṣṭāni tava janmani janmani||10|6||",
+  "iast": "rājyaṃ sutāḥ kalatrāṇi śarīrāṇi sukhāni ca | saṃsaktasyāpi naṣṭāni tava janmani janmani ||",
+  "grammar": "rājyam (n. «царство») sutāḥ (m. pl. «сини») kalatrāṇi (n. pl. «дружини») śarīrāṇi (n. pl. «тіла») sukhāni (n. pl. «утіхи») ca | saṃsaktasya api (gen. «хоч і прив'язаного») naṣṭāni (n. pl. pp. «загинули») tava (gen.) janmani janmani (loc. «в народженні за народженням»).",
+  "literal_meaning": "«Царство, сини, дружини, тіла й утіхи — усе це гинуло для тебе, прив'язаного, з народження в народження.»",
+  "ukrainian_translation": "Царство, сини, дружини, тіла й утіхи — усе це вже гинуло для тебе, прив'язаного, — з народження в народження.",
+  "commentary": "`naṣṭāni` — доконаний дієприкметник: не «загине», а «гинуло вже не раз». Переклад має зберегти цю повторюваність, інакше вірш звучить як погроза, а він — як нагадування. Звертання адресоване цареві, і царство названо **першим** у переліку: порядок не випадковий.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,19 @@
+name: Відповідність DOI у бібліографії
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  doi:
+    name: Офлайн-аналіз бібліографічних DOI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити бібліографічні DOI
+        run: python3 scripts/check_bibliography_doi.py
+      - name: Запустити позитивні та негативні тести
+        run: python3 -m unittest discover -s tests -p 'test_bibliography_doi.py' -v

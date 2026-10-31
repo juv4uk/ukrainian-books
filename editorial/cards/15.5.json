@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.5",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.5",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.5",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "rāgadveṣau manodharmau na manaste kadācana| nirvikalpo+asi bodhātmā nirvikāraḥ sukhaṃ cara||15|5||",
+  "iast": "rāgadveṣau manodharmau na manas te kadācana | nirvikalpo 'si bodhātmā nirvikāraḥ sukhaṃ cara ||",
+  "grammar": "rāga-dveṣau («пристрасть і відраза») manaḥ-dharmau («властивості ума») na manaḥ te kadācana («ніколи ум не твій») | nirvikalpaḥ asi («ти без домислювання») bodha-ātmā («ти, чия суть — усвідомлення») nirvikāraḥ («без видозмін») sukham cara.",
+  "literal_meaning": "«Пристрасть і відраза — властивості ума, і ум ніколи не твій. Ти без домислювання, твоя суть — усвідомлення, ти без видозмін — живи легко.»",
+  "ukrainian_translation": "Пристрасть і відраза — властивості ума, і ум ніколи не твій. Ти без домислювання, твоя суть — усвідомлення, ти без видозмін — живи легко.",
+  "commentary": "Ланцюг тут двоступеневий: спершу `rāga`/`dveṣa` віднесено до `manas`, а потім заперечено сам `manas` як власність. `nirvikāra` («без видозмін») — те саме слово, що в 11.1; словник спільний. `sukhaṃ cara` повторює 15.4 дослівно, і в перекладі це має бути той самий вислів — інакше зникне наскрізний рефрен глави.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

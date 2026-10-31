@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "7.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_7.3",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_7.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "mayyanantamahāmbhodhau viśvaṃ nāma vikalpanā| atiśānto nirākāra etadevāhamāsthitaḥ||7|3||",
+  "iast": "mayy anantamahāmbhodhau viśvaṃ nāma vikalpanā | atiśānto nirākāra etad evāham āsthitaḥ ||",
+  "grammar": "mayi ananta-mahā-ambhodhau | viśvam nāma («те, що зветься світом») vikalpanā (f. «домислювання, конструкція») | atiśāntaḥ («вельми втихлий») nirākāraḥ («без форми») etat eva aham āsthitaḥ («саме в цьому я стою»).",
+  "literal_meaning": "«У мені, безмежному океані, те, що зветься світом, є домислюванням. Вельми втихлий, без форми — саме в цьому я стою.»",
+  "ukrainian_translation": "У мені, безмежному океані те, що зветься світом, є домислюванням. Вельми втихлий, без форми — саме в цьому я стою.",
+  "commentary": "`nāma` тут не «ім'я», а знецінювальна частка: «те, що **зветься** світом». `vikalpanā` — та сама «конструкція розуму», що в 2.9 і 2.17; словник карток має лишатися узгодженим. Формула `etad evāham āsthitaḥ` («саме в цьому я стою») повторюється в 7.3 і 7.4 — це не прикраса, а спосіб зчепити два вірші в одне твердження.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

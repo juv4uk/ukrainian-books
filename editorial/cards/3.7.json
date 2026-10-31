@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "3.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_3.7",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_3.7",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "udbhūtaṃ jñānadurmitram avadhāryātidurbalaḥ | āścaryaṃ kāmam ākāṅkṣet kālam antam anuśritaḥ ||",
+  "iast": "udbhūtaṃ jñānadurmitram avadhāryātidurbalaḥ | āścaryaṃ kāmam ākāṅkṣet kālam antam anuśritaḥ ||",
+  "grammar": "udbhūtam (n. nom./acc. sg. «постале, яке виникло») jñānadurmitram (n. nom./acc. sg. «поганого друга — знання»: jñāna «знання» + durmitra «поганий друг»). avadhārya (герунд ava-dhṛ «зваживши, зрозумівши») atidurbalaḥ (m. nom. sg. «надзвичайно слабкий»). āścaryam (n. nom. sg. «диво»; присудкове) kāmam (m. acc. sg. «бажання») ākāṅkṣet (3 sg. opt. ā-kāṅkṣ «прагнув би»). kālam (m. acc. sg. «час») antam (m. acc. sg. «кінець») anuśritaḥ (m. nom. sg. «той, хто дійшов до, притулився до»: anu-śri).",
+  "literal_meaning": "«О диво! Зваживши, що постало погане знання-друг, — надзвичайно слабкий — він усе ж прагнув би бажання, дійшовши до кінця часу.»",
+  "ukrainian_translation": "О диво! Зрозумівши, що знання виявилося поганим другом, — надзвичайно слабкий — він усе одно прагнув би бажання, дійшовши до кінця часу.",
+  "commentary": "Складене jñānadurmitram можна прочитати двома способами: «знання, що є поганим другом» і «поганий друг, [який полягає] у знанні». Обидва дають той самий сенс: знання, на яке покладалися, не врятувало. Найсильніше тут — час дієслова й обставина: ākāṅkṣet стоїть в optativus («прагнув би»), а kālam antam anuśritaḥ («дійшовши до кінця часу») означає останню межу, коли вже нічого не змінити. Тобто бажання не просто лишається — воно лишається там, де його вже неможливо задовольнити. Це не докір, а констатація абсурду, і слово āścaryam («диво») вжите саме в цьому сенсі.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

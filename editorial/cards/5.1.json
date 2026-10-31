@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "5.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_5.1",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_5.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na te saṅgo 'sti kenāpi kiṃ śuddhas tyaktum icchasi | saṅghātavilayaṃ kurvann evam eva layaṃ vraja ||",
+  "iast": "na te saṅgo 'sti kenāpi kiṃ śuddhas tyaktum icchasi | saṅghātavilayaṃ kurvann evam eva layaṃ vraja ||",
+  "grammar": "na te (gen. sg. «у тебе немає») saṅgaḥ (m. nom. sg. «зв'язок, дотик, прив'язаність») asti («є») kena api (m. instr. sg. «з чим-небудь, ні з чим»). kim («чого?») śuddhaḥ (m. nom. sg. «чистий») tyaktum (інфінітив tyaj «відкинути») icchasi (2 sg. pr. iṣ «хочеш»). saṅghātavilayam (m. acc. sg. «розчинення скупчення»: saṅghāta «скупчення, агрегат» + vilaya «розчинення») kurvan (m. nom. sg. дієприкметника теперішнього часу kṛ «роблячи») evam eva («так само») layam (m. acc. sg. «розчинення») vraja (2 sg. imper. vraj «іди»).",
+  "literal_meaning": "«У тебе немає зв'язку ні з чим — чого ти, чистий, хочеш відкинути? Здійснюючи розчинення скупчення, так само йди до розчинення.»",
+  "ukrainian_translation": "У тебе немає зв'язку ні з чим — то чого ж ти, чистий, хочеш відкинути? Здійснюючи розчинення скупчення, так само йди до розчинення.",
+  "commentary": "Питання kim ... icchasi («чого хочеш») викриває безглуздість самого наміру відректися: відкидають те, до чого прив'язані, а зв'язку немає (na te saṅgaḥ asti kenāpi). Слово saṅghāta («скупчення») — технічне: тіло описане не як річ, а як агрегат, суму. Тому vilaya («розчинення») і laya («розчинення») стоять в одному вірші двічі: перше — те, що відбувається з тілом само собою, друге — те, до чого слід іти. Різниця в тому, що перше трапляється, а друге обирають. РЕФРЕН ГЛАВИ. Усі чотири вірші глави 5 закінчуються однаково: evam eva layaṃ vraja («так само йди до розчинення»). Це не чотири окремі повчання, а одна літанія з незмінним приспівом: змінюється тільки перша половина — обґрунтування, а висновок лишається той самий. Тому главу слід читати як одне ціле.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

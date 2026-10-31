@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.13",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.13",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.13",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kṛtyaṃ kim api naivāsti na kāpi hṛdi rañjanā | yathājīvanam eveha jīvanmuktasya yoginaḥ ||",
+  "iast": "kṛtyaṃ kim api naivāsti na kāpi hṛdi rañjanā | yathājīvanam eveha jīvanmuktasya yoginaḥ ||",
+  "grammar": "kṛtyam (n. nom. sg. «те, що слід зробити, справа») kim api («що-небудь») na eva asti («немає анічого»). na kā api («жодна») hṛdi (n. loc. sg. «у серці») rañjanā (f. nom. sg. «прихильність, забавка, вподоба»). yathājīvanam (прислівник «як живеться, протягом життя») eva iha («саме тут»). jīvanmuktasya (m. gen. sg. «того, хто звільнений за життя»: jīvat «живучи» + mukta «вільний») yoginaḥ.",
+  "literal_meaning": "«Немає анічого, що слід зробити, і жодної вподоби в серці — у йога, звільненого за життя, [усе йде] просто як живеться, тут-таки.»",
+  "ukrainian_translation": "Немає нічого, що слід зробити, і жодної вподоби в серці — у йога, звільненого ще за життя, все йде просто як живеться, тут-таки.",
+  "commentary": "jīvanmukta («звільнений за життя») — технічний термін адвайти, і він єдиний раз у книзі з'являється саме тут. Друга половина — найважча: yathājīvanam може читатися як «протягом усього життя» (прислівник) або як «як живеться» (порівняння). SARIT і GRETIL членують по-різному, і обидва прочитання дають сенс. rañjanā («вподоба, забавка») точніше за «бажання»: це те, що фарбує — те саме слово, від якого rāga («пристрасть») і «фарба».",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ У ЧЛЕНУВАННІ: SARIT — yathā jīvanam eveha («як життя, саме тут»), GRETIL — yathājīvanam eveha (складене «протягом життя»). Обидва прочитання граматично можливі й дають близький, але не тотожний сенс: «все йде як живеться» проти «так — усе життя». НЕ РОЗВ'ЯЗАНО: третього свідка для 18.13 не перевірено. У перекладі взято «як живеться» і це позначено як вибір. Також na kā+api (SARIT) / na kāpi (GRETIL) — сандгі, не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

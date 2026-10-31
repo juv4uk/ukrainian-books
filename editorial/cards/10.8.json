@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "10.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_10.8",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_10.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kṛtaṃ na kati janmāni kāyena manasā girā| duḥkhamāyāsadaṃ karma tadadyāpyuparamyatām||10|8||",
+  "iast": "kṛtaṃ na kati janmāni kāyena manasā girā | duḥkham āyāsadaṃ karma tad adyāpy uparamyatām ||",
+  "grammar": "kṛtam (n. pp. «зроблено») na kati («чи мало, скільки ж») janmāni (n. pl. «народження») kāyena manasā girā (instr. «тілом, розумом, мовою») | duḥkha-āyāsa-dam («те, що дає біль і втому») karma tat adya api uparamyatām (пасивний імператив «нехай буде припинене»).",
+  "literal_meaning": "«Скільки ж за ці народження зроблено тілом, розумом і мовою діл, що дають біль і втому! Тож нехай це припиниться хоч тепер.»",
+  "ukrainian_translation": "Скільки ж за ці народження зроблено тілом, розумом і мовою діл, що дають біль і втому! Тож нехай це припиниться хоч тепер.",
+  "commentary": "Потрійний інструментал — тіло, розум, мова — це класична формула трьох дверей дії, і переклад має зберегти всі три, а не згортати їх у «вчинки». `uparamyatām` — пасивний імператив: не «припини», а «нехай припиниться»; дія знімається не зусиллям того, хто діє. `adya api` — «хоч тепер», з відтінком докору, а не нейтрального «зараз». Цим віршем глава 10 закінчується.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

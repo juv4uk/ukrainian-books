@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "3.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_3.4",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_3.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "śrutvāpi śuddhacaitanyam ātmānam atisundaram | upasthe 'tyantasaṃsakto mālinyam adhigacchati ||",
+  "iast": "śrutvāpi śuddhacaitanyam ātmānam atisundaram | upasthe 'tyantasaṃsakto mālinyam adhigacchati ||",
+  "grammar": "śrutvā (герунд śru «почувши») api («навіть»). śuddhacaitanyam (m. acc. sg. «чиста свідомість»: śuddha «чистий» + caitanya «свідомість») ātmānam (m. acc. sg.) atisundaram (m. acc. sg. «надзвичайно прекрасний»). upasthe (n./m. loc. sg. «на лоні, під рукою, поблизу»; слово багатозначне) atyantasaṃsaktaḥ (m. nom. sg. «надмірно прив'язаний»: atyanta «надмірно» + saṃsakta «прив'язаний»). mālinyam (n. acc. sg. «бруд, нечистоту, занепад») adhigacchati (3 sg. pr. adhi-gam «набуває, доходить до»).",
+  "literal_meaning": "«Навіть почувши [про] Атман — чисту свідомість, надзвичайно прекрасну, — надмірно прив'язаний до [того, що] під рукою, набуває бруду.»",
+  "ukrainian_translation": "Навіть почувши про Атман — чисту свідомість, надзвичайно прекрасну, — той, хто надмірно прив'язаний до того, що під рукою, набуває бруду.",
+  "commentary": "Слово upasthe навмисно не уточнене: воно означає і «на лоні», і «поблизу, під рукою», і традиційно вживається з плотським відтінком. Точний зміст залежить від контексту, якого вірш не дає, — і саме тому переклад зберігає двозначність, а не обирає одне значення. Структура вірша — контраст між почутим і робленим: śrutvā api («навіть почувши») підкреслює, що знання про Атман саме собою нічого не змінює. mālinya («бруд») — не моральна оцінка, а стан забрудненості; те саме слово вживане про одяг і про посуд. Тобто йдеться не про гріх, а про те, що річ втрачає чистоту від дотику.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

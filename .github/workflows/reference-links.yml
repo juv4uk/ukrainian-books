@@ -1,0 +1,21 @@
+name: Довідкові посилання Markdown
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reference-links:
+    name: Довідкові мітки й локальні файли
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити довідкові посилання
+        run: python3 scripts/check_reference_links.py
+      - name: Запустити негативні та позитивні тести
+        run: python3 -m unittest discover -s tests -p 'test_reference_links.py' -v
+      - name: Зберегти загальний контроль структури
+        run: python3 scripts/check_project.py

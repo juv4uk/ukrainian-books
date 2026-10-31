@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "7.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_7.1",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_7.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "mayyanantamahāmbhodhau viśvapota itastataḥ| bhramati svāntavātena na mamāstyasahiṣṇutā||7|1||",
+  "iast": "mayy anantamahāmbhodhau viśvapota itastataḥ | bhramati svāntavātena na mamāsty asahiṣṇutā ||",
+  "grammar": "mayi ananta-mahā-ambhodhau (m. loc. «у безмежному великому океані — у мені») | viśva-potaḥ (m. «човен світу», pota = човен) itastataḥ («туди-сюди») bhramati («блукає») svānta-vātena (instr. «вітром власного нутра») | na mama asti asahiṣṇutā («немає в мене нетерпимості»).",
+  "literal_meaning": "«У мені, безмежному океані, човен світу блукає туди-сюди вітром власного нутра — і в мене немає нетерпимості.»",
+  "ukrainian_translation": "У мені, безмежному океані, човен світу блукає туди-сюди вітром власного нутра — і в мене немає нетерпимості.",
+  "commentary": "`pota` — «човен, судно», а не «хвиля»: світ тут не хвилювання океану, а рухома річ **на** ньому. Це відрізняє 7.1 від 7.2, де світ уже `vīci` (хвиля). `svānta-vāta` («вітер власного нутра») — рушій усередині, не зовні. `asahiṣṇutā` — «нетерпимість, нездатність терпіти»: океан не страждає від човна, і саме це сказано, а не «спокій».",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

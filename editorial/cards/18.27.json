@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.27",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.27",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.27",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nānāvicārasuśrānto dhīro viśrāntim āgataḥ | na kalpate na jānāti na śṛṇoti na paśyati ||",
+  "iast": "nānāvicārasuśrānto dhīro viśrāntim āgataḥ | na kalpate na jānāti na śṛṇoti na paśyati ||",
+  "grammar": "nānāvicārasuśrāntaḥ (bahuvrīhi «втомлений від різноманітних роздумів-досліджень»: nānā «різне» + vicāra «роздум, дослідження» + suśrānta «вельми втомлений») dhīraḥ (m. nom. sg.) viśrāntim (f. acc. sg. «спочинок») āgataḥ (m. nom. sg. «той, хто дійшов»). na kalpate (3 sg. pr. pass. kḷp «не утворюється, не вважається») na jānāti («не знає») na śṛṇoti («не чує») na paśyati («не бачить»).",
+  "literal_meaning": "«Мудрий, стомлений різноманітними роздумами, дійшов до спочинку: не утворюється, не знає, не чує, не бачить.»",
+  "ukrainian_translation": "Мудрий, стомлений різноманітними роздумами, дійшов до спочинку: він не утворюється, не знає, не чує, не бачить.",
+  "commentary": "Чотири заперечення наприкінці — це не опис нечутливості, а скасування чотирьох способів бути при справах: kalpate («вважається, утворюється»), jānāti, śṛṇoti, paśyati. Найцікавіше перше: na kalpate означає, що він більше не «складається» в якусь роль. Стомленість названа suśrānta («вельми втомлений») і стоїть як причина, а не як вада: спочинок приходить саме тому, що роздумів було надто багато.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
