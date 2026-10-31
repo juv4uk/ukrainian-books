@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.6",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.6",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.6",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "sarvabhūteṣu cātmānaṃ sarvabhūtāni cātmani| vijñāya nirahaṃkāro nirmamastvaṃ sukhī bhava||15|6||",
+  "iast": "sarvabhūteṣu cātmānaṃ sarvabhūtāni cātmani | vijñāya nirahaṃkāro nirmamas tvaṃ sukhī bhava ||",
+  "grammar": "sarva-bhūteṣu («у всіх істотах») ca ātmānam («себе») sarva-bhūtāni ca ātmani («і всі істоти — у собі») | vijñāya («пізнавши») nirahaṃkāraḥ («без „я-роблю“») nirmamaḥ («без „моє“») tvam sukhī bhava («будь щасливий»).",
+  "literal_meaning": "«Пізнавши себе у всіх істотах і всі істоти — у собі, ти без „я-роблю“, без „моє“ — будь щасливий.»",
+  "ukrainian_translation": "Пізнавши себе у всіх істотах і всі істоти — у собі, ти без «я-роблю», без «моє» — будь щасливий.",
+  "commentary": "Двобічність тут обов'язкова: `ātmānam` у всіх істотах **і** всі істоти в `ātman`. Переклад, що зберіг лише один напрямок, втрачає суть. `nirahaṃkāra`/`nirmama` — не «скромний» і не «безкорисливий», а буквально «без `ahaṃkāra`» і «без `mama`»: два займенники, від яких відмовляються. `sukhī bhava` — наказовий спосіб, як і `sukhaṃ cara` у 15.4–15.5.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
