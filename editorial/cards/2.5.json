@@ -11,7 +11,7 @@
       "checked_on": "2026-10-31"
     },
     "sarit": {
-      "url": "https://github.com/sarit/SARIT-corpus/blob/0fbf1f2385b5e3331dd8dd625cab4b37c6d73103/astavakragita.xml",
+      "url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astavakragita.xml",
       "locator": "verse_2.5",
       "checked_on": "2026-10-31"
     }
@@ -31,7 +31,7 @@
     {
       "witness": "GRETIL/TextGrid проти SARIT, другий піввірш",
       "note": "GRETIL має ātmatanmatram (коротке a у -matram), SARIT — ātmatanmātram (довге ā у -mātram). Не виправляти довготу або складне слово без звірки; статус різниці лишається відкритим.",
-      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/0fbf1f2385b5e3331dd8dd625cab4b37c6d73103/astavakragita.xml"
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/1eac9ee0b055c8d11147edac4a75c76008ccc363/astavakragita.xml"
     }
   ],
   "variants_checked": true,
