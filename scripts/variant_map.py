@@ -46,11 +46,19 @@ def key(verse: str) -> tuple[int, int]:
     return int(major), int(minor)
 
 
+VOWELS = set("aiueo")
+
+
+def consonants(text: str) -> str:
+    return "".join(ch for ch in folded(text) if ch not in VOWELS)
+
+
 def classify(sarit_xml: str, gretil_xml: str) -> dict:
     sarit = verses(sarit_xml, "verse_")
     gretil = verses(gretil_xml, "Avg_")
     common = sorted(set(sarit) & set(gretil), key=key)
     exact, orthographic, candidates = [], [], []
+    vowel_only, consonant_diff = [], []
     for verse in common:
         a, b = sarit[verse], gretil[verse]
         if a == b:
@@ -59,6 +67,10 @@ def classify(sarit_xml: str, gretil_xml: str) -> dict:
             orthographic.append(verse)
         else:
             candidates.append(verse)
+            if consonants(a) == consonants(b):
+                vowel_only.append(verse)
+            else:
+                consonant_diff.append(verse)
     return {
         "sarit_verses": len(sarit),
         "gretil_verses": len(gretil),
@@ -68,6 +80,8 @@ def classify(sarit_xml: str, gretil_xml: str) -> dict:
         "exact": len(exact),
         "orthographic": len(orthographic),
         "candidates": candidates,
+        "vowel_only": vowel_only,
+        "consonant_diff": consonant_diff,
     }
 
 
@@ -90,6 +104,8 @@ def main() -> int:
     print(f"  точний збіг:  {result['exact']}")
     print(f"  орфографія:   {result['orthographic']}")
     print(f"  кандидатів:   {len(result['candidates'])} — ФІЛЬТР, не вирок")
+    print(f"    лише голосні:      {len(result['vowel_only'])}")
+    print(f"    різні приголосні:  {len(result['consonant_diff'])} — читати першими")
     return 0
 
 
