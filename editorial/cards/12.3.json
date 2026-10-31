@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "12.3",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_12.3",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_12.3",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "samādhyāsādivikṣiptau vyavahāraḥ samādhaye| evaṃ vilokya niyamamevamevāhamāsthitaḥ||12|3||",
+  "iast": "samādhyāsādivikṣiptau vyavahāraḥ samādhaye | evaṃ vilokya niyamam evam evāham āsthitaḥ ||",
+  "grammar": "samādhi-āsādi-vikṣiptau («у розсіяності, [викликаній] прагненням самадгі та подібного») vyavahāraḥ samādhaye («[звичайна] діяльність — для самадгі») | evam vilokya niyamam («так побачивши правило») evam eva aham āsthitaḥ.",
+  "literal_meaning": "«Коли розсіяність походить від прагнення самадгі та подібного, то й звичайна діяльність — задля самадгі. Так побачивши це правило, саме в цьому я стою.»",
+  "ukrainian_translation": "Коли розсіяність походить від прагнення самадгі та подібного, то й звичайна діяльність — задля самадгі. Так побачивши це правило, саме в цьому я стою.",
+  "commentary": "Найдошкульніший вірш глави: **прагнення самадгі саме стає розсіяністю** (`vikṣipti`). І далі — іронія, яку легко проґавити: якщо навіть буденна діяльність робиться «задля самадгі», то правило (`niyama`) виявляється всеохопним, і виходу з нього немає. Переклад мусить зберегти цю замкненість, а не зробити з неї пораду.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
