@@ -46,7 +46,12 @@ def parse_passport(path: Path) -> dict[str, str]:
     for line in path.read_text(encoding="utf-8").splitlines():
         m = FIELD_LINE.match(line)
         if m:
-            values[m.group(1).strip()] = m.group(2).strip()
+            name = m.group(1).strip()
+            # Повторене контрактне поле не можна стиха перекрити пізнішим
+            # рядком: так можна приховати суперечливе рішення про права.
+            if name in FIELDS and name in values:
+                raise ValueError(f"повторене поле «{name}» у PROVENANCE.md")
+            values[name] = m.group(2).strip()
     return values
 
 
@@ -117,7 +122,12 @@ def audit(root: Path) -> dict:
         # requires an approved and fully completed provenance passport.
         if not materials:
             continue
-        values = parse_passport(passport)
+        try:
+            values = parse_passport(passport)
+        except ValueError as exc:
+            errors.append(f"{base}: {exc}")
+            record["state"] = "blocked"
+            continue
         for name in FIELDS:
             if name not in values or unfinished(
                 values.get(name, ""),
