@@ -1,17 +1,17 @@
 % =====================================================================
-%  «Аштавакра-ґіта» — ФОРМАТ-02, робоче видання глави 1
+%  «Аштавакра-ґіта» — ФОРМАТ-02, робоче видання всієї книги
 %
-%  Пʼять шарів на вірш: деванагарі, українська транслітерація, переклад,
-%  науковий коментар з українськими паралелями, ілюстрація.
-%  Плюс окремо — наш поетичний переклад.
+%  Пʼять шарів на кожен із 298 віршів: деванагарі, українська
+%  транслітерація, переклад, науковий коментар з українськими паралелями,
+%  власна схема. Плюс окремо — наш поетичний переклад усієї книги.
 %
-%  Джерело тексту — власні редакторські картки editorial/cards/1.*.json
+%  Джерело тексту — власні редакторські картки editorial/cards/*.json
 %  і файли books/ashtavakra-gita/format-v2/ та poetychnyi/. Нічого з цього
 %  не написано руками у .tex: усе генерує scripts/build_format_v2_chapter.py.
 %
 %  Складання:
 %    python3 scripts/build_verse_schemas.py --pdf
-%    python3 scripts/build_format_v2_chapter.py --chapter 1
+%    python3 scripts/build_format_v2_chapter.py --all
 %    cd books/ashtavakra-gita && latexmk -xelatex main.tex
 %  або без latexmk:
 %    xelatex main.tex && xelatex main.tex
@@ -45,6 +45,7 @@
 
 \usepackage[a5paper,top=17mm,bottom=19mm,inner=17mm,outer=15mm,headsep=5mm]{geometry}
 \usepackage{graphicx}
+\usepackage{xcolor}
 \IfFileExists{pzdr.tfm}{\usepackage[hidelinks]{hyperref}}{}
 
 \setlength{\parindent}{1.1em}
@@ -119,8 +120,6 @@
   {\sffamily\footnotesize #1\par}\nopagebreak
   \begin{quote}\normalsize\raggedright #2\end{quote}}
 
-\usepackage{xcolor}
-
 \begin{document}
 
 % =====================================================================
@@ -128,28 +127,33 @@
 % =====================================================================
 \begin{titlepage}
 \centering
-\vspace*{1.8cm}
+\vspace*{1.6cm}
 
 {\sffamily\Large АШТАВАКРА-ҐІТА\par}
 \vspace{0.5em}
 {\sffamily\small Aṣṭāvakragītā\par}
 
-\vspace{2.0cm}
+\vspace{1.6cm}
 {\sffamily\bfseries\large РОБОЧЕ ПІЛОТНЕ ВИДАННЯ\par}
 \vspace{0.5em}
 {\sffamily ФОРМАТ-02: пʼять шарів на вірш\par}
 \vspace{0.3em}
-{\sffamily Глава 1 — 20 віршів\par}
+{\sffamily Глави 1–20 — 298 віршів\par}
 
-\vspace{2.0cm}
+\vspace{1.4cm}
 \begin{minipage}{0.86\textwidth}
 \small\raggedright
 \textbf{Це не завершена книга і не академічне видання.}
 
 \vspace{0.5em}
 Це \emph{робоче пілотне видання нового формату}: воно показує, що машина
-складає всі пʼять шарів і поетичний переклад, і що з наявного матеріалу вже
-можна скласти PDF.
+складає всі пʼять шарів для кожного вірша книги і що з наявного матеріалу
+вже можна скласти PDF.
+
+\vspace{0.5em}
+\textbf{Поетичний переклад у цій книзі — наш власний і не канонічний.}
+Він не замінює науковий переклад і не претендує на те, щоб його читали
+замість санскритського тексту.
 
 \vspace{0.5em}
 Усі редакторські картки мають статус \textbf{«чернетка»}. Жодна не позначена
@@ -181,11 +185,13 @@
 \noindent
 \begin{tabular}{@{}p{0.34\textwidth}p{0.58\textwidth}@{}}
 \textsf{Назва} & Аштавакра-ґіта (Aṣṭāvakragītā). Робоче пілотне видання ФОРМАТ-02 \\[0.3em]
-\textsf{Зміст} & Глава 1 (20 віршів): деванагарі, українська транслітерація, переклад,
-науковий коментар з українськими паралелями, власна схема; окремо — поетичний переклад \\[0.3em]
+\textsf{Зміст} & Глави 1–20 (298 віршів): деванагарі, українська транслітерація, переклад,
+науковий коментар з українськими паралелями, власна схема; окремо — наш поетичний
+переклад усієї книги \\[0.3em]
 \textsf{Первісний твір} & санскритська поема; за наявними даними — суспільне надбання через вік \\[0.3em]
-\textsf{Джерело нашого тексту} & власні картки \texttt{editorial/cards/1.*.json} \\[0.3em]
+\textsf{Джерело нашого тексту} & власні картки \texttt{editorial/cards/*.json} \\[0.3em]
 \textsf{Статус карток} & «чернетка» — усі, без винятків \\[0.3em]
+\textsf{Поетичний переклад} & наш власний, не канонічний і не науковий \\[0.3em]
 \textsf{Укладач} & редакція проєкту \texttt{juv4uk/ukrainian-books} \\[0.3em]
 \textsf{Ліцензія власного внеску} & «ВОЛЬНІСТЬ» \\[0.3em]
 \textsf{Складання} & XeLaTeX, шрифт DejaVu Serif; деванагарі — Noto Serif Devanagari \\[0.3em]
@@ -218,9 +224,9 @@
 
 \section*{Що тут зверстано}
 
-Главу~1 повністю: усі 20 віршів, кожен пʼятьма шарами. Це не 298 віршів.
-Решта глав чекає на ту саму роботу: машина для них уже є, бракує тексту
-коментарів, паралелей і схем.
+Усі двадцять глав, 298 віршів, кожен пʼятьма шарами. Кожен вірш має власну
+схему; кожен має українську паралель або прямо позначене її місце. Окремо
+йде наш поетичний переклад усієї книги.
 
 \section*{Чого тут немає}
 
@@ -243,15 +249,41 @@
 паралелі — вказівки на твір без цитати. Правила — у
 \texttt{books/ashtavakra-gita/paraleli.json} і \texttt{scripts/check\_ukrainian\_parallels.py}.
 
+\section*{Про поетичний переклад}
+
+Друга частина книги — \textbf{наш поетичний переклад}, а не канонічний і не
+науковий. Він не замінює переклад у науковій частині: обидва йдуть у книзі,
+і читач бачить обидва. Поетична свобода тут — у ритмі й порядку слів, не у
+фактах; там, де рима псувала б думку, вжито верлібр.
+
 \mainmatter
 \input{generated/rozdil-1.tex}
+\input{generated/rozdil-2.tex}
+\input{generated/rozdil-3.tex}
+\input{generated/rozdil-4.tex}
+\input{generated/rozdil-5.tex}
+\input{generated/rozdil-6.tex}
+\input{generated/rozdil-7.tex}
+\input{generated/rozdil-8.tex}
+\input{generated/rozdil-9.tex}
+\input{generated/rozdil-10.tex}
+\input{generated/rozdil-11.tex}
+\input{generated/rozdil-12.tex}
+\input{generated/rozdil-13.tex}
+\input{generated/rozdil-14.tex}
+\input{generated/rozdil-15.tex}
+\input{generated/rozdil-16.tex}
+\input{generated/rozdil-17.tex}
+\input{generated/rozdil-18.tex}
+\input{generated/rozdil-19.tex}
+\input{generated/rozdil-20.tex}
 
 % =====================================================================
 %  ПОЕТИЧНИЙ ПЕРЕКЛАД
 % =====================================================================
 \backmatter
-\chapter*{Поетичний переклад. Глава 1}
-\addcontentsline{toc}{chapter}{Поетичний переклад. Глава 1}
+\chapter*{Поетичний переклад. Наш, не канонічний}
+\addcontentsline{toc}{chapter}{Поетичний переклад (наш, не канонічний)}
 \markboth{Поетичний переклад}{Поетичний переклад}
 
 \noindent{\sffamily\small
@@ -261,13 +293,32 @@
 довжину рядків і ритм. Нічого, чого немає в санскритському тексті, не додано.}
 
 \input{generated/poetychnyi-1.tex}
+\input{generated/poetychnyi-2.tex}
+\input{generated/poetychnyi-3.tex}
+\input{generated/poetychnyi-4.tex}
+\input{generated/poetychnyi-5.tex}
+\input{generated/poetychnyi-6.tex}
+\input{generated/poetychnyi-7.tex}
+\input{generated/poetychnyi-8.tex}
+\input{generated/poetychnyi-9.tex}
+\input{generated/poetychnyi-10.tex}
+\input{generated/poetychnyi-11.tex}
+\input{generated/poetychnyi-12.tex}
+\input{generated/poetychnyi-13.tex}
+\input{generated/poetychnyi-14.tex}
+\input{generated/poetychnyi-15.tex}
+\input{generated/poetychnyi-16.tex}
+\input{generated/poetychnyi-17.tex}
+\input{generated/poetychnyi-18.tex}
+\input{generated/poetychnyi-19.tex}
+\input{generated/poetychnyi-20.tex}
 
 \chapter*{Джерела й межі цього видання}
 \addcontentsline{toc}{chapter}{Джерела й межі}
 \markboth{Джерела й межі}{Джерела й межі}
 
 \noindent\textbf{\sffamily Що є джерелом нашого тексту.}
-Власні редакторські картки \texttt{editorial/cards/1.*.json}: поля
+Власні редакторські картки \texttt{editorial/cards/*.json}: поля
 \texttt{ukrainian\_translation} і \texttt{commentary}. Деванагарі й українська
 транслітерація — наше механічне перетворення поля \texttt{iast} тих самих
 карток. Коментарі, паралелі, схеми й поетичний переклад — наш авторський
@@ -281,6 +332,7 @@
 \vspace{0.6em}
 \noindent\textbf{\sffamily Чого ми не стверджуємо.}
 Що це критичне видання. Що переклад вивірений. Що коментар рецензований. Що
-права на всі використані матеріали остаточно зʼясовані.
+права на всі використані матеріали остаточно зʼясовані. Що наш поетичний
+переклад є канонічним.
 
 \end{document}
