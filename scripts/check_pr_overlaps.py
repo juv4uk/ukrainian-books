@@ -38,9 +38,17 @@ def get_json(path: str, token: str) -> object:
         with request.urlopen(req, timeout=15) as reply:
             return json.load(reply)
     except error.HTTPError as exc:
-        # Точний HTTP-код потрібен для діагностики 403/404/429;
-        # не виводимо URL, тіло відповіді, заголовки чи токен.
-        raise AuditError(f"GitHub REST файли PR: HTTP {exc.code}") from None
+        # Тільки числові значення двох службових заголовків, жодних URL,
+        # тексту відповіді чи авторизаційних заголовків.
+        headers = exc.headers or {}
+        remaining = headers.get("x-ratelimit-remaining")
+        retry = headers.get("retry-after")
+        detail = (
+            f"; залишок запитів={remaining}" if remaining and remaining.isdecimal() else ""
+        )
+        if retry and retry.isdecimal():
+            detail += f"; повтор не раніше ніж за {retry} с"
+        raise AuditError(f"GitHub REST файли PR: HTTP {exc.code}{detail}") from None
     except (error.URLError, TimeoutError, ValueError, OSError) as exc:
         raise AuditError(
             f"GitHub REST недоступний або повернув невірний JSON ({type(exc).__name__})"
