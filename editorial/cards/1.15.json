@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "1.15",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_1.15",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_1.15",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "niḥsaṅgo niṣkriyo+asi tvaṃ svaprakāśo nirañjanaḥ| ayameva hi te bandhaḥ samādhimanutiṣṭhasi||1|15||",
+  "iast": "niḥsaṅgo niṣkriyo 'si tvaṃ svaprakāśo nirañjanaḥ | ayam eva hi te bandhaḥ samādhim anutiṣṭhasi ||",
+  "grammar": "niḥsaṅgaḥ («без прив'язаності») niṣkriyaḥ asi tvam («ти без діяння») sva-prakāśaḥ («самосяйний») nirañjanaḥ («незаплямлений») | ayam eva hi te bandhaḥ («ось саме це твої пута») samādhim anutiṣṭhasi («ти вправляєшся в самадгі»).",
+  "literal_meaning": "«Ти без прив'язаності, без діяння, самосяйний, незаплямлений. Ось саме це твої пута — те, що ти вправляєшся в самадгі.»",
+  "ukrainian_translation": "Ти без прив'язаності, без діяння, самосяйний, незаплямлений. Ось саме це твої пута — те, що ти вправляєшся в самадгі.",
+  "commentary": "Вірш перевертає звичне: пута — не світ і не пристрасті, а **сама практика** самадгі. `anutiṣṭhasi` — «вправляєшся, додержуєш», дієслово старанного виконання; саме воно й назване неволею. Це найраніша заява тієї думки, що завершується в 15.20 («відкинь саму медитацію»). Для перекладу важливо не згладити різкість: текст не радить практикувати краще, він каже, що практика — і є пута.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
