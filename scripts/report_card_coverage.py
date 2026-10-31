@@ -32,8 +32,11 @@ def count_coverage(expected: set[str], folder: Path) -> dict:
     errors: list[str] = []
     found: dict[str, str] = {}
 
-    if folder.is_symlink():
-        errors.append(f"Каталог карток є символьним посиланням: {folder}")
+    # Заборонити symlink у будь-якій частині шляху, включно з батьками.
+    # Інакше editorial/ (symlink) / cards/ (звичайна тека) обходить перевірку.
+    link_component = next((part for part in (folder, *folder.parents) if part.is_symlink()), None)
+    if link_component is not None:
+        errors.append(f"Компонент шляху карток є символьним посиланням: {link_component}")
     elif folder.exists() and not folder.is_dir():
         errors.append(f"Шлях карток не є каталогом: {folder}")
     elif folder.is_dir():

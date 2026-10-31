@@ -130,6 +130,19 @@ class CoverageTests(unittest.TestCase):
         self.folder.symlink_to(target, target_is_directory=True)
         self.assertEqual(count_coverage(self.expected, self.folder)["стан"], "помилка")
 
+    def test_symlinked_parent_is_rejected_without_reading_outside_cards(self):
+        outside = Path(self.tmp.name) / "outside" / "cards"
+        outside.mkdir(parents=True)
+        (outside / "1.1.json").write_text(
+            json.dumps(self.card("1.1"), ensure_ascii=False), encoding="utf-8"
+        )
+        alias = Path(self.tmp.name) / "editorial-link"
+        alias.symlink_to(outside.parent, target_is_directory=True)
+        report = count_coverage(self.expected, alias / "cards")
+        self.assertEqual(report["стан"], "помилка")
+        self.assertEqual(report["підсумок"]["карток"], 0)
+        self.assertTrue(any("символьним посиланням" in e for e in report["помилки"]))
+
     def test_template_outside_cards_is_not_counted(self):
         self.put(self.card("2.1"))
         (Path(self.tmp.name) / "docs").mkdir()
