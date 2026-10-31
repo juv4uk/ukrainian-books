@@ -25,10 +25,10 @@
 Запускати з кореня репозиторію:
 
     python3 -m unittest discover -s tests -p 'test_witness_urls.py' -v
-    python3 scripts/audit_witness_urls.py
+    python3 scripts/audit_witness_urls.py --require-cards
     python3 scripts/check_editorial_cards.py
     python3 scripts/check_project.py
 
-Результат audit_witness_urls.py — JSON зі станом ok/failed, числом прочитаних карток, масивом помилок і **окремим масивом попереджень**. Хибні URL спричиняють ненульовий exit; дзеркало і рухомий ref залишаються видимими попередженнями. Відсутній каталог чесно дає cards=0, а не «всі 298 віршів перевірено». Workflow witness-urls.yml перевіряє pull_request і push до main.
+Результат audit_witness_urls.py — JSON зі станом ok/failed, числом прочитаних карток, масивом помилок і **окремим масивом попереджень**. Хибні URL спричиняють ненульовий exit; дзеркало і рухомий ref залишаються видимими попередженнями. Без `--require-cards` відсутній каталог чесно дає `cards=0`, а не «всі 298 віршів перевірено». У строгому режимі `--require-cards` відсутній чи порожній корпус карток призводить до `status=failed` і exit=1: CI не може бути «зеленим», якщо немає жодного файла для перевірки. Workflow witness-urls.yml запускає саме строгий режим на pull_request і push до main. Це не перевірка повноти всіх віршів: лише захист від випадково порожнього/відсутнього корпусу.
 
 **Ліцензія:** власний код і документація — за незмінною «ВОЛЬНІСТЮ». Жодного стороннього цифрового корпусу, чужого перекладу чи коментаря не додано.
