@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
+  <title id="title">Аштавакра-ґіта 14.1: сон, пробудження, дві глоси</title>
+  <desc id="desc">Авторська україномовна схема. Угорі вікно з ранковим світлом: пробудження як порівняння, а не подія з біографії. Унизу дві відкриті сторінки: ліворуч читання SARIT, коли вичерпалося блукання; праворуч читання, приписане GRETIL у чинній картці, коли вичерпалося пригадування. Між ними знак питання. Остаточне читання не встановлено.</desc>
+  <rect width="1200" height="740" fill="#f7f6ef"/>
+  <rect x="30" y="25" width="1140" height="690" rx="22" fill="#fffefa" stroke="#c6c8c0" stroke-width="2"/>
+  <text x="600" y="83" font-family="sans-serif" font-weight="700" text-anchor="middle" font-size="34" fill="#244650">Сон і пробудження — два можливі завершення</text>
+  <text x="600" y="115" font-family="sans-serif" text-anchor="middle" font-size="20" fill="#58656a">Аштавакра-ґіта · 14.1 · сучасна українська редакторська схема</text>
+  <rect x="430" y="148" width="340" height="205" rx="9" fill="#e5edf0" stroke="#5e8293" stroke-width="9"/>
+  <rect x="445" y="161" width="310" height="178" rx="4" fill="#c9dfe4"/>
+  <path d="M599 161 V339 M445 250 H755" stroke="#5e8293" stroke-width="11"/>
+  <circle cx="682" cy="205" r="42" fill="#efbb65"/>
+  <path d="M446 323 Q525 280 600 318 T755 310 V339 H445 Z" fill="#9dc5b3"/>
+  <path d="M300 365 H900" stroke="#8a7161" stroke-width="8" stroke-linecap="round"/>
+  <text x="600" y="398" font-family="sans-serif" font-size="22" text-anchor="middle" fill="#305766">«Наче заснулий, якого розбудили»</text>
+  <g stroke-linejoin="round" stroke-width="3">
+    <path d="M109 478 Q270 449 468 489 L510 625 Q317 592 126 620 Z" fill="#e9f4f0" stroke="#5b8479"/>
+    <path d="M1091 478 Q930 449 732 489 L690 625 Q883 592 1074 620 Z" fill="#f8efe4" stroke="#ad8965"/>
+    <path d="M510 625 Q600 646 690 625" fill="none" stroke="#a6a49e" stroke-width="4"/>
+  </g>
+  <g font-family="sans-serif" text-anchor="middle">
+    <text x="312" y="524" font-size="22" font-weight="700" fill="#376257">Читання А · SARIT</text>
+    <text x="312" y="558" font-size="23" fill="#254d45">saṃsaraṇa</text>
+    <text x="312" y="593" font-size="25" font-weight="700" fill="#254d45">«блукання»</text>
+    <text x="888" y="524" font-size="22" font-weight="700" fill="#906943">Читання Б · GRETIL*</text>
+    <text x="888" y="558" font-size="23" fill="#754f31">saṃsmaraṇa</text>
+    <text x="888" y="593" font-size="25" font-weight="700" fill="#754f31">«пам'ятання»</text>
+    <text x="600" y="568" font-size="64" font-weight="700" fill="#a04b43">?</text>
+    <text x="600" y="670" font-size="23" font-weight="700" fill="#974d3e">Первинне читання не встановлено</text>
+    <text x="600" y="696" font-size="15" fill="#58666a">* За чинною карткою; не самостійна рукописна колація</text>
+  </g>
+</svg>
