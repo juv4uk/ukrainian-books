@@ -172,9 +172,11 @@ class OverlapTests(unittest.TestCase):
             return page
         def rest_fetch(path):
             rest_calls.append(path)
-            files = ([{"filename": x} for x in all_files] if "page=1" in path else
-                     [{"filename": all_files[-1]}])
-            return files[:100] if "page=1" in path else files
+            if path.endswith("&page=1"):
+                return [{"filename": x} for x in all_files[:100]]
+            if path.endswith("&page=2"):
+                return [{"filename": all_files[-1]}]
+            self.fail(f"Неочікувана сторінка: {path}")
         rows = checker.read_live_graphql("owner/repo", 11, graphql_fetch, rest_fetch)
         self.assertEqual(len(rest_calls), 2)
         self.assertEqual(checker.overlaps(11, rows),
