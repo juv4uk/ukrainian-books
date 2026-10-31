@@ -29,6 +29,14 @@ SCHOLARLY = (
 ID = re.compile(r"^([1-9]\d*)\.([1-9]\d*)$")
 
 
+def unexpected_fields(value: dict[str, object], allowed: tuple[str, ...], location: str) -> list[str]:
+    """Виявити сторонні ключі, які можуть приховувати описки."""
+    return [
+        f"{location}: невідоме поле {key!r}"
+        for key in sorted(set(value) - set(allowed))
+    ]
+
+
 def filled(value: object) -> bool:
     return isinstance(value, str) and bool(value.strip())
 
@@ -79,6 +87,7 @@ def validate_card(card: object, expected: set[str], filename: str | None = None)
     for field in FIELDS:
         if field not in card:
             errors.append(f"Відсутнє поле {field}")
+    errors.extend(unexpected_fields(card, FIELDS, "картка"))
     if type(card.get("schema_version")) is not int or card.get("schema_version") != 1:
         errors.append("Непідтримувана версія схеми")
     verse = card.get("id")
@@ -99,11 +108,15 @@ def validate_card(card: object, expected: set[str], filename: str | None = None)
     if not isinstance(sources, dict):
         errors.append("sources має бути об'єктом")
         sources = {}
+    errors.extend(unexpected_fields(sources, ("gretil", "sarit"), "sources"))
     for witness in ("gretil", "sarit"):
         item = sources.get(witness)
         if not isinstance(item, dict):
             errors.append(f"Відсутній свідок {witness}")
             continue
+        errors.extend(unexpected_fields(
+            item, ("url", "locator", "checked_on"), f"sources.{witness}"
+        ))
         url, locator = item.get("url"), item.get("locator")
         if not valid_url(url):
             errors.append(f"{witness}: URL має бути HTTPS")
@@ -127,6 +140,10 @@ def validate_card(card: object, expected: set[str], filename: str | None = None)
         errors.append("variants має бути списком")
     else:
         for i, value in enumerate(variants):
+            if isinstance(value, dict):
+                errors.extend(unexpected_fields(
+                    value, ("witness", "note", "evidence_url"), f"variants[{i}]"
+                ))
             if not (isinstance(value, dict) and filled(value.get("witness"))
                     and filled(value.get("note")) and valid_url(value.get("evidence_url"))):
                 errors.append(f"variants[{i}]: свідок, власна примітка та HTTPS-доказ обов'язкові")
@@ -137,6 +154,9 @@ def validate_card(card: object, expected: set[str], filename: str | None = None)
     if not isinstance(rights, dict):
         errors.append("rights має бути об'єктом")
         rights = {}
+    errors.extend(unexpected_fields(
+        rights, ("basis", "evidence_url", "verified", "own_ukrainian_text"), "rights"
+    ))
     for name in ("verified", "own_ukrainian_text"):
         if type(rights.get(name)) is not bool:
             errors.append(f"rights.{name} має бути bool")
@@ -148,6 +168,9 @@ def validate_card(card: object, expected: set[str], filename: str | None = None)
     if not isinstance(review, dict):
         errors.append("review має бути об'єктом")
         review = {}
+    errors.extend(unexpected_fields(
+        review, ("reviewer", "reviewed_on", "review_url"), "review"
+    ))
     for name in ("reviewer", "reviewed_on", "review_url"):
         value = review.get(name)
         if value is not None:
