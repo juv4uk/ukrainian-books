@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.18",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.18",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.18",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "eka eva bhavāmbhodhāvāsīdasti bhaviṣyati| na te bandho+asti mokṣo vā kṛtakṛtyaḥ sukhaṃ cara||15|18||",
+  "iast": "eka eva bhavāmbhodhāv āsīd asti bhaviṣyati | na te bandho 'sti mokṣo vā kṛtakṛtyaḥ sukhaṃ cara ||",
+  "grammar": "ekaḥ eva («один-єдиний») bhava-ambhodhau («в океані буття») āsīt asti bhaviṣyati («був, є, буде») | na te bandhaḥ asti mokṣaḥ vā («немає в тебе ні пут, ні визволення») kṛta-kṛtyaḥ («той, чию справу зроблено») sukham cara.",
+  "literal_meaning": "«Один-єдиний у океані буття — був, є, буде. Немає в тебе ні пут, ні визволення; той, чию справу зроблено, — живи легко.»",
+  "ukrainian_translation": "Один-єдиний в океані буття — був, є, буде. Немає в тебе ні пут, ні визволення; той, чию справу зроблено, — живи легко.",
+  "commentary": "`na te bandho 'sti mokṣo vā` — та сама симетрична пара, що в 15.16: немає ні пут, ні визволення. Переклад мусить тримати їх **як пару**, бо звичне «ти вільний» знищило б думку. Три часи (`āsīt asti bhaviṣyati`) стоять у ряд, як у 19.3, але там вони скасовувалися, а тут стверджуються. `kṛtakṛtya` — те саме, що `kṛtārtha` в 12.8, і переклад має бути спорідненим.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

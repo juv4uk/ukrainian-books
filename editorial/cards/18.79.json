@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.79",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.79",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.79",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva dhairyaṃ kva vivekitvaṃ kva nirātaṅkatāpi vā | anirvācyasvabhāvasya niḥsvabhāvasya yoginaḥ ||",
+  "iast": "kva dhairyaṃ kva vivekitvaṃ kva nirātaṅkatāpi vā | anirvācyasvabhāvasya niḥsvabhāvasya yoginaḥ ||",
+  "grammar": "kva dhairyam (n. nom. sg. «де стійкість?») kva vivekitvam (n. nom. sg. «де розрізнюваність, стан того, хто розрізняє») kva nirātaṅkatā (f. nom. sg. «де безтривожність?») api vā. anirvācyasvabhāvasya (m. gen. sg. «того, чия природа невимовна»: a «не» + nirvācya «вимовний, означуваний» + svabhāva) niḥsvabhāvasya (m. gen. sg. «того, хто без природи»: nis «без» + svabhāva) yoginaḥ (m. gen. sg. «у йога»).",
+  "literal_meaning": "«Де стійкість, де розрізнення, де й безтривожність — у йога, чия природа невимовна, хто без природи?»",
+  "ukrainian_translation": "Де стійкість, де розрізнення, де й безтривожність — у йога, чия природа невимовна, хто без природи?",
+  "commentary": "`anirvācyasvabhāva` і `niḥsvabhāva` стоять поруч, і це не тавтологія: перше каже, що природу не можна назвати, друге — що її немає. Разом вони закривають обидва виходи. `vivekitva` («розрізнюваність») у переліку того, що зникає, — найнезручніше для читача, бо це чеснота розпізнавання істинного від хибного.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

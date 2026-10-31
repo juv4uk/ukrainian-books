@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.13",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.13",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.13",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ekasminnavyaye śānte cidākāśe+amale tvayi| kuto janma kuto karma kuto+ahaṃkāra eva ca||15|13||",
+  "iast": "ekasmin avyaye śānte cidākāśe 'male tvayi | kuto janma kuto karma kuto 'haṃkāra eva ca ||",
+  "grammar": "ekasmin («в одному») avyaye («незмінному») śānte («втихлому») cit-ākāśe («в просторі свідомості») amale («незаплямованому») tvayi | kutaḥ janma («звідки народження») kutaḥ karma («звідки діяння») kutaḥ ahaṃkāraḥ eva ca («звідки ж „я-роблю“»).",
+  "literal_meaning": "«У тобі — одному, незмінному, втихлому, незаплямованому просторі свідомості — звідки народження, звідки діяння, звідки ж „я-роблю“?»",
+  "ukrainian_translation": "У тобі — одному, незмінному, втихлому, незаплямованому просторі свідомості — звідки народження, звідки діяння, звідки ж «я-роблю»?",
+  "commentary": "`cidākāśa` («простір свідомості») — єдине таке складне слово в книзі; переклад мусить лишити його як термін, а не як метафору. Чотири означення (`eka`, `avyaya`, `śānta`, `amala`) звужують значення до одного, і кожне наступне сильніше. Три `kutaḥ` ідуть у порядку виникнення: народження → діяння → `ahaṃkāra`, і останнє поставлене як те, що робить перші два можливими.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.16",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.16",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.16",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tavaivājñānato viśvaṃ tvamekaḥ paramārthataḥ| tvatto+anyo nāsti saṃsārī nāsaṃsārī ca kaścana||15|16||",
+  "iast": "tavaivājñānato viśvaṃ tvam ekaḥ paramārthataḥ | tvatto 'anyo nāsti saṃsārī nāsaṃsārī ca kaścana ||",
+  "grammar": "tava eva ajñānataḥ («саме через твоє незнання») viśvam («всесвіт») tvam ekaḥ paramārthataḥ («ти — один у справжньому сенсі») | tvattaḥ anyaḥ na asti («немає іншого, ніж ти») saṃsārī na asaṃsārī ca kaścana («ні той, хто в сансарі, ні той, хто поза нею»).",
+  "literal_meaning": "«Всесвіт — саме через твоє незнання; у справжньому сенсі ти один. Немає іншого, ніж ти — ні того, хто в сансарі, ні того, хто поза нею.»",
+  "ukrainian_translation": "Всесвіт — саме через твоє незнання; у справжньому сенсі ти один. Немає іншого, ніж ти — ні того, хто в сансарі, ні того, хто поза нею.",
+  "commentary": "Заперечення знову симетричне: немає ні `saṃsārī`, ні `asaṃsārī` — тобто не існує ні того, хто в сансарі, ні того, хто з неї вийшов. Це найрадикальніше з тверджень глави, і його легко зіпсувати перекладом «немає ні сансари, ні визволення»: у тексті йдеться про **осіб**, а не про стани. `paramārthataḥ` («у справжньому сенсі») — усталений термін, не «насправді» в побутовому значенні.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
