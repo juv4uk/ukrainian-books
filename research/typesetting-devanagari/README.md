@@ -13,13 +13,16 @@
 ```sh
 cd research/typesetting-devanagari
 fc-match 'Noto Serif Devanagari'
+mkdir -p /tmp/ukr-devanagari-proof
+cp proof.latex.txt /tmp/ukr-devanagari-proof/proof.tex
+cd /tmp/ukr-devanagari-proof
 xelatex -interaction=nonstopmode -halt-on-error -file-line-error proof.tex
 pdfinfo proof.pdf | grep '^Pages:'
 grep -n 'Missing character' proof.log || true
 pdftotext -enc UTF-8 proof.pdf -
 ```
 
-Після складання обов'язково **відкрити або растеризувати** PDF та візуально перевірити послідовності знаків деванагарі. Файл `proof.pdf` і допоміжні `.aux` / `.log` — локальні результати, **їх не комітити**.
+Складаємо лише у тимчасовій теці, щоби `.tex` і всі продукти верстки не потрапили до Git. Канонічний тестовий шаблон у репозиторії названо `proof.latex.txt` саме тому, що політика проєкту забороняє сторонні книжкові `.tex` поза `books/`. Після складання обов'язково **відкрити або растеризувати** PDF та візуально перевірити послідовності знаків деванагарі. Файл `proof.pdf` і допоміжні `.aux` / `.log` — локальні результати, **їх не комітити**.
 
 ## Виміряний локальний результат, 31.10.2026
 
