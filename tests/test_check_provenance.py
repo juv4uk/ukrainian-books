@@ -141,5 +141,24 @@ class Tests(unittest.TestCase):
         self.assertEqual(r["status"], "failed")
         self.assertTrue(any("PROVENANCE.md" in e for e in r["errors"]))
 
+    def test_symlinked_book_directory_blocks(self):
+        external = self.root / "external-book"
+        external.mkdir()
+        (self.root / "books").mkdir()
+        (self.root / "books" / "example").symlink_to(
+            external, target_is_directory=True
+        )
+        r = self.result()
+        self.assertEqual(r["status"], "failed")
+        self.assertTrue(any("books/example" in e for e in r["errors"]))
+
+    def test_gitkeep_symlink_is_not_permitted(self):
+        books = self.root / "books"
+        books.mkdir()
+        (books / ".gitkeep").symlink_to(self.root / "absent.txt")
+        r = self.result()
+        self.assertEqual(r["status"], "failed")
+        self.assertTrue(any(".gitkeep" in e for e in r["errors"]))
+
 if __name__ == "__main__":
     unittest.main()
