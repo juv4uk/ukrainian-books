@@ -9,7 +9,11 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from check_card_chronology import check_directory, inspect_date
+from check_card_chronology import (
+    check_directory,
+    inspect_date,
+    inspect_review_after_sources,
+)
 
 TODAY = date(2026, 10, 31)
 
@@ -102,6 +106,64 @@ class ChronologyTests(unittest.TestCase):
             count, errors = check_directory(folder, TODAY)
             self.assertEqual(count, 1)
             self.assertTrue(any("посилання" in err for err in errors))
+
+    # --- РЕД-12: рецензія не раніше за звірку ---
+
+    def test_review_before_sarit_rejected(self):
+        errors = inspect_review_after_sources(
+            example(sarit="2026-10-31", reviewed="2026-10-30")
+        )
+        self.assertTrue(any("раніше за" in e and "sarit" in e for e in errors))
+
+    def test_review_before_gretil_rejected(self):
+        errors = inspect_review_after_sources(
+            example(gretil="2026-10-31", reviewed="2026-10-29")
+        )
+        self.assertTrue(any("раніше за" in e and "gretil" in e for e in errors))
+
+    def test_review_same_day_as_source_allowed(self):
+        self.assertEqual(
+            inspect_review_after_sources(
+                example(sarit="2026-10-30", gretil="2026-10-30", reviewed="2026-10-30")
+            ),
+            [],
+        )
+
+    def test_review_after_sources_allowed(self):
+        self.assertEqual(
+            inspect_review_after_sources(
+                example(sarit="2026-10-29", gretil="2026-10-28", reviewed="2026-10-30")
+            ),
+            [],
+        )
+
+    def test_review_null_skips_order_check(self):
+        self.assertEqual(
+            inspect_review_after_sources(example(sarit="2026-10-31")),
+            [],
+        )
+
+    def test_source_null_skips_that_witness(self):
+        # лише gretil заповнений і пізніший — має спрацювати
+        errors = inspect_review_after_sources(
+            example(gretil="2026-10-31", reviewed="2026-10-30")
+        )
+        self.assertEqual(len(errors), 1)
+        self.assertIn("gretil", errors[0])
+
+    def test_files_scan_rejects_review_before_source(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory)
+            (folder / "1.1.json").write_text(
+                json.dumps(
+                    example(sarit="2026-10-31", reviewed="2026-10-30"),
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            count, errors = check_directory(folder, TODAY)
+            self.assertEqual(count, 1)
+            self.assertTrue(any("1.1.json" in e and "раніше за" in e for e in errors))
 
 
 if __name__ == "__main__":
