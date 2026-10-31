@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.11",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.11",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.11",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tvayyanantamahāmbhodhau viśvavīciḥ svabhāvataḥ| udetu vā+astamāyātu na te vṛddhirna vā kṣatiḥ||15|11||",
+  "iast": "tvayy anantamahāmbhodhau viśvavīciḥ svabhāvataḥ | udetu vāstam āyātu na te vṛddhir na vā kṣatiḥ ||",
+  "grammar": "tvayi ananta-mahā-ambhodhau («у тобі — безмежному великому океані») viśva-vīciḥ («хвиля всесвіту») svabhāvataḥ («за власною природою») | udetu vā astam āyātu («нехай піднімається або спадає») na te vṛddhiḥ na vā kṣatiḥ («немає в тебе ні приросту, ні втрати»).",
+  "literal_meaning": "«У тобі, безмежному великому океані, хвиля всесвіту за власною природою нехай піднімається або спадає — немає в тебе ні приросту, ні втрати.»",
+  "ukrainian_translation": "У тобі, безмежному великому океані, хвиля всесвіту за власною природою нехай піднімається або спадає — немає в тебе ні приросту, ні втрати.",
+  "commentary": "Той самий образ, що в 15.7, але розгорнутий: там хвилі були в морі, тут ти **сам** — океан, і всесвіт — одна хвиля в ньому. `svabhāvataḥ` («за власною природою») важливе: хвиля не робиться нею ззовні, вона така за природою. Пара `vṛddhi`/`kṣati` повторює 15.10 дослівно — це рефрен двох віршів, і в перекладі він мусить звучати однаково.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
