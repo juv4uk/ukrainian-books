@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.12",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.12",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.12",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "aho ahaṃ namo mahyameko+ahaṃ dehavānapi| kvacinna gantā nāgantā vyāpya viśvamavasthitaḥ||2|12||",
+  "iast": "aho ahaṃ namo mahyam eko'haṃ dehavān api | kvacin na gantā nāgantā vyāpya viśvam avasthitaḥ ||",
+  "grammar": "aho aham namaḥ mahyam (як у 2.11) ekaḥ aham (nom. sg. «я один») dehavān api («хоч і з тілом», deha-vant-) | kvacit (adv. «кудись, нікуди») na gantā (nom. sg. «той, хто йде») na āgantā («не той, хто приходить») vyāpya (герундив від vi-āp «просякнувши, охопивши») viśvam (n. acc. sg.) avasthitaḥ (m. nom. sg. «розташований, стоїть»).",
+  "literal_meaning": "«О диво, я! Поклін мені: я один, і хоч маю тіло, нікуди не йду й не приходжу — просякнувши світ, стою.»",
+  "ukrainian_translation": "О диво, я! Поклін мені: я один, і хоч маю тіло, нікуди не йду й не приходжу — просякнувши світ, стою.",
+  "commentary": "Тут заперечується не рух тіла, а сама можливість прибуття: na gantā nāgantā — «не той, хто йде, і не той, хто приходить». Пара дієприкметників майбутнього часу (gantā, āgantā) означає не подію, а роль; текст каже, що ця роль не належить тому, хто стоїть. dehavān api («хоч і з тілом») знімає заперечення наперед: ідеться не про безтілесність.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
