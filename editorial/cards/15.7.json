@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.7",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.7",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.7",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "viśvaṃ sphurati yatredaṃ taraṅgā iva sāgare| tattvameva na sandehaścinmūrte vijvaro bhava||15|7||",
+  "iast": "viśvaṃ sphurati yatredaṃ taraṅgā iva sāgare | tattvam eva na sandehaś cinmūrte vijvaro bhava ||",
+  "grammar": "viśvam («всесвіт») sphurati («сяє, постає») yatra idam («де — це») taraṅgāḥ iva sāgare («як хвилі в морі») | tat tvam eva («це саме ти») na sandehaḥ («немає сумніву») cinmūrte («о втілення свідомості») vijvaraḥ bhava («будь без трепету»).",
+  "literal_meaning": "«Те, в чому цей всесвіт постає, як хвилі в морі, — це саме ти, немає сумніву, о втілення свідомості; будь без трепету.»",
+  "ukrainian_translation": "Те, в чому цей всесвіт постає, як хвилі в морі, — це саме ти, немає сумніву, о втілення свідомості; будь без трепету.",
+  "commentary": "Образ хвиль і моря — єдиний такий у книзі, і він робить роботу, яку не робить жодне означення: хвиля не **відмінна** від моря й не **тотожна** йому як річ. `cinmūrte` — звертання «о втілення свідомості», споріднене з `cidrūpa` у 15.4; переклад мусить тримати спільний корінь. `vijvara` («без трепету») — від `jvara`, гарячка; це не спокій, а відсутність пропасниці.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

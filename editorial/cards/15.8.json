@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.8",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "śraddhatsva tāta śraddhatsva nātra mohaṃ kuruṣva bhoḥ| jñānasvarūpo bhagavānātmā tvaṃ prakṛteḥ paraḥ||15|8||",
+  "iast": "śraddhatsva tāta śraddhatsva nātra mohaṃ kuruṣva bhoḥ | jñānasvarūpo bhagavān ātmā tvaṃ prakṛteḥ paraḥ ||",
+  "grammar": "śraddhatsva («повір») tāta śraddhatsva («любий, повір») na atra moham kuruṣva bhoḥ («не роби тут затьмарення, друже») | jñāna-svarūpaḥ («той, чия природа — знання») bhagavān ātmā («бгаґаван ātman») tvam prakṛteḥ paraḥ («ти — понад природою»).",
+  "literal_meaning": "«Повір, любий, повір; не роби тут затьмарення, друже. Твоя суть — знання; бгаґаван ātman — ти, понад природою.»",
+  "ukrainian_translation": "Повір, любий, повір; не роби тут затьмарення, друже. Твоя суть — знання; бгаґаван ātman — ти, понад природою.",
+  "commentary": "Єдине місце в книзі, де вчення вимагає **віри** — і вимагає двічі, повтором `śraddhatsva`. Це суперечить загальній настанові тексту «перевір сам», і я не згладжую цю суперечність: вона є. `bhagavān ātmā` — рідкісне поєднання, де `ātman` названо `bhagavant`; переклад мусить зберегти обидва слова, не зводячи до «Бог у тобі». `prakṛteḥ paraḥ` — «понад природою», тобто не складник її.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
