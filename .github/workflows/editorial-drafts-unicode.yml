@@ -1,0 +1,28 @@
+name: Unicode редакторських чернеток
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-drafts:
+    name: Чернетки — пошкоджені символи й UTF-8
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити позитивні та негативні сценарії
+        run: python3 -m unittest discover -s tests -p 'test_editorial_drafts_unicode.py' -v
+      - name: Перевірити усі редакторські Markdown-чернетки
+        run: python3 scripts/check_editorial_drafts_unicode.py --report reports/editorial-drafts-unicode.json
+      - name: Перевірити структуру проєкту й ліцензію
+        run: python3 scripts/check_project.py
+      - name: Зберегти звіт аудиту
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audyt-unicode-chernetok
+          path: reports/editorial-drafts-unicode.json
+          if-no-files-found: ignore
