@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.1",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.1",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.1",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "aho nirañjanaḥ śānto bodho+ahaṃ prakṛteḥ paraḥ | etāvantam ahaṃ kālaṃ mohenaiva viḍambitaḥ ||",
+  "iast": "aho nirañjanaḥ śānto bodho'haṃ prakṛteḥ paraḥ | etāvantam ahaṃ kālaṃ mohenaiva viḍambitaḥ ||",
+  "grammar": "aho (вигук подиву) nirañjanaḥ (m. nom. sg. «незаплямлений») śāntaḥ (m. nom. sg. «спокійний») bodhaḥ (m. nom. sg. «усвідомлення») aham (nom. sg.) prakṛteḥ (f. abl./gen. sg. «від природи») paraḥ (m. nom. sg. «понад, вищий») | etāvantam (m. acc. sg. «аж стільки») aham kālam (m. acc. sg. «час») mohena (m. instr. sg. «оману») eva (підсилювальна частка) viḍambitaḥ (m. nom. sg. дієприкметник минулого від vi-ḍambh «обманювати, дурити»).",
+  "literal_meaning": "«О диво: незаплямлене, спокійне усвідомлення — я, понад природу. Аж стільки часу я був одурений самою лише оманою.»",
+  "ukrainian_translation": "О диво: я — незаплямлене, спокійне усвідомлення, вище за природу. Увесь цей час мене дурила сама лише омана.",
+  "commentary": "Розділ 2 відкривається вигуком подиву (aho) — це не аргумент, а зміна погляду. Три означення (nirañjana, śānta, bodha) ідуть як одне ціле: Я не «має» спокій, а є усвідомленням, яке не плямується. Viḍambitaḥ — не «я помилявся», а «мене дурили»: омана діяла, а не Я. Для українського перекладу важливо не зробити з цього самодокір: текст не звинувачує, а констатує.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
