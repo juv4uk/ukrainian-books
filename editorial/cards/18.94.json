@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.94",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.94",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.94",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "supto 'pi na suṣuptau ca svapne 'pi śayito na ca | jāgare 'pi na jāgarti dhīras tṛptaḥ pade pade ||",
+  "iast": "supto 'pi na suṣuptau ca svapne 'pi śayito na ca | jāgare 'pi na jāgarti dhīras tṛptaḥ pade pade ||",
+  "grammar": "suptaḥ (m. nom. sg. «той, що спить») api na suṣuptau (m. loc. sg. «не в глибокому сні»: su «добре» + supta) ca svapne (m. loc. sg. «у сні [зі сновидіннями]») api śayitaḥ (m. nom. sg. «покладений, той, що лежить») na ca. jāgare (m. loc. sg. «у неспанні») api na jāgarti (3 sg. pr. jāgṛ «не неспить»). dhīraḥ (m. nom. sg.) tṛptaḥ (m. nom. sg. «насичений») pade pade (прислівник «на кожнім кроці, у кожнім стані»).",
+  "literal_meaning": "«І сплячи — не в глибокому сні; і в сні — не лежить; і в неспанні — не неспить: мудрий, насичений на кожнім кроці.»",
+  "ukrainian_translation": "І сплячи — не в глибокому сні; і в сні — не лежить; і в неспанні — не неспить. Мудрий, насичений на кожнім кроці.",
+  "commentary": "Три стани свідомості (suṣupti, svapna, jāgara) названі поіменно й усі три знято — це відповідь усій традиції аналізу трьох станів. `pade pade` («на кожнім кроці») повертає до `svapada` з 18.33 і 18.5: те саме слово «крок/місце», і тут воно вжите як прислівник.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

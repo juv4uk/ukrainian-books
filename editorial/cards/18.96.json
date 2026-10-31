@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.96",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.96",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.96",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na sukhī na ca vā duḥkhī na virakto na saṅgavān | na mumukṣur na vā mukto na kiṃcin na ca kiṃcana ||",
+  "iast": "na sukhī na ca vā duḥkhī na virakto na saṅgavān | na mumukṣur na vā mukto na kiṃcin na ca kiṃcana ||",
+  "grammar": "na sukhī (m. nom. sg. «не щасливий») na ca vā duḥkhī (m. nom. sg. «і не нещасний») na viraktaḥ (m. nom. sg. «не відречений») na saṅgavān (m. nom. sg. «не той, хто має прив'язаність»: saṅga «прив'язаність» + vant). na mumukṣuḥ (m. nom. sg. «не той, хто прагне визволення») na vā muktaḥ (m. nom. sg. «і не визволений»). na kiṃcit (n. nom. sg. «не „щось“») na ca kiṃcana (n. nom. sg. «і не „хоч щось“»).",
+  "literal_meaning": "«Не щасливий і не нещасний, не відречений і не прив'язаний, не прагне визволення й не визволений: він не „щось“ і не „ніщо“.»",
+  "ukrainian_translation": "Не щасливий і не нещасний, не відречений і не прив'язаний, не прагне визволення й не визволений. Він не «щось» і не «ніщо».",
+  "commentary": "Шість заперечень, і серед них `mumukṣu` / `mukta` — тобто знято обидва кінці шляху, який книга описує. Остання пара `kiṃcit` / `kiṃcana` тонка: перше — «щось», друге — «хоч щось, абищо»; разом вони закривають і позицію, і її відсутність. Це найповніший перелік заперечень у книзі.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "ДЕФЕКТ НУМЕРАЦІЇ В SARIT: запис verse_18.96 у SARIT містить СПОЧАТКУ текст 18.95, а далі текст цього вірша, і все це зшите в один рядок без розділення. Текст самого 18.96 у SARIT і GRETIL збігається (відмінності лише в поділі слів). Основою нумерації взято GRETIL.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
