@@ -166,6 +166,62 @@ class CardsAndResearchScopeTests(unittest.TestCase):
             self.assertEqual({e["path"] for e in output["errors"]},
                              {"editorial/cards/2.2.json", "research/ashtavakra/notes.md"})
 
+    def test_escaped_replacement_character_in_card_is_detected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            cards = root / "editorial" / "cards"
+            cards.mkdir(parents=True)
+            (cards / "1.2.json").write_text(
+                r'{"ukrainian_translation": "св\uFFFDдок"}', encoding="utf-8"
+            )
+            result = audit(root)
+            self.assertEqual(result["status"], "failed")
+            self.assertTrue(any(
+                e.get("json_path") == '$["ukrainian_translation"]'
+                and e["codepoint"] == "U+FFFD"
+                for e in result["errors"]
+            ), result["errors"])
+
+    def test_escaped_foreign_cyrillic_in_card_is_detected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            cards = root / "editorial" / "cards"
+            cards.mkdir(parents=True)
+            (cards / "1.2.json").write_text(
+                r'{"ukrainian_translation": "сві\u0402"}', encoding="utf-8"
+            )
+            result = audit(root)
+            self.assertEqual(result["status"], "failed")
+            self.assertTrue(any(e["codepoint"] == "U+0402" for e in result["errors"]))
+
+    def test_nested_escaped_latin_and_replacement_are_detected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            cards = root / "editorial" / "cards"
+            cards.mkdir(parents=True)
+            (cards / "1.2.json").write_text(
+                r'{"variants": ["св\u0069т", {"note": "св\uFFFDдок"}]}',
+                encoding="utf-8",
+            )
+            result = audit(root)
+            self.assertEqual(result["status"], "failed")
+            found = {(e.get("json_path"), e["codepoint"]) for e in result["errors"]}
+            self.assertIn(('$["variants"][0]', "U+0069"), found)
+            self.assertIn(('$["variants"][1]["note"]', "U+FFFD"), found)
+
+    def test_clean_escaped_ukrainian_and_iast_in_card_pass(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            cards = root / "editorial" / "cards"
+            cards.mkdir(parents=True)
+            (cards / "1.2.json").write_text(
+                r'{"translation": "св\u0456т", "grammar": ["\u0101tman", "देवनागरी"]}',
+                encoding="utf-8",
+            )
+            result = audit(root)
+            self.assertEqual(result["status"], "ok", result["errors"])
+            self.assertEqual(result["scanned_by_scope"]["cards"], 1)
+
     def test_clean_cards_and_research_pass(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
