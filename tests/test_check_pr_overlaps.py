@@ -66,7 +66,7 @@ class OverlapTests(unittest.TestCase):
         ])
 
     def test_rename_without_valid_previous_path_fails_closed(self):
-        for bad in [None, "", 123, "bad\\npath"]:
+        for bad in [None, "", 123, "bad\npath"]:
             rows = [{"number": 101, "files": [
                 {"filename": "cards/new.json", "status": "renamed",
                  "previous_filename": bad}
