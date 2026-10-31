@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.10",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.10",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.10",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na vikṣepo na caikāgryaṃ nātibodho na mūḍhatā | na sukhaṃ na ca vā duḥkham upaśāntasya yoginaḥ ||",
+  "iast": "na vikṣepo na caikāgryaṃ nātibodho na mūḍhatā | na sukhaṃ na ca vā duḥkham upaśāntasya yoginaḥ ||",
+  "grammar": "na vikṣepaḥ (m. nom. sg. «немає розсіяності, розкиданості») na ca aikāgryam (n. nom. sg. «і немає зосередженості на одному»: eka-agra «з однією вершиною»). na atibodhaḥ (m. nom. sg. «немає надмірного знання») na mūḍhatā (f. nom. sg. «немає затьмареності, тупості»). na sukham (n. nom. sg.) na ca vā duḥkham (n. nom. sg.). upaśāntasya (m. gen. sg. «того, хто вгамований»: upa-śam) yoginaḥ (m. gen. sg. «у йога»).",
+  "literal_meaning": "«У вгамованого йога немає ні розсіяності, ні зосередженості, ні надмірного знання, ні затьмареності, ні щастя, ні страждання.»",
+  "ukrainian_translation": "У вгамованого йога немає ні розсіяності, ні зосередженості, ні надмірного знання, ні затьмареності, ні щастя, ні страждання.",
+  "commentary": "Три пари, і кожна заперечує обидва боки. Найважливіша перша: vikṣepa і aikāgrya — розсіяність і зосередженість — це те, чим зазвичай міряють стан розуму, і тут обидва відсутні, тобто міряти нічим. Друга пара (atibodha / mūḍhatā) забирає різницю між мудрим і дурним, третя (sukha / duḥkha) — між приємним і болісним. Це та сама схема, що в 19.4–19.7, але тут вона подана як опис, а не як питання.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

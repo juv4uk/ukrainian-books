@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.9",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.9",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.9",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "ayaṃ so 'ham ayaṃ nāham iti kṣīṇā vikalpanāḥ | sarvam ātmeti niścitya tūṣṇībhūtasya yoginaḥ ||",
+  "iast": "ayaṃ so 'ham ayaṃ nāham iti kṣīṇā vikalpanāḥ | sarvam ātmeti niścitya tūṣṇībhūtasya yoginaḥ ||",
+  "grammar": "ayam (m. nom. sg. «цей») saḥ (m. nom. sg. «той») aham (nom. sg. «я») ayam (m. nom. sg.) na aham («не я») iti — низка ототожнень і заперечень. kṣīṇāḥ (f. nom. pl. «вичерпані») vikalpanāḥ (f. nom. pl. «розрізнення, побудови»). sarvam (n. nom. sg.) ātmā (m. nom. sg.) iti («все — Атман») niścitya (герунд «вирішивши»). tūṣṇībhūtasya (m. gen. sg. «того, хто став безмовним»: tūṣṇī «мовчання» + bhūta «став») yoginaḥ (m. gen. sg. «у йога»).",
+  "literal_meaning": "«У йога, що став безмовним, — вичерпані розрізнення „це він“, „це я“, „це не я“, — [бо він] встановив: „все — Атман“.»",
+  "ukrainian_translation": "У йога, що став безмовним, вичерпані розрізнення «це він», «це я», «це не я», — бо він встановив: «все — Атман».",
+  "commentary": "Вірш побудований як речення без головного дієслова: kṣīṇāḥ («вичерпані») — присудок, але вся конструкція стоїть у родовому (tūṣṇībhūtasya yoginaḥ), тобто описує стан, а не подію. tūṣṇībhūta («той, хто став безмовним») — не обітниця мовчання, а наслідок: розрізнення вичерпалися, і говорити нема про що. Три формули в лапках — «це він», «це я», «це не я» — це не філософські тези, а щоденна робота розуму, названа вголос.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжність vikalpanā (SARIT, однина) / vikalpanāḥ (GRETIL, множина) — та сама основа, різне число; при kṣīṇāḥ (множина) читається GRETIL. Другорядна, сенс не змінюється.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
