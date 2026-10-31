@@ -302,8 +302,14 @@ def read_live(repo: str, pr_number: int, fetch) -> list[dict]:
     numbers: set[int] = set()
     for item in opened:
         n = item.get("number")
-        if type(n) is not int or n in numbers:
-            raise AuditError("Некоректні або повторені номери в API")
+        if type(n) is not int or n <= 0:
+            raise AuditError("Некоректні номери в API")
+        # Повтор номера між сторінками — не дефект відповіді: перелік
+        # відкритих PR читається сторінками, а між запитами PR відкривають і
+        # закривають, тож запис зсувається на попередню сторінку й трапляється
+        # двічі. Гейт від цього не слабшає: файли беруться з канонічного
+        # /pulls/{number}/files для кожного окремого номера, і кожен PR
+        # перевіряється рівно один раз.
         numbers.add(n)
     if pr_number not in numbers:
         raise AuditError(f"PR #{pr_number} не знайдено серед відкритих")

@@ -111,6 +111,24 @@ class OverlapTests(unittest.TestCase):
         self.assertEqual([r["number"] for r in rows], [2, 5])
         self.assertFalse(any("/8/files" in path for path in visited))
 
+    def test_duplicate_across_pages_is_not_an_error(self):
+        """Зсув сторінок (понад 100 відкритих PR) не має валити перевірку."""
+        visited = []
+
+        def fetch(path):
+            visited.append(path)
+            if "/files?" in path:
+                return [{"filename": "a"}]
+            if "page=2" in path:
+                return [{"number": 100}, {"number": 101}]
+            return [{"number": n} for n in range(1, 101)]
+
+        rows = checker.read_live("owner/repo", 101, fetch)
+        numbers = [r["number"] for r in rows]
+        self.assertEqual(len(numbers), len(set(numbers)))
+        self.assertEqual(numbers, list(range(1, 102)))
+        self.assertEqual(sum("/pulls/100/files" in path for path in visited), 1)
+
     def test_invalid_repo_is_error(self):
         with self.assertRaises(checker.AuditError):
             checker.read_live("../repo", 5, lambda _: [])
