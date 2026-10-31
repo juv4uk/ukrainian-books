@@ -64,7 +64,7 @@ jobs:
       - name: Додати синтетичний PDF і рендер для незалежної перевірки
         uses: actions/upload-artifact@v4
         with:
-          name: druk-01-synтетychna-proba
+          name: druk-01-synthetic-font-proof
           path: |
             ${{ runner.temp }}/druk-01-proof/proof.pdf
             ${{ runner.temp }}/druk-01-proof/proof.png
