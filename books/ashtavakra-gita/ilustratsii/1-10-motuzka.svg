@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="t1-10">
+  <title id="t1-10">Мотузка й змій: у присмерку мотузка здається змієм, але вона — мотузка</title>
+  <rect width="420" height="260" fill="#fbf8f1"/>
+
+  <!-- присмерк: теплий градієнт, щоб читач бачив, що світла мало -->
+  <defs>
+    <radialGradient id="dusk" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#f3ecdd"/>
+      <stop offset="100%" stop-color="#e2d8c4"/>
+    </radialGradient>
+  </defs>
+  <rect x="16" y="16" width="388" height="200" rx="10" fill="url(#dusk)"/>
+
+  <!-- мотузка: те, що є насправді -->
+  <g stroke="#8a6b3f" fill="none" stroke-width="7" stroke-linecap="round">
+    <path d="M70 150 q40 -70 90 -50 q50 20 90 -10 q40 -30 100 20"/>
+  </g>
+  <!-- волокна мотузки -->
+  <g stroke="#6d5230" fill="none" stroke-width="1.4" opacity="0.7">
+    <path d="M70 150 q40 -70 90 -50 q50 20 90 -10 q40 -30 100 20" stroke-dasharray="6 6"/>
+  </g>
+
+  <!-- змій: те, що ввижається; пунктир, бо його немає -->
+  <g stroke="#b0762a" fill="none" stroke-width="1.6" stroke-dasharray="4 5" opacity="0.95">
+    <path d="M62 140 q40 -78 96 -58 q52 20 92 -8 q44 -30 108 26"/>
+    <!-- голова -->
+    <circle cx="356" cy="104" r="9"/>
+    <!-- язик -->
+    <path d="M365 104 l14 -6 M365 104 l14 6"/>
+  </g>
+  <!-- око в уявного змія -->
+  <circle cx="358" cy="101" r="1.8" fill="#b0762a" stroke="none"/>
+
+  <g fill="#3b4a5a" font-family="serif" font-size="15">
+    <text x="24" y="240">у присмерку мотузка здається змієм</text>
+  </g>
+  <g fill="#8a6b3f" font-family="serif" font-size="14">
+    <text x="70" y="186">мотузка — є</text>
+  </g>
+  <g fill="#b0762a" font-family="serif" font-size="14">
+    <text x="270" y="70">змій — ввижається</text>
+  </g>
+</svg>
