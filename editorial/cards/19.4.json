@@ -8,7 +8,7 @@
     "gretil": {
       "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
       "locator": "Avg_19.4",
-      "checked_on": "2026-10-31"
+      "checked_on": null
     },
     "sarit": {
       "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
@@ -16,22 +16,16 @@
       "checked_on": "2026-10-31"
     }
   },
-  "sanskrit": "kva cātmā kva ca vānātmā kva śubhaṃ kvāśubhaṃ tathā | kva cintā kva ca vācintā svamahimni sthitasya me ||",
+  "sanskrit": "kva cātmā kva ca vā+anātmā kva śubhaṃ kvāśubhaṃ tathā| kva cintā kva ca vā+acintā svamahimni sthitasya me||19|4||",
   "iast": "kva cātmā kva ca vānātmā kva śubhaṃ kvāśubhaṃ tathā | kva cintā kva ca vācintā svamahimni sthitasya me ||",
-  "grammar": "kva ca ātmā (m. nom. sg. «Атман») kva ca vā anātmā (m. nom. sg. «не-Атман, те, що не є Атманом»). kva śubham (n. nom. sg. «добре, сприятливе») kva aśubham (n. nom. sg. «недобре») tathā («так само»). kva cintā (f. nom. sg. «думка, турбота») kva ca vā acintā (f. nom. sg. «не-думка, відсутність думки»). svamahimni sthitasya me.",
-  "literal_meaning": "«Де Атман, де не-Атман, де добре, де недобре? Де думка, де не-думка — у мене, що стоїть у власній величі?»",
-  "ukrainian_translation": "Де Атман, де не-Атман, де добре, де недобре? Де думка, де відсутність думки — у мене, що стоїть у власній величі?",
-  "commentary": "Три пари, і в кожній заперечується не один бік, а обидва. Найгостріша — перша: питати «де Атман» і «де не-Атман» однаково означає не знайти місця ні для того, ні для того, тобто сама пара втрачає ґрунт. Друга пара (śubha / aśubha) — та сама, що в 13.7, де вона відкидалася цілою. Третя (cintā / acintā) важлива тим, що сюди потрапляє й «відсутність думки»: навіть спокій розуму не стає позицією, з якої можна стояти. РЕФРЕН ГЛАВИ. 19.2–19.7 закінчуються однаково: svamahimni sthitasya me («у мене, що стоїть у власній величі»). Кожен із цих шести віршів — низка питань kva («де»), і жодне не дістає відповіді. 19.1 і 19.8 стоять поза серією: перший описує, ЯК це сталося, останній — ЩО з цього випливає для мови.",
-  "variants": [
-    {
-      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
-      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ у двох місцях. Перше: SARIT — kvāśubhaṃ («де НЕДОБРЕ»), GRETIL — kvāsubhaṃ («де НЕЖИВЕ, позбавлене життя»); aśubha і asubha — різні слова. Друге: SARIT — tathā («так само»), GRETIL — yathā («як»). У контексті пари «добре / недобре» читається SARIT; asubha («неживе») випадає з низки понять глави. Яке читання правильне, НЕ ВСТАНОВЛЕНО: третього свідка для 19.4 не перевірено. У перекладі взято SARIT і це позначено як вибір.",
-      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
-    }
-  ],
-  "variants_checked": true,
+  "grammar": "kva ca ātmā («де ātman») kva ca vā anātmā («де не-ātman») kva śubham kva aśubham tathā («де добре, де недобре») | kva cintā («де думання») kva ca vā acintā («де не-думання») sva-mahimi sthitasya me.",
+  "literal_meaning": "«Де ātman і де не-ātman, де добре й де недобре? Де думання і де не-думання — для мене, що стоїть у власній величі?»",
+  "ukrainian_translation": "Де ātman і де не-ātman, де добре й де недобре? Де думання і де не-думання — для мене, що стоїть у власній величі?",
+  "commentary": "Найважче місце глави: скасовується **сама пара** `ātman` / `anātmā`, а не обирається одна зі сторін. Це узгоджується з 12.5, де так само знято пару `āśrama`/`anāśrama`, — і разом ці два місця показують послідовну позицію тексту: він не вибирає між протилежностями, а ставить під питання місце кожної. `cintā` тут та сама, що в 11.5 і 12.7; словник спільний.",
+  "variants": [],
+  "variants_checked": false,
   "rights": {
-    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
     "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
     "verified": false,
     "own_ukrainian_text": true
