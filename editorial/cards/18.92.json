@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.92",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.92",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.92",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva svācchandyaṃ kva saṅkocaḥ kva vā tattvaviniścayaḥ | nirvyājārjavabhūtasya caritārthasya yoginaḥ ||",
+  "iast": "kva svācchandyaṃ kva saṅkocaḥ kva vā tattvaviniścayaḥ | nirvyājārjavabhūtasya caritārthasya yoginaḥ ||",
+  "grammar": "kva svācchandyam (n. nom. sg. «де свобода, власна воля?»: sva «свій» + chanda «воля») kva saṅkocaḥ (m. nom. sg. «де стиснення?») kva vā tattvaviniścayaḥ (m. nom. sg. «де рішення про істину?»). nirvyājārjavabhūtasya (m. gen. sg. «того, чия істота нелукаво-пряма»: nirvyāja «без обману, щирий» + ārjava «прямота» + bhūta «істота») caritārthasya (m. gen. sg. «того, хто досяг мети, чия справа зроблена») yoginaḥ (m. gen. sg.).",
+  "literal_meaning": "«Де свобода, де стиснення, де рішення про істину — у йога, чия істота нелукаво-пряма, хто досяг мети?»",
+  "ukrainian_translation": "Де свобода, де стиснення, де рішення про істину — у йога, чия істота нелукаво-пряма, хто досяг мети?",
+  "commentary": "`svācchandya` / `saṅkoca` — та сама пара, що в 18.32, але там `saṅkoca` був наслідком неправильно прийнятої істини, а тут знято обидві. `nirvyāja` («без обману») — рідкісне й точне слово: не «щирий» за наміром, а без підміни взагалі. `caritārtha` («чия справа зроблена») закриває тему дії, яку глава вела від 18.19.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Розбіжність saṅkocaḥ (SARIT) / saṃkocaḥ (GRETIL) — та сама форма (анусвара / класова носова). Сенс однаковий. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
