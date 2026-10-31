@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.56",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.56",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.56",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "santuṣṭo 'pi na santuṣṭaḥ khinno 'pi na ca khidyate | tasyāścaryadaśāṃ tāṃ tāṃ tādṛśā eva jānate ||",
+  "iast": "santuṣṭo 'pi na santuṣṭaḥ khinno 'pi na ca khidyate | tasyāścaryadaśāṃ tāṃ tāṃ tādṛśā eva jānate ||",
+  "grammar": "santuṣṭaḥ (m. nom. sg. «вдоволений») api na santuṣṭaḥ («і не вдоволений»). khinnaḥ (m. nom. sg. «засмучений, стомлений») api na ca khidyate («і не засмучується»). tasya (m. gen. sg.) āścaryadaśām (f. acc. sg. «дивовижний стан»: āścarya «диво» + daśā «стан») tām tām (f. acc. sg. повторено «той-той, такий-то й такий»). tādṛśāḥ (m. nom. pl. «такі ж, подібні») eva jānate («саме знають»).",
+  "literal_meaning": "«І вдоволений — не вдоволений; і засмучений — не засмучується. Його дивовижні стани — такі-то й такі — знають лише подібні.»",
+  "ukrainian_translation": "І вдоволений — не вдоволений; і засмучений — не засмучується. Його дивовижні стани — такі-то й такі — знають лише такі ж, як він.",
+  "commentary": "Закінчення дослівно повторює 14.4 (`tāṃ tāṃ tādṛśā eva jānate`) — тобто свідчення ззовні неможливе, і це вже вдруге в книзі. Перша половина — не парадокс, а точність: стан є, назви немає, бо `santuṣṭa` і `khinna` описують те, що всередині вже не відбувається.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
