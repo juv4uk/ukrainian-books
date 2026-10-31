@@ -110,6 +110,13 @@ class CardsAndResearchScopeTests(unittest.TestCase):
         self.assertEqual([e["codepoint"] for e in errors], ["U+0069"])
         self.assertIn("латиниця", errors[0]["reason"])
 
+    def test_latin_accent_as_ukrainian_stress_allowed(self):
+        # «самóю»: наголос записано латинською «ó», бо прекомпонованої кириличної
+        # «о́» не існує. Це не мішанина писемностей і не дефект кодування.
+        self.assertEqual(scan_text("за власною природою, самóю суттю", prose=True), [])
+        # А латинська «i» замість кириличної — дефект.
+        self.assertEqual([e["codepoint"] for e in scan_text("свiт")], ["U+0069"])
+
     def test_legitimate_card_text_passes(self):
         card = (
             '{\n'
