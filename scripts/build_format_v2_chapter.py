@@ -37,6 +37,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from scripts.iast_to_devanagari import to_devanagari  # noqa: E402
 from scripts.iast_to_ukrainian import to_ukrainian  # noqa: E402
+from scripts.postrokove import prepare_alignment, render_markdown_alignment  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK = ROOT / "books" / "ashtavakra-gita"
@@ -144,6 +145,7 @@ def layers(card: dict, extra: dict, parallels: dict[str, dict]) -> dict:
     entry = (extra.get("verses") or {}).get(ident) or {}
     result = {
         "id": ident,
+        "postrokovo": prepare_alignment(card, entry),
         "devanagari": to_devanagari(iast, where=f"картці {ident}") if iast else None,
         "transliteration": to_ukrainian(iast, where=f"картці {ident}") if iast else None,
         "translation": normalise(card.get("ukrainian_translation")),
@@ -162,6 +164,8 @@ def render_markdown_verse(data: dict) -> str:
         out += [f"**Українська транслітерація.** {data['transliteration']}", ""]
     if data["translation"]:
         out += [f"**Переклад.** {data['translation']}", ""]
+    if data["postrokovo"]:
+        out += [render_markdown_alignment(data["postrokovo"]), ""]
     if data["commentary"]:
         out += [f"**Науковий коментар.** {data['commentary']}", ""]
     parallel = data["parallel"]
@@ -204,6 +208,14 @@ def render_latex_verse(data: dict) -> str:
         parts.append(r"\vtranslit{%s}" % esc(data["transliteration"]))
     if data["translation"]:
         parts.append(r"\vperek{%s}" % esc(data["translation"]))
+    if data["postrokovo"]:
+        parts.append(r"\vcom{%s}" % esc("Построкове зіставлення: редакторська чернетка, не рецензовано."))
+        for line in data["postrokovo"]["lines"]:
+            parts.append(r"\vcom{%s}" % esc("Рядок " + line["label"]))
+            parts.append(r"\vdeva{%s}" % esc(line["devanagari"]))
+            parts.append(r"\vtranslit{%s}" % esc(line["transliteration"]))
+            parts.append(r"\vperek{%s}" % esc(line["translation"]))
+            parts.append(r"\vcom{%s}" % esc(line["commentary"]))
     if data["commentary"]:
         parts.append(r"\vcom{%s}" % esc(data["commentary"]))
     parallel = data["parallel"]
