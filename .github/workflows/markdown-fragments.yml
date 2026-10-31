@@ -1,0 +1,19 @@
+name: Локальні Markdown-якорі
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fragments:
+    name: Синтетичні тести та спостережний аудит
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Позитивні й негативні тести якорів
+        run: python3 -m unittest discover -s tests -p 'test_markdown_fragments.py' -v
+      - name: Спостережний аудит локальних посилань
+        run: python3 scripts/check_markdown_fragments.py
