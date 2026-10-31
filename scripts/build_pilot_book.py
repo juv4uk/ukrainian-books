@@ -267,17 +267,19 @@ def main() -> int:
         "witness_fields_excluded": list(WITNESS_FIELDS),
         "glossary_terms": len(glossary),
         "generated_chars": len(verses) + len(words),
-        "outdated_before_write": outdated,
     }
     payload = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
+    manifest_path = BOOK / "generated" / "manifest.json"
+    if stale(manifest_path, payload):
+        outdated.append(str(manifest_path.relative_to(BOOK)))
 
     if not args.check:
         write(verses_path, verses)
         write(glossary_path, words)
-        write(BOOK / "generated" / "manifest.json", payload)
+        write(manifest_path, payload)
     print(payload, end="")
 
-    if args.report:
+    if args.report and not args.check:
         args.report.parent.mkdir(parents=True, exist_ok=True)
         args.report.write_text(payload, encoding="utf-8")
 
