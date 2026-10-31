@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.5",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.5",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.5",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "tantumātro bhavedeva paṭo yadvadvicārataḥ | ātmatanmātramevedaṃ tadvadviśvaṃ vicāritam ||",
+  "iast": "tantu-mātro bhaved eva paṭo yadvad vicārataḥ | ātma-tanmātram evedaṃ tadvad viśvaṃ vicāritam ||",
+  "grammar": "tantu-mātraḥ (m. nom. sg. «лише нитка», mātra — обмежувальний суфікс) bhavet (opt. 3 sg. bhū «була б, виявляється») eva paṭaḥ (m. nom. sg. «тканина») yadvat («як, подібно до того як») vicārataḥ (n. abl. sg. від vicāra «дослідження»: «при дослідженні») | ātma-tanmātram («лише те — Я», tanmātra — «саме те, тільки те») eva idam (n. nom. sg. «це») tadvat («так само») viśvam (n. nom. sg.) vicāritam (n. nom. sg. дієприкметник минулого від vi-car «досліджене»).",
+  "literal_meaning": "«Лише ниткою виявилася б тканина, як при дослідженні; лише Я — це, так само світ досліджений.»",
+  "ukrainian_translation": "Як тканина при дослідженні виявляється лише ниткою, так і цей світ, коли його дослідити, є лише Я.",
+  "commentary": "Це перший вірш книги, де прямо названо метод — vicāra, «дослідження». Тканина не зникає, коли ми бачимо нитку; зникає лише уявлення, що тканина — щось понад нитку. tanmātra («саме те, тільки те») — технічний термін, який у санкх'ї означає тонкі елементи; тут він ужитий у звичайному обмежувальному сенсі, і плутати ці два вживання не слід. Це спостереження про слововживання, а не встановлений факт.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
