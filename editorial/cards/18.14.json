@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.14",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.14",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_18.14",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "kva mohaḥ kva ca vā viśvaṃ kva tad dhyānaṃ kva muktatā | sarvasaṅkalpasīmāyāṃ viśrāntasya mahātmanaḥ ||",
+  "iast": "kva mohaḥ kva ca vā viśvaṃ kva tad dhyānaṃ kva muktatā | sarvasaṅkalpasīmāyāṃ viśrāntasya mahātmanaḥ ||",
+  "grammar": "kva mohaḥ (m. nom. sg. «омана, затьмарення») kva ca vā viśvam (n. nom. sg.) kva tat dhyānam (n. nom. sg. «те споглядання») kva muktatā (f. nom. sg. «стан свободи»). sarvasaṅkalpasīmāyām (f. loc. sg. «у межі всіх задумів»: sarva «все» + saṅkalpa «задум, намір» + sīmā «межа») viśrāntasya (m. gen. sg. «того, хто спочив») mahātmanaḥ (m. gen. sg. «великого духом»).",
+  "literal_meaning": "«Де омана, де світ, де те споглядання, де стан свободи — у великого духом, що спочив у межі всіх задумів?»",
+  "ukrainian_translation": "Де омана, де світ, де те споглядання, де сам стан свободи — у великого духом, що спочив у межі всіх задумів?",
+  "commentary": "Чотири питання, і останнє найсміливіше: питається й про muktatā — стан свободи. saṅkalpa («задум») тут ключове: межа всіх задумів — це не межа думок, а межа намірів, тобто те, де закінчується будь-яке «хай буде так». Саме там і спочиває mahātman, і тому навіть свобода не має місця як мета.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
