@@ -79,12 +79,25 @@ SPECIAL = {
 }
 
 
+DEVA_RUN = re.compile(r"[\u0900-\u097F]+(?:[ \u0900-\u097F]+)*")
+
+
 def esc(text: str) -> str:
-    """Екранує керівні символи LaTeX, зберігаючи українську типографіку."""
+    """Екранує керівні символи LaTeX, зберігаючи українську типографіку.
+
+    Деванагарі немає в DejaVu Serif, тому кожен відрізок деванагарі
+    обгортається в групу з \\fontspec{...}: інакше XeTeX друкує
+    «Missing character» і PDF виходить із дірами замість цитати
+    першоджерела. Шрифт ставить CI (пакет fonts-lohit-deva).
+    """
     out = []
     for ch in text:
         out.append(SPECIAL.get(ch, ch))
-    return "".join(out)
+    return DEVA_RUN.sub(
+        lambda m: r"{\fontspec[Script=Devanagari]{Lohit Devanagari} "
+        + m.group(0) + "}",
+        "".join(out),
+    )
 
 
 def load_cards(chapters: tuple[int, ...]) -> list[dict]:
