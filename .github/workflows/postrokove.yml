@@ -1,0 +1,33 @@
+name: ГЕН-01 — построкові редакторські дані
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/postrokove.py'
+      - 'scripts/build_format_v2_chapter.py'
+      - 'tests/test_postrokove_generator.py'
+      - 'books/ashtavakra-gita/format-v2/rozdil-*.json'
+      - '.github/workflows/postrokove.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/postrokove.py'
+      - 'scripts/build_format_v2_chapter.py'
+      - 'tests/test_postrokove_generator.py'
+      - 'books/ashtavakra-gita/format-v2/rozdil-*.json'
+      - '.github/workflows/postrokove.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unittest:
+    name: Два рядки, IAST, український переклад — 7 регресій
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити построкові дані та негативні випадки
+        run: python3 -m unittest discover -s tests -p 'test_postrokove_generator.py' -v
