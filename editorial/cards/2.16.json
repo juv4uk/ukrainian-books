@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "2.16",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.16",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.16",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "dvaitamūlam aho duḥkhaṃ nānyat tasyāsti bheṣajam | dṛśyam etan mṛṣā sarvaṃ eko 'haṃ cidraso 'malaḥ ||",
+  "iast": "dvaitamūlam aho duḥkhaṃ nānyat tasyāsti bheṣajam | dṛśyam etan mṛṣā sarvaṃ eko 'haṃ cidraso 'malaḥ ||",
+  "grammar": "dvaitamūlam (bahuvrīhi: dvaia «двоїстість» + mūla «корінь»; «чий корінь — двоїстість») aho («о диво») duḥkham (n. nom. sg. «страждання»). na anyat («немає іншого») tasya (n. gen. sg. «від нього») asti bheṣajam (n. nom. sg. «ліки»). dṛśyam (n. nom. sg. «видиме») etat (n. nom. sg.) mṛṣā («хибне, марне»; присудкове) sarvam (n. nom. sg. «усе»). ekaḥ (m. nom. sg. «один») aham (nom. sg.) cidrasaḥ (bahuvrīhi: cit «свідомість» + rasa «смак, сутність»; «чий смак — cit») amalaḥ (m. nom. sg. «незаплямований»).",
+  "literal_meaning": "«О диво! Страждання має корінь у двоїстості, і немає від нього інших ліків. Усе це видиме — хибне. Я один — смак свідомості, незаплямований.»",
+  "ukrainian_translation": "О диво! Корінь страждання — двоїстість, і немає від нього інших ліків. Усе це видиме — хибне. Я один: смак свідомості, незаплямований.",
+  "commentary": "Вірш має три частини й будується як діагноз, рецепт і твердження. Діагноз: duḥkha має корінь у двоїстості, а не в обставинах. Рецепт: nānyat tasya asti bheṣajam — «немає інших ліків», тобто лікування не в усуненні окремих страждань, а в усуненні поділу. Твердження: dṛśyam etan mṛṣā — видиме хибне. Останнє найризикованіше, і його не слід читати як «світу немає»: mṛṣā означає «марне, несправжнє» в сенсі несамостійного буття, а не відсутності. cidrasaḥ («чий смак — cit») — рідкісний і точний складник: не «я є свідомість», а «я маю смак свідомості», тобто свідомість не річ, якою я володію, а те, чим я відчувається.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

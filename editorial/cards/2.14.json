@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "2.14",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.14",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.14",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "aho ahaṃ namo mahyaṃ yasya me nāsti kiñcana | athavā yasya me sarvaṃ yad vāṅmanasagocaram ||",
+  "iast": "aho ahaṃ namo mahyaṃ yasya me nāsti kiñcana | athavā yasya me sarvaṃ yad vāṅmanasagocaram ||",
+  "grammar": "aho ahaṃ namo mahyaṃ — рефрен. yasya (gen. sg.) me (gen. sg.) na asti («немає») kiñcana («чогось, анічого»). athavā («або ж») — сполучник альтернативи, що не обирає сторону. yasya me («у кого — у мене») sarvam (n. nom. sg. «все»). yad vāṅmanasagocaram (bahuvrīhi: vāc «слово» + manas «розум» + gocara «поле, досяжність»; «те, що є полем слова й розуму»).",
+  "literal_meaning": "«О диво! Я — поклін собі! У мене немає анічого — або ж у мене все, що досяжне слову й розуму.»",
+  "ukrainian_translation": "О диво! Поклін мені самому! У мене немає нічого — або ж у мене є все, що взагалі досяжне слову й розуму.",
+  "commentary": "Вірш ставить дві взаємовиключні відповіді й не обирає між ними: athavā («або ж») залишає обидві. Це не нерішучість, а точний хід: якщо «нічого» і «все» однаково хибні описи, то обидва виражають те саме — те, що не піддається опису ні як володіння, ні як відсутність. Та сама формула athavā na ca kiñcana є і в 2.2, тож це не одноразовий зворот, а повторюваний прийом тексту. Друга половина обмежує коло: sarvaṃ — це не «все взагалі», а лише те, що потрапляє в поле слова й розуму (vāṅmanasagocara). Те, що поза цим полем, не називається ні «всім», ні «нічим».",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
