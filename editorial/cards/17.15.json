@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.15",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_17.15",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.15",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": null,
+  "iast": null,
+  "grammar": "sukhe й duḥkhe — місцевий відмінок однини; nare й nāryāṃ — місцевий однини («у чоловікові», «у жінці»); saṃpatsu й vipatsu — місцевий множини («за добробуту», «за лиха»). Усі пари позначають обставини або предмети рівного погляду. viśeṣaḥ — називний однини («відмінність»), naiva = na eva («аж ніяк немає»). dhīrasya й samadarśinaḥ — родовий однини, означують одного стійкого мудреця; sarvatra — «всюди».",
+  "literal_meaning": "«У щасті й стражданні, у чоловікові й жінці, за добробуту й у лихові — для стійкого, який скрізь бачить однаково, немає відмінності».",
+  "ukrainian_translation": "Для стійкого мудреця, що всюди бачить рівно, немає відмінності ні між щастям і стражданням, ні між чоловіком і жінкою, ні між добробутом і лихом.",
+  "commentary": "Це опис способу бачення dhīra, а не твердження про однаковість життєвих подій чи скасування відмінностей між людьми. Три контрастні пари створюють низку ситуацій для samadarśin («той, хто бачить рівно»). У сусідньому вірші 17.14 незворушність показано перед двома сильними переживаннями; тут теза поширюється на радість і біль, людські постаті та мінливі обставини. Граматичний зв'язок із родовим dhīrasya залишає саме мудреця носієм рівного погляду. Порівняння перевірено лише за двома цифровими транскрипціями: GRETIL Avg_17.15 і SARIT verse_17.15; рукописної або незалежної академічної рецензії немає.",
+  "variants": [
+    {
+      "witness": "GRETIL (порівняно із SARIT)",
+      "note": "У GRETIL у першому рядку: «saṃpatsu ca vipatsu ca»; у SARIT: «saṃpatsu vipatsu ca». Отже, GRETIL містить додатковий сполучник ca після saṃpatsu. Це засвідчена відмінність між двома електронними текстами, але поки НЕ доведене різночитання незалежних рукописів; без рукописів не встановлюємо первісного читання.",
+      "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський твір давній, проте сучасні цифрові транскрипції мають окремі умови: GRETIL зазначає CC BY-NC-SA 4.0 (редакція 2020-07-31), SARIT TEI — Copyright Suryansu Ray 2012, CC BY-SA 3.0, availability restricted. Повний текст цих транскрипцій та сторонні переклади тут не відтворені: лише короткі лексичні цитати для документування різниці. Український переклад, граматика та коментар написані незалежно для цього проєкту. Наявність правової підстави щодо можливих похідних прав ще не засвідчена.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
