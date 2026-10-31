@@ -227,11 +227,14 @@ class OverlapTests(unittest.TestCase):
 
     def test_rest_http_status_is_visible_but_token_hidden(self):
         with patch.object(checker.request, "urlopen", side_effect=HTTPError(
-            "https://api.github.com/internal", 403, "ліміт", None, None,
+            "https://api.github.com/internal", 403, "ліміт",
+            {"x-ratelimit-remaining": "0", "retry-after": "60"}, None,
         )):
             with self.assertRaises(checker.AuditError) as context:
                 checker.get_json("/repos/owner/repo/pulls/4/files", "секретний-токен")
         self.assertIn("HTTP 403", str(context.exception))
+        self.assertIn("залишок запитів=0", str(context.exception))
+        self.assertIn("за 60 с", str(context.exception))
         self.assertNotIn("секретний-токен", str(context.exception))
         self.assertNotIn("https://", str(context.exception))
 
