@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "15.9",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.9",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.9",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "guṇaiḥ saṃveṣṭito dehastiṣṭhatyāyāti yāti ca| ātmā na gantā nāgantā kimenamanuśocasi||15|9||",
+  "iast": "guṇaiḥ saṃveṣṭito dehas tiṣṭhaty āyāti yāti ca | ātmā na gantā nāgantā kim enam anuśocasi ||",
+  "grammar": "guṇaiḥ («гунами») saṃveṣṭitaḥ («обгорнуте») dehaḥ («тіло») tiṣṭhati āyāti yāti ca («стоїть, приходить і йде») | ātmā na gantā na agantā («ātman не йде і не приходить») kim enam anuśocasi («чого ти за ним жалкуєш»).",
+  "literal_meaning": "«Тіло, обгорнуте гунами, стоїть, приходить і йде; ātman не йде і не приходить — чого ти за ним жалкуєш?»",
+  "ukrainian_translation": "Тіло, обгорнуте гунами, стоїть, приходить і йде; ātman не йде і не приходить — чого ти за ним жалкуєш?",
+  "commentary": "Заперечення подвійне й симетричне: `na gantā na agantā` — не йде **і не приходить**, тобто не підпадає під жоден бік пари. Питання `kim enam anuśocasi` — пряме звертання до того, хто сумує; у главі це вже друге таке звертання після 15.6, і разом вони задають тон: не пояснення, а докір. `anuśocasi` — «жалкуєш за ним», не «сумуєш» взагалі.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
