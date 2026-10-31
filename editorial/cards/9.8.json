@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "9.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_9.8",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_9.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "vāsanā eva saṃsāra iti sarvā vimuñca tāḥ| tattyāgo vāsanātyāgātsthitiradya yathā tathā||9|8||",
+  "iast": "vāsanā eva saṃsāra iti sarvā vimuñca tāḥ | tattyāgo vāsanātyāgāt sthitiradya yathā tathā ||",
+  "grammar": "vāsanāḥ (f. pl. «усталені схильності, просочення») eva saṃsāraḥ iti («сансара — це саме [вони], так») sarvāḥ vimuñca (imper. «відпусти всі») tāḥ | tat-tyāgaḥ («їх відкидання») vāsanā-tyāgāt («через відкидання схильностей») sthitiḥ adya yathā tathā («стояння — нині, так чи інакше»).",
+  "literal_meaning": "«Сансара — це саме усталені схильності, так; відпусти їх усі. Їх відкидання — через відкидання схильностей; стояння [в собі] — нині, так чи інакше.»",
+  "ukrainian_translation": "Сансара — це саме усталені схильності, так; відпусти їх усі. Їх відкидання — через відкидання схильностей; стояння в собі — нині, так чи інакше.",
+  "commentary": "Вірш закінчує главу визначенням, а не обіцянкою: сансара — не світ, а `vāsanā`, усталені схильності. `yathā tathā` («так чи інакше») знімає вимогу до способу: результат не залежить від того, як саме це станеться. Друга половина повторює те саме слово двічі (`tyāga`), і повтор тут не недогляд — він показує, що відкидання схильностей і є відкиданням, а не засобом до нього.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
