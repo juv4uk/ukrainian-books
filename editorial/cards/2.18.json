@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.18",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.18",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.18",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "aho mayi sthitaṃ viśvaṃ vastuto na mayi sthitam| na me bandho+asti mokṣo vā bhrāntiḥ śāntā nirāśrayā||2|18||",
+  "iast": "aho mayi sthitaṃ viśvaṃ vastuto na mayi sthitam | na me bandho'sti mokṣo vā bhrāntiḥ śāntā nirāśrayā ||",
+  "grammar": "aho mayi (loc. sg.) sthitam (n. nom. sg. «розташоване») viśvam (n. nom. sg.) vastutaḥ (adv. «насправді, сутнісно») na mayi sthitam | na me bandhaḥ asti mokṣaḥ vā bhrāntiḥ (f. nom. sg. «омана») śāntā (f. nom. sg. «заспокоєна») nirāśrayā (f. nom. sg. «без опори»).",
+  "literal_meaning": "«О диво: у мені розташований світ — а насправді він у мені не розташований. Немає в мене ні пут, ні визволення; омана заспокоєна, без опори.»",
+  "ukrainian_translation": "О диво: світ ніби в мені — а насправді він у мені не вміщується. Немає в мене ні пут, ні визволення; омана вщухла, втративши опору.",
+  "commentary": "Парадокс навмисний: перший піввірш дає звичну формулу, другий її знімає через vastutaḥ («насправді»). Далі — те саме заперечення, що в 15.18: немає ні пут, ні визволення. nirāśrayā («без опори») вказує, чому омана вщухла: у неї не лишилося основи, а не тому, що її перемогли.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}

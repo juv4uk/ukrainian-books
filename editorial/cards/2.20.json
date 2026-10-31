@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.20",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.20",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.20",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "śarīraṃ svarganarakau bandhamokṣau bhayaṃ tathā| kalpanāmātramevaitatkiṃ me kāryaṃ cidātmanaḥ||2|20||",
+  "iast": "śarīraṃ svarganarakau bandhamokṣau bhayaṃ tathā | kalpanāmātram evaitat kiṃ me kāryaṃ cidātmanaḥ ||",
+  "grammar": "śarīram (n. nom. sg.) svarga-narakau (m. du. «небо й пекло») bandha-mokṣau (m. du. «пута й визволення») bhayam (n. nom. sg.) tathā | kalpanā-mātram (n. nom. sg. «лише домислювання») eva etat («усе це») kim me kāryam («що мені робити») cit-ātmanaḥ (m. gen. sg. «тому, чия природа — свідомість»).",
+  "literal_meaning": "«Тіло, небо й пекло, пута й визволення, страх — усе це лише домислювання. Що мені, чиїй природі — свідомість, робити?»",
+  "ukrainian_translation": "Тіло, небо й пекло, пута й визволення, страх — усе це лише домислювання. Що мені робити, коли моя природа — свідомість?",
+  "commentary": "Два двоїни (dual) у переліку — svarga-narakau і bandha-mokṣau — тримають пари разом: текст не відкидає пекло й не обирає небо, він ставить обидва в один ряд із домислюванням. Питання kiṃ me kāryam не риторичне в сенсі «нічого»: воно справді питає, що лишається робити, і відповіді в цьому вірші немає.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
