@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "2.2",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.2",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.2",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yathā prakāśayāmyeko dehamenaṃ tathā jagat | ato mama jagatsarvamathavā na ca kiñcana ||",
+  "iast": "yathā prakāśayāmy eko deham enaṃ tathā jagat | ato mama jagat sarvaṃ athavā na ca kiñcana ||",
+  "grammar": "yathā … tathā (корелятивна пара «як … так») prakāśayāmi (1 sg. pres. pra-kāś «освітлювати, робити видимим») ekaḥ (m. nom. sg.) deham (m. acc. sg.) enam (вказівний займенник, acc. sg.) jagat (n. nom./acc. sg. «світ») | ataḥ (прислівник «тому») mama (gen. sg. «мій») jagat sarvam (n. nom. sg. «весь світ») athavā («або ж») na ca kiñcana («і аніщо»).",
+  "literal_meaning": "«Як я, єдиний, освітлюю це тіло, так і світ. Тому весь світ — мій; або ж — аніщо.»",
+  "ukrainian_translation": "Як я один освітлюю це тіло, так освітлюю і світ. Тому весь світ — мій; або ж — аніщо.",
+  "commentary": "Вірш тримає дві відповіді одночасно: «світ мій» і «свіЂ — аніщо». Це не суперечність, а два боки одного: світ не існує окремо від того, хто його освітлює, і саме тому не є чимось набутим. athavā («або ж») — сигнал, що текст свідомо лишає обидві формули, а не обирає одну. Перекладати його як «тобто» було б спрощенням.",
+  "variants": [],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакрааёіти» — давній твір у суспільному надбанні.Ритання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
