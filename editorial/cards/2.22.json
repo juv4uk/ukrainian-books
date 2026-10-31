@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "2.22",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_2.22",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_2.22",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "nāham deho na me deho jīvo nāham ahaṃ hi cit | ayam eva hi me bandha āsīt yā jīvite spṛhā ||",
+  "iast": "nāham deho na me deho jīvo nāham ahaṃ hi cit | ayam eva hi me bandha āsīt yā jīvite spṛhā ||",
+  "grammar": "na aham («я не») dehaḥ (m. nom. sg. «тіло»). na me dehaḥ («тіло не моє»; me — gen. sg.). jīvaḥ (m. nom. sg. «живчик, індивідуальна душа») na aham («я не [він]»). aham (nom. sg.) hi («ж») cit (n. nom. sg. «свідомість»; присудкове). ayam (m. nom. sg.) eva hi me (gen. sg. «моя») bandhaḥ (m. nom. sg. «уза»). āsīt (3 sg. imperfect as- «була»; минулий незавершений час). yā (f. nom. sg. відносного займенника) jīvite (n. loc. sg. «у житті») spṛhā (f. nom. sg. «спрага, прагнення»).",
+  "literal_meaning": "«Я не тіло, і тіло не моє; я не живчик — я ж свідомість. Ось моя уза: [то була] спрага до життя.»",
+  "ukrainian_translation": "Я не тіло, і тіло не моє. Я не живчик — я свідомість. Ось у чому була моя уза: спрага до життя.",
+  "commentary": "Найважливіше тут — **час дієслова**. āsīt — це минулий незавершений час, тобто «була», а не «є». Уза не описується як наявна: вона названа в минулому, бо вже побачена як те, чим вона була. Це не проголошення свободи, а звіт про те, що побачене. Другий точний момент: заперечуються три ототожнення поспіль (тіло, володіння тілом, jīva), і лише четверте — ствердне (aham cit). jīva тут не синонім ātman: це саме «живчик», індивідуальна істота, і її заперечення стоїть окремо від заперечення тіла. Причина узи названа одна — spṛhā, спрага до життя, а не до насолод. Це вужче й точніше, ніж звичне «бажання».",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
