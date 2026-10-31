@@ -1,0 +1,34 @@
+name: Відтворюваність пілотної верстки
+
+on:
+  pull_request:
+    paths:
+      - "scripts/build_pilot_book.py"
+      - "tests/test_pilot_book.py"
+      - "books/ashtavakra-hita-pilot/generated/manifest.json"
+      - ".github/workflows/pilot-determinism.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build_pilot_book.py"
+      - "tests/test_pilot_book.py"
+      - "books/ashtavakra-hita-pilot/generated/manifest.json"
+      - ".github/workflows/pilot-determinism.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproducibility:
+    name: Незмінність маніфесту та відсутність побічних записів
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантажити репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити структуру, права та ліцензію
+        run: python3 scripts/check_project.py
+      - name: Двократна побайтова відтворюваність маніфесту
+        run: python3 -m unittest discover -s tests -p 'test_pilot_book.py' -k 'test_manifest_is_byte_identical_after_repeated_generation' -v
+      - name: Режим --check --report не записує файлів
+        run: python3 -m unittest discover -s tests -p 'test_pilot_book.py' -k 'test_check_with_report_never_writes_files' -v
