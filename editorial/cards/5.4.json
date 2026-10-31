@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "5.4",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_5.4",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_5.4",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "samaduḥkhasukhaḥ pūrṇa āśānairāśyayoḥ samaḥ | samajīvitamṛtyuḥ sann evam eva layaṃ vraja ||",
+  "iast": "samaduḥkhasukhaḥ pūrṇa āśānairāśyayoḥ samaḥ | samajīvitamṛtyuḥ sann evam eva layaṃ vraja ||",
+  "grammar": "samaduḥkhasukhaḥ (bahuvrīhi «рівний у стражданні й радості»: sama + duḥkha + sukha) pūrṇaḥ (m. nom. sg. «повний»). āśānairāśyayoḥ (f. loc. du. «у сподіванні й безнадії»: āśā «сподівання» + nairāśya «безнадія») samaḥ (m. nom. sg. «рівний»). samajīvitamṛtyuḥ (bahuvrīhi «рівний у житті й смерті»: sama + jīvita + mṛtyu) san (m. nom. sg. дієприкметника теперішнього часу as- «бувши») evam eva layam vraja.",
+  "literal_meaning": "«Рівний у стражданні й радості, повний, рівний у сподіванні й безнадії, рівний у житті й смерті — бувши [таким], так само йди до розчинення.»",
+  "ukrainian_translation": "Рівний у стражданні й радості, повний, рівний у сподіванні й безнадії, рівний у житті й смерті, — так само йди до розчинення.",
+  "commentary": "Вірш складається з трьох пар, і всі три побудовані на sama («рівний»): страждання/радість, сподівання/безнадія, життя/смерть. Пари охоплюють три виміри — відчуття, очікування, буття. Слово pūrṇaḥ («повний») стоїть між першою і другою парою не випадково: рівність не порожнеча, а повнота, якій не бракує нічого з обох боків. Це єдиний вірш глави, де немає ні прикладу, ні заперечення — лише перелік ознак. Тим самим літанія закінчується не аргументом, а описом того, хто йде. РЕФРЕН ГЛАВИ. Усі чотири вірші глави 5 закінчуються однаково: evam eva layaṃ vraja («так само йди до розчинення»). Це не чотири окремі повчання, а одна літанія з незмінним приспівом: змінюється тільки перша половина — обґрунтування, а висновок лишається той самий. Тому главу слід читати як одне ціле.",
+  "variants": [
+    {
+      "witness": "SARIT і GRETIL (перевірено scripts/fetch_witnesses.py)",
+      "note": "Читання збігаються; відмінності лише в аваґрасі та поділі слів. Не різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції SARIT і GRETIL мають власні умови; їхній редакторський апарат не копіювався. Український переклад, граматичний аналіз і коментар — власні.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
