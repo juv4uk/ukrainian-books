@@ -7,6 +7,8 @@ on:
       - 'scripts/build_format_v2_chapter.py'
       - 'tests/test_postrokove_generator.py'
       - 'tests/test_postrokove_in_book.py'
+      - 'books/ashtavakra-gita/rozdil-*-naukove.md'
+      - 'books/ashtavakra-gita/generated/rozdil-*.tex'
       - 'books/ashtavakra-gita/format-v2/rozdil-*.json'
       - '.github/workflows/postrokove.yml'
   push:
@@ -16,6 +18,8 @@ on:
       - 'scripts/build_format_v2_chapter.py'
       - 'tests/test_postrokove_generator.py'
       - 'tests/test_postrokove_in_book.py'
+      - 'books/ashtavakra-gita/rozdil-*-naukove.md'
+      - 'books/ashtavakra-gita/generated/rozdil-*.tex'
       - 'books/ashtavakra-gita/format-v2/rozdil-*.json'
       - '.github/workflows/postrokove.yml'
   workflow_dispatch:
