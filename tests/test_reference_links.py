@@ -48,7 +48,7 @@ class ReferenceLinksTests(unittest.TestCase):
         self.assertTrue(any("порожня ціль" in x for x in self.check("[x]: \n")))
 
     def test_fenced_and_inline_code_not_interpreted(self):
-        self.assertEqual(self.check("``md\n[я][неіснуюче]\n[я]: missing.md\n``\n`[тест][нічого]`\n"), [])
+        self.assertEqual(self.check(chr(96)*3 + "md\n[я][неіснуюче]\n[я]: missing.md\n" + chr(96)*3 + "\n" + chr(96) + "[тест][нічого]" + chr(96) + "\n"), [])
 
     def test_tilde_fence(self):
         self.assertEqual(self.check("~~~\n[x][bad]\n~~~\n"), [])
