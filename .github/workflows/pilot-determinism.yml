@@ -32,3 +32,5 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_pilot_book.py' -k 'test_manifest_is_byte_identical_after_repeated_generation' -v
       - name: Режим --check --report не записує файлів
         run: python3 -m unittest discover -s tests -p 'test_pilot_book.py' -k 'test_check_with_report_never_writes_files' -v
+      - name: Маніфест після пошкодження не проходить --check
+        run: python3 -m unittest discover -s tests -p 'test_pilot_book.py' -k 'test_check_rejects_tampered_manifest_without_side_effects' -v
