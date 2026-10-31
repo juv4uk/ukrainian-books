@@ -1,0 +1,22 @@
+name: Реєстр віршів — 20 глав
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  registry:
+    name: Нумерація, цілісність та дефект 18.95
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати репозиторій
+        uses: actions/checkout@v4
+      - name: Перевірити власний покажчик
+        run: python3 scripts/check_verse_registry.py --self-test
+      - name: Перевірити структуру проєкту та ліцензію
+        run: python3 scripts/check_project.py
