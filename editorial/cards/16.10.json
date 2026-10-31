@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "16.10",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_16.10",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_16.10",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "yasyābhimāno mokṣe 'pi | dehe 'pi mamatā tathā | na ca jñānī na vā yogī | kevalaṃ duḥkhabhāg asau ||",
+  "iast": "yasyābhimāno mokṣe 'pi | dehe 'pi mamatā tathā | na ca jñānī na vā yogī | kevalaṃ duḥkhabhāg asau ||",
+  "grammar": "yasya — родовий одн. «у кого». abhimānaḥ «домагання, претензія, привласнення» — тут не «гордість» взагалі, а зацікавлене «я маю на це право». mokṣe — локатив одн. «на звільнення». api «навіть». dehe — локатив одн. «до тіла». mamatā — f. «моє-почуття, прив'язаність». tathā «так само». na ca jñānī na vā yogī «і не знавець, і не йог». kevalam «лише, тільки». duḥkhabhāk «причетний до страждання» (bhāj «той, хто має частку» + duḥkha). asau «той, он». Складність: abhimāna при mokṣe і mamatā при dehe — два різні терміни, і змішувати їх не можна: перший — претензія на володіння метою, другий — почуття «моє» щодо тіла.",
+  "literal_meaning": "«У кого є домагання навіть на звільнення й почуття «моє» навіть щодо тіла — той ні знавець, ні йог; він лише причетний до страждання.»",
+  "ukrainian_translation": "Якщо людина претендує навіть на звільнення і водночас відчуває тіло як «своє», вона не знавець і не йог — вона просто має свою частку страждання.",
+  "commentary": "Найгостріше місце глави: під підозру потрапляє не лише прив'язаність до тіла, а й зацікавленість у звільненні. abhimāna — слово з присмаком претензії, і саме воно стоїть поруч із mokṣa. Друга частина вірша — тверезий висновок: із двох претензій не виростає ані знання (jñānī), ані практика (yogī), лишається тільки частка страждання (duḥkha-bhāj). Тут mukti не названо — є mokṣa; ані ātman, ані cit у вірші немає. Традиційні коментарі часто перетворюють це на заклик відмовитися від бажання звільнення; текст робить слабше й точніше твердження — він заперечує претензію, а не саму мету.",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_16.10) проти SARIT (verse_16.10)",
+      "note": "Читання збігаються після нормалізації. SARIT подає аваґраху зі знаком «+» (mokṣe+api, dehe+api), GRETIL — апострофом (mokṣe 'pi, dehe 'pi). Різниця в оформленні, не в тексті.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
