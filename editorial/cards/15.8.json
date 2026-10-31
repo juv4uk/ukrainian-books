@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "15.8",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_15.8",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_15.8",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "śraddhatsva tāta śraddhatsva nātra mohaṃ kuruṣva bhoḥ | jñānasvarūpo bhagavānātmā tvaṃ prakṛteḥ paraḥ ||",
+  "iast": "śraddhatsva tāta śraddhatsva nātra mohaṃ kuruṣva bhoḥ | jñānasvarūpo bhagavānātmā tvaṃ prakṛteḥ paraḥ ||",
+  "grammar": "śraddhatsva — повторений наказовий спосіб 2-ї особи однини від śrad-dhā («довіряти, мати віру»); tāta — кличне звертання «дорогий», «сину»; na atra > nātra — заперечення з прислівником «тут»; moham (злиття з ṃ у IAST: mohaṃ) — знахідний однини від moha («омана»), залежить від kuruṣva (імператив 2-ї особи однини, середній стан, від kṛ — «робити»); bhoḥ — звертальний вигук; jñāna-svarūpaḥ > jñānasvarūpo — називний однини, «той, чия природа — знання»; bhagavān і ātmā — називні однини, у SARIT злиті як bhagavānātmā; tvam — «ти»; prakṛteḥ — від prakṛti, форма родового або відкладного відмінка; paraḥ — «поза / вищий за». Співвіднесення bhagavān із ātmā є граматично природним, але конкретний богословський відтінок епітета потребує рецензії.",
+  "literal_meaning": "«Довірся, дорогий, довірся; не творѝ тут омани, о друже. Ти — Атман, величний, сутністю якого є знання; [ти] — за межами пракріті». Це робоче прочитання, не сучасний сторонній переклад.",
+  "ukrainian_translation": "«Повір, дорогий, повір. Не впадай тут в оману, друже. Ти — величний Атман, чия природа — знання; ти — поза межами пракріті».",
+  "commentary": "Обидва звірені цифрові свідки повторюють дієслово śraddhatsva, тобто текст не обходиться без прямої настанови довіритися сказаному. Водночас предмет довіри тут сформульований як усвідомлення природи Атмана, а не як обов'язок слухатися державного чи кастового інституту. Для сучасного анархічного прочитання цей вірш є запобіжником проти надто категоричного твердження «жодного духовного авторитету»: наявність імператива потрібно пояснювати, а не замовчувати. Це власне порівняльне зауваження, НЕ буквальне політичне вчення тексту. Порівняти з 1.5, 1.15 та 15.2 і з окремими сучасними інтерпретаційними есеями в research/ashtavakra/; незалежної наукової рецензії ще немає.",
+  "variants": [
+    {
+      "witness": "SARIT, verse_15.8; GRETIL, Avg_15.8",
+      "note": "SARIT об'єднує bhagavānātmā в один безпробільний запис, GRETIL розділяє pāda: bhagavān | ātmā. В обох засвідчено śraddhatsva і nātra mohaṃ kuruṣva bhoḥ. Ці відмінності розбивки/сандгі не є встановленими рукописними різночитаннями; обидва документи — цифрові транскрипції, не критичне видання.",
+      "evidence_url": "https://github.com/INDOLOGY/GRETIL-mirror/blob/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Первісний давній санскритський твір слід відрізняти від цифрових транскрипцій GRETIL і SARIT, для яких заявлені власні умови; тут наведено один вірш для наукової звірки з посиланнями, без передруку електронних корпусів чи їхніх коментарів. Українська редакція, граматичні та філософські примітки — власні. Відповідність правам публічного видання потребує окремого погодження.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
