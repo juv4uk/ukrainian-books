@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "17.15",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+      "locator": "Avg_17.15",
+      "checked_on": "2026-10-31"
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
+      "locator": "verse_17.15",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "sukhe duḥkhe nare nāryāṃ | saṃpatsu ca vipatsu ca | viśeṣo naiva dhīrasya | sarvatra samadarśinaḥ ||",
+  "iast": "sukhe duḥkhe nare nāryāṃ | saṃpatsu ca vipatsu ca | viśeṣo naiva dhīrasya | sarvatra samadarśinaḥ ||",
+  "grammar": "sukhe duḥkhe — локатив одн. «у щасті, у стражданні». nare nāryām — локатив одн. «у чоловікові, у жінці». saṃpatsu (від saṃpad) і vipatsu (від vipad) — локатив мн. «в удачах, у бідах». ca ... ca «і ... і». viśeṣaḥ «різниця, відмінність». na eva «аж ніяк немає». dhīrasya — родовий одн. «у стійкого» (dhīra). sarvatra samadarśinaḥ — родовий одн. «того, хто всюди бачить однаково» (sama-darśin). Складність: друга пада має ca лише в GRETIL; без нього пада коротша на склад (див. різночитання). Розмір — ануштубг, і саме ca відновлює потрібні вісім складів.",
+  "literal_meaning": "«У щасті й стражданні, в чоловікові й жінці, в удачах і в бідах — аж ніяк немає різниці в стійкого, що всюди бачить однаково.»",
+  "ukrainian_translation": "У щасті й у горі, в чоловікові й у жінці, в удачі й у біді — для стійкого, хто всюди бачить однаково, різниці немає.",
+  "commentary": "Перелік пар тут не філософський, а побутовий: щастя й горе, чоловік і жінка, удача й біда. Пару «чоловік і жінка» не слід вичитувати як твердження про стать у метафізичному сенсі: вона стоїть у ряді з іншими парами й означає лише, що оцінка не змінюється залежно від того, з ким маєш справу. sama-darśin — «той, хто бачить рівно», і це єдиний пізнавальний термін у вірші. Слова ātman, cit, sākṣin тут немає; «рівність бачення» не тотожна ані «свідку», ані «свідомості».",
+  "variants": [
+    {
+      "witness": "GRETIL (Avg_17.15) проти SARIT (verse_17.15)",
+      "note": "СПРАВЖНЯ РОЗБІЖНІСТЬ: GRETIL — saṃpatsu ca vipatsu ca, SARIT — saṃpatsu vipatsu ca (без першого ca). Без ca пада має сім складів замість восьми, потрібних ануштубгу, а зворот «і в удачах, і в бідах» з двома ca — усталений. Тому в тексті картки взято читання GRETIL; це аргумент від розміру, а не від третього свідка.",
+      "evidence_url": "https://raw.githubusercontent.com/INDOLOGY/GRETIL-mirror/main/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
+  "rights": {
+    "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Цифрові транскрипції GRETIL (CC BY-NC-SA 4.0) і SARIT мають власні умови; їх використано лише для звірки читання, редакторський апарат і примітки обох транскрипцій не відтворюються. Український переклад, граматичний аналіз, дослівний розбір і коментар — власні.",
+    "evidence_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
