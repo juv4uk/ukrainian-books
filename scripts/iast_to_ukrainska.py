@@ -71,6 +71,9 @@ def transliterate(text: str) -> str:
                 matched = (src, dst); break
         if matched:
             src, dst = matched
+            # Межа слова — властивість вхідного IAST, не останньої літери виходу.
+            # Початкове ya має давати «я», а не «ья» (yathā → ятха).
+            word_initial = i == 0 or not text[i - 1].isalpha()
             i += len(src)
             nxt = text[i] if i < n else ""
             palatal = dst.endswith("ь")          # ñ
@@ -78,7 +81,9 @@ def transliterate(text: str) -> str:
                 after_vowel = bool(out) and out[-1] and out[-1][-1] in "аеиіоуяюєї"
                 if nxt in ("a", "ā"):
                     # після приголосного м'якість лишається: tya → тья
-                    out.append("я" if after_vowel else "ья")
+                    out.append("я" if word_initial or after_vowel else "ья")
+                elif word_initial:
+                    out.append("йо" if nxt == "o" else SOFT[nxt])
                 elif after_vowel:
                     out.append("й" + VOWELS.get(nxt, ""))
                 else:
@@ -87,7 +92,7 @@ def transliterate(text: str) -> str:
                 continue
             if dst == "й" and nxt not in SOFT:   # y у кінці складу
                 after_vowel = bool(out) and out[-1] and out[-1][-1] in "аеиіоуяюєї"
-                out.append("й" if after_vowel else "ь")
+                out.append("й" if word_initial or after_vowel else "ь")
                 continue
             if palatal:
                 # ñ не дає окремого «ь»: джня, не джнья
