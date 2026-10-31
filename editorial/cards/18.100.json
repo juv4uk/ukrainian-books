@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "18.100",
+  "work": "Аштавакра-ґіта",
+  "status": "чернетка",
+  "author": null,
+  "sources": {
+    "gretil": {
+      "url": "https://www.gretil.uni-goettingen.de/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm",
+      "locator": "Avg_18.100",
+      "checked_on": null
+    },
+    "sarit": {
+      "url": "https://github.com/sarit/SARIT-corpus/blob/dedb6b12c96490e62c60bf4b23ea817e992e70be/astavakragita.xml",
+      "locator": "verse_18.100",
+      "checked_on": "2026-10-31"
+    }
+  },
+  "sanskrit": "na dhāvati janākīrṇaṃ nāraṇyamupaśāntadhīḥ | yathātathā yatratatra sama evāvatiṣṭhate ||",
+  "iast": "na dhāvati janākīrṇaṃ nāraṇyamupaśāntadhīḥ | yathātathā yatratatra sama evāvatiṣṭhate ||",
+  "grammar": "na dhāvati — заперечення і дієслово dhāvati (теперішній час, 3-тя особа однини, «біжить, поспішає»); janākīrṇaṃ — знахідний відмінок однини середнього роду («наповнене людьми», напрямок руху до людного місця); na araṇyam > nāraṇyam — «не [до] лісу», знахідний відмінок однини. upaśāntadhīḥ — складний прикметник в називному відмінку однини чоловічого роду: «той, чий розум/розсуд заспокоївся», підмет до dhāvati й avatiṣṭhate. yathā-tathā та yatra-tatra — співвідносні прислівникові сполучення «як би не було» й «де б не було»; samaḥ eva avatiṣṭhate — «саме рівним залишається» (avatiṣṭhate: теперішній час, 3-тя особа однини, середній стан).",
+  "literal_meaning": "«Той, чий розум заспокоївся, не біжить ні до людного місця, ні до лісу; хоч як і хоч де — він лишається однаково рівним».",
+  "ukrainian_translation": "Той, чий розум умиротворився, не рветься ні в людний натовп, ні в лісову самоту. Де б він не був і як би не склалися обставини, він зберігає внутрішню рівновагу.",
+  "commentary": "На завершення 18-ї глави зіставлено два протилежні середовища: людне місце й лісове усамітнення. Подвійне заперечення na ... na ... стосується пориву шукати певне місце, а не формулює заборону жити серед людей чи на самоті. Повторювані yathā-tathā і yatra-tatra зміщують увагу з обставин на незмінність стану, виражену sama eva avatiṣṭhate. Це власне прочитання синтаксису вірша, а не приписаний давньому авторові чи традиційному коментаторові дослівний висновок. Наукову й редакторську рецензію ще не проведено.",
+  "variants": [
+    {
+      "witness": "SARIT TEI та доступне дзеркало GRETIL (попереднє зіставлення, не остаточна звірка)",
+      "note": "У SARIT подано nāraṇyamupaśāntadhīḥ без пробілу, у доступному дзеркалі GRETIL — nāraṇyam upaśāntadhīḥ. Це різниця сегментації, а не доведене літерне різночитання. Офіційна сторінка GRETIL під час цього опрацювання була недоступна (502); порівняння первинних цифрових свідків залишається відкритим.",
+      "evidence_url": "https://tylergneill.github.io/gretil-mirror/gretil/corpustei/transformations/html/sa_aSTAvakragItA.htm"
+    }
+  ],
+  "variants_checked": false,
+  "rights": {
+    "basis": "Власні український переклад, граматичний розбір і коментар, підготовлені за короткою цитатою санскритського вірша з атрибуцією джерела. SARIT є окремою електронною транскрипцією з власними умовами; її корпус і редакторський апарат тут не відтворюються. Законність повторного використання цифрового читання та всі права на публікацію не встановлені остаточно; до рецензування і правової перевірки картка залишається чернеткою.",
+    "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/dedb6b12c96490e62c60bf4b23ea817e992e70be/astavakragita.xml",
+    "verified": false,
+    "own_ukrainian_text": true
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_on": null,
+    "review_url": null
+  }
+}
