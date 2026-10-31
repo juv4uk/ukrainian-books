@@ -7,12 +7,12 @@
   "sources": {
     "gretil": {
       "url": "https://www.textgridrep.org/browse/49ks7.0",
-      "locator": "Avg_20.1; GRETIL/TextGrid (версія запису 2020-07-31)",
+      "locator": "Avg_20.1",
       "checked_on": "2026-10-31"
     },
     "sarit": {
       "url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
-      "locator": "<lg xml:id=\"verse_20.1\">; Git blob 0fbf1f2385b5e3331dd8dd625cab4b37c6d73103",
+      "locator": "verse_20.1",
       "checked_on": "2026-10-31"
     }
   },
@@ -31,7 +31,7 @@
   ],
   "variants_checked": true,
   "rights": {
-    "basis": "Давній оригінальний санскритський твір відокремлений від цифрових транскрипцій GRETIL/TextGrid (у метаданих заявлено CC BY-NC-SA 4.0) та SARIT (у TEI-заголовку є окремі умови). Через невстановлену правову підставу на повне відтворення цифрового рядка поля sanskrit та iast залишено null; надано точні URL і локатори. Український переклад, морфологічний розбір і коментар — новий власний текст, але це не дозвіл передруковувати чужі транскрипції чи коментарі. Потрібна незалежна перевірка прав перед книжковою публікацією.",
+    "basis": "Давній оригінальний санскритський твір відокремлений від цифрових транскрипцій GRETIL/TextGrid (у метаданих заявлено CC BY-NC-SA 4.0) та SARIT (у TEI-заголовку є окремі умови). Через невстановлену правову підставу на повне відтворення цифрового рядка поля sanskrit та iast залишено null; надано точні URL і локатори. Український переклад, морфологічний розбір і коментар — новий власний текст, але це не дозвіл передруковувати чужі транскрипції чи коментарі. Потрібна незалежна перевірка прав перед книжковою публікацією. Точне джерело SARIT: Git blob 0fbf1f2385b5e3331dd8dd625cab4b37c6d73103; GRETIL/TextGrid: версія 2020-07-31.",
     "evidence_url": "https://github.com/juv4uk/ukrainian-books/blob/main/COPYRIGHT_AND_SOURCES.md",
     "verified": false,
     "own_ukrainian_text": true
