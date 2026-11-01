@@ -4,13 +4,21 @@ on:
   pull_request:
     paths:
       - 'scripts/check_scholarly_pages.py'
+      - 'scripts/build_format_v2_chapter.py'
       - 'tests/test_scholarly_pages.py'
+      - 'tests/test_scholarly_pages_match_generator.py'
+      - 'books/*/rozdil-*-naukove.md'
+      - 'docs/FORMAT_V2.md'
       - '.github/workflows/scholarly-format.yml'
   push:
     branches: [main]
     paths:
       - 'scripts/check_scholarly_pages.py'
+      - 'scripts/build_format_v2_chapter.py'
       - 'tests/test_scholarly_pages.py'
+      - 'tests/test_scholarly_pages_match_generator.py'
+      - 'books/*/rozdil-*-naukove.md'
+      - 'docs/FORMAT_V2.md'
       - '.github/workflows/scholarly-format.yml'
   workflow_dispatch:
 
@@ -19,7 +27,7 @@ permissions:
 
 jobs:
   test:
-    name: Наукові сторінки — 15 позитивних і негативних тестів
+    name: Наукові сторінки — перевірка, канон і генератор разом
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -27,3 +35,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Перевірити наукові шари, українські паралелі та SVG
         run: python3 -m unittest discover -s tests -p 'test_scholarly_pages.py' -v
+      - name: Перевірити, що генератор і перевірка не розійшлися в маркерах
+        run: python3 -m unittest discover -s tests -p 'test_scholarly_pages_match_generator.py' -v
+      - name: Перевірити всі 20 книжкових глав
+        run: python3 scripts/check_scholarly_pages.py books/ashtavakra-gita/rozdil-*-naukove.md
