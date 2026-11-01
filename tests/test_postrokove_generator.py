@@ -101,5 +101,58 @@ class PostrokoviTests(unittest.TestCase):
             self._get(bad)
 
 
+    def test_four_explicit_padas_group_into_two_printed_lines(self) -> None:
+        card = copy.deepcopy(self.card)
+        card["id"] = "16.3"
+        card["iast"] = (
+            "āyāsāt sakalo duḥkhī | nainaṃ jānāti kaścana | "
+            "anenaivopadeśena | dhanyaḥ prāpnoti nirvṛtim ||"
+        )
+        card["ukrainian_translation"] = (
+            "Від натуги всі нещасні, і ніхто з них цього не бачить. "
+            "Блаженний же досягає вгамування самим лише цим настановленням."
+        )
+        entry = {
+            "postrokovo": {
+                "status": "чернетка",
+                "lines": [
+                    {
+                        "iast": "āyāsāt sakalo duḥkhī nainaṃ jānāti kaścana",
+                        "ukrainian_translation": "Від натуги всі нещасні, і ніхто з них цього не бачить.",
+                        "commentary": "Перша друкована половина, дві пади.",
+                    },
+                    {
+                        "iast": "anenaivopadeśena dhanyaḥ prāpnoti nirvṛtim",
+                        "ukrainian_translation": (
+                            "Блаженний же досягає вгамування самим лише цим настановленням."
+                        ),
+                        "commentary": "Друга друкована половина, дві пади.",
+                    },
+                ],
+            }
+        }
+        result = builder.layers(card, {"verses": {"16.3": entry}}, {})
+        rows = result["postrokovo"]["lines"]
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["iast"], entry["postrokovo"]["lines"][0]["iast"])
+        self.assertEqual(rows[1]["iast"], entry["postrokovo"]["lines"][1]["iast"])
+        self.assertIn("### Рядок а", builder.render_markdown_verse(result))
+        self.assertEqual(builder.render_latex_verse(result).count(r"\vdeva{"), 3)
+
+    def test_three_explicit_padas_are_not_silently_grouped(self) -> None:
+        card = copy.deepcopy(self.card)
+        card["iast"] = "āyāsāt | sakalo duḥkhī | nainaṃ jānāti kaścana ||"
+        from scripts.postrokove import prepare_alignment
+        with self.assertRaisesRegex(ValueError, "двох"):
+            prepare_alignment(card, {"postrokovo": self.alignment})
+
+    def test_four_padas_with_mismatched_printed_halfline_rejected(self) -> None:
+        card = copy.deepcopy(self.card)
+        card["iast"] = "āyāsāt | sakalo duḥkhī | nainaṃ jānāti | kaścana ||"
+        from scripts.postrokove import prepare_alignment
+        with self.assertRaisesRegex(ValueError, "IAST"):
+            prepare_alignment(card, {"postrokovo": self.alignment})
+
+
 if __name__ == "__main__":
     unittest.main()

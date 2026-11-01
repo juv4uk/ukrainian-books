@@ -34,7 +34,11 @@ def prepare_alignment(card: dict, entry: dict) -> dict | None:
         raise ValueError(f"{ident}: потрібно рівно два друковані піврядки")
 
     full_iast = _text(card.get("iast"))
-    expected = [part.strip() for part in re.split(r"\|+", full_iast) if part.strip()]
+    padas = [part.strip() for part in re.split(r"\|+", full_iast) if part.strip()]
+    # Деякі картки зберігають чотири явні метричні пади, а не два
+    # друковані піврядки. Поєднуємо лише 1+2 та 3+4: жодного здогаду
+    # про межі без наявних роздільників і жодної зміни самих слів.
+    expected = [" ".join(padas[:2]), " ".join(padas[2:])] if len(padas) == 4 else padas
     if len(expected) != 2:
         raise ValueError(f"{ident}: картка не має двох відділених | піврядків")
 
