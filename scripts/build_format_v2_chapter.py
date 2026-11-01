@@ -13,6 +13,11 @@
    українська паралель (`books/ashtavakra-gita/paraleli.json`), якщо вона є;
 6. **ілюстрація** — власна схема з `ilustratsii/`, якщо вона є.
 
+Ті самі шість шарів ідуть і у верстку: макрос `\vdeva` (деванагарі),
+`\viast` (IAST), `\vtranslit` (українська транслітерація), `\vperek`
+(переклад), `\vcom` (коментар), `\vfig` (ілюстрація). Шар IAST довго був
+лише в Markdown — тепер він є і в `.tex`, і в PDF.
+
 Маркери шарів (`**Деванагарі.**`, `**IAST.**`, `**Українська транслітерація.**`,
 `**Переклад.**`, `**Коментар.**`) — це контракт із
 `scripts/check_scholarly_pages.py`: перевірка вимагає саме їх і саме в цьому
@@ -241,6 +246,8 @@ def render_latex_verse(data: dict) -> str:
     parts = [r"\vsec{%s}" % esc(data["id"])]
     if data["devanagari"]:
         parts.append(r"\vdeva{%s}" % esc(data["devanagari"]))
+    if data.get("iast"):
+        parts.append(r"\viast{%s}" % esc(data["iast"]))
     if data["transliteration"]:
         parts.append(r"\vtranslit{%s}" % esc(data["transliteration"]))
     if data["translation"]:
@@ -250,6 +257,7 @@ def render_latex_verse(data: dict) -> str:
         for line in data["postrokovo"]["lines"]:
             parts.append(r"\vcom{%s}" % esc("Рядок " + line["label"]))
             parts.append(r"\vdeva{%s}" % esc(line["devanagari"]))
+            parts.append(r"\viast{%s}" % esc(line["iast"]))
             parts.append(r"\vtranslit{%s}" % esc(line["transliteration"]))
             parts.append(r"\vperek{%s}" % esc(line["translation"]))
             parts.append(r"\vcom{%s}" % esc(line["commentary"]))

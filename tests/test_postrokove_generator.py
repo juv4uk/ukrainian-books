@@ -59,6 +59,7 @@ class PostrokoviTests(unittest.TestCase):
         self.assertIn(self.card["ukrainian_translation"], md)
         self.assertIn(r"\vsec{5.1}", tex)
         self.assertEqual(tex.count(r"\vdeva{"), 3)  # повний вірш + два рядки
+        self.assertEqual(tex.count(r"\viast{"), 3)  # IAST є в обох форматах
         self.assertEqual(tex.count(r"\vperek{"), 3)
         for line in record["postrokovo"]["lines"]:
             self.assertIn(line["translation"], md)
@@ -69,6 +70,7 @@ class PostrokoviTests(unittest.TestCase):
         self.assertIsNone(item["postrokovo"])
         self.assertNotIn("Построкове зіставлення", builder.render_markdown_verse(item))
         self.assertEqual(builder.render_latex_verse(item).count(r"\vdeva{"), 1)
+        self.assertEqual(builder.render_latex_verse(item).count(r"\viast{"), 1)
 
     def test_wrong_iast_is_rejected(self) -> None:
         bad = copy.deepcopy(self.alignment)
@@ -138,6 +140,7 @@ class PostrokoviTests(unittest.TestCase):
         self.assertEqual(rows[1]["iast"], entry["postrokovo"]["lines"][1]["iast"])
         self.assertIn("### Рядок а", builder.render_markdown_verse(result))
         self.assertEqual(builder.render_latex_verse(result).count(r"\vdeva{"), 3)
+        self.assertEqual(builder.render_latex_verse(result).count(r"\viast{"), 3)
 
     def test_three_explicit_padas_are_not_silently_grouped(self) -> None:
         card = copy.deepcopy(self.card)
