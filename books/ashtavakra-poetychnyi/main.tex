@@ -1,0 +1,88 @@
+% =====================================================================
+%  «Аштавакра-ґіта» — поетичний переклад українською.
+%  Окремий том, відмінний від наукового видання:
+%    books/ashtavakra-hita-pilot/  — наукове представлення кожного вірша
+%    books/ashtavakra-gita/        — формат-02 з ілюстраціями
+%  Тут — лише поетичний текст і примітки перекладача.
+%
+%  Складання:
+%    python3 scripts/build_poetic_book.py
+%    latexmk -xelatex main.tex
+%
+%  Потрібні пакети: fontspec, polyglossia, geometry; шрифт DejaVu Serif.
+% =====================================================================
+\documentclass[10pt,a5paper,openany]{book}
+
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}[Ligatures=TeX]
+\setsansfont{DejaVu Sans}[Ligatures=TeX,Scale=MatchLowercase]
+
+\usepackage{polyglossia}
+\setdefaultlanguage{ukrainian}
+\setotherlanguage{english}
+
+\usepackage[a5paper,top=17mm,bottom=19mm,inner=17mm,outer=15mm,headsep=5mm]{geometry}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% --- макроси верстки поетичного тексту --------------------------------
+\newcommand{\poemchapter}[1]{%
+  \clearpage
+  \begin{center}
+    {\sffamily\large Розділ #1}\par
+  \end{center}
+  \vspace{4mm}}
+
+\newcommand{\poemverse}[1]{%
+  \vspace{3mm}%
+  {\sffamily\footnotesize #1}\par
+  \vspace{1mm}}
+
+% Одна строфа: рядки розділені `\\`, тому збираємо їх у звичайний абзац
+% із збільшеним міжрядковим інтервалом.
+\newcommand{\poemstanza}[1]{%
+  \begingroup
+  \setlength{\parindent}{0pt}%
+  \setlength{\baselineskip}{1.45\baselineskip}%
+  \begin{flushleft}#1\end{flushleft}%
+  \endgroup
+  \vspace{2mm}}
+
+\newcommand{\poemsection}[1]{%
+  \vspace{6mm}%
+  {\sffamily\normalsize #1}\par
+  \vspace{2mm}}
+
+\newcommand{\poemnote}[1]{%
+  \begingroup
+  \small
+  \begin{flushleft}#1\end{flushleft}%
+  \endgroup
+  \vspace{3mm}}
+
+% --- титул ------------------------------------------------------------
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{18mm}
+  {\sffamily\Large АШТАВАКРА-ҐІТА}\par
+  \vspace{6mm}
+  {\itshape поетичний переклад українською}\par
+  \vspace{18mm}
+  {\sffamily\small РОБОЧЕ ПІЛОТНЕ ВИДАННЯ}\par
+  \vspace{4mm}
+  {\footnotesize
+   Це не завершена книга: поетичний переклад — власний,\\
+   не вивірений санскритологом і не рецензований.\par}
+  \vfill
+  {\footnotesize
+   Наукове представлення кожного вірша — окремий том.\\
+   Ліцензія власного внеску — «ВОЛЬНІСТЬ».\par}
+  \vspace*{10mm}
+\end{titlepage}
+
+\input{generated/poems.tex}
+
+\end{document}
