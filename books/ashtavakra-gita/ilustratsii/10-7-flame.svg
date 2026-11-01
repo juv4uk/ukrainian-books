@@ -1,7 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-labelledby="t-10-7">
-  <title id="t-10-7">Полумʼя без відпочинку: ліс сансари</title>
-  <desc>Власна схема редакції до вірша 10.7. Мотив: flame. Схема наша, не історична ілюстрація.</desc>
-  <rect width="420" height="280" fill="#fbf8f1"/><rect x="0.5" y="0.5" width="419" height="279" fill="none" stroke="#c9d3dd" stroke-width="1"/>
-  <path d="M210 200 q-46 -18 -46 -66 q0 -34 22 -58 q-6 30 12 44 q10 -34 30 -50 q-8 42 14 62 q22 22 10 52 q-8 22 -42 16 z" fill="none" stroke="#b0762a" stroke-width="2"/><path d="M210 186 q-18 -10 -18 -30 q0 -16 12 -28 q0 16 10 22 q4 -14 12 -22 q-2 22 6 32 q8 12 0 22 q-8 8 -22 4 z" fill="#b0762a" opacity="0.18"/><text x="210" y="232" font-family="Georgia, 'DejaVu Serif', serif" font-size="12" fill="#8aa0b5" text-anchor="middle">багатство, бажання, добрі вчинки</text><text x="210" y="46" font-family="Georgia, 'DejaVu Serif', serif" font-size="12" fill="#b0762a" text-anchor="middle">у лісі сансари розум не знав відпочинку</text>
-  <text x="20" y="272" font-family="Georgia, 'DejaVu Serif', serif" font-size="10" fill="#8aa0b5" text-anchor="start" font-style="italic">Схема наша, не історична ілюстрація</text><text x="400" y="272" font-family="Georgia, 'DejaVu Serif', serif" font-size="10" fill="#8aa0b5" text-anchor="end">ФОРМАТ-02</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-labelledby="zagolovok opis">
+  <title id="zagolovok">Ліс сансари — мандрівник не знаходить спочинку (Аштавакра-ґіта 10.7)</title>
+  <desc id="opis">Власна сучасна українська сюжетна ілюстрація: людина з торбиною стоїть на звивистій лісовій стежці. Праворуч дерев’яний вказівник має три таблички «Багатство», «Бажання», «Заслуги». Стежка повертається у темний ліс, а відкрита лавка відпочинку лишається осторонь. Образ показує думку вірша про розум, який у лісі сансари не знаходить відпочинку. Це не історичне індійське зображення, не рукописний доказ і не свідчення культурного впливу.</desc>
+  <rect width="420" height="280" fill="#f6f2e8"/>
+  <rect x="0.5" y="0.5" width="419" height="279" fill="none" stroke="#9aaba0"/>
+  <path d="M0 65 Q95 32 201 64 T420 62 V219 H0 Z" fill="#e5eada"/>
+  <path d="M0 144 Q72 101 141 133 Q228 96 302 132 Q372 107 420 131 V246 H0 Z" fill="#d3dfc8"/>
+  <path d="M0 207 Q70 167 139 186 Q239 147 324 189 Q376 172 420 185 V249 H0 Z" fill="#bacda9"/>
+  <g fill="#54715e" stroke="#3c5a4b" stroke-linejoin="round">
+    <path d="M27 202 L17 169 Q-6 151 18 135 Q1 118 28 104 Q51 117 39 136 Q63 153 42 169 L34 202 Z"/>
+    <path d="M94 208 L87 170 Q61 149 80 126 Q69 111 93 94 Q120 111 105 126 Q126 145 109 166 L101 208 Z"/>
+    <path d="M344 200 L337 160 Q318 149 334 128 Q324 106 348 90 Q371 103 361 128 Q377 149 355 162 L351 200 Z"/>
+    <path d="M401 203 L396 177 Q382 158 390 148 Q378 125 405 109 Q430 128 419 145 L427 201 Z"/>
+  </g>
+  <g stroke="#695b42" stroke-width="5" stroke-linecap="round">
+    <path d="M29 201 V168"/><path d="M95 207 V171"/><path d="M347 200 V160"/><path d="M402 206 V176"/>
+  </g>
+  <path d="M176 252 C190 224 244 226 251 199 C260 170 205 171 227 143 C244 122 278 135 266 113" fill="none" stroke="#72816d" stroke-width="42" stroke-linecap="round"/>
+  <path d="M176 252 C190 224 244 226 251 199 C260 170 205 171 227 143 C244 122 278 135 266 113" fill="none" stroke="#e6d5b8" stroke-width="35" stroke-linecap="round"/>
+  <path d="M177 254 C190 222 245 228 253 199 C259 173 208 173 227 143 C244 122 278 135 266 113" fill="none" stroke="#c6aa83" stroke-width="1.5" stroke-dasharray="4 7"/>
+  <g stroke="#485e54" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="211" cy="183" r="9" fill="#edc7a0" stroke-width="1.5"/>
+    <path d="M211 192 L214 219 L205 244 M213 219 L230 238 M212 198 L197 217 M212 197 L229 210" fill="none" stroke-width="5"/>
+    <path d="M200 196 Q188 194 189 211 Q193 220 202 218 Z" fill="#a97c4d" stroke="#72573c" stroke-width="1.5"/>
+    <path d="M233 211 L236 245" stroke="#795a3c" stroke-width="2.6"/>
+  </g>
+  <g stroke="#735941" stroke-width="2.6" stroke-linejoin="round">
+    <path d="M303 207 V120" fill="none"/>
+    <path d="M288 124 H395 L386 142 H288 Z" fill="#e8d3b4"/>
+    <path d="M284 148 H388 L397 166 H284 Z" fill="#d8b790"/>
+    <path d="M289 172 H380 L389 190 H289 Z" fill="#e8d3b4"/>
+  </g>
+  <g fill="#314b43" font-family="sans-serif" font-weight="600" font-size="11" text-anchor="middle">
+    <text x="340" y="137">Багатство</text>
+    <text x="340" y="161">Бажання</text>
+    <text x="340" y="185">Заслуги</text>
+  </g>
+  <g stroke="#736a56" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M74 231 L130 231 M81 219 L81 231 M123 219 L123 231 M80 220 Q102 211 124 220"/>
+  </g>
+  <text x="102" y="248" font-family="sans-serif" font-size="9" fill="#5d665e" text-anchor="middle">Спочинок</text>
+  <rect x="11" y="8" width="398" height="38" rx="6" fill="#fdfaf3" fill-opacity=".94"/>
+  <text x="210" y="23" font-family="sans-serif" font-size="15" font-weight="700" fill="#344c41" text-anchor="middle">Ліс сансари</text>
+  <text x="210" y="38" font-family="sans-serif" font-size="10.5" fill="#53685c" text-anchor="middle">Мандрівник іде стежкою, але розум не знає відпочинку</text>
+  <rect x="0" y="263" width="420" height="17" fill="#f8f5ed"/>
+  <text x="12" y="275" font-family="sans-serif" font-size="8.6" fill="#61716b">Власна сучасна смислова сцена · не історична ілюстрація</text>
 </svg>
