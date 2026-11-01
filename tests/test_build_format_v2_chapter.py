@@ -148,8 +148,8 @@ class LatexTests(unittest.TestCase):
         # \vfig несе і схему, і наративну сцену, тому в главі 1 його більше,
         # ніж віршів: 20 схем + стільки сцен, скільки зареєстровано на главу 1.
         scenes = sum(1 for verse in builder.load_scenes() if verse.startswith("1."))
-        expected = {r"\vdeva": 20, r"\vtranslit": 20, r"\vperek": 20, r"\vcom": 20,
-                    r"\vpar": 20, r"\vfig": 20 + scenes}
+        expected = {r"\vdeva": 20, r"\viast": 20, r"\vtranslit": 20, r"\vperek": 20,
+                    r"\vcom": 20, r"\vpar": 20, r"\vfig": 20 + scenes}
         for macro, count in expected.items():
             with self.subTest(macro=macro):
                 self.assertEqual(self.tex.count(macro + "{"), count)
@@ -233,6 +233,32 @@ class BookTests(unittest.TestCase):
         main = (BOOK / "main.tex").read_text(encoding="utf-8")
         self.assertIn("Devanagari", main)
         self.assertIn("Script=Devanagari", main)
+
+    def test_main_tex_has_iast_layer(self) -> None:
+        """Шар IAST мусить бути у верстці, а не лише в Markdown."""
+        main = (BOOK / "main.tex").read_text(encoding="utf-8")
+        self.assertIn(r"\def\viast#1", main)
+        self.assertIn(r"\textbf{IAST.}", main)
+        # IAST рендерить основний шрифт: окремого \newfontfamily для нього немає.
+        self.assertIn(r"\setmainfont{DejaVu Serif}", main)
+
+    def test_every_chapter_tex_has_iast_on_every_verse(self) -> None:
+        """Усі 20 глав: \\viast стоїть на кожному вірші й кожному рядкові."""
+        parallels = builder.load_parallels()
+        scenes = builder.load_scenes()
+        for chapter in builder.chapters_with_cards():
+            with self.subTest(chapter=chapter):
+                cards = builder.load_cards(chapter)
+                extra = builder.load_extra(chapter)
+                tex = (BOOK / "generated" / f"rozdil-{chapter}.tex").read_text(
+                    encoding="utf-8")
+                padas = 0
+                for card in cards:
+                    data = builder.layers(card, extra, parallels, scenes)
+                    if data["postrokovo"]:
+                        padas += len(data["postrokovo"]["lines"])
+                    self.assertIn(r"\viast{%s}" % builder.esc(data["iast"]), tex)
+                self.assertEqual(tex.count(r"\viast{"), len(cards) + padas)
 
     def test_provenance_exists(self) -> None:
         self.assertTrue((BOOK / "PROVENANCE.md").is_file())

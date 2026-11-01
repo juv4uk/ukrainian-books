@@ -54,6 +54,7 @@ class PostrokoviInBookTests(unittest.TestCase):
                         expected_tex += [
                             r"\vcom{%s}" % builder.esc("Рядок " + line["label"]),
                             r"\vdeva{%s}" % builder.esc(line["devanagari"]),
+                            r"\viast{%s}" % builder.esc(line["iast"]),
                             r"\vtranslit{%s}" % builder.esc(line["transliteration"]),
                             r"\vperek{%s}" % builder.esc(line["translation"]),
                             r"\vcom{%s}" % builder.esc(line["commentary"]),
