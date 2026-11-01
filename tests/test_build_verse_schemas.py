@@ -70,6 +70,20 @@ class SpecsTests(unittest.TestCase):
 
 
 class RenderTests(unittest.TestCase):
+    def test_18_100_tells_a_story_in_two_ukrainian_scenes(self) -> None:
+        """Рівний стан не залежить від втечі до натовпу чи лісу."""
+        svg = render("18.100")
+        self.assertIn("Серед людей", svg)
+        self.assertIn("У лісі", svg)
+        self.assertIn("Не поспішає до натовпу", svg)
+        self.assertIn("Не втікає до лісу", svg)
+        self.assertIn("Там чи там — рівний стан", svg)
+        self.assertIn("Дві сюжетні сцени", svg)
+        self.assertIn(HONEST, svg)
+        ET.fromstring(svg)
+        self.assertEqual(filename("18.100"), "18-100-motion.svg")
+        self.assertNotIn("<image", svg)
+
     def test_every_schema_is_valid_xml(self) -> None:
         for verse in SPECS:
             with self.subTest(verse=verse):
