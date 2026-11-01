@@ -5,6 +5,21 @@
   "intro": "Третя глава — найнеспокійніша з перших трьох. Вона не описує, як здобути знання, а показує, що знання саме по собі не вирішує нічого: у ній пʼять разів звучить aho там, де мудрець ловить себе на тому, що лишилося. Звідси — три останні вірші, де спокій описано не як здобуток, а як те, після чого питання про здобуток відпадає.",
   "verses": {
     "3.1": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "avināśinam ātmānam ekaṃ vijñāya tattvataḥ",
+            "ukrainian_translation": "Пізнавши істинно Атман — незнищенний і єдиний —",
+            "commentary": "avināśinam, ātmānam та ekam стоять у знахідному відмінку; vijñāya («пізнавши») задає попередню дію, tattvataḥ — «істинно». Перший друкований піврядок не містить ще питання про користь."
+          },
+          {
+            "iast": "tavātmajñasya dhīrasya katham arthārjane ratiḥ",
+            "ukrainian_translation": "як у тебе, атмазнавця й мудрого, може бути втіха в набутті користі?",
+            "commentary": "katham вводить риторичне «як?», arthārjane означає набуття користі, ratiḥ — втіху. У SARIT стоїть tavātmajñānadhīrasya, у чинній картці за GRETIL — tavātmajñasya dhīrasya: це реальна граматична відмінність цифрових читань, а не вирішений рукописний варіант."
+          }
+        ]
+      },
       "parallel": "3-1",
       "illustration": {
         "file": "3-1-balance.svg",
@@ -12,6 +27,21 @@
       }
     },
     "3.2": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "ātmājñānād aho prītir viṣayabhramagocare",
+            "ukrainian_translation": "О диво! Через незнання Атмана з'являється прихильність у полі омани чуттєвих предметів —",
+            "commentary": "ātmājñānād позначає причину: незнання Атмана; aho — вигук, prītiḥ — прихильність, viṣayabhramagocare — поле омани чуттєвих предметів. Це вихідне твердження, а не вже пояснена аналогія."
+          },
+          {
+            "iast": "śukter ajñānato lobho yathā rajatavibhrame",
+            "ukrainian_translation": "як через незнання перламутру з'являється жадоба в омані срібла.",
+            "commentary": "śukteḥ ajñānataḥ — через незнання перламутру; lobhaḥ — жадоба, rajatavibhrame — омана срібла. Порівняння yathā пояснює першу половину образом помилково впізнаного срібла; це підстава для сюжетної ілюстрації мушлі й сріблястого відблиску, не доказ алхімічного перетворення."
+          }
+        ]
+      },
       "parallel": "3-2",
       "illustration": {
         "file": "3-2-illusion.svg",
@@ -19,6 +49,21 @@
       }
     },
     "3.3": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "viśvaṃ sphurati yatredaṃ taraṅgā iva sāgare",
+            "ukrainian_translation": "Пізнавши: «я — те, у чому сяє весь цей світ, як хвилі в морі», —",
+            "commentary": "viśvaṃ sphurati — світ сяє або виявляється, yatra — «де, у чому», taraṅgā iva sāgare — немов хвилі в морі. Українська фраза починає цитату «я — те» до появи so 'ham у другому санскритському піврядку; це смисловий, не послівний поділ."
+          },
+          {
+            "iast": "so 'ham asmīti vijñāya kiṃ dīna iva dhāvasi",
+            "ukrainian_translation": "чого ти біжиш, наче вбогий?",
+            "commentary": "so 'ham asmīti vijñāya — пізнавши «це я є», kim ... dhāvasi — чого біжиш, dīna iva — немов убогий. Через українську будову речення частина цієї санскритської половини вже передана у фразі рядка а; механічної один-до-одного відповідності глос не заявляємо."
+          }
+        ]
+      },
       "parallel": "3-3",
       "illustration": {
         "file": "3-3-motion.svg",
@@ -26,6 +71,21 @@
       }
     },
     "3.4": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "śrutvāpi śuddhacaitanyam ātmānam atisundaram",
+            "ukrainian_translation": "Навіть почувши про Атман — чисту свідомість, надзвичайно прекрасну, —",
+            "commentary": "śrutvāpi — навіть почувши, śuddhacaitanyam — чисту свідомість, ātmānam — Атман, atisundaram — надзвичайно прекрасну. Чуте вчення ще не ототожнюється зі зміненим життям."
+          },
+          {
+            "iast": "upasthe 'tyantasaṃsakto mālinyam adhigacchati",
+            "ukrainian_translation": "той, хто надмірно прив'язаний до того, що під рукою, набуває бруду.",
+            "commentary": "upasthe багатозначне: «на лоні», «поблизу», «під рукою» й можливий тілесний відтінок; atyantasaṃsaktaḥ — надмірно прив'язаний, mālinyam adhigacchati — набуває нечистоти. Чинну обережну двозначність не замінювати довільною моралізацією."
+          }
+        ]
+      },
       "parallel": "3-4",
       "illustration": {
         "file": "3-4-balance.svg",
@@ -33,6 +93,21 @@
       }
     },
     "3.5": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "sarvabhūteṣu cātmānaṃ sarvabhūtāni cātmani",
+            "ukrainian_translation": "О диво: у мудреця, який знає Атман у всіх істотах і всі істоти — в Атмані,",
+            "commentary": "sarvabhūteṣu cātmānaṃ та sarvabhūtāni cātmani утворюють два обернені відношення: Атман у всіх істотах і всі істоти в Атмані. Українська перша половина вже містить «о диво» й мудреця з другої санскритської половини; сегментація смислова."
+          },
+          {
+            "iast": "muner jānata āścaryaṃ mamatvam anuvartate",
+            "ukrainian_translation": "досі тримається «моє».",
+            "commentary": "muneḥ jānataḥ — «мудреця, що знає», āścaryaṃ — диво, mamatvam anuvartate — мійність далі тримається. Українське «моє» передає звичку привласнювати, а не право власності; частину цього рядка синтаксично перенесено до рядка а."
+          }
+        ]
+      },
       "parallel": "3-5",
       "illustration": {
         "file": "3-5-knot.svg",
@@ -40,6 +115,21 @@
       }
     },
     "3.6": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "āsthitaḥ paramādvaitaṃ mokṣārthe 'pi vyavasthitaḥ",
+            "ukrainian_translation": "Той, хто утвердився у вищій недвоїстості й стоїть навіть у справі звільнення, —",
+            "commentary": "āsthitaḥ paramādvaitaṃ — утвердився у вищій недвоїстості, mokṣārthe 'pi vyavasthitaḥ — навіть утвердився у справі звільнення. Два дієприкметники підкреслюють контраст із другою половиною."
+          },
+          {
+            "iast": "āścaryaṃ kāmavaśago vikalaḥ keliśikṣayā",
+            "ukrainian_translation": "о диво! — під владою бажання: безпорадний, мов у грі-вправлянні.",
+            "commentary": "āścaryam — вигук подиву, kāmavaśagaḥ — той, хто під владою бажання, vikalaḥ — безпорадний, keliśikṣayā — у контексті гри чи вправляння. Чинний переклад лишається робочим; не додавати непідтвердженого сюжету."
+          }
+        ]
+      },
       "parallel": "3-6",
       "illustration": {
         "file": "3-6-knot.svg",
@@ -47,6 +137,21 @@
       }
     },
     "3.7": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "udbhūtaṃ jñānadurmitram avadhāryātidurbalaḥ",
+            "ukrainian_translation": "О диво! Зрозумівши, що знання виявилося поганим другом, — надзвичайно слабкий —",
+            "commentary": "jñānadurmitram допускає різні межі складного слова «знання — поганий друг»; avadhārya — усвідомивши, atidurbalaḥ — надзвичайно слабкий. «О диво» українського речення відповідає āścaryam у другому санскритському піврядку, тому поділ семантичний."
+          },
+          {
+            "iast": "āścaryaṃ kāmam ākāṅkṣet kālam antam anuśritaḥ",
+            "ukrainian_translation": "він усе одно прагнув би бажання, дійшовши до кінця часу.",
+            "commentary": "ākāṅkṣet — оптатив «прагнув би», kāmam — бажання, kālam antam anuśritaḥ стосується досягнення кінця часу. Не перетворювати умовну дієслівну форму на факт чи історичну біографію особи."
+          }
+        ]
+      },
       "parallel": "3-7",
       "illustration": {
         "file": "3-7-flame.svg",
@@ -54,6 +159,21 @@
       }
     },
     "3.8": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "ihāmutra viraktasya nityānityavivekinaḥ",
+            "ukrainian_translation": "О диво: у того, хто відвернувся від цього й того світу, хто розрізняє вічне й невічне, хто бажає звільнення, —",
+            "commentary": "iha-amutra viraktasya — того, хто відвернувся від тутешнього й потойбічного, nityānityavivekinaḥ — хто розрізняє вічне й невічне. Українське «О диво» та «хто бажає звільнення» відповідають другому санскритському рядку; це смисловий, не послівний поділ."
+          },
+          {
+            "iast": "āścaryaṃ mokṣakāmasya mokṣād eva vibhīṣikā",
+            "ukrainian_translation": "страх саме від звільнення.",
+            "commentary": "mokṣakāmasya — того, хто бажає визволення; mokṣād eva vibhīṣikā — страх саме від визволення, з аблативом причини. Зміст парадоксальний, але не дає підстав вигадувати додаткові психологічні діагнози."
+          }
+        ]
+      },
       "parallel": "3-8",
       "illustration": {
         "file": "3-8-knot.svg",
@@ -61,6 +181,21 @@
       }
     },
     "3.9": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "dhīras tu bhojyamāno 'pi pīḍyamāno 'pi sarvadā",
+            "ukrainian_translation": "Мудрий же — чи його голублять, чи його мучать — завжди,",
+            "commentary": "bhojyamānaḥ і pīḍyamānaḥ — два пасивні дієприкметники («той, кому дають насолоду» / «той, кого мучать»). sarvadā — «завжди»; чинне «голублять» є літературним відповідником, не окремо доведеною побуквеною глосою."
+          },
+          {
+            "iast": "ātmānaṃ kevalaṃ paśyan na tuṣyati na kupyati",
+            "ukrainian_translation": "бачачи лише Атман, і не радіє, і не гнівається.",
+            "commentary": "ātmānaṃ kevalaṃ paśyan — бачачи тільки Атман; na tuṣyati na kupyati — дві окремі заперечні дієслівні форми. Це опис стану мудрого в тексті, не порада ігнорувати чужі страждання."
+          }
+        ]
+      },
       "parallel": "3-9",
       "illustration": {
         "file": "3-9-balance.svg",
@@ -68,6 +203,21 @@
       }
     },
     "3.10": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "ceṣṭamānaṃ śarīraṃ svaṃ paśyaty anyaśarīravat",
+            "ukrainian_translation": "Своє тіло, що рухається, він бачить як тіло чуже.",
+            "commentary": "ceṣṭamānaṃ śarīraṃ svaṃ — власне тіло, що рухається; paśyaty anyaśarīravat — бачить як чуже тіло. Порівняння стосується погляду мовця, а не фізичного відокремлення тіла."
+          },
+          {
+            "iast": "saṃstave cāpi nindāyāṃ kathaṃ kṣubhyet mahāśayaḥ",
+            "ukrainian_translation": "То як у хвалі чи в ганьбі збентежився б великодухий?",
+            "commentary": "saṃstave та nindāyāṃ — у хвалі та осуді, kathaṃ — «як», kṣubhyet — можливе «збентежився б», mahāśayaḥ — великодухий. Питання риторичне і в чинному перекладі лишається питанням."
+          }
+        ]
+      },
       "parallel": "3-10",
       "illustration": {
         "file": "3-10-witness.svg",
@@ -75,6 +225,21 @@
       }
     },
     "3.11": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "māyāmātram idaṃ viśvaṃ paśyan vigatakautukaḥ",
+            "ukrainian_translation": "Бачачи, що весь цей світ — тільки мая, і втративши до нього охоту, —",
+            "commentary": "māyāmātram idaṃ viśvaṃ — цей світ лише мая, paśyan — бачачи, vigatakautukaḥ — той, у кого минув потяг до видовища. Це тлумачення ставлення до світу в межах твору, не твердження про фізичну неіснуючість речей."
+          },
+          {
+            "iast": "api sannihite mṛtyau kathaṃ trasyati dhīradhīḥ",
+            "ukrainian_translation": "навіть коли смерть уже поруч, як злякався б той, чий розум стійкий?",
+            "commentary": "sannihite mṛtyau — місцевий абсолютний зворот «коли смерть уже поруч», api — навіть; kathaṃ trasyati — як злякався б, dhīradhīḥ — той, чий розум стійкий. Не плутати спокій із закликом наражати себе на небезпеку."
+          }
+        ]
+      },
       "parallel": "3-11",
       "illustration": {
         "file": "3-11-illusion.svg",
@@ -82,6 +247,21 @@
       }
     },
     "3.12": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "niḥspṛhaṃ mānasaṃ yasya nairāśye 'pi mahātmanaḥ",
+            "ukrainian_translation": "У кого розум без прагнень, хто навіть у безнадії лишається великим духом,",
+            "commentary": "niḥspṛhaṃ mānasaṃ yasya — розум, позбавлений прагнень; nairāśye 'pi mahātmanaḥ — навіть за відсутності сподівань. Тут філософська «безнадія» не дорівнює клінічному стану."
+          },
+          {
+            "iast": "tasyātmajñānatṛptasya tulanā kena jāyate",
+            "ukrainian_translation": "хто вдоволений знанням Атмана, — з ким його й порівнювати?",
+            "commentary": "tasyātmajñānatṛptasya — того, хто вдоволений знанням Атмана, tulanā kena jāyate — з ким можна порівняти. Риторичне питання не є твердженням про соціальну вищість конкретної особи."
+          }
+        ]
+      },
       "parallel": "3-12",
       "illustration": {
         "file": "3-12-space.svg",
@@ -89,6 +269,21 @@
       }
     },
     "3.13": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "svabhāvād eva jānāno dṛśyam etan na kiñcana",
+            "ukrainian_translation": "Знаючи самою природою, що все видиме — аніщо, —",
+            "commentary": "svabhāvād eva jānānaḥ — знаючи за власною природою, dṛśyam etan na kiñcana — усе це видиме є аніщо у філософському вислові. Механічний текст не доводить фізичного заперечення видимого світу."
+          },
+          {
+            "iast": "idaṃ grāhyam idaṃ tyājyaṃ sa kiṃ paśyati dhīradhīḥ",
+            "ukrainian_translation": "«це треба взяти, це треба відкинути» — то що ж бачить той, чий розум стійкий?",
+            "commentary": "idam grāhyam / idam tyājyam — «це слід прийняти / це слід відкинути»; sa kiṃ paśyati dhīradhīḥ — що бачить той, чий розум стійкий. Лапки в українському перекладі — редакторський спосіб позначити протиставлені настанови."
+          }
+        ]
+      },
       "parallel": "3-13",
       "illustration": {
         "file": "3-13-neti.svg",
@@ -96,6 +291,21 @@
       }
     },
     "3.14": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "antastyaktakaṣāyasya nirdvandvasya nirāśiṣaḥ",
+            "ukrainian_translation": "У того, в кого всередині відкинуто каламуть, хто без двоїстості й без сподівань,",
+            "commentary": "antastyaktakaṣāyasya — того, в кого усунено внутрішню каламуть; nirdvandvasya — поза парами, nirāśiṣaḥ — без очікувань або побажань. Переклад «без сподівань» зберігає чинну редакцію."
+          },
+          {
+            "iast": "yadṛcchayāgato bhogo na duḥkhāya na tuṣṭaye",
+            "ukrainian_translation": "усе, що випадає само собою, не стає ні стражданням, ні задоволенням.",
+            "commentary": "yadṛcchayāgato bhogaḥ — досвід або насолода, що прийшла сама; na duḥkhāya na tuṣṭaye — не веде ані до страждання, ані до задоволення. Давальні форми не варто непомітно перетворювати на іншу граматичну конструкцію."
+          }
+        ]
+      },
       "parallel": "3-14",
       "illustration": {
         "file": "3-14-space.svg",
