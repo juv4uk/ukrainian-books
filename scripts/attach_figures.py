@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
-"""Додає до зверстаних віршів власні схеми, якщо вони існують.
+"""Додає до зверстаних віршів власні ілюстрації, якщо вони існують.
 
-Схеми лежать у `books/ashtavakra-gita/ilustratsii/N-M-назва.svg` і крок збірки
-конвертує їх у PDF. Цей скрипт вставляє `\\virfig{...}` у згенеровану верстку
-`books/ashtavakra-hita-pilot/generated/verses.tex` — безпосередньо перед рядком
-`\\virsources`, яким завершується кожен блок вірша.
+Два каталоги, два різні види матеріалу:
+
+* `ilustratsii-naratyvni/` — сюжетні малюнки: показують ситуацію вірша
+  (людина з торбиною на стежці, змія замість мотузки тощо);
+* `ilustratsii/` — машинні схеми, які генерує `build_verse_schemas.py`.
+
+Скрипт віддає перевагу сюжетній ілюстрації: вона розказує, а не позначає.
+Якщо сюжетної немає — бере схему. Якщо немає нічого — вірш лишається без
+рисунка.
+
+Посилання додається лише тоді, коли PDF ілюстрації вже існує: конвертація
+SVG → PDF виконується кроком збірки ДО цього скрипта.
 
 Скрипт ідемпотентний: якщо рисунок до вірша вже вставлено, він нічого не робить.
-Посилання додається лише тоді, коли PDF схеми вже існує: частина SVG у каталозі —
-ручні ілюстрації, яких конвертер не торкається, і посилання на них зламало б збірку.
 
 Запуск (після конвертації SVG → PDF):
     python3 scripts/attach_figures.py            # вставити
@@ -24,23 +30,26 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-FIGURES = ROOT / "books" / "ashtavakra-gita" / "ilustratsii"
+BOOK_DIR = ROOT / "books" / "ashtavakra-gita"
 VERSES = ROOT / "books" / "ashtavakra-hita-pilot" / "generated" / "verses.tex"
-PREFIX = "../ashtavakra-gita/ilustratsii/"
+
+# Порядок важливий: сюжетна ілюстрація розказує ситуацію, схема лише позначає.
+SOURCES = ("ilustratsii-naratyvni", "ilustratsii")
 
 VERSE = re.compile(r"^\\virs\{([0-9]+\.[0-9]+)\}")
-SOURCES = "\\virsources{"
+SOURCES_LINE = "\\virsources{"
 FIGURE = "\\virfig{"
 
 
 def figure_for(ident: str) -> str | None:
-    if not FIGURES.is_dir():
-        return None
-    for svg in sorted(FIGURES.glob(f"{ident.replace('.', '-')}-*.svg")):
-        # Беремо лише ту схему, для якої збірка вже зробила PDF: частина SVG
-        # у каталозі — ручні ілюстрації, яких конвертер не торкається.
-        if (FIGURES / (svg.stem + ".pdf")).is_file():
-            return PREFIX + svg.stem + ".pdf"
+    prefix = ident.replace(".", "-")
+    for folder in SOURCES:
+        directory = BOOK_DIR / folder
+        if not directory.is_dir():
+            continue
+        for svg in sorted(directory.glob(f"{prefix}-*.svg")):
+            if (directory / (svg.stem + ".pdf")).is_file():
+                return f"../ashtavakra-gita/{folder}/{svg.stem}.pdf"
     return None
 
 
@@ -56,7 +65,7 @@ def attach(text: str) -> tuple[str, int, int]:
             current = match.group(1)
         if line.startswith(FIGURE) and current:
             done.add(current)
-        if line.startswith(SOURCES) and current and current not in done:
+        if line.startswith(SOURCES_LINE) and current and current not in done:
             figure = figure_for(current)
             if figure:
                 out.append("\\virfig{%s}" % figure)
