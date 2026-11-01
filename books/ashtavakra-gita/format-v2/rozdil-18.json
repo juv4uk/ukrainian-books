@@ -47,7 +47,8 @@
       "illustration": {
         "file": "18-7-illusion.svg",
         "caption": "Побудова уяви й вільний Атман"
-      }
+      },
+      "parallel": "18-7"
     },
     "18.8": {
       "illustration": {
@@ -85,7 +86,8 @@
       "illustration": {
         "file": "18-13-space.svg",
         "caption": "Нічого не слід зробити: все йде як живеться"
-      }
+      },
+      "parallel": "18-13"
     },
     "18.14": {
       "illustration": {
@@ -110,7 +112,8 @@
       "illustration": {
         "file": "18-17-knot.svg",
         "caption": "Вузол розсіяння, якого немає в великодухого"
-      }
+      },
+      "parallel": "18-17"
     },
     "18.18": {
       "illustration": {
@@ -135,13 +138,15 @@
       "illustration": {
         "file": "18-21-thread.svg",
         "caption": "Сухий лист на вітрі самскар"
-      }
+      },
+      "parallel": "18-21"
     },
     "18.22": {
       "illustration": {
         "file": "18-22-flame.svg",
         "caption": "Прохолодне полумʼя без тіла"
-      }
+      },
+      "parallel": "18-22"
     },
     "18.23": {
       "illustration": {
@@ -172,7 +177,8 @@
       "illustration": {
         "file": "18-27-neti.svg",
         "caption": "Роздуми вичерпані: спочинок"
-      }
+      },
+      "parallel": "18-27"
     },
     "18.28": {
       "illustration": {
@@ -209,13 +215,15 @@
       "illustration": {
         "file": "18-33-neti.svg",
         "caption": "Зосередженість і припинення відпадають"
-      }
+      },
+      "parallel": "18-33"
     },
     "18.34": {
       "illustration": {
         "file": "18-34-balance.svg",
         "caption": "Дві шальки: зусилля й відсутність зусилля"
-      }
+      },
+      "parallel": "18-34"
     },
     "18.35": {
       "illustration": {
@@ -275,7 +283,8 @@
       "illustration": {
         "file": "18-44-balance.svg",
         "caption": "Дві шальки: опора прагнення й порожнеча волі"
-      }
+      },
+      "parallel": "18-44"
     },
     "18.45": {
       "illustration": {
@@ -330,7 +339,8 @@
       "illustration": {
         "file": "18-53-motion.svg",
         "caption": "Розкоші й нетрі — однаково для мудрих"
-      }
+      },
+      "parallel": "18-53"
     },
     "18.54": {
       "illustration": {
@@ -374,7 +384,8 @@
       "illustration": {
         "file": "18-60-space.svg",
         "caption": "Велике озеро без вітру"
-      }
+      },
+      "parallel": "18-60"
     },
     "18.61": {
       "illustration": {
@@ -398,7 +409,8 @@
       "illustration": {
         "file": "18-64-motion.svg",
         "caption": "Мудрець поводиться як дитина"
-      }
+      },
+      "parallel": "18-64"
     },
     "18.65": {
       "illustration": {
@@ -416,7 +428,8 @@
       "illustration": {
         "file": "18-67-flame.svg",
         "caption": "Невдаване самадгі"
-      }
+      },
+      "parallel": "18-67"
     },
     "18.68": {
       "parallel": "18-68",
@@ -495,7 +508,8 @@
       "illustration": {
         "file": "18-80-neti.svg",
         "caption": "Небо, пекло й визволення — ніщо"
-      }
+      },
+      "parallel": "18-80"
     },
     "18.81": {
       "illustration": {
@@ -519,19 +533,22 @@
       "illustration": {
         "file": "18-84-neti.svg",
         "caption": "Син, жінка, тіло — без надій"
-      }
+      },
+      "parallel": "18-84"
     },
     "18.85": {
       "illustration": {
         "file": "18-85-motion.svg",
         "caption": "Вдоволення скрізь, де зайшло сонце"
-      }
+      },
+      "parallel": "18-85"
     },
     "18.86": {
       "illustration": {
         "file": "18-86-balance.svg",
         "caption": "Дві шальки: тіло падає чи встає"
-      }
+      },
+      "parallel": "18-86"
     },
     "18.87": {
       "illustration": {
@@ -543,7 +560,8 @@
       "illustration": {
         "file": "18-88-balance.svg",
         "caption": "Дві шальки: грудка й золото"
-      }
+      },
+      "parallel": "18-88"
     },
     "18.89": {
       "parallel": "18-89",
@@ -556,13 +574,15 @@
       "illustration": {
         "file": "18-90-neti.svg",
         "caption": "Знає — не знає; бачить — не бачить"
-      }
+      },
+      "parallel": "18-90"
     },
     "18.91": {
       "illustration": {
         "file": "18-91-balance.svg",
         "caption": "Дві шальки: жебрак і володар"
-      }
+      },
+      "parallel": "18-91"
     },
     "18.92": {
       "illustration": {
@@ -574,13 +594,15 @@
       "illustration": {
         "file": "18-93-flame.svg",
         "caption": "Те, що переживається всередині, — не розповідається"
-      }
+      },
+      "parallel": "18-93"
     },
     "18.94": {
       "illustration": {
         "file": "18-94-balance.svg",
         "caption": "Дві шальки: сон і неспання"
-      }
+      },
+      "parallel": "18-94"
     },
     "18.95": {
       "illustration": {
@@ -599,7 +621,8 @@
       "illustration": {
         "file": "18-97-balance.svg",
         "caption": "Розсіяння й самадгі — не його"
-      }
+      },
+      "parallel": "18-97"
     },
     "18.98": {
       "illustration": {
@@ -618,7 +641,8 @@
       "illustration": {
         "file": "18-100-motion.svg",
         "caption": "Ні до людей, ні до лісу — рівний скрізь"
-      }
+      },
+      "parallel": "18-100"
     }
   }
 }
