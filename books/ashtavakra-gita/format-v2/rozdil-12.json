@@ -27,6 +27,21 @@
       }
     },
     "12.2": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "prītyabhāvena śabdāder adṛśyatvena cātmanaḥ",
+            "ukrainian_translation": "Через відсутність прихильності до звуку й подібного та через невидимість його для самого себе —",
+            "commentary": "prītyabhāvena — орудний причини «через відсутність прихильності», śabdāder — «до звуку й подібного»; adṛśyatvena cātmanaḥ — «і через невидимість для самого себе». Переклад картки залишено цілісним без додавання нової метафізичної тези."
+          },
+          {
+            "iast": "vikṣepaikāgryahṛdaya evam evāham āsthitaḥ",
+            "ukrainian_translation": "серце, для якого розсіяність і зосередженість одне — саме в цьому я стою.",
+            "commentary": "vikṣepaikāgryahṛdaya — складене означення щодо розсіяності та однозосередженості розуму; evam evāham āsthitaḥ — «саме в цьому я стою». Семантичне уточнення про їхню тотожність є редакторським поясненням, а не новим рукописним читанням."
+          }
+        ]
+      },
       "parallel": "12-2",
       "illustration": {
         "file": "12-2-witness.svg",
@@ -34,6 +49,21 @@
       }
     },
     "12.3": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "samādhyāsādivikṣiptau vyavahāraḥ samādhaye",
+            "ukrainian_translation": "Коли розсіяність походить від прагнення самадгі та подібного, то й звичайна діяльність — задля самадгі.",
+            "commentary": "samādhyāsādivikṣiptau описує розсіяність, спричинену прагненням самадгі та подібного; vyavahāraḥ samādhaye — діяльність заради самадгі. Це умовна редакторська передача синтаксису, не засудження будь-якої практики."
+          },
+          {
+            "iast": "evaṃ vilokya niyamam evam evāham āsthitaḥ",
+            "ukrainian_translation": "Так побачивши це правило, саме в цьому я стою.",
+            "commentary": "evaṃ vilokya niyamam — «так побачивши це правило»; evam evāham āsthitaḥ — повторюване «саме в цьому я стою». Підсумок стосується усвідомленого правила, а не додає нового наказу."
+          }
+        ]
+      },
       "parallel": "12-3",
       "illustration": {
         "file": "12-3-balance.svg",
@@ -41,6 +71,21 @@
       }
     },
     "12.4": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "heyopādeyavirahād evaṃ harṣaviṣādayoḥ",
+            "ukrainian_translation": "Через відсутність того, що відкидати й приймати, а отже —",
+            "commentary": "heyopādeyavirahād — «через відсутність того, що відкидати й приймати»; harṣaviṣādayoḥ — родовий/місцевий двоїни для радості та смутку, evam — «так, отже». Українська фраза перетікає в наступний піврядок: причинний abhāvād стоїть там."
+          },
+          {
+            "iast": "abhāvād adya he brahman nevam evāham āsthitaḥ",
+            "ukrainian_translation": "через відсутність радості й смутку, нині, о Брахмане, саме в цьому я стою.",
+            "commentary": "abhāvād — «через відсутність», adya he brahman — «нині, о Брахмане». Закінчення nevam evāham āsthitaḥ у картці має позначену синтаксичну неоднозначність sandhi, тому нової реконструкції чи остаточного виправлення не встановлюємо; український текст без змін."
+          }
+        ]
+      },
       "parallel": "12-4",
       "illustration": {
         "file": "12-4-neti.svg",
@@ -48,6 +93,21 @@
       }
     },
     "12.5": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "āśramānāśramaṃ dhyānaṃ cittasvīkṛtavarjanam",
+            "ukrainian_translation": "Медитація зі стадією життя і без неї, прийняття й відкидання, зроблені умом, —",
+            "commentary": "āśramānāśramaṃ dhyānaṃ — медитація зі стадією життя й без неї; cittasvīkṛtavarjanam — прийняття й відкидання, здійснені умом. Українське «усе це домислювання» граматично відкладено до другого рядка разом із санскритським vikalpam."
+          },
+          {
+            "iast": "vikalpaṃ mama vīkṣya etair evam evāham āsthitaḥ",
+            "ukrainian_translation": "усе це домислювання. Побачивши це в собі, через саме це я так стою.",
+            "commentary": "vikalpaṃ — «домислювання»; mama vīkṣya — «побачивши це в собі», etair evam evāham āsthitaḥ — фінальна формула про стояння. Соціальна оцінка життєвих станів тут лишається інтерпретацією, не буквальним додатком."
+          }
+        ]
+      },
       "parallel": "12-5",
       "illustration": {
         "file": "12-5-knot.svg",
@@ -55,6 +115,21 @@
       }
     },
     "12.6": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "karmānuṣṭhānam ajñānād yathaiva uparamas tathā",
+            "ukrainian_translation": "Виконання обрядів через незнання і припинення їх — однаково.",
+            "commentary": "karmānuṣṭhānam — «виконання обрядів / дій»; ajñānād — «через незнання», yathaiva uparamas tathā зіставляє виконання і припинення. «Однаково» не слід автоматично читати як історичну оцінку всіх індійських ритуальних шкіл."
+          },
+          {
+            "iast": "buddhvā samyag idaṃ tattvam evam evāham āsthitaḥ",
+            "ukrainian_translation": "Зрозумівши правильно цю суть, я так стою.",
+            "commentary": "buddhvā samyag idaṃ tattvam — «зрозумівши правильно цю суть»; evam evāham āsthitaḥ — «так стою». Це підсумкове пояснення стану мовця, не нове приписування його українським мислителям."
+          }
+        ]
+      },
       "parallel": "12-6",
       "illustration": {
         "file": "12-6-balance.svg",
@@ -62,6 +137,21 @@
       }
     },
     "12.7": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "acintyaṃ cintyamāno 'pi cintārūpaṃ bhajaty asau",
+            "ukrainian_translation": "Незбагненне, навіть коли його осмислюють, набирає форми думки.",
+            "commentary": "acintyaṃ — «незбагненне, немислиме», cintyamāno 'pi — «навіть коли його осмислюють»; cintārūpaṃ bhajaty asau — «набуває форми думки». Граматика не доводить, що всяке пізнання неможливе, це філософське тлумачення конкретної фрази."
+          },
+          {
+            "iast": "tyaktvā tadbhāvanaṃ tasmād evam evāham āsthitaḥ",
+            "ukrainian_translation": "Тому, відкинувши те плекання, я так стою.",
+            "commentary": "tyaktvā tadbhāvanaṃ — «відкинувши таке плекання/мислення», tasmād — «тому»; evam evāham āsthitaḥ — повторювана формула. Переклад і завершення речення взяті з чинної авторської картки."
+          }
+        ]
+      },
       "parallel": "12-7",
       "illustration": {
         "file": "12-7-illusion.svg",
@@ -69,6 +159,21 @@
       }
     },
     "12.8": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "evam eva kṛtaṃ yena sa kṛtārtho bhaved asau",
+            "ukrainian_translation": "У кого це так зроблено — той стає тим, чию мету здійснено;",
+            "commentary": "evam eva kṛtaṃ yena — «у кого це так зроблено», sa kṛtārtho bhaved asau — «той стає тим, чию мету здійснено». Це перший бік паралельної формули, без припущення, ніби практична дія обов'язкова всім."
+          },
+          {
+            "iast": "evam eva svabhāvo yaḥ sa kṛtārtho bhaved asau",
+            "ukrainian_translation": "у кого така природа — той стає тим, чию мету здійснено.",
+            "commentary": "evam eva svabhāvo yaḥ — «у кого така природа», sa kṛtārtho bhaved asau повторює заключну формулу з першого рядка. Повтор у перекладі свідомо збережений і не замінюється синонімом."
+          }
+        ]
+      },
       "parallel": "12-8",
       "illustration": {
         "file": "12-8-flame.svg",
