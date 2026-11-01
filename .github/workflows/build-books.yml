@@ -63,7 +63,23 @@ jobs:
           python3 -m pip install --quiet --disable-pip-version-check cairosvg
           python3 scripts/build_verse_schemas.py --check \
             || echo "::warning::Частина схем — ручні ілюстрації; генератор їх не відтворює"
-          python3 scripts/build_verse_schemas.py --pdf
+          # Для друку конвертуємо наявні SVG; генерація з параметрів тут
+          # неприпустима, бо перезаписала б ручні сюжетні малюнки.
+          python3 - <<'PY'
+          from pathlib import Path
+          import cairosvg
+          root = Path("books/ashtavakra-gita/ilustratsii")
+          paths = sorted(root.glob("*.svg"))
+          if not paths:
+              raise SystemExit("Немає SVG для наукового тому")
+          converted = 0
+          for svg in paths:
+              pdf = svg.with_suffix(".pdf")
+              if not pdf.is_file() or pdf.stat().st_mtime < svg.stat().st_mtime:
+                  cairosvg.svg2pdf(url=str(svg), write_to=str(pdf))
+                  converted += 1
+          print(f"Підготовлено схем: {len(paths)}, нових PDF: {converted}")
+          PY
           python3 scripts/build_format_v2_chapter.py --check
       - name: Конвертувати сюжетні ілюстрації (SVG → PDF)
         if: steps.detect.outputs.found == 'true'
