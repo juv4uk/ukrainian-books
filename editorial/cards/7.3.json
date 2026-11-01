@@ -22,8 +22,14 @@
   "literal_meaning": "«У мені, безмежному океані, те, що зветься світом, є домислюванням. Вельми втихлий, без форми — саме в цьому я стою.»",
   "ukrainian_translation": "У мені, безмежному океані те, що зветься світом, є домислюванням. Вельми втихлий, без форми — саме в цьому я стою.",
   "commentary": "`nāma` тут не «ім'я», а знецінювальна частка: «те, що **зветься** світом». `vikalpanā` — та сама «конструкція розуму», що в 2.9 і 2.17; словник карток має лишатися узгодженим. Формула `etad evāham āsthitaḥ` («саме в цьому я стою») повторюється в 7.3 і 7.4 — це не прикраса, а спосіб зчепити два вірші в одне твердження.",
-  "variants": [],
-  "variants_checked": false,
+  "variants": [
+    {
+      "witness": "GRETIL/TextGrid, Avg_7.3 ↔ SARIT TEI, verse_7.3",
+      "note": "Для вірша 7.3 безпосередньо зіставлено основні слова: mayy(ananta)mahāmbhodhau, viśvaṃ nāma vikalpanā, atiśānto nirākāra, etad evāham āsthitaḥ. GRETIL у публічному HTML відокремлює «mayy anantamahāmbhodhau» та «etad evāham āsthitaḥ»; SARIT у TEI передає «mayyanantamahāmbhodhau» та «etadevāhamāsthitaḥ». Це відмінності сегментації сандгі, а не доведені лексичні чи рукописні різночитання. Повної колації історичних видань не було.",
+      "evidence_url": "https://www.textgridrep.org/browse/49ks7.0"
+    }
+  ],
+  "variants_checked": true,
   "rights": {
     "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
     "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",

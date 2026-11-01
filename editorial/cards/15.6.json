@@ -22,8 +22,14 @@
   "literal_meaning": "«Пізнавши себе у всіх істотах і всі істоти — у собі, ти без „я-роблю“, без „моє“ — будь щасливий.»",
   "ukrainian_translation": "Пізнавши себе у всіх істотах і всі істоти — у собі, ти без «я-роблю», без «моє» — будь щасливий.",
   "commentary": "Двобічність тут обов'язкова: `ātmānam` у всіх істотах **і** всі істоти в `ātman`. Переклад, що зберіг лише один напрямок, втрачає суть. `nirahaṃkāra`/`nirmama` — не «скромний» і не «безкорисливий», а буквально «без `ahaṃkāra`» і «без `mama`»: два займенники, від яких відмовляються. `sukhī bhava` — наказовий спосіб, як і `sukhaṃ cara` у 15.4–15.5.",
-  "variants": [],
-  "variants_checked": false,
+  "variants": [
+    {
+      "witness": "SARIT TEI verse_15.6 ↔ INDOLOGY/GRETIL-mirror Avg_15.6",
+      "note": "Послідовність значущих слів в обох прочитаних електронних текстах збігається. SARIT передає «nirmamastvaṃ», а GRETIL — «nirmamas tvaṃ»; GRETIL також поділяє складні слова в окремому аналітичному додатку. Це спосіб розділення слів після сандгі та редакторська розмітка, не доказ різного рукописного читання. Архівне дзеркало GRETIL не доведено тотожним його актуальній вебверсії.",
+      "evidence_url": "https://github.com/INDOLOGY/GRETIL-mirror/blob/0baf718d8e450821eb0403c03aacc9a4a82316d7/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
   "rights": {
     "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
     "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",

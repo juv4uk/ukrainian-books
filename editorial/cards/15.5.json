@@ -22,8 +22,14 @@
   "literal_meaning": "«Пристрасть і відраза — властивості ума, і ум ніколи не твій. Ти без домислювання, твоя суть — усвідомлення, ти без видозмін — живи легко.»",
   "ukrainian_translation": "Пристрасть і відраза — властивості ума, і ум ніколи не твій. Ти без домислювання, твоя суть — усвідомлення, ти без видозмін — живи легко.",
   "commentary": "Ланцюг тут двоступеневий: спершу `rāga`/`dveṣa` віднесено до `manas`, а потім заперечено сам `manas` як власність. `nirvikāra` («без видозмін») — те саме слово, що в 11.1; словник спільний. `sukhaṃ cara` повторює 15.4 дослівно, і в перекладі це має бути той самий вислів — інакше зникне наскрізний рефрен глави.",
-  "variants": [],
-  "variants_checked": false,
+  "variants": [
+    {
+      "witness": "SARIT TEI verse_15.5 ↔ INDOLOGY/GRETIL-mirror Avg_15.5",
+      "note": "Значущі слова в доступних електронних текстах збігаються. У SARIT записано «na manaste kadācana» і «nirvikalpo+asi», у GRETIL — «na manas te kadācana» та «nirvikalpo 'si». Відмінність стосується пробілу між manas і te та конвенції передачі сандгі / авґрахи між nirvikalpaḥ і asi; це не доведене рукописне різночитання. Архівна копія GRETIL не підтверджена як тотожна поточному живому сайту.",
+      "evidence_url": "https://github.com/INDOLOGY/GRETIL-mirror/blob/0baf718d8e450821eb0403c03aacc9a4a82316d7/gretil.sub.uni-goettingen.de/gretil/corpustei/sa_aSTAvakragItA.xml"
+    }
+  ],
+  "variants_checked": true,
   "rights": {
     "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
     "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",

@@ -22,8 +22,14 @@
   "literal_meaning": "«О диво: я — саме лише свідомість, а світ подібний до чару. Тож звідки й де в мені домислювання про те, що відкинути і що прийняти?»",
   "ukrainian_translation": "О диво: я — саме лише свідомість, а світ подібний до чару. Тож звідки й де в мені домислювання про те, що відкинути і що прийняти?",
   "commentary": "`cinmātra` («саме лише свідомість») — ключове слово розділу; переклад не повинен додавати «чиста», бо `mātra` означає «не більше ніж». `indrajāla` — той самий образ чару, що в 10.2, і словник має бути спільним. Питання `kathaṃ kutra` подвійне — «як» і «де» — і саме подвійність робить його риторичним: для вибору не лишається ні способу, ні місця. Глава 7 на цьому закінчується.",
-  "variants": [],
-  "variants_checked": false,
+  "variants": [
+    {
+      "witness": "GRETIL/TextGrid, Avg_7.5 ↔ SARIT TEI, verse_7.5",
+      "note": "У GRETIL/TextGrid читається «aho cinmātram evāham indrajālopamaṃ jagat / ato mama kathaṃ kutra heyopādeyakalpanā». У SARIT ті самі контрольні лексеми записано із тіснішим злиттям у «cinmātramevāhamindrajālopamaṃ jagat». Окрема TextGrid-проєкція показує розбивку «cin-mātram», «indra-jālopamaṃ», «heyopādeya-kalpanā». Це розходження сегментації, а не доведене рукописне різночитання. Повної колації друкованих санскритських видань не виконано.",
+      "evidence_url": "https://www.textgridrep.org/browse/49ks7.0"
+    }
+  ],
+  "variants_checked": true,
   "rights": {
     "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
     "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",

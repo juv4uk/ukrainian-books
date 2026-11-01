@@ -22,8 +22,19 @@
   "literal_meaning": "«Полон — тоді, коли розум прив'язаний до якихось поглядів; визволення — коли розум неприв'язаний до всіх поглядів.»",
   "ukrainian_translation": "Полон — тоді, коли розум прив'язаний до якихось поглядів; визволення — коли розум неприв'язаний до всіх поглядів.",
   "commentary": "`dṛṣṭi` — «погляд» у подвійному сенсі: і зір, і переконання. Асиметрія навмисна: `kāsvapi` («до якихось») проти `sarva` («до всіх»). Тобто достатньо **однієї** прив'язаності, щоб бути в полоні, але потрібна неприв'язаність до **всіх** — і це не той самий обсяг вимог, що звучить суворіше, ніж здається з першого читання.",
-  "variants": [],
-  "variants_checked": false,
+  "variants": [
+    {
+      "witness": "GRETIL/TextGrid Avg_8.3 ↔ SARIT TEI verse_8.3",
+      "note": "У GRETIL/TextGrid стоїть роздільне kāsv api, у SARIT — kāsvapi. Цей спосіб запису частки api не є сам по собі доказом різного рукописного читання.",
+      "evidence_url": "https://www.textgridrep.org/browse/49ks7.0"
+    },
+    {
+      "witness": "GRETIL/TextGrid Avg_8.3 ↔ SARIT TEI verse_8.3",
+      "note": "У GRETIL/TextGrid фраза подана як cittam asaktaṃ, а в SARIT як cittamasaktaṃ. Крім того, додатковий сегментований рядок GRETIL подає sarva-dṛṣṭiṣu, тоді як його віршовий рядок і SARIT мають злитне sarvadṛṣṭiṣu. Це розділення слів / редакторська сегментація, не засвідчене рукописне різночитання.",
+      "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml"
+    }
+  ],
+  "variants_checked": true,
   "rights": {
     "basis": "Санскритський текст «Аштавакра-ґіти» — давній твір у суспільному надбанні. Читання звірене лише за одним свідком — SARIT (CC BY-SA 3.0, availability restricted); транскрипція використана для звірки, її текст і редакторський апарат не відтворюються. Український переклад, граматичний аналіз і коментар — власні.",
     "evidence_url": "https://github.com/sarit/SARIT-corpus/blob/master/astavakragita.xml",
