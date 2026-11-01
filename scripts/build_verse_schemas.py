@@ -492,6 +492,82 @@ def motif_bow(p: dict) -> str:
     return "".join(parts)
 
 
+def motif_eyelids(p: dict) -> str:
+    """Важкі повіки: натуга, від якої ніхто не бачить, що вона зайва."""
+    parts = [_text(20, 34, p.get("what", "важко повіки звести"), size=12, fill=MUTED)]
+    # обличчя
+    parts.append(f'<path d="M210 76 q58 0 58 62 q0 62 -58 62 q-58 0 -58 -62 q0 -62 58 -62 z" '
+                 f'fill="none" stroke="{INK}" stroke-width="1.6"/>')
+    # повіки, опущені до половини
+    for dx in (-26, 26):
+        parts.append(f'<path d="M{210 + dx - 16} 136 q16 -12 32 0" fill="none" stroke="{INK}" stroke-width="1.6"/>')
+        parts.append(f'<path d="M{210 + dx - 16} 136 q16 12 32 0" fill="none" stroke="{MUTED}" stroke-width="1.2"/>')
+        # гирки на повіках
+        parts.append(f'<path d="M{210 + dx} 148 l0 12" stroke="{ACCENT}" stroke-width="1.2"/>')
+        parts.append(f'<circle cx="{210 + dx}" cy="164" r="5" fill="none" stroke="{ACCENT}" stroke-width="1.3"/>')
+    parts.append(f'<path d="M198 186 q12 8 24 0" fill="none" stroke="{MUTED}" stroke-width="1.2"/>')
+    parts.append(_text(20, 246, p.get("note", ""), size=11, fill=ACCENT))
+    return "".join(parts)
+
+
+def motif_nectar(p: dict) -> str:
+    """Нектар і той, хто п'є без спраги: повна чаша, спокійне обличчя."""
+    parts = [_text(20, 34, p.get("drink", "нектар угамування"), size=12, fill=MUTED)]
+    # чаша
+    parts.append(f'<path d="M264 130 q0 44 30 44 q30 0 30 -44 z" fill="none" stroke="{INK}" stroke-width="1.8"/>')
+    parts.append(f'<line x1="258" y1="130" x2="330" y2="130" stroke="{INK}" stroke-width="1.6"/>')
+    parts.append(f'<path d="M294 174 l0 18 M278 192 l32 0" stroke="{INK}" stroke-width="1.6"/>')
+    # краплі
+    for dx, dy in ((280, 150), (294, 156), (308, 148)):
+        parts.append(f'<circle cx="{dx}" cy="{dy}" r="3" fill="{ACCENT}"/>')
+    # обличчя в профіль: одне око, ніс, лінія рота
+    parts.append(f'<circle cx="140" cy="140" r="34" fill="none" stroke="{INK}" stroke-width="1.6"/>')
+    parts.append(f'<path d="M170 138 q10 4 0 12" fill="none" stroke="{INK}" stroke-width="1.4"/>')   # ніс
+    parts.append(f'<path d="M158 128 q8 -4 14 2" fill="none" stroke="{INK}" stroke-width="1.4"/>')  # око
+    parts.append(f'<path d="M156 156 q10 2 18 -2" fill="none" stroke="{MUTED}" stroke-width="1.3"/>')  # рот
+    parts.append(_text(20, 236, p.get("note", ""), size=11, fill=ACCENT))
+    return "".join(parts)
+
+
+def motif_mockery(p: dict) -> str:
+    """Глузування: кілька постатей показують рукою, одна сидить рівно."""
+    parts = [_text(20, 34, p.get("what", "висміяний слугами й родичами"), size=12, fill=MUTED)]
+    ground = 214
+    # той, хто сидить: голова, тулуб, зігнуті ноги
+    parts.append(f'<circle cx="200" cy="150" r="11" fill="none" stroke="{ACCENT}" stroke-width="1.6"/>')
+    parts.append(f'<path d="M200 161 L200 190" stroke="{ACCENT}" stroke-width="1.8"/>')
+    parts.append(f'<path d="M200 190 q-20 2 -26 20" stroke="{ACCENT}" fill="none" stroke-width="1.6"/>')
+    parts.append(f'<path d="M200 190 q20 2 26 20" stroke="{ACCENT}" fill="none" stroke-width="1.6"/>')
+    # ті, що глузують
+    for x, y in ((92, 128), (128, 166), (272, 132), (306, 170)):
+        parts.append(f'<circle cx="{x}" cy="{y}" r="9" fill="none" stroke="{MUTED}" stroke-width="1.4"/>')
+        parts.append(f'<path d="M{x} {y + 9} L{x} {y + 46}" stroke="{MUTED}" stroke-width="1.5"/>')
+        parts.append(f'<path d="M{x} {y + 46} l-7 20 M{x} {y + 46} l7 20" stroke="{MUTED}" stroke-width="1.3"/>')
+        # рука в бік того, хто сидить
+        sx = x + (9 if x < 200 else -9)
+        parts.append(f'<path d="M{x} {y + 22} L{sx + (30 if x < 200 else -30)} {y + 26}" '
+                     f'stroke="{MUTED}" stroke-width="1.3"/>')
+    parts.append(f'<line x1="40" y1="{ground}" x2="{W - 40}" y2="{ground}" stroke="{FAINT}" stroke-width="1.2"/>')
+    parts.append(_text(20, 246, p.get("note", ""), size=11, fill=ACCENT))
+    return "".join(parts)
+
+
+def motif_procession(p: dict) -> str:
+    """Почет проходить повз: знавець писань, божество, цар — і жодного сліду."""
+    parts = [_text(20, 34, p.get("what", "почет і святі місця"), size=12, fill=MUTED)]
+    # низка постатей, що проходять: голова, тулуб, ноги від тулуба
+    ground = 214
+    for i, x in enumerate((78, 136, 194, 252, 310)):
+        tall = 62 if i in (1, 3) else 52
+        head_y = ground - tall
+        parts.append(f'<circle cx="{x}" cy="{head_y}" r="9" fill="none" stroke="{MUTED}" stroke-width="1.4"/>')
+        parts.append(f'<path d="M{x} {head_y + 9} L{x} {ground - 20}" stroke="{MUTED}" stroke-width="1.5"/>')
+        parts.append(f'<path d="M{x} {ground - 20} l-8 20 M{x} {ground - 20} l8 20" stroke="{MUTED}" stroke-width="1.3"/>')
+        parts.append(f'<path d="M{x} {head_y + 24} l-9 12 M{x} {head_y + 24} l9 12" stroke="{MUTED}" stroke-width="1.2"/>')
+    parts.append(_text(20, 258, p.get("note", ""), size=11, fill=ACCENT))
+    return "".join(parts)
+
+
 MOTIFS = {
     "motion": motif_motion,
     "neti": motif_neti,
@@ -509,6 +585,10 @@ MOTIFS = {
     "sword": motif_sword,
     "sleep": motif_sleep,
     "bow": motif_bow,
+    "eyelids": motif_eyelids,
+    "nectar": motif_nectar,
+    "mockery": motif_mockery,
+    "procession": motif_procession,
 }
 
 # Вірш → (мотив, параметри, коротка назва для alt-тексту).
