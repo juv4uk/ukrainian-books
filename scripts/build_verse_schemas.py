@@ -434,6 +434,64 @@ def motif_rest(p: dict) -> str:
     return "".join(parts)
 
 
+def motif_sword(p: dict) -> str:
+    """Меч знання ріже мотузку: те, що тримало, розпадається на очах."""
+    parts = [_text(20, 34, p.get("what", "мотузка приписування"), size=12, fill=MUTED)]
+    # мотузка з двох боків, розірвана посередині
+    parts.append(f'<path d="M40 170 q34 -22 68 0 q34 22 66 0" stroke="{INK}" fill="none" stroke-width="3"/>')
+    parts.append(f'<path d="M226 170 q34 -22 68 0 q34 22 66 0" stroke="{INK}" fill="none" stroke-width="3"/>')
+    parts.append(f'<path d="M188 150 q10 20 0 40" stroke="{FAINT}" fill="none" stroke-width="1.4" stroke-dasharray="4 4"/>')
+    # меч
+    parts.append(f'<g stroke="{ACCENT}" fill="none" stroke-width="1.8">'
+                 f'<path d="M210 60 l0 96"/>'
+                 f'<path d="M200 156 q10 12 20 0"/>'
+                 f'<path d="M204 168 l0 22 M216 168 l0 22"/>'
+                 f'</g>')
+    parts.append(f'<path d="M196 148 q14 8 28 0" stroke="{ACCENT}" fill="none" stroke-width="1.6"/>')
+    parts.append(_text(20, 236, p.get("note", ""), size=11, fill=ACCENT))
+    return "".join(parts)
+
+
+def motif_sleep(p: dict) -> str:
+    """Сон і неспання: та сама людина, але стан не той, що здається."""
+    parts = [_text(20, 34, p.get("what", "сон"), size=12, fill=MUTED),
+             _text(W - 20, 34, p.get("and", "неспання"), size=12, fill=ACCENT, anchor="end")]
+    # лежанка
+    parts.append(f'<line x1="52" y1="196" x2="{W - 52}" y2="196" stroke="{FAINT}" stroke-width="1.4"/>')
+    # сплячий: голова на руці, тулуб, зігнуті ноги
+    parts.append(f'<circle cx="98" cy="170" r="10" fill="none" stroke="{INK}" stroke-width="1.6"/>')
+    parts.append(f'<path d="M106 180 q18 -10 30 -2" stroke="{INK}" fill="none" stroke-width="1.6"/>')   # рука під головою
+    parts.append(f'<path d="M134 178 q26 -6 44 2" stroke="{INK}" fill="none" stroke-width="1.8"/>')   # тулуб
+    parts.append(f'<path d="M178 180 q10 -14 22 -8" stroke="{INK}" fill="none" stroke-width="1.6"/>') # коліно
+    parts.append(f'<path d="M200 172 q10 8 8 20" stroke="{INK}" fill="none" stroke-width="1.6"/>')    # гомілка
+    # «z» над головою
+    for i, (x, y, s) in enumerate(((120, 132, 16), (142, 112, 12), (160, 96, 9))):
+        parts.append(f'<path d="M{x} {y} h{s} l-{s} {s} h{s}" stroke="{MUTED}" fill="none" stroke-width="1.4"/>')
+    # око, що не спить — окремо
+    parts.append(f'<path d="M300 150 q22 -18 44 0 q-22 18 -44 0 z" fill="none" stroke="{ACCENT}" stroke-width="1.6"/>')
+    parts.append(f'<circle cx="322" cy="150" r="5" fill="none" stroke="{ACCENT}" stroke-width="1.4"/>')
+    parts.append(_text(20, 240, p.get("note", ""), size=11, fill=INK))
+    return "".join(parts)
+
+
+def motif_bow(p: dict) -> str:
+    """Уклін: той, хто кланяється, і те, чому кланяються — без постаті бога."""
+    parts = [_text(20, 34, p.get("to", "тому, в кого немає загибелі"), size=12, fill=MUTED)]
+    # постать у поклоні: голова опущена, тулуб нахилений, руки вперед
+    parts.append(f'<circle cx="150" cy="118" r="10" fill="none" stroke="{INK}" stroke-width="1.6"/>')
+    parts.append(f'<path d="M157 126 L196 166" stroke="{INK}" fill="none" stroke-width="2"/>')        # тулуб
+    parts.append(f'<path d="M166 136 q26 2 42 14" stroke="{INK}" fill="none" stroke-width="1.6"/>')   # рука вперед
+    parts.append(f'<path d="M196 166 L184 204" stroke="{INK}" fill="none" stroke-width="1.8"/>')      # нога
+    parts.append(f'<path d="M196 166 L210 204" stroke="{INK}" fill="none" stroke-width="1.8"/>')      # нога
+    parts.append(f'<path d="M141 124 q-8 6 -10 14" stroke="{INK}" fill="none" stroke-width="1.4"/>')  # схилена голова
+    # те, чому кланяються: сяйво без обличчя
+    for r, op in ((44, "0.9"), (30, "0.7"), (16, "0.5")):
+        parts.append(f'<circle cx="292" cy="126" r="{r}" fill="none" stroke="{ACCENT}" stroke-width="1.3" opacity="{op}"/>')
+    parts.append(f'<circle cx="292" cy="126" r="4" fill="{ACCENT}"/>')
+    parts.append(_text(20, 236, p.get("note", ""), size=11, fill=ACCENT))
+    return "".join(parts)
+
+
 MOTIFS = {
     "motion": motif_motion,
     "neti": motif_neti,
@@ -448,6 +506,9 @@ MOTIFS = {
     "beasts": motif_beasts,
     "elephant": motif_elephant,
     "rest": motif_rest,
+    "sword": motif_sword,
+    "sleep": motif_sleep,
+    "bow": motif_bow,
 }
 
 # Вірш → (мотив, параметри, коротка назва для alt-тексту).
