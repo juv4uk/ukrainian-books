@@ -9,6 +9,21 @@
       "illustration": {
         "file": "13-1-neti.svg",
         "caption": "Віддавання й приймання відкинуті: сиджу, як завгодно"
+      },
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "akiṃcanabhavaṃ svāsthyaṃ kaupīnatve 'pi durlabham",
+            "ukrainian_translation": "Стан неволодіння — це бути в собі; навіть у жебрацькому поясі він рідкісний.",
+            "commentary": "akiṃcana-bhavaṃ називає стан неволодіння, а svāsthyaṃ — перебування у власному стані; це не медичне твердження про здоров’я. kaupīnatve 'pi durlabham підкреслює, що навіть зовнішня ознака аскези (стегнова пов’язка) не гарантує внутрішньої свободи."
+          },
+          {
+            "iast": "tyāgādāne vihāyāsmād aham āse yathāsukham",
+            "ukrainian_translation": "Відкинувши віддавання й приймання, я сиджу, як мені завгодно.",
+            "commentary": "tyāgādāne — пара «віддавання й приймання»; vihāya означає «відкинувши». Після неї aham āse yathāsukham — повторюваний рефрен глави («я сиджу, як мені завгодно»). Думка стосується ставлення до володіння, а не буквальної вимоги сидіти."
+          }
+        ]
       }
     },
     "13.2": {
@@ -16,6 +31,21 @@
       "illustration": {
         "file": "13-2-neti.svg",
         "caption": "Три втоми відкинуті: лишається мета людини"
+      },
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "kutrāpi khedaḥ kāyasya jihvā kutrāpi khidyate",
+            "ukrainian_translation": "Десь втомлюється тіло, десь втомлюється язик,",
+            "commentary": "kutrāpi повторено двічі («десь»), зіставляючи khedaḥ kāyasya («втому тіла») та jihvā ... khidyate («втомлюється язик», тобто орган мовлення). Перший піврядок не містить ще висновку щодо того, що слід відкинути."
+          },
+          {
+            "iast": "manaḥ kutrāpi tat tyaktvā puruṣārthe sthitaḥ sukham",
+            "ukrainian_translation": "десь розум — відкинувши це, я стою в меті людини, щасливо.",
+            "commentary": "manaḥ kutrāpi додає третю сферу — розум; tat tyaktvā («відкинувши це») відсилає до названих утом. puruṣārthe sthitaḥ sukham — перебування в людській меті або її здійсненні, щасливо; це окрема думка, і вірш 13.2 не закінчується звичайним рефреном aham āse yathāsukham."
+          }
+        ]
       }
     },
     "13.3": {
@@ -23,6 +53,21 @@
       "illustration": {
         "file": "13-3-space.svg",
         "caption": "Небо без хмар: зробленого не буде нічого"
+      },
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "kṛtaṃ kim api naiva syād iti saṃcintya tattvataḥ",
+            "ukrainian_translation": "Подумавши по-справжньому: «зробленого не буде нічого» —",
+            "commentary": "kṛtaṃ kim api naiva syād задає заперечення результату дії; iti saṃcintya tattvataḥ означає «так розваживши по суті». Оптатив syāt не варто без пояснення підмінювати твердженням, що жодна дія фізично не відбувається."
+          },
+          {
+            "iast": "yadā yat kartum āyāti tat kṛtvāse yathāsukham",
+            "ukrainian_translation": "що б не випало зробити, зробивши те, я сиджу, як мені завгодно.",
+            "commentary": "yadā yat kartum āyāti описує те, що випадає зробити; tat kṛtvāse поєднує «зробивши те» з «сиджу». Рефрен yathāsukham збережено у чинному перекладі: відсутність привласнення результату не заперечує самого виконання дії."
+          }
+        ]
       }
     },
     "13.4": {
@@ -30,6 +75,21 @@
       "illustration": {
         "file": "13-4-knot.svg",
         "caption": "Вузол дії й недіяння розвʼязано"
+      },
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "karmanaiṣkarmyanirbandhabhāvā dehasthayoginaḥ",
+            "ukrainian_translation": "У йога, що перебуває в тілі, є стани, до яких його змушують дія й недіяння;",
+            "commentary": "Складне слово karmanaiṣkarmyanirbandhabhāvā зіставляє дію (karma), недіяння (naiṣkarmya) й наполягання або примус (nirbandha); dehasthayoginaḥ вказує на йога, який перебуває в тілі. Це твердження про напругу між двома способами поведінки, а не доказ певної історичної школи."
+          },
+          {
+            "iast": "saṃyogāyogavirahād aham āse yathāsukham",
+            "ukrainian_translation": "та через відсутність з'єднання й роз'єднання я сиджу, як мені завгодно.",
+            "commentary": "saṃyogāyogavirahād — аблативна конструкція з ідеєю відсутності з'єднання й нез'єднання. Далі aham āse yathāsukham повертає рефрен особистого перебування; не слід перетворювати це на припис відмовитися від щоденних обов’язків."
+          }
+        ]
       }
     },
     "13.5": {
@@ -37,6 +97,21 @@
       "illustration": {
         "file": "13-5-rest.svg",
         "caption": "Людина під зайшлим сонцем: поза не додає ні користі, ні шкоди"
+      },
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "arthānarthau na me sthityā gatyā na śayanena vā",
+            "ukrainian_translation": "Ні користі, ні шкоди немає мені від стояння, ходіння чи лежання —",
+            "commentary": "arthānarthau — двоїна «користь і шкода»; sthityā, gatyā, śayanena — орудні форми «стоянням, рухом, лежанням». Це оцінка способів тілесного перебування, а не заборона ходити чи лежати."
+          },
+          {
+            "iast": "tiṣṭhan gacchan svapan tasmād aham āse yathāsukham",
+            "ukrainian_translation": "тому, стоячи, ходячи чи сплячи, я сиджу, як мені завгодно.",
+            "commentary": "tiṣṭhan, gacchan, svapan — три дієприкметники «стоячи, йдучи, сплячи»; tasmād — «тому». Слідом aham āse yathāsukham зберігає словесний парадокс «сиджу» попри зміну постави; рефрен уособлює сталість внутрішнього ставлення, а не конкретну фізичну позу."
+          }
+        ]
       }
     },
     "13.6": {
