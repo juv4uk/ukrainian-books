@@ -155,11 +155,16 @@ class PdfSourceTests(unittest.TestCase):
         build_pdf.validate_volume(poetic, expected, "Поетичний том")
 
     def test_actual_chapter_10_renders_its_eight_svg_illustrations(self):
-        """Поточний книжковий Markdown, а не лише вигаданий рядок тесту."""
+        """Поточний книжковий Markdown, а не лише вигаданий рядок тесту.
+
+        До восьми схем глави 10 додається наративна сцена (10.2), якщо вона
+        зареєстрована: вона теж мусить стати <img>, а не зникнути в тексті.
+        """
         chapter = Path(build_pdf.BOOK) / "rozdil-10-naukove.md"
         source = chapter.read_text(encoding="utf-8")
         rendered = build_pdf.md_to_html(source, str(chapter.parent), False)
-        self.assertEqual(rendered.count("<img "), 8)
+        scenes = source.count("](ilustratsii-naratyvni/")
+        self.assertEqual(rendered.count("<img "), 8 + scenes)
 
 
 

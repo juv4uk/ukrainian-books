@@ -137,9 +137,14 @@ class LatexTests(unittest.TestCase):
         for verse in range(1, 21):
             with self.subTest(verse=verse):
                 self.assertIn(r"\vsec{1.%d}" % verse, self.tex)
-        for macro in (r"\vdeva", r"\vtranslit", r"\vperek", r"\vcom", r"\vpar", r"\vfig"):
+        # \vfig несе і схему, і наративну сцену, тому в главі 1 його більше,
+        # ніж віршів: 20 схем + стільки сцен, скільки зареєстровано на главу 1.
+        scenes = sum(1 for verse in builder.load_scenes() if verse.startswith("1."))
+        expected = {r"\vdeva": 20, r"\vtranslit": 20, r"\vperek": 20, r"\vcom": 20,
+                    r"\vpar": 20, r"\vfig": 20 + scenes}
+        for macro, count in expected.items():
             with self.subTest(macro=macro):
-                self.assertEqual(self.tex.count(macro + "{"), 20)
+                self.assertEqual(self.tex.count(macro + "{"), count)
 
     def test_braces_are_balanced(self) -> None:
         for number, line in enumerate(self.tex.splitlines(), 1):
