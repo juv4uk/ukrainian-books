@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="nazva opys">
+  <title id="nazva">Аштавакра-ґіта 16.2 — три стежки без мішка очікувань</title>
+  <desc id="opys">Власна українська схема у вигляді подвір'я з трьома дорогами. Ліва дорога підписана «Насолода», середня «Праця», права «Зосередження». Усі ведуть до спільного відкритого подвір'я, де намальовані порожні долоні та напис «Без мішка очікувань». Знизу пояснення: текст не забороняє дії, але ставить питання про сподівання. Не є історичним індійським зображенням.</desc>
+  <rect width="1200" height="760" fill="#f7f4eb"/>
+  <rect x="28" y="24" width="1144" height="710" rx="26" fill="#fffcf6" stroke="#b7b7a8" stroke-width="3"/>
+  <text x="600" y="89" font-family="sans-serif" font-size="35" font-weight="700" text-anchor="middle" fill="#30424b">Три стежки — без мішка очікувань</text>
+  <text x="600" y="123" font-family="sans-serif" font-size="21" text-anchor="middle" fill="#62747d">Український образ вірша 16.2 · дія не тотожна очікуванню</text>
+  <g stroke="#9b907e" stroke-width="3" stroke-linejoin="round">
+    <path d="M115 198 Q224 177 333 198 L366 313 Q250 342 130 313 Z" fill="#e9eee5"/>
+    <path d="M442 198 Q600 166 758 198 L740 313 Q600 345 460 313 Z" fill="#f5ebdf"/>
+    <path d="M867 198 Q976 177 1085 198 L1070 313 Q950 342 834 313 Z" fill="#e8eef3"/>
+  </g>
+  <g text-anchor="middle" font-family="sans-serif" fill="#394b50">
+    <text x="240" y="254" font-size="30" font-weight="700">Насолода</text>
+    <text x="600" y="254" font-size="30" font-weight="700">Праця</text>
+    <text x="960" y="254" font-size="29" font-weight="700">Зосередження</text>
+    <text x="240" y="283" font-size="18">відпочинок</text>
+    <text x="600" y="283" font-size="18">діло</text>
+    <text x="960" y="283" font-size="18">тиша</text>
+  </g>
+  <g fill="none" stroke-width="32" stroke-linecap="round" opacity=".9">
+    <path d="M245 347 C260 398 425 415 506 493" stroke="#a8bba8"/>
+    <path d="M600 347 L600 475" stroke="#cfb39b"/>
+    <path d="M955 347 C940 398 775 415 694 493" stroke="#a0b6c7"/>
+  </g>
+  <g fill="none" stroke="#eee7dc" stroke-width="4" stroke-dasharray="9 11">
+    <path d="M245 347 C260 398 425 415 506 493"/>
+    <path d="M600 347 L600 475"/>
+    <path d="M955 347 C940 398 775 415 694 493"/>
+  </g>
+  <ellipse cx="600" cy="553" rx="255" ry="80" fill="#f3f0e7" stroke="#8b938d" stroke-width="3"/>
+  <g fill="#e6c5a7" stroke="#9a7a62" stroke-width="3" stroke-linejoin="round">
+    <path d="M502 523 Q481 507 468 492 Q460 484 453 493 Q453 504 471 524 Q456 515 448 522 Q448 531 480 546 Q514 565 548 549 L574 534 L557 505 Q540 491 532 514 Q522 499 512 505 Z"/>
+    <path d="M698 523 Q719 507 732 492 Q740 484 747 493 Q747 504 729 524 Q744 515 752 522 Q752 531 720 546 Q686 565 652 549 L626 534 L643 505 Q660 491 668 514 Q678 499 688 505 Z"/>
+  </g>
+  <g font-family="sans-serif" text-anchor="middle" fill="#364c53">
+    <text x="600" y="620" font-size="30" font-weight="700">Відкриті долоні</text>
+    <text x="600" y="655" font-size="25">Без мішка очікувань</text>
+    <text x="600" y="699" font-size="17" fill="#657278">Сучасна смислова схема · не історична ілюстрація · не рукописний доказ</text>
+  </g>
+</svg>
