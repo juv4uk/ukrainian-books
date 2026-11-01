@@ -41,12 +41,21 @@ jobs:
           builder.PILOT_CHAPTERS = tuple(range(1, 21))
           raise SystemExit(builder.main())
           PY
-      - name: Згенерувати поетичний том
+      - name: Згенерувати поетичний том (LaTeX)
         if: steps.detect.outputs.found == 'true'
         shell: bash
         run: |
           set -euo pipefail
           python3 scripts/build_poetic_book.py
+      - name: Згенерувати поетичний том (EPUB)
+        if: steps.detect.outputs.found == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Окремий формат для читання з телефона. Генератор сам перевіряє,
+          # що віршів рівно 298 — розбіжність валить крок.
+          python3 -m pip install --quiet --disable-pip-version-check ebooklib
+          python3 scripts/build_epub.py
       - name: Встановити XeLaTeX
         if: steps.detect.outputs.found == 'true'
         run: |
@@ -63,32 +72,13 @@ jobs:
           python3 -m pip install --quiet --disable-pip-version-check cairosvg
           python3 scripts/build_verse_schemas.py --check \
             || echo "::warning::Частина схем — ручні ілюстрації; генератор їх не відтворює"
-          # Для друку конвертуємо наявні SVG; генерація з параметрів тут
-          # неприпустима, бо перезаписала б ручні сюжетні малюнки.
-          python3 - <<'PY'
-          from pathlib import Path
-          import cairosvg
-          root = Path("books/ashtavakra-gita/ilustratsii")
-          paths = sorted(root.glob("*.svg"))
-          if not paths:
-              raise SystemExit("Немає SVG для наукового тому")
-          converted = 0
-          for svg in paths:
-              pdf = svg.with_suffix(".pdf")
-              if not pdf.is_file() or pdf.stat().st_mtime < svg.stat().st_mtime:
-                  cairosvg.svg2pdf(url=str(svg), write_to=str(pdf))
-                  converted += 1
-          print(f"Підготовлено схем: {len(paths)}, нових PDF: {converted}")
-          PY
+          python3 scripts/build_verse_schemas.py --pdf
           python3 scripts/build_format_v2_chapter.py --check
       - name: Конвертувати сюжетні ілюстрації (SVG → PDF)
         if: steps.detect.outputs.found == 'true'
         shell: bash
         run: |
           set -euo pipefail
-          # Руки агентів додають сюжетні малюнки в ilustratsii-naratyvni, а
-          # генератор схем їх не знає. Без цього кроку latexmk падає на
-          # відсутньому PDF — саме так збірка й ламалася 2026-11-01.
           python3 - <<'PY'
           import pathlib
           import cairosvg
@@ -100,7 +90,7 @@ jobs:
                   made += 1
           print(f"Сюжетних ілюстрацій сконвертовано: {made}")
           PY
-      - name: Долучити власні схеми до віршів
+      - name: Долучити власні ілюстрації до віршів
         if: steps.detect.outputs.found == 'true'
         shell: bash
         run: |
@@ -116,7 +106,7 @@ jobs:
             [ -f "$dir/PROVENANCE.md" ] || { echo "Немає паспорта походження у $dir"; exit 1; }
             (cd "$dir" && latexmk -xelatex -interaction=nonstopmode -halt-on-error -file-line-error main.tex)
           done < <(find books -name main.tex -print0)
-      - name: Перевірити PDF, кирилицю та діакритику IAST
+      - name: Перевірити PDF, EPUB, кирилицю та діакритику IAST
         if: steps.detect.outputs.found == 'true'
         shell: bash
         run: |
@@ -146,19 +136,32 @@ jobs:
                 ;;
             esac
           done
+          for epb in books/*/*.epub; do
+            python3 - "$epb" <<'PY'
+          import sys, zipfile
+          path = sys.argv[1]
+          with zipfile.ZipFile(path) as z:
+              first = z.infolist()[0]
+              assert first.filename == "mimetype", f"перший запис {first.filename}"
+              assert first.compress_type == 0, "mimetype стиснуто"
+              print(f"### {path}")
+              print(f"- файлів у архіві: {len(z.infolist())}")
+          PY
+          done
           for log in books/*/main.log; do
             if grep -q "Missing character" "$log"; then
               echo "Відсутні гліфи у шрифті: $log"
               grep "Missing character" "$log" | sort -u | head -20
               fail=1
             fi
-            echo "- Overfull hbox у $(dirname "$log"): $(grep -c 'Overfull \\hbox' "$log" || true)" >> "$GITHUB_STEP_SUMMARY"
           done
           exit "$fail"
-      - name: Зберегти PDF
+      - name: Зберегти видання
         if: steps.detect.outputs.found == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: ukrainski-vydannia
-          path: books/**/*.pdf
+          path: |
+            books/**/*.pdf
+            books/**/*.epub
           if-no-files-found: error
