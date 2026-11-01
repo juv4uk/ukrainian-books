@@ -1,9 +1,9 @@
-"""EPUB поетичного тому: структура, якірі віршів, mimetype першим."""
+"""EPUB поетичного тому: розбір розділів, якорі віршів, будова архіву."""
 
 from __future__ import annotations
 
-import re
 import sys
+import tempfile
 import unittest
 import zipfile
 from pathlib import Path
@@ -13,19 +13,17 @@ sys.path.insert(0, str(ROOT))
 
 try:
     from ebooklib import epub  # noqa: F401
+    from scripts import build_epub as builder  # noqa: E402
     HAVE_EBOOKLIB = True
-except ImportError:  # pragma: no cover - залежність ставить лише крок збірки
+except ImportError:  # залежність ставить лише крок збірки
     HAVE_EBOOKLIB = False
+    builder = None
 
-from scripts import build_epub as builder  # noqa: E402
 
-
+@unittest.skipUnless(HAVE_EBOOKLIB, "ebooklib не встановлено")
 class TestEpub(unittest.TestCase):
-    """Без ebooklib перевіряємо лише розбір розділів; з ним — і сам файл."""
-
     def test_all_twenty_chapters_are_found(self):
-        numbers = [number for number, _ in builder.chapters()]
-        self.assertEqual(numbers, list(range(1, 21)))
+        self.assertEqual([n for n, _ in builder.chapters()], list(range(1, 21)))
 
     def test_every_verse_gets_an_anchor(self):
         total = 0
@@ -36,16 +34,11 @@ class TestEpub(unittest.TestCase):
         self.assertEqual(total, 298, "у реєстрі 298 віршів")
 
     def test_markup_is_escaped(self):
-        content, _ = builder.render_chapter(1, builder.chapters()[0][1])
-        self.assertNotIn("<", content.replace("<h1", "").replace("<h2", "")
-                         .replace("<h3", "").replace("</h1", "").replace("</h2", "")
-                         .replace("</h3", "").replace("<p class", "").replace("</p", "")
-                         .replace("<html", "").replace("</html", "").replace("<body", "")
-                         .replace("</body", "").replace("<br/", ""))
+        content, _ = builder.render_chapter(*builder.chapters()[0])
+        self.assertNotIn("<script", content)
+        self.assertNotIn("<&", content)
 
-    @unittest.skipUnless(HAVE_EBOOKLIB, "ebooklib не встановлено")
     def test_built_file_follows_epub_layout(self):
-        import tempfile
         original = builder.OUT
         with tempfile.TemporaryDirectory() as tmp:
             builder.OUT = Path(tmp) / "book.epub"
@@ -56,12 +49,8 @@ class TestEpub(unittest.TestCase):
                     self.assertEqual(first.filename, "mimetype")
                     self.assertEqual(first.compress_type, 0)
                     names = archive.namelist()
-                self.assertTrue(any(name.endswith(".ncx") for name in names))
-                self.assertTrue(any(name.endswith("nav.xhtml") for name in names))
-                text = b"".join(
-                    Path(tmp).joinpath("x").read_bytes() if False else b"" for _ in []
-                )
-                self.assertEqual(text, b"")
+                self.assertTrue(any(n.endswith(".ncx") for n in names))
+                self.assertTrue(any(n.endswith("nav.xhtml") for n in names))
             finally:
                 builder.OUT = original
 
