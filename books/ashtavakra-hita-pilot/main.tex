@@ -14,7 +14,7 @@
 %    xelatex main.tex && makeindex main.idx && xelatex main.tex && xelatex main.tex
 %
 %  Потрібні пакети: fontspec, polyglossia, geometry, hyperref, makeidx,
-%  longtable; шрифт DejaVu Serif (пакет fonts-dejavu-core).
+%  longtable, graphicx; шрифт DejaVu Serif (пакет fonts-dejavu-core).
 % =====================================================================
 \documentclass[10pt,a5paper,openany]{book}
 
@@ -30,12 +30,21 @@
 \usepackage[a5paper,top=17mm,bottom=19mm,inner=17mm,outer=15mm,headsep=5mm]{geometry}
 \usepackage{longtable}
 \usepackage{makeidx}
+% Ілюстрації до віршів — власні схеми з books/ashtavakra-gita/ilustratsii.
+% У PDF вони потрапляють як окремі рисунки після коментаря до вірша.
+\usepackage{graphicx}
 % hyperref вмикаємо лише тоді, коли в TeX Live є TFM pzdr (пакет
 % texlive-fonts-recommended). Без нього XeTeX-драйвер hyperref падає на
 % \XeTeXLinkBox, тому краще скласти PDF без закладок, ніж не скласти зовсім.
 \IfFileExists{pzdr.tfm}{\usepackage[hidelinks]{hyperref}}{}
 
 \makeindex
+
+\newcommand{\virfig}[1]{%
+  \begin{center}
+    \includegraphics[width=0.62\textwidth]{#1}
+  \end{center}
+  \vspace{1mm}}
 
 % --- дрібні типографські зручності, без залежності від latex-extra -----
 \setlength{\parindent}{1.1em}
@@ -189,6 +198,8 @@ IAST, і показати, скільки власного матеріалу в
 тексту. Решта шість глав покриті частково або не покриті зовсім.
 Кожен вірш подано нашим власним внеском: українським перекладом, дослівним
 значенням, граматичним розбором, коментарем і примітками про різночитання.
+До кожного вірша, де є власна схема, додано рисунок: він не прикрашає
+сторінку, а показує ситуацію, про яку йдеться у вірші.
 
 \section*{Чого тут немає}
 
@@ -246,6 +257,12 @@ IAST, і показати, скільки власного матеріалу в
 \noindent\textbf{\sffamily Що ми не відтворюємо.}
 Транскрипції GRETIL і SARIT, їхню розмітку та редакторський апарат. Локатори
 (\texttt{Avg\_2.1}, \texttt{verse\_2.1}) подано як покажчик для звірки.
+
+\vspace{0.6em}
+\noindent\textbf{\sffamily Що є джерелом ілюстрацій.}
+Схеми до віршів — власні, зроблені для цього видання (\texttt{books/ashtavakra-gita/ilustratsii}),
+і подані під тією ж ліцензією «ВОЛЬНІСТЬ». Вони не є історичними
+ілюстраціями й не претендують на іконографічну точність.
 
 \vspace{0.6em}
 \noindent\textbf{\sffamily Чого ми не стверджуємо.}
