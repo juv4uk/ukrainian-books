@@ -429,17 +429,6 @@ def scene_6_1() -> str:
     return "".join(p)
 
 
-def scene_7_1() -> str:
-    """Човен світу блукає океаном."""
-    p = [sea(196)]
-    p.append(boat(220, 176, 1.0))
-    # вітер
-    for i, yy in enumerate((92, 112, 132)):
-        p.append(line(f"M60 {yy} q34 -10 68 0 q26 8 44 -4", stroke=MUTED, width=1.3))
-    p.append(line("M24 236 L396 236", stroke=FAINT, width=1.2))
-    return "".join(p)
-
-
 def scene_8_1() -> str:
     """Людина за ґратами бажання тягнеться до птаха."""
     p = [ground(220)]
@@ -537,19 +526,36 @@ def scene_16_1() -> str:
     return "".join(p)
 
 
-def scene_17_3() -> str:
-    """Слон обходить гірке листя, бо має свою втіху."""
-    p = [ground(224)]
-    p.append(elephant(210, 224, 1.0))
-    # гірке листя (німба) ліворуч
-    for i, (x, dy) in enumerate(((74, 0), (96, 6), (60, 10))):
-        p.append(line(f"M{x} {214 - dy} q-16 -16 -6 -34 q18 8 6 34", stroke=MUTED, width=1.4))
-    p.append(line("M46 224 L124 224", stroke=FAINT, width=1.2))
-    # пагони салакі праворуч — те, що слон любить
-    for i, x in enumerate((330, 352, 372)):
-        p.append(line(f"M{x} 224 L{x} {192 - i * 6}", stroke=ACCENT, width=1.8))
-        p.append(line(f"M{x} {204 - i * 6} q-12 -10 -3 -20", stroke=ACCENT, width=1.4))
-        p.append(line(f"M{x} {194 - i * 6} q12 -10 3 -20", stroke=ACCENT, width=1.4))
+def scene_5_2() -> str:
+    """Бульбашки постають з океану — так само й світ із тебе."""
+    p = [line("M24 200 L170 200", stroke=FAINT, width=1.2)]
+    p.append(sea(206))
+    p.append(seated(92, 200, 86, face=1))
+    # бульбашки, що піднімаються з води
+    for cx, cy, r in ((196, 168, 9), (222, 146, 13), (252, 118, 18), (286, 84, 24)):
+        p.append(circle(cx, cy, r, stroke=ACCENT, width=1.5, opacity=0.95))
+        p.append(line(f"M{cx - r * 0.5:.1f} {cy - r * 0.4:.1f} "
+                      f"q{r * 0.35:.1f} -{r * 0.35:.1f} {r * 0.7:.1f} 0",
+                      stroke=ACCENT, width=1.1))
+    p.append(line("M150 200 q14 -10 26 0", stroke=MUTED, width=1.3))
+    return "".join(p)
+
+
+def scene_15_14() -> str:
+    """Чи сяє окремо від золота браслет?"""
+    p = [ground(220)]
+    # злиток золота на плиті
+    p.append(line("M96 220 L200 220 L192 204 L104 204 Z", stroke=MUTED, width=1.4))
+    p.append(sil(["M118 204 Q112 178 134 172 Q158 166 172 180 Q182 192 176 204 Z"],
+                 fill=ACCENT, opacity=0.9))
+    # браслет
+    p.append(circle(288, 176, 30, stroke=INK, width=5))
+    p.append(circle(288, 176, 30, stroke=PAPER, width=2.4))
+    p.append(circle(288, 176, 22, stroke=INK, width=1.4))
+    # те саме сяйво: тонка лінія від золота до браслета
+    p.append(line("M182 190 Q236 172 256 174", stroke=ACCENT, width=1.2, dash="5 5"))
+    for x0, y0, x1, y1 in ((288, 132, 288, 118), (250, 146, 240, 136), (326, 146, 336, 136)):
+        p.append(line(f"M{x0} {y0} L{x1} {y1}", stroke=ACCENT, width=1.2))
     return "".join(p)
 
 
@@ -648,9 +654,9 @@ SCENES: dict[str, tuple[str, str, object, str]] = {
     "6.1": ("hlechyk-i-prostir", "Глечик і простір",
             scene_6_1,
             "Глечик на землі: той самий простір усередині й зовні, крізь стінки"),
-    "7.1": ("choven", "Човен світу",
-            scene_7_1,
-            "Човен із вітрилом блукає океаном, і ніхто ним не керує"),
+    "5.2": ("bulbashka-z-okeanu", "Бульбашка з океану",
+            scene_5_2,
+            "Людина сидить на березі, а з океану одна за одною піднімаються бульбашки"),
     "8.1": ("polon", "Ґрати бажання",
             scene_8_1,
             "Людина за ґратами тягнеться рукою до птаха, що сидить на волі"),
@@ -669,9 +675,9 @@ SCENES: dict[str, tuple[str, str, object, str]] = {
     "16.1": ("kupy-knyh", "Купи книг",
              scene_16_1,
              "Людина сидить між двома купами книг, тримаючись за голову"),
-    "17.3": ("slon", "Слон і гірке листя",
-             scene_17_3,
-             "Слон обходить гірке листя й тягнеться до пагонів, бо має свою втіху"),
+    "15.14": ("brastelet-i-zoloto", "Браслет і золото",
+              scene_15_14,
+              "Злиток золота на плиті й браслет поруч: окремо від золота браслет не сяє"),
     "17.12": ("zvlinenyi-u-diiakh", "Звільнений у звичайних діях",
               scene_17_12,
               "Людина йде повз чашу, квітку й плід, торкаючись їх, і ніщо її не тримає"),
