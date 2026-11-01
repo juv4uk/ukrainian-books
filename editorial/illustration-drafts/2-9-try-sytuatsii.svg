@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-labelledby="title desc">
+  <title id="title">Аштавакра-ґіта 2.9: перламутр, мотузка, сонячне марево</title>
+  <desc id="desc">Авторська пояснювальна ілюстрація з трьох сцен. Перша: мушля існує, срібний відблиск здається сріблом. Друга: на землі лежить мотузка, а її помилково бачать змією. Третя: над сухою дорогою мерехтить сонячне марево, помилково сприйняте як вода. Суцільний графітовий контур позначає реальну основу; пунктир вохристого кольору — уявний образ.</desc>
+  <rect width="1200" height="460" fill="#fbf8f1"/>
+  <rect x="1" y="1" width="1198" height="458" rx="14" fill="none" stroke="#c9d3dd" stroke-width="2"/>
+  <text x="40" y="41" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="22" fill="#334455">Три ситуації помилкового впізнавання</text>
+  <text x="1157" y="41" text-anchor="end" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#617589">Аштавакра-ґіта · 2.9</text>
+
+  <rect x="27" y="66" width="364" height="312" rx="16" fill="#ffffff" stroke="#d7dde2" stroke-width="2"/>
+  <text x="47" y="98" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#334455">1. Перламутр — не срібло</text>
+  <path d="M91 245 Q105 158 202 151 Q297 163 318 245 Q261 284 202 280 Q132 283 91 245 Z" fill="#dce6e7" stroke="#3b4a5a" stroke-width="4"/>
+  <path d="M100 241 Q140 194 202 171 Q264 196 307 241" fill="none" stroke="#8aa0b5" stroke-width="3"/>
+  <path d="M121 263 Q149 223 201 170 M167 278 Q182 226 202 172 M222 277 Q220 218 203 170 M277 262 Q259 213 203 170" fill="none" stroke="#8aa0b5" stroke-width="2"/>
+  <path d="M218 168 Q253 144 289 167 Q270 175 251 195" fill="none" stroke="#b0762a" stroke-width="7" stroke-dasharray="8 8" stroke-linecap="round"/>
+  <text x="55" y="329" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#3b4a5a">Є: перламутрова мушля</text>
+  <text x="55" y="351" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#b0762a">Здається: срібло у відблиску</text>
+
+  <rect x="418" y="66" width="364" height="312" rx="16" fill="#ffffff" stroke="#d7dde2" stroke-width="2"/>
+  <text x="438" y="98" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#334455">2. Мотузка — не змія</text>
+  <path d="M455 265 Q495 206 540 244 T637 234 T739 255" fill="none" stroke="#3b4a5a" stroke-width="15" stroke-linecap="round"/>
+  <path d="M455 265 Q495 206 540 244 T637 234 T739 255" fill="none" stroke="#b5a184" stroke-width="9" stroke-linecap="round" stroke-dasharray="4 9"/>
+  <path d="M457 235 Q493 177 543 214 T632 207 T731 230" fill="none" stroke="#b0762a" stroke-width="5" stroke-dasharray="10 11" stroke-linecap="round"/>
+  <path d="M733 229 Q761 216 761 236 Q753 248 735 240" fill="none" stroke="#b0762a" stroke-width="4" stroke-dasharray="7 6"/>
+  <circle cx="750" cy="231" r="3" fill="#b0762a"/>
+  <text x="446" y="329" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#3b4a5a">Є: мотузка на землі</text>
+  <text x="446" y="351" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#b0762a">Здається: змія в сутінках</text>
+
+  <rect x="809" y="66" width="364" height="312" rx="16" fill="#ffffff" stroke="#d7dde2" stroke-width="2"/>
+  <text x="829" y="98" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#334455">3. Марево — не вода</text>
+  <circle cx="1108" cy="151" r="32" fill="#f1d397" stroke="#d8aa55" stroke-width="2"/>
+  <path d="M838 210 L1144 210" stroke="#8aa0b5" stroke-width="3"/>
+  <path d="M963 211 L896 302 M1036 211 L1108 302" stroke="#3b4a5a" stroke-width="3" fill="none"/>
+  <path d="M925 275 Q961 263 994 274 T1062 272" fill="none" stroke="#b0762a" stroke-width="4" stroke-dasharray="8 9"/>
+  <path d="M924 289 Q970 278 1009 287 T1088 285" fill="none" stroke="#b0762a" stroke-width="3" stroke-dasharray="7 9"/>
+  <path d="M946 191 Q955 176 946 162 M977 191 Q988 175 981 161 M1009 190 Q1022 177 1016 163" stroke="#b0762a" stroke-width="2" fill="none" opacity="0.7"/>
+  <text x="837" y="329" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#3b4a5a">Є: суха дорога, гаряче повітря</text>
+  <text x="837" y="351" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#b0762a">Здається: вода вдалині</text>
+
+  <line x1="38" y1="412" x2="86" y2="412" stroke="#3b4a5a" stroke-width="5" stroke-linecap="round"/>
+  <text x="99" y="418" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#334455">Те, що є</text>
+  <line x1="253" y1="412" x2="301" y2="412" stroke="#b0762a" stroke-width="5" stroke-linecap="round" stroke-dasharray="7 8"/>
+  <text x="314" y="418" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#334455">Те, що ввижається</text>
+  <text x="1158" y="418" text-anchor="end" font-family="DejaVu Sans, sans-serif" font-size="13" fill="#617589">Власний редакторський прототип · не історична ілюстрація</text>
+</svg>
