@@ -27,6 +27,21 @@
       }
     },
     "5.2": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "udeti bhavato viśvaṃ vāridher iva budbudaḥ",
+            "ukrainian_translation": "Світ постає з тебе, як бульбашка з океану.",
+            "commentary": "udeti означає «постає»; bhavataḥ допускає значення «з тебе» або «твого», vāridher iva budbudaḥ порівнює світ із бульбашкою в океані. Це образ залежного виникнення, а не самостійний доказ неіснування світу."
+          },
+          {
+            "iast": "iti jñātvā ekam ātmānam evam eva layaṃ vraja",
+            "ukrainian_translation": "Знаючи, що Атман єдиний, — так само йди до розчинення.",
+            "commentary": "iti jñātvā — «так знаючи», ekam ātmānam стосується єдності Атмана. evam eva layaṃ vraja — наказовий рефрен усіх чотирьох віршів цієї глави; український відповідник збережено без змін."
+          }
+        ]
+      },
       "parallel": "5-2",
       "illustration": {
         "file": "5-2-space.svg",
@@ -34,6 +49,21 @@
       }
     },
     "5.3": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "pratyakṣam apy avastutvād viśvaṃ nāsty amale tvayi",
+            "ukrainian_translation": "Хоч світ і перед очима, він не існує в тобі, незаплямованому, — бо він не річ,",
+            "commentary": "pratyakṣam api означає «хоч і видимий перед очима»; avastutvād — «через відсутність самостійної речовості/сутності», viśvaṃ nāsti — «світ не існує»; amale tvayi звертається до незаплямованого адресата. Це відтворення редакторської картки, а не нове критичне читання."
+          },
+          {
+            "iast": "rajjusarpa iva vyaktam evam eva layaṃ vraja",
+            "ukrainian_translation": "як змій у мотузці, явно. Так само йди до розчинення.",
+            "commentary": "rajjusarpa iva — порівняння з уявним змієм у мотузці, vyaktam — «виразно, явно». evam eva layaṃ vraja зберігає незмінний рефрен глави; філософське пояснення образу слід відрізняти від лексичного значення санскриту."
+          }
+        ]
+      },
       "parallel": "5-3",
       "illustration": {
         "file": "5-3-illusion.svg",
@@ -41,6 +71,21 @@
       }
     },
     "5.4": {
+      "postrokovo": {
+        "status": "чернетка",
+        "lines": [
+          {
+            "iast": "samaduḥkhasukhaḥ pūrṇa āśānairāśyayoḥ samaḥ",
+            "ukrainian_translation": "Рівний у стражданні й радості, повний, рівний у сподіванні й безнадії,",
+            "commentary": "samaduḥkhasukhaḥ — рівність до страждання й радості; pūrṇaḥ — «повний»; āśānairāśyayoḥ samaḥ — рівний у парі сподівання/безнадія. Два протиставлення містяться в одному друкованому піврядку; це не два самостійні переклади."
+          },
+          {
+            "iast": "samajīvitamṛtyuḥ sann evam eva layaṃ vraja",
+            "ukrainian_translation": "рівний у житті й смерті, — так само йди до розчинення.",
+            "commentary": "samajīvitamṛtyuḥ — рівність у житті й смерті, san — дієприкметник «бувши». evam eva layaṃ vraja — той самий наказовий рефрен, що в 5.1–5.3; український порядок слів залишено без змін."
+          }
+        ]
+      },
       "parallel": "5-4",
       "illustration": {
         "file": "5-4-balance.svg",
