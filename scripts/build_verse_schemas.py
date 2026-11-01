@@ -292,6 +292,110 @@ def motif_thread(p: dict) -> str:
     return "".join(parts)
 
 
+# --- Сюжетні мотиви ---------------------------------------------------------
+# Власник просив, щоб у особливих місцях ілюстрація не була абстрактною
+# схемою, а показувала ситуацію. Ці чотири мотиви малюють сцену: човен у
+# океані, звірів перед левом, слона й гірке листя, людину під зайшлим сонцем.
+# Вони параметричні, як і решта: той самий код обслуговує кілька віршів.
+
+def motif_boat(p: dict) -> str:
+    """Човен у океані: вітер жене його або вщухає."""
+    storm = p.get("state", "storm") == "storm"
+    parts = [_text(20, 34, p.get("sea", "безмежний океан"), size=12, fill=MUTED)]
+    amp = 9 if storm else 3
+    for y in (190, 202, 214, 226):
+        parts.append(f'<path d="M28 {y} q18 -{amp} 36 0 t36 0 t36 0 t36 0 t36 0 t36 0 t36 0" '
+                     f'stroke="{MUTED}" fill="none" stroke-width="1.3"/>')
+    # корпус човна
+    tilt = ' transform="rotate(-8 210 168)"' if storm else ""
+    parts.append(f'<g{tilt}><path d="M168 162 q42 20 84 0 q-16 20 -42 20 q-26 0 -42 -20 z" '
+                 f'fill="none" stroke="{INK}" stroke-width="1.8"/>'
+                 f'<line x1="210" y1="112" x2="210" y2="162" stroke="{INK}" stroke-width="1.6"/>'
+                 f'<path d="M210 114 l24 40 l-24 6 z" fill="none" stroke="{INK}" stroke-width="1.4"/></g>')
+    # вітер
+    if storm:
+        parts.append(f'<path d="M96 92 q22 10 44 0 q22 -10 44 0" stroke="{ACCENT}" fill="none" stroke-width="1.6"/>')
+        parts.append(f'<path d="M300 84 q18 8 36 0" stroke="{ACCENT}" fill="none" stroke-width="1.6"/>')
+    else:
+        parts.append(f'<path d="M300 84 q18 4 36 0" stroke="{FAINT}" fill="none" stroke-width="1.4"/>')
+    parts.append(_text(20, 246, p.get("note", ""), size=11, fill=ACCENT))
+    return "".join(parts)
+
+
+def motif_beasts(p: dict) -> str:
+    """Дрібні звірі й лев у профіль: хтось тікає, хтось лишається."""
+    parts = [_text(20, 34, p.get("prey", "предмети"), size=12, fill=MUTED),
+             _text(W - 20, 34, p.get("hunter", "вільний від слідів"), size=12, fill=ACCENT, anchor="end")]
+    # три звірі в профіль, що біжать ліворуч
+    for i, (x, y) in enumerate(((64, 150), (120, 168), (176, 152))):
+        parts.append(
+            f'<g stroke="{MUTED}" fill="none" stroke-width="1.5">'
+            f'<ellipse cx="{x + 20}" cy="{y}" rx="17" ry="8"/>'          # тулуб
+            f'<circle cx="{x + 2}" cy="{y - 6}" r="5"/>'                  # голова
+            f'<path d="M{x + 2} {y - 9} l-6 -4"/>'                        # вухо
+            f'<path d="M{x + 10} {y + 8} l-3 12 M{x + 20} {y + 8} l3 12"/>'  # ноги
+            f'<path d="M{x + 36} {y - 2} q10 -8 14 -2"/>'                 # хвіст
+            f'</g>')
+    # лев у профіль: грива, морда, лапи, хвіст
+    parts.append(
+        f'<g stroke="{ACCENT}" fill="none" stroke-width="1.6">'
+        f'<ellipse cx="322" cy="160" rx="34" ry="16"/>'                       # тулуб
+        f'<circle cx="288" cy="146" r="19"/>'                                 # грива
+        f'<path d="M288 146 m-19 0 a19 19 0 1 0 38 0" stroke-dasharray="0"/>'
+        f'<path d="M272 138 q-12 4 -14 12 q8 6 16 2"/>'                       # морда
+        f'<circle cx="272" cy="142" r="1.8" fill="{ACCENT}"/>'                # око
+        f'<path d="M296 175 l-2 18 M312 176 l0 18 M332 175 l2 18 M346 174 l4 18"/>'  # лапи
+        f'<path d="M356 152 q16 -6 14 -22"/>'                                 # хвіст
+        f'</g>')
+    parts.append(_text(20, 250, p.get("note", ""), size=11, fill=INK))
+    return "".join(parts)
+
+
+def motif_elephant(p: dict) -> str:
+    """Слон у профіль: те, що вабить ліворуч, і гірке листя праворуч."""
+    parts = [_text(20, 34, p.get("wanted", "пагони"), size=12, fill=MUTED),
+             _text(W - 20, 34, p.get("rejected", "гірке листя"), size=12, fill=ACCENT, anchor="end")]
+    # слон у профіль, голова ліворуч
+    parts.append(
+        f'<g stroke="{INK}" fill="none" stroke-width="1.8">'
+        f'<ellipse cx="252" cy="152" rx="66" ry="40"/>'                        # тулуб
+        f'<path d="M196 132 q-34 4 -42 34 q-6 26 6 40"/>'                      # голова й хобот
+        f'<path d="M160 206 q6 16 18 10 q8 -6 2 -16"/>'                        # кінець хобота
+        f'<circle cx="176" cy="132" r="16"/>'                                  # вухо
+        f'<path d="M158 176 q-14 6 -16 18"/>'                                  # бивень
+        f'<path d="M214 190 l-2 34 M240 192 l0 34 M288 192 l2 34 M310 190 l4 34"/>'  # ноги
+        f'<path d="M318 140 q16 -4 14 -20"/>'                                  # хвіст
+        f'</g>')
+    parts.append(f'<circle cx="166" cy="146" r="2.2" fill="{INK}"/>')
+    # соковита гілка ліворуч
+    parts.append(f'<path d="M44 116 q26 -14 46 -4" stroke="{MUTED}" fill="none" stroke-width="1.6"/>')
+    parts.append(f'<path d="M58 110 q6 -12 16 -6 q-6 12 -16 6 z" fill="none" stroke="{MUTED}" stroke-width="1.3"/>')
+    parts.append(f'<path d="M74 112 q8 -10 16 -4 q-8 10 -16 4 z" fill="none" stroke="{MUTED}" stroke-width="1.3"/>')
+    # гірке листя праворуч
+    parts.append(f'<path d="M330 96 q28 10 44 0" stroke="{ACCENT}" fill="none" stroke-width="1.6"/>')
+    parts.append(f'<path d="M346 92 q6 -12 16 -6 q-6 12 -16 6 z" fill="none" stroke="{ACCENT}" stroke-width="1.3"/>')
+    parts.append(_text(20, 252, p.get("note", ""), size=11, fill=INK))
+    return "".join(parts)
+
+
+def motif_rest(p: dict) -> str:
+    """Людина лягає там, де зайшло сонце: спокій без вибору місця."""
+    parts = [_text(20, 34, p.get("act", "лягає там"), size=12, fill=MUTED)]
+    # низьке сонце на обрії
+    parts.append(f'<line x1="28" y1="176" x2="{W - 28}" y2="176" stroke="{FAINT}" stroke-width="1.4"/>')
+    parts.append(f'<path d="M300 176 a26 26 0 0 1 52 0" fill="none" stroke="{ACCENT}" stroke-width="1.6"/>')
+    for dx in (-40, -26, 26, 40):
+        parts.append(f'<line x1="{326 + dx}" y1="176" x2="{326 + dx * 1.35:.0f}" y2="{160 if abs(dx) > 30 else 152}" '
+                     f'stroke="{ACCENT}" stroke-width="1.2"/>')
+    # людина лежить
+    parts.append(f'<circle cx="96" cy="188" r="9" fill="none" stroke="{INK}" stroke-width="1.6"/>')
+    parts.append(f'<path d="M108 196 q34 -6 66 2" stroke="{INK}" fill="none" stroke-width="1.8"/>')
+    parts.append(f'<path d="M120 200 q-6 10 -18 12" stroke="{INK}" fill="none" stroke-width="1.4"/>')
+    parts.append(f'<path d="M156 198 q-4 12 -16 16" stroke="{INK}" fill="none" stroke-width="1.4"/>')
+    parts.append(_text(20, 240, p.get("note", ""), size=11, fill=ACCENT))
+    return "".join(parts)
+
+
 MOTIFS = {
     "motion": motif_motion,
     "neti": motif_neti,
@@ -302,6 +406,10 @@ MOTIFS = {
     "knot": motif_knot,
     "flame": motif_flame,
     "thread": motif_thread,
+    "boat": motif_boat,
+    "beasts": motif_beasts,
+    "elephant": motif_elephant,
+    "rest": motif_rest,
 }
 
 # Вірш → (мотив, параметри, коротка назва для alt-тексту).
