@@ -1,15 +1,23 @@
 #!/usr/bin/env python3
-"""Складальна машина ФОРМАТ-02: пʼять шарів на вірш + поетичний переклад.
+"""Складальна машина ФОРМАТ-02: шість шарів на вірш + поетичний переклад.
 
 Машина працює для **всіх 298 віршів**, а не лише для глави 1. Для будь-якої
-глави, де є картки, вона складає шари, які є в даних:
+глави, де є картки, вона складає шари, які є в даних, у порядку
+`docs/FORMAT_V2.md`:
 
 1. **деванагарі** — механічно з поля `iast` (`scripts/iast_to_devanagari.py`);
-2. **українська транслітерація** — механічно з `iast` (`scripts/iast_to_ukrainian.py`);
-3. **переклад** — з картки, поле `ukrainian_translation`;
-4. **науковий коментар** — з картки, поле `commentary`, плюс зареєстрована
+2. **IAST** — латинська транслітерація з картки, поле `iast`, як є;
+3. **українська транслітерація** — механічно з `iast` (`scripts/iast_to_ukrainian.py`);
+4. **переклад** — з картки, поле `ukrainian_translation`;
+5. **коментар** — з картки, поле `commentary`, плюс зареєстрована
    українська паралель (`books/ashtavakra-gita/paraleli.json`), якщо вона є;
-5. **ілюстрація** — власна схема з `ilustratsii/`, якщо вона є.
+6. **ілюстрація** — власна схема з `ilustratsii/`, якщо вона є.
+
+Маркери шарів (`**Деванагарі.**`, `**IAST.**`, `**Українська транслітерація.**`,
+`**Переклад.**`, `**Коментар.**`) — це контракт із
+`scripts/check_scholarly_pages.py`: перевірка вимагає саме їх і саме в цьому
+порядку. Змінювати маркер тут, не змінивши перевірку, не можна — це ловить
+`tests/test_scholarly_pages_match_generator.py`.
 
 Чого машина **не** робить: не вигадує перекладу, коментаря, паралелі чи
 схеми. Немає даних — немає шару, і це видно в звіті, а не приховано.
@@ -56,10 +64,12 @@ HONEST_SCENE = "Наша ілюстрація до вірша {verse} — не �
 
 HEADER = """# Аштавакра-ґіта. Глава {chapter}. Наукове представлення
 
-> ФОРМАТ-02: кожен вірш подано пʼятьма шарами — деванагарі, українська
+> ФОРМАТ-02: кожен вірш подано шістьма шарами — деванагарі, IAST, українська
 > транслітерація, переклад, науковий коментар з українськими паралелями,
 > ілюстрація. Плюс окремо — поетичний переклад (`poetychnyi/rozdil-{chapter}.md`).
 >
+> **IAST** — те, що записано в картці (поле `iast`), без редакторських
+> поправок: це єдиний шар, який не перераховується скриптом.
 > **Деванагарі тут — механічна** транслітерація поля `iast` з картки
 > (`scripts/iast_to_devanagari.py`), а не окреме читання за рукописом.
 > **Українська транслітерація** — теж механічна (`scripts/iast_to_ukrainian.py`,
@@ -163,6 +173,7 @@ def layers(card: dict, extra: dict, parallels: dict[str, dict],
         "id": ident,
         "postrokovo": prepare_alignment(card, entry),
         "devanagari": to_devanagari(iast, where=f"картці {ident}") if iast else None,
+        "iast": normalise(iast),
         "transliteration": to_ukrainian(iast, where=f"картці {ident}") if iast else None,
         "translation": normalise(card.get("ukrainian_translation")),
         "commentary": normalise(card.get("commentary")),
@@ -177,6 +188,8 @@ def render_markdown_verse(data: dict) -> str:
     out = [f"## {data['id']}", ""]
     if data["devanagari"]:
         out += [f"**Деванагарі.** {data['devanagari']}", ""]
+    if data.get("iast"):
+        out += [f"**IAST.** {data['iast']}", ""]
     if data["transliteration"]:
         out += [f"**Українська транслітерація.** {data['transliteration']}", ""]
     if data["translation"]:
@@ -184,7 +197,7 @@ def render_markdown_verse(data: dict) -> str:
     if data["postrokovo"]:
         out += [render_markdown_alignment(data["postrokovo"]), ""]
     if data["commentary"]:
-        out += [f"**Науковий коментар.** {data['commentary']}", ""]
+        out += [f"**Коментар.** {data['commentary']}", ""]
     parallel = data["parallel"]
     if parallel:
         label = {

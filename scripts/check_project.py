@@ -57,6 +57,34 @@ def check_card_json_syntax(root: Path) -> list[str]:
     return errors
 
 
+def check_scholarly_pages(root: Path) -> list[str]:
+    """Структурна перевірка наукових сторінок книжки — обовʼязковий гейт.
+
+    Раніше `scripts/check_scholarly_pages.py` існував, але його не викликав
+    ніхто: перевірка вимагала маркер `**Коментар.**` і шар `**IAST.**`, а
+    генератор писав `**Науковий коментар.**` без IAST. Тепер, коли боки
+    зведено (канон — `docs/FORMAT_V2.md`), перевірка входить до гейту: далі
+    вона не може знову тихо померти.
+    """
+    package_root = Path(__file__).resolve().parents[1]
+    if str(package_root) not in sys.path:
+        sys.path.insert(0, str(package_root))
+    from scripts.check_scholarly_pages import check_page
+
+    errors: list[str] = []
+    books = root / "books"
+    if not books.is_dir():
+        return errors
+    for page in sorted(books.glob("*/rozdil-*-naukove.md")):
+        if page.is_symlink() or not page.is_file():
+            errors.append(f"{page.name}: очікується звичайний Markdown-файл")
+            continue
+        rel = page.relative_to(root).as_posix()
+        for message in check_page(page, root):
+            errors.append(message.replace(str(page), rel, 1))
+    return errors
+
+
 def run() -> int:
     errors: list[str] = []
     for rel in REQUIRED:
@@ -78,6 +106,10 @@ def run() -> int:
 
     # Помилка синтаксису картки має провалювати також загальний CI-гейт.
     errors.extend(check_card_json_syntax(ROOT))
+
+    # Наукові сторінки: шари, паралелі та безпека SVG (той самий чек, що й
+    # `scripts/check_scholarly_pages.py`, лише по всіх главах одразу).
+    errors.extend(check_scholarly_pages(ROOT))
 
     book_root = ROOT / "books"
     if book_root.is_dir():

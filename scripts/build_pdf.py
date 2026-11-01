@@ -6,7 +6,7 @@ XeLaTeX (LuaTeX без luaotfload, а CTAN недоступний для tlmgr).
 йде іншим рушієм, і це сказано прямо в колофоні книги, а не приховано.
 
 Джерела — згенеровані файли книги:
-  books/ashtavakra-gita/rozdil-N-naukove.md   (20 розділів, пʼять шарів)
+  books/ashtavakra-gita/rozdil-N-naukove.md   (20 розділів, шість шарів)
   books/ashtavakra-gita/poetychnyi/rozdil-N.md (20 розділів, поезія)
   books/ashtavakra-gita/ZMIST.md
 """

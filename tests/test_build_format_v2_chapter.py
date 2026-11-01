@@ -17,12 +17,12 @@ from scripts.build_verse_schemas import SPECS  # noqa: E402
 
 BOOK = ROOT / "books" / "ashtavakra-gita"
 CHAPTER = 1
-LAYER_LABELS = ("Деванагарі.", "Українська транслітерація.", "Переклад.",
-                "Науковий коментар.", "Ілюстрація.")
+LAYER_LABELS = ("Деванагарі.", "IAST.", "Українська транслітерація.",
+                "Переклад.", "Коментар.", "Ілюстрація.")
 
 
 class LayerTests(unittest.TestCase):
-    """Пʼять шарів мусять бути на кожному з 20 віршів."""
+    """Шість шарів мусять бути на кожному з 20 віршів (docs/FORMAT_V2.md)."""
 
     def setUp(self) -> None:
         self.cards = builder.load_cards(CHAPTER)
@@ -34,10 +34,11 @@ class LayerTests(unittest.TestCase):
     def test_twenty_verses(self) -> None:
         self.assertEqual(len(self.cards), 20)
 
-    def test_all_five_layers_present_on_every_verse(self) -> None:
+    def test_all_six_layers_present_on_every_verse(self) -> None:
         for data in self.data:
             with self.subTest(verse=data["id"]):
                 self.assertTrue(data["devanagari"], "немає деванагарі")
+                self.assertTrue(data["iast"], "немає IAST")
                 self.assertTrue(data["transliteration"], "немає транслітерації")
                 self.assertTrue(data["translation"], "немає перекладу")
                 self.assertTrue(data["commentary"], "немає коментаря")
@@ -74,11 +75,18 @@ class LayerTests(unittest.TestCase):
             with self.subTest(verse=data["id"]):
                 self.assertEqual(data["parallel"]["verse"], data["id"])
 
+    def test_iast_layer_is_the_card_field_verbatim(self) -> None:
+        """IAST не перераховується скриптом: це те, що записано в картці."""
+        for card, data in zip(self.cards, self.data):
+            with self.subTest(verse=data["id"]):
+                self.assertEqual(data["iast"], " ".join(card["iast"].split()))
+
     def test_machine_works_without_extra_data(self) -> None:
-        """Для глави без паралелей і схем машина все одно дає шари 1–4."""
+        """Для глави без паралелей і схем машина все одно дає шари 1–5."""
         card = self.cards[0]
         bare = builder.layers(card, {"verses": {}}, {})
         self.assertTrue(bare["devanagari"])
+        self.assertTrue(bare["iast"])
         self.assertTrue(bare["transliteration"])
         self.assertTrue(bare["translation"])
         self.assertTrue(bare["commentary"])
