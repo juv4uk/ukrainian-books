@@ -7,8 +7,10 @@
 `\\virsources`, яким завершується кожен блок вірша.
 
 Скрипт ідемпотентний: якщо рисунок до вірша вже вставлено, він нічого не робить.
+Посилання додається лише тоді, коли PDF схеми вже існує: частина SVG у каталозі —
+ручні ілюстрації, яких конвертер не торкається, і посилання на них зламало б збірку.
 
-Запуск:
+Запуск (після конвертації SVG → PDF):
     python3 scripts/attach_figures.py            # вставити
     python3 scripts/attach_figures.py --check    # лише порахувати
 """
@@ -34,10 +36,12 @@ FIGURE = "\\virfig{"
 def figure_for(ident: str) -> str | None:
     if not FIGURES.is_dir():
         return None
-    matches = sorted(FIGURES.glob(f"{ident.replace('.', '-')}-*.svg"))
-    if not matches:
-        return None
-    return PREFIX + matches[0].stem + ".pdf"
+    for svg in sorted(FIGURES.glob(f"{ident.replace('.', '-')}-*.svg")):
+        # Беремо лише ту схему, для якої збірка вже зробила PDF: частина SVG
+        # у каталозі — ручні ілюстрації, яких конвертер не торкається.
+        if (FIGURES / (svg.stem + ".pdf")).is_file():
+            return PREFIX + svg.stem + ".pdf"
+    return None
 
 
 def attach(text: str) -> tuple[str, int, int]:
