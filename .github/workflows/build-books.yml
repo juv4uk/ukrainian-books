@@ -46,15 +46,6 @@ jobs:
           builder.PILOT_CHAPTERS = tuple(range(1, 21))
           raise SystemExit(builder.main())
           PY
-      - name: Долучити власні схеми до віршів
-        if: steps.detect.outputs.found == 'true'
-        shell: bash
-        run: |
-          set -euo pipefail
-          # Схеми лежать у books/ashtavakra-gita/ilustratsii як SVG; нижчий
-          # крок конвертує їх у PDF, а цей — вставляє посилання у верстку.
-          # Вірш без власної схеми просто не отримує рисунка.
-          python3 scripts/attach_figures.py
       - name: Згенерувати поетичний том
         if: steps.detect.outputs.found == 'true'
         shell: bash
@@ -81,6 +72,15 @@ jobs:
           python3 scripts/build_verse_schemas.py --check
           python3 scripts/build_verse_schemas.py --pdf
           python3 scripts/build_format_v2_chapter.py --check
+      - name: Долучити власні схеми до віршів
+        if: steps.detect.outputs.found == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Крок стоїть ПІСЛЯ конвертації SVG → PDF: скрипт долучає лише ті
+          # схеми, чий PDF уже існує. Інакше посилання на неконвертовану
+          # ручну ілюстрацію ламало б latexmk.
+          python3 scripts/attach_figures.py
       - name: Зібрати дозволені книги
         if: steps.detect.outputs.found == 'true'
         shell: bash
