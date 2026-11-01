@@ -117,7 +117,7 @@ def md_to_html(text: str, base: str, poetry: bool) -> str:
             quote.append("<p>" + inline(s.lstrip("> ").strip()) + "</p>")
             i += 1; continue
 
-        m = re.fullmatch(r"(?:\*\*Ілюстрація\.\*\*\s+)?!\[(.*?)\]\((.*?)\)\s*(?:—\s*(.*))?", s)
+        m = re.fullmatch(r"(?:\*\*[^*\n]+\.\*\*\s+)?!\[(.*?)\]\((.*?)\)\s*(?:—\s*(.*))?", s)
         if m:
             flush_para(); flush_quote()
             alt, src, caption = m.group(1), m.group(2), (m.group(3) or "")
@@ -128,8 +128,9 @@ def md_to_html(text: str, base: str, poetry: bool) -> str:
                 raise ValueError(f"Ілюстрація поза каталогом книги: {src}")
             if not path.is_file():
                 raise ValueError(f"Ілюстрацію не знайдено: {src}")
-            if s.startswith("**Ілюстрація.**"):
-                out.append("<p><strong>Ілюстрація.</strong></p>")
+            for label in ("**Ілюстрація.**", "**Сцена.**"):
+                if s.startswith(label):
+                    out.append(f"<p><strong>{label.strip('*')}</strong></p>")
             out.append(f'<img src="{html.escape(path.as_uri(), quote=True)}" '
                        f'alt="{html.escape(alt, quote=True)}">')
             if caption:

@@ -46,9 +46,13 @@ EXTRA = BOOK / "format-v2"
 POETIC = BOOK / "poetychnyi"
 GENERATED = BOOK / "generated"
 PARALLELS = BOOK / "paraleli.json"
+SCENES = BOOK / "format-v2" / "scenes.json"
 ILUSTRATSII = "ilustratsii"
+SCENES_DIR = "ilustratsii-naratyvni"
 
 HONEST = "Схема наша, не історична ілюстрація."
+# Наративна ілюстрація — не схема поняття, а сцена; підпис інший і чесний.
+HONEST_SCENE = "Наша ілюстрація до вірша {verse} — не історичне зображення."
 
 HEADER = """# Аштавакра-ґіта. Глава {chapter}. Наукове представлення
 
@@ -63,6 +67,9 @@ HEADER = """# Аштавакра-ґіта. Глава {chapter}. Наукове 
 > **Українські паралелі** — наша інтерпретація, а не твердження про вплив;
 > реєстр і правила — `paraleli.json` і `scripts/check_ukrainian_parallels.py`.
 > **Схеми** — наші власні; жодна не є історичною ілюстрацією.
+> **Сцени** (`ilustratsii-naratyvni/`) — теж наші власні малюнки й теж не
+> історичні: це ситуація вірша, а не поняття, і фігури там — силуети без
+> облич.
 >
 > Цей файл згенеровано; правити треба картки й `format-v2/rozdil-{chapter}.json`,
 > а не його.
@@ -111,6 +118,14 @@ def load_parallels() -> dict[str, dict]:
     return {str(item["id"]): item for item in data.get("parallels", [])}
 
 
+def load_scenes() -> dict[str, dict]:
+    """Наративні ілюстрації: вірш → файл і підпис. Немає файлу — немає шару."""
+    if not SCENES.is_file():
+        return {}
+    data = json.loads(SCENES.read_text(encoding="utf-8"))
+    return {str(k): v for k, v in (data.get("scenes") or {}).items()}
+
+
 def load_poetic(chapter: int) -> dict[str, list[str]]:
     """Розібрати поетичний переклад: ``## 1.1`` → рядки вірша."""
     path = POETIC / f"rozdil-{chapter}.md"
@@ -138,7 +153,8 @@ def load_poetic(chapter: int) -> dict[str, list[str]]:
 # Один вірш
 # ---------------------------------------------------------------------------
 
-def layers(card: dict, extra: dict, parallels: dict[str, dict]) -> dict:
+def layers(card: dict, extra: dict, parallels: dict[str, dict],
+           scenes: dict[str, dict] | None = None) -> dict:
     """Зібрати шари одного вірша. Відсутні шари позначаються як відсутні."""
     ident = str(card["id"])
     iast = card.get("iast")
@@ -152,6 +168,7 @@ def layers(card: dict, extra: dict, parallels: dict[str, dict]) -> dict:
         "commentary": normalise(card.get("commentary")),
         "parallel": parallels.get(str(entry.get("parallel") or "")),
         "illustration": entry.get("illustration"),
+        "scene": (scenes or {}).get(ident),
     }
     return result
 
@@ -186,6 +203,13 @@ def render_markdown_verse(data: dict) -> str:
         file = data["illustration"]["file"]
         out += [f"**Ілюстрація.** ![{caption}]({ILUSTRATSII}/{file}) — "
                 f"{caption.rstrip('.')}. {HONEST}", ""]
+    scene = data.get("scene")
+    if scene:
+        caption = scene.get("caption") or ""
+        file = scene["file"]
+        honest = HONEST_SCENE.format(verse=data["id"])
+        out += [f"**Сцена.** ![{caption}]({SCENES_DIR}/{file}) — "
+                f"{caption.rstrip('.')}. {honest}", ""]
     return "\n".join(out)
 
 
@@ -237,6 +261,12 @@ def render_latex_verse(data: dict) -> str:
         pdf = str(Path(illustration["file"]).with_suffix(".pdf"))
         parts.append(r"\vfig{%s}{%s}{%s}" % (
             ILUSTRATSII + "/" + pdf, esc(illustration.get("caption") or ""), esc(HONEST)))
+    scene = data.get("scene")
+    if scene:
+        pdf = str(Path(scene["file"]).with_suffix(".pdf"))
+        parts.append(r"\vfig{%s}{%s}{%s}" % (
+            SCENES_DIR + "/" + pdf, esc(scene.get("caption") or ""),
+            esc(HONEST_SCENE.format(verse=data["id"]))))
     return "\n".join(parts) + "\n"
 
 
@@ -248,13 +278,14 @@ def build_markdown(chapter: int) -> str:
     cards = load_cards(chapter)
     extra = load_extra(chapter)
     parallels = load_parallels()
+    scenes = load_scenes()
     body = [HEADER.format(chapter=chapter)]
     if extra.get("title"):
         body += [f"## {extra['title']}", ""]
     if extra.get("intro"):
         body += [extra["intro"], ""]
     for card in cards:
-        body.append(render_markdown_verse(layers(card, extra, parallels)))
+        body.append(render_markdown_verse(layers(card, extra, parallels, scenes)))
     body += ["## Поетичний переклад", "",
              f"Окремо, у [`poetychnyi/rozdil-{chapter}.md`]"
              f"(poetychnyi/rozdil-{chapter}.md). Це **наш поетичний переклад**, "
@@ -266,6 +297,7 @@ def build_latex(chapter: int) -> str:
     cards = load_cards(chapter)
     extra = load_extra(chapter)
     parallels = load_parallels()
+    scenes = load_scenes()
     out = [
         "% ЗГЕНЕРОВАНО scripts/build_format_v2_chapter.py — не редагувати вручну.",
         f"% Джерело: editorial/cards/{chapter}.*.json, "
@@ -276,7 +308,7 @@ def build_latex(chapter: int) -> str:
     if extra.get("intro"):
         out.append(r"\naukintro{%s}" % esc(extra["intro"]))
     for card in cards:
-        out.append(render_latex_verse(layers(card, extra, parallels)))
+        out.append(render_latex_verse(layers(card, extra, parallels, scenes)))
     return "\n".join(out) + "\n"
 
 
@@ -331,18 +363,20 @@ def main(argv: list[str] | None = None) -> int:
         files = targets(chapter)
         layers_count = {"verses": 0, "devanagari": 0, "transliteration": 0,
                         "translation": 0, "commentary": 0, "parallels": 0,
-                        "illustrations": 0}
+                        "illustrations": 0, "scenes": 0}
         cards = load_cards(chapter)
         extra = load_extra(chapter)
         parallels = load_parallels()
+        scenes = load_scenes()
         for card in cards:
-            data = layers(card, extra, parallels)
+            data = layers(card, extra, parallels, scenes)
             layers_count["verses"] += 1
             for key in ("devanagari", "transliteration", "translation",
-                        "commentary", "parallel", "illustration"):
+                        "commentary", "parallel", "illustration", "scene"):
                 if data[key]:
                     target = {"parallel": "parallels",
-                              "illustration": "illustrations"}.get(key, key)
+                              "illustration": "illustrations",
+                              "scene": "scenes"}.get(key, key)
                     layers_count[target] += 1
         report["chapters"].append({"chapter": chapter, **layers_count})
         for path, text in files.items():
