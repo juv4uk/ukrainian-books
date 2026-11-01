@@ -34,11 +34,6 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          # Закомічений generated/verses.tex покриває 14 глав: файл на 20 глав
-          # важить 687 КБ і оновлюється лише клоном. Для самого PDF це не має
-          # значення: реєстр повний (298 карток), тому верстку збираємо з усіх
-          # 20 глав, перевизначивши список у пам'яті. Тест вище перевіряє саме
-          # закомічений стан і про це перевизначення нічого не знає.
           python3 - <<'PY'
           import sys
           sys.path.insert(0, "scripts")
@@ -51,9 +46,6 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          # Поетичний переклад живе в books/ashtavakra-gita/poetychnyi/*.md,
-          # а окремий том підключає згенерований poems.tex. Файл не комітимо:
-          # він похідний від розділів, і джерело істини — саме розділи.
           python3 scripts/build_poetic_book.py
       - name: Встановити XeLaTeX
         if: steps.detect.outputs.found == 'true'
@@ -69,21 +61,34 @@ jobs:
         run: |
           set -euo pipefail
           python3 -m pip install --quiet --disable-pip-version-check cairosvg
-          # Звірка актуальності НЕ блокує збірку: частина ілюстрацій у каталозі —
-          # ручні сюжетні малюнки, яких генератор схем не відтворює, і вони
-          # закономірно «застарілі» з його погляду.
           python3 scripts/build_verse_schemas.py --check \
             || echo "::warning::Частина схем — ручні ілюстрації; генератор їх не відтворює"
           python3 scripts/build_verse_schemas.py --pdf
           python3 scripts/build_format_v2_chapter.py --check
+      - name: Конвертувати сюжетні ілюстрації (SVG → PDF)
+        if: steps.detect.outputs.found == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Руки агентів додають сюжетні малюнки в ilustratsii-naratyvni, а
+          # генератор схем їх не знає. Без цього кроку latexmk падає на
+          # відсутньому PDF — саме так збірка й ламалася 2026-11-01.
+          python3 - <<'PY'
+          import pathlib
+          import cairosvg
+          made = 0
+          for svg in sorted(pathlib.Path("books/ashtavakra-gita/ilustratsii-naratyvni").glob("*.svg")):
+              target = svg.with_suffix(".pdf")
+              if not target.is_file() or target.stat().st_mtime < svg.stat().st_mtime:
+                  cairosvg.svg2pdf(url=str(svg), write_to=str(target))
+                  made += 1
+          print(f"Сюжетних ілюстрацій сконвертовано: {made}")
+          PY
       - name: Долучити власні схеми до віршів
         if: steps.detect.outputs.found == 'true'
         shell: bash
         run: |
           set -euo pipefail
-          # Крок стоїть ПІСЛЯ конвертації SVG → PDF: скрипт долучає лише ті
-          # схеми, чий PDF уже існує. Інакше посилання на неконвертовану
-          # ручну ілюстрацію ламало б latexmk.
           python3 scripts/attach_figures.py
       - name: Зібрати дозволені книги
         if: steps.detect.outputs.found == 'true'
@@ -116,7 +121,6 @@ jobs:
             grep -Fq "ґіта" <<< "$text" || { echo "Немає української кирилиці: $pdf"; fail=1; }
             case "$pdf" in
               */ashtavakra-poetychnyi/*)
-                # У поетичному томі IAST немає за задумом: це чистий переклад.
                 grep -Fq "АШТАВАКРА" <<< "$text" \
                   || { echo "Немає титулу поетичного тому: $pdf"; fail=1; }
                 ;;
